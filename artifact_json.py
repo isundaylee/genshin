@@ -183,6 +183,14 @@ artifacts = [
         "GF@2@20 ATK=311 ATK%=8.7 HP=209 CR%=6.6 CD%=19.4",
         "GF@2@20 ATK=311 CD%=14.0 DEF=56 ATK%=11.1 CR%=3.9",
         "GF@4@20 PD%=58.3 ATK=56 DEF=35 CD%=7.8 HP%=9.3",
+        # VV
+        "VV@2@20 ATK=311 ER%=5.8 CD%=26.4 HP=448 EM=47",
+        "VV@4@20 EM=187 DEF%=10.9 HP=777 ATK%=5.8 CD%=18.7",
+        "VV@3@20 EM=187 ER%=16.2 DEF%=5.1 ATK%=13.4 ATK=16",
+        "VV@1@20 HP=4780 EM=23 ER%=10.4 ATK%=10.5 CD%=17.1",
+        "VV@1@20 HP=4780 ATK=35 CR%=15.5 EM=35 DEF=16",
+        "VV@5@20 EM=187 DEF%=7.3 CR%=18.8 HP=598 ATK%=11.1",
+        "VV@2@20 ATK=311 EM=40 ER%=16.2 DEF%=6.6 ATK%=9.9",
     ]
 ]
 
