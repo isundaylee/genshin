@@ -48,7 +48,7 @@ class ArtifactStatType(enum.Enum):
     EM = "elementalMastery"
     ER_PCT = "recharge"
     EDE_PCT = "thunderBonus"
-    EDF_PCT = "fireBonus"
+    EDP_PCT = "fireBonus"
     EDH_PCT = "waterBonus"
     EDC_PCT = "iceBonus"
     EDA_PCT = "windBonus"
@@ -162,6 +162,11 @@ artifacts = [
         "BS@1@20 HP=4780 ATK=16 CD%=26.4 DEF=19 ER%=10.4",
         "BS@5@20 CD%=62.2 CR%=14.0 DEF=19 EM=21 ATK=35",
         "BS@2@20 ATK=311 CD%=18.7 HP=538 CR%=7.0 DEF=23",
+        # LW
+        "LW@3@20 ATK%=46.6 CR%=7.0 CD%=7.0 HP%=5.3 HP=1016",
+        "LW@5@20 CR%=31.1 CD%=13.2 ATK%=8.2 HP%=13.4 HP=239",
+        "LW@4@20 EDP%=46.6 CD%=12.4 HP=448 CR%=10.1 EM=23",
+        "LW@4@20 EDP%=46.6 CD%=12.4 HP=448 CR%=10.1 EM=23",
     ]
 ]
 
