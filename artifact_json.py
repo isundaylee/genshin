@@ -179,6 +179,7 @@ artifacts = [
         "WT@3@20 HP%=46.6 CR%=10.5 ATK%=10.5 CD%=11.7 ATK=33",
         "WT@2@20 ATK=311 CD%=14.8 CR%=6.6 DEF=21 EM=72",
         "WT@4@20 EDG%=46.6 CR%=13.2 CD%=5.4 ATK=37 ATK%=8.7",
+        "WT@5@20 CR%=31.1 ATK%=5.8 CD%=7.0 DEF=69 DEF%=17.5",
         "WT@5@20 HP%=46.6 CD%=13.2 DEF%=6.6 ER%=9.7 HP=657",
         # TF
         "TF@4@20 EM=187 ATK=47 HP=508 CD%=14.8 ATK%=5.8",
@@ -188,6 +189,7 @@ artifacts = [
         "CW@1@20 HP=4780 ER%=13.0 ATK%=11.7 CD%=12.4 ATK=45",
         "CW@4@20 EDH%=46.6 HP%=11.1 CD%=7.0 ATK%=9.9 ER%=20.7",
         "CW@3@20 EM=187 CR%=12.4 ATK=19 CD%=13.2 ER%=6.5",
+        "CW@3@20 HP%=46.6 DEF=37 ATK=19 CD%=19.4 CR%=7.0",
         "CW@3@20 ATK%=46.6 HP%=14.6 CD%=6.2 DEF=19 DEF%=20.4",
         "CW@1@20 HP=4780 ATK%=4.1 CD%=14.0 CR%=7.4 EM=54",
         "CW@5@20 CR%=31.1 CD%=33.4 HP=209 ATK=18 DEF%=5.8",
