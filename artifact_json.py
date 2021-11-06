@@ -139,22 +139,6 @@ def to_dict(artifacts: List[Artifact]):
 artifacts = [
     parse_artifact(desc)
     for desc in [
-        # ESF
-        "ESF@2@20 ATK=311 HP=448 HP%=8.7 CR%=7.4 ER%=14.9",
-        "ESF@3@20 ER%=51.8 EM=33 CD%=19.4 DEF%=12.4 HP=299",
-        "ESF@3@20 ER%=51.8 ATK=18 CR%=9.7 HP%=9.3 EM=38",
-        "ESF@1@20 HP=4780 EM=23 ATK%=9.9 CD%=28.8 DEF=19",
-        "ESF@5@20 CR%=31.1 ER%=16.2 CD%=12.4 DEF%=5.1 ATK%=11.7",
-        # SR
-        "SR@2@20 ATK=311 CR%=10.5 HP=538 ATK%=9.9 ER%=10.4",
-        "SR@3@20 HP%=46.6 ER%=6.5 ATK=16 CD%=14.8 EM=79",
-        "SR@3@20 ATK%=46.6 ER%=9.7 CR%=7.8 DEF%=13.9 DEF=39",
-        "SR@3@20 ATK%=46.6 CR%=7.0 ATK=31 EM=68 HP=209",
-        "SR@1@20 HP=4780 DEF%=6.6 CR%=6.2 EM=61 ATK%=10.5",
-        "SR@1@20 HP=4780 ER%=15.5 CR%=7.0 DEF=39 CD%=5.4",
-        "SR@5@20 CR%=31.1 CD%=18.7 DEF=19 ATK=33 HP%=10.5",
-        "SR@5@20 CD%=62.2 CR%=9.3 HP=209 ER%=17.5 ATK=18",
-        "SR@4@20 EDE%=46.6 CD%=13.2 ATK=18 ER%=24.0 DEF=23",
         # BS
         "BS@1@20 HP=4780 ATK%=9.9 ER%=11.0 CR%=5.8 CD%=17.9",
         "BS@2@20 ATK=311 DEF=39 CD%=12.4 CR%=7.4 DEF%=19.0",
@@ -233,6 +217,22 @@ artifacts = [
         "HD@5@20 CR%=31.1 CD%=13.2 DEF=21 ATK%=18.1 HP=269",
         "HD@5@20 CD%=62.2 ATK=18 HP%=18.7 CR%=3.1 HP=568",
         "HD@4@20 EDE%=46.6 CD%=19.4 HP=538 CR%=3.5 DEF=44",
+        # SR
+        "SR@2@20 ATK=311 CR%=10.5 HP=538 ATK%=9.9 ER%=10.4",
+        "SR@3@20 HP%=46.6 ER%=6.5 ATK=16 CD%=14.8 EM=79",
+        "SR@3@20 ATK%=46.6 ER%=9.7 CR%=7.8 DEF%=13.9 DEF=39",
+        "SR@3@20 ATK%=46.6 CR%=7.0 ATK=31 EM=68 HP=209",
+        "SR@1@20 HP=4780 DEF%=6.6 CR%=6.2 EM=61 ATK%=10.5",
+        "SR@1@20 HP=4780 ER%=15.5 CR%=7.0 DEF=39 CD%=5.4",
+        "SR@5@20 CR%=31.1 CD%=18.7 DEF=19 ATK=33 HP%=10.5",
+        "SR@5@20 CD%=62.2 CR%=9.3 HP=209 ER%=17.5 ATK=18",
+        "SR@4@20 EDE%=46.6 CD%=13.2 ATK=18 ER%=24.0 DEF=23",
+        # ESF
+        "ESF@2@20 ATK=311 HP=448 HP%=8.7 CR%=7.4 ER%=14.9",
+        "ESF@3@20 ER%=51.8 EM=33 CD%=19.4 DEF%=12.4 HP=299",
+        "ESF@3@20 ER%=51.8 ATK=18 CR%=9.7 HP%=9.3 EM=38",
+        "ESF@1@20 HP=4780 EM=23 ATK%=9.9 CD%=28.8 DEF=19",
+        "ESF@5@20 CR%=31.1 ER%=16.2 CD%=12.4 DEF%=5.1 ATK%=11.7",
     ]
 ]
 
