@@ -155,6 +155,13 @@ artifacts = [
         "SR@5@20 CR%=31.1 CD%=18.7 DEF=19 ATK=33 HP%=10.5",
         "SR@5@20 CD%=62.2 CR%=9.3 HP=209 ER%=17.5 ATK=18",
         "SR@4@20 EDE%=46.6 CD%=13.2 ATK=18 ER%=24.0 DEF=23",
+        # BS
+        "BS@1@20 HP=4780 ATK%=9.9 ER%=11.0 CR%=5.8 CD%=17.9",
+        "BS@2@20 ATK=311 DEF=39 CD%=12.4 CR%=7.4 DEF%=19.0",
+        "BS@3@20 ATK%=46.6 DEF=23 ATK=54 DEF%=17.5 CR%=3.9",
+        "BS@1@20 HP=4780 ATK=16 CD%=26.4 DEF=19 ER%=10.4",
+        "BS@5@20 CD%=62.2 CR%=14.0 DEF=19 EM=21 ATK=35",
+        "BS@2@20 ATK=311 CD%=18.7 HP=538 CR%=7.0 DEF=23",
     ]
 ]
 
