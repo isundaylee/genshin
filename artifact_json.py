@@ -196,6 +196,8 @@ artifacts = [
         "WT@2@20 ATK=311 CD%=14.8 CR%=6.6 DEF=21 EM=72",
         "WT@4@20 EDG%=46.6 CR%=13.2 CD%=5.4 ATK=37 ATK%=8.7",
         "WT@5@20 HP%=46.6 CD%=13.2 DEF%=6.6 ER%=9.7 HP=657",
+        # TF
+        "TF@4@20 EM=187 ATK=47 HP=508 CD%=14.8 ATK%=5.8",
     ]
 ]
 
