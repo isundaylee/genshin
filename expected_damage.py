@@ -6,7 +6,7 @@ def get_expected_damage(dmg_when_crit, crit_rate, crit_dmg):
 
 print(
     get_expected_damage(
-        31786,
+        33458,
         0.431 + 0.12,
         1.394,
     )
