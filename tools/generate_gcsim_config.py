@@ -15,8 +15,8 @@ def main():
 
     wp_iron_sting = weapon.Weapon(
         name=weapon.WeaponName.IronSting,
-        ascension=6,
-        level=90,
+        ascension=5,
+        level=80,
         refinements=1,
     )
 
@@ -122,14 +122,19 @@ def main():
         gcsim.generate_gcsim_config(
             [yanfei, kazuha, bennett, xingqiu],
             actions=[
-                "options mode=sl;",
-                "xingqiu skill,burst,skill;",
-                "bennett skill,attack,burst;",
-                "kazuha skill;",
-                "yanfei attack:1,skill,attack:1,charge,attack:3,charge,attack:1,charge,attack:3,charge,attack:1,skill,charge;",
-                "restart;",
+                "options swap_delay=12 mode=apl;",
+                "energy every interval=480,720 amount=1;",
+                "xingqiu skill[orbital=1],burst[orbital=1],skill;",
+                "bennett skill,attack,burst,attack +if=.status.xqburst>300;",
+                "kazuha skill[hold=1],high_plunge,attack +if=.status.btburst>0;",
+                "yanfei_swap: yanfei swap;",
+                "yanfei_wait_bt: wait_for mods value=.yanfei.bennett-field==1 max=100;",
+                "yanfei_q_rotation: yanfei attack,skill,attack,burst,attack,charge,attack:2,charge,attack,charge,attack:2,charge,attack,skill,charge;",
+                "yanfei_noq_rotation: yanfei attack,skill,attack,charge,attack:3,charge,attack,charge,attack:3,charge,attack,skill,charge;",
+                "chain yanfei_swap,yanfei_wait_bt,yanfei_q_rotation +if=.status.btburst>0&&.status.xqburst>300;",
+                "chain yanfei_swap,yanfei_wait_bt,yanfei_noq_rotation +if=.status.btburst>0&&.status.xqburst>300;",
             ],
-            target="target lvl=88 resist=0.1;",
+            target="target lvl=90 resist=0.1;",
         )
     )
 
