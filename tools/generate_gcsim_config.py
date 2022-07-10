@@ -6,6 +6,27 @@ import click
 
 @click.command()
 def main():
+    wp_skyward_atlas = weapon.Weapon(
+        name=weapon.WeaponName.SkywardAtlas,
+        ascension=6,
+        level=90,
+        refinements=1,
+    )
+
+    wp_iron_sting = weapon.Weapon(
+        name=weapon.WeaponName.IronSting,
+        ascension=6,
+        level=90,
+        refinements=1,
+    )
+
+    wp_favonius_sword = weapon.Weapon(
+        name=weapon.WeaponName.FavoniusSword,
+        ascension=6,
+        level=90,
+        refinements=5,
+    )
+
     yanfei = character.Character(
         name=character.CharacterName.Yanfei,
         ascension=6,
@@ -14,12 +35,7 @@ def main():
         talent_level_a=10,
         talent_level_e=10,
         talent_level_q=10,
-        weapon=weapon.Weapon(
-            name=weapon.WeaponName.SkywardAtlas,
-            ascension=6,
-            level=90,
-            refinements=1,
-        ),
+        weapon=wp_skyward_atlas,
         artifacts=tuple(
             artifact.parse_artifact(a)
             for a in (
@@ -40,12 +56,7 @@ def main():
         talent_level_a=6,
         talent_level_e=6,
         talent_level_q=6,
-        weapon=weapon.Weapon(
-            name=weapon.WeaponName.IronSting,
-            ascension=6,
-            level=90,
-            refinements=1,
-        ),
+        weapon=wp_iron_sting,
         artifacts=tuple(
             artifact.parse_artifact(a)
             for a in (
@@ -66,12 +77,7 @@ def main():
         talent_level_a=1,
         talent_level_e=1,
         talent_level_q=9,
-        weapon=weapon.Weapon(
-            name=weapon.WeaponName.FavoniusSword,
-            ascension=6,
-            level=90,
-            refinements=5,
-        ),
+        weapon=wp_favonius_sword,
         artifacts=tuple(
             artifact.parse_artifact(a)
             for a in (
