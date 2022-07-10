@@ -9,9 +9,6 @@ _LEVEL_CAPS: List[int] = [20, 40, 50, 60, 70, 80, 90]
 class WeaponName(enum.IntEnum):
     SkywardAtlas = 0
 
-    def to_gcsim_name(self) -> str:
-        return {WeaponName.SkywardAtlas: "skywardatlas"}[self]
-
 
 @attr.define
 class Weapon:
@@ -30,3 +27,7 @@ class Weapon:
         assert level_lower_bound <= self.level <= level_upper_bound
 
         assert 1 <= self.refinements <= 5
+
+    @property
+    def level_cap(self) -> int:
+        return _LEVEL_CAPS[self.ascension]

@@ -1,13 +1,23 @@
-from genshin import artifact, weapon
-from typing import List, Tuple
+from __future__ import annotations
+
+from genshin import artifact, weapon, character
+from typing import Dict, List, Tuple
+import enum
+import collections
 import attr
 
 
 _LEVEL_CAPS: List[int] = [20, 40, 50, 60, 70, 80, 90]
 
 
+class CharacterName(enum.IntEnum):
+    Yanfei = 0
+
+
 @attr.define
 class Character:
+    name: CharacterName
+
     ascension: int
     level: int
     constellations: int
@@ -45,3 +55,19 @@ class Character:
         assert self.artifacts[2].artifact_slot == artifact.ArtifactSlot.Sand
         assert self.artifacts[3].artifact_slot == artifact.ArtifactSlot.Cup
         assert self.artifacts[4].artifact_slot == artifact.ArtifactSlot.Circlet
+
+    @property
+    def level_cap(self) -> int:
+        return _LEVEL_CAPS[self.ascension]
+
+    @property
+    def base_hp(self) -> int:
+        pass
+
+    @property
+    def combined_artifact_stats(self) -> Dict[artifact.ArtifactStatType, float]:
+        stats = collections.defaultdict(lambda: 0.0)
+        for a in self.artifacts:
+            for s in [a.main_stat] + a.sub_stats:
+                stats[s.stat_type] += s.stat_value
+        return stats

@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
-from genshin import artifact, character, weapon
+from genshin import artifact, character, gcsim, weapon
 import click
 
 
 @click.command()
 def main():
     yanfei = character.Character(
+        name=character.CharacterName.Yanfei,
         ascension=6,
         level=90,
         constellations=6,
@@ -30,6 +31,8 @@ def main():
             )
         ),
     )
+
+    print(gcsim.generate_gcsim_config([yanfei]))
 
 
 if __name__ == "__main__":
