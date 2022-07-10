@@ -76,10 +76,12 @@ def parse_artifact(desc: str) -> Artifact:
 
     def parse_stat(stat_desc: str) -> ArtifactStat:
         stat_type, stat_value = stat_desc.split("=")
+        stat_value = float(stat_value)
         if stat_type.endswith("%"):
             stat_type = f"{stat_type[:-1]}_PCT"
+            stat_value *= 0.01
         return ArtifactStat(
-            stat_type=ArtifactStatType[stat_type], stat_value=float(stat_value)
+            stat_type=ArtifactStatType[stat_type], stat_value=stat_value
         )
 
     return Artifact(
@@ -108,9 +110,7 @@ def to_dict(artifacts: List[Artifact]):
     def stat_to_json(stat: ArtifactStat):
         return {
             "name": stat.stat_type.value,
-            "value": stat.stat_value * 0.01
-            if stat.stat_type.name.endswith("_PCT")
-            else stat.stat_value,
+            "value": stat.stat_value,
         }
 
     def artifact_to_json(artifact: Artifact):
