@@ -23,7 +23,8 @@ def do_show_damages(result_file):
             continue
 
         print(
-            "{:15s} | {:30s} | {:5s} {:10s} | {:10.0f}".format(
+            "T={:5.2f} | {:15s} | {:30s} | {:5s} {:10s} | {:10.0f}".format(
+                e["frame"] / 60.0,
                 character_names[e["char_index"]],
                 e["msg"],
                 "crit" if e["logs"]["crit"] else "",
