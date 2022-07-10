@@ -32,7 +32,17 @@ def main():
         ),
     )
 
-    print(gcsim.generate_gcsim_config([yanfei]))
+    print(
+        gcsim.generate_gcsim_config(
+            [yanfei],
+            actions=[
+                "options mode=sl;",
+                "yanfei attack:1,skill,attack:1,charge,attack:3,charge,attack:1,charge,attack:3,charge,attack:1,skill,charge;",
+                "restart;"
+            ],
+            target="target lvl=88 resist=0.1;",
+        )
+    )
 
 
 if __name__ == "__main__":

@@ -30,7 +30,9 @@ def weapon_name_to_str(name: weapon.WeaponName) -> str:
     return {weapon.WeaponName.SkywardAtlas: "skywardatlas"}[name]
 
 
-def generate_gcsim_config(characters: List[character.Character]) -> str:
+def generate_gcsim_config(
+    characters: List[character.Character], actions: List[str], target: str
+) -> str:
     lines: List[str] = []
 
     for c in characters:
@@ -83,5 +85,16 @@ def generate_gcsim_config(characters: List[character.Character]) -> str:
                 ),
             )
         )
+
+        lines.append("")
+
+    lines.extend(actions)
+    lines.append("")
+
+    lines.append(target)
+    lines.append("")
+
+    lines.append("active {};".format(character_name_to_str(characters[0].name)))
+    lines.append("")
 
     return "\n".join(lines)
