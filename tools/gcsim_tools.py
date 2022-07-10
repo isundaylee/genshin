@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import gzip
 import json
 from typing import Any, Dict
 import click
@@ -9,6 +10,15 @@ import pathlib
 @click.group()
 def main():
     pass
+
+
+def load_result(result_file: pathlib.Path) -> Dict[str, Any]:
+    if result_file.name.endswith(".gz"):
+        with gzip.open(result_file) as f:
+            return json.load(f)
+    else:
+        with open(result_file) as f:
+            return json.load(f)
 
 
 def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
@@ -38,10 +48,8 @@ def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
 @main.command("show-damages")
 @click.argument("result-file", type=pathlib.Path)
 def do_show_damages(result_file):
-    with open(result_file) as f:
-        raw_data = json.load(f)
-        character_names = raw_data["char_names"]
-        data = json.loads(raw_data["debug"])
+    raw_data = load_result(result_file)
+    data = json.loads(raw_data["debug"])
 
     for e in data:
         if e["event"] != "damage":
@@ -57,9 +65,8 @@ def do_show_damages(result_file):
 @main.command("show-events")
 @click.argument("result-file", type=pathlib.Path)
 def do_show_damages(result_file):
-    with open(result_file) as f:
-        raw_data = json.load(f)
-        data = json.loads(raw_data["debug"])
+    raw_data = load_result(result_file)
+    data = json.loads(raw_data["debug"])
 
     for e in data:
         print(
