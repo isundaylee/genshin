@@ -32,13 +32,41 @@ def main():
         ),
     )
 
+    kazuha = character.Character(
+        name=character.CharacterName.Kazuha,
+        ascension=6,
+        level=80,
+        constellations=0,
+        talent_level_a=6,
+        talent_level_e=6,
+        talent_level_q=6,
+        weapon=weapon.Weapon(
+            name=weapon.WeaponName.IronSting,
+            ascension=6,
+            level=90,
+            refinements=1,
+        ),
+        artifacts=tuple(
+            artifact.parse_artifact(a)
+            for a in (
+                "VV@1@20 HP=4780 ATK=35 CR%=15.5 EM=35 DEF=16",
+                "VV@2@20 ATK=311 ER%=5.8 CD%=26.4 HP=448 EM=47",
+                "VV@3@20 EM=187 ER%=16.2 DEF%=5.1 ATK%=13.4 ATK=16",
+                "TF@4@20 EM=187 ATK=47 HP=508 CD%=14.8 ATK%=5.8",
+                "VV@5@20 EM=187 DEF%=7.3 CR%=18.8 HP=598 ATK%=11.1",
+            )
+        ),
+    )
+
     print(
         gcsim.generate_gcsim_config(
-            [yanfei],
+            [yanfei, kazuha],
             actions=[
                 "options mode=sl;",
+                "yanfei attack:1;",
+                "kazuha skill;",
                 "yanfei attack:1,skill,attack:1,charge,attack:3,charge,attack:1,charge,attack:3,charge,attack:1,skill,charge;",
-                "restart;"
+                "restart;",
             ],
             target="target lvl=88 resist=0.1;",
         )

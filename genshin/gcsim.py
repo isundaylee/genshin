@@ -6,6 +6,7 @@ from typing import DefaultDict, List
 def artifact_set_to_str(artifact_set: artifact.ArtifactSet) -> str:
     return {
         artifact.ArtifactSet.CW: "crimsonwitchofflames",
+        artifact.ArtifactSet.VV: "viridescentvenerer",
     }[artifact_set]
 
 
@@ -16,6 +17,8 @@ def artifact_stat_type_to_str(stat_type: artifact.ArtifactStatType) -> str:
         artifact.ArtifactStatType.CR_PCT: "cr",
         artifact.ArtifactStatType.CD_PCT: "cd",
         artifact.ArtifactStatType.ATK: "atk",
+        artifact.ArtifactStatType.ATK_PCT: "atk%",
+        artifact.ArtifactStatType.DEF: "def",
         artifact.ArtifactStatType.DEF_PCT: "def%",
         artifact.ArtifactStatType.ER_PCT: "er",
         artifact.ArtifactStatType.EDP_PCT: "pyro%",
@@ -23,11 +26,17 @@ def artifact_stat_type_to_str(stat_type: artifact.ArtifactStatType) -> str:
 
 
 def character_name_to_str(name: character.CharacterName) -> str:
-    return {character.CharacterName.Yanfei: "yanfei"}[name]
+    return {
+        character.CharacterName.Yanfei: "yanfei",
+        character.CharacterName.Kazuha: "kazuha",
+    }[name]
 
 
 def weapon_name_to_str(name: weapon.WeaponName) -> str:
-    return {weapon.WeaponName.SkywardAtlas: "skywardatlas"}[name]
+    return {
+        weapon.WeaponName.SkywardAtlas: "skywardatlas",
+        weapon.WeaponName.IronSting: "ironsting",
+    }[name]
 
 
 def generate_gcsim_config(
