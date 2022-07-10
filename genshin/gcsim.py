@@ -1,5 +1,12 @@
+import collections
 from genshin import artifact, character, weapon
-from typing import List
+from typing import DefaultDict, List
+
+
+def artifact_set_to_str(artifact_set: artifact.ArtifactSet) -> str:
+    return {
+        artifact.ArtifactSet.CW: "crimsonwitchofflames",
+    }[artifact_set]
 
 
 def artifact_stat_type_to_str(stat_type: artifact.ArtifactStatType) -> str:
@@ -48,6 +55,24 @@ def generate_gcsim_config(characters: List[character.Character]) -> str:
                 c.weapon.level_cap,
             )
         )
+
+        artifact_count_by_set: DefaultDict[
+            artifact.ArtifactSet, int
+        ] = collections.defaultdict(lambda: 0)
+        for a in c.artifacts:
+            artifact_count_by_set[a.artifact_set] += 1
+
+        for s, count in artifact_count_by_set.items():
+            if count < 2:
+                continue
+
+            lines.append(
+                '{} add set="{}" count={};'.format(
+                    character_name_to_str(c.name),
+                    artifact_set_to_str(s),
+                    2 if count <= 3 else 4,
+                )
+            )
 
         lines.append(
             "{} add stats {};".format(
