@@ -1,10 +1,8 @@
-import enum
+#!/usr/bin/env python3
+
 import json
-from typing import List
 
 from genshin import artifact
-
-import attr
 
 
 artifacts = [
