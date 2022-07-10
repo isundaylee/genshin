@@ -9,6 +9,7 @@ _LEVEL_CAPS: List[int] = [20, 40, 50, 60, 70, 80, 90]
 class WeaponName(enum.IntEnum):
     SkywardAtlas = 0
     IronSting = 1
+    FavoniusSword = 2
 
 
 @attr.define

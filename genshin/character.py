@@ -12,7 +12,8 @@ _LEVEL_CAPS: List[int] = [20, 40, 50, 60, 70, 80, 90]
 
 class CharacterName(enum.IntEnum):
     Yanfei = 0
-    Kazuha = 2
+    Kazuha = 1
+    Bennett = 2
 
 
 @attr.define

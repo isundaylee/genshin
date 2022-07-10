@@ -58,12 +58,38 @@ def main():
         ),
     )
 
+    bennett = character.Character(
+        name=character.CharacterName.Bennett,
+        ascension=6,
+        level=80,
+        constellations=5,
+        talent_level_a=1,
+        talent_level_e=1,
+        talent_level_q=9,
+        weapon=weapon.Weapon(
+            name=weapon.WeaponName.FavoniusSword,
+            ascension=6,
+            level=90,
+            refinements=5,
+        ),
+        artifacts=tuple(
+            artifact.parse_artifact(a)
+            for a in (
+                "MB@1@20 HP=4780 ER%=11.7 CR%=14 CD%=16.2 EM=16",
+                "NO@2@20 ATK=311 DEF=35 CD%=7.0 EM=35 ER%=17.5",
+                "NO@3@20 ER%=51.8 CR%=6.2 CD%=17.9 DEF=19 DEF%=13.1",
+                "NO@4@20 HP%=46.6 ER%=10.4 ATK=60 CR%=3.1 EM=21",
+                "NO@5@20 HP%=46.6 DEF%=10.2 ER%=5.8 CR%=3.5 ATK=64",
+            )
+        ),
+    )
+
     print(
         gcsim.generate_gcsim_config(
-            [yanfei, kazuha],
+            [yanfei, kazuha, bennett],
             actions=[
                 "options mode=sl;",
-                "yanfei attack:1;",
+                "bennett skill,attack,burst;",
                 "kazuha skill;",
                 "yanfei attack:1,skill,attack:1,charge,attack:3,charge,attack:1,charge,attack:3,charge,attack:1,skill,charge;",
                 "restart;",
