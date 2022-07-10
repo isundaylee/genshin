@@ -27,6 +27,13 @@ def main():
         refinements=5,
     )
 
+    wp_sacrificial_sword = weapon.Weapon(
+        name=weapon.WeaponName.SacrificialSword,
+        ascension=6,
+        level=90,
+        refinements=5,
+    )
+
     yanfei = character.Character(
         name=character.CharacterName.Yanfei,
         ascension=6,
@@ -90,11 +97,33 @@ def main():
         ),
     )
 
+    xingqiu = character.Character(
+        name=character.CharacterName.Xingqiu,
+        ascension=6,
+        level=80,
+        constellations=6,
+        talent_level_a=1,
+        talent_level_e=8,
+        talent_level_q=8,
+        weapon=wp_sacrificial_sword,
+        artifacts=tuple(
+            artifact.parse_artifact(a)
+            for a in (
+                "HD@1@20 HP=4780 ATK%=14.0 ER%=11.0 CR%=6.2 ATK=14",
+                "NO@2@20 ATK=311 HP%=4.1 CR%=9.7 DEF%=13.9 CD%=15.5",
+                "NO@3@20 ATK%=46.6 CR%=9.3 DEF=21 ER%=10.4 DEF%=11.7",
+                "CW@4@20 EDH%=46.6 HP%=11.1 CD%=7.0 ATK%=9.9 ER%=20.7",
+                "HD@5@20 CR%=31.1 CD%=13.2 DEF=21 ATK%=18.1 HP=269",
+            )
+        ),
+    )
+
     print(
         gcsim.generate_gcsim_config(
-            [yanfei, kazuha, bennett],
+            [yanfei, kazuha, bennett, xingqiu],
             actions=[
                 "options mode=sl;",
+                "xingqiu skill,burst,skill;",
                 "bennett skill,attack,burst;",
                 "kazuha skill;",
                 "yanfei attack:1,skill,attack:1,charge,attack:3,charge,attack:1,charge,attack:3,charge,attack:1,skill,charge;",

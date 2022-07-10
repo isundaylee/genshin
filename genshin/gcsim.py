@@ -8,6 +8,7 @@ def artifact_set_to_str(artifact_set: artifact.ArtifactSet) -> str:
         artifact.ArtifactSet.CW: "crimsonwitchofflames",
         artifact.ArtifactSet.VV: "viridescentvenerer",
         artifact.ArtifactSet.NO: "noblesseoblige",
+        artifact.ArtifactSet.HD: "heartofdepth",
     }[artifact_set]
 
 
@@ -24,6 +25,7 @@ def artifact_stat_type_to_str(stat_type: artifact.ArtifactStatType) -> str:
         artifact.ArtifactStatType.DEF_PCT: "def%",
         artifact.ArtifactStatType.ER_PCT: "er",
         artifact.ArtifactStatType.EDP_PCT: "pyro%",
+        artifact.ArtifactStatType.EDH_PCT: "hydro%",
     }[stat_type]
 
 
@@ -32,6 +34,7 @@ def character_name_to_str(name: character.CharacterName) -> str:
         character.CharacterName.Yanfei: "yanfei",
         character.CharacterName.Kazuha: "kazuha",
         character.CharacterName.Bennett: "bennett",
+        character.CharacterName.Xingqiu: "xingqiu",
     }[name]
 
 
@@ -40,6 +43,7 @@ def weapon_name_to_str(name: weapon.WeaponName) -> str:
         weapon.WeaponName.SkywardAtlas: "skywardatlas",
         weapon.WeaponName.IronSting: "ironsting",
         weapon.WeaponName.FavoniusSword: "favoniussword",
+        weapon.WeaponName.SacrificialSword: "sacrificialsword",
     }[name]
 
 

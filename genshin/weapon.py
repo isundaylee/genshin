@@ -10,6 +10,7 @@ class WeaponName(enum.IntEnum):
     SkywardAtlas = 0
     IronSting = 1
     FavoniusSword = 2
+    SacrificialSword = 3
 
 
 @attr.define
