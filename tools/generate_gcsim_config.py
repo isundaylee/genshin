@@ -140,8 +140,8 @@ def main():
                 "options swap_delay=12 mode=apl duration=70.0;",
                 "energy every interval=480,720 amount=1;",
                 # General macros
-                "xingqiu_eq: xingqiu skill[orbital=1],burst[orbital=1];",
-                "xingqiu_e: xingqiu skill[orbital=1];",
+                "xingqiu_eq: xingqiu skill[orbital=0],burst[orbital=0];",
+                "xingqiu_e: xingqiu skill[orbital=0];",
                 "bennett_ea: bennett skill,attack;",
                 "wait_p_xingqiu: wait_for particles value=xingqiu max=200;",
                 "wait_p_bennett: wait_for particles value=bennett max=200;",
