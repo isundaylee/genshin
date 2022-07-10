@@ -1,4 +1,4 @@
-from genshin import artifact
+from genshin import artifact, weapon
 from typing import List, Tuple
 import attr
 
@@ -17,6 +17,7 @@ class Character:
     talent_level_e: int
     talent_level_q: int
 
+    weapon: weapon.Weapon
     artifacts: Tuple[
         artifact.Artifact,
         artifact.Artifact,

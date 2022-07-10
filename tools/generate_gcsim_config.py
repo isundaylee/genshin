@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from genshin import artifact, character
+from genshin import artifact, character, weapon
 import click
 
 
@@ -13,6 +13,12 @@ def main():
         talent_level_a=10,
         talent_level_e=10,
         talent_level_q=10,
+        weapon=weapon.Weapon(
+            name=weapon.WeaponName.SkywardAtlas,
+            ascension=6,
+            level=90,
+            refinements=1,
+        ),
         artifacts=tuple(
             artifact.parse_artifact(a)
             for a in (
