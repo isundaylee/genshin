@@ -122,17 +122,35 @@ def main():
         gcsim.generate_gcsim_config(
             [yanfei, kazuha, bennett, xingqiu],
             actions=[
-                "options swap_delay=12 mode=apl;",
+                # Options
+                "options swap_delay=12 mode=apl duration=70.0;",
                 "energy every interval=480,720 amount=1;",
-                "xingqiu skill[orbital=1],burst[orbital=1],skill;",
+                # General macros
+                "xingqiu_eq: xingqiu skill[orbital=1],burst[orbital=1];",
+                "xingqiu_e: xingqiu skill[orbital=1];",
+                "bennett_ea: bennett skill,attack;",
+                "wait_p_xingqiu: wait_for particles value=xingqiu max=200;",
+                "wait_p_bennett: wait_for particles value=bennett max=200;",
+                "yanfei_swap: yanfei swap;",
+                "xingqiu_swap: xingqiu swap;",
+                # Xingqiu sac sword woes
+                "chain xingqiu_eq,wait_p_xingqiu;",
+                "chain xingqiu_e,wait_p_xingqiu +if=.status.xqburst>720;",
+                # Bennett + Kazuha setup
                 "bennett skill,attack,burst,attack +if=.status.xqburst>300;",
                 "kazuha skill[hold=1],high_plunge,attack +if=.status.btburst>0;",
-                "yanfei_swap: yanfei swap;",
+                # Yanfei rotation
                 "yanfei_wait_bt: wait_for mods value=.yanfei.bennett-field==1 max=100;",
                 "yanfei_q_rotation: yanfei attack,skill,attack,burst,attack,charge,attack:2,charge,attack,charge,attack:2,charge,attack,skill,charge;",
                 "yanfei_noq_rotation: yanfei attack,skill,attack,charge,attack:3,charge,attack,charge,attack:3,charge,attack,skill,charge;",
                 "chain yanfei_swap,yanfei_wait_bt,yanfei_q_rotation +if=.status.btburst>0&&.status.xqburst>300;",
                 "chain yanfei_swap,yanfei_wait_bt,yanfei_noq_rotation +if=.status.btburst>0&&.status.xqburst>300;",
+                # Fav Bennett funnel
+                "chain bennett_ea,xingqiu_swap,wait_p_bennett +if=.energy.xingqiu<80;",
+                "chain bennett_ea,wait_p_bennett +if=.energy.bennett<40;",
+                # Gap fill
+                "bennett skill;",
+                "bennett attack +is_onfield;",
             ],
             target="target lvl=90 resist=0.1;",
         )
