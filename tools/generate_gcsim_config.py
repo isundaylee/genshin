@@ -34,6 +34,13 @@ def main():
         refinements=5,
     )
 
+    wp_aquila_favonia = weapon.Weapon(
+        name=weapon.WeaponName.AquilaFavonia,
+        ascension=6,
+        level=90,
+        refinements=1,
+    )
+
     wp_sacrificial_sword = weapon.Weapon(
         name=weapon.WeaponName.SacrificialSword,
         ascension=6,
