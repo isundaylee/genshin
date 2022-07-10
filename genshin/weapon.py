@@ -11,6 +11,7 @@ class WeaponName(enum.IntEnum):
     IronSting = 1
     FavoniusSword = 2
     SacrificialSword = 3
+    TheWidsith = 4
 
 
 @attr.define

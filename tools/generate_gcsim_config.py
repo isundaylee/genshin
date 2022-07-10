@@ -6,6 +6,13 @@ import click
 
 @click.command()
 def main():
+    wp_widsith = weapon.Weapon(
+        name=weapon.WeaponName.TheWidsith,
+        ascension=6,
+        level=90,
+        refinements=5,
+    )
+
     wp_skyward_atlas = weapon.Weapon(
         name=weapon.WeaponName.SkywardAtlas,
         ascension=6,
@@ -120,7 +127,7 @@ def main():
 
     print(
         gcsim.generate_gcsim_config(
-            [yanfei, kazuha, bennett, xingqiu],
+            [xingqiu, yanfei, kazuha, bennett],
             actions=[
                 # Options
                 "options swap_delay=12 mode=apl duration=70.0;",
