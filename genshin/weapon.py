@@ -1,5 +1,8 @@
+from __future__ import annotations
+
 import enum
-from typing import List
+import pathlib
+from typing import Dict, List
 
 import attr
 
@@ -36,3 +39,22 @@ class Weapon:
     @property
     def level_cap(self) -> int:
         return _LEVEL_CAPS[self.ascension]
+
+    @staticmethod
+    def from_string(v: str) -> Weapon:
+        name, ascension, level, refinements = v.split("/")
+        return Weapon(
+            name=WeaponName[name],
+            ascension=int(ascension),
+            level=int(level),
+            refinements=int(refinements),
+        )
+
+
+def load_weapon_list(path: pathlib.Path) -> Dict[str, Weapon]:
+    weapons: Dict[str, Weapon] = {}
+    with open(path) as f:
+        for line in f.read().splitlines():
+            name, value = line.split("=")
+            weapons[name] = Weapon.from_string(value)
+    return weapons

@@ -8,47 +8,7 @@ import click
 @click.command()
 @click.argument("rotation_file", type=pathlib.Path)
 def main(rotation_file: pathlib.Path) -> None:
-    wp_widsith = weapon.Weapon(
-        name=weapon.WeaponName.TheWidsith,
-        ascension=6,
-        level=90,
-        refinements=5,
-    )
-
-    wp_skyward_atlas = weapon.Weapon(
-        name=weapon.WeaponName.SkywardAtlas,
-        ascension=6,
-        level=90,
-        refinements=1,
-    )
-
-    wp_iron_sting = weapon.Weapon(
-        name=weapon.WeaponName.IronSting,
-        ascension=5,
-        level=80,
-        refinements=1,
-    )
-
-    wp_favonius_sword = weapon.Weapon(
-        name=weapon.WeaponName.FavoniusSword,
-        ascension=6,
-        level=90,
-        refinements=5,
-    )
-
-    wp_aquila_favonia = weapon.Weapon(
-        name=weapon.WeaponName.AquilaFavonia,
-        ascension=6,
-        level=90,
-        refinements=1,
-    )
-
-    wp_sacrificial_sword = weapon.Weapon(
-        name=weapon.WeaponName.SacrificialSword,
-        ascension=6,
-        level=90,
-        refinements=5,
-    )
+    weapons = weapon.load_weapon_list("data/weapons.txt")
 
     yanfei = character.Character(
         name=character.CharacterName.Yanfei,
@@ -58,7 +18,7 @@ def main(rotation_file: pathlib.Path) -> None:
         talent_level_a=10,
         talent_level_e=10,
         talent_level_q=10,
-        weapon=wp_skyward_atlas,
+        weapon=weapons["skyward_atlas"],
         artifacts=tuple(
             artifact.parse_artifact(a)
             for a in (
@@ -79,7 +39,7 @@ def main(rotation_file: pathlib.Path) -> None:
         talent_level_a=6,
         talent_level_e=6,
         talent_level_q=6,
-        weapon=wp_iron_sting,
+        weapon=weapons["iron_sting"],
         artifacts=tuple(
             artifact.parse_artifact(a)
             for a in (
@@ -100,7 +60,7 @@ def main(rotation_file: pathlib.Path) -> None:
         talent_level_a=1,
         talent_level_e=1,
         talent_level_q=9,
-        weapon=wp_favonius_sword,
+        weapon=weapons["favonius_sword"],
         artifacts=tuple(
             artifact.parse_artifact(a)
             for a in (
@@ -121,7 +81,7 @@ def main(rotation_file: pathlib.Path) -> None:
         talent_level_a=1,
         talent_level_e=8,
         talent_level_q=8,
-        weapon=wp_sacrificial_sword,
+        weapon=weapons["sacrificial_sword"],
         artifacts=tuple(
             artifact.parse_artifact(a)
             for a in (
