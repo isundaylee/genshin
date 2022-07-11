@@ -1,7 +1,8 @@
 from __future__ import annotations
+import pathlib
 
 from genshin import artifact, weapon, character
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 import enum
 import collections
 import attr
@@ -74,3 +75,52 @@ class Character:
             for s in [a.main_stat] + a.sub_stats:
                 stats[s.stat_type] += s.stat_value
         return stats
+
+
+def load_character_list(
+    path: pathlib.Path, *, weapons: Dict[str, weapon.Weapon]
+) -> Dict[CharacterName, Character]:
+    characters: Dict[CharacterName, Character] = {}
+
+    pending_profile_line: Optional[str] = None
+    pending_artifacts: List[artifact.Artifact] = []
+
+    def build_character() -> None:
+        nonlocal pending_profile_line, pending_artifacts
+
+        assert pending_profile_line is not None
+        name, asc, lv, cons, tla, tle, tlq, wp = pending_profile_line.split("/")
+        return Character(
+            name=CharacterName[name],
+            ascension=int(asc),
+            level=int(lv),
+            constellations=int(cons),
+            talent_level_a=int(tla),
+            talent_level_e=int(tle),
+            talent_level_q=int(tlq),
+            weapon=weapons[wp],
+            artifacts=pending_artifacts,
+        )
+
+    with open(path) as f:
+        for line in f:
+            line = line.strip()
+
+            if (not line) or line.startswith("#"):
+                continue
+
+            if line.startswith("@"):
+                if pending_profile_line is not None:
+                    ch = build_character()
+                    characters[ch.name] = ch
+                    pending_profile_line = None
+                    pending_artifacts = []
+
+                pending_profile_line = line[1:]
+            else:
+                pending_artifacts.append(artifact.parse_artifact(line))
+
+    ch = build_character()
+    characters[ch.name] = ch
+
+    return characters
