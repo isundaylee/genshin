@@ -1,4 +1,6 @@
 from __future__ import annotations
+from lib2to3.pgen2.driver import load_grammar
+import os
 
 import pathlib
 from genshin import artifact, character, weapon
@@ -11,14 +13,25 @@ class Account:
     characters: Dict[character.CharacterName, character.Character]
     weapons: Dict[str, weapon.Weapon]
     artifacts: List[artifact.Artifact]
+    artifact_sets: Dict[str, List[artifact.Artifact]]
 
     @staticmethod
     def load(path: pathlib.Path) -> Account:
         weapons = load_weapon_list(path / "weapons.txt")
         characters = load_character_list(path / "characters.txt", weapons=weapons)
         artifacts = list(load_artifacts(path / "artifacts.txt"))
+        artifact_sets: Dict[str, List[artifact.Artifact]] = {}
 
-        return Account(characters=characters, weapons=weapons, artifacts=artifacts)
+        for f in os.listdir(path / "artifact_sets"):
+            fn = path / "artifact_sets" / f
+            artifact_sets[f.split(".")[0]] = list(load_artifacts(fn))
+
+        return Account(
+            characters=characters,
+            weapons=weapons,
+            artifacts=artifacts,
+            artifact_sets=artifact_sets,
+        )
 
     def apply_overrides(self, overrides: str) -> None:
         for o in overrides.split(","):
@@ -39,6 +52,8 @@ class Account:
                 ch.ascension = int(v)
             elif key == "lv":
                 ch.level = int(v)
+            elif key == "artifacts":
+                ch.artifacts = self.artifact_sets[v]
             else:
                 raise ValueError(f"Invalid key {key}")
 
