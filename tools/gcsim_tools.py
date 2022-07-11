@@ -2,7 +2,7 @@
 
 from sys import stdout
 import tempfile
-from genshin import gcsim, weapon, character
+from genshin import account, gcsim, weapon, character
 import gzip
 import json
 from typing import Any, Dict, Optional
@@ -106,8 +106,7 @@ def do_show_damages(result_file):
 
 
 def _generate_gcsim_config(rotation_file: pathlib.Path) -> str:
-    weapons = weapon.load_weapon_list("data/weapons.txt")
-    characters = character.load_character_list("data/characters.txt", weapons=weapons)
+    ac = account.Account.load(pathlib.Path("data"))
 
     with open(rotation_file) as f:
         header = next(f)
@@ -117,7 +116,7 @@ def _generate_gcsim_config(rotation_file: pathlib.Path) -> str:
         rotation = f.read()
 
     return gcsim.generate_gcsim_config(
-        [characters[c] for c in team],
+        [ac.characters[c] for c in team],
         actions=[rotation],
         target="target lvl=90 resist=0.1;",
     )
