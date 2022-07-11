@@ -138,12 +138,22 @@ def do_generate_config(rotation_file: pathlib.Path) -> None:
 @click.argument("rotation_file", type=pathlib.Path)
 @click.option("--variant", multiple=True)
 @click.option("--details", is_flag=True)
-def do_run_sim(rotation_file: pathlib.Path, details: bool, variant: List[str]) -> None:
-    def run_variant(overrides: Optional[str]) -> gcsim.GcsimSummary:
-        td = pathlib.Path(tempfile.mkdtemp(prefix="gcsim-"))
-        conf_path = td / "config.txt"
-        stdout_path = td / "stdout.txt"
-        result_path = td / "result.json"
+@click.option("--working-dir", type=pathlib.Path)
+def do_run_sim(
+    rotation_file: pathlib.Path,
+    details: bool,
+    variant: List[str],
+    working_dir: Optional[pathlib.Path],
+) -> None:
+    if working_dir is None:
+        working_dir = pathlib.Path(tempfile.mkdtemp(prefix="gcsim-"))
+
+    def run_variant(
+        output_dir: pathlib.Path, overrides: Optional[str]
+    ) -> gcsim.GcsimSummary:
+        conf_path = output_dir / "config.txt"
+        stdout_path = output_dir / "stdout.txt"
+        result_path = output_dir / "result.json"
         gz_result_path = result_path.parent / (result_path.name + ".gz")
 
         with open(conf_path, "w") as f:
@@ -170,7 +180,9 @@ def do_run_sim(rotation_file: pathlib.Path, details: bool, variant: List[str]) -
     baseline_summary: Optional[gcsim.GcsimSummary] = None
 
     for k, v in variants.items():
-        summary = run_variant(v)
+        variant_working_dir = working_dir / k
+        variant_working_dir.mkdir(parents=True, exist_ok=True)
+        summary = run_variant(variant_working_dir, v)
 
         if k == "baseline":
             baseline_summary = summary
