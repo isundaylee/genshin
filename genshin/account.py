@@ -35,6 +35,10 @@ class Account:
                 ch.talent_level_e = int(v)
             elif key == "tlq":
                 ch.talent_level_q = int(v)
+            elif key == "asc":
+                ch.ascension = int(v)
+            elif key == "lv":
+                ch.level = int(v)
             else:
                 raise ValueError(f"Invalid key {key}")
 
