@@ -29,6 +29,12 @@ class Account:
 
             if key == "weapon":
                 ch.weapon = self.weapons[v]
+            elif key == "tla":
+                ch.talent_level_a = int(v)
+            elif key == "tle":
+                ch.talent_level_e = int(v)
+            elif key == "tlq":
+                ch.talent_level_q = int(v)
             else:
                 raise ValueError(f"Invalid key {key}")
 
