@@ -76,9 +76,10 @@ def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
 
 @main.command("show-damages")
 @click.argument("result-file", type=pathlib.Path)
-def do_show_damages(result_file):
+@click.option("--debug-log-flavor", default="debug")
+def do_show_damages(result_file: pathlib.Path, debug_log_flavor: str) -> None:
     raw_data = load_result(result_file)
-    data = json.loads(raw_data["debug"])
+    data = json.loads(raw_data[debug_log_flavor])
 
     for e in data:
         if e["event"] != "damage":
@@ -93,9 +94,10 @@ def do_show_damages(result_file):
 
 @main.command("show-events")
 @click.argument("result-file", type=pathlib.Path)
-def do_show_damages(result_file):
+@click.option("--debug-log-flavor", default="debug")
+def do_show_events(result_file: pathlib.Path, debug_log_flavor: str) -> None:
     raw_data = load_result(result_file)
-    data = json.loads(raw_data["debug"])
+    data = json.loads(raw_data[debug_log_flavor])
 
     for e in data:
         print(
@@ -148,7 +150,7 @@ def do_run_sim(rotation_file: pathlib.Path, details: bool, variant: List[str]) -
             f.write(_generate_gcsim_config(rotation_file, overrides=overrides))
 
         output = subprocess.check_output(
-            [GCSIM_PATH, "-c", conf_path, "-out", result_path, "-gz"]
+            [GCSIM_PATH, "-c", conf_path, "-out", result_path, "-gz", "-debugMinMax"]
         )
 
         with open(stdout_path, "wb") as f:
