@@ -40,6 +40,7 @@ def character_name_to_str(name: character.CharacterName) -> str:
         character.CharacterName.Kazuha: "kazuha",
         character.CharacterName.Bennett: "bennett",
         character.CharacterName.Xingqiu: "xingqiu",
+        character.CharacterName.Zhongli: "zhongli",
     }[name]
 
 
@@ -48,6 +49,7 @@ def weapon_name_to_str(name: weapon.WeaponName) -> str:
         weapon.WeaponName.SkywardAtlas: "skywardatlas",
         weapon.WeaponName.IronSting: "ironsting",
         weapon.WeaponName.FavoniusSword: "favoniussword",
+        weapon.WeaponName.FavoniusLance: "favoniuslance",
         weapon.WeaponName.SacrificialSword: "sacrificialsword",
         weapon.WeaponName.TheWidsith: "thewidsith",
         weapon.WeaponName.AquilaFavonia: "aquilafavonia",

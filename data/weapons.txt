@@ -2,5 +2,6 @@ the_widsith=TheWidsith/6/90/5
 skyward_atlas=SkywardAtlas/6/90/1
 iron_sting=IronSting/5/80/1
 favonius_sword=FavoniusSword/6/90/5
+favonius_lance=FavoniusLance/6/90/5
 aquila_favonia=AquilaFavonia/6/90/1
 sacrificial_sword=SacrificialSword/6/90/5
