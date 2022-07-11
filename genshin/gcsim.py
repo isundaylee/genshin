@@ -15,6 +15,7 @@ def artifact_set_to_str(artifact_set: artifact.ArtifactSet) -> str:
         artifact.ArtifactSet.NO: "noblesseoblige",
         artifact.ArtifactSet.HD: "heartofdepth",
         artifact.ArtifactSet.TM: "tenacityofthemillelith",
+        artifact.ArtifactSet.AP: "archaicpetra",
     }[artifact_set]
 
 
