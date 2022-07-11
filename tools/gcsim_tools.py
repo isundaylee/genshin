@@ -128,7 +128,8 @@ def do_generate_config(rotation_file: pathlib.Path) -> None:
 
 @main.command("run-sim")
 @click.argument("rotation_file", type=pathlib.Path)
-def do_run_sim(rotation_file: pathlib.Path) -> None:
+@click.option("--details", is_flag=True)
+def do_run_sim(rotation_file: pathlib.Path, details: bool) -> None:
     td = pathlib.Path(tempfile.mkdtemp(prefix="gcsim-"))
 
     conf_path = td / "config.txt"
@@ -146,8 +147,20 @@ def do_run_sim(rotation_file: pathlib.Path) -> None:
     with open(stdout_path, "wb") as f:
         f.write(output)
 
-    print(f"Stdout at: {stdout_path}")
-    print(f"Result at: {gz_result_path}")
+    if details:
+        print(f"Stdout at: {stdout_path}")
+        print(f"Result at: {gz_result_path}")
+
+    summary = gcsim.GcsimSummary.from_gcsim_output(output.decode())
+    print(
+        "duration {:5.1f}s | avg {:10.0f} | span {:10.0f} - {:10.0f} std {:10.0f}".format(
+            summary.duration,
+            summary.dps_avg,
+            summary.dps_min,
+            summary.dps_max,
+            summary.dps_std,
+        )
+    )
 
 
 if __name__ == "__main__":

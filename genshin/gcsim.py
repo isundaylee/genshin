@@ -1,4 +1,9 @@
+from __future__ import annotations
+
 import collections
+import re
+
+import attr
 from genshin import artifact, character, weapon
 from typing import DefaultDict, List
 
@@ -117,3 +122,32 @@ def generate_gcsim_config(
     lines.append("")
 
     return "\n".join(lines)
+
+
+@attr.frozen
+class GcsimSummary:
+    duration: float
+
+    dps_avg: float
+    dps_min: float
+    dps_max: float
+    dps_std: float
+
+    @staticmethod
+    def from_gcsim_output(v: str) -> GcsimSummary:
+        m = re.search(
+            r"Average ([0-9.]+) damage over ([0-9.]+) seconds, resulting in ([0-9.]+) dps \(min: ([0-9.]+) max: ([0-9.]+) std: ([0-9.]+)\)",
+            v,
+        )
+
+        assert m is not None
+
+        _, duration, dps_avg, dps_min, dps_max, dps_std = m.groups()
+
+        return GcsimSummary(
+            duration=float(duration),
+            dps_avg=float(dps_avg),
+            dps_min=float(dps_min),
+            dps_max=float(dps_max),
+            dps_std=float(dps_std),
+        )
