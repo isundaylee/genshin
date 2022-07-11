@@ -5,3 +5,6 @@ favonius_sword=FavoniusSword/6/90/5
 favonius_lance=FavoniusLance/6/90/5
 aquila_favonia=AquilaFavonia/6/90/1
 sacrificial_sword=SacrificialSword/6/90/5
+# Wishlist below
+lost_prayer=LostPrayerToTheSacredWinds/6/90/1
+memory_of_dust=MemoryOfDust/6/90/1

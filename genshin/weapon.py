@@ -17,6 +17,8 @@ class WeaponName(enum.IntEnum):
     SacrificialSword = 4
     TheWidsith = 5
     AquilaFavonia = 6
+    LostPrayerToTheSacredWinds = 7
+    MemoryOfDust = 8
 
 
 @attr.define
@@ -56,6 +58,9 @@ def load_weapon_list(path: pathlib.Path) -> Dict[str, Weapon]:
     weapons: Dict[str, Weapon] = {}
     with open(path) as f:
         for line in f.read().splitlines():
+            if (not line) or line.startswith("#"):
+                continue
+
             name, value = line.split("=")
             weapons[name] = Weapon.from_string(value)
     return weapons

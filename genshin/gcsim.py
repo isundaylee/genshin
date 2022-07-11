@@ -55,6 +55,8 @@ def weapon_name_to_str(name: weapon.WeaponName) -> str:
         weapon.WeaponName.SacrificialSword: "sacrificialsword",
         weapon.WeaponName.TheWidsith: "thewidsith",
         weapon.WeaponName.AquilaFavonia: "aquilafavonia",
+        weapon.WeaponName.LostPrayerToTheSacredWinds: "lostprayertothesacredwinds",
+        weapon.WeaponName.MemoryOfDust: "memoryofdust",
     }[name]
 
 
