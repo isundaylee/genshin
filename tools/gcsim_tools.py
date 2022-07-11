@@ -48,8 +48,6 @@ def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
             e["logs"]["source"],
         )
     elif event_type == "element":
-
-        print(e)
         if e["msg"].startswith("infusion check picked up"):
             return e["msg"]
 
@@ -66,6 +64,11 @@ def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
             format_auras(e["logs"]["existing"]),
             format_auras(e["logs"]["after"]),
             e["logs"]["abil"],
+        )
+    elif event_type == "action":
+        return "{:15s} | {}".format(
+            raw_data["char_names"][e["char_index"]],
+            e["msg"],
         )
     else:
         return "-"
