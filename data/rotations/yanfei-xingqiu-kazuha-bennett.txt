@@ -1,3 +1,5 @@
+# team=Xingqiu,Yanfei,Kazuha,Bennett
+
 options swap_delay=12 mode=apl duration=70.0;
 energy every interval=480,720 amount=1;
 

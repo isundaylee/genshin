@@ -7,16 +7,17 @@ import click
 
 
 @click.command()
-@click.argument(
-    "team", type=lambda v: [character.CharacterName[c] for c in v.split(",")]
-)
 @click.argument("rotation_file", type=pathlib.Path)
-def main(team: List[character.CharacterName], rotation_file: pathlib.Path) -> None:
+def main(rotation_file: pathlib.Path) -> None:
     weapons = weapon.load_weapon_list("data/weapons.txt")
     characters = character.load_character_list("data/characters.txt", weapons=weapons)
 
     with open(rotation_file) as f:
-        rotation = f.read() + "\n"
+        header = next(f)
+        _, team_str = header.strip().split("# team=")
+        team = [character.CharacterName[c] for c in team_str.split(",")]
+
+        rotation = f.read()
 
     print(
         gcsim.generate_gcsim_config(
