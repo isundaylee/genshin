@@ -2,7 +2,7 @@
 
 import gzip
 import json
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 import click
 import pathlib
 
@@ -40,6 +40,26 @@ def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
             else "???",
             e["logs"]["post_recovery"],
             e["logs"]["source"],
+        )
+    elif event_type == "element":
+
+        print(e)
+        if e["msg"].startswith("infusion check picked up"):
+            return e["msg"]
+
+        assert e["msg"] == "application"
+        assert e["logs"]["target"] == 1
+
+        def format_auras(value: Optional[Dict[str, float]]) -> str:
+            if value is None:
+                return "none"
+            return ", ".join(v.replace(": ", "=") for v in sorted(value))
+
+        return "{:15s} | {:20s} -> {:20} | {}".format(
+            raw_data["char_names"][e["char_index"]],
+            format_auras(e["logs"]["existing"]),
+            format_auras(e["logs"]["after"]),
+            e["logs"]["abil"],
         )
     else:
         return "-"
