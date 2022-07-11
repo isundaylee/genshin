@@ -20,6 +20,18 @@ class Account:
 
         return Account(characters=characters, weapons=weapons, artifacts=artifacts)
 
+    def apply_overrides(self, overrides: str) -> None:
+        for o in overrides.split(","):
+            k, v = o.split("=")
+            c, key = k.split(".")
+
+            ch = self.characters[character.CharacterName[c]]
+
+            if key == "weapon":
+                ch.weapon = self.weapons[v]
+            else:
+                raise ValueError(f"Invalid key {key}")
+
 
 def load_artifacts(path: pathlib.Path) -> Iterable[artifact.Artifact]:
     with open(path) as f:

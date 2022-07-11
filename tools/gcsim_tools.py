@@ -5,7 +5,7 @@ import tempfile
 from genshin import account, gcsim, weapon, character
 import gzip
 import json
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional
 import click
 import pathlib
 import subprocess
@@ -105,8 +105,12 @@ def do_show_damages(result_file):
         )
 
 
-def _generate_gcsim_config(rotation_file: pathlib.Path) -> str:
+def _generate_gcsim_config(
+    rotation_file: pathlib.Path, *, overrides: Optional[str]
+) -> str:
     ac = account.Account.load(pathlib.Path("data"))
+    if overrides is not None:
+        ac.apply_overrides(overrides)
 
     with open(rotation_file) as f:
         header = next(f)
@@ -130,39 +134,56 @@ def do_generate_config(rotation_file: pathlib.Path) -> None:
 
 @main.command("run-sim")
 @click.argument("rotation_file", type=pathlib.Path)
+@click.option("--variant", multiple=True)
 @click.option("--details", is_flag=True)
-def do_run_sim(rotation_file: pathlib.Path, details: bool) -> None:
-    td = pathlib.Path(tempfile.mkdtemp(prefix="gcsim-"))
+def do_run_sim(rotation_file: pathlib.Path, details: bool, variant: List[str]) -> None:
+    def run_variant(overrides: Optional[str]) -> gcsim.GcsimSummary:
+        td = pathlib.Path(tempfile.mkdtemp(prefix="gcsim-"))
+        conf_path = td / "config.txt"
+        stdout_path = td / "stdout.txt"
+        result_path = td / "result.json"
+        gz_result_path = result_path.parent / (result_path.name + ".gz")
 
-    conf_path = td / "config.txt"
-    stdout_path = td / "stdout.txt"
-    result_path = td / "result.json"
-    gz_result_path = result_path.parent / (result_path.name + ".gz")
+        with open(conf_path, "w") as f:
+            f.write(_generate_gcsim_config(rotation_file, overrides=overrides))
 
-    with open(conf_path, "w") as f:
-        f.write(_generate_gcsim_config(rotation_file))
-
-    output = subprocess.check_output(
-        [GCSIM_PATH, "-c", conf_path, "-out", result_path, "-gz"]
-    )
-
-    with open(stdout_path, "wb") as f:
-        f.write(output)
-
-    if details:
-        print(f"Stdout at: {stdout_path}")
-        print(f"Result at: {gz_result_path}")
-
-    summary = gcsim.GcsimSummary.from_gcsim_output(output.decode())
-    print(
-        "duration {:5.1f}s | avg {:10.0f} | span {:10.0f} - {:10.0f} std {:10.0f}".format(
-            summary.duration,
-            summary.dps_avg,
-            summary.dps_min,
-            summary.dps_max,
-            summary.dps_std,
+        output = subprocess.check_output(
+            [GCSIM_PATH, "-c", conf_path, "-out", result_path, "-gz"]
         )
-    )
+
+        with open(stdout_path, "wb") as f:
+            f.write(output)
+
+        if details:
+            print(f"Stdout at: {stdout_path}")
+            print(f"Result at: {gz_result_path}")
+
+        return gcsim.GcsimSummary.from_gcsim_output(output.decode())
+
+    variants = {"baseline": None}
+    for v in variant:
+        k, v = v.split(":")
+        variants[k] = v
+
+    baseline_summary: Optional[gcsim.GcsimSummary] = None
+
+    for k, v in variants.items():
+        summary = run_variant(v)
+
+        if k == "baseline":
+            baseline_summary = summary
+
+        print(
+            "{:15s} | duration {:5.1f}s | avg {:10.0f} ({:5.1f}%) | span {:10.0f} - {:10.0f} std {:10.0f}".format(
+                k,
+                summary.duration,
+                summary.dps_avg,
+                100.0 * (summary.dps_avg / baseline_summary.dps_avg - 1.0),
+                summary.dps_min,
+                summary.dps_max,
+                summary.dps_std,
+            )
+        )
 
 
 if __name__ == "__main__":
