@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 
+from sys import stdout
+import tempfile
+from genshin import gcsim, weapon, character
 import gzip
 import json
 from typing import Any, Dict, Optional
 import click
 import pathlib
+import subprocess
+
+GCSIM_PATH = pathlib.Path("/Users/jiahaoli/Programming/Git/gcsim/cmd/gcsim/gcsim")
 
 
 @click.group()
@@ -94,6 +100,54 @@ def do_show_damages(result_file):
                 e["frame"] / 60.0, e["event"], format_event(e, raw_data=raw_data)
             )
         )
+
+
+def _generate_gcsim_config(rotation_file: pathlib.Path) -> str:
+    weapons = weapon.load_weapon_list("data/weapons.txt")
+    characters = character.load_character_list("data/characters.txt", weapons=weapons)
+
+    with open(rotation_file) as f:
+        header = next(f)
+        _, team_str = header.strip().split("# team=")
+        team = [character.CharacterName[c] for c in team_str.split(",")]
+
+        rotation = f.read()
+
+    return gcsim.generate_gcsim_config(
+        [characters[c] for c in team],
+        actions=[rotation],
+        target="target lvl=90 resist=0.1;",
+    )
+
+
+@main.command("generate-config")
+@click.argument("rotation_file", type=pathlib.Path)
+def do_generate_config(rotation_file: pathlib.Path) -> None:
+    print(_generate_gcsim_config(rotation_file))
+
+
+@main.command("run-sim")
+@click.argument("rotation_file", type=pathlib.Path)
+def do_run_sim(rotation_file: pathlib.Path) -> None:
+    td = pathlib.Path(tempfile.mkdtemp(prefix="gcsim-"))
+
+    conf_path = td / "config.txt"
+    stdout_path = td / "stdout.txt"
+    result_path = td / "result.json"
+    gz_result_path = result_path.parent / (result_path.name + ".gz")
+
+    with open(conf_path, "w") as f:
+        f.write(_generate_gcsim_config(rotation_file))
+
+    output = subprocess.check_output(
+        [GCSIM_PATH, "-c", conf_path, "-out", result_path, "-gz"]
+    )
+
+    with open(stdout_path, "wb") as f:
+        f.write(output)
+
+    print(f"Stdout at: {stdout_path}")
+    print(f"Result at: {gz_result_path}")
 
 
 if __name__ == "__main__":
