@@ -52,6 +52,8 @@ class Account:
                 ch.ascension = int(v)
             elif key == "lv":
                 ch.level = int(v)
+            elif key == "cons":
+                ch.constellations = int(v)
             elif key == "artifacts":
                 ch.artifacts = self.artifact_sets[v]
             else:
