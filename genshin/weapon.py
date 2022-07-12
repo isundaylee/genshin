@@ -20,6 +20,7 @@ class WeaponName(enum.IntEnum):
     MemoryOfDust = 8
     PrimordialJadeWingedSpear = 9
     TheCatch = 10
+    KagurasVerity = 11
 
 
 @attr.define
