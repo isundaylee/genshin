@@ -5,7 +5,9 @@ energy every interval=480,720 amount=1;
 
 # General macros
 xingqiu_eq: xingqiu skill[orbital=1], burst[orbital=1];
+xingqiu_qe: xingqiu burst[orbital=1], skill[orbital=1];
 xingqiu_e: xingqiu skill[orbital=1];
+bennett_e: bennett skill;
 bennett_ea: bennett skill, attack;
 
 wait_p_xingqiu: wait_for particles value=xingqiu max=200;
@@ -22,30 +24,33 @@ yanfei_q_rotation: yanfei
     attack:2, charge,
     attack, charge,
     attack:2, charge,
-    attack, skill, charge;
+    attack, skill, charge,
+    attack:3, charge;
 yanfei_noq_rotation: yanfei
     attack, skill,
     attack, charge,
     attack:3, charge,
     attack, charge,
     attack:3, charge,
-    attack, skill, charge;
+    attack, skill, charge,
+    attack:3, charge;
 chain yanfei_swap, yanfei_wait_bt, yanfei_q_rotation +if=.status.btburst>0&&.status.xqburst>300&&.tags.zhongli.shielded==1;
 chain yanfei_swap, yanfei_wait_bt, yanfei_noq_rotation +if=.status.btburst>0&&.status.xqburst>300&&.tags.zhongli.shielded==1;
 
-# Zhongli
-zhongli skill[hold_nostele=1] +swap_to=xingqiu;
-
 # Xingqiu sac sword woes
-chain xingqiu_eq, wait_p_xingqiu;
-chain xingqiu_e, wait_p_xingqiu +if=.status.xqburst>720;
+chain xingqiu_qe +if=.tags.zhongli.shielded==1;
+chain xingqiu_e, wait_p_xingqiu +if=.status.xqburst>720&&.tags.zhongli.shielded==1;
 
 # Bennett
-bennett skill, attack, burst, attack +if=.status.xqburst>300;
+bennett skill, attack, burst, attack +if=.status.xqburst>300&&.tags.zhongli.shielded==1;
+
+# Zhongli
+zhongli skill, burst +swap_to=xingqiu;
+zhongli skill[hold_nostele=1] +swap_to=xingqiu;
 
 # Fav Bennett funnel
-chain bennett_ea, xingqiu_swap, wait_p_bennett +if=.energy.xingqiu<80;
-chain bennett_ea, wait_p_bennett +if=.energy.bennett<40;
+chain bennett_e, wait_p_bennett +if=.energy.bennett<40;
+chain bennett_e, xingqiu_swap, wait_p_bennett +if=.energy.xingqiu<80;
 
 # Gap fill
 bennett skill;
