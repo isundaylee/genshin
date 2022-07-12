@@ -19,6 +19,7 @@ class WeaponName(enum.IntEnum):
     LostPrayerToTheSacredWinds = 7
     MemoryOfDust = 8
     PrimordialJadeWingedSpear = 9
+    TheCatch = 10
 
 
 @attr.define

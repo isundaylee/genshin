@@ -7,6 +7,7 @@ favonius_lance_2=FavoniusLance/5/80/3
 aquila_favonia=AquilaFavonia/6/90/1
 sacrificial_sword=SacrificialSword/6/90/5
 jade_spear=PrimordialJadeWingedSpear/6/90/1
+the_catch=TheCatch/6/90/5
 # Wishlist below
 lost_prayer=LostPrayerToTheSacredWinds/6/90/1
 memory_of_dust=MemoryOfDust/6/90/1
