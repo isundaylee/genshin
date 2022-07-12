@@ -16,6 +16,8 @@ class CharacterName(enum.IntEnum):
     Bennett = 2
     Xingqiu = 3
     Zhongli = 4
+    Xiangling = 5
+    Raiden = 6
 
 
 @attr.define

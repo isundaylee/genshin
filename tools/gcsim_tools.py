@@ -31,7 +31,7 @@ def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
     event_type = e["event"]
 
     if event_type == "damage":
-        return "{:15s} | {:30s} | {:5s} {:10s} | {:10.0f}".format(
+        return "{:15s} | {:35s} | {:5s} {:10s} | {:10.0f}".format(
             raw_data["char_names"][e["char_index"]],
             e["msg"],
             "crit" if e["logs"]["crit"] else "",
@@ -50,8 +50,10 @@ def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
     elif event_type == "element":
         if e["msg"].startswith("infusion check picked up"):
             return e["msg"]
+        if e["msg"] in {"ec wane", "ec expired"}:
+            return e["msg"]
 
-        assert e["msg"] == "application"
+        assert e["msg"] == "application", e
         assert e["logs"]["target"] == 1
 
         def format_auras(value: Optional[Dict[str, float]]) -> str:
@@ -131,7 +133,7 @@ def _generate_gcsim_config(
 @main.command("generate-config")
 @click.argument("rotation_file", type=pathlib.Path)
 def do_generate_config(rotation_file: pathlib.Path) -> None:
-    print(_generate_gcsim_config(rotation_file))
+    print(_generate_gcsim_config(rotation_file, overrides=None))
 
 
 @main.command("run-sim")

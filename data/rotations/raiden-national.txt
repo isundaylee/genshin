@@ -1,0 +1,56 @@
+# team=Raiden,Xingqiu,Bennett,Xiangling
+
+options swap_delay=12 mode=apl duration=60.0;
+energy every interval=480,720 amount=1;
+
+# General macros
+xingqiu_eq: xingqiu skill[orbital=1], burst[orbital=1];
+xingqiu_e: xingqiu skill[orbital=1];
+bennett_ea: bennett skill, attack;
+wait_p_xingqiu: wait_for particles value=xingqiu max=200;
+wait_p_bennett: wait_for particles value=bennett max=200;
+swap_raiden: raiden swap;
+swap_xiangling: xiangling swap;
+swap_xingqiu: xingqiu swap;
+
+# Always want to do a full Raiden attack chain in burst
+raiden attack:2, charge,
+    attack:2, charge,
+    attack:2, charge,
+    attack:2, charge
+    +if=.status.raidenburst>180;
+
+# Raiden E refresh
+raiden skill +if=.status.raidenskill<240;
+
+# Xingqiu sac sword woes
+chain xingqiu_eq, wait_p_xingqiu;
+chain xingqiu_e, wait_p_xingqiu +if=.status.xqburst>720;
+
+# Bennett burst
+bennett skill, attack, burst, attack +if=.status.xqburst>300;
+
+# Xiangling EQ
+xiangling_wait_bt: wait_for mods value=.xiangling.bennett-field==1 max=100;
+xiangling_q: xiangling burst;
+xiangling skill;
+chain xiangling_wait_bt, xiangling_q +if=.status.btburst>0;
+
+# Raiden burst
+raiden_wait_bt: wait_for mods value=.raiden.bennett-field==1 max=100;
+raiden_q: raiden burst;
+chain raiden_wait_bt, raiden_q +if=.status.btburst>0;
+
+# Xiangling A if Raiden burst not up
+xiangling attack:3 +if=.status.btburst>0&&.status.xqburst>0;
+
+# Bennett funnels
+chain bennett_ea, wait_p_bennett +if=.status.btburst==0&&.energy.bennett<40;
+chain bennett_ea, swap_xiangling, wait_p_bennett +if=.status.btburst==0&&.energy.xiangling<80;
+chain bennett_ea, swap_raiden, wait_p_bennett +if=.status.btburst==0&&.energy.raiden<90;
+chain bennett_ea, swap_xingqiu, wait_p_bennett +if=.status.btburst==0&&.energy.xingqiu<60;
+
+# Gap fill
+bennett skill;
+xiangling attack +is_onfield;
+raiden attack +is_onfield;

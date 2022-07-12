@@ -17,6 +17,7 @@ def artifact_set_to_str(artifact_set: artifact.ArtifactSet) -> str:
         artifact.ArtifactSet.TM: "tenacityofthemillelith",
         artifact.ArtifactSet.AP: "archaicpetra",
         artifact.ArtifactSet.WT: "wandererstroupe",
+        artifact.ArtifactSet.ESF: "emblemofseveredfate",
     }[artifact_set]
 
 
@@ -34,6 +35,7 @@ def artifact_stat_type_to_str(stat_type: artifact.ArtifactStatType) -> str:
         artifact.ArtifactStatType.ER_PCT: "er",
         artifact.ArtifactStatType.EDP_PCT: "pyro%",
         artifact.ArtifactStatType.EDH_PCT: "hydro%",
+        artifact.ArtifactStatType.EDE_PCT: "electro%",
     }[stat_type]
 
 
@@ -44,6 +46,8 @@ def character_name_to_str(name: character.CharacterName) -> str:
         character.CharacterName.Bennett: "bennett",
         character.CharacterName.Xingqiu: "xingqiu",
         character.CharacterName.Zhongli: "zhongli",
+        character.CharacterName.Xiangling: "xiangling",
+        character.CharacterName.Raiden: "raiden",
     }[name]
 
 
@@ -58,6 +62,7 @@ def weapon_name_to_str(name: weapon.WeaponName) -> str:
         weapon.WeaponName.AquilaFavonia: "aquilafavonia",
         weapon.WeaponName.LostPrayerToTheSacredWinds: "lostprayertothesacredwinds",
         weapon.WeaponName.MemoryOfDust: "memoryofdust",
+        weapon.WeaponName.PrimordialJadeWingedSpear: "primordialjadewingedspear",
     }[name]
 
 

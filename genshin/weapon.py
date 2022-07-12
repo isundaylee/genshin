@@ -18,6 +18,7 @@ class WeaponName(enum.IntEnum):
     AquilaFavonia = 6
     LostPrayerToTheSacredWinds = 7
     MemoryOfDust = 8
+    PrimordialJadeWingedSpear = 9
 
 
 @attr.define

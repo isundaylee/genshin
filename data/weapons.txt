@@ -3,8 +3,10 @@ skyward_atlas=SkywardAtlas/6/90/1
 iron_sting=IronSting/5/80/1
 favonius_sword=FavoniusSword/6/90/5
 favonius_lance=FavoniusLance/6/90/5
+favonius_lance_2=FavoniusLance/5/80/3
 aquila_favonia=AquilaFavonia/6/90/1
 sacrificial_sword=SacrificialSword/6/90/5
+jade_spear=PrimordialJadeWingedSpear/6/90/1
 # Wishlist below
 lost_prayer=LostPrayerToTheSacredWinds/6/90/1
 memory_of_dust=MemoryOfDust/6/90/1
