@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import enum
-from typing import List
+from typing import Dict, List, Tuple
 
 import attr
 
@@ -25,6 +25,11 @@ class WeaponName(enum.IntEnum):
     FreedomSworn = 13
 
 
+_BASE_STATS: Dict[Tuple[WeaponName, int, int], Tuple[int]] = {
+    (WeaponName.SkywardAtlas, 6, 90): (674,),
+}
+
+
 @attr.define
 class Weapon:
     name: WeaponName
@@ -46,3 +51,7 @@ class Weapon:
     @property
     def level_cap(self) -> int:
         return _LEVEL_CAPS[self.ascension]
+
+    @property
+    def base_atk(self) -> int:
+        return _BASE_STATS[(self.name, self.ascension, self.level)][0]

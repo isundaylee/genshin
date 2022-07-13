@@ -1,5 +1,7 @@
+import collections
 import enum
-from typing import List
+from genshin import character
+from typing import DefaultDict, Dict, List
 
 import attr
 
@@ -53,6 +55,21 @@ class ArtifactStatType(enum.Enum):
     EDA_PCT = "windBonus"
     EDG_PCT = "rockBonus"
     PD_PCT = "physicalBonus"
+
+
+# Taken from https://docs.google.com/document/d/1_UpwP0VziHehZVwdsD74wYuWD9pdSAknNVzs30U4vFE/edit
+_STANDARD_ROLL: Dict[ArtifactStatType, float] = {
+    ArtifactStatType.HP: 253.94,
+    ArtifactStatType.HP_PCT: 0.0496,
+    ArtifactStatType.ATK: 16.54,
+    ArtifactStatType.ATK_PCT: 0.0496,
+    ArtifactStatType.DEF: 19.68,
+    ArtifactStatType.DEF_PCT: 0.062,
+    ArtifactStatType.CR_PCT: 0.0331,
+    ArtifactStatType.CD_PCT: 0.0662,
+    ArtifactStatType.EM: 19.82,
+    ArtifactStatType.ER_PCT: 0.0551,
+}
 
 
 @attr.s(auto_attribs=True)
@@ -133,3 +150,26 @@ def to_dict(artifacts: List[Artifact]):
         ]
 
     return result
+
+
+def get_artifact_scores(
+    artifacts: List[Artifact], ch: character.Character, *, convert_nopct_stats: bool
+) -> Dict[ArtifactStatType, float]:
+    results: DefaultDict[ArtifactStatType, float] = collections.defaultdict(lambda: 0.0)
+    for a in artifacts:
+        for s in a.sub_stats:
+            t, v = s.stat_type, s.stat_value
+
+            if convert_nopct_stats:
+                if t == ArtifactStatType.HP:
+                    t = ArtifactStatType.HP_PCT
+                    v /= ch.base_hp
+                elif t == ArtifactStatType.ATK:
+                    t = ArtifactStatType.ATK_PCT
+                    v /= ch.base_atk_with_weapon
+                elif t == ArtifactStatType.DEF:
+                    t = ArtifactStatType.DEF_PCT
+                    v /= ch.base_def
+
+            results[t] += v / _STANDARD_ROLL[t]
+    return dict(results)

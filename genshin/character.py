@@ -21,6 +21,11 @@ class CharacterName(enum.IntEnum):
     Mona = 7
 
 
+_BASE_STATS: Dict[Tuple[CharacterName, int, int], Tuple[int, int, int]] = {
+    (CharacterName.Yanfei, 6, 90): (9352, 240, 587),
+}
+
+
 @attr.define
 class Character:
     name: CharacterName
@@ -69,7 +74,19 @@ class Character:
 
     @property
     def base_hp(self) -> int:
-        pass
+        return _BASE_STATS[(self.name, self.ascension, self.level)][0]
+
+    @property
+    def base_atk(self) -> int:
+        return _BASE_STATS[(self.name, self.ascension, self.level)][1]
+
+    @property
+    def base_atk_with_weapon(self) -> int:
+        return self.base_atk + self.weapon.base_atk
+
+    @property
+    def base_def(self) -> int:
+        return _BASE_STATS[(self.name, self.ascension, self.level)][2]
 
     @property
     def combined_artifact_stats(self) -> Dict[artifact.ArtifactStatType, float]:
