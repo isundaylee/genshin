@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 
-from collections import Set
 import json
 import pathlib
-from typing import DefaultDict, Dict, List
+from typing import Set, Dict, List
 
 import click
 import tabulate
