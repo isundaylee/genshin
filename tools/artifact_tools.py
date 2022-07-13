@@ -28,7 +28,7 @@ USEFUL_SUBSTATS: Dict[
         artifact.ArtifactStatType.CR_PCT: 1.0,
         artifact.ArtifactStatType.CD_PCT: 1.0,
         artifact.ArtifactStatType.EM: 1.0,
-        artifact.ArtifactStatType.ATK_PCT: 0.4,
+        artifact.ArtifactStatType.ATK_PCT: 1.0,
     }
 }
 
