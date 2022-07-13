@@ -110,7 +110,7 @@ def do_show_events(result_file: pathlib.Path, debug_log_flavor: str) -> None:
 
 
 def _generate_gcsim_config(
-    rotation_file: pathlib.Path, *, overrides: Optional[str]
+    rotation_file: pathlib.Path, *, overrides: Optional[str], target: str
 ) -> str:
     ac = account.Account.load(pathlib.Path("data"))
     if overrides is not None:
@@ -126,14 +126,15 @@ def _generate_gcsim_config(
     return gcsim.generate_gcsim_config(
         [ac.characters[c] for c in team],
         actions=[rotation],
-        target="target lvl=90 resist=0.1;",
+        target=target,
     )
 
 
 @main.command("generate-config")
 @click.argument("rotation_file", type=pathlib.Path)
-def do_generate_config(rotation_file: pathlib.Path) -> None:
-    print(_generate_gcsim_config(rotation_file, overrides=None))
+@click.option("--target", default="target lvl=90 resist=0.1;")
+def do_generate_config(rotation_file: pathlib.Path, target: str) -> None:
+    print(_generate_gcsim_config(rotation_file, overrides=None, target=target))
 
 
 @main.command("run-sim")
@@ -141,11 +142,13 @@ def do_generate_config(rotation_file: pathlib.Path) -> None:
 @click.option("--variant", multiple=True)
 @click.option("--details", is_flag=True)
 @click.option("--working-dir", type=pathlib.Path)
+@click.option("--target", default="target lvl=90 resist=0.1;")
 def do_run_sim(
     rotation_file: pathlib.Path,
     details: bool,
     variant: List[str],
     working_dir: Optional[pathlib.Path],
+    target: str,
 ) -> None:
     if working_dir is None:
         working_dir = pathlib.Path(tempfile.mkdtemp(prefix="gcsim-"))
@@ -159,7 +162,11 @@ def do_run_sim(
         gz_result_path = result_path.parent / (result_path.name + ".gz")
 
         with open(conf_path, "w") as f:
-            f.write(_generate_gcsim_config(rotation_file, overrides=overrides))
+            f.write(
+                _generate_gcsim_config(
+                    rotation_file, overrides=overrides, target=target
+                )
+            )
 
         output = subprocess.check_output(
             [GCSIM_PATH, "-c", conf_path, "-out", result_path, "-gz", "-debugMinMax"]

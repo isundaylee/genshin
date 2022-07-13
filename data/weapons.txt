@@ -8,8 +8,10 @@ aquila_favonia=AquilaFavonia/6/90/1
 sacrificial_sword=SacrificialSword/6/90/5
 jade_spear=PrimordialJadeWingedSpear/6/90/1
 the_catch=TheCatch/6/90/5
+thrilling_tales=ThrillingTalesOfDragonSlayers/6/90/5
 # Wishlist below
 lost_prayer=LostPrayerToTheSacredWinds/6/90/1
 memory_of_dust=MemoryOfDust/6/90/1
 kagura=KagurasVerity/6/90/1
 kagurar5=KagurasVerity/6/90/5
+freedom_sworn=FreedomSworn/6/90/1

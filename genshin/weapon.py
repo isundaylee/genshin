@@ -21,6 +21,8 @@ class WeaponName(enum.IntEnum):
     PrimordialJadeWingedSpear = 9
     TheCatch = 10
     KagurasVerity = 11
+    ThrillingTalesOfDragonSlayers = 12
+    FreedomSworn = 13
 
 
 @attr.define

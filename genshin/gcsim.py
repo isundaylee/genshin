@@ -48,6 +48,7 @@ def character_name_to_str(name: character.CharacterName) -> str:
         character.CharacterName.Zhongli: "zhongli",
         character.CharacterName.Xiangling: "xiangling",
         character.CharacterName.Raiden: "raiden",
+        character.CharacterName.Mona: "mona",
     }[name]
 
 
@@ -65,6 +66,8 @@ def weapon_name_to_str(name: weapon.WeaponName) -> str:
         weapon.WeaponName.PrimordialJadeWingedSpear: "primordialjadewingedspear",
         weapon.WeaponName.TheCatch: "thecatch",
         weapon.WeaponName.KagurasVerity: "kagura",
+        weapon.WeaponName.ThrillingTalesOfDragonSlayers: "thrillingtalesofdragonslayers",
+        weapon.WeaponName.FreedomSworn: "freedomsworn",
     }[name]
 
 

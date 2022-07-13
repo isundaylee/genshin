@@ -1,0 +1,25 @@
+# team=Bennett,Kazuha,Mona,Yanfei
+options swap_delay=12 mode=sl duration=50.0;
+energy every interval=480,720 amount=100;
+
+# Phase 1
+bennett burst, skill, skill;
+wait 180;
+kazuha skill;
+mona attack, skill;
+yanfei swap;
+wait 60;
+yanfei skill, charge;
+yanfei attack, charge;
+
+# Phase 2
+mona attack, dash;
+kazuha burst;
+bennett burst, skill;
+kazuha skill;
+mona skill, burst;
+yanfei swap;
+wait 50;
+yanfei burst, charge;
+yanfei skill, charge;
+
