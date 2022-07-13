@@ -73,7 +73,7 @@ def do_show_scores():
 
         row.append(c.name.name)
         for s in stat_order:
-            if s in scores:
+            if (s in scores) and (s in USEFUL_SUBSTATS[c.name]):
                 row.append(f"{scores[s]:.2f}")
             else:
                 row.append("")
