@@ -20,6 +20,7 @@ def artifact_set_to_str(artifact_set: artifact.ArtifactSet) -> str:
         artifact.ArtifactSet.ESF: "emblemofseveredfate",
         artifact.ArtifactSet.GF: "gladiatorsfinale",
         artifact.ArtifactSet.TF: "thunderingfury",
+        artifact.ArtifactSet.SR: "shimenawasreminiscence",
     }[artifact_set]
 
 
