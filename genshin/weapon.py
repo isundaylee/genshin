@@ -24,6 +24,7 @@ class WeaponName(enum.IntEnum):
     ThrillingTalesOfDragonSlayers = 12
     FreedomSworn = 13
     TheViridescentHunt = 14
+    TheStringless = 15
 
 
 _BASE_STATS: Dict[Tuple[WeaponName, int, int], Tuple[int]] = {

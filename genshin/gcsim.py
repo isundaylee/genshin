@@ -72,6 +72,7 @@ def weapon_name_to_str(name: weapon.WeaponName) -> str:
         weapon.WeaponName.ThrillingTalesOfDragonSlayers: "thrillingtalesofdragonslayers",
         weapon.WeaponName.FreedomSworn: "freedomsworn",
         weapon.WeaponName.TheViridescentHunt: "theviridescenthunt",
+        weapon.WeaponName.TheStringless: "thestringless",
     }[name]
 
 
