@@ -1,0 +1,6 @@
+# team=Fischl
+
+options swap_delay=12 mode=apl duration=10.0;
+energy every interval=480,720 amount=1;
+
+fischl skill;

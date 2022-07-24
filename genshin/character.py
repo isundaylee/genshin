@@ -19,6 +19,7 @@ class CharacterName(enum.IntEnum):
     Xiangling = 5
     Raiden = 6
     Mona = 7
+    Fischl = 8
 
 
 _BASE_STATS: Dict[Tuple[CharacterName, int, int], Tuple[int, int, int]] = {

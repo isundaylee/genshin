@@ -9,6 +9,8 @@ sacrificial_sword=SacrificialSword/6/90/5
 jade_spear=PrimordialJadeWingedSpear/6/90/1
 the_catch=TheCatch/6/90/5
 thrilling_tales=ThrillingTalesOfDragonSlayers/6/90/5
+viridescent_hunt=TheViridescentHunt/6/90/1
+
 # Wishlist below
 lost_prayer=LostPrayerToTheSacredWinds/6/90/1
 memory_of_dust=MemoryOfDust/6/90/1

@@ -18,6 +18,8 @@ def artifact_set_to_str(artifact_set: artifact.ArtifactSet) -> str:
         artifact.ArtifactSet.AP: "archaicpetra",
         artifact.ArtifactSet.WT: "wandererstroupe",
         artifact.ArtifactSet.ESF: "emblemofseveredfate",
+        artifact.ArtifactSet.GF: "gladiatorsfinale",
+        artifact.ArtifactSet.TF: "thunderingfury",
     }[artifact_set]
 
 
@@ -49,6 +51,7 @@ def character_name_to_str(name: character.CharacterName) -> str:
         character.CharacterName.Xiangling: "xiangling",
         character.CharacterName.Raiden: "raiden",
         character.CharacterName.Mona: "mona",
+        character.CharacterName.Fischl: "fischl",
     }[name]
 
 
@@ -68,6 +71,7 @@ def weapon_name_to_str(name: weapon.WeaponName) -> str:
         weapon.WeaponName.KagurasVerity: "kagura",
         weapon.WeaponName.ThrillingTalesOfDragonSlayers: "thrillingtalesofdragonslayers",
         weapon.WeaponName.FreedomSworn: "freedomsworn",
+        weapon.WeaponName.TheViridescentHunt: "theviridescenthunt",
     }[name]
 
 
