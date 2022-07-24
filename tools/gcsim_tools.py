@@ -139,6 +139,7 @@ def do_generate_config(rotation_file: pathlib.Path, target: str) -> None:
 
 @main.command("run-sim")
 @click.argument("rotation_file", type=pathlib.Path)
+@click.option("--baseline-overrides")
 @click.option("--variant", multiple=True)
 @click.option("--details", is_flag=True)
 @click.option("--working-dir", type=pathlib.Path)
@@ -146,6 +147,7 @@ def do_generate_config(rotation_file: pathlib.Path, target: str) -> None:
 def do_run_sim(
     rotation_file: pathlib.Path,
     details: bool,
+    baseline_overrides: Optional[str],
     variant: List[str],
     working_dir: Optional[pathlib.Path],
     target: str,
@@ -181,10 +183,13 @@ def do_run_sim(
 
         return gcsim.GcsimSummary.from_gcsim_output(output.decode())
 
-    variants = {"baseline": None}
+    variants = {"baseline": None if baseline_overrides is None else baseline_overrides}
     for v in variant:
         k, v = v.split(":")
-        variants[k] = v
+        if baseline_overrides is None:
+            variants[k] = v
+        else:
+            variants[k] = baseline_overrides + "," + v
 
     baseline_summary: Optional[gcsim.GcsimSummary] = None
 

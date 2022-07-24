@@ -1,0 +1,15 @@
+# team=Yanfei
+
+options swap_delay=12 mode=apl duration=70.0;
+energy every interval=480,720 amount=1;
+
+# yanfei burst, charge,
+#     skill, charge,
+#     attack:3, charge,
+#     attack:3, charge,
+#     attack:3, charge;
+yanfei skill, charge,
+    attack:3, charge,
+    attack:3, charge,
+    attack:3, charge;
+
