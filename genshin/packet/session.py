@@ -1,3 +1,4 @@
+import datetime
 import socket
 from typing import List
 
@@ -20,9 +21,17 @@ class Session:
 
                 if socket.inet_ntoa(ip.src) == my_ip:
                     self.packets.append(
-                        packet.Packet(ts, packet.Direction.SENT, udp.data)
+                        packet.Packet(
+                            datetime.datetime.fromtimestamp(ts),
+                            packet.Direction.SENT,
+                            udp.data,
+                        )
                     )
                 elif socket.inet_ntoa(ip.dst) == my_ip:
                     self.packets.append(
-                        packet.Packet(ts, packet.Direction.RECEIVED, udp.data)
+                        packet.Packet(
+                            datetime.datetime.fromtimestamp(ts),
+                            packet.Direction.RECEIVED,
+                            udp.data,
+                        )
                     )
