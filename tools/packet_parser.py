@@ -9,13 +9,18 @@ from genshin.packet import session, packet
 @click.command()
 @click.argument("path")
 @click.argument("my_ip")
-def main(path: str, my_ip: str) -> None:
+@click.option("--initial-pcap")
+def main(path: str, my_ip: str, initial_pcap: Optional[str]) -> None:
     logging.basicConfig(
         format="%(asctime)s %(levelname)-10s %(name)-60s %(message)s",
         level=logging.INFO,
     )
 
-    s = session.Session(path, my_ip)
+    if initial_pcap is not None:
+        initial_s = session.Session(initial_pcap, my_ip)
+        s = session.Session(path, my_ip, copy_key_from=initial_s)
+    else:
+        s = session.Session(path, my_ip)
 
     last_time_interval: Optional[str] = None
     for p in s.get_decrypted_packets():

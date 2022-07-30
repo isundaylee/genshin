@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import collections
 import datetime
 import os
@@ -101,6 +103,9 @@ class KCPSession:
         return 24 + length
 
     def _handle_push(self, sn: int, frg: int, data: bytes) -> None:
+        if self._last_delivered_sn == -1:
+            self._last_delivered_sn = sn - 1
+
         if sn <= self._last_delivered_sn:
             self.logger.warning(
                 "Received delivered dup with sn %d of size %d bytes", sn, len(data)
@@ -143,7 +148,9 @@ class KCPSession:
 
 
 class Session:
-    def __init__(self, path: str, my_ip: str) -> None:
+    def __init__(
+        self, path: str, my_ip: str, *, copy_key_from: Optional[Session] = None
+    ) -> None:
         self.packets: List[packet.Packet] = []
         self.udp_logger = logging.getLogger("udp-session")
         self.kcp_out_logger = logging.getLogger("kcp-out")
@@ -209,7 +216,11 @@ class Session:
                             )
                         )
 
-        self.raw_dispatch_head, self.xor_key = self._infer_xor_key()
+        if copy_key_from is None:
+            self.raw_dispatch_head, self.xor_key = self._infer_xor_key()
+        else:
+            self.raw_dispatch_head = copy_key_from.raw_dispatch_head
+            self.xor_key = copy_key_from.xor_key
 
     def _infer_xor_key(self) -> None:
         assert self.packets
