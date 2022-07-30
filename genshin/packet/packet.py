@@ -14,3 +14,7 @@ class Packet:
         self.timestamp = timestamp
         self.direction = direction
         self.content = content
+
+        # Content
+        # 0x4567  opcode  hdr_len data_len                                      0x89ab
+        # xx xx | xx xx | xx xx | xx xx xx xx | ... header ... | ... data ... | xx xx
