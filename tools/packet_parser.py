@@ -40,6 +40,18 @@ def main(path: str, my_ip: str, initial_pcap: Optional[str]) -> None:
             )
         )
 
+        if not p.is_compound_packet:
+            continue
+
+        for sp in p.get_sub_packets():
+            print(
+                "{} |           | {:50s} | {}".format(
+                    sp.timestamp.strftime("%Y%m%d %H:%M:%S.%f"),
+                    sp.opcode.name,
+                    session.format_bytes(sp.data),
+                )
+            )
+
 
 if __name__ == "__main__":
     main()

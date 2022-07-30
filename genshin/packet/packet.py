@@ -1,6 +1,9 @@
+from __future__ import annotations
+
 import enum
 import datetime
 import struct
+from typing import Iterator, List
 
 from genshin.packet import opcodes
 
@@ -42,3 +45,57 @@ class DecryptedPacket:
     def opcode(self) -> opcodes.Opcode:
         (op,) = struct.unpack(">H", self.content[2:4])
         return opcodes.Opcode(op)
+
+    @property
+    def is_compound_packet(self) -> bool:
+        return self.opcode in {opcodes.Opcode.UnionCmdNotify}
+
+    @property
+    def hdr_len(self) -> bytes:
+        (hlen,) = struct.unpack(">H", self.content[4:6])
+        return hlen
+
+    @property
+    def data_len(self) -> bytes:
+        (dlen,) = struct.unpack(">L", self.content[6:10])
+        return dlen
+
+    @property
+    def data(self) -> bytes:
+        hlen = self.hdr_len
+        dlen = self.data_len
+        assert len(self.content) == 2 + 2 + 2 + 4 + hlen + dlen + 2
+        return self.content[2 + 2 + 2 + 4 + hlen : 2 + 2 + 2 + 4 + hlen + dlen]
+
+    def get_sub_packets(self) -> Iterator[DecryptedPacket]:
+        assert self.is_compound_packet
+
+        if self.opcode == opcodes.Opcode.UnionCmdNotify:
+            from genshin.packet.proto.UnionCmdNotify_pb2 import UnionCmdNotify
+
+            pb = UnionCmdNotify()
+            pb.ParseFromString(self.data)
+
+            for cmd in pb.cmd_list:
+                yield DecryptedSubPacket(
+                    timestamp=self.timestamp,
+                    direction=self.direction,
+                    opcode=opcodes.Opcode(cmd.message_id),
+                    data=cmd.body,
+                )
+        else:
+            assert False
+
+
+class DecryptedSubPacket:
+    def __init__(
+        self,
+        timestamp: datetime.datetime,
+        direction: Direction,
+        opcode: opcodes.Opcode,
+        data: bytes,
+    ) -> None:
+        self.timestamp = timestamp
+        self.direction = direction
+        self.opcode = opcode
+        self.data = data
