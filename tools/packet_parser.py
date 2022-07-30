@@ -26,10 +26,11 @@ def main(path: str, my_ip: str) -> None:
             last_time_interval = time_interval
 
         print(
-            "{} | {} {:5d} | {}".format(
+            "{} | {} {:5d} | {:50s} | {}".format(
                 p.timestamp.strftime("%Y%m%d %H:%M:%S.%f"),
                 "-->" if p.direction == packet.Direction.SENT else "<--",
                 len(p.content),
+                p.opcode.name,
                 session.format_bytes(p.content),
             )
         )
