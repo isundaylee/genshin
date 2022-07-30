@@ -1,9 +1,10 @@
 import collections
 import datetime
+import os
 import socket
 import struct
 import logging
-from typing import Deque, Dict, List, Optional, Tuple
+from typing import Deque, Dict, Iterator, List, Optional, Tuple
 
 import dpkt
 
@@ -23,6 +24,18 @@ def format_bytes(data: bytes, start: int = 20, end: int = 4) -> str:
         return _format_as_hex(data[:start]) + "     " + _format_as_hex(data[start:])
 
     return _format_as_hex(data[:start]) + " ... " + _format_as_hex(data[-end:])
+
+
+def _xor_bytes(a: bytes, b: bytes) -> bytes:
+    assert len(a) == len(b)
+    return bytes(x ^ y for x, y in zip(a, b))
+
+
+def _xor_bytes_repeat(a: bytes, key: bytes) -> bytes:
+    if len(a) <= len(key):
+        return _xor_bytes(a, key[: len(a)])
+
+    return _xor_bytes(a[: len(key)], key) + _xor_bytes_repeat(a[len(key) :], key)
 
 
 class KCPSession:
@@ -195,3 +208,73 @@ class Session:
                                 kcp_out_packet,
                             )
                         )
+
+        self.raw_dispatch_head, self.xor_key = self._infer_xor_key()
+
+    def _infer_xor_key(self) -> None:
+        assert self.packets
+
+        # raw_ means what we received
+        # dec_ means after XOR decryption
+
+        raw_dispatch_head = self.packets[0].content[:2]
+        potential_key = b""
+
+        for p in self.packets:
+            if p.content[:2] != raw_dispatch_head and (len(potential_key) == 0):
+                # This is the PlayerLoginReq
+                potential_key += _xor_bytes(b"\x45\x67\x00\x70", p.content[:4])
+                continue
+
+            if len(potential_key) == 4 and (
+                p.content[:4] == _xor_bytes(b"\x45\x67\x00\x16", potential_key)
+            ):
+                # This is the WorldPlayerRTTNotify
+                potential_key += _xor_bytes(b"\x00\x00", p.content[4:6])
+                break
+
+        assert len(potential_key) == 6
+
+        for p in self.packets:
+            if _xor_bytes(p.content[:4], potential_key[:4]) != b"\x45\x67\x04\xaf":
+                continue
+
+            (hlen,) = struct.unpack(
+                ">H", _xor_bytes(p.content[4:6], potential_key[4:6])
+            )
+            content_start_offset = 2 + 2 + 2 + 4 + hlen
+            raw_data_content = p.content[content_start_offset:-2]
+
+            with open(
+                os.path.join(
+                    os.path.dirname(__file__),
+                    "..",
+                    "..",
+                    "resources",
+                    "initial_WindSeedClientNotify_content.bin",
+                ),
+                "rb",
+            ) as f:
+                plaintext_content = f.read()[:-2]
+
+            full_xor_key = _xor_bytes(raw_data_content, plaintext_content)
+            xor_key = full_xor_key[
+                4096 - content_start_offset : 4096 + 4096 - content_start_offset
+            ]
+            assert xor_key[: len(potential_key)] == potential_key
+            assert len(xor_key) == 4096
+
+            return raw_dispatch_head, xor_key
+
+        assert False
+
+    def get_decrypted_packets(self) -> Iterator[packet.DecryptedPacket]:
+        for p in self.packets:
+            if p.content[:2] == self.raw_dispatch_head:
+                continue
+
+            yield packet.DecryptedPacket(
+                timestamp=p.timestamp,
+                direction=p.direction,
+                content=_xor_bytes_repeat(p.content, self.xor_key),
+            )

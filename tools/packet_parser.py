@@ -18,7 +18,7 @@ def main(path: str, my_ip: str) -> None:
     s = session.Session(path, my_ip)
 
     last_time_interval: Optional[str] = None
-    for p in s.packets:
+    for p in s.get_decrypted_packets():
         time_interval = p.timestamp.strftime("%Y%m%d%H%M%S")
 
         if time_interval != last_time_interval:

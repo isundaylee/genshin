@@ -18,3 +18,18 @@ class Packet:
         # Content
         # 0x4567  opcode  hdr_len data_len                                      0x89ab
         # xx xx | xx xx | xx xx | xx xx xx xx | ... header ... | ... data ... | xx xx
+
+class DecryptedPacket:
+    def __init__(
+        self, timestamp: datetime.datetime, direction: Direction, content: bytes
+    ) -> None:
+        self.timestamp = timestamp
+        self.direction = direction
+        self.content = content
+
+        assert content[:2] == b"\x45\x67"
+        assert content[-2:] == b"\x89\xab"
+
+        # Content
+        # 0x4567  opcode  hdr_len data_len                                      0x89ab
+        # xx xx | xx xx | xx xx | xx xx xx xx | ... header ... | ... data ... | xx xx
