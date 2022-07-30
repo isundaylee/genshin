@@ -27,16 +27,17 @@ def main(path: str, my_ip: str, initial_pcap: Optional[str]) -> None:
         time_interval = p.timestamp.strftime("%Y%m%d%H%M%S")
 
         if time_interval != last_time_interval:
-            print("-" * 100)
+            print("-" * 250)
             last_time_interval = time_interval
 
         print(
-            "{} | {} {:5d} | {:50s} | {}".format(
+            "{} | {} {:5d} | {:50s} | {:75s} | {}".format(
                 p.timestamp.strftime("%Y%m%d %H:%M:%S.%f"),
                 "-->" if p.direction == packet.Direction.SENT else "<--",
                 len(p.content),
                 p.opcode.name,
                 session.format_bytes(p.content),
+                p.string_summary(),
             )
         )
 
@@ -45,10 +46,12 @@ def main(path: str, my_ip: str, initial_pcap: Optional[str]) -> None:
 
         for sp in p.get_sub_packets():
             print(
-                "{} |           | {:50s} | {}".format(
+                "{} |     {:5d} | {:50s} | {:75s} | {}".format(
                     sp.timestamp.strftime("%Y%m%d %H:%M:%S.%f"),
+                    len(sp.data),
                     sp.opcode.name,
                     session.format_bytes(sp.data),
+                    sp.string_summary(),
                 )
             )
 

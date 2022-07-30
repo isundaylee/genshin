@@ -1,4 +1,5 @@
 from __future__ import annotations
+import abc
 
 import enum
 import datetime
@@ -26,7 +27,39 @@ class Packet:
         # xx xx | xx xx | xx xx | xx xx xx xx | ... header ... | ... data ... | xx xx
 
 
-class DecryptedPacket:
+class BaseDecryptedPacket(metaclass=abc.ABCMeta):
+    @property
+    @abc.abstractproperty
+    def opcode(self) -> opcodes.Opcode:
+        pass
+
+    @property
+    @abc.abstractproperty
+    def data(self) -> bytes:
+        pass
+
+    def string_summary(self) -> str:
+        if self.opcode == opcodes.Opcode.SceneEntityDisappearNotify:
+            from genshin.packet.proto.SceneEntityDisappearNotify_pb2 import (
+                SceneEntityDisappearNotify,
+            )
+
+            pb = SceneEntityDisappearNotify()
+            pb.ParseFromString(self.data)
+            return f"disappear_type {pb.disappear_type} param {pb.param}"
+        elif self.opcode == opcodes.Opcode.SceneEntityAppearNotify:
+            from genshin.packet.proto.SceneEntityAppearNotify_pb2 import (
+                SceneEntityAppearNotify,
+            )
+
+            pb = SceneEntityAppearNotify()
+            pb.ParseFromString(self.data)
+            return f"appear_type {pb.appear_type} param {pb.param}"
+        else:
+            return ""
+
+
+class DecryptedPacket(BaseDecryptedPacket):
     def __init__(
         self, timestamp: datetime.datetime, direction: Direction, content: bytes
     ) -> None:
@@ -87,7 +120,7 @@ class DecryptedPacket:
             assert False
 
 
-class DecryptedSubPacket:
+class DecryptedSubPacket(BaseDecryptedPacket):
     def __init__(
         self,
         timestamp: datetime.datetime,
@@ -97,5 +130,13 @@ class DecryptedSubPacket:
     ) -> None:
         self.timestamp = timestamp
         self.direction = direction
-        self.opcode = opcode
-        self.data = data
+        self._opcode = opcode
+        self._data = data
+
+    @property
+    def opcode(self) -> opcodes.Opcode:
+        return self._opcode
+
+    @property
+    def data(self) -> bytes:
+        return self._data
