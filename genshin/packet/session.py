@@ -11,6 +11,19 @@ from genshin.packet import packet
 logger = logging.getLogger(__name__)
 
 
+def _format_bytes(data: bytes, start: int = 20, end: int = 4) -> str:
+    def _format_as_hex(d: bytes) -> str:
+        return " ".join(f"{b:02x}" for b in d)
+
+    if len(data) <= start:
+        return _format_as_hex(data)
+
+    if len(data) <= start + end:
+        return _format_as_hex(data[:start]) + "     " + _format_as_hex(data[start:])
+
+    return _format_as_hex(data[:start]) + " ... " + _format_as_hex(data[-end:])
+
+
 class KCPSession:
     CMD_PUSH = 81
     CMD_ACK = 82
@@ -40,7 +53,7 @@ class KCPSession:
             assert self.conv == conv
 
         self.logger.info(
-            "%s %4s %6s wnd %d ts %d sn %d una %d length %4d | %s",
+            "%s %4s %6s wnd %5d ts %d sn %5d una %5d length %4d | %s",
             timestamp.strftime("%Y%m%d-%H:%M:%S.%f"),
             {
                 KCPSession.CMD_PUSH: "PUSH",
@@ -54,7 +67,7 @@ class KCPSession:
             sn,
             una,
             length,
-            " ".join(f"{b:02x}" for b in data[24 : 24 + min(length, 20)]),
+            _format_bytes(data[24 : 24 + length]),
         )
 
         if cmd == KCPSession.CMD_ACK:
@@ -68,6 +81,7 @@ class KCPSession:
 class Session:
     def __init__(self, path: str, my_ip: str) -> None:
         self.packets: List[packet.Packet] = []
+        self.logger = logging.getLogger("udp-session")
 
         self.send_kcp = KCPSession("sent")
         self.receive_kcp = KCPSession("received")
@@ -82,8 +96,14 @@ class Session:
 
                 timestamp = datetime.datetime.fromtimestamp(ts)
 
+                # TODO this is not robust
+                kcp_packet = len(udp.data) > 20
+
                 if socket.inet_ntoa(ip.src) == my_ip:
-                    self.send_kcp.add_data(timestamp, udp.data)
+                    self.logger.info("send %s", _format_bytes(udp.data))
+
+                    if kcp_packet:
+                        self.send_kcp.add_data(timestamp, udp.data)
                     # self.packets.append(
                     #     packet.Packet(
                     #         datetime.datetime.fromtimestamp(ts),
@@ -92,7 +112,10 @@ class Session:
                     #     )
                     # )
                 elif socket.inet_ntoa(ip.dst) == my_ip:
-                    self.receive_kcp.add_data(timestamp, udp.data)
+                    self.logger.info("recv %s", _format_bytes(udp.data))
+
+                    if kcp_packet:
+                        self.receive_kcp.add_data(timestamp, udp.data)
                     # self.packets.append(
                     #     packet.Packet(
                     #         datetime.datetime.fromtimestamp(ts),
