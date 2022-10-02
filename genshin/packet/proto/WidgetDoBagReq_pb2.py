@@ -16,7 +16,7 @@ from genshin.packet.proto import WidgetCreateLocationInfo_pb2 as genshin_dot_pac
 from genshin.packet.proto import WidgetCreatorInfo_pb2 as genshin_dot_packet_dot_proto_dot_WidgetCreatorInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/WidgetDoBagReq.proto\x1a\x33genshin/packet/proto/WidgetCreateLocationInfo.proto\x1a,genshin/packet/proto/WidgetCreatorInfo.proto\"\x99\x01\n\x0eWidgetDoBagReq\x12\x13\n\x0bmaterial_id\x18\t \x01(\r\x12\x33\n\rlocation_info\x18\xc0\x06 \x01(\x0b\x32\x19.WidgetCreateLocationInfoH\x00\x12\x32\n\x13widget_creator_info\x18\xd9\x0b \x01(\x0b\x32\x12.WidgetCreatorInfoH\x00\x42\t\n\x07op_infoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/WidgetDoBagReq.proto\x1a\x33genshin/packet/proto/WidgetCreateLocationInfo.proto\x1a,genshin/packet/proto/WidgetCreatorInfo.proto\"\x99\x01\n\x0eWidgetDoBagReq\x12\x13\n\x0bmaterial_id\x18\t \x01(\r\x12\x33\n\rlocation_info\x18\xc0\x06 \x01(\x0b\x32\x19.WidgetCreateLocationInfoH\x00\x12\x32\n\x13widget_creator_info\x18\xd9\x0b \x01(\x0b\x32\x12.WidgetCreatorInfoH\x00\x42\t\n\x07op_infoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(WidgetDoBagReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _WIDGETDOBAGREQ._serialized_start=145
   _WIDGETDOBAGREQ._serialized_end=298
 # @@protoc_insertion_point(module_scope)

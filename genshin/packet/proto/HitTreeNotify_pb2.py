@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(genshin/packet/proto/HitTreeNotify.proto\x1a!genshin/packet/proto/Vector.proto\"X\n\rHitTreeNotify\x12\x11\n\ttree_type\x18\x0b \x01(\r\x12\x19\n\x08tree_pos\x18\x02 \x01(\x0b\x32\x07.Vector\x12\x19\n\x08\x64rop_pos\x18\x08 \x01(\x0b\x32\x07.VectorB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(genshin/packet/proto/HitTreeNotify.proto\x1a!genshin/packet/proto/Vector.proto\"X\n\rHitTreeNotify\x12\x11\n\ttree_type\x18\x0b \x01(\r\x12\x19\n\x08tree_pos\x18\x02 \x01(\x0b\x32\x07.Vector\x12\x19\n\x08\x64rop_pos\x18\x08 \x01(\x0b\x32\x07.VectorB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(HitTreeNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _HITTREENOTIFY._serialized_start=79
   _HITTREENOTIFY._serialized_end=167
 # @@protoc_insertion_point(module_scope)

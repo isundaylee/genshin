@@ -16,7 +16,7 @@ from genshin.packet.proto import Reliquary_pb2 as genshin_dot_packet_dot_proto_d
 from genshin.packet.proto import Weapon_pb2 as genshin_dot_packet_dot_proto_dot_Weapon__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n genshin/packet/proto/Equip.proto\x1a$genshin/packet/proto/Reliquary.proto\x1a!genshin/packet/proto/Weapon.proto\"`\n\x05\x45quip\x12\x11\n\tis_locked\x18\x03 \x01(\x08\x12\x1f\n\treliquary\x18\x01 \x01(\x0b\x32\n.ReliquaryH\x00\x12\x19\n\x06weapon\x18\x02 \x01(\x0b\x32\x07.WeaponH\x00\x42\x08\n\x06\x64\x65tailB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n genshin/packet/proto/Equip.proto\x1a$genshin/packet/proto/Reliquary.proto\x1a!genshin/packet/proto/Weapon.proto\"`\n\x05\x45quip\x12\x11\n\tis_locked\x18\x03 \x01(\x08\x12\x1f\n\treliquary\x18\x01 \x01(\x0b\x32\n.ReliquaryH\x00\x12\x19\n\x06weapon\x18\x02 \x01(\x0b\x32\x07.WeaponH\x00\x42\x08\n\x06\x64\x65tailB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(Equip)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _EQUIP._serialized_start=109
   _EQUIP._serialized_end=205
 # @@protoc_insertion_point(module_scope)

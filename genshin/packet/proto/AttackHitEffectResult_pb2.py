@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/AttackHitEffectResult.proto\"\xb2\x01\n\x15\x41ttackHitEffectResult\x12\x1b\n\x13hit_halt_time_scale\x18\x08 \x01(\x02\x12\x1e\n\x16original_hit_eff_level\x18\x0c \x01(\r\x12\x14\n\x0c\x61ir_strength\x18\x0f \x01(\x02\x12\x15\n\rhit_eff_level\x18\x02 \x01(\r\x12\x15\n\rhit_halt_time\x18\r \x01(\x02\x12\x18\n\x10retreat_strength\x18\x07 \x01(\x02\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/AttackHitEffectResult.proto\"\xb2\x01\n\x15\x41ttackHitEffectResult\x12\x1b\n\x13hit_halt_time_scale\x18\x08 \x01(\x02\x12\x1e\n\x16original_hit_eff_level\x18\x0c \x01(\r\x12\x14\n\x0c\x61ir_strength\x18\x0f \x01(\x02\x12\x15\n\rhit_eff_level\x18\x02 \x01(\r\x12\x15\n\rhit_halt_time\x18\r \x01(\x02\x12\x18\n\x10retreat_strength\x18\x07 \x01(\x02\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(AttackHitEffectResult)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ATTACKHITEFFECTRESULT._serialized_start=53
   _ATTACKHITEFFECTRESULT._serialized_end=231
 # @@protoc_insertion_point(module_scope)

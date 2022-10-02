@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import DealAddFriendResultType_pb2 as genshin_dot_packet_dot_proto_dot_DealAddFriendResultType__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/DealAddFriendReq.proto\x1a\x32genshin/packet/proto/DealAddFriendResultType.proto\"`\n\x10\x44\x65\x61lAddFriendReq\x12\x38\n\x16\x64\x65\x61l_add_friend_result\x18\x0c \x01(\x0e\x32\x18.DealAddFriendResultType\x12\x12\n\ntarget_uid\x18\n \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/DealAddFriendReq.proto\x1a\x32genshin/packet/proto/DealAddFriendResultType.proto\"`\n\x10\x44\x65\x61lAddFriendReq\x12\x38\n\x16\x64\x65\x61l_add_friend_result\x18\x0c \x01(\x0e\x32\x18.DealAddFriendResultType\x12\x12\n\ntarget_uid\x18\n \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(DealAddFriendReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _DEALADDFRIENDREQ._serialized_start=99
   _DEALADDFRIENDREQ._serialized_end=195
 # @@protoc_insertion_point(module_scope)

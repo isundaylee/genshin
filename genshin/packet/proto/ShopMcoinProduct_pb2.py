@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/ShopMcoinProduct.proto\"\xa2\x01\n\x10ShopMcoinProduct\x12\x12\n\nproduct_id\x18\x01 \x01(\t\x12\x12\n\nprice_tier\x18\x02 \x01(\t\x12\x12\n\nmcoin_base\x18\x03 \x01(\r\x12\x17\n\x0fmcoin_non_first\x18\x04 \x01(\r\x12\x13\n\x0bmcoin_first\x18\x05 \x01(\r\x12\x12\n\nbought_num\x18\x06 \x01(\r\x12\x10\n\x08is_audit\x18\x07 \x01(\x08\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/ShopMcoinProduct.proto\"\xa2\x01\n\x10ShopMcoinProduct\x12\x12\n\nproduct_id\x18\x01 \x01(\t\x12\x12\n\nprice_tier\x18\x02 \x01(\t\x12\x12\n\nmcoin_base\x18\x03 \x01(\r\x12\x17\n\x0fmcoin_non_first\x18\x04 \x01(\r\x12\x13\n\x0bmcoin_first\x18\x05 \x01(\r\x12\x12\n\nbought_num\x18\x06 \x01(\r\x12\x10\n\x08is_audit\x18\x07 \x01(\x08\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(ShopMcoinProduct)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SHOPMCOINPRODUCT._serialized_start=48
   _SHOPMCOINPRODUCT._serialized_end=210
 # @@protoc_insertion_point(module_scope)

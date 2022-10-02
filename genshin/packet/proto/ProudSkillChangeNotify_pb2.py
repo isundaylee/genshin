@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/ProudSkillChangeNotify.proto\"r\n\x16ProudSkillChangeNotify\x12\x13\n\x0b\x61vatar_guid\x18\x0b \x01(\x04\x12\x11\n\tentity_id\x18\x04 \x01(\r\x12\x16\n\x0eskill_depot_id\x18\x08 \x01(\r\x12\x18\n\x10proud_skill_list\x18\x0c \x03(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/ProudSkillChangeNotify.proto\"r\n\x16ProudSkillChangeNotify\x12\x13\n\x0b\x61vatar_guid\x18\x0b \x01(\x04\x12\x11\n\tentity_id\x18\x04 \x01(\r\x12\x16\n\x0eskill_depot_id\x18\x08 \x01(\r\x12\x18\n\x10proud_skill_list\x18\x0c \x03(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(ProudSkillChangeNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _PROUDSKILLCHANGENOTIFY._serialized_start=53
   _PROUDSKILLCHANGENOTIFY._serialized_end=167
 # @@protoc_insertion_point(module_scope)

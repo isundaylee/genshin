@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import MapMarkTipsType_pb2 as genshin_dot_packet_dot_proto_dot_MapMarkTipsType__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/MapMarkTipsInfo.proto\x1a*genshin/packet/proto/MapMarkTipsType.proto\"M\n\x0fMapMarkTipsInfo\x12#\n\ttips_type\x18\x01 \x01(\x0e\x32\x10.MapMarkTipsType\x12\x15\n\rpoint_id_list\x18\x02 \x03(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/MapMarkTipsInfo.proto\x1a*genshin/packet/proto/MapMarkTipsType.proto\"M\n\x0fMapMarkTipsInfo\x12#\n\ttips_type\x18\x01 \x01(\x0e\x32\x10.MapMarkTipsType\x12\x15\n\rpoint_id_list\x18\x02 \x03(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(MapMarkTipsInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _MAPMARKTIPSINFO._serialized_start=90
   _MAPMARKTIPSINFO._serialized_end=167
 # @@protoc_insertion_point(module_scope)

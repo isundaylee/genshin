@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import Uint32Pair_pb2 as genshin_dot_packet_dot_proto_dot_Uint32Pair__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n?genshin/packet/proto/FurnitureCurModuleArrangeCountNotify.proto\x1a%genshin/packet/proto/Uint32Pair.proto\"Y\n$FurnitureCurModuleArrangeCountNotify\x12\x31\n\x1c\x66urniture_arrange_count_list\x18\r \x03(\x0b\x32\x0b.Uint32PairB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n?genshin/packet/proto/FurnitureCurModuleArrangeCountNotify.proto\x1a%genshin/packet/proto/Uint32Pair.proto\"Y\n$FurnitureCurModuleArrangeCountNotify\x12\x31\n\x1c\x66urniture_arrange_count_list\x18\r \x03(\x0b\x32\x0b.Uint32PairB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(FurnitureCurModuleArrangeCountNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _FURNITURECURMODULEARRANGECOUNTNOTIFY._serialized_start=106
   _FURNITURECURMODULEARRANGECOUNTNOTIFY._serialized_end=195
 # @@protoc_insertion_point(module_scope)

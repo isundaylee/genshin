@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/QuestProgressUpdateNotify.proto\"g\n\x19QuestProgressUpdateNotify\x12\x10\n\x08quest_id\x18\x0c \x01(\r\x12\x1a\n\x12\x66\x61il_progress_list\x18\x06 \x03(\r\x12\x1c\n\x14\x66inish_progress_list\x18\r \x03(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/QuestProgressUpdateNotify.proto\"g\n\x19QuestProgressUpdateNotify\x12\x10\n\x08quest_id\x18\x0c \x01(\r\x12\x1a\n\x12\x66\x61il_progress_list\x18\x06 \x03(\r\x12\x1c\n\x14\x66inish_progress_list\x18\r \x03(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(QuestProgressUpdateNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _QUESTPROGRESSUPDATENOTIFY._serialized_start=56
   _QUESTPROGRESSUPDATENOTIFY._serialized_end=159
 # @@protoc_insertion_point(module_scope)

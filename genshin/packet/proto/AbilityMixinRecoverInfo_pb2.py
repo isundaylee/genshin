@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import MassivePropSyncInfo_pb2 as genshin_dot_packet_dot_proto_dot_MassivePropSyncInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/AbilityMixinRecoverInfo.proto\x1a.genshin/packet/proto/MassivePropSyncInfo.proto\"\xda\x01\n\x17\x41\x62ilityMixinRecoverInfo\x12\x10\n\x08local_id\x18\x03 \x01(\r\x12\x11\n\tdata_list\x18\x04 \x03(\r\x12\x1e\n\x16is_serverbuff_modifier\x18\x05 \x01(\x08\x12/\n\x11massive_prop_list\x18\x06 \x03(\x0b\x32\x14.MassivePropSyncInfo\x12\x1e\n\x14instanced_ability_id\x18\x01 \x01(\rH\x00\x12\x1f\n\x15instanced_modifier_id\x18\x02 \x01(\rH\x00\x42\x08\n\x06sourceB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/AbilityMixinRecoverInfo.proto\x1a.genshin/packet/proto/MassivePropSyncInfo.proto\"\xda\x01\n\x17\x41\x62ilityMixinRecoverInfo\x12\x10\n\x08local_id\x18\x03 \x01(\r\x12\x11\n\tdata_list\x18\x04 \x03(\r\x12\x1e\n\x16is_serverbuff_modifier\x18\x05 \x01(\x08\x12/\n\x11massive_prop_list\x18\x06 \x03(\x0b\x32\x14.MassivePropSyncInfo\x12\x1e\n\x14instanced_ability_id\x18\x01 \x01(\rH\x00\x12\x1f\n\x15instanced_modifier_id\x18\x02 \x01(\rH\x00\x42\x08\n\x06sourceB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(AbilityMixinRecoverInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ABILITYMIXINRECOVERINFO._serialized_start=103
   _ABILITYMIXINRECOVERINFO._serialized_end=321
 # @@protoc_insertion_point(module_scope)

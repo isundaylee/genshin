@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/AnchorPointOpReq.proto\"\xc1\x01\n\x10\x41nchorPointOpReq\x12\x17\n\x0f\x61nchor_point_id\x18\t \x01(\r\x12\x1c\n\x14\x61nchor_point_op_type\x18\x0c \x01(\r\"v\n\x11\x41nchorPointOpType\x12\x1d\n\x19\x41NCHOR_POINT_OP_TYPE_NONE\x10\x00\x12!\n\x1d\x41NCHOR_POINT_OP_TYPE_TELEPORT\x10\x01\x12\x1f\n\x1b\x41NCHOR_POINT_OP_TYPE_REMOVE\x10\x02\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/AnchorPointOpReq.proto\"\xc1\x01\n\x10\x41nchorPointOpReq\x12\x17\n\x0f\x61nchor_point_id\x18\t \x01(\r\x12\x1c\n\x14\x61nchor_point_op_type\x18\x0c \x01(\r\"v\n\x11\x41nchorPointOpType\x12\x1d\n\x19\x41NCHOR_POINT_OP_TYPE_NONE\x10\x00\x12!\n\x1d\x41NCHOR_POINT_OP_TYPE_TELEPORT\x10\x01\x12\x1f\n\x1b\x41NCHOR_POINT_OP_TYPE_REMOVE\x10\x02\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(AnchorPointOpReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ANCHORPOINTOPREQ._serialized_start=48
   _ANCHORPOINTOPREQ._serialized_end=241
   _ANCHORPOINTOPREQ_ANCHORPOINTOPTYPE._serialized_start=123

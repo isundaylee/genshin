@@ -16,7 +16,7 @@ from genshin.packet.proto import MusicBriefInfo_pb2 as genshin_dot_packet_dot_pr
 from genshin.packet.proto import MusicGameRecord_pb2 as genshin_dot_packet_dot_proto_dot_MusicGameRecord__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n6genshin/packet/proto/MusicGameActivityDetailInfo.proto\x1a)genshin/packet/proto/MusicBriefInfo.proto\x1a*genshin/packet/proto/MusicGameRecord.proto\"\x9f\x02\n\x1bMusicGameActivityDetailInfo\x12.\n\x15others_custom_beatmap\x18\x04 \x03(\x0b\x32\x0f.MusicBriefInfo\x12.\n\x15person_custom_beatmap\x18\x07 \x03(\x0b\x32\x0f.MusicBriefInfo\x12S\n\x15music_game_record_map\x18\x08 \x03(\x0b\x32\x34.MusicGameActivityDetailInfo.MusicGameRecordMapEntry\x1aK\n\x17MusicGameRecordMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\x1f\n\x05value\x18\x02 \x01(\x0b\x32\x10.MusicGameRecord:\x02\x38\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n6genshin/packet/proto/MusicGameActivityDetailInfo.proto\x1a)genshin/packet/proto/MusicBriefInfo.proto\x1a*genshin/packet/proto/MusicGameRecord.proto\"\x9b\x02\n\x1bMusicGameActivityDetailInfo\x12,\n\x13Unk2700_HMNHCPMFDCP\x18\x04 \x03(\x0b\x32\x0f.MusicBriefInfo\x12,\n\x13Unk2700_FOFAFGKAEJM\x18\x07 \x03(\x0b\x32\x0f.MusicBriefInfo\x12S\n\x15music_game_record_map\x18\x08 \x03(\x0b\x32\x34.MusicGameActivityDetailInfo.MusicGameRecordMapEntry\x1aK\n\x17MusicGameRecordMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\x1f\n\x05value\x18\x02 \x01(\x0b\x32\x10.MusicGameRecord:\x02\x38\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -40,11 +40,11 @@ _sym_db.RegisterMessage(MusicGameActivityDetailInfo.MusicGameRecordMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _MUSICGAMEACTIVITYDETAILINFO_MUSICGAMERECORDMAPENTRY._options = None
   _MUSICGAMEACTIVITYDETAILINFO_MUSICGAMERECORDMAPENTRY._serialized_options = b'8\001'
   _MUSICGAMEACTIVITYDETAILINFO._serialized_start=146
-  _MUSICGAMEACTIVITYDETAILINFO._serialized_end=433
-  _MUSICGAMEACTIVITYDETAILINFO_MUSICGAMERECORDMAPENTRY._serialized_start=358
-  _MUSICGAMEACTIVITYDETAILINFO_MUSICGAMERECORDMAPENTRY._serialized_end=433
+  _MUSICGAMEACTIVITYDETAILINFO._serialized_end=429
+  _MUSICGAMEACTIVITYDETAILINFO_MUSICGAMERECORDMAPENTRY._serialized_start=354
+  _MUSICGAMEACTIVITYDETAILINFO_MUSICGAMERECORDMAPENTRY._serialized_end=429
 # @@protoc_insertion_point(module_scope)

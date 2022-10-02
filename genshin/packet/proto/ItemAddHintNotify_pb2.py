@@ -16,7 +16,7 @@ from genshin.packet.proto import ItemHint_pb2 as genshin_dot_packet_dot_proto_do
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/ItemAddHintNotify.proto\x1a#genshin/packet/proto/ItemHint.proto\x1a!genshin/packet/proto/Vector.proto\"\x85\x02\n\x11ItemAddHintNotify\x12\x19\n\x11is_position_valid\x18\x0e \x01(\x08\x12\x10\n\x08quest_id\x18\x03 \x01(\r\x12\x0e\n\x06reason\x18\x06 \x01(\r\x12\x1f\n\x17is_general_reward_hiden\x18\x0f \x01(\x08\x12\x1c\n\titem_list\x18\n \x03(\x0b\x32\t.ItemHint\x12&\n\x1eis_transfered_from_avatar_card\x18\x0c \x01(\x08\x12\x19\n\x08position\x18\t \x01(\x0b\x32\x07.Vector\x12\x31\n\x1eoverflow_transformed_item_list\x18\x08 \x03(\x0b\x32\t.ItemHintB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/ItemAddHintNotify.proto\x1a#genshin/packet/proto/ItemHint.proto\x1a!genshin/packet/proto/Vector.proto\"\x85\x02\n\x11ItemAddHintNotify\x12\x19\n\x11is_position_valid\x18\x0e \x01(\x08\x12\x10\n\x08quest_id\x18\x03 \x01(\r\x12\x0e\n\x06reason\x18\x06 \x01(\r\x12\x1f\n\x17is_general_reward_hiden\x18\x0f \x01(\x08\x12\x1c\n\titem_list\x18\n \x03(\x0b\x32\t.ItemHint\x12&\n\x1eis_transfered_from_avatar_card\x18\x0c \x01(\x08\x12\x19\n\x08position\x18\t \x01(\x0b\x32\x07.Vector\x12\x31\n\x1eoverflow_transformed_item_list\x18\x08 \x03(\x0b\x32\t.ItemHintB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(ItemAddHintNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ITEMADDHINTNOTIFY._serialized_start=121
   _ITEMADDHINTNOTIFY._serialized_end=382
 # @@protoc_insertion_point(module_scope)

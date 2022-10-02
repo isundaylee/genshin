@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/AvatarExcelInfo.proto\"\xab\x01\n\x0f\x41vatarExcelInfo\x12\x18\n\x10prefab_path_hash\x18\x01 \x01(\x04\x12\x1f\n\x17prefab_path_remote_hash\x18\x02 \x01(\x04\x12\x1c\n\x14\x63ontroller_path_hash\x18\x03 \x01(\x04\x12#\n\x1b\x63ontroller_path_remote_hash\x18\x04 \x01(\x04\x12\x1a\n\x12\x63ombat_config_hash\x18\x05 \x01(\x04\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/AvatarExcelInfo.proto\"\xab\x01\n\x0f\x41vatarExcelInfo\x12\x18\n\x10prefab_path_hash\x18\x01 \x01(\x04\x12\x1f\n\x17prefab_path_remote_hash\x18\x02 \x01(\x04\x12\x1c\n\x14\x63ontroller_path_hash\x18\x03 \x01(\x04\x12#\n\x1b\x63ontroller_path_remote_hash\x18\x04 \x01(\x04\x12\x1a\n\x12\x63ombat_config_hash\x18\x05 \x01(\x04\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(AvatarExcelInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _AVATAREXCELINFO._serialized_start=47
   _AVATAREXCELINFO._serialized_end=218
 # @@protoc_insertion_point(module_scope)

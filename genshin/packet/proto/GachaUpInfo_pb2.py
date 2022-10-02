@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/GachaUpInfo.proto\"=\n\x0bGachaUpInfo\x12\x18\n\x10item_parent_type\x18\x07 \x01(\r\x12\x14\n\x0citem_id_list\x18\x0f \x03(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/GachaUpInfo.proto\"=\n\x0bGachaUpInfo\x12\x18\n\x10item_parent_type\x18\x07 \x01(\r\x12\x14\n\x0citem_id_list\x18\x0f \x03(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(GachaUpInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _GACHAUPINFO._serialized_start=42
   _GACHAUPINFO._serialized_end=103
 # @@protoc_insertion_point(module_scope)

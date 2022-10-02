@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import AbilityControlBlock_pb2 as genshin_dot_packet_dot_proto_dot_AbilityControlBlock__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/AbilityChangeNotify.proto\x1a.genshin/packet/proto/AbilityControlBlock.proto\"]\n\x13\x41\x62ilityChangeNotify\x12\x11\n\tentity_id\x18\x01 \x01(\r\x12\x33\n\x15\x61\x62ility_control_block\x18\x0f \x01(\x0b\x32\x14.AbilityControlBlockB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/AbilityChangeNotify.proto\x1a.genshin/packet/proto/AbilityControlBlock.proto\"]\n\x13\x41\x62ilityChangeNotify\x12\x11\n\tentity_id\x18\x01 \x01(\r\x12\x33\n\x15\x61\x62ility_control_block\x18\x0f \x01(\x0b\x32\x14.AbilityControlBlockB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(AbilityChangeNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ABILITYCHANGENOTIFY._serialized_start=98
   _ABILITYCHANGENOTIFY._serialized_end=191
 # @@protoc_insertion_point(module_scope)

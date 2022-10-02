@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/ChangeAvatarReq.proto\x1a!genshin/packet/proto/Vector.proto\"]\n\x0f\x43hangeAvatarReq\x12\x19\n\x08move_pos\x18\x0f \x01(\x0b\x32\x07.Vector\x12\x10\n\x08skill_id\x18\x02 \x01(\r\x12\x0c\n\x04guid\x18\x07 \x01(\x04\x12\x0f\n\x07is_move\x18\n \x01(\x08\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/ChangeAvatarReq.proto\x1a!genshin/packet/proto/Vector.proto\"]\n\x0f\x43hangeAvatarReq\x12\x19\n\x08move_pos\x18\x0f \x01(\x0b\x32\x07.Vector\x12\x10\n\x08skill_id\x18\x02 \x01(\r\x12\x0c\n\x04guid\x18\x07 \x01(\x04\x12\x0f\n\x07is_move\x18\n \x01(\x08\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(ChangeAvatarReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _CHANGEAVATARREQ._serialized_start=81
   _CHANGEAVATARREQ._serialized_end=174
 # @@protoc_insertion_point(module_scope)

@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n/genshin/packet/proto/PlayerGameTimeNotify.proto\"G\n\x14PlayerGameTimeNotify\x12\x0b\n\x03uid\x18\x07 \x01(\r\x12\x11\n\tgame_time\x18\x03 \x01(\r\x12\x0f\n\x07is_home\x18\r \x01(\x08\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n/genshin/packet/proto/PlayerGameTimeNotify.proto\"G\n\x14PlayerGameTimeNotify\x12\x0b\n\x03uid\x18\x07 \x01(\r\x12\x11\n\tgame_time\x18\x03 \x01(\r\x12\x0f\n\x07is_home\x18\r \x01(\x08\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(PlayerGameTimeNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _PLAYERGAMETIMENOTIFY._serialized_start=51
   _PLAYERGAMETIMENOTIFY._serialized_end=122
 # @@protoc_insertion_point(module_scope)

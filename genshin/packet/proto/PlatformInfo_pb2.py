@@ -18,7 +18,7 @@ from genshin.packet.proto import Route_pb2 as genshin_dot_packet_dot_proto_dot_R
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/PlatformInfo.proto\x1a)genshin/packet/proto/MathQuaternion.proto\x1a-genshin/packet/proto/MovingPlatformType.proto\x1a genshin/packet/proto/Route.proto\x1a!genshin/packet/proto/Vector.proto\"\x87\x03\n\x0cPlatformInfo\x12\x10\n\x08route_id\x18\x01 \x01(\r\x12\x13\n\x0bstart_index\x18\x02 \x01(\x05\x12\x18\n\x10start_route_time\x18\x03 \x01(\r\x12\x18\n\x10start_scene_time\x18\x04 \x01(\r\x12\x1a\n\tstart_pos\x18\x07 \x01(\x0b\x32\x07.Vector\x12\x12\n\nis_started\x18\x08 \x01(\x08\x12\"\n\tstart_rot\x18\t \x01(\x0b\x32\x0f.MathQuaternion\x12\x17\n\x0fstop_scene_time\x18\n \x01(\r\x12\x1b\n\npos_offset\x18\x0b \x01(\x0b\x32\x07.Vector\x12#\n\nrot_offset\x18\x0c \x01(\x0b\x32\x0f.MathQuaternion\x12\x31\n\x14moving_platform_type\x18\r \x01(\x0e\x32\x13.MovingPlatformType\x12\x11\n\tis_active\x18\x0e \x01(\x08\x12\x15\n\x05route\x18\x0f \x01(\x0b\x32\x06.Route\x12\x10\n\x08point_id\x18\x10 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/PlatformInfo.proto\x1a)genshin/packet/proto/MathQuaternion.proto\x1a-genshin/packet/proto/MovingPlatformType.proto\x1a genshin/packet/proto/Route.proto\x1a!genshin/packet/proto/Vector.proto\"\x87\x03\n\x0cPlatformInfo\x12\x10\n\x08route_id\x18\x01 \x01(\r\x12\x13\n\x0bstart_index\x18\x02 \x01(\x05\x12\x18\n\x10start_route_time\x18\x03 \x01(\r\x12\x18\n\x10start_scene_time\x18\x04 \x01(\r\x12\x1a\n\tstart_pos\x18\x07 \x01(\x0b\x32\x07.Vector\x12\x12\n\nis_started\x18\x08 \x01(\x08\x12\"\n\tstart_rot\x18\t \x01(\x0b\x32\x0f.MathQuaternion\x12\x17\n\x0fstop_scene_time\x18\n \x01(\r\x12\x1b\n\npos_offset\x18\x0b \x01(\x0b\x32\x07.Vector\x12#\n\nrot_offset\x18\x0c \x01(\x0b\x32\x0f.MathQuaternion\x12\x31\n\x14moving_platform_type\x18\r \x01(\x0e\x32\x13.MovingPlatformType\x12\x11\n\tis_active\x18\x0e \x01(\x08\x12\x15\n\x05route\x18\x0f \x01(\x0b\x32\x06.Route\x12\x10\n\x08point_id\x18\x10 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -33,7 +33,7 @@ _sym_db.RegisterMessage(PlatformInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _PLATFORMINFO._serialized_start=203
   _PLATFORMINFO._serialized_end=594
 # @@protoc_insertion_point(module_scope)

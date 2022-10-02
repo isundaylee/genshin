@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import TowerLevelStarCondData_pb2 as genshin_dot_packet_dot_proto_dot_TowerLevelStarCondData__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n3genshin/packet/proto/TowerLevelStarCondNotify.proto\x1a\x31genshin/packet/proto/TowerLevelStarCondData.proto\"r\n\x18TowerLevelStarCondNotify\x12\x13\n\x0blevel_index\x18\x0e \x01(\r\x12\x10\n\x08\x66loor_id\x18\x0b \x01(\r\x12/\n\x0e\x63ond_data_list\x18\t \x03(\x0b\x32\x17.TowerLevelStarCondDataB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n3genshin/packet/proto/TowerLevelStarCondNotify.proto\x1a\x31genshin/packet/proto/TowerLevelStarCondData.proto\"r\n\x18TowerLevelStarCondNotify\x12\x13\n\x0blevel_index\x18\x0e \x01(\r\x12\x10\n\x08\x66loor_id\x18\x0b \x01(\r\x12/\n\x0e\x63ond_data_list\x18\t \x03(\x0b\x32\x17.TowerLevelStarCondDataB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(TowerLevelStarCondNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _TOWERLEVELSTARCONDNOTIFY._serialized_start=106
   _TOWERLEVELSTARCONDNOTIFY._serialized_end=220
 # @@protoc_insertion_point(module_scope)

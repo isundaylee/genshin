@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/HomeChangeEditModeRsp.proto\"D\n\x15HomeChangeEditModeRsp\x12\x0f\n\x07retcode\x18\n \x01(\x05\x12\x1a\n\x12is_enter_edit_mode\x18\x05 \x01(\x08\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/HomeChangeEditModeRsp.proto\"D\n\x15HomeChangeEditModeRsp\x12\x0f\n\x07retcode\x18\n \x01(\x05\x12\x1a\n\x12is_enter_edit_mode\x18\x05 \x01(\x08\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(HomeChangeEditModeRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _HOMECHANGEEDITMODERSP._serialized_start=52
   _HOMECHANGEEDITMODERSP._serialized_end=120
 # @@protoc_insertion_point(module_scope)

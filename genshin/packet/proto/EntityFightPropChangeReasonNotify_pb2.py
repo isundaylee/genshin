@@ -17,7 +17,7 @@ from genshin.packet.proto import ChangeHpReason_pb2 as genshin_dot_packet_dot_pr
 from genshin.packet.proto import PropChangeReason_pb2 as genshin_dot_packet_dot_proto_dot_PropChangeReason__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n<genshin/packet/proto/EntityFightPropChangeReasonNotify.proto\x1a-genshin/packet/proto/ChangeEnergyReason.proto\x1a)genshin/packet/proto/ChangeHpReason.proto\x1a+genshin/packet/proto/PropChangeReason.proto\"\xf1\x01\n!EntityFightPropChangeReasonNotify\x12\x12\n\nparam_list\x18\n \x03(\r\x12\x12\n\nprop_delta\x18\x01 \x01(\x02\x12)\n\x10\x63hange_hp_reason\x18\x0e \x01(\x0e\x32\x0f.ChangeHpReason\x12!\n\x06reason\x18\x06 \x01(\x0e\x32\x11.PropChangeReason\x12\x11\n\tentity_id\x18\x05 \x01(\r\x12\x30\n\x13\x63hange_energy_reson\x18\x0f \x01(\x0e\x32\x13.ChangeEnergyReason\x12\x11\n\tprop_type\x18\r \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n<genshin/packet/proto/EntityFightPropChangeReasonNotify.proto\x1a-genshin/packet/proto/ChangeEnergyReason.proto\x1a)genshin/packet/proto/ChangeHpReason.proto\x1a+genshin/packet/proto/PropChangeReason.proto\"\xf1\x01\n!EntityFightPropChangeReasonNotify\x12\x12\n\nparam_list\x18\n \x03(\r\x12\x12\n\nprop_delta\x18\x01 \x01(\x02\x12)\n\x10\x63hange_hp_reason\x18\x0e \x01(\x0e\x32\x0f.ChangeHpReason\x12!\n\x06reason\x18\x06 \x01(\x0e\x32\x11.PropChangeReason\x12\x11\n\tentity_id\x18\x05 \x01(\r\x12\x30\n\x13\x63hange_energy_reson\x18\x0f \x01(\x0e\x32\x13.ChangeEnergyReason\x12\x11\n\tprop_type\x18\r \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -32,7 +32,7 @@ _sym_db.RegisterMessage(EntityFightPropChangeReasonNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ENTITYFIGHTPROPCHANGEREASONNOTIFY._serialized_start=200
   _ENTITYFIGHTPROPCHANGEREASONNOTIFY._serialized_end=441
 # @@protoc_insertion_point(module_scope)

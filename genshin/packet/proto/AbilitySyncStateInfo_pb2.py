@@ -18,7 +18,7 @@ from genshin.packet.proto import AbilityMixinRecoverInfo_pb2 as genshin_dot_pack
 from genshin.packet.proto import AbilityScalarValueEntry_pb2 as genshin_dot_packet_dot_proto_dot_AbilityScalarValueEntry__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n/genshin/packet/proto/AbilitySyncStateInfo.proto\x1a\x30genshin/packet/proto/AbilityAppliedAbility.proto\x1a\x31genshin/packet/proto/AbilityAppliedModifier.proto\x1a\x32genshin/packet/proto/AbilityMixinRecoverInfo.proto\x1a\x32genshin/packet/proto/AbilityScalarValueEntry.proto\"\xb5\x02\n\x14\x41\x62ilitySyncStateInfo\x12\x11\n\tis_inited\x18\x01 \x01(\x08\x12\x33\n\x11\x64ynamic_value_map\x18\x02 \x03(\x0b\x32\x18.AbilityScalarValueEntry\x12\x31\n\x11\x61pplied_abilities\x18\x03 \x03(\x0b\x32\x16.AbilityAppliedAbility\x12\x32\n\x11\x61pplied_modifiers\x18\x04 \x03(\x0b\x32\x17.AbilityAppliedModifier\x12\x35\n\x13mixin_recover_infos\x18\x05 \x03(\x0b\x32\x18.AbilityMixinRecoverInfo\x12\x37\n\x15sgv_dynamic_value_map\x18\x06 \x03(\x0b\x32\x18.AbilityScalarValueEntryB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n/genshin/packet/proto/AbilitySyncStateInfo.proto\x1a\x30genshin/packet/proto/AbilityAppliedAbility.proto\x1a\x31genshin/packet/proto/AbilityAppliedModifier.proto\x1a\x32genshin/packet/proto/AbilityMixinRecoverInfo.proto\x1a\x32genshin/packet/proto/AbilityScalarValueEntry.proto\"\xb5\x02\n\x14\x41\x62ilitySyncStateInfo\x12\x11\n\tis_inited\x18\x01 \x01(\x08\x12\x33\n\x11\x64ynamic_value_map\x18\x02 \x03(\x0b\x32\x18.AbilityScalarValueEntry\x12\x31\n\x11\x61pplied_abilities\x18\x03 \x03(\x0b\x32\x16.AbilityAppliedAbility\x12\x32\n\x11\x61pplied_modifiers\x18\x04 \x03(\x0b\x32\x17.AbilityAppliedModifier\x12\x35\n\x13mixin_recover_infos\x18\x05 \x03(\x0b\x32\x18.AbilityMixinRecoverInfo\x12\x37\n\x15sgv_dynamic_value_map\x18\x06 \x03(\x0b\x32\x18.AbilityScalarValueEntryB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -33,7 +33,7 @@ _sym_db.RegisterMessage(AbilitySyncStateInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ABILITYSYNCSTATEINFO._serialized_start=257
   _ABILITYSYNCSTATEINFO._serialized_end=566
 # @@protoc_insertion_point(module_scope)

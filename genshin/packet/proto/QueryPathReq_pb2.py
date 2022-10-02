@@ -17,7 +17,7 @@ from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_
 from genshin.packet.proto import Vector3Int_pb2 as genshin_dot_packet_dot_proto_dot_Vector3Int__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/QueryPathReq.proto\x1a&genshin/packet/proto/QueryFilter.proto\x1a!genshin/packet/proto/Vector.proto\x1a%genshin/packet/proto/Vector3Int.proto\"\xe4\x02\n\x0cQueryPathReq\x12,\n\nquery_type\x18\r \x01(\x0e\x32\x18.QueryPathReq.OptionType\x12\x10\n\x08query_id\x18\x0f \x01(\x05\x12\x10\n\x08scene_id\x18\x0b \x01(\r\x12\x1b\n\nsource_pos\x18\x02 \x01(\x0b\x32\x07.Vector\x12 \n\x0f\x64\x65stination_pos\x18\n \x03(\x0b\x32\x07.Vector\x12\x1c\n\x06\x66ilter\x18\x0c \x01(\x0b\x32\x0c.QueryFilter\x12\'\n\x12\x64\x65stination_extend\x18\x04 \x01(\x0b\x32\x0b.Vector3Int\x12\"\n\rsource_extend\x18\x06 \x01(\x0b\x32\x0b.Vector3Int\"X\n\nOptionType\x12\x14\n\x10OPTION_TYPE_NONE\x10\x00\x12\x16\n\x12OPTION_TYPE_NORMAL\x10\x01\x12\x1c\n\x18OPTION_TYPE_FIRST_CAN_GO\x10\x02\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/QueryPathReq.proto\x1a&genshin/packet/proto/QueryFilter.proto\x1a!genshin/packet/proto/Vector.proto\x1a%genshin/packet/proto/Vector3Int.proto\"\xe4\x02\n\x0cQueryPathReq\x12,\n\nquery_type\x18\r \x01(\x0e\x32\x18.QueryPathReq.OptionType\x12\"\n\rsource_extend\x18\x06 \x01(\x0b\x32\x0b.Vector3Int\x12\x1b\n\nsource_pos\x18\x02 \x01(\x0b\x32\x07.Vector\x12\x1c\n\x06\x66ilter\x18\x0c \x01(\x0b\x32\x0c.QueryFilter\x12\x10\n\x08query_id\x18\x0f \x01(\x05\x12\'\n\x12\x64\x65stination_extend\x18\x04 \x01(\x0b\x32\x0b.Vector3Int\x12 \n\x0f\x64\x65stination_pos\x18\n \x03(\x0b\x32\x07.Vector\x12\x10\n\x08scene_id\x18\x0b \x01(\r\"X\n\nOptionType\x12\x14\n\x10OPTION_TYPE_NONE\x10\x00\x12\x16\n\x12OPTION_TYPE_NORMAL\x10\x01\x12\x1c\n\x18OPTION_TYPE_FIRST_CAN_GO\x10\x02\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -33,7 +33,7 @@ _sym_db.RegisterMessage(QueryPathReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _QUERYPATHREQ._serialized_start=158
   _QUERYPATHREQ._serialized_end=514
   _QUERYPATHREQ_OPTIONTYPE._serialized_start=426

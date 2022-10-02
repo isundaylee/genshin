@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/FurnitureMakeHelpData.proto\"3\n\x15\x46urnitureMakeHelpData\x12\r\n\x05times\x18\x02 \x01(\r\x12\x0b\n\x03uid\x18\r \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/FurnitureMakeHelpData.proto\"3\n\x15\x46urnitureMakeHelpData\x12\r\n\x05times\x18\x02 \x01(\r\x12\x0b\n\x03uid\x18\r \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(FurnitureMakeHelpData)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _FURNITUREMAKEHELPDATA._serialized_start=52
   _FURNITUREMAKEHELPDATA._serialized_end=103
 # @@protoc_insertion_point(module_scope)

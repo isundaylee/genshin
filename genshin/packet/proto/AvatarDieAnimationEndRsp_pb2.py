@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n3genshin/packet/proto/AvatarDieAnimationEndRsp.proto\"O\n\x18\x41vatarDieAnimationEndRsp\x12\x10\n\x08skill_id\x18\r \x01(\r\x12\x0f\n\x07retcode\x18\x0e \x01(\x05\x12\x10\n\x08\x64ie_guid\x18\x0f \x01(\x04\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n3genshin/packet/proto/AvatarDieAnimationEndRsp.proto\"O\n\x18\x41vatarDieAnimationEndRsp\x12\x10\n\x08skill_id\x18\r \x01(\r\x12\x0f\n\x07retcode\x18\x0e \x01(\x05\x12\x10\n\x08\x64ie_guid\x18\x0f \x01(\x04\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(AvatarDieAnimationEndRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _AVATARDIEANIMATIONENDRSP._serialized_start=55
   _AVATARDIEANIMATIONENDRSP._serialized_end=134
 # @@protoc_insertion_point(module_scope)

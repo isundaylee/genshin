@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import RoutePoint_pb2 as genshin_dot_packet_dot_proto_dot_RoutePoint__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/MonsterRoute.proto\x1a%genshin/packet/proto/RoutePoint.proto\"p\n\x0cMonsterRoute\x12!\n\x0croute_points\x18\x01 \x03(\x0b\x32\x0b.RoutePoint\x12\x13\n\x0bspeed_level\x18\x02 \x01(\r\x12\x12\n\nroute_type\x18\x03 \x01(\r\x12\x14\n\x0c\x61rrive_range\x18\x04 \x01(\x02\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/MonsterRoute.proto\x1a%genshin/packet/proto/RoutePoint.proto\"p\n\x0cMonsterRoute\x12!\n\x0croute_points\x18\x01 \x03(\x0b\x32\x0b.RoutePoint\x12\x13\n\x0bspeed_level\x18\x02 \x01(\r\x12\x12\n\nroute_type\x18\x03 \x01(\r\x12\x14\n\x0c\x61rrive_range\x18\x04 \x01(\x02\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(MonsterRoute)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _MONSTERROUTE._serialized_start=82
   _MONSTERROUTE._serialized_end=194
 # @@protoc_insertion_point(module_scope)

@@ -16,7 +16,7 @@ from genshin.packet.proto import MotionState_pb2 as genshin_dot_packet_dot_proto
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/MotionInfo.proto\x1a&genshin/packet/proto/MotionState.proto\x1a!genshin/packet/proto/Vector.proto\"\xdf\x01\n\nMotionInfo\x12\x14\n\x03pos\x18\x01 \x01(\x0b\x32\x07.Vector\x12\x14\n\x03rot\x18\x02 \x01(\x0b\x32\x07.Vector\x12\x16\n\x05speed\x18\x03 \x01(\x0b\x32\x07.Vector\x12\x1b\n\x05state\x18\x04 \x01(\x0e\x32\x0c.MotionState\x12\x17\n\x06params\x18\x05 \x03(\x0b\x32\x07.Vector\x12\x18\n\x07ref_pos\x18\x06 \x01(\x0b\x32\x07.Vector\x12\x0e\n\x06ref_id\x18\x07 \x01(\r\x12\x12\n\nscene_time\x18\x08 \x01(\r\x12\x19\n\x11interval_velocity\x18\t \x01(\x04\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/MotionInfo.proto\x1a&genshin/packet/proto/MotionState.proto\x1a!genshin/packet/proto/Vector.proto\"\xdf\x01\n\nMotionInfo\x12\x14\n\x03pos\x18\x01 \x01(\x0b\x32\x07.Vector\x12\x14\n\x03rot\x18\x02 \x01(\x0b\x32\x07.Vector\x12\x16\n\x05speed\x18\x03 \x01(\x0b\x32\x07.Vector\x12\x1b\n\x05state\x18\x04 \x01(\x0e\x32\x0c.MotionState\x12\x17\n\x06params\x18\x05 \x03(\x0b\x32\x07.Vector\x12\x18\n\x07ref_pos\x18\x06 \x01(\x0b\x32\x07.Vector\x12\x0e\n\x06ref_id\x18\x07 \x01(\r\x12\x12\n\nscene_time\x18\x08 \x01(\r\x12\x19\n\x11interval_velocity\x18\t \x01(\x04\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(MotionInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _MOTIONINFO._serialized_start=117
   _MOTIONINFO._serialized_end=340
 # @@protoc_insertion_point(module_scope)

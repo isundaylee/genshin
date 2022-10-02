@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import BattlePassMission_pb2 as genshin_dot_packet_dot_proto_dot_BattlePassMission__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n8genshin/packet/proto/BattlePassMissionUpdateNotify.proto\x1a,genshin/packet/proto/BattlePassMission.proto\"I\n\x1d\x42\x61ttlePassMissionUpdateNotify\x12(\n\x0cmission_list\x18\x01 \x03(\x0b\x32\x12.BattlePassMissionB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n8genshin/packet/proto/BattlePassMissionUpdateNotify.proto\x1a,genshin/packet/proto/BattlePassMission.proto\"I\n\x1d\x42\x61ttlePassMissionUpdateNotify\x12(\n\x0cmission_list\x18\x01 \x03(\x0b\x32\x12.BattlePassMissionB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(BattlePassMissionUpdateNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _BATTLEPASSMISSIONUPDATENOTIFY._serialized_start=106
   _BATTLEPASSMISSIONUPDATENOTIFY._serialized_end=179
 # @@protoc_insertion_point(module_scope)

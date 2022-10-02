@@ -16,7 +16,7 @@ from genshin.packet.proto import Item_pb2 as genshin_dot_packet_dot_proto_dot_It
 from genshin.packet.proto import StoreType_pb2 as genshin_dot_packet_dot_proto_dot_StoreType__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/PlayerStoreNotify.proto\x1a\x1fgenshin/packet/proto/Item.proto\x1a$genshin/packet/proto/StoreType.proto\"c\n\x11PlayerStoreNotify\x12\x18\n\titem_list\x18\x0f \x03(\x0b\x32\x05.Item\x12\x14\n\x0cweight_limit\x18\x08 \x01(\r\x12\x1e\n\nstore_type\x18\x02 \x01(\x0e\x32\n.StoreTypeB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/PlayerStoreNotify.proto\x1a\x1fgenshin/packet/proto/Item.proto\x1a$genshin/packet/proto/StoreType.proto\"c\n\x11PlayerStoreNotify\x12\x18\n\titem_list\x18\x0f \x03(\x0b\x32\x05.Item\x12\x14\n\x0cweight_limit\x18\x08 \x01(\r\x12\x1e\n\nstore_type\x18\x02 \x01(\x0e\x32\n.StoreTypeB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(PlayerStoreNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _PLAYERSTORENOTIFY._serialized_start=119
   _PLAYERSTORENOTIFY._serialized_end=218
 # @@protoc_insertion_point(module_scope)

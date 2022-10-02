@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import AiSkillCdInfo_pb2 as genshin_dot_packet_dot_proto_dot_AiSkillCdInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/EvtAiSyncSkillCdNotify.proto\x1a(genshin/packet/proto/AiSkillCdInfo.proto\"\x91\x01\n\x16\x45vtAiSyncSkillCdNotify\x12\x37\n\tai_cd_map\x18\x07 \x03(\x0b\x32$.EvtAiSyncSkillCdNotify.AiCdMapEntry\x1a>\n\x0c\x41iCdMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\x1d\n\x05value\x18\x02 \x01(\x0b\x32\x0e.AiSkillCdInfo:\x02\x38\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/EvtAiSyncSkillCdNotify.proto\x1a(genshin/packet/proto/AiSkillCdInfo.proto\"\x91\x01\n\x16\x45vtAiSyncSkillCdNotify\x12\x37\n\tai_cd_map\x18\x07 \x03(\x0b\x32$.EvtAiSyncSkillCdNotify.AiCdMapEntry\x1a>\n\x0c\x41iCdMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\x1d\n\x05value\x18\x02 \x01(\x0b\x32\x0e.AiSkillCdInfo:\x02\x38\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -39,7 +39,7 @@ _sym_db.RegisterMessage(EvtAiSyncSkillCdNotify.AiCdMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _EVTAISYNCSKILLCDNOTIFY_AICDMAPENTRY._options = None
   _EVTAISYNCSKILLCDNOTIFY_AICDMAPENTRY._serialized_options = b'8\001'
   _EVTAISYNCSKILLCDNOTIFY._serialized_start=96

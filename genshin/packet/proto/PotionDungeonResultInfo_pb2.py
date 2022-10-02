@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/PotionDungeonResultInfo.proto\"\x9f\x01\n\x17PotionDungeonResultInfo\x12\x13\n\x0b\x66inal_score\x18\x08 \x01(\r\x12\x11\n\tleft_time\x18\t \x01(\r\x12\x1b\n\x13Unk2700_FHEHGDABALE\x18\x0e \x01(\r\x12\x1b\n\x13Unk2700_HKFEBBCMBHL\x18\x0b \x01(\r\x12\x10\n\x08level_id\x18\x04 \x01(\r\x12\x10\n\x08stage_id\x18\x02 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/PotionDungeonResultInfo.proto\"\x9f\x01\n\x17PotionDungeonResultInfo\x12\x13\n\x0b\x66inal_score\x18\x08 \x01(\r\x12\x11\n\tleft_time\x18\t \x01(\r\x12\x1b\n\x13Unk2700_FHEHGDABALE\x18\x0e \x01(\r\x12\x1b\n\x13Unk2700_HKFEBBCMBHL\x18\x0b \x01(\r\x12\x10\n\x08level_id\x18\x04 \x01(\r\x12\x10\n\x08stage_id\x18\x02 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(PotionDungeonResultInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _POTIONDUNGEONRESULTINFO._serialized_start=55
   _POTIONDUNGEONRESULTINFO._serialized_end=214
 # @@protoc_insertion_point(module_scope)

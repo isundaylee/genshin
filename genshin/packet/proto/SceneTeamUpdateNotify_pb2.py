@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import SceneTeamAvatar_pb2 as genshin_dot_packet_dot_proto_dot_SceneTeamAvatar__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/SceneTeamUpdateNotify.proto\x1a*genshin/packet/proto/SceneTeamAvatar.proto\"[\n\x15SceneTeamUpdateNotify\x12\x30\n\x16scene_team_avatar_list\x18\x0b \x03(\x0b\x32\x10.SceneTeamAvatar\x12\x10\n\x08is_in_mp\x18\x0f \x01(\x08\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/SceneTeamUpdateNotify.proto\x1a*genshin/packet/proto/SceneTeamAvatar.proto\"[\n\x15SceneTeamUpdateNotify\x12\x30\n\x16scene_team_avatar_list\x18\x0b \x03(\x0b\x32\x10.SceneTeamAvatar\x12\x10\n\x08is_in_mp\x18\x0f \x01(\x08\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(SceneTeamUpdateNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SCENETEAMUPDATENOTIFY._serialized_start=96
   _SCENETEAMUPDATENOTIFY._serialized_end=187
 # @@protoc_insertion_point(module_scope)

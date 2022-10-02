@@ -13,9 +13,10 @@ _sym_db = _symbol_database.Default()
 
 
 from genshin.packet.proto import OnlinePlayerInfo_pb2 as genshin_dot_packet_dot_proto_dot_OnlinePlayerInfo__pb2
+from genshin.packet.proto import Unk3000_HKHFFDEMNKN_pb2 as genshin_dot_packet_dot_proto_dot_Unk3000__HKHFFDEMNKN__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/WorldPlayerInfoNotify.proto\x1a+genshin/packet/proto/OnlinePlayerInfo.proto\"]\n\x15WorldPlayerInfoNotify\x12\x17\n\x0fplayer_uid_list\x18\x0b \x03(\r\x12+\n\x10player_info_list\x18\x0e \x03(\x0b\x32\x11.OnlinePlayerInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/WorldPlayerInfoNotify.proto\x1a+genshin/packet/proto/OnlinePlayerInfo.proto\x1a.genshin/packet/proto/Unk3000_HKHFFDEMNKN.proto\"\x90\x01\n\x15WorldPlayerInfoNotify\x12\x31\n\x13Unk3000_GCJLJCJAADG\x18\x08 \x03(\x0b\x32\x14.Unk3000_HKHFFDEMNKN\x12+\n\x10player_info_list\x18\x0e \x03(\x0b\x32\x11.OnlinePlayerInfo\x12\x17\n\x0fplayer_uid_list\x18\x0b \x03(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +31,7 @@ _sym_db.RegisterMessage(WorldPlayerInfoNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
-  _WORLDPLAYERINFONOTIFY._serialized_start=97
-  _WORLDPLAYERINFONOTIFY._serialized_end=190
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
+  _WORLDPLAYERINFONOTIFY._serialized_start=146
+  _WORLDPLAYERINFONOTIFY._serialized_end=290
 # @@protoc_insertion_point(module_scope)

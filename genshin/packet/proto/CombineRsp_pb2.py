@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import ItemParam_pb2 as genshin_dot_packet_dot_proto_dot_ItemParam__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/CombineRsp.proto\x1a$genshin/packet/proto/ItemParam.proto\"\xaa\x02\n\nCombineRsp\x12\"\n\x0e\x63ost_item_list\x18\x03 \x03(\x0b\x32\n.ItemParam\x12\x0f\n\x07retcode\x18\x07 \x01(\x05\x12)\n\x15total_extra_item_list\x18\x06 \x03(\x0b\x32\n.ItemParam\x12\x12\n\ncombine_id\x18\x0b \x01(\r\x12*\n\x16total_random_item_list\x18\t \x03(\x0b\x32\n.ItemParam\x12$\n\x10result_item_list\x18\x02 \x03(\x0b\x32\n.ItemParam\x12\x15\n\rcombine_count\x18\r \x01(\r\x12*\n\x16total_return_item_list\x18\x0c \x03(\x0b\x32\n.ItemParam\x12\x13\n\x0b\x61vatar_guid\x18\n \x01(\x04\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/CombineRsp.proto\x1a$genshin/packet/proto/ItemParam.proto\"\xaa\x02\n\nCombineRsp\x12\"\n\x0e\x63ost_item_list\x18\x03 \x03(\x0b\x32\n.ItemParam\x12\x0f\n\x07retcode\x18\x07 \x01(\x05\x12)\n\x15total_extra_item_list\x18\x06 \x03(\x0b\x32\n.ItemParam\x12\x12\n\ncombine_id\x18\x0b \x01(\r\x12*\n\x16total_random_item_list\x18\t \x03(\x0b\x32\n.ItemParam\x12$\n\x10result_item_list\x18\x02 \x03(\x0b\x32\n.ItemParam\x12\x15\n\rcombine_count\x18\r \x01(\r\x12*\n\x16total_return_item_list\x18\x0c \x03(\x0b\x32\n.ItemParam\x12\x13\n\x0b\x61vatar_guid\x18\n \x01(\x04\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(CombineRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _COMBINERSP._serialized_start=80
   _COMBINERSP._serialized_end=378
 # @@protoc_insertion_point(module_scope)

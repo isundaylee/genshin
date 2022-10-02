@@ -18,7 +18,7 @@ from genshin.packet.proto import ShopGoods_pb2 as genshin_dot_packet_dot_proto_d
 from genshin.packet.proto import ShopMcoinProduct_pb2 as genshin_dot_packet_dot_proto_dot_ShopMcoinProduct__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x1fgenshin/packet/proto/Shop.proto\x1a*genshin/packet/proto/ShopCardProduct.proto\x1a-genshin/packet/proto/ShopConcertProduct.proto\x1a$genshin/packet/proto/ShopGoods.proto\x1a+genshin/packet/proto/ShopMcoinProduct.proto\"\x93\x02\n\x04Shop\x12\x31\n\x14\x63oncert_product_list\x18\x03 \x03(\x0b\x32\x13.ShopConcertProduct\x12\x1e\n\ngoods_list\x18\x0f \x03(\x0b\x32\n.ShopGoods\x12\x1d\n\x15\x63ity_reputation_level\x18\x02 \x01(\r\x12+\n\x11\x63\x61rd_product_list\x18\x0e \x03(\x0b\x32\x10.ShopCardProduct\x12-\n\x12mcoin_product_list\x18\x07 \x03(\x0b\x32\x11.ShopMcoinProduct\x12\x19\n\x11next_refresh_time\x18\x0b \x01(\r\x12\x0f\n\x07\x63ity_id\x18\n \x01(\r\x12\x11\n\tshop_type\x18\r \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x1fgenshin/packet/proto/Shop.proto\x1a*genshin/packet/proto/ShopCardProduct.proto\x1a-genshin/packet/proto/ShopConcertProduct.proto\x1a$genshin/packet/proto/ShopGoods.proto\x1a+genshin/packet/proto/ShopMcoinProduct.proto\"\x93\x02\n\x04Shop\x12\x31\n\x14\x63oncert_product_list\x18\x03 \x03(\x0b\x32\x13.ShopConcertProduct\x12\x1e\n\ngoods_list\x18\x0f \x03(\x0b\x32\n.ShopGoods\x12\x1d\n\x15\x63ity_reputation_level\x18\x02 \x01(\r\x12+\n\x11\x63\x61rd_product_list\x18\x0e \x03(\x0b\x32\x10.ShopCardProduct\x12-\n\x12mcoin_product_list\x18\x07 \x03(\x0b\x32\x11.ShopMcoinProduct\x12\x19\n\x11next_refresh_time\x18\x0b \x01(\r\x12\x0f\n\x07\x63ity_id\x18\n \x01(\r\x12\x11\n\tshop_type\x18\r \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -33,7 +33,7 @@ _sym_db.RegisterMessage(Shop)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SHOP._serialized_start=210
   _SHOP._serialized_end=485
 # @@protoc_insertion_point(module_scope)

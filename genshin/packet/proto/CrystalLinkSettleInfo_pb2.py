@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/CrystalLinkSettleInfo.proto\"\xad\x01\n\x15\x43rystalLinkSettleInfo\x12\x1e\n\x16kill_elite_monster_num\x18\x02 \x01(\r\x12\x13\n\x0b\x66inal_score\x18\x06 \x01(\r\x12\x10\n\x08level_id\x18\x0c \x01(\r\x12\x15\n\ris_new_record\x18\r \x01(\x08\x12\x15\n\rdifficulty_id\x18\t \x01(\r\x12\x1f\n\x17kill_normal_mosnter_num\x18\x03 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/CrystalLinkSettleInfo.proto\"\xad\x01\n\x15\x43rystalLinkSettleInfo\x12\x1e\n\x16kill_elite_monster_num\x18\x02 \x01(\r\x12\x13\n\x0b\x66inal_score\x18\x06 \x01(\r\x12\x10\n\x08level_id\x18\x0c \x01(\r\x12\x15\n\ris_new_record\x18\r \x01(\x08\x12\x15\n\rdifficulty_id\x18\t \x01(\r\x12\x1f\n\x17kill_normal_mosnter_num\x18\x03 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(CrystalLinkSettleInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _CRYSTALLINKSETTLEINFO._serialized_start=53
   _CRYSTALLINKSETTLEINFO._serialized_end=226
 # @@protoc_insertion_point(module_scope)

@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import ItemParam_pb2 as genshin_dot_packet_dot_proto_dot_ItemParam__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n:genshin/packet/proto/CalcWeaponUpgradeReturnItemsReq.proto\x1a$genshin/packet/proto/ItemParam.proto\"\x81\x01\n\x1f\x43\x61lcWeaponUpgradeReturnItemsReq\x12\x1d\n\x15\x66ood_weapon_guid_list\x18\x0f \x03(\x04\x12\x1a\n\x12target_weapon_guid\x18\x0c \x01(\x04\x12#\n\x0fitem_param_list\x18\x03 \x03(\x0b\x32\n.ItemParamB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n:genshin/packet/proto/CalcWeaponUpgradeReturnItemsReq.proto\x1a$genshin/packet/proto/ItemParam.proto\"\x81\x01\n\x1f\x43\x61lcWeaponUpgradeReturnItemsReq\x12\x1d\n\x15\x66ood_weapon_guid_list\x18\x0f \x03(\x04\x12\x1a\n\x12target_weapon_guid\x18\x0c \x01(\x04\x12#\n\x0fitem_param_list\x18\x03 \x03(\x0b\x32\n.ItemParamB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(CalcWeaponUpgradeReturnItemsReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _CALCWEAPONUPGRADERETURNITEMSREQ._serialized_start=101
   _CALCWEAPONUPGRADERETURNITEMSREQ._serialized_end=230
 # @@protoc_insertion_point(module_scope)

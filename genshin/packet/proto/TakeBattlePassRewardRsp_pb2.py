@@ -16,7 +16,7 @@ from genshin.packet.proto import BattlePassRewardTakeOption_pb2 as genshin_dot_p
 from genshin.packet.proto import ItemParam_pb2 as genshin_dot_packet_dot_proto_dot_ItemParam__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/TakeBattlePassRewardRsp.proto\x1a\x35genshin/packet/proto/BattlePassRewardTakeOption.proto\x1a$genshin/packet/proto/ItemParam.proto\"\x80\x01\n\x17TakeBattlePassRewardRsp\x12\x0f\n\x07retcode\x18\r \x01(\x05\x12\x35\n\x10take_option_list\x18\t \x03(\x0b\x32\x1b.BattlePassRewardTakeOption\x12\x1d\n\titem_list\x18\x07 \x03(\x0b\x32\n.ItemParamB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/TakeBattlePassRewardRsp.proto\x1a\x35genshin/packet/proto/BattlePassRewardTakeOption.proto\x1a$genshin/packet/proto/ItemParam.proto\"\x80\x01\n\x17TakeBattlePassRewardRsp\x12\x1d\n\titem_list\x18\x07 \x03(\x0b\x32\n.ItemParam\x12\x0f\n\x07retcode\x18\r \x01(\x05\x12\x35\n\x10take_option_list\x18\t \x03(\x0b\x32\x1b.BattlePassRewardTakeOptionB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(TakeBattlePassRewardRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _TAKEBATTLEPASSREWARDRSP._serialized_start=148
   _TAKEBATTLEPASSREWARDRSP._serialized_end=276
 # @@protoc_insertion_point(module_scope)

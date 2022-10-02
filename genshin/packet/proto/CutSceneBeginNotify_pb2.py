@@ -12,9 +12,10 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+from genshin.packet.proto import Unk3100_LFIMJOCPILC_pb2 as genshin_dot_packet_dot_proto_dot_Unk3100__LFIMJOCPILC__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/CutSceneBeginNotify.proto\"B\n\x13\x43utSceneBeginNotify\x12\x13\n\x0b\x63utscene_id\x18\x0e \x01(\r\x12\x16\n\x0eis_wait_others\x18\t \x01(\x08\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/CutSceneBeginNotify.proto\x1a.genshin/packet/proto/Unk3100_LFIMJOCPILC.proto\"r\n\x13\x43utSceneBeginNotify\x12\x16\n\x0eis_wait_others\x18\t \x01(\x08\x12\x13\n\x0b\x63utscene_id\x18\x0e \x01(\r\x12.\n\x10\x65xtra_param_list\x18\x03 \x03(\x0b\x32\x14.Unk3100_LFIMJOCPILCB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +30,7 @@ _sym_db.RegisterMessage(CutSceneBeginNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
-  _CUTSCENEBEGINNOTIFY._serialized_start=50
-  _CUTSCENEBEGINNOTIFY._serialized_end=116
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
+  _CUTSCENEBEGINNOTIFY._serialized_start=98
+  _CUTSCENEBEGINNOTIFY._serialized_end=212
 # @@protoc_insertion_point(module_scope)

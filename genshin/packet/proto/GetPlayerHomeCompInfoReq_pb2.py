@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n3genshin/packet/proto/GetPlayerHomeCompInfoReq.proto\"\x1a\n\x18GetPlayerHomeCompInfoReqB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n3genshin/packet/proto/GetPlayerHomeCompInfoReq.proto\"\x1a\n\x18GetPlayerHomeCompInfoReqB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(GetPlayerHomeCompInfoReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _GETPLAYERHOMECOMPINFOREQ._serialized_start=55
   _GETPLAYERHOMECOMPINFOREQ._serialized_end=81
 # @@protoc_insertion_point(module_scope)

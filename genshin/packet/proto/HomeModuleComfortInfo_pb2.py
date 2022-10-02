@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/HomeModuleComfortInfo.proto\"z\n\x15HomeModuleComfortInfo\x12\x11\n\tmodule_id\x18\r \x01(\r\x12 \n\x18room_scene_comfort_value\x18\t \x01(\r\x12,\n$world_scene_block_comfort_value_list\x18\x03 \x03(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/HomeModuleComfortInfo.proto\"z\n\x15HomeModuleComfortInfo\x12\x11\n\tmodule_id\x18\r \x01(\r\x12 \n\x18room_scene_comfort_value\x18\t \x01(\r\x12,\n$world_scene_block_comfort_value_list\x18\x03 \x03(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(HomeModuleComfortInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _HOMEMODULECOMFORTINFO._serialized_start=52
   _HOMEMODULECOMFORTINFO._serialized_end=174
 # @@protoc_insertion_point(module_scope)

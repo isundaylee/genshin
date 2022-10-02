@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import UnionCmd_pb2 as genshin_dot_packet_dot_proto_dot_UnionCmd__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/UnionCmdNotify.proto\x1a#genshin/packet/proto/UnionCmd.proto\"-\n\x0eUnionCmdNotify\x12\x1b\n\x08\x63md_list\x18\x01 \x03(\x0b\x32\t.UnionCmdB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/UnionCmdNotify.proto\x1a#genshin/packet/proto/UnionCmd.proto\"-\n\x0eUnionCmdNotify\x12\x1b\n\x08\x63md_list\x18\x01 \x03(\x0b\x32\t.UnionCmdB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(UnionCmdNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _UNIONCMDNOTIFY._serialized_start=82
   _UNIONCMDNOTIFY._serialized_end=127
 # @@protoc_insertion_point(module_scope)

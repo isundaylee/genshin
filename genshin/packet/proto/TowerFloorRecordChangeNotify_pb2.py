@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import TowerFloorRecord_pb2 as genshin_dot_packet_dot_proto_dot_TowerFloorRecord__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n7genshin/packet/proto/TowerFloorRecordChangeNotify.proto\x1a+genshin/packet/proto/TowerFloorRecord.proto\"v\n\x1cTowerFloorRecordChangeNotify\x12\"\n\x1ais_finished_entrance_floor\x18\x0b \x01(\x08\x12\x32\n\x17tower_floor_record_list\x18\x08 \x03(\x0b\x32\x11.TowerFloorRecordB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n7genshin/packet/proto/TowerFloorRecordChangeNotify.proto\x1a+genshin/packet/proto/TowerFloorRecord.proto\"v\n\x1cTowerFloorRecordChangeNotify\x12\"\n\x1ais_finished_entrance_floor\x18\x0b \x01(\x08\x12\x32\n\x17tower_floor_record_list\x18\x08 \x03(\x0b\x32\x11.TowerFloorRecordB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(TowerFloorRecordChangeNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _TOWERFLOORRECORDCHANGENOTIFY._serialized_start=104
   _TOWERFLOORRECORDCHANGENOTIFY._serialized_end=222
 # @@protoc_insertion_point(module_scope)

@@ -12,12 +12,9 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-from genshin.packet.proto import CountDownDelete_pb2 as genshin_dot_packet_dot_proto_dot_CountDownDelete__pb2
-from genshin.packet.proto import DateTimeDelete_pb2 as genshin_dot_packet_dot_proto_dot_DateTimeDelete__pb2
-from genshin.packet.proto import DelayWeekCountDownDelete_pb2 as genshin_dot_packet_dot_proto_dot_DelayWeekCountDownDelete__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/MaterialDeleteInfo.proto\x1a*genshin/packet/proto/CountDownDelete.proto\x1a)genshin/packet/proto/DateTimeDelete.proto\x1a\x33genshin/packet/proto/DelayWeekCountDownDelete.proto\"\xef\x05\n\x12MaterialDeleteInfo\x12\x19\n\x11has_delete_config\x18\x01 \x01(\x08\x12@\n\x11\x63ount_down_delete\x18\x02 \x01(\x0b\x32#.MaterialDeleteInfo.CountDownDeleteH\x00\x12\x39\n\x0b\x64\x61te_delete\x18\x03 \x01(\x0b\x32\".MaterialDeleteInfo.DateTimeDeleteH\x00\x12T\n\x1c\x64\x65lay_week_count_down_delete\x18\x04 \x01(\x0b\x32,.MaterialDeleteInfo.DelayWeekCountDownDeleteH\x00\x1a\xc2\x01\n\x0f\x43ountDownDelete\x12V\n\x13\x64\x65lete_time_num_map\x18\x01 \x03(\x0b\x32\x39.MaterialDeleteInfo.CountDownDelete.DeleteTimeNumMapEntry\x12\x1e\n\x16\x63onfig_count_down_time\x18\x02 \x01(\r\x1a\x37\n\x15\x44\x65leteTimeNumMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x1a%\n\x0e\x44\x61teTimeDelete\x12\x13\n\x0b\x64\x65lete_time\x18\x01 \x01(\r\x1a\xef\x01\n\x18\x44\x65layWeekCountDownDelete\x12_\n\x13\x64\x65lete_time_num_map\x18\x01 \x03(\x0b\x32\x42.MaterialDeleteInfo.DelayWeekCountDownDelete.DeleteTimeNumMapEntry\x12\x19\n\x11\x63onfig_delay_week\x18\x02 \x01(\r\x12\x1e\n\x16\x63onfig_count_down_time\x18\x03 \x01(\r\x1a\x37\n\x15\x44\x65leteTimeNumMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\r\n\x0b\x64\x65lete_infoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/MaterialDeleteInfo.proto\"\xef\x05\n\x12MaterialDeleteInfo\x12\x19\n\x11has_delete_config\x18\x01 \x01(\x08\x12@\n\x11\x63ount_down_delete\x18\x02 \x01(\x0b\x32#.MaterialDeleteInfo.CountDownDeleteH\x00\x12\x39\n\x0b\x64\x61te_delete\x18\x03 \x01(\x0b\x32\".MaterialDeleteInfo.DateTimeDeleteH\x00\x12T\n\x1c\x64\x65lay_week_count_down_delete\x18\x04 \x01(\x0b\x32,.MaterialDeleteInfo.DelayWeekCountDownDeleteH\x00\x1a\xc2\x01\n\x0f\x43ountDownDelete\x12V\n\x13\x64\x65lete_time_num_map\x18\x01 \x03(\x0b\x32\x39.MaterialDeleteInfo.CountDownDelete.DeleteTimeNumMapEntry\x12\x1e\n\x16\x63onfig_count_down_time\x18\x02 \x01(\r\x1a\x37\n\x15\x44\x65leteTimeNumMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x1a%\n\x0e\x44\x61teTimeDelete\x12\x13\n\x0b\x64\x65lete_time\x18\x01 \x01(\r\x1a\xef\x01\n\x18\x44\x65layWeekCountDownDelete\x12_\n\x13\x64\x65lete_time_num_map\x18\x01 \x03(\x0b\x32\x42.MaterialDeleteInfo.DelayWeekCountDownDelete.DeleteTimeNumMapEntry\x12\x19\n\x11\x63onfig_delay_week\x18\x02 \x01(\r\x12\x1e\n\x16\x63onfig_count_down_time\x18\x03 \x01(\r\x1a\x37\n\x15\x44\x65leteTimeNumMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\r\n\x0b\x64\x65lete_infoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -77,21 +74,21 @@ _sym_db.RegisterMessage(MaterialDeleteInfo.DelayWeekCountDownDelete.DeleteTimeNu
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _MATERIALDELETEINFO_COUNTDOWNDELETE_DELETETIMENUMMAPENTRY._options = None
   _MATERIALDELETEINFO_COUNTDOWNDELETE_DELETETIMENUMMAPENTRY._serialized_options = b'8\001'
   _MATERIALDELETEINFO_DELAYWEEKCOUNTDOWNDELETE_DELETETIMENUMMAPENTRY._options = None
   _MATERIALDELETEINFO_DELAYWEEKCOUNTDOWNDELETE_DELETETIMENUMMAPENTRY._serialized_options = b'8\001'
-  _MATERIALDELETEINFO._serialized_start=190
-  _MATERIALDELETEINFO._serialized_end=941
-  _MATERIALDELETEINFO_COUNTDOWNDELETE._serialized_start=451
-  _MATERIALDELETEINFO_COUNTDOWNDELETE._serialized_end=645
-  _MATERIALDELETEINFO_COUNTDOWNDELETE_DELETETIMENUMMAPENTRY._serialized_start=590
-  _MATERIALDELETEINFO_COUNTDOWNDELETE_DELETETIMENUMMAPENTRY._serialized_end=645
-  _MATERIALDELETEINFO_DATETIMEDELETE._serialized_start=647
-  _MATERIALDELETEINFO_DATETIMEDELETE._serialized_end=684
-  _MATERIALDELETEINFO_DELAYWEEKCOUNTDOWNDELETE._serialized_start=687
-  _MATERIALDELETEINFO_DELAYWEEKCOUNTDOWNDELETE._serialized_end=926
-  _MATERIALDELETEINFO_DELAYWEEKCOUNTDOWNDELETE_DELETETIMENUMMAPENTRY._serialized_start=590
-  _MATERIALDELETEINFO_DELAYWEEKCOUNTDOWNDELETE_DELETETIMENUMMAPENTRY._serialized_end=645
+  _MATERIALDELETEINFO._serialized_start=50
+  _MATERIALDELETEINFO._serialized_end=801
+  _MATERIALDELETEINFO_COUNTDOWNDELETE._serialized_start=311
+  _MATERIALDELETEINFO_COUNTDOWNDELETE._serialized_end=505
+  _MATERIALDELETEINFO_COUNTDOWNDELETE_DELETETIMENUMMAPENTRY._serialized_start=450
+  _MATERIALDELETEINFO_COUNTDOWNDELETE_DELETETIMENUMMAPENTRY._serialized_end=505
+  _MATERIALDELETEINFO_DATETIMEDELETE._serialized_start=507
+  _MATERIALDELETEINFO_DATETIMEDELETE._serialized_end=544
+  _MATERIALDELETEINFO_DELAYWEEKCOUNTDOWNDELETE._serialized_start=547
+  _MATERIALDELETEINFO_DELAYWEEKCOUNTDOWNDELETE._serialized_end=786
+  _MATERIALDELETEINFO_DELAYWEEKCOUNTDOWNDELETE_DELETETIMENUMMAPENTRY._serialized_start=450
+  _MATERIALDELETEINFO_DELAYWEEKCOUNTDOWNDELETE_DELETETIMENUMMAPENTRY._serialized_end=505
 # @@protoc_insertion_point(module_scope)

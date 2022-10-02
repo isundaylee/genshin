@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/MapMarkPointType.proto*\xf5\x01\n\x10MapMarkPointType\x12\x1b\n\x17MAP_MARK_POINT_TYPE_NPC\x10\x00\x12\x1d\n\x19MAP_MARK_POINT_TYPE_QUEST\x10\x01\x12\x1f\n\x1bMAP_MARK_POINT_TYPE_SPECIAL\x10\x02\x12\x1c\n\x18MAP_MARK_POINT_TYPE_MINE\x10\x03\x12\"\n\x1eMAP_MARK_POINT_TYPE_COLLECTION\x10\x04\x12\x1f\n\x1bMAP_MARK_POINT_TYPE_MONSTER\x10\x05\x12!\n\x1dMAP_MARK_POINT_TYPE_FISH_POOL\x10\x06\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/MapMarkPointType.proto*\xf5\x01\n\x10MapMarkPointType\x12\x1b\n\x17MAP_MARK_POINT_TYPE_NPC\x10\x00\x12\x1d\n\x19MAP_MARK_POINT_TYPE_QUEST\x10\x01\x12\x1f\n\x1bMAP_MARK_POINT_TYPE_SPECIAL\x10\x02\x12\x1c\n\x18MAP_MARK_POINT_TYPE_MINE\x10\x03\x12\"\n\x1eMAP_MARK_POINT_TYPE_COLLECTION\x10\x04\x12\x1f\n\x1bMAP_MARK_POINT_TYPE_MONSTER\x10\x05\x12!\n\x1dMAP_MARK_POINT_TYPE_FISH_POOL\x10\x06\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 _MAPMARKPOINTTYPE = DESCRIPTOR.enum_types_by_name['MapMarkPointType']
 MapMarkPointType = enum_type_wrapper.EnumTypeWrapper(_MAPMARKPOINTTYPE)
@@ -31,7 +31,7 @@ MAP_MARK_POINT_TYPE_FISH_POOL = 6
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _MAPMARKPOINTTYPE._serialized_start=48
   _MAPMARKPOINTTYPE._serialized_end=293
 # @@protoc_insertion_point(module_scope)

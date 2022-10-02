@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n>genshin/packet/proto/ServerCondMeetQuestListUpdateNotify.proto\"[\n#ServerCondMeetQuestListUpdateNotify\x12\x19\n\x11\x64\x65l_quest_id_list\x18\x01 \x03(\r\x12\x19\n\x11\x61\x64\x64_quest_id_list\x18\x0c \x03(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n>genshin/packet/proto/ServerCondMeetQuestListUpdateNotify.proto\"[\n#ServerCondMeetQuestListUpdateNotify\x12\x19\n\x11\x64\x65l_quest_id_list\x18\x01 \x03(\r\x12\x19\n\x11\x61\x64\x64_quest_id_list\x18\x0c \x03(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(ServerCondMeetQuestListUpdateNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SERVERCONDMEETQUESTLISTUPDATENOTIFY._serialized_start=66
   _SERVERCONDMEETQUESTLISTUPDATENOTIFY._serialized_end=157
 # @@protoc_insertion_point(module_scope)

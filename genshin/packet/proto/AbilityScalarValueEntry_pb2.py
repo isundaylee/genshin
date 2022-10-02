@@ -16,7 +16,7 @@ from genshin.packet.proto import AbilityScalarType_pb2 as genshin_dot_packet_dot
 from genshin.packet.proto import AbilityString_pb2 as genshin_dot_packet_dot_proto_dot_AbilityString__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/AbilityScalarValueEntry.proto\x1a,genshin/packet/proto/AbilityScalarType.proto\x1a(genshin/packet/proto/AbilityString.proto\"\xc1\x01\n\x17\x41\x62ilityScalarValueEntry\x12\x1b\n\x03key\x18\x01 \x01(\x0b\x32\x0e.AbilityString\x12&\n\nvalue_type\x18\x02 \x01(\x0e\x32\x12.AbilityScalarType\x12\x15\n\x0b\x66loat_value\x18\x03 \x01(\x02H\x00\x12\x16\n\x0cstring_value\x18\x04 \x01(\tH\x00\x12\x13\n\tint_value\x18\x05 \x01(\x05H\x00\x12\x14\n\nuint_value\x18\x06 \x01(\rH\x00\x42\x07\n\x05valueB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/AbilityScalarValueEntry.proto\x1a,genshin/packet/proto/AbilityScalarType.proto\x1a(genshin/packet/proto/AbilityString.proto\"\xc1\x01\n\x17\x41\x62ilityScalarValueEntry\x12\x1b\n\x03key\x18\x01 \x01(\x0b\x32\x0e.AbilityString\x12&\n\nvalue_type\x18\x02 \x01(\x0e\x32\x12.AbilityScalarType\x12\x15\n\x0b\x66loat_value\x18\x03 \x01(\x02H\x00\x12\x16\n\x0cstring_value\x18\x04 \x01(\tH\x00\x12\x13\n\tint_value\x18\x05 \x01(\x05H\x00\x12\x14\n\nuint_value\x18\x06 \x01(\rH\x00\x42\x07\n\x05valueB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(AbilityScalarValueEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ABILITYSCALARVALUEENTRY._serialized_start=143
   _ABILITYSCALARVALUEENTRY._serialized_end=336
 # @@protoc_insertion_point(module_scope)

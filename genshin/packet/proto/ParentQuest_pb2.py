@@ -14,9 +14,10 @@ _sym_db = _symbol_database.Default()
 
 from genshin.packet.proto import ChildQuest_pb2 as genshin_dot_packet_dot_proto_dot_ChildQuest__pb2
 from genshin.packet.proto import ParentQuestRandomInfo_pb2 as genshin_dot_packet_dot_proto_dot_ParentQuestRandomInfo__pb2
+from genshin.packet.proto import Unk3000_ENLDIHLGNCK_pb2 as genshin_dot_packet_dot_proto_dot_Unk3000__ENLDIHLGNCK__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/ParentQuest.proto\x1a%genshin/packet/proto/ChildQuest.proto\x1a\x30genshin/packet/proto/ParentQuestRandomInfo.proto\"\xf0\x02\n\x0bParentQuest\x12+\n\x0brandom_info\x18\x0c \x01(\x0b\x32\x16.ParentQuestRandomInfo\x12\x15\n\rquest_var_seq\x18\x0b \x01(\r\x12\x11\n\tquest_var\x18\x0e \x03(\x05\x12\x1f\n\x17\x63utscene_encryption_key\x18\x06 \x01(\x04\x12\x11\n\tis_random\x18\r \x01(\x08\x12\x17\n\x0fparent_quest_id\x18\x03 \x01(\r\x12\x13\n\x0bis_finished\x18\x07 \x01(\x08\x12\x32\n\x0ctime_var_map\x18\x08 \x03(\x0b\x32\x1c.ParentQuest.TimeVarMapEntry\x12\x1a\n\x12parent_quest_state\x18\x01 \x01(\r\x12%\n\x10\x63hild_quest_list\x18\t \x03(\x0b\x32\x0b.ChildQuest\x1a\x31\n\x0fTimeVarMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/ParentQuest.proto\x1a%genshin/packet/proto/ChildQuest.proto\x1a\x30genshin/packet/proto/ParentQuestRandomInfo.proto\x1a.genshin/packet/proto/Unk3000_ENLDIHLGNCK.proto\"\x9f\x03\n\x0bParentQuest\x12\x11\n\tquest_var\x18\x0e \x03(\x05\x12\x32\n\x0ctime_var_map\x18\x08 \x03(\x0b\x32\x1c.ParentQuest.TimeVarMapEntry\x12\x1a\n\x12parent_quest_state\x18\x01 \x01(\r\x12\x13\n\x0bis_finished\x18\x07 \x01(\x08\x12\x31\n\x13Unk3000_HLPGILIGGCB\x18\x0f \x03(\x0b\x32\x14.Unk3000_ENLDIHLGNCK\x12+\n\x0brandom_info\x18\x0c \x01(\x0b\x32\x16.ParentQuestRandomInfo\x12\x17\n\x0fparent_quest_id\x18\x03 \x01(\r\x12\x11\n\tis_random\x18\r \x01(\x08\x12\x1b\n\x13Unk2700_KHDDIJNOICK\x18\x06 \x01(\x04\x12\x15\n\rquest_var_seq\x18\x0b \x01(\r\x12%\n\x10\x63hild_quest_list\x18\t \x03(\x0b\x32\x0b.ChildQuest\x1a\x31\n\x0fTimeVarMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -40,11 +41,11 @@ _sym_db.RegisterMessage(ParentQuest.TimeVarMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _PARENTQUEST_TIMEVARMAPENTRY._options = None
   _PARENTQUEST_TIMEVARMAPENTRY._serialized_options = b'8\001'
-  _PARENTQUEST._serialized_start=132
-  _PARENTQUEST._serialized_end=500
-  _PARENTQUEST_TIMEVARMAPENTRY._serialized_start=451
-  _PARENTQUEST_TIMEVARMAPENTRY._serialized_end=500
+  _PARENTQUEST._serialized_start=180
+  _PARENTQUEST._serialized_end=595
+  _PARENTQUEST_TIMEVARMAPENTRY._serialized_start=546
+  _PARENTQUEST_TIMEVARMAPENTRY._serialized_end=595
 # @@protoc_insertion_point(module_scope)

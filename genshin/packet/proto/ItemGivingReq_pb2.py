@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import ItemParam_pb2 as genshin_dot_packet_dot_proto_dot_ItemParam__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(genshin/packet/proto/ItemGivingReq.proto\x1a$genshin/packet/proto/ItemParam.proto\"\xe7\x02\n\rItemGivingReq\x12\x41\n\x13item_guid_count_map\x18\x0f \x03(\x0b\x32$.ItemGivingReq.ItemGuidCountMapEntry\x12\x11\n\tgiving_id\x18\r \x01(\r\x12#\n\x0fitem_param_list\x18\x04 \x03(\x0b\x32\n.ItemParam\x12?\n\x13Unk2800_PHNIJJMECGN\x18\x02 \x01(\x0e\x32\".ItemGivingReq.Unk2800_LENCDFJACFN\x1a\x37\n\x15ItemGuidCountMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\x04\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\"a\n\x13Unk2800_LENCDFJACFN\x12\x1d\n\x19Unk2800_LENCDFJACFN_QUEST\x10\x00\x12+\n\'Unk2800_LENCDFJACFN_Unk2800_HHHOPEHIPFG\x10\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(genshin/packet/proto/ItemGivingReq.proto\x1a$genshin/packet/proto/ItemParam.proto\"\xe7\x02\n\rItemGivingReq\x12\x41\n\x13item_guid_count_map\x18\x0f \x03(\x0b\x32$.ItemGivingReq.ItemGuidCountMapEntry\x12\x11\n\tgiving_id\x18\r \x01(\r\x12#\n\x0fitem_param_list\x18\x04 \x03(\x0b\x32\n.ItemParam\x12?\n\x13Unk2800_PHNIJJMECGN\x18\x02 \x01(\x0e\x32\".ItemGivingReq.Unk2800_LENCDFJACFN\x1a\x37\n\x15ItemGuidCountMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\x04\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\"a\n\x13Unk2800_LENCDFJACFN\x12\x1d\n\x19Unk2800_LENCDFJACFN_QUEST\x10\x00\x12+\n\'Unk2800_LENCDFJACFN_Unk2800_HHHOPEHIPFG\x10\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -40,7 +40,7 @@ _sym_db.RegisterMessage(ItemGivingReq.ItemGuidCountMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ITEMGIVINGREQ_ITEMGUIDCOUNTMAPENTRY._options = None
   _ITEMGIVINGREQ_ITEMGUIDCOUNTMAPENTRY._serialized_options = b'8\001'
   _ITEMGIVINGREQ._serialized_start=83

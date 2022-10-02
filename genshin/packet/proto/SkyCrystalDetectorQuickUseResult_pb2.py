@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import Unk2700_CCEOEOHLAPK_pb2 as genshin_dot_packet_dot_proto_dot_Unk2700__CCEOEOHLAPK__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n;genshin/packet/proto/SkyCrystalDetectorQuickUseResult.proto\x1a.genshin/packet/proto/Unk2700_CCEOEOHLAPK.proto\"f\n SkyCrystalDetectorQuickUseResult\x12\x31\n\x13Unk2700_COIELIGEACL\x18\t \x01(\x0b\x32\x14.Unk2700_CCEOEOHLAPK\x12\x0f\n\x07retcode\x18\x08 \x01(\x05\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n;genshin/packet/proto/SkyCrystalDetectorQuickUseResult.proto\x1a.genshin/packet/proto/Unk2700_CCEOEOHLAPK.proto\"f\n SkyCrystalDetectorQuickUseResult\x12\x31\n\x13Unk2700_COIELIGEACL\x18\t \x01(\x0b\x32\x14.Unk2700_CCEOEOHLAPK\x12\x0f\n\x07retcode\x18\x08 \x01(\x05\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(SkyCrystalDetectorQuickUseResult)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SKYCRYSTALDETECTORQUICKUSERESULT._serialized_start=111
   _SKYCRYSTALDETECTORQUICKUSERESULT._serialized_end=213
 # @@protoc_insertion_point(module_scope)

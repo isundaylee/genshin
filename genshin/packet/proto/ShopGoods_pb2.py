@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import ItemParam_pb2 as genshin_dot_packet_dot_proto_dot_ItemParam__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n$genshin/packet/proto/ShopGoods.proto\x1a$genshin/packet/proto/ItemParam.proto\"\xd1\x03\n\tShopGoods\x12\x1a\n\x11\x64iscount_end_time\x18\x82\x02 \x01(\r\x12\x11\n\tmin_level\x18\x08 \x01(\r\x12\x10\n\x08\x65nd_time\x18\x0b \x01(\r\x12\"\n\x0e\x63ost_item_list\x18\x03 \x03(\x0b\x32\n.ItemParam\x12\x1b\n\x12secondary_sheet_id\x18\xbe\x02 \x01(\r\x12\r\n\x05hcoin\x18\x01 \x01(\r\x12\r\n\x05mcoin\x18\x0e \x01(\r\x12\x14\n\x0b\x64iscount_id\x18\xce\x0f \x01(\r\x12\x15\n\x0csingle_limit\x18\xf7\x01 \x01(\r\x12\x10\n\x08goods_id\x18\r \x01(\r\x12\x19\n\x11next_refresh_time\x18\x07 \x01(\r\x12\x11\n\tmax_level\x18\x04 \x01(\r\x12\x14\n\x0c\x64isable_type\x18\x06 \x01(\r\x12\x1c\n\x13\x64iscount_begin_time\x18\xbe\x04 \x01(\r\x12\x19\n\x11pre_goods_id_list\x18\x02 \x03(\r\x12\x12\n\nbegin_time\x18\x05 \x01(\r\x12\r\n\x05scoin\x18\x0f \x01(\r\x12\x12\n\nbought_num\x18\n \x01(\r\x12\x11\n\tbuy_limit\x18\x0c \x01(\r\x12\x1e\n\ngoods_item\x18\t \x01(\x0b\x32\n.ItemParamB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n$genshin/packet/proto/ShopGoods.proto\x1a$genshin/packet/proto/ItemParam.proto\"\xd1\x03\n\tShopGoods\x12\x1a\n\x11\x64iscount_end_time\x18\x82\x02 \x01(\r\x12\x11\n\tmin_level\x18\x08 \x01(\r\x12\x10\n\x08\x65nd_time\x18\x0b \x01(\r\x12\"\n\x0e\x63ost_item_list\x18\x03 \x03(\x0b\x32\n.ItemParam\x12\x1b\n\x12secondary_sheet_id\x18\xbe\x02 \x01(\r\x12\r\n\x05hcoin\x18\x01 \x01(\r\x12\r\n\x05mcoin\x18\x0e \x01(\r\x12\x14\n\x0b\x64iscount_id\x18\xce\x0f \x01(\r\x12\x15\n\x0csingle_limit\x18\xf7\x01 \x01(\r\x12\x10\n\x08goods_id\x18\r \x01(\r\x12\x19\n\x11next_refresh_time\x18\x07 \x01(\r\x12\x11\n\tmax_level\x18\x04 \x01(\r\x12\x14\n\x0c\x64isable_type\x18\x06 \x01(\r\x12\x1c\n\x13\x64iscount_begin_time\x18\xbe\x04 \x01(\r\x12\x19\n\x11pre_goods_id_list\x18\x02 \x03(\r\x12\x12\n\nbegin_time\x18\x05 \x01(\r\x12\r\n\x05scoin\x18\x0f \x01(\r\x12\x12\n\nbought_num\x18\n \x01(\r\x12\x11\n\tbuy_limit\x18\x0c \x01(\r\x12\x1e\n\ngoods_item\x18\t \x01(\x0b\x32\n.ItemParamB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(ShopGoods)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SHOPGOODS._serialized_start=79
   _SHOPGOODS._serialized_end=544
 # @@protoc_insertion_point(module_scope)

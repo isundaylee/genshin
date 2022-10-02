@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/HomeBlockDotPattern.proto\"B\n\x13HomeBlockDotPattern\x12\r\n\x05width\x18\x08 \x01(\r\x12\x0e\n\x06height\x18\x0b \x01(\r\x12\x0c\n\x04\x64\x61ta\x18\t \x01(\x0c\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/HomeBlockDotPattern.proto\"B\n\x13HomeBlockDotPattern\x12\r\n\x05width\x18\x08 \x01(\r\x12\x0e\n\x06height\x18\x0b \x01(\r\x12\x0c\n\x04\x64\x61ta\x18\t \x01(\x0c\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(HomeBlockDotPattern)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _HOMEBLOCKDOTPATTERN._serialized_start=50
   _HOMEBLOCKDOTPATTERN._serialized_end=116
 # @@protoc_insertion_point(module_scope)

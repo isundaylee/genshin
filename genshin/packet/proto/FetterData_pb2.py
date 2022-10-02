@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/FetterData.proto\"N\n\nFetterData\x12\x11\n\tfetter_id\x18\x01 \x01(\r\x12\x14\n\x0c\x66\x65tter_state\x18\x02 \x01(\r\x12\x17\n\x0f\x63ond_index_list\x18\x03 \x03(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/FetterData.proto\"N\n\nFetterData\x12\x11\n\tfetter_id\x18\x01 \x01(\r\x12\x14\n\x0c\x66\x65tter_state\x18\x02 \x01(\r\x12\x17\n\x0f\x63ond_index_list\x18\x03 \x03(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(FetterData)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _FETTERDATA._serialized_start=41
   _FETTERDATA._serialized_end=119
 # @@protoc_insertion_point(module_scope)

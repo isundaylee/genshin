@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import Uint32Pair_pb2 as genshin_dot_packet_dot_proto_dot_Uint32Pair__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/DungeonEntryInfoReq.proto\x1a%genshin/packet/proto/Uint32Pair.proto\"c\n\x13\x44ungeonEntryInfoReq\x12\x10\n\x08point_id\x18\x02 \x01(\r\x12\x10\n\x08scene_id\x18\t \x01(\r\x12(\n\x13Unk2800_GGAMJDFELPH\x18\x04 \x03(\x0b\x32\x0b.Uint32PairB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/DungeonEntryInfoReq.proto\x1a%genshin/packet/proto/Uint32Pair.proto\"c\n\x13\x44ungeonEntryInfoReq\x12\x10\n\x08point_id\x18\x02 \x01(\r\x12\x10\n\x08scene_id\x18\t \x01(\r\x12(\n\x13Unk2800_GGAMJDFELPH\x18\x04 \x03(\x0b\x32\x0b.Uint32PairB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(DungeonEntryInfoReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _DUNGEONENTRYINFOREQ._serialized_start=89
   _DUNGEONENTRYINFOREQ._serialized_end=188
 # @@protoc_insertion_point(module_scope)

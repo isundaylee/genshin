@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/AvatarSkillUpgradeRsp.proto\"|\n\x15\x41vatarSkillUpgradeRsp\x12\x13\n\x0b\x61vatar_guid\x18\x0b \x01(\x04\x12\x11\n\tcur_level\x18\x0e \x01(\r\x12\x17\n\x0f\x61vatar_skill_id\x18\t \x01(\r\x12\x11\n\told_level\x18\x03 \x01(\r\x12\x0f\n\x07retcode\x18\x04 \x01(\x05\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/AvatarSkillUpgradeRsp.proto\"|\n\x15\x41vatarSkillUpgradeRsp\x12\x13\n\x0b\x61vatar_guid\x18\x0b \x01(\x04\x12\x11\n\tcur_level\x18\x0e \x01(\r\x12\x17\n\x0f\x61vatar_skill_id\x18\t \x01(\r\x12\x11\n\told_level\x18\x03 \x01(\r\x12\x0f\n\x07retcode\x18\x04 \x01(\x05\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(AvatarSkillUpgradeRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _AVATARSKILLUPGRADERSP._serialized_start=52
   _AVATARSKILLUPGRADERSP._serialized_end=176
 # @@protoc_insertion_point(module_scope)

@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import ShopGoods_pb2 as genshin_dot_packet_dot_proto_dot_ShopGoods__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/BuyGoodsReq.proto\x1a$genshin/packet/proto/ShopGoods.proto\"N\n\x0b\x42uyGoodsReq\x12\x11\n\tbuy_count\x18\x0e \x01(\r\x12\x19\n\x05goods\x18\x0f \x01(\x0b\x32\n.ShopGoods\x12\x11\n\tshop_type\x18\x07 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/BuyGoodsReq.proto\x1a$genshin/packet/proto/ShopGoods.proto\"N\n\x0b\x42uyGoodsReq\x12\x11\n\tbuy_count\x18\x0e \x01(\r\x12\x19\n\x05goods\x18\x0f \x01(\x0b\x32\n.ShopGoods\x12\x11\n\tshop_type\x18\x07 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(BuyGoodsReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _BUYGOODSREQ._serialized_start=80
   _BUYGOODSREQ._serialized_end=158
 # @@protoc_insertion_point(module_scope)

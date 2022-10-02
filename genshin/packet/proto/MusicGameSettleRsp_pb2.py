@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/MusicGameSettleRsp.proto\"\x8a\x01\n\x12MusicGameSettleRsp\x12\x0f\n\x07retcode\x18\x07 \x01(\x05\x12\x16\n\x0emusic_basic_id\x18\t \x01(\r\x12\x1c\n\x14is_unlock_next_level\x18\x01 \x01(\x08\x12\x15\n\ris_new_record\x18\x03 \x01(\x08\x12\x16\n\x0emusic_share_id\x18\x0b \x01(\x04\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/MusicGameSettleRsp.proto\"\x8f\x01\n\x12MusicGameSettleRsp\x12\x0f\n\x07retcode\x18\x0b \x01(\x05\x12\x16\n\x0emusic_basic_id\x18\x05 \x01(\r\x12\x15\n\ris_new_record\x18\x06 \x01(\x08\x12\x1c\n\x14is_unlock_next_level\x18\x02 \x01(\x08\x12\x1b\n\x13Unk2700_CEPGMKAHHCD\x18\n \x01(\x04\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(MusicGameSettleRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _MUSICGAMESETTLERSP._serialized_start=50
-  _MUSICGAMESETTLERSP._serialized_end=188
+  _MUSICGAMESETTLERSP._serialized_end=193
 # @@protoc_insertion_point(module_scope)

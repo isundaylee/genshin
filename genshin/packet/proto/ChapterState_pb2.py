@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/ChapterState.proto*|\n\x0c\x43hapterState\x12\x19\n\x15\x43HAPTER_STATE_INVALID\x10\x00\x12!\n\x1d\x43HAPTER_STATE_UNABLE_TO_BEGIN\x10\x01\x12\x17\n\x13\x43HAPTER_STATE_BEGIN\x10\x02\x12\x15\n\x11\x43HAPTER_STATE_END\x10\x03\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/ChapterState.proto*|\n\x0c\x43hapterState\x12\x19\n\x15\x43HAPTER_STATE_INVALID\x10\x00\x12!\n\x1d\x43HAPTER_STATE_UNABLE_TO_BEGIN\x10\x01\x12\x17\n\x13\x43HAPTER_STATE_BEGIN\x10\x02\x12\x15\n\x11\x43HAPTER_STATE_END\x10\x03\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 _CHAPTERSTATE = DESCRIPTOR.enum_types_by_name['ChapterState']
 ChapterState = enum_type_wrapper.EnumTypeWrapper(_CHAPTERSTATE)
@@ -28,7 +28,7 @@ CHAPTER_STATE_END = 3
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _CHAPTERSTATE._serialized_start=43
   _CHAPTERSTATE._serialized_end=167
 # @@protoc_insertion_point(module_scope)

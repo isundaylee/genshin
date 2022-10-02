@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/AvatarUpgradeRsp.proto\"\xd6\x02\n\x10\x41vatarUpgradeRsp\x12\x11\n\tcur_level\x18\x06 \x01(\r\x12\x11\n\told_level\x18\r \x01(\r\x12\x42\n\x12old_fight_prop_map\x18\n \x03(\x0b\x32&.AvatarUpgradeRsp.OldFightPropMapEntry\x12\x0f\n\x07retcode\x18\x01 \x01(\x05\x12\x42\n\x12\x63ur_fight_prop_map\x18\x04 \x03(\x0b\x32&.AvatarUpgradeRsp.CurFightPropMapEntry\x12\x13\n\x0b\x61vatar_guid\x18\x0f \x01(\x04\x1a\x36\n\x14OldFightPropMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\x02:\x02\x38\x01\x1a\x36\n\x14\x43urFightPropMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\x02:\x02\x38\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/AvatarUpgradeRsp.proto\"\xd6\x02\n\x10\x41vatarUpgradeRsp\x12\x11\n\tcur_level\x18\x06 \x01(\r\x12\x11\n\told_level\x18\r \x01(\r\x12\x42\n\x12old_fight_prop_map\x18\n \x03(\x0b\x32&.AvatarUpgradeRsp.OldFightPropMapEntry\x12\x0f\n\x07retcode\x18\x01 \x01(\x05\x12\x42\n\x12\x63ur_fight_prop_map\x18\x04 \x03(\x0b\x32&.AvatarUpgradeRsp.CurFightPropMapEntry\x12\x13\n\x0b\x61vatar_guid\x18\x0f \x01(\x04\x1a\x36\n\x14OldFightPropMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\x02:\x02\x38\x01\x1a\x36\n\x14\x43urFightPropMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\x02:\x02\x38\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -47,7 +47,7 @@ _sym_db.RegisterMessage(AvatarUpgradeRsp.CurFightPropMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _AVATARUPGRADERSP_OLDFIGHTPROPMAPENTRY._options = None
   _AVATARUPGRADERSP_OLDFIGHTPROPMAPENTRY._serialized_options = b'8\001'
   _AVATARUPGRADERSP_CURFIGHTPROPMAPENTRY._options = None

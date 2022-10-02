@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/TowerEnterLevelRsp.proto\"h\n\x12TowerEnterLevelRsp\x12\x1a\n\x12tower_buff_id_list\x18\n \x03(\r\x12\x0f\n\x07retcode\x18\x01 \x01(\x05\x12\x13\n\x0blevel_index\x18\x0e \x01(\r\x12\x10\n\x08\x66loor_id\x18\x05 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/TowerEnterLevelRsp.proto\"h\n\x12TowerEnterLevelRsp\x12\x1a\n\x12tower_buff_id_list\x18\n \x03(\r\x12\x0f\n\x07retcode\x18\x01 \x01(\x05\x12\x13\n\x0blevel_index\x18\x0e \x01(\r\x12\x10\n\x08\x66loor_id\x18\x05 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(TowerEnterLevelRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _TOWERENTERLEVELRSP._serialized_start=49
   _TOWERENTERLEVELRSP._serialized_end=153
 # @@protoc_insertion_point(module_scope)

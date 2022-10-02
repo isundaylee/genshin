@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import WidgetSlotData_pb2 as genshin_dot_packet_dot_proto_dot_WidgetSlotData__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/GetWidgetSlotRsp.proto\x1a)genshin/packet/proto/WidgetSlotData.proto\"G\n\x10GetWidgetSlotRsp\x12\"\n\tslot_list\x18\r \x03(\x0b\x32\x0f.WidgetSlotData\x12\x0f\n\x07retcode\x18\t \x01(\x05\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/GetWidgetSlotRsp.proto\x1a)genshin/packet/proto/WidgetSlotData.proto\"G\n\x10GetWidgetSlotRsp\x12\"\n\tslot_list\x18\r \x03(\x0b\x32\x0f.WidgetSlotData\x12\x0f\n\x07retcode\x18\t \x01(\x05\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(GetWidgetSlotRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _GETWIDGETSLOTRSP._serialized_start=90
   _GETWIDGETSLOTRSP._serialized_end=161
 # @@protoc_insertion_point(module_scope)

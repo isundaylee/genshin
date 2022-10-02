@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import AiThreatInfo_pb2 as genshin_dot_packet_dot_proto_dot_AiThreatInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n:genshin/packet/proto/EvtAiSyncCombatThreatInfoNotify.proto\x1a\'genshin/packet/proto/AiThreatInfo.proto\"\xc7\x01\n\x1f\x45vtAiSyncCombatThreatInfoNotify\x12Y\n\x16\x63ombat_threat_info_map\x18\x08 \x03(\x0b\x32\x39.EvtAiSyncCombatThreatInfoNotify.CombatThreatInfoMapEntry\x1aI\n\x18\x43ombatThreatInfoMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\x1c\n\x05value\x18\x02 \x01(\x0b\x32\r.AiThreatInfo:\x02\x38\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n:genshin/packet/proto/EvtAiSyncCombatThreatInfoNotify.proto\x1a\'genshin/packet/proto/AiThreatInfo.proto\"\xc7\x01\n\x1f\x45vtAiSyncCombatThreatInfoNotify\x12Y\n\x16\x63ombat_threat_info_map\x18\x08 \x03(\x0b\x32\x39.EvtAiSyncCombatThreatInfoNotify.CombatThreatInfoMapEntry\x1aI\n\x18\x43ombatThreatInfoMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\x1c\n\x05value\x18\x02 \x01(\x0b\x32\r.AiThreatInfo:\x02\x38\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -39,7 +39,7 @@ _sym_db.RegisterMessage(EvtAiSyncCombatThreatInfoNotify.CombatThreatInfoMapEntry
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _EVTAISYNCCOMBATTHREATINFONOTIFY_COMBATTHREATINFOMAPENTRY._options = None
   _EVTAISYNCCOMBATTHREATINFONOTIFY_COMBATTHREATINFOMAPENTRY._serialized_options = b'8\001'
   _EVTAISYNCCOMBATTHREATINFONOTIFY._serialized_start=104

@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(genshin/packet/proto/VehicleMember.proto\">\n\rVehicleMember\x12\x0b\n\x03uid\x18\x01 \x01(\r\x12\x13\n\x0b\x61vatar_guid\x18\x02 \x01(\x04\x12\x0b\n\x03pos\x18\x03 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(genshin/packet/proto/VehicleMember.proto\">\n\rVehicleMember\x12\x0b\n\x03uid\x18\x01 \x01(\r\x12\x13\n\x0b\x61vatar_guid\x18\x02 \x01(\x04\x12\x0b\n\x03pos\x18\x03 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(VehicleMember)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _VEHICLEMEMBER._serialized_start=44
   _VEHICLEMEMBER._serialized_end=106
 # @@protoc_insertion_point(module_scope)

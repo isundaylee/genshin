@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/TowerLevelStarCondData.proto\"t\n\x16TowerLevelStarCondData\x12\x1b\n\x13Unk2700_HIFMJMAHEMB\x18\x0f \x01(\x08\x12\x12\n\ncond_value\x18\t \x01(\r\x12\x10\n\x08is_pause\x18\r \x01(\x08\x12\x17\n\x0fstar_cond_index\x18\x06 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/TowerLevelStarCondData.proto\"t\n\x16TowerLevelStarCondData\x12\x1b\n\x13Unk2700_HIFMJMAHEMB\x18\x0f \x01(\x08\x12\x12\n\ncond_value\x18\t \x01(\r\x12\x10\n\x08is_pause\x18\r \x01(\x08\x12\x17\n\x0fstar_cond_index\x18\x06 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(TowerLevelStarCondData)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _TOWERLEVELSTARCONDDATA._serialized_start=53
   _TOWERLEVELSTARCONDDATA._serialized_end=169
 # @@protoc_insertion_point(module_scope)

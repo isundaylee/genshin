@@ -16,7 +16,7 @@ from genshin.packet.proto import Unk2700_FDEGJOCDDGH_pb2 as genshin_dot_packet_d
 from genshin.packet.proto import Unk2700_OCOKILBJIPJ_pb2 as genshin_dot_packet_dot_proto_dot_Unk2700__OCOKILBJIPJ__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/CustomDungeonResultInfo.proto\x1a.genshin/packet/proto/Unk2700_FDEGJOCDDGH.proto\x1a.genshin/packet/proto/Unk2700_OCOKILBJIPJ.proto\"\xa4\x02\n\x17\x43ustomDungeonResultInfo\x12\x1b\n\x13Unk2700_BONNHGKDLFO\x18\x0c \x01(\x08\x12\x1b\n\x13Unk2700_FBBEJKCDMEI\x18\t \x01(\r\x12\x32\n\x14\x63hild_challenge_list\x18\x06 \x03(\x0b\x32\x14.Unk2700_FDEGJOCDDGH\x12\x1b\n\x13Unk2700_ONOOJBEABOE\x18\x03 \x01(\x04\x12\x31\n\x13Unk2700_ONCDLPDHFAB\x18\x07 \x01(\x0e\x32\x14.Unk2700_OCOKILBJIPJ\x12\x11\n\ttime_cost\x18\x0b \x01(\r\x12\x1b\n\x13Unk2700_IBDCFAMBGOK\x18\x02 \x01(\x08\x12\x1b\n\x13Unk2700_HBFLKFOCKBF\x18\x0e \x01(\x08\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/CustomDungeonResultInfo.proto\x1a.genshin/packet/proto/Unk2700_FDEGJOCDDGH.proto\x1a.genshin/packet/proto/Unk2700_OCOKILBJIPJ.proto\"\xa4\x02\n\x17\x43ustomDungeonResultInfo\x12\x1b\n\x13Unk2700_BONNHGKDLFO\x18\x0c \x01(\x08\x12\x1b\n\x13Unk2700_FBBEJKCDMEI\x18\t \x01(\r\x12\x32\n\x14\x63hild_challenge_list\x18\x06 \x03(\x0b\x32\x14.Unk2700_FDEGJOCDDGH\x12\x1b\n\x13Unk2700_ONOOJBEABOE\x18\x03 \x01(\x04\x12\x31\n\x13Unk2700_ONCDLPDHFAB\x18\x07 \x01(\x0e\x32\x14.Unk2700_OCOKILBJIPJ\x12\x11\n\ttime_cost\x18\x0b \x01(\r\x12\x1b\n\x13Unk2700_IBDCFAMBGOK\x18\x02 \x01(\x08\x12\x1b\n\x13Unk2700_HBFLKFOCKBF\x18\x0e \x01(\x08\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(CustomDungeonResultInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _CUSTOMDUNGEONRESULTINFO._serialized_start=151
   _CUSTOMDUNGEONRESULTINFO._serialized_end=443
 # @@protoc_insertion_point(module_scope)

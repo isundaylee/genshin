@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n3genshin/packet/proto/AvatarUnlockTalentNotify.proto\"m\n\x18\x41vatarUnlockTalentNotify\x12\x11\n\tentity_id\x18\x0e \x01(\r\x12\x13\n\x0b\x61vatar_guid\x18\r \x01(\x04\x12\x11\n\ttalent_id\x18\n \x01(\r\x12\x16\n\x0eskill_depot_id\x18\x01 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n3genshin/packet/proto/AvatarUnlockTalentNotify.proto\"m\n\x18\x41vatarUnlockTalentNotify\x12\x11\n\tentity_id\x18\x0e \x01(\r\x12\x13\n\x0b\x61vatar_guid\x18\r \x01(\x04\x12\x11\n\ttalent_id\x18\n \x01(\r\x12\x16\n\x0eskill_depot_id\x18\x01 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(AvatarUnlockTalentNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _AVATARUNLOCKTALENTNOTIFY._serialized_start=55
   _AVATARUNLOCKTALENTNOTIFY._serialized_end=164
 # @@protoc_insertion_point(module_scope)

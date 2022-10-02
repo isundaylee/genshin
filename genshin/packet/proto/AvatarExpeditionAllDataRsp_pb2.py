@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import AvatarExpeditionInfo_pb2 as genshin_dot_packet_dot_proto_dot_AvatarExpeditionInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n5genshin/packet/proto/AvatarExpeditionAllDataRsp.proto\x1a/genshin/packet/proto/AvatarExpeditionInfo.proto\"\x8d\x02\n\x1a\x41vatarExpeditionAllDataRsp\x12\x1c\n\x14open_expedition_list\x18\x03 \x03(\r\x12\x0f\n\x07retcode\x18\x0f \x01(\x05\x12\x1e\n\x16\x65xpedition_count_limit\x18\x0c \x01(\r\x12O\n\x13\x65xpedition_info_map\x18\x04 \x03(\x0b\x32\x32.AvatarExpeditionAllDataRsp.ExpeditionInfoMapEntry\x1aO\n\x16\x45xpeditionInfoMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\x04\x12$\n\x05value\x18\x02 \x01(\x0b\x32\x15.AvatarExpeditionInfo:\x02\x38\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n5genshin/packet/proto/AvatarExpeditionAllDataRsp.proto\x1a/genshin/packet/proto/AvatarExpeditionInfo.proto\"\x8d\x02\n\x1a\x41vatarExpeditionAllDataRsp\x12\x1c\n\x14open_expedition_list\x18\x03 \x03(\r\x12\x0f\n\x07retcode\x18\x0f \x01(\x05\x12\x1e\n\x16\x65xpedition_count_limit\x18\x0c \x01(\r\x12O\n\x13\x65xpedition_info_map\x18\x04 \x03(\x0b\x32\x32.AvatarExpeditionAllDataRsp.ExpeditionInfoMapEntry\x1aO\n\x16\x45xpeditionInfoMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\x04\x12$\n\x05value\x18\x02 \x01(\x0b\x32\x15.AvatarExpeditionInfo:\x02\x38\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -39,7 +39,7 @@ _sym_db.RegisterMessage(AvatarExpeditionAllDataRsp.ExpeditionInfoMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _AVATAREXPEDITIONALLDATARSP_EXPEDITIONINFOMAPENTRY._options = None
   _AVATAREXPEDITIONALLDATARSP_EXPEDITIONINFOMAPENTRY._serialized_options = b'8\001'
   _AVATAREXPEDITIONALLDATARSP._serialized_start=107

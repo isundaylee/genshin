@@ -12,13 +12,14 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+from genshin.packet.proto import FishtankFishInfo_pb2 as genshin_dot_packet_dot_proto_dot_FishtankFishInfo__pb2
 from genshin.packet.proto import MonsterBornType_pb2 as genshin_dot_packet_dot_proto_dot_MonsterBornType__pb2
 from genshin.packet.proto import MonsterRoute_pb2 as genshin_dot_packet_dot_proto_dot_MonsterRoute__pb2
 from genshin.packet.proto import SceneFishInfo_pb2 as genshin_dot_packet_dot_proto_dot_SceneFishInfo__pb2
 from genshin.packet.proto import SceneWeaponInfo_pb2 as genshin_dot_packet_dot_proto_dot_SceneWeaponInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/SceneMonsterInfo.proto\x1a*genshin/packet/proto/MonsterBornType.proto\x1a\'genshin/packet/proto/MonsterRoute.proto\x1a(genshin/packet/proto/SceneFishInfo.proto\x1a*genshin/packet/proto/SceneWeaponInfo.proto\"\xab\x05\n\x10SceneMonsterInfo\x12\x12\n\nmonster_id\x18\x01 \x01(\r\x12\x10\n\x08group_id\x18\x02 \x01(\r\x12\x11\n\tconfig_id\x18\x03 \x01(\r\x12%\n\x0bweapon_list\x18\x04 \x03(\x0b\x32\x10.SceneWeaponInfo\x12\x19\n\x11\x61uthority_peer_id\x18\x05 \x01(\r\x12\x12\n\naffix_list\x18\x06 \x03(\r\x12\x10\n\x08is_elite\x18\x07 \x01(\x08\x12\x17\n\x0fowner_entity_id\x18\x08 \x01(\r\x12\x14\n\x0csummoned_tag\x18\t \x01(\r\x12;\n\x0esummon_tag_map\x18\n \x03(\x0b\x32#.SceneMonsterInfo.SummonTagMapEntry\x12\x0f\n\x07pose_id\x18\x0b \x01(\r\x12#\n\tborn_type\x18\x0c \x01(\x0e\x32\x10.MonsterBornType\x12\x10\n\x08\x62lock_id\x18\r \x01(\r\x12\x11\n\tmark_flag\x18\x0e \x01(\r\x12\x10\n\x08title_id\x18\x0f \x01(\r\x12\x17\n\x0fspecial_name_id\x18\x10 \x01(\r\x12\x18\n\x10\x61ttack_target_id\x18\x11 \x01(\r\x12$\n\rmonster_route\x18\x12 \x01(\x0b\x32\r.MonsterRoute\x12\x14\n\x0c\x61i_config_id\x18\x13 \x01(\r\x12\x16\n\x0elevel_route_id\x18\x14 \x01(\r\x12\x14\n\x0cinit_pose_id\x18\x15 \x01(\r\x12\x1b\n\x13Unk2800_JEGLENPDPNI\x18\x16 \x01(\x08\x12#\n\tfish_info\x18\x32 \x01(\x0b\x32\x0e.SceneFishInfoH\x00\x1a\x33\n\x11SummonTagMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\t\n\x07\x63ontentB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/SceneMonsterInfo.proto\x1a+genshin/packet/proto/FishtankFishInfo.proto\x1a*genshin/packet/proto/MonsterBornType.proto\x1a\'genshin/packet/proto/MonsterRoute.proto\x1a(genshin/packet/proto/SceneFishInfo.proto\x1a*genshin/packet/proto/SceneWeaponInfo.proto\"\xf9\x05\n\x10SceneMonsterInfo\x12\x12\n\nmonster_id\x18\x01 \x01(\r\x12\x10\n\x08group_id\x18\x02 \x01(\r\x12\x11\n\tconfig_id\x18\x03 \x01(\r\x12%\n\x0bweapon_list\x18\x04 \x03(\x0b\x32\x10.SceneWeaponInfo\x12\x19\n\x11\x61uthority_peer_id\x18\x05 \x01(\r\x12\x12\n\naffix_list\x18\x06 \x03(\r\x12\x10\n\x08is_elite\x18\x07 \x01(\x08\x12\x17\n\x0fowner_entity_id\x18\x08 \x01(\r\x12\x14\n\x0csummoned_tag\x18\t \x01(\r\x12;\n\x0esummon_tag_map\x18\n \x03(\x0b\x32#.SceneMonsterInfo.SummonTagMapEntry\x12\x0f\n\x07pose_id\x18\x0b \x01(\r\x12#\n\tborn_type\x18\x0c \x01(\x0e\x32\x10.MonsterBornType\x12\x10\n\x08\x62lock_id\x18\r \x01(\r\x12\x11\n\tmark_flag\x18\x0e \x01(\r\x12\x10\n\x08title_id\x18\x0f \x01(\r\x12\x17\n\x0fspecial_name_id\x18\x10 \x01(\r\x12\x18\n\x10\x61ttack_target_id\x18\x11 \x01(\r\x12$\n\rmonster_route\x18\x12 \x01(\x0b\x32\r.MonsterRoute\x12\x14\n\x0c\x61i_config_id\x18\x13 \x01(\r\x12\x16\n\x0elevel_route_id\x18\x14 \x01(\r\x12\x14\n\x0cinit_pose_id\x18\x15 \x01(\r\x12\x1b\n\x13Unk2800_JEGLENPDPNI\x18\x16 \x01(\x08\x12\x1b\n\x13Unk3000_CCKJDCBDEKD\x18\x17 \x01(\r\x12#\n\tfish_info\x18\x32 \x01(\x0b\x32\x0e.SceneFishInfoH\x00\x12/\n\x12\x66ishtank_fish_info\x18\x33 \x01(\x0b\x32\x11.FishtankFishInfoH\x00\x1a\x33\n\x11SummonTagMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\t\n\x07\x63ontentB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -42,11 +43,11 @@ _sym_db.RegisterMessage(SceneMonsterInfo.SummonTagMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SCENEMONSTERINFO_SUMMONTAGMAPENTRY._options = None
   _SCENEMONSTERINFO_SUMMONTAGMAPENTRY._serialized_options = b'8\001'
-  _SCENEMONSTERINFO._serialized_start=219
-  _SCENEMONSTERINFO._serialized_end=902
-  _SCENEMONSTERINFO_SUMMONTAGMAPENTRY._serialized_start=840
-  _SCENEMONSTERINFO_SUMMONTAGMAPENTRY._serialized_end=891
+  _SCENEMONSTERINFO._serialized_start=264
+  _SCENEMONSTERINFO._serialized_end=1025
+  _SCENEMONSTERINFO_SUMMONTAGMAPENTRY._serialized_start=963
+  _SCENEMONSTERINFO_SUMMONTAGMAPENTRY._serialized_end=1014
 # @@protoc_insertion_point(module_scope)

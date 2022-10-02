@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/DoGachaReq.proto\"y\n\nDoGachaReq\x12\x13\n\x0bgacha_times\x18\n \x01(\r\x12\x19\n\x11gacha_schedule_id\x18\x07 \x01(\r\x12\x12\n\ngacha_type\x18\x0e \x01(\r\x12\x14\n\x0cgacha_random\x18\r \x01(\r\x12\x11\n\tgacha_tag\x18\x04 \x01(\tB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/DoGachaReq.proto\"y\n\nDoGachaReq\x12\x13\n\x0bgacha_times\x18\n \x01(\r\x12\x19\n\x11gacha_schedule_id\x18\x07 \x01(\r\x12\x12\n\ngacha_type\x18\x0e \x01(\r\x12\x14\n\x0cgacha_random\x18\r \x01(\r\x12\x11\n\tgacha_tag\x18\x04 \x01(\tB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(DoGachaReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _DOGACHAREQ._serialized_start=41
   _DOGACHAREQ._serialized_end=162
 # @@protoc_insertion_point(module_scope)

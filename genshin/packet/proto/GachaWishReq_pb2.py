@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/GachaWishReq.proto\"N\n\x0cGachaWishReq\x12\x19\n\x11gacha_schedule_id\x18\x0e \x01(\r\x12\x12\n\ngacha_type\x18\r \x01(\r\x12\x0f\n\x07item_id\x18\x04 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/GachaWishReq.proto\"N\n\x0cGachaWishReq\x12\x19\n\x11gacha_schedule_id\x18\x0e \x01(\r\x12\x12\n\ngacha_type\x18\r \x01(\r\x12\x0f\n\x07item_id\x18\x04 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(GachaWishReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _GACHAWISHREQ._serialized_start=43
   _GACHAWISHREQ._serialized_end=121
 # @@protoc_insertion_point(module_scope)

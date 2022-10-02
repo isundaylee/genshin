@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import AbilityInvokeEntry_pb2 as genshin_dot_packet_dot_proto_dot_AbilityInvokeEntry__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/ClientAbilityChangeNotify.proto\x1a-genshin/packet/proto/AbilityInvokeEntry.proto\"q\n\x19\x43lientAbilityChangeNotify\x12\x1b\n\x13Unk2200_FNAFDMAPLHP\x18\t \x01(\x08\x12\x11\n\tentity_id\x18\x02 \x01(\r\x12$\n\x07invokes\x18\x03 \x03(\x0b\x32\x13.AbilityInvokeEntryB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/ClientAbilityChangeNotify.proto\x1a-genshin/packet/proto/AbilityInvokeEntry.proto\"q\n\x19\x43lientAbilityChangeNotify\x12\x1b\n\x13Unk2200_FNAFDMAPLHP\x18\t \x01(\x08\x12\x11\n\tentity_id\x18\x02 \x01(\r\x12$\n\x07invokes\x18\x03 \x03(\x0b\x32\x13.AbilityInvokeEntryB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(ClientAbilityChangeNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _CLIENTABILITYCHANGENOTIFY._serialized_start=103
   _CLIENTABILITYCHANGENOTIFY._serialized_end=216
 # @@protoc_insertion_point(module_scope)

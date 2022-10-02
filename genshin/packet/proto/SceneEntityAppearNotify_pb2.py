@@ -16,7 +16,7 @@ from genshin.packet.proto import SceneEntityInfo_pb2 as genshin_dot_packet_dot_p
 from genshin.packet.proto import VisionType_pb2 as genshin_dot_packet_dot_proto_dot_VisionType__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/SceneEntityAppearNotify.proto\x1a*genshin/packet/proto/SceneEntityInfo.proto\x1a%genshin/packet/proto/VisionType.proto\"q\n\x17SceneEntityAppearNotify\x12 \n\x0b\x61ppear_type\x18\x0f \x01(\x0e\x32\x0b.VisionType\x12\r\n\x05param\x18\t \x01(\r\x12%\n\x0b\x65ntity_list\x18\x05 \x03(\x0b\x32\x10.SceneEntityInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/SceneEntityAppearNotify.proto\x1a*genshin/packet/proto/SceneEntityInfo.proto\x1a%genshin/packet/proto/VisionType.proto\"q\n\x17SceneEntityAppearNotify\x12 \n\x0b\x61ppear_type\x18\x0f \x01(\x0e\x32\x0b.VisionType\x12\r\n\x05param\x18\t \x01(\r\x12%\n\x0b\x65ntity_list\x18\x05 \x03(\x0b\x32\x10.SceneEntityInfoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(SceneEntityAppearNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SCENEENTITYAPPEARNOTIFY._serialized_start=137
   _SCENEENTITYAPPEARNOTIFY._serialized_end=250
 # @@protoc_insertion_point(module_scope)

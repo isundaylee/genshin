@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(genshin/packet/proto/AiSkillCdInfo.proto\"\xf1\x01\n\rAiSkillCdInfo\x12\x34\n\x0cskill_cd_map\x18\x0b \x03(\x0b\x32\x1e.AiSkillCdInfo.SkillCdMapEntry\x12?\n\x12skill_group_cd_map\x18\x06 \x03(\x0b\x32#.AiSkillCdInfo.SkillGroupCdMapEntry\x1a\x31\n\x0fSkillCdMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x1a\x36\n\x14SkillGroupCdMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(genshin/packet/proto/AiSkillCdInfo.proto\"\xf1\x01\n\rAiSkillCdInfo\x12\x34\n\x0cskill_cd_map\x18\x0b \x03(\x0b\x32\x1e.AiSkillCdInfo.SkillCdMapEntry\x12?\n\x12skill_group_cd_map\x18\x06 \x03(\x0b\x32#.AiSkillCdInfo.SkillGroupCdMapEntry\x1a\x31\n\x0fSkillCdMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x1a\x36\n\x14SkillGroupCdMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -47,7 +47,7 @@ _sym_db.RegisterMessage(AiSkillCdInfo.SkillGroupCdMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _AISKILLCDINFO_SKILLCDMAPENTRY._options = None
   _AISKILLCDINFO_SKILLCDMAPENTRY._serialized_options = b'8\001'
   _AISKILLCDINFO_SKILLGROUPCDMAPENTRY._options = None

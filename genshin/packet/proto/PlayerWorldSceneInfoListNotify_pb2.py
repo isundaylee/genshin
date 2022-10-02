@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import PlayerWorldSceneInfo_pb2 as genshin_dot_packet_dot_proto_dot_PlayerWorldSceneInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n9genshin/packet/proto/PlayerWorldSceneInfoListNotify.proto\x1a/genshin/packet/proto/PlayerWorldSceneInfo.proto\"J\n\x1ePlayerWorldSceneInfoListNotify\x12(\n\tinfo_list\x18\x05 \x03(\x0b\x32\x15.PlayerWorldSceneInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n9genshin/packet/proto/PlayerWorldSceneInfoListNotify.proto\x1a/genshin/packet/proto/PlayerWorldSceneInfo.proto\"J\n\x1ePlayerWorldSceneInfoListNotify\x12(\n\tinfo_list\x18\x05 \x03(\x0b\x32\x15.PlayerWorldSceneInfoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(PlayerWorldSceneInfoListNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _PLAYERWORLDSCENEINFOLISTNOTIFY._serialized_start=110
   _PLAYERWORLDSCENEINFOLISTNOTIFY._serialized_end=184
 # @@protoc_insertion_point(module_scope)

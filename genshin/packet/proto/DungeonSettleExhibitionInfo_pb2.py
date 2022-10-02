@@ -16,7 +16,7 @@ from genshin.packet.proto import ExhibitionDisplayInfo_pb2 as genshin_dot_packet
 from genshin.packet.proto import OnlinePlayerInfo_pb2 as genshin_dot_packet_dot_proto_dot_OnlinePlayerInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n6genshin/packet/proto/DungeonSettleExhibitionInfo.proto\x1a\x30genshin/packet/proto/ExhibitionDisplayInfo.proto\x1a+genshin/packet/proto/OnlinePlayerInfo.proto\"p\n\x1b\x44ungeonSettleExhibitionInfo\x12&\n\x0bplayer_info\x18\x03 \x01(\x0b\x32\x11.OnlinePlayerInfo\x12)\n\tcard_list\x18\r \x03(\x0b\x32\x16.ExhibitionDisplayInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n6genshin/packet/proto/DungeonSettleExhibitionInfo.proto\x1a\x30genshin/packet/proto/ExhibitionDisplayInfo.proto\x1a+genshin/packet/proto/OnlinePlayerInfo.proto\"p\n\x1b\x44ungeonSettleExhibitionInfo\x12&\n\x0bplayer_info\x18\x03 \x01(\x0b\x32\x11.OnlinePlayerInfo\x12)\n\tcard_list\x18\r \x03(\x0b\x32\x16.ExhibitionDisplayInfoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(DungeonSettleExhibitionInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _DUNGEONSETTLEEXHIBITIONINFO._serialized_start=153
   _DUNGEONSETTLEEXHIBITIONINFO._serialized_end=265
 # @@protoc_insertion_point(module_scope)

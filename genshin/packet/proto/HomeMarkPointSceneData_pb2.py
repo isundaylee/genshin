@@ -16,7 +16,7 @@ from genshin.packet.proto import HomeMarkPointFurnitureData_pb2 as genshin_dot_p
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/HomeMarkPointSceneData.proto\x1a\x35genshin/packet/proto/HomeMarkPointFurnitureData.proto\x1a!genshin/packet/proto/Vector.proto\"\x96\x01\n\x16HomeMarkPointSceneData\x12\x33\n\x0e\x66urniture_list\x18\x06 \x03(\x0b\x32\x1b.HomeMarkPointFurnitureData\x12\x11\n\tmodule_id\x18\x05 \x01(\r\x12\x10\n\x08scene_id\x18\x02 \x01(\r\x12\"\n\x11teapot_spirit_pos\x18\x04 \x01(\x0b\x32\x07.VectorB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/HomeMarkPointSceneData.proto\x1a\x35genshin/packet/proto/HomeMarkPointFurnitureData.proto\x1a!genshin/packet/proto/Vector.proto\"\xbc\x01\n\x16HomeMarkPointSceneData\x12\x33\n\x0e\x66urniture_list\x18\x06 \x03(\x0b\x32\x1b.HomeMarkPointFurnitureData\x12\"\n\x11teapot_spirit_pos\x18\x04 \x01(\x0b\x32\x07.Vector\x12\x10\n\x08scene_id\x18\x02 \x01(\r\x12\x11\n\tmodule_id\x18\x05 \x01(\r\x12$\n\x13Unk3100_ABBFBELGECB\x18\x0b \x01(\x0b\x32\x07.VectorB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(HomeMarkPointSceneData)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _HOMEMARKPOINTSCENEDATA._serialized_start=144
-  _HOMEMARKPOINTSCENEDATA._serialized_end=294
+  _HOMEMARKPOINTSCENEDATA._serialized_end=332
 # @@protoc_insertion_point(module_scope)

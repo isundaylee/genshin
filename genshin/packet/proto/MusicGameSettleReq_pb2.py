@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/MusicGameSettleReq.proto\"\x83\x03\n\x12MusicGameSettleReq\x12\x16\n\x0emusic_basic_id\x18\x0e \x01(\r\x12\r\n\x05score\x18\x02 \x01(\r\x12\r\n\x05\x63ombo\x18\n \x01(\r\x12\x13\n\x0b\x63orrect_hit\x18\x08 \x01(\r\x12\x16\n\x0emusic_share_id\x18\x0b \x01(\x04\x12\x13\n\x0bKJNDJLBOJLM\x18\x04 \x01(\x08\x12\x13\n\x0b\x46\x42\x45LCAFFGIJ\x18\x03 \x01(\r\x12\x13\n\x0bOOFMAKIDFOL\x18\x0f \x01(\r\x12\x13\n\x0bHJPDEIMECHB\x18\x01 \x01(\r\x12\x13\n\x0bMNCMGANHCFI\x18\r \x03(\r\x12\x11\n\tmax_combo\x18\t \x01(\r\x12\x14\n\x0bJJADNMELLAH\x18\xb7\x0f \x01(\r\x12\x14\n\x0b\x45IAGEEFABPO\x18\x93\t \x03(\r\x12\x14\n\x0b\x43PIFLFBHNJP\x18\xd0\x08 \x01(\r\x12\x10\n\x07success\x18\xe6\x07 \x01(\x08\x12\x14\n\x0bGGHBOMGJGFP\x18\x8c\x02 \x01(\r\x12\x14\n\x0bPFHCIHKCJFJ\x18\xee\x01 \x01(\x08\x12\x0e\n\x05speed\x18\xf7\x06 \x01(\x02\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/MusicGameSettleReq.proto\"\xe4\x03\n\x12MusicGameSettleReq\x12\x1c\n\x13Unk2700_GDPKOANEDEB\x18\x80\x03 \x03(\r\x12\x1c\n\x13Unk2700_NMHGADLANMM\x18\x9b\x06 \x01(\r\x12\x1b\n\x13Unk2700_NNHGOCJLKFH\x18\x04 \x03(\r\x12\x1b\n\x13Unk2700_NCHHEJNFECG\x18\x0f \x01(\r\x12\r\n\x05score\x18\t \x01(\r\x12\x1b\n\x13Unk2700_CEPGMKAHHCD\x18\x06 \x01(\x04\x12\x1b\n\x13Unk2700_MMHHGALFHGA\x18\r \x01(\r\x12\x1c\n\x13Unk2700_CBLIJHDFKHA\x18\xa6\x03 \x01(\x08\x12\x11\n\tmax_combo\x18\x05 \x01(\r\x12\x1c\n\x13Unk2700_FBLBGPHMLAL\x18\xa2\x08 \x01(\r\x12\x0e\n\x05speed\x18\x99\x03 \x01(\x02\x12\x1b\n\x13Unk2700_IOKPIKJDEHG\x18\x03 \x01(\x08\x12\r\n\x05\x63ombo\x18\x01 \x01(\r\x12\x16\n\x0emusic_basic_id\x18\x07 \x01(\r\x12\x1b\n\x13Unk2700_DIMBABOGNEM\x18\x02 \x01(\r\x12\x1c\n\x13Unk2700_IOMOHEKJJLJ\x18\xa1\x0f \x01(\r\x12\x13\n\x0b\x63orrect_hit\x18\x0e \x01(\r\x12\x1c\n\x13Unk2700_LKJNLDJAGGL\x18\x85\n \x01(\x08\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(MusicGameSettleReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _MUSICGAMESETTLEREQ._serialized_start=50
-  _MUSICGAMESETTLEREQ._serialized_end=437
+  _MUSICGAMESETTLEREQ._serialized_end=534
 # @@protoc_insertion_point(module_scope)

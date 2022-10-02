@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/FeatureBlockInfo.proto\":\n\x10\x46\x65\x61tureBlockInfo\x12\x14\n\x0c\x66\x65\x61ture_type\x18\x01 \x01(\r\x12\x10\n\x08\x65nd_time\x18\x02 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/FeatureBlockInfo.proto\":\n\x10\x46\x65\x61tureBlockInfo\x12\x14\n\x0c\x66\x65\x61ture_type\x18\x01 \x01(\r\x12\x10\n\x08\x65nd_time\x18\x02 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(FeatureBlockInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _FEATUREBLOCKINFO._serialized_start=47
   _FEATUREBLOCKINFO._serialized_end=105
 # @@protoc_insertion_point(module_scope)

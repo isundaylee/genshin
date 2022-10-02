@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/SetBattlePassViewedReq.proto\"-\n\x16SetBattlePassViewedReq\x12\x13\n\x0bschedule_id\x18\x06 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/SetBattlePassViewedReq.proto\"-\n\x16SetBattlePassViewedReq\x12\x13\n\x0bschedule_id\x18\x06 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(SetBattlePassViewedReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SETBATTLEPASSVIEWEDREQ._serialized_start=53
   _SETBATTLEPASSVIEWEDREQ._serialized_end=98
 # @@protoc_insertion_point(module_scope)

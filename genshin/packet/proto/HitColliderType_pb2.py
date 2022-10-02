@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/HitColliderType.proto*\x92\x01\n\x0fHitColliderType\x12\x1d\n\x19HIT_COLLIDER_TYPE_INVALID\x10\x00\x12\x1d\n\x19HIT_COLLIDER_TYPE_HIT_BOX\x10\x01\x12!\n\x1dHIT_COLLIDER_TYPE_WET_HIT_BOX\x10\x02\x12\x1e\n\x1aHIT_COLLIDER_TYPE_HEAD_BOX\x10\x03\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/HitColliderType.proto*\x92\x01\n\x0fHitColliderType\x12\x1d\n\x19HIT_COLLIDER_TYPE_INVALID\x10\x00\x12\x1d\n\x19HIT_COLLIDER_TYPE_HIT_BOX\x10\x01\x12!\n\x1dHIT_COLLIDER_TYPE_WET_HIT_BOX\x10\x02\x12\x1e\n\x1aHIT_COLLIDER_TYPE_HEAD_BOX\x10\x03\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 _HITCOLLIDERTYPE = DESCRIPTOR.enum_types_by_name['HitColliderType']
 HitColliderType = enum_type_wrapper.EnumTypeWrapper(_HITCOLLIDERTYPE)
@@ -28,7 +28,7 @@ HIT_COLLIDER_TYPE_HEAD_BOX = 3
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _HITCOLLIDERTYPE._serialized_start=47
   _HITCOLLIDERTYPE._serialized_end=193
 # @@protoc_insertion_point(module_scope)

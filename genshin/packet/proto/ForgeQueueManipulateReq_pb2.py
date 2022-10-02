@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import ForgeQueueManipulateType_pb2 as genshin_dot_packet_dot_proto_dot_ForgeQueueManipulateType__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/ForgeQueueManipulateReq.proto\x1a\x33genshin/packet/proto/ForgeQueueManipulateType.proto\"e\n\x17\x46orgeQueueManipulateReq\x12\x16\n\x0e\x66orge_queue_id\x18\x05 \x01(\r\x12\x32\n\x0fmanipulate_type\x18\r \x01(\x0e\x32\x19.ForgeQueueManipulateTypeB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/ForgeQueueManipulateReq.proto\x1a\x33genshin/packet/proto/ForgeQueueManipulateType.proto\"e\n\x17\x46orgeQueueManipulateReq\x12\x16\n\x0e\x66orge_queue_id\x18\x05 \x01(\r\x12\x32\n\x0fmanipulate_type\x18\r \x01(\x0e\x32\x19.ForgeQueueManipulateTypeB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(ForgeQueueManipulateReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _FORGEQUEUEMANIPULATEREQ._serialized_start=107
   _FORGEQUEUEMANIPULATEREQ._serialized_end=208
 # @@protoc_insertion_point(module_scope)

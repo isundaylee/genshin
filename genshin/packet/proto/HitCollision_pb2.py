@@ -16,7 +16,7 @@ from genshin.packet.proto import HitColliderType_pb2 as genshin_dot_packet_dot_p
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/HitCollision.proto\x1a*genshin/packet/proto/HitColliderType.proto\x1a!genshin/packet/proto/Vector.proto\"\xcd\x01\n\x0cHitCollision\x12+\n\x11hit_collider_type\x18\x08 \x01(\x0e\x32\x10.HitColliderType\x12\x1a\n\thit_point\x18\x07 \x01(\x0b\x32\x07.Vector\x12 \n\x18\x61ttackee_hit_force_angle\x18\x02 \x01(\x02\x12\x18\n\x07hit_dir\x18\r \x01(\x0b\x32\x07.Vector\x12!\n\x19\x61ttackee_hit_entity_angle\x18\x0f \x01(\x02\x12\x15\n\rhit_box_index\x18\x04 \x01(\x05\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/HitCollision.proto\x1a*genshin/packet/proto/HitColliderType.proto\x1a!genshin/packet/proto/Vector.proto\"\xcd\x01\n\x0cHitCollision\x12+\n\x11hit_collider_type\x18\x08 \x01(\x0e\x32\x10.HitColliderType\x12\x1a\n\thit_point\x18\x07 \x01(\x0b\x32\x07.Vector\x12 \n\x18\x61ttackee_hit_force_angle\x18\x02 \x01(\x02\x12\x18\n\x07hit_dir\x18\r \x01(\x0b\x32\x07.Vector\x12!\n\x19\x61ttackee_hit_entity_angle\x18\x0f \x01(\x02\x12\x15\n\rhit_box_index\x18\x04 \x01(\x05\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(HitCollision)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _HITCOLLISION._serialized_start=123
   _HITCOLLISION._serialized_end=328
 # @@protoc_insertion_point(module_scope)

@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import AvatarTeamResonanceInfo_pb2 as genshin_dot_packet_dot_proto_dot_AvatarTeamResonanceInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/TeamResonanceChangeNotify.proto\x1a\x32genshin/packet/proto/AvatarTeamResonanceInfo.proto\"H\n\x19TeamResonanceChangeNotify\x12+\n\tinfo_list\x18\x01 \x03(\x0b\x32\x18.AvatarTeamResonanceInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/TeamResonanceChangeNotify.proto\x1a\x32genshin/packet/proto/AvatarTeamResonanceInfo.proto\"H\n\x19TeamResonanceChangeNotify\x12+\n\tinfo_list\x18\x01 \x03(\x0b\x32\x18.AvatarTeamResonanceInfoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(TeamResonanceChangeNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _TEAMRESONANCECHANGENOTIFY._serialized_start=108
   _TEAMRESONANCECHANGENOTIFY._serialized_end=180
 # @@protoc_insertion_point(module_scope)

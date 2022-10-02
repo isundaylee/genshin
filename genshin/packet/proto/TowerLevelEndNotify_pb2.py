@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import ItemParam_pb2 as genshin_dot_packet_dot_proto_dot_ItemParam__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/TowerLevelEndNotify.proto\x1a$genshin/packet/proto/ItemParam.proto\"\xbb\x02\n\x13TowerLevelEndNotify\x12\x15\n\rnext_floor_id\x18\x04 \x01(\r\x12$\n\x10reward_item_list\x18\x0c \x03(\x0b\x32\n.ItemParam\x12\x16\n\x0e\x63ontinue_state\x18\x0f \x01(\r\x12\x12\n\nis_success\x18\x05 \x01(\x08\x12\x1f\n\x17\x66inished_star_cond_list\x18\x06 \x03(\r\"\x99\x01\n\x11\x43ontinueStateType\x12(\n$CONTINUE_STATE_TYPE_CAN_NOT_CONTINUE\x10\x00\x12,\n(CONTINUE_STATE_TYPE_CAN_ENTER_NEXT_LEVEL\x10\x01\x12,\n(CONTINUE_STATE_TYPE_CAN_ENTER_NEXT_FLOOR\x10\x02\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/TowerLevelEndNotify.proto\x1a$genshin/packet/proto/ItemParam.proto\"\xbb\x02\n\x13TowerLevelEndNotify\x12\x15\n\rnext_floor_id\x18\x04 \x01(\r\x12$\n\x10reward_item_list\x18\x0c \x03(\x0b\x32\n.ItemParam\x12\x16\n\x0e\x63ontinue_state\x18\x0f \x01(\r\x12\x12\n\nis_success\x18\x05 \x01(\x08\x12\x1f\n\x17\x66inished_star_cond_list\x18\x06 \x03(\r\"\x99\x01\n\x11\x43ontinueStateType\x12(\n$CONTINUE_STATE_TYPE_CAN_NOT_CONTINUE\x10\x00\x12,\n(CONTINUE_STATE_TYPE_CAN_ENTER_NEXT_LEVEL\x10\x01\x12,\n(CONTINUE_STATE_TYPE_CAN_ENTER_NEXT_FLOOR\x10\x02\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(TowerLevelEndNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _TOWERLEVELENDNOTIFY._serialized_start=89
   _TOWERLEVELENDNOTIFY._serialized_end=404
   _TOWERLEVELENDNOTIFY_CONTINUESTATETYPE._serialized_start=251

@@ -17,7 +17,7 @@ from genshin.packet.proto import MailTextContent_pb2 as genshin_dot_packet_dot_p
 from genshin.packet.proto import Unk2700_CBJEDMGOBPL_pb2 as genshin_dot_packet_dot_proto_dot_Unk2700__CBJEDMGOBPL__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n#genshin/packet/proto/MailData.proto\x1a#genshin/packet/proto/MailItem.proto\x1a*genshin/packet/proto/MailTextContent.proto\x1a.genshin/packet/proto/Unk2700_CBJEDMGOBPL.proto\"\xab\x02\n\x08MailData\x12\x0f\n\x07mail_id\x18\x01 \x01(\r\x12+\n\x11mail_text_content\x18\x04 \x01(\x0b\x32\x10.MailTextContent\x12\x1c\n\titem_list\x18\x07 \x03(\x0b\x32\t.MailItem\x12\x11\n\tsend_time\x18\x08 \x01(\r\x12\x13\n\x0b\x65xpire_time\x18\t \x01(\r\x12\x12\n\nimportance\x18\n \x01(\r\x12\x0f\n\x07is_read\x18\x0b \x01(\x08\x12\x19\n\x11is_attachment_got\x18\x0c \x01(\x08\x12\x11\n\tconfig_id\x18\r \x01(\r\x12\x15\n\rargument_list\x18\x0e \x03(\t\x12\x31\n\x13Unk2700_NDPPGJKJOMH\x18\x0f \x01(\x0e\x32\x14.Unk2700_CBJEDMGOBPLB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n#genshin/packet/proto/MailData.proto\x1a#genshin/packet/proto/MailItem.proto\x1a*genshin/packet/proto/MailTextContent.proto\x1a.genshin/packet/proto/Unk2700_CBJEDMGOBPL.proto\"\xab\x02\n\x08MailData\x12\x0f\n\x07mail_id\x18\x01 \x01(\r\x12+\n\x11mail_text_content\x18\x04 \x01(\x0b\x32\x10.MailTextContent\x12\x1c\n\titem_list\x18\x07 \x03(\x0b\x32\t.MailItem\x12\x11\n\tsend_time\x18\x08 \x01(\r\x12\x13\n\x0b\x65xpire_time\x18\t \x01(\r\x12\x12\n\nimportance\x18\n \x01(\r\x12\x0f\n\x07is_read\x18\x0b \x01(\x08\x12\x19\n\x11is_attachment_got\x18\x0c \x01(\x08\x12\x11\n\tconfig_id\x18\r \x01(\r\x12\x15\n\rargument_list\x18\x0e \x03(\t\x12\x31\n\x13Unk2700_NDPPGJKJOMH\x18\x0f \x01(\x0e\x32\x14.Unk2700_CBJEDMGOBPLB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -32,7 +32,7 @@ _sym_db.RegisterMessage(MailData)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _MAILDATA._serialized_start=169
   _MAILDATA._serialized_end=468
 # @@protoc_insertion_point(module_scope)

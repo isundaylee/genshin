@@ -16,7 +16,7 @@ from genshin.packet.proto import VehicleInteractType_pb2 as genshin_dot_packet_d
 from genshin.packet.proto import VehicleMember_pb2 as genshin_dot_packet_dot_proto_dot_VehicleMember__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/VehicleInteractRsp.proto\x1a.genshin/packet/proto/VehicleInteractType.proto\x1a(genshin/packet/proto/VehicleMember.proto\"\x85\x01\n\x12VehicleInteractRsp\x12+\n\rinteract_type\x18\x0f \x01(\x0e\x32\x14.VehicleInteractType\x12\x1e\n\x06member\x18\x03 \x01(\x0b\x32\x0e.VehicleMember\x12\x11\n\tentity_id\x18\x02 \x01(\r\x12\x0f\n\x07retcode\x18\x01 \x01(\x05\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/VehicleInteractRsp.proto\x1a.genshin/packet/proto/VehicleInteractType.proto\x1a(genshin/packet/proto/VehicleMember.proto\"\x85\x01\n\x12VehicleInteractRsp\x12+\n\rinteract_type\x18\x0f \x01(\x0e\x32\x14.VehicleInteractType\x12\x1e\n\x06member\x18\x03 \x01(\x0b\x32\x0e.VehicleMember\x12\x11\n\tentity_id\x18\x02 \x01(\r\x12\x0f\n\x07retcode\x18\x01 \x01(\x05\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(VehicleInteractRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _VEHICLEINTERACTRSP._serialized_start=140
   _VEHICLEINTERACTRSP._serialized_end=273
 # @@protoc_insertion_point(module_scope)

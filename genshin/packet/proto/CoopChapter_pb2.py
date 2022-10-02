@@ -17,7 +17,7 @@ from genshin.packet.proto import CoopPoint_pb2 as genshin_dot_packet_dot_proto_d
 from genshin.packet.proto import CoopReward_pb2 as genshin_dot_packet_dot_proto_dot_CoopReward__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/CoopChapter.proto\x1a!genshin/packet/proto/CoopCg.proto\x1a$genshin/packet/proto/CoopPoint.proto\x1a%genshin/packet/proto/CoopReward.proto\"\xdc\x03\n\x0b\x43oopChapter\x12\x1d\n\x0c\x63oop_cg_list\x18\x01 \x03(\x0b\x32\x07.CoopCg\x12\n\n\x02id\x18\x02 \x01(\r\x12#\n\x0f\x63oop_point_list\x18\x0b \x03(\x0b\x32\n.CoopPoint\x12\x1a\n\x12\x66inish_dialog_list\x18\n \x03(\r\x12\x1a\n\x12\x66inished_end_count\x18\x0e \x01(\r\x12\x17\n\x0ftotal_end_count\x18\x07 \x01(\r\x12%\n\x10\x63oop_reward_list\x18\x05 \x03(\x0b\x32\x0b.CoopReward\x12\x18\n\x10lock_reason_list\x18\x0c \x03(\r\x12!\n\x05state\x18\x04 \x01(\x0e\x32\x12.CoopChapter.State\x12\x38\n\x0fseen_ending_map\x18\t \x03(\x0b\x32\x1f.CoopChapter.SeenEndingMapEntry\x1a\x34\n\x12SeenEndingMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\"X\n\x05State\x12\x0f\n\x0bSTATE_CLOSE\x10\x00\x12\x17\n\x13STATE_COND_NOT_MEET\x10\x01\x12\x13\n\x0fSTATE_COND_MEET\x10\x02\x12\x10\n\x0cSTATE_ACCEPT\x10\x03\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/CoopChapter.proto\x1a!genshin/packet/proto/CoopCg.proto\x1a$genshin/packet/proto/CoopPoint.proto\x1a%genshin/packet/proto/CoopReward.proto\"\xdc\x03\n\x0b\x43oopChapter\x12\x1d\n\x0c\x63oop_cg_list\x18\x01 \x03(\x0b\x32\x07.CoopCg\x12\n\n\x02id\x18\x02 \x01(\r\x12#\n\x0f\x63oop_point_list\x18\x0b \x03(\x0b\x32\n.CoopPoint\x12\x1a\n\x12\x66inish_dialog_list\x18\n \x03(\r\x12\x1a\n\x12\x66inished_end_count\x18\x0e \x01(\r\x12\x17\n\x0ftotal_end_count\x18\x07 \x01(\r\x12%\n\x10\x63oop_reward_list\x18\x05 \x03(\x0b\x32\x0b.CoopReward\x12\x18\n\x10lock_reason_list\x18\x0c \x03(\r\x12!\n\x05state\x18\x04 \x01(\x0e\x32\x12.CoopChapter.State\x12\x38\n\x0fseen_ending_map\x18\t \x03(\x0b\x32\x1f.CoopChapter.SeenEndingMapEntry\x1a\x34\n\x12SeenEndingMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\"X\n\x05State\x12\x0f\n\x0bSTATE_CLOSE\x10\x00\x12\x17\n\x13STATE_COND_NOT_MEET\x10\x01\x12\x13\n\x0fSTATE_COND_MEET\x10\x02\x12\x10\n\x0cSTATE_ACCEPT\x10\x03\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -42,7 +42,7 @@ _sym_db.RegisterMessage(CoopChapter.SeenEndingMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _COOPCHAPTER_SEENENDINGMAPENTRY._options = None
   _COOPCHAPTER_SEENENDINGMAPENTRY._serialized_options = b'8\001'
   _COOPCHAPTER._serialized_start=155

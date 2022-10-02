@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import BattlePassRewardTakeOption_pb2 as genshin_dot_packet_dot_proto_dot_BattlePassRewardTakeOption__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/TakeBattlePassRewardReq.proto\x1a\x35genshin/packet/proto/BattlePassRewardTakeOption.proto\"P\n\x17TakeBattlePassRewardReq\x12\x35\n\x10take_option_list\x18\x0c \x03(\x0b\x32\x1b.BattlePassRewardTakeOptionB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/TakeBattlePassRewardReq.proto\x1a\x35genshin/packet/proto/BattlePassRewardTakeOption.proto\"P\n\x17TakeBattlePassRewardReq\x12\x35\n\x10take_option_list\x18\x0c \x03(\x0b\x32\x1b.BattlePassRewardTakeOptionB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(TakeBattlePassRewardReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _TAKEBATTLEPASSREWARDREQ._serialized_start=109
   _TAKEBATTLEPASSREWARDREQ._serialized_end=189
 # @@protoc_insertion_point(module_scope)

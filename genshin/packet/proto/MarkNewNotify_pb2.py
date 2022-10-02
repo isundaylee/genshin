@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(genshin/packet/proto/MarkNewNotify.proto\"7\n\rMarkNewNotify\x12\x0f\n\x07id_list\x18\x07 \x03(\r\x12\x15\n\rmark_new_type\x18\x0b \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(genshin/packet/proto/MarkNewNotify.proto\"7\n\rMarkNewNotify\x12\x0f\n\x07id_list\x18\x07 \x03(\r\x12\x15\n\rmark_new_type\x18\x0b \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(MarkNewNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _MARKNEWNOTIFY._serialized_start=44
   _MARKNEWNOTIFY._serialized_end=99
 # @@protoc_insertion_point(module_scope)

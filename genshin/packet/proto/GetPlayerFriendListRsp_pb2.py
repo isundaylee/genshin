@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import FriendBrief_pb2 as genshin_dot_packet_dot_proto_dot_FriendBrief__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/GetPlayerFriendListRsp.proto\x1a&genshin/packet/proto/FriendBrief.proto\"s\n\x16GetPlayerFriendListRsp\x12\x0f\n\x07retcode\x18\t \x01(\x05\x12%\n\x0f\x61sk_friend_list\x18\x08 \x03(\x0b\x32\x0c.FriendBrief\x12!\n\x0b\x66riend_list\x18\x0e \x03(\x0b\x32\x0c.FriendBriefB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/GetPlayerFriendListRsp.proto\x1a&genshin/packet/proto/FriendBrief.proto\"s\n\x16GetPlayerFriendListRsp\x12\x0f\n\x07retcode\x18\t \x01(\x05\x12%\n\x0f\x61sk_friend_list\x18\x08 \x03(\x0b\x32\x0c.FriendBrief\x12!\n\x0b\x66riend_list\x18\x0e \x03(\x0b\x32\x0c.FriendBriefB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(GetPlayerFriendListRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _GETPLAYERFRIENDLISTRSP._serialized_start=93
   _GETPLAYERFRIENDLISTRSP._serialized_end=208
 # @@protoc_insertion_point(module_scope)

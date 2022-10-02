@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import TowerCurLevelRecord_pb2 as genshin_dot_packet_dot_proto_dot_TowerCurLevelRecord__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n:genshin/packet/proto/TowerCurLevelRecordChangeNotify.proto\x1a.genshin/packet/proto/TowerCurLevelRecord.proto\"Q\n\x1fTowerCurLevelRecordChangeNotify\x12.\n\x10\x63ur_level_record\x18\n \x01(\x0b\x32\x14.TowerCurLevelRecordB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n:genshin/packet/proto/TowerCurLevelRecordChangeNotify.proto\x1a.genshin/packet/proto/TowerCurLevelRecord.proto\"Q\n\x1fTowerCurLevelRecordChangeNotify\x12.\n\x10\x63ur_level_record\x18\n \x01(\x0b\x32\x14.TowerCurLevelRecordB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(TowerCurLevelRecordChangeNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _TOWERCURLEVELRECORDCHANGENOTIFY._serialized_start=110
   _TOWERCURLEVELRECORDCHANGENOTIFY._serialized_end=191
 # @@protoc_insertion_point(module_scope)

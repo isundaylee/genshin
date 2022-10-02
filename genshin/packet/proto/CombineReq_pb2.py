@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/CombineReq.proto\"L\n\nCombineReq\x12\x15\n\rcombine_count\x18\x0c \x01(\r\x12\x12\n\ncombine_id\x18\t \x01(\r\x12\x13\n\x0b\x61vatar_guid\x18\x0e \x01(\x04\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/CombineReq.proto\"L\n\nCombineReq\x12\x15\n\rcombine_count\x18\x0c \x01(\r\x12\x12\n\ncombine_id\x18\t \x01(\r\x12\x13\n\x0b\x61vatar_guid\x18\x0e \x01(\x04\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(CombineReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _COMBINEREQ._serialized_start=41
   _COMBINEREQ._serialized_end=117
 # @@protoc_insertion_point(module_scope)

@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/NpcTalkReq.proto\"G\n\nNpcTalkReq\x12\x11\n\tentity_id\x18\x08 \x01(\r\x12\x15\n\rnpc_entity_id\x18\t \x01(\r\x12\x0f\n\x07talk_id\x18\x07 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/NpcTalkReq.proto\"G\n\nNpcTalkReq\x12\x11\n\tentity_id\x18\x08 \x01(\r\x12\x15\n\rnpc_entity_id\x18\t \x01(\r\x12\x0f\n\x07talk_id\x18\x07 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(NpcTalkReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _NPCTALKREQ._serialized_start=41
   _NPCTALKREQ._serialized_end=112
 # @@protoc_insertion_point(module_scope)

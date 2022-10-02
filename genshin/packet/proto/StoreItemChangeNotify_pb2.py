@@ -16,7 +16,7 @@ from genshin.packet.proto import Item_pb2 as genshin_dot_packet_dot_proto_dot_It
 from genshin.packet.proto import StoreType_pb2 as genshin_dot_packet_dot_proto_dot_StoreType__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/StoreItemChangeNotify.proto\x1a\x1fgenshin/packet/proto/Item.proto\x1a$genshin/packet/proto/StoreType.proto\"Q\n\x15StoreItemChangeNotify\x12\x1e\n\nstore_type\x18\x0c \x01(\x0e\x32\n.StoreType\x12\x18\n\titem_list\x18\n \x03(\x0b\x32\x05.ItemB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/StoreItemChangeNotify.proto\x1a\x1fgenshin/packet/proto/Item.proto\x1a$genshin/packet/proto/StoreType.proto\"Q\n\x15StoreItemChangeNotify\x12\x1e\n\nstore_type\x18\x0c \x01(\x0e\x32\n.StoreType\x12\x18\n\titem_list\x18\n \x03(\x0b\x32\x05.ItemB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(StoreItemChangeNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _STOREITEMCHANGENOTIFY._serialized_start=123
   _STOREITEMCHANGENOTIFY._serialized_end=204
 # @@protoc_insertion_point(module_scope)

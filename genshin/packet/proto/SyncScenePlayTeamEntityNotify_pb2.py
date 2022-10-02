@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import PlayTeamEntityInfo_pb2 as genshin_dot_packet_dot_proto_dot_PlayTeamEntityInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n8genshin/packet/proto/SyncScenePlayTeamEntityNotify.proto\x1a-genshin/packet/proto/PlayTeamEntityInfo.proto\"`\n\x1dSyncScenePlayTeamEntityNotify\x12\x10\n\x08scene_id\x18\x02 \x01(\r\x12-\n\x10\x65ntity_info_list\x18\x03 \x03(\x0b\x32\x13.PlayTeamEntityInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n8genshin/packet/proto/SyncScenePlayTeamEntityNotify.proto\x1a-genshin/packet/proto/PlayTeamEntityInfo.proto\"`\n\x1dSyncScenePlayTeamEntityNotify\x12\x10\n\x08scene_id\x18\x02 \x01(\r\x12-\n\x10\x65ntity_info_list\x18\x03 \x03(\x0b\x32\x13.PlayTeamEntityInfoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(SyncScenePlayTeamEntityNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SYNCSCENEPLAYTEAMENTITYNOTIFY._serialized_start=107
   _SYNCSCENEPLAYTEAMENTITYNOTIFY._serialized_end=203
 # @@protoc_insertion_point(module_scope)

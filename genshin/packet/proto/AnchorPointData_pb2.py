@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/AnchorPointData.proto\x1a!genshin/packet/proto/Vector.proto\"z\n\x0f\x41nchorPointData\x12\x10\n\x08scene_id\x18\x05 \x01(\r\x12\x17\n\x0f\x61nchor_point_id\x18\t \x01(\r\x12\x10\n\x08\x65nd_time\x18\x08 \x01(\r\x12\x14\n\x03pos\x18\x0f \x01(\x0b\x32\x07.Vector\x12\x14\n\x03rot\x18\x02 \x01(\x0b\x32\x07.VectorB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/AnchorPointData.proto\x1a!genshin/packet/proto/Vector.proto\"z\n\x0f\x41nchorPointData\x12\x10\n\x08scene_id\x18\x05 \x01(\r\x12\x17\n\x0f\x61nchor_point_id\x18\t \x01(\r\x12\x10\n\x08\x65nd_time\x18\x08 \x01(\r\x12\x14\n\x03pos\x18\x0f \x01(\x0b\x32\x07.Vector\x12\x14\n\x03rot\x18\x02 \x01(\x0b\x32\x07.VectorB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(AnchorPointData)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ANCHORPOINTDATA._serialized_start=81
   _ANCHORPOINTDATA._serialized_end=203
 # @@protoc_insertion_point(module_scope)

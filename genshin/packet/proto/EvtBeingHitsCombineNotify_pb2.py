@@ -16,7 +16,7 @@ from genshin.packet.proto import EvtBeingHitInfo_pb2 as genshin_dot_packet_dot_p
 from genshin.packet.proto import ForwardType_pb2 as genshin_dot_packet_dot_proto_dot_ForwardType__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/EvtBeingHitsCombineNotify.proto\x1a*genshin/packet/proto/EvtBeingHitInfo.proto\x1a&genshin/packet/proto/ForwardType.proto\"r\n\x19\x45vtBeingHitsCombineNotify\x12\"\n\x0c\x66orward_type\x18\x0b \x01(\x0e\x32\x0c.ForwardType\x12\x31\n\x17\x65vt_being_hit_info_list\x18\x07 \x03(\x0b\x32\x10.EvtBeingHitInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/EvtBeingHitsCombineNotify.proto\x1a*genshin/packet/proto/EvtBeingHitInfo.proto\x1a&genshin/packet/proto/ForwardType.proto\"r\n\x19\x45vtBeingHitsCombineNotify\x12\"\n\x0c\x66orward_type\x18\x0b \x01(\x0e\x32\x0c.ForwardType\x12\x31\n\x17\x65vt_being_hit_info_list\x18\x07 \x03(\x0b\x32\x10.EvtBeingHitInfoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(EvtBeingHitsCombineNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _EVTBEINGHITSCOMBINENOTIFY._serialized_start=140
   _EVTBEINGHITSCOMBINENOTIFY._serialized_end=254
 # @@protoc_insertion_point(module_scope)

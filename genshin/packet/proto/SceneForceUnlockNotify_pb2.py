@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/SceneForceUnlockNotify.proto\"?\n\x16SceneForceUnlockNotify\x12\x0e\n\x06is_add\x18\n \x01(\x08\x12\x15\n\rforce_id_list\x18\x02 \x03(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/SceneForceUnlockNotify.proto\"?\n\x16SceneForceUnlockNotify\x12\x0e\n\x06is_add\x18\n \x01(\x08\x12\x15\n\rforce_id_list\x18\x02 \x03(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(SceneForceUnlockNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SCENEFORCEUNLOCKNOTIFY._serialized_start=53
   _SCENEFORCEUNLOCKNOTIFY._serialized_end=116
 # @@protoc_insertion_point(module_scope)

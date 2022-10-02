@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n6genshin/packet/proto/EntityFightPropUpdateNotify.proto\"\xad\x01\n\x1b\x45ntityFightPropUpdateNotify\x12\x46\n\x0e\x66ight_prop_map\x18\x0f \x03(\x0b\x32..EntityFightPropUpdateNotify.FightPropMapEntry\x12\x11\n\tentity_id\x18\r \x01(\r\x1a\x33\n\x11\x46ightPropMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\x02:\x02\x38\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n6genshin/packet/proto/EntityFightPropUpdateNotify.proto\"\xad\x01\n\x1b\x45ntityFightPropUpdateNotify\x12\x46\n\x0e\x66ight_prop_map\x18\x0f \x03(\x0b\x32..EntityFightPropUpdateNotify.FightPropMapEntry\x12\x11\n\tentity_id\x18\r \x01(\r\x1a\x33\n\x11\x46ightPropMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\x02:\x02\x38\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -38,7 +38,7 @@ _sym_db.RegisterMessage(EntityFightPropUpdateNotify.FightPropMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ENTITYFIGHTPROPUPDATENOTIFY_FIGHTPROPMAPENTRY._options = None
   _ENTITYFIGHTPROPUPDATENOTIFY_FIGHTPROPMAPENTRY._serialized_options = b'8\001'
   _ENTITYFIGHTPROPUPDATENOTIFY._serialized_start=59

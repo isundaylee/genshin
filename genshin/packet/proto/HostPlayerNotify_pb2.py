@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/HostPlayerNotify.proto\":\n\x10HostPlayerNotify\x12\x14\n\x0chost_peer_id\x18\r \x01(\r\x12\x10\n\x08host_uid\x18\n \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/HostPlayerNotify.proto\":\n\x10HostPlayerNotify\x12\x14\n\x0chost_peer_id\x18\r \x01(\r\x12\x10\n\x08host_uid\x18\n \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(HostPlayerNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _HOSTPLAYERNOTIFY._serialized_start=47
   _HOSTPLAYERNOTIFY._serialized_end=105
 # @@protoc_insertion_point(module_scope)

@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/SetOpenStateReq.proto\"-\n\x0fSetOpenStateReq\x12\x0b\n\x03key\x18\x0c \x01(\r\x12\r\n\x05value\x18\x05 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/SetOpenStateReq.proto\"-\n\x0fSetOpenStateReq\x12\x0b\n\x03key\x18\x0c \x01(\r\x12\r\n\x05value\x18\x05 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(SetOpenStateReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SETOPENSTATEREQ._serialized_start=46
   _SETOPENSTATEREQ._serialized_end=91
 # @@protoc_insertion_point(module_scope)

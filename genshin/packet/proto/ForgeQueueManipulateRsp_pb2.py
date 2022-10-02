@@ -16,7 +16,7 @@ from genshin.packet.proto import ForgeQueueManipulateType_pb2 as genshin_dot_pac
 from genshin.packet.proto import ItemParam_pb2 as genshin_dot_packet_dot_proto_dot_ItemParam__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/ForgeQueueManipulateRsp.proto\x1a\x33genshin/packet/proto/ForgeQueueManipulateType.proto\x1a$genshin/packet/proto/ItemParam.proto\"\xd6\x01\n\x17\x46orgeQueueManipulateRsp\x12\x32\n\x0fmanipulate_type\x18\x04 \x01(\x0e\x32\x19.ForgeQueueManipulateType\x12*\n\x16\x65xtra_output_item_list\x18\r \x03(\x0b\x32\n.ItemParam\x12$\n\x10return_item_list\x18\n \x03(\x0b\x32\n.ItemParam\x12\x0f\n\x07retcode\x18\x01 \x01(\x05\x12$\n\x10output_item_list\x18\t \x03(\x0b\x32\n.ItemParamB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/ForgeQueueManipulateRsp.proto\x1a\x33genshin/packet/proto/ForgeQueueManipulateType.proto\x1a$genshin/packet/proto/ItemParam.proto\"\xd6\x01\n\x17\x46orgeQueueManipulateRsp\x12\x32\n\x0fmanipulate_type\x18\x04 \x01(\x0e\x32\x19.ForgeQueueManipulateType\x12*\n\x16\x65xtra_output_item_list\x18\r \x03(\x0b\x32\n.ItemParam\x12$\n\x10return_item_list\x18\n \x03(\x0b\x32\n.ItemParam\x12\x0f\n\x07retcode\x18\x01 \x01(\x05\x12$\n\x10output_item_list\x18\t \x03(\x0b\x32\n.ItemParamB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(ForgeQueueManipulateRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _FORGEQUEUEMANIPULATERSP._serialized_start=146
   _FORGEQUEUEMANIPULATERSP._serialized_end=360
 # @@protoc_insertion_point(module_scope)

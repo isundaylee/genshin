@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import AvatarTeam_pb2 as genshin_dot_packet_dot_proto_dot_AvatarTeam__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/AvatarTeamUpdateNotify.proto\x1a%genshin/packet/proto/AvatarTeam.proto\"\xbf\x01\n\x16\x41vatarTeamUpdateNotify\x12\x43\n\x0f\x61vatar_team_map\x18\x02 \x03(\x0b\x32*.AvatarTeamUpdateNotify.AvatarTeamMapEntry\x12\x1d\n\x15temp_avatar_guid_list\x18\r \x03(\x04\x1a\x41\n\x12\x41vatarTeamMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\x1a\n\x05value\x18\x02 \x01(\x0b\x32\x0b.AvatarTeam:\x02\x38\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/AvatarTeamUpdateNotify.proto\x1a%genshin/packet/proto/AvatarTeam.proto\"\xbf\x01\n\x16\x41vatarTeamUpdateNotify\x12\x43\n\x0f\x61vatar_team_map\x18\x02 \x03(\x0b\x32*.AvatarTeamUpdateNotify.AvatarTeamMapEntry\x12\x1d\n\x15temp_avatar_guid_list\x18\r \x03(\x04\x1a\x41\n\x12\x41vatarTeamMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\x1a\n\x05value\x18\x02 \x01(\x0b\x32\x0b.AvatarTeam:\x02\x38\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -39,7 +39,7 @@ _sym_db.RegisterMessage(AvatarTeamUpdateNotify.AvatarTeamMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _AVATARTEAMUPDATENOTIFY_AVATARTEAMMAPENTRY._options = None
   _AVATARTEAMUPDATENOTIFY_AVATARTEAMMAPENTRY._serialized_options = b'8\001'
   _AVATARTEAMUPDATENOTIFY._serialized_start=93

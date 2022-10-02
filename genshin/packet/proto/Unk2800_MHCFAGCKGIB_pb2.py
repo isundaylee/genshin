@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import DungeonEntryInfo_pb2 as genshin_dot_packet_dot_proto_dot_DungeonEntryInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/Unk2800_MHCFAGCKGIB.proto\x1a+genshin/packet/proto/DungeonEntryInfo.proto\"\x86\x01\n\x13Unk2800_MHCFAGCKGIB\x12\x10\n\x08scene_id\x18\x0c \x01(\r\x12\x10\n\x08point_id\x18\x06 \x01(\r\x12-\n\x12\x64ungeon_entry_list\x18\x01 \x03(\x0b\x32\x11.DungeonEntryInfo\x12\x1c\n\x14recommend_dungeon_id\x18\x08 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/Unk2800_MHCFAGCKGIB.proto\x1a+genshin/packet/proto/DungeonEntryInfo.proto\"\x86\x01\n\x13Unk2800_MHCFAGCKGIB\x12\x10\n\x08scene_id\x18\x0c \x01(\r\x12\x10\n\x08point_id\x18\x06 \x01(\r\x12-\n\x12\x64ungeon_entry_list\x18\x01 \x03(\x0b\x32\x11.DungeonEntryInfo\x12\x1c\n\x14recommend_dungeon_id\x18\x08 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(Unk2800_MHCFAGCKGIB)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _UNK2800_MHCFAGCKGIB._serialized_start=96
   _UNK2800_MHCFAGCKGIB._serialized_end=230
 # @@protoc_insertion_point(module_scope)

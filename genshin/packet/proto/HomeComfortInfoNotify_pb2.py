@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import HomeModuleComfortInfo_pb2 as genshin_dot_packet_dot_proto_dot_HomeModuleComfortInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/HomeComfortInfoNotify.proto\x1a\x30genshin/packet/proto/HomeModuleComfortInfo.proto\"I\n\x15HomeComfortInfoNotify\x12\x30\n\x10module_info_list\x18\x06 \x03(\x0b\x32\x16.HomeModuleComfortInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/HomeComfortInfoNotify.proto\x1a\x30genshin/packet/proto/HomeModuleComfortInfo.proto\"I\n\x15HomeComfortInfoNotify\x12\x30\n\x10module_info_list\x18\x06 \x03(\x0b\x32\x16.HomeModuleComfortInfoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(HomeComfortInfoNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _HOMECOMFORTINFONOTIFY._serialized_start=102
   _HOMECOMFORTINFONOTIFY._serialized_end=175
 # @@protoc_insertion_point(module_scope)

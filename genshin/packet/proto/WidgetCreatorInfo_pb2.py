@@ -16,7 +16,7 @@ from genshin.packet.proto import WidgetCreateLocationInfo_pb2 as genshin_dot_pac
 from genshin.packet.proto import WidgetCreatorOpType_pb2 as genshin_dot_packet_dot_proto_dot_WidgetCreatorOpType__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/WidgetCreatorInfo.proto\x1a\x33genshin/packet/proto/WidgetCreateLocationInfo.proto\x1a.genshin/packet/proto/WidgetCreatorOpType.proto\"\x7f\n\x11WidgetCreatorInfo\x12%\n\x07op_type\x18\n \x01(\x0e\x32\x14.WidgetCreatorOpType\x12\x11\n\tentity_id\x18\x01 \x01(\r\x12\x30\n\rlocation_info\x18\x0c \x01(\x0b\x32\x19.WidgetCreateLocationInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/WidgetCreatorInfo.proto\x1a\x33genshin/packet/proto/WidgetCreateLocationInfo.proto\x1a.genshin/packet/proto/WidgetCreatorOpType.proto\"\x7f\n\x11WidgetCreatorInfo\x12%\n\x07op_type\x18\n \x01(\x0e\x32\x14.WidgetCreatorOpType\x12\x11\n\tentity_id\x18\x01 \x01(\r\x12\x30\n\rlocation_info\x18\x0c \x01(\x0b\x32\x19.WidgetCreateLocationInfoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(WidgetCreatorInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _WIDGETCREATORINFO._serialized_start=149
   _WIDGETCREATORINFO._serialized_end=276
 # @@protoc_insertion_point(module_scope)

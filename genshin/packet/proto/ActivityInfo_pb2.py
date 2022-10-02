@@ -13,16 +13,74 @@ _sym_db = _symbol_database.Default()
 
 
 from genshin.packet.proto import ActivityWatcherInfo_pb2 as genshin_dot_packet_dot_proto_dot_ActivityWatcherInfo__pb2
+from genshin.packet.proto import ArenaChallengeActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_ArenaChallengeActivityDetailInfo__pb2
+from genshin.packet.proto import AsterActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_AsterActivityDetailInfo__pb2
+from genshin.packet.proto import BartenderActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_BartenderActivityDetailInfo__pb2
+from genshin.packet.proto import BlessingActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_BlessingActivityDetailInfo__pb2
+from genshin.packet.proto import BlitzRushActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_BlitzRushActivityDetailInfo__pb2
+from genshin.packet.proto import BounceConjuringActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_BounceConjuringActivityDetailInfo__pb2
+from genshin.packet.proto import BuoyantCombatDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_BuoyantCombatDetailInfo__pb2
+from genshin.packet.proto import ChannelerSlabActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_ChannelerSlabActivityDetailInfo__pb2
+from genshin.packet.proto import ChessActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_ChessActivityDetailInfo__pb2
+from genshin.packet.proto import CrucibleActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_CrucibleActivityDetailInfo__pb2
+from genshin.packet.proto import CrystalLinkActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_CrystalLinkActivityDetailInfo__pb2
+from genshin.packet.proto import DeliveryActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_DeliveryActivityDetailInfo__pb2
+from genshin.packet.proto import DigActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_DigActivityDetailInfo__pb2
+from genshin.packet.proto import DragonSpineActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_DragonSpineActivityDetailInfo__pb2
+from genshin.packet.proto import EchoShellDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_EchoShellDetailInfo__pb2
+from genshin.packet.proto import EffigyActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_EffigyActivityDetailInfo__pb2
+from genshin.packet.proto import ExpeditionActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_ExpeditionActivityDetailInfo__pb2
+from genshin.packet.proto import FindHilichurlDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_FindHilichurlDetailInfo__pb2
+from genshin.packet.proto import FleurFairActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_FleurFairActivityDetailInfo__pb2
+from genshin.packet.proto import FlightActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_FlightActivityDetailInfo__pb2
+from genshin.packet.proto import GachaActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_GachaActivityDetailInfo__pb2
+from genshin.packet.proto import GearActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_GearActivityDetailInfo__pb2
+from genshin.packet.proto import GravenInnocenceDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_GravenInnocenceDetailInfo__pb2
+from genshin.packet.proto import HachiActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_HachiActivityDetailInfo__pb2
+from genshin.packet.proto import HideAndSeekActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_HideAndSeekActivityDetailInfo__pb2
+from genshin.packet.proto import InstableSprayDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_InstableSprayDetailInfo__pb2
+from genshin.packet.proto import IrodoriActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_IrodoriActivityDetailInfo__pb2
+from genshin.packet.proto import IslandPartyActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_IslandPartyActivityDetailInfo__pb2
+from genshin.packet.proto import LanternRiteActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_LanternRiteActivityDetailInfo__pb2
+from genshin.packet.proto import LuminanceStoneChallengeActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_LuminanceStoneChallengeActivityDetailInfo__pb2
+from genshin.packet.proto import LunaRiteDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_LunaRiteDetailInfo__pb2
+from genshin.packet.proto import MichiaeMatsuriActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_MichiaeMatsuriActivityDetailInfo__pb2
+from genshin.packet.proto import MistTrialActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_MistTrialActivityDetailInfo__pb2
+from genshin.packet.proto import MoonfinTrialActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_MoonfinTrialActivityDetailInfo__pb2
+from genshin.packet.proto import MuqadasPotionDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_MuqadasPotionDetailInfo__pb2
 from genshin.packet.proto import MusicGameActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_MusicGameActivityDetailInfo__pb2
+from genshin.packet.proto import PhotoActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_PhotoActivityDetailInfo__pb2
+from genshin.packet.proto import PlantFlowerActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_PlantFlowerActivityDetailInfo__pb2
+from genshin.packet.proto import PotionActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_PotionActivityDetailInfo__pb2
+from genshin.packet.proto import RockBoardExploreDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_RockBoardExploreDetailInfo__pb2
+from genshin.packet.proto import RogueDiaryActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_RogueDiaryActivityDetailInfo__pb2
+from genshin.packet.proto import RoguelikeDungeonActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_RoguelikeDungeonActivityDetailInfo__pb2
+from genshin.packet.proto import SalesmanActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_SalesmanActivityDetailInfo__pb2
+from genshin.packet.proto import SeaLampActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_SeaLampActivityDetailInfo__pb2
+from genshin.packet.proto import SeaLampActivityInfo_pb2 as genshin_dot_packet_dot_proto_dot_SeaLampActivityInfo__pb2
+from genshin.packet.proto import SpiceActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_SpiceActivityDetailInfo__pb2
+from genshin.packet.proto import SummerTimeDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_SummerTimeDetailInfo__pb2
+from genshin.packet.proto import SummerTimeV2DetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_SummerTimeV2DetailInfo__pb2
+from genshin.packet.proto import SumoActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_SumoActivityDetailInfo__pb2
+from genshin.packet.proto import TanukiTravelActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_TanukiTravelActivityDetailInfo__pb2
+from genshin.packet.proto import TreasureMapActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_TreasureMapActivityDetailInfo__pb2
+from genshin.packet.proto import TreasureSeelieDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_TreasureSeelieDetailInfo__pb2
+from genshin.packet.proto import TrialAvatarActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_TrialAvatarActivityDetailInfo__pb2
+from genshin.packet.proto import UgcActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_UgcActivityDetailInfo__pb2
 from genshin.packet.proto import Unk2800_PHPHMILPOLC_pb2 as genshin_dot_packet_dot_proto_dot_Unk2800__PHPHMILPOLC__pb2
+from genshin.packet.proto import VintageDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_VintageDetailInfo__pb2
+from genshin.packet.proto import WaterSpiritActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_WaterSpiritActivityDetailInfo__pb2
+from genshin.packet.proto import WindFieldDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_WindFieldDetailInfo__pb2
+from genshin.packet.proto import WinterCampActivityDetailInfo_pb2 as genshin_dot_packet_dot_proto_dot_WinterCampActivityDetailInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/ActivityInfo.proto\x1a.genshin/packet/proto/ActivityWatcherInfo.proto\x1a\x36genshin/packet/proto/MusicGameActivityDetailInfo.proto\x1a.genshin/packet/proto/Unk2800_PHPHMILPOLC.proto\"\xaa\x05\n\x0c\x41\x63tivityInfo\x12\x19\n\x11is_play_open_anim\x18\r \x01(\x08\x12\x13\n\x0bschedule_id\x18\x0f \x01(\r\x12\x12\n\tcur_score\x18\xf2\x0e \x01(\r\x12\x13\n\x0bis_starting\x18\t \x01(\x08\x12\x1a\n\x11taken_reward_list\x18\xc9\x02 \x03(\r\x12\"\n\x19selected_avatar_reward_id\x18\x8a\n \x01(\r\x12\x1d\n\x14\x66irst_day_start_time\x18\xd0\x04 \x01(\r\x12\x14\n\x0bscore_limit\x18\xa6\x0f \x01(\r\x12\x13\n\x0bis_finished\x18\x06 \x01(\x08\x12\x12\n\tis_hidden\x18\x97\x07 \x01(\x08\x12\x12\n\nbegin_time\x18\x08 \x01(\r\x12\x10\n\x08\x65nd_time\x18\x05 \x01(\r\x12>\n\x11\x61\x63tivity_coin_map\x18\xaa\x05 \x03(\x0b\x32\".ActivityInfo.ActivityCoinMapEntry\x12\x15\n\ractivity_type\x18\x04 \x01(\r\x12\x32\n\x13Unk2800_KOMIPKKKOBE\x18\xe0\x06 \x03(\x0b\x32\x14.Unk2800_PHPHMILPOLC\x12\x16\n\x0emeet_cond_list\x18\n \x03(\r\x12\x18\n\x10\x65xpire_cond_list\x18\x03 \x03(\r\x12/\n\x11watcher_info_list\x18\x02 \x03(\x0b\x32\x14.ActivityWatcherInfo\x12\x13\n\x0b\x61\x63tivity_id\x18\x0c \x01(\r\x12\x38\n\x0fmusic_game_info\x18\xcc\x03 \x01(\x0b\x32\x1c.MusicGameActivityDetailInfoH\x00\x1a\x36\n\x14\x41\x63tivityCoinMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\x08\n\x06\x64\x65tailB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/ActivityInfo.proto\x1a.genshin/packet/proto/ActivityWatcherInfo.proto\x1a;genshin/packet/proto/ArenaChallengeActivityDetailInfo.proto\x1a\x32genshin/packet/proto/AsterActivityDetailInfo.proto\x1a\x36genshin/packet/proto/BartenderActivityDetailInfo.proto\x1a\x35genshin/packet/proto/BlessingActivityDetailInfo.proto\x1a\x36genshin/packet/proto/BlitzRushActivityDetailInfo.proto\x1a<genshin/packet/proto/BounceConjuringActivityDetailInfo.proto\x1a\x32genshin/packet/proto/BuoyantCombatDetailInfo.proto\x1a:genshin/packet/proto/ChannelerSlabActivityDetailInfo.proto\x1a\x32genshin/packet/proto/ChessActivityDetailInfo.proto\x1a\x35genshin/packet/proto/CrucibleActivityDetailInfo.proto\x1a\x38genshin/packet/proto/CrystalLinkActivityDetailInfo.proto\x1a\x35genshin/packet/proto/DeliveryActivityDetailInfo.proto\x1a\x30genshin/packet/proto/DigActivityDetailInfo.proto\x1a\x38genshin/packet/proto/DragonSpineActivityDetailInfo.proto\x1a.genshin/packet/proto/EchoShellDetailInfo.proto\x1a\x33genshin/packet/proto/EffigyActivityDetailInfo.proto\x1a\x37genshin/packet/proto/ExpeditionActivityDetailInfo.proto\x1a\x32genshin/packet/proto/FindHilichurlDetailInfo.proto\x1a\x36genshin/packet/proto/FleurFairActivityDetailInfo.proto\x1a\x33genshin/packet/proto/FlightActivityDetailInfo.proto\x1a\x32genshin/packet/proto/GachaActivityDetailInfo.proto\x1a\x31genshin/packet/proto/GearActivityDetailInfo.proto\x1a\x34genshin/packet/proto/GravenInnocenceDetailInfo.proto\x1a\x32genshin/packet/proto/HachiActivityDetailInfo.proto\x1a\x38genshin/packet/proto/HideAndSeekActivityDetailInfo.proto\x1a\x32genshin/packet/proto/InstableSprayDetailInfo.proto\x1a\x34genshin/packet/proto/IrodoriActivityDetailInfo.proto\x1a\x38genshin/packet/proto/IslandPartyActivityDetailInfo.proto\x1a\x38genshin/packet/proto/LanternRiteActivityDetailInfo.proto\x1a\x44genshin/packet/proto/LuminanceStoneChallengeActivityDetailInfo.proto\x1a-genshin/packet/proto/LunaRiteDetailInfo.proto\x1a;genshin/packet/proto/MichiaeMatsuriActivityDetailInfo.proto\x1a\x36genshin/packet/proto/MistTrialActivityDetailInfo.proto\x1a\x39genshin/packet/proto/MoonfinTrialActivityDetailInfo.proto\x1a\x32genshin/packet/proto/MuqadasPotionDetailInfo.proto\x1a\x36genshin/packet/proto/MusicGameActivityDetailInfo.proto\x1a\x32genshin/packet/proto/PhotoActivityDetailInfo.proto\x1a\x38genshin/packet/proto/PlantFlowerActivityDetailInfo.proto\x1a\x33genshin/packet/proto/PotionActivityDetailInfo.proto\x1a\x35genshin/packet/proto/RockBoardExploreDetailInfo.proto\x1a\x37genshin/packet/proto/RogueDiaryActivityDetailInfo.proto\x1a=genshin/packet/proto/RoguelikeDungeonActivityDetailInfo.proto\x1a\x35genshin/packet/proto/SalesmanActivityDetailInfo.proto\x1a\x34genshin/packet/proto/SeaLampActivityDetailInfo.proto\x1a.genshin/packet/proto/SeaLampActivityInfo.proto\x1a\x32genshin/packet/proto/SpiceActivityDetailInfo.proto\x1a/genshin/packet/proto/SummerTimeDetailInfo.proto\x1a\x31genshin/packet/proto/SummerTimeV2DetailInfo.proto\x1a\x31genshin/packet/proto/SumoActivityDetailInfo.proto\x1a\x39genshin/packet/proto/TanukiTravelActivityDetailInfo.proto\x1a\x38genshin/packet/proto/TreasureMapActivityDetailInfo.proto\x1a\x33genshin/packet/proto/TreasureSeelieDetailInfo.proto\x1a\x38genshin/packet/proto/TrialAvatarActivityDetailInfo.proto\x1a\x30genshin/packet/proto/UgcActivityDetailInfo.proto\x1a.genshin/packet/proto/Unk2800_PHPHMILPOLC.proto\x1a,genshin/packet/proto/VintageDetailInfo.proto\x1a\x38genshin/packet/proto/WaterSpiritActivityDetailInfo.proto\x1a.genshin/packet/proto/WindFieldDetailInfo.proto\x1a\x37genshin/packet/proto/WinterCampActivityDetailInfo.proto\"\xb2 \n\x0c\x41\x63tivityInfo\x12\x19\n\x11is_play_open_anim\x18\r \x01(\x08\x12\x13\n\x0bschedule_id\x18\x0f \x01(\r\x12\x12\n\tcur_score\x18\xf2\x0e \x01(\r\x12\x13\n\x0bis_starting\x18\t \x01(\x08\x12\x1a\n\x11taken_reward_list\x18\xc9\x02 \x03(\r\x12\x1b\n\x13Unk2700_NONJFHAIFLA\x18\x66 \x01(\x08\x12\"\n\x19selected_avatar_reward_id\x18\x8a\n \x01(\r\x12\x1d\n\x14\x66irst_day_start_time\x18\xd0\x04 \x01(\r\x12\x14\n\x0bscore_limit\x18\xa6\x0f \x01(\r\x12\x13\n\x0bis_finished\x18\x06 \x01(\x08\x12\x12\n\tis_hidden\x18\x97\x07 \x01(\x08\x12\x12\n\nbegin_time\x18\x08 \x01(\r\x12\x10\n\x08\x65nd_time\x18\x05 \x01(\r\x12>\n\x11\x61\x63tivity_coin_map\x18\xaa\x05 \x03(\x0b\x32\".ActivityInfo.ActivityCoinMapEntry\x12\x15\n\ractivity_type\x18\x04 \x01(\r\x12\x1c\n\x13Unk2700_EDKLLHBEEGE\x18\xa9\x0b \x01(\x08\x12\x32\n\x13Unk2800_KOMIPKKKOBE\x18\xe0\x06 \x03(\x0b\x32\x14.Unk2800_PHPHMILPOLC\x12\x16\n\x0emeet_cond_list\x18\n \x03(\r\x12\x43\n\x13Unk2700_IFPBCNLCKLG\x18\xf7\n \x03(\x0b\x32%.ActivityInfo.Unk2700IFPBCNLCKLGEntry\x12\x18\n\x10\x65xpire_cond_list\x18\x03 \x03(\r\x12/\n\x11watcher_info_list\x18\x02 \x03(\x0b\x32\x14.ActivityWatcherInfo\x12\x13\n\x0b\x61\x63tivity_id\x18\x0c \x01(\r\x12\x33\n\rsam_lamp_info\x18\x07 \x01(\x0b\x32\x1a.SeaLampActivityDetailInfoH\x00\x12\x34\n\rcrucible_info\x18\x0e \x01(\x0b\x32\x1b.CrucibleActivityDetailInfoH\x00\x12\x34\n\rsalesman_info\x18\x0b \x01(\x0b\x32\x1b.SalesmanActivityDetailInfoH\x00\x12;\n\x11trial_avatar_info\x18\x01 \x01(\x0b\x32\x1e.TrialAvatarActivityDetailInfoH\x00\x12\x35\n\rdelivery_info\x18\xc4\x08 \x01(\x0b\x32\x1b.DeliveryActivityDetailInfoH\x00\x12/\n\naster_info\x18\xad\x04 \x01(\x0b\x32\x18.AsterActivityDetailInfoH\x00\x12\x31\n\x0b\x66light_info\x18\xd5\n \x01(\x0b\x32\x19.FlightActivityDetailInfoH\x00\x12<\n\x11\x64ragon_spine_info\x18\xbf\r \x01(\x0b\x32\x1e.DragonSpineActivityDetailInfoH\x00\x12\x31\n\x0b\x65\x66\x66igy_info\x18\x87\x03 \x01(\x0b\x32\x19.EffigyActivityDetailInfoH\x00\x12<\n\x11treasure_map_info\x18\xda\x08 \x01(\x0b\x32\x1e.TreasureMapActivityDetailInfoH\x00\x12\x35\n\rblessing_info\x18\xcd\x0e \x01(\x0b\x32\x1b.BlessingActivityDetailInfoH\x00\x12.\n\rsea_lamp_info\x18\xee\x03 \x01(\x0b\x32\x14.SeaLampActivityInfoH\x00\x12\x39\n\x0f\x65xpedition_info\x18\xca\x01 \x01(\x0b\x32\x1d.ExpeditionActivityDetailInfoH\x00\x12\x42\n\x14\x61rena_challenge_info\x18\xdb\x06 \x01(\x0b\x32!.ArenaChallengeActivityDetailInfoH\x00\x12\x38\n\x0f\x66leur_fair_info\x18\xd9\x06 \x01(\x0b\x32\x1c.FleurFairActivityDetailInfoH\x00\x12<\n\x11water_spirit_info\x18\x8b\r \x01(\x0b\x32\x1e.WaterSpiritActivityDetailInfoH\x00\x12@\n\x13\x63hanneler_slab_info\x18\xf7\x07 \x01(\x0b\x32 .ChannelerSlabActivityDetailInfoH\x00\x12\x41\n\x18mist_trial_activity_info\x18\x9c\x01 \x01(\x0b\x32\x1c.MistTrialActivityDetailInfoH\x00\x12=\n\x12hide_and_seek_info\x18\xab\x03 \x01(\x0b\x32\x1e.HideAndSeekActivityDetailInfoH\x00\x12\x38\n\x13\x66ind_hilichurl_info\x18\x83\x0b \x01(\x0b\x32\x18.FindHilichurlDetailInfoH\x00\x12\x32\n\x10summer_time_info\x18\xdc\n \x01(\x0b\x32\x15.SummerTimeDetailInfoH\x00\x12\x38\n\x13\x62uoyant_combat_info\x18\xb2\x0e \x01(\x0b\x32\x18.BuoyantCombatDetailInfoH\x00\x12\x30\n\x0f\x65\x63ho_shell_info\x18\xd9\x08 \x01(\x0b\x32\x14.EchoShellDetailInfoH\x00\x12\x44\n\x15\x62ounce_conjuring_info\x18\xff\x05 \x01(\x0b\x32\".BounceConjuringActivityDetailInfoH\x00\x12\x38\n\x0f\x62litz_rush_info\x18\x9a\x06 \x01(\x0b\x32\x1c.BlitzRushActivityDetailInfoH\x00\x12/\n\nchess_info\x18\x9f\x07 \x01(\x0b\x32\x18.ChessActivityDetailInfoH\x00\x12-\n\tsumo_info\x18\xed\t \x01(\x0b\x32\x17.SumoActivityDetailInfoH\x00\x12>\n\x12moonfin_trial_info\x18\xb4\x0c \x01(\x0b\x32\x1f.MoonfinTrialActivityDetailInfoH\x00\x12.\n\x0eluna_rite_info\x18\xae\x06 \x01(\x0b\x32\x13.LunaRiteDetailInfoH\x00\x12;\n\x11plant_flower_info\x18\x36 \x01(\x0b\x32\x1e.PlantFlowerActivityDetailInfoH\x00\x12\x38\n\x0fmusic_game_info\x18\xcc\x03 \x01(\x0b\x32\x1c.MusicGameActivityDetailInfoH\x00\x12\x46\n\x16roguelike_dungeon_info\x18\xdb\x01 \x01(\x0b\x32#.RoguelikeDungeonActivityDetailInfoH\x00\x12+\n\x08\x64ig_info\x18\x93\x03 \x01(\x0b\x32\x16.DigActivityDetailInfoH\x00\x12/\n\nhachi_info\x18\xeb\x03 \x01(\x0b\x32\x18.HachiActivityDetailInfoH\x00\x12:\n\x10winter_camp_info\x18\xbb\x08 \x01(\x0b\x32\x1d.WinterCampActivityDetailInfoH\x00\x12\x31\n\x0bpotion_info\x18\xf9\t \x01(\x0b\x32\x19.PotionActivityDetailInfoH\x00\x12G\n\x1btanuki_travel_activity_info\x18\x84\x0e \x01(\x0b\x32\x1f.TanukiTravelActivityDetailInfoH\x00\x12\x45\n\x1alantern_rite_activity_info\x18\xd4\x0e \x01(\x0b\x32\x1e.LanternRiteActivityDetailInfoH\x00\x12\x42\n\x14michiae_matsuri_info\x18\xc2\x01 \x01(\x0b\x32!.MichiaeMatsuriActivityDetailInfoH\x00\x12\x37\n\x0e\x62\x61rtender_info\x18\xbd\r \x01(\x0b\x32\x1c.BartenderActivityDetailInfoH\x00\x12+\n\x08ugc_info\x18\xbf\x05 \x01(\x0b\x32\x16.UgcActivityDetailInfoH\x00\x12<\n\x11\x63rystal_link_info\x18\xca\t \x01(\x0b\x32\x1e.CrystalLinkActivityDetailInfoH\x00\x12\x33\n\x0cirodori_info\x18\xee\x05 \x01(\x0b\x32\x1a.IrodoriActivityDetailInfoH\x00\x12/\n\nphoto_info\x18\xc8\x02 \x01(\x0b\x32\x18.PhotoActivityDetailInfoH\x00\x12/\n\nspice_info\x18\xe3\x0e \x01(\x0b\x32\x18.SpiceActivityDetailInfoH\x00\x12/\n\ngacha_info\x18\xb9\x06 \x01(\x0b\x32\x18.GachaActivityDetailInfoH\x00\x12U\n\x1eluminance_stone_challenge_info\x18\x9c\n \x01(\x0b\x32*.LuminanceStoneChallengeActivityDetailInfoH\x00\x12:\n\x10rogue_diary_info\x18\xac\x06 \x01(\x0b\x32\x1d.RogueDiaryActivityDetailInfoH\x00\x12\x37\n\x13summer_time_v2_info\x18\xee\x04 \x01(\x0b\x32\x17.SummerTimeV2DetailInfoH\x00\x12<\n\x11island_party_info\x18\xdd\x0e \x01(\x0b\x32\x1e.IslandPartyActivityDetailInfoH\x00\x12-\n\tgear_info\x18\xd2\x05 \x01(\x0b\x32\x17.GearActivityDetailInfoH\x00\x12<\n\x15graven_innocence_info\x18\xf7\x0e \x01(\x0b\x32\x1a.GravenInnocenceDetailInfoH\x00\x12\x38\n\x13instable_spray_info\x18\x93\x08 \x01(\x0b\x32\x18.InstableSprayDetailInfoH\x00\x12\x38\n\x13muqadas_potion_info\x18\x85\t \x01(\x0b\x32\x18.MuqadasPotionDetailInfoH\x00\x12:\n\x14treasure_seelie_info\x18\xc6\x07 \x01(\x0b\x32\x19.TreasureSeelieDetailInfoH\x00\x12?\n\x17rock_board_explore_info\x18\xb6\x08 \x01(\x0b\x32\x1b.RockBoardExploreDetailInfoH\x00\x12+\n\x0cvintage_info\x18\xbd\x03 \x01(\x0b\x32\x12.VintageDetailInfoH\x00\x12\x30\n\x0fwind_field_info\x18\xe0\x02 \x01(\x0b\x32\x14.WindFieldDetailInfoH\x00\x1a\x36\n\x14\x41\x63tivityCoinMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x1a\x39\n\x17Unk2700IFPBCNLCKLGEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\x08\n\x06\x64\x65tailB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
 _ACTIVITYINFO = DESCRIPTOR.message_types_by_name['ActivityInfo']
 _ACTIVITYINFO_ACTIVITYCOINMAPENTRY = _ACTIVITYINFO.nested_types_by_name['ActivityCoinMapEntry']
+_ACTIVITYINFO_UNK2700IFPBCNLCKLGENTRY = _ACTIVITYINFO.nested_types_by_name['Unk2700IFPBCNLCKLGEntry']
 ActivityInfo = _reflection.GeneratedProtocolMessageType('ActivityInfo', (_message.Message,), {
 
   'ActivityCoinMapEntry' : _reflection.GeneratedProtocolMessageType('ActivityCoinMapEntry', (_message.Message,), {
@@ -31,21 +89,33 @@ ActivityInfo = _reflection.GeneratedProtocolMessageType('ActivityInfo', (_messag
     # @@protoc_insertion_point(class_scope:ActivityInfo.ActivityCoinMapEntry)
     })
   ,
+
+  'Unk2700IFPBCNLCKLGEntry' : _reflection.GeneratedProtocolMessageType('Unk2700IFPBCNLCKLGEntry', (_message.Message,), {
+    'DESCRIPTOR' : _ACTIVITYINFO_UNK2700IFPBCNLCKLGENTRY,
+    '__module__' : 'genshin.packet.proto.ActivityInfo_pb2'
+    # @@protoc_insertion_point(class_scope:ActivityInfo.Unk2700IFPBCNLCKLGEntry)
+    })
+  ,
   'DESCRIPTOR' : _ACTIVITYINFO,
   '__module__' : 'genshin.packet.proto.ActivityInfo_pb2'
   # @@protoc_insertion_point(class_scope:ActivityInfo)
   })
 _sym_db.RegisterMessage(ActivityInfo)
 _sym_db.RegisterMessage(ActivityInfo.ActivityCoinMapEntry)
+_sym_db.RegisterMessage(ActivityInfo.Unk2700IFPBCNLCKLGEntry)
 
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ACTIVITYINFO_ACTIVITYCOINMAPENTRY._options = None
   _ACTIVITYINFO_ACTIVITYCOINMAPENTRY._serialized_options = b'8\001'
-  _ACTIVITYINFO._serialized_start=196
-  _ACTIVITYINFO._serialized_end=878
-  _ACTIVITYINFO_ACTIVITYCOINMAPENTRY._serialized_start=814
-  _ACTIVITYINFO_ACTIVITYCOINMAPENTRY._serialized_end=868
+  _ACTIVITYINFO_UNK2700IFPBCNLCKLGENTRY._options = None
+  _ACTIVITYINFO_UNK2700IFPBCNLCKLGENTRY._serialized_options = b'8\001'
+  _ACTIVITYINFO._serialized_start=3316
+  _ACTIVITYINFO._serialized_end=7462
+  _ACTIVITYINFO_ACTIVITYCOINMAPENTRY._serialized_start=7339
+  _ACTIVITYINFO_ACTIVITYCOINMAPENTRY._serialized_end=7393
+  _ACTIVITYINFO_UNK2700IFPBCNLCKLGENTRY._serialized_start=7395
+  _ACTIVITYINFO_UNK2700IFPBCNLCKLGENTRY._serialized_end=7452
 # @@protoc_insertion_point(module_scope)

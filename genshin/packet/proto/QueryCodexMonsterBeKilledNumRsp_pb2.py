@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n:genshin/packet/proto/QueryCodexMonsterBeKilledNumRsp.proto\"\x82\x01\n\x1fQueryCodexMonsterBeKilledNumRsp\x12\x15\n\rcodex_id_list\x18\x04 \x03(\r\x12\x1b\n\x13Unk2700_MKOBMGGPNMI\x18\x06 \x03(\r\x12\x1a\n\x12\x62\x65_killed_num_list\x18\x0c \x03(\r\x12\x0f\n\x07retcode\x18\x05 \x01(\x05\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n:genshin/packet/proto/QueryCodexMonsterBeKilledNumRsp.proto\"\x82\x01\n\x1fQueryCodexMonsterBeKilledNumRsp\x12\x15\n\rcodex_id_list\x18\x04 \x03(\r\x12\x1b\n\x13Unk2700_MKOBMGGPNMI\x18\x06 \x03(\r\x12\x1a\n\x12\x62\x65_killed_num_list\x18\x0c \x03(\r\x12\x0f\n\x07retcode\x18\x05 \x01(\x05\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(QueryCodexMonsterBeKilledNumRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _QUERYCODEXMONSTERBEKILLEDNUMRSP._serialized_start=63
   _QUERYCODEXMONSTERBEKILLEDNUMRSP._serialized_end=193
 # @@protoc_insertion_point(module_scope)

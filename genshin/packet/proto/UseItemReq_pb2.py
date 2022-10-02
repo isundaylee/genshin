@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/UseItemReq.proto\"t\n\nUseItemReq\x12\r\n\x05\x63ount\x18\r \x01(\r\x12\x13\n\x0btarget_guid\x18\x0e \x01(\x04\x12\x0c\n\x04guid\x18\n \x01(\x04\x12 \n\x18is_enter_mp_dungeon_team\x18\x0f \x01(\x08\x12\x12\n\noption_idx\x18\x07 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/UseItemReq.proto\"t\n\nUseItemReq\x12\r\n\x05\x63ount\x18\r \x01(\r\x12\x13\n\x0btarget_guid\x18\x0e \x01(\x04\x12\x0c\n\x04guid\x18\n \x01(\x04\x12 \n\x18is_enter_mp_dungeon_team\x18\x0f \x01(\x08\x12\x12\n\noption_idx\x18\x07 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(UseItemReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _USEITEMREQ._serialized_start=41
   _USEITEMREQ._serialized_end=157
 # @@protoc_insertion_point(module_scope)

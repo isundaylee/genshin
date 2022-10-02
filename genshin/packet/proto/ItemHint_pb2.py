@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n#genshin/packet/proto/ItemHint.proto\"H\n\x08ItemHint\x12\x0f\n\x07item_id\x18\x08 \x01(\r\x12\x0e\n\x06is_new\x18\x02 \x01(\x08\x12\r\n\x05\x63ount\x18\x0f \x01(\r\x12\x0c\n\x04guid\x18\x04 \x01(\x04\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n#genshin/packet/proto/ItemHint.proto\"H\n\x08ItemHint\x12\x0f\n\x07item_id\x18\x08 \x01(\r\x12\x0e\n\x06is_new\x18\x02 \x01(\x08\x12\r\n\x05\x63ount\x18\x0f \x01(\r\x12\x0c\n\x04guid\x18\x04 \x01(\x04\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(ItemHint)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ITEMHINT._serialized_start=39
   _ITEMHINT._serialized_end=111
 # @@protoc_insertion_point(module_scope)

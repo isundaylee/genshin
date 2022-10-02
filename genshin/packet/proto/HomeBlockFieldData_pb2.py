@@ -16,7 +16,7 @@ from genshin.packet.proto import HomeBlockSubFieldData_pb2 as genshin_dot_packet
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/HomeBlockFieldData.proto\x1a\x30genshin/packet/proto/HomeBlockSubFieldData.proto\x1a!genshin/packet/proto/Vector.proto\"\x94\x01\n\x12HomeBlockFieldData\x12\x14\n\x03rot\x18\x0f \x01(\x0b\x32\x07.Vector\x12\x14\n\x03pos\x18\x04 \x01(\x0b\x32\x07.Vector\x12\x0c\n\x04guid\x18\t \x01(\r\x12\x14\n\x0c\x66urniture_id\x18\x01 \x01(\r\x12.\n\x0esub_field_list\x18\x07 \x03(\x0b\x32\x16.HomeBlockSubFieldDataB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/HomeBlockFieldData.proto\x1a\x30genshin/packet/proto/HomeBlockSubFieldData.proto\x1a!genshin/packet/proto/Vector.proto\"\x94\x01\n\x12HomeBlockFieldData\x12\x14\n\x03rot\x18\x0f \x01(\x0b\x32\x07.Vector\x12\x14\n\x03pos\x18\x04 \x01(\x0b\x32\x07.Vector\x12\x0c\n\x04guid\x18\t \x01(\r\x12\x14\n\x0c\x66urniture_id\x18\x01 \x01(\r\x12.\n\x0esub_field_list\x18\x07 \x03(\x0b\x32\x16.HomeBlockSubFieldDataB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(HomeBlockFieldData)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _HOMEBLOCKFIELDDATA._serialized_start=135
   _HOMEBLOCKFIELDDATA._serialized_end=283
 # @@protoc_insertion_point(module_scope)

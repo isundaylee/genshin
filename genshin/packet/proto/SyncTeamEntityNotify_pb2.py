@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import TeamEntityInfo_pb2 as genshin_dot_packet_dot_proto_dot_TeamEntityInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n/genshin/packet/proto/SyncTeamEntityNotify.proto\x1a)genshin/packet/proto/TeamEntityInfo.proto\"X\n\x14SyncTeamEntityNotify\x12\x10\n\x08scene_id\x18\r \x01(\r\x12.\n\x15team_entity_info_list\x18\x0f \x03(\x0b\x32\x0f.TeamEntityInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n/genshin/packet/proto/SyncTeamEntityNotify.proto\x1a)genshin/packet/proto/TeamEntityInfo.proto\"X\n\x14SyncTeamEntityNotify\x12\x10\n\x08scene_id\x18\r \x01(\r\x12.\n\x15team_entity_info_list\x18\x0f \x03(\x0b\x32\x0f.TeamEntityInfoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(SyncTeamEntityNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SYNCTEAMENTITYNOTIFY._serialized_start=94
   _SYNCTEAMENTITYNOTIFY._serialized_end=182
 # @@protoc_insertion_point(module_scope)

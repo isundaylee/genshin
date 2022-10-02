@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(genshin/packet/proto/WidgetSlotTag.proto*Q\n\rWidgetSlotTag\x12\x1d\n\x19WIDGET_SLOT_TAG_QUICK_USE\x10\x00\x12!\n\x1dWIDGET_SLOT_TAG_ATTACH_AVATAR\x10\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(genshin/packet/proto/WidgetSlotTag.proto*Q\n\rWidgetSlotTag\x12\x1d\n\x19WIDGET_SLOT_TAG_QUICK_USE\x10\x00\x12!\n\x1dWIDGET_SLOT_TAG_ATTACH_AVATAR\x10\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 _WIDGETSLOTTAG = DESCRIPTOR.enum_types_by_name['WidgetSlotTag']
 WidgetSlotTag = enum_type_wrapper.EnumTypeWrapper(_WIDGETSLOTTAG)
@@ -26,7 +26,7 @@ WIDGET_SLOT_TAG_ATTACH_AVATAR = 1
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _WIDGETSLOTTAG._serialized_start=44
   _WIDGETSLOTTAG._serialized_end=125
 # @@protoc_insertion_point(module_scope)

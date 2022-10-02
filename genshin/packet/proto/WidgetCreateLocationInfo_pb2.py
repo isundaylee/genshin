@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n3genshin/packet/proto/WidgetCreateLocationInfo.proto\x1a!genshin/packet/proto/Vector.proto\"F\n\x18WidgetCreateLocationInfo\x12\x14\n\x03rot\x18\x03 \x01(\x0b\x32\x07.Vector\x12\x14\n\x03pos\x18\n \x01(\x0b\x32\x07.VectorB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n3genshin/packet/proto/WidgetCreateLocationInfo.proto\x1a!genshin/packet/proto/Vector.proto\"F\n\x18WidgetCreateLocationInfo\x12\x14\n\x03rot\x18\x03 \x01(\x0b\x32\x07.Vector\x12\x14\n\x03pos\x18\n \x01(\x0b\x32\x07.VectorB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(WidgetCreateLocationInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _WIDGETCREATELOCATIONINFO._serialized_start=90
   _WIDGETCREATELOCATIONINFO._serialized_end=160
 # @@protoc_insertion_point(module_scope)

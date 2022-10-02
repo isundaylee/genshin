@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/SetPlayerPropRsp.proto\"#\n\x10SetPlayerPropRsp\x12\x0f\n\x07retcode\x18\x0b \x01(\x05\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/SetPlayerPropRsp.proto\"#\n\x10SetPlayerPropRsp\x12\x0f\n\x07retcode\x18\x0b \x01(\x05\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(SetPlayerPropRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SETPLAYERPROPRSP._serialized_start=47
   _SETPLAYERPROPRSP._serialized_end=82
 # @@protoc_insertion_point(module_scope)

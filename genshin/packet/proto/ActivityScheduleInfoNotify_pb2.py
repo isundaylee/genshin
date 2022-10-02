@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import ActivityScheduleInfo_pb2 as genshin_dot_packet_dot_proto_dot_ActivityScheduleInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n5genshin/packet/proto/ActivityScheduleInfoNotify.proto\x1a/genshin/packet/proto/ActivityScheduleInfo.proto\"t\n\x1a\x41\x63tivityScheduleInfoNotify\x12\x35\n\x16\x61\x63tivity_schedule_list\x18\x0c \x03(\x0b\x32\x15.ActivityScheduleInfo\x12\x1f\n\x17remain_fly_sea_lamp_num\x18\x06 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n5genshin/packet/proto/ActivityScheduleInfoNotify.proto\x1a/genshin/packet/proto/ActivityScheduleInfo.proto\"t\n\x1a\x41\x63tivityScheduleInfoNotify\x12\x35\n\x16\x61\x63tivity_schedule_list\x18\x0c \x03(\x0b\x32\x15.ActivityScheduleInfo\x12\x1f\n\x17remain_fly_sea_lamp_num\x18\x06 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(ActivityScheduleInfoNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ACTIVITYSCHEDULEINFONOTIFY._serialized_start=106
   _ACTIVITYSCHEDULEINFONOTIFY._serialized_end=222
 # @@protoc_insertion_point(module_scope)

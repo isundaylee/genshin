@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import GadgetCrucibleInfo_pb2 as genshin_dot_packet_dot_proto_dot_GadgetCrucibleInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/GadgetPlayInfo.proto\x1a-genshin/packet/proto/GadgetCrucibleInfo.proto\"\xc5\x01\n\x0eGadgetPlayInfo\x12\x11\n\tplay_type\x18\x01 \x01(\r\x12\x10\n\x08\x64uration\x18\x02 \x01(\r\x12\x1b\n\x13progress_stage_list\x18\x03 \x03(\r\x12\x10\n\x08start_cd\x18\x04 \x01(\r\x12\x12\n\nstart_time\x18\x05 \x01(\r\x12\x10\n\x08progress\x18\x06 \x01(\r\x12,\n\rcrucible_info\x18\x15 \x01(\x0b\x32\x13.GadgetCrucibleInfoH\x00\x42\x0b\n\tplay_infoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/GadgetPlayInfo.proto\x1a-genshin/packet/proto/GadgetCrucibleInfo.proto\"\xc5\x01\n\x0eGadgetPlayInfo\x12\x11\n\tplay_type\x18\x01 \x01(\r\x12\x10\n\x08\x64uration\x18\x02 \x01(\r\x12\x1b\n\x13progress_stage_list\x18\x03 \x03(\r\x12\x10\n\x08start_cd\x18\x04 \x01(\r\x12\x12\n\nstart_time\x18\x05 \x01(\r\x12\x10\n\x08progress\x18\x06 \x01(\r\x12,\n\rcrucible_info\x18\x15 \x01(\x0b\x32\x13.GadgetCrucibleInfoH\x00\x42\x0b\n\tplay_infoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(GadgetPlayInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _GADGETPLAYINFO._serialized_start=93
   _GADGETPLAYINFO._serialized_end=290
 # @@protoc_insertion_point(module_scope)

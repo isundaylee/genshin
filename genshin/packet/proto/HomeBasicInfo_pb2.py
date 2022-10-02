@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import HomeLimitedShopInfo_pb2 as genshin_dot_packet_dot_proto_dot_HomeLimitedShopInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(genshin/packet/proto/HomeBasicInfo.proto\x1a.genshin/packet/proto/HomeLimitedShopInfo.proto\"\xd8\x01\n\rHomeBasicInfo\x12\r\n\x05level\x18\n \x01(\r\x12\x19\n\x11\x63ur_room_scene_id\x18\r \x01(\r\x12\x15\n\rcur_module_id\x18\t \x01(\r\x12\x17\n\x0fis_in_edit_mode\x18\x05 \x01(\x08\x12\x16\n\x0ehome_owner_uid\x18\x03 \x01(\r\x12\x0b\n\x03\x65xp\x18\x0e \x01(\x04\x12/\n\x11limited_shop_info\x18\x0f \x01(\x0b\x32\x14.HomeLimitedShopInfo\x12\x17\n\x0fowner_nick_name\x18\x04 \x01(\tB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n(genshin/packet/proto/HomeBasicInfo.proto\x1a.genshin/packet/proto/HomeLimitedShopInfo.proto\"\xd8\x01\n\rHomeBasicInfo\x12\r\n\x05level\x18\n \x01(\r\x12\x19\n\x11\x63ur_room_scene_id\x18\r \x01(\r\x12\x15\n\rcur_module_id\x18\t \x01(\r\x12\x17\n\x0fis_in_edit_mode\x18\x05 \x01(\x08\x12\x16\n\x0ehome_owner_uid\x18\x03 \x01(\r\x12\x0b\n\x03\x65xp\x18\x0e \x01(\x04\x12/\n\x11limited_shop_info\x18\x0f \x01(\x0b\x32\x14.HomeLimitedShopInfo\x12\x17\n\x0fowner_nick_name\x18\x04 \x01(\tB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(HomeBasicInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _HOMEBASICINFO._serialized_start=93
   _HOMEBASICINFO._serialized_end=309
 # @@protoc_insertion_point(module_scope)

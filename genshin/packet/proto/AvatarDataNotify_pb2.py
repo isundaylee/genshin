@@ -16,7 +16,7 @@ from genshin.packet.proto import AvatarInfo_pb2 as genshin_dot_packet_dot_proto_
 from genshin.packet.proto import AvatarTeam_pb2 as genshin_dot_packet_dot_proto_dot_AvatarTeam__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/AvatarDataNotify.proto\x1a%genshin/packet/proto/AvatarInfo.proto\x1a%genshin/packet/proto/AvatarTeam.proto\"\xc6\x02\n\x10\x41vatarDataNotify\x12\x1b\n\x13owned_flycloak_list\x18\x01 \x03(\r\x12\x1a\n\x12\x63ur_avatar_team_id\x18\x02 \x01(\r\x12 \n\x0b\x61vatar_list\x18\x06 \x03(\x0b\x32\x0b.AvatarInfo\x12\x1a\n\x12owned_costume_list\x18\x0b \x03(\r\x12\x1d\n\x15temp_avatar_guid_list\x18\x0c \x03(\x04\x12=\n\x0f\x61vatar_team_map\x18\x07 \x03(\x0b\x32$.AvatarDataNotify.AvatarTeamMapEntry\x12\x1a\n\x12\x63hoose_avatar_guid\x18\x08 \x01(\x04\x1a\x41\n\x12\x41vatarTeamMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\x1a\n\x05value\x18\x02 \x01(\x0b\x32\x0b.AvatarTeam:\x02\x38\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/AvatarDataNotify.proto\x1a%genshin/packet/proto/AvatarInfo.proto\x1a%genshin/packet/proto/AvatarTeam.proto\"\xe3\x02\n\x10\x41vatarDataNotify\x12\x1a\n\x12owned_costume_list\x18\x0b \x03(\r\x12\x1a\n\x12\x63hoose_avatar_guid\x18\x08 \x01(\x04\x12=\n\x0f\x61vatar_team_map\x18\x07 \x03(\x0b\x32$.AvatarDataNotify.AvatarTeamMapEntry\x12\x1b\n\x13Unk3000_NIGPICLBHMA\x18\t \x03(\r\x12\x1d\n\x15temp_avatar_guid_list\x18\x0c \x03(\x04\x12\x1b\n\x13owned_flycloak_list\x18\x01 \x03(\r\x12 \n\x0b\x61vatar_list\x18\x06 \x03(\x0b\x32\x0b.AvatarInfo\x12\x1a\n\x12\x63ur_avatar_team_id\x18\x02 \x01(\r\x1a\x41\n\x12\x41vatarTeamMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\x1a\n\x05value\x18\x02 \x01(\x0b\x32\x0b.AvatarTeam:\x02\x38\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -40,11 +40,11 @@ _sym_db.RegisterMessage(AvatarDataNotify.AvatarTeamMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _AVATARDATANOTIFY_AVATARTEAMMAPENTRY._options = None
   _AVATARDATANOTIFY_AVATARTEAMMAPENTRY._serialized_options = b'8\001'
   _AVATARDATANOTIFY._serialized_start=126
-  _AVATARDATANOTIFY._serialized_end=452
-  _AVATARDATANOTIFY_AVATARTEAMMAPENTRY._serialized_start=387
-  _AVATARDATANOTIFY_AVATARTEAMMAPENTRY._serialized_end=452
+  _AVATARDATANOTIFY._serialized_end=481
+  _AVATARDATANOTIFY_AVATARTEAMMAPENTRY._serialized_start=416
+  _AVATARDATANOTIFY_AVATARTEAMMAPENTRY._serialized_end=481
 # @@protoc_insertion_point(module_scope)

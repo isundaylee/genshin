@@ -16,7 +16,7 @@ from genshin.packet.proto import EnterType_pb2 as genshin_dot_packet_dot_proto_d
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/PlayerEnterSceneNotify.proto\x1a$genshin/packet/proto/EnterType.proto\x1a!genshin/packet/proto/Vector.proto\"\x9a\x03\n\x16PlayerEnterSceneNotify\x12\x15\n\rprev_scene_id\x18\x06 \x01(\r\x12\x12\n\ndungeon_id\x18\x0c \x01(\r\x12\x13\n\nis_skip_ui\x18\xc4\r \x01(\x08\x12\x10\n\x08scene_id\x18\x0f \x01(\r\x12\x18\n\x04type\x18\r \x01(\x0e\x32\n.EnterType\x12\x18\n\x10scene_begin_time\x18\x0e \x01(\x04\x12\x13\n\x0bworld_level\x18\x0b \x01(\r\x12\x13\n\nworld_type\x18\xd2\x0b \x01(\r\x12\x12\n\ntarget_uid\x18\x04 \x01(\r\x12\"\n\x1ais_first_login_enter_scene\x18\x03 \x01(\x08\x12\x19\n\x11scene_tag_id_list\x18\x05 \x03(\r\x12\x1a\n\x11scene_transaction\x18\xb2\x0e \x01(\t\x12\x19\n\x08prev_pos\x18\x08 \x01(\x0b\x32\x07.Vector\x12\x15\n\x0c\x65nter_reason\x18\xa4\x0e \x01(\r\x12\x14\n\x03pos\x18\x07 \x01(\x0b\x32\x07.Vector\x12\x19\n\x11\x65nter_scene_token\x18\x02 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/PlayerEnterSceneNotify.proto\x1a$genshin/packet/proto/EnterType.proto\x1a!genshin/packet/proto/Vector.proto\"\x9a\x03\n\x16PlayerEnterSceneNotify\x12\x15\n\rprev_scene_id\x18\x06 \x01(\r\x12\x12\n\ndungeon_id\x18\x0c \x01(\r\x12\x13\n\nis_skip_ui\x18\xc4\r \x01(\x08\x12\x10\n\x08scene_id\x18\x0f \x01(\r\x12\x18\n\x04type\x18\r \x01(\x0e\x32\n.EnterType\x12\x18\n\x10scene_begin_time\x18\x0e \x01(\x04\x12\x13\n\x0bworld_level\x18\x0b \x01(\r\x12\x13\n\nworld_type\x18\xd2\x0b \x01(\r\x12\x12\n\ntarget_uid\x18\x04 \x01(\r\x12\"\n\x1ais_first_login_enter_scene\x18\x03 \x01(\x08\x12\x19\n\x11scene_tag_id_list\x18\x05 \x03(\r\x12\x1a\n\x11scene_transaction\x18\xb2\x0e \x01(\t\x12\x19\n\x08prev_pos\x18\x08 \x01(\x0b\x32\x07.Vector\x12\x15\n\x0c\x65nter_reason\x18\xa4\x0e \x01(\r\x12\x14\n\x03pos\x18\x07 \x01(\x0b\x32\x07.Vector\x12\x19\n\x11\x65nter_scene_token\x18\x02 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(PlayerEnterSceneNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _PLAYERENTERSCENENOTIFY._serialized_start=127
   _PLAYERENTERSCENENOTIFY._serialized_end=537
 # @@protoc_insertion_point(module_scope)

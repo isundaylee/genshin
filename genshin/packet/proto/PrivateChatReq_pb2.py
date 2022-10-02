@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/PrivateChatReq.proto\"O\n\x0ePrivateChatReq\x12\x12\n\ntarget_uid\x18\x07 \x01(\r\x12\x0e\n\x04text\x18\x03 \x01(\tH\x00\x12\x0e\n\x04icon\x18\x04 \x01(\rH\x00\x42\t\n\x07\x63ontentB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/PrivateChatReq.proto\"O\n\x0ePrivateChatReq\x12\x12\n\ntarget_uid\x18\x07 \x01(\r\x12\x0e\n\x04text\x18\x03 \x01(\tH\x00\x12\x0e\n\x04icon\x18\x04 \x01(\rH\x00\x42\t\n\x07\x63ontentB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(PrivateChatReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _PRIVATECHATREQ._serialized_start=45
   _PRIVATECHATREQ._serialized_end=124
 # @@protoc_insertion_point(module_scope)

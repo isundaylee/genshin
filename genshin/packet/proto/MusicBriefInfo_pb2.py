@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/MusicBriefInfo.proto\"\xeb\x03\n\x0eMusicBriefInfo\x12\x16\n\x0emusic_share_id\x18\x04 \x01(\x04\x12\x10\n\x08music_id\x18\x02 \x01(\r\x12\x17\n\x0f\x61uthor_nickname\x18\n \x01(\t\x12\x18\n\x10music_note_count\x18\x07 \x01(\r\x12\x11\n\tmax_score\x18\x0e \x01(\r\x12\r\n\x05score\x18\x06 \x01(\r\x12\x13\n\x0b\x63reate_time\x18\x03 \x01(\r\x12\x12\n\nshare_time\x18\r \x01(\r\x12\x10\n\x08position\x18\x0c \x01(\r\x12\x0e\n\x06settle\x18\x01 \x01(\x08\x12\x0f\n\x07version\x18\x0f \x01(\r\x12\x11\n\tcan_share\x18\x08 \x01(\x08\x12\x1b\n\x13Unk2700_DNLEGADDHKM\x18\x0b \x01(\x08\x12\x1b\n\x13Unk2700_GBCGGDONMCD\x18\t \x01(\x08\x12\x1b\n\x13Unk2700_JNENCBCGPGO\x18\x05 \x01(\x04\x12\x1c\n\x13Unk2700_MKBNLEKMIMD\x18\x9e\t \x01(\r\x12\x1c\n\x13Unk2700_JAEONBMBFJJ\x18\xd6\x07 \x03(\r\x12\x1c\n\x13Unk2700_GDCGOMNBMEO\x18\xea\x07 \x03(\r\x12\x1c\n\x13Unk2700_KAMOCHAKPGP\x18\xc0\x04 \x01(\r\x12\x1c\n\x13Unk2700_LPEKFJBNEJM\x18\x9e\x0e \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/MusicBriefInfo.proto\"\xc3\x04\n\x0eMusicBriefInfo\x12\x1b\n\x13Unk2700_JNENCBCGPGO\x18\x05 \x01(\x04\x12\x1b\n\x13Unk2700_OJBPHCIDAEB\x18\x08 \x01(\x08\x12\x1b\n\x13Unk2700_FGCJEGHOKPG\x18\x01 \x01(\x08\x12\x1b\n\x13Unk2700_DFIBAIILJHN\x18\x02 \x01(\r\x12\x1c\n\x13Unk2700_MKBNLEKMIMD\x18\x9e\t \x01(\r\x12\x1b\n\x13Unk2700_PINGIIAANMO\x18\x0c \x01(\r\x12\x1b\n\x13Unk2700_MONNIDCNDFI\x18\n \x01(\t\x12\x0f\n\x07version\x18\x0f \x01(\r\x12\x1b\n\x13Unk2700_GGHNLPMAGME\x18\x03 \x01(\r\x12\x1c\n\x13Unk2700_GDCGOMNBMEO\x18\xea\x07 \x03(\r\x12\x1c\n\x13Unk2700_JAEONBMBFJJ\x18\xd6\x07 \x03(\r\x12\x1b\n\x13Unk2700_GBCGGDONMCD\x18\t \x01(\x08\x12\x1c\n\x13Unk2700_LPEKFJBNEJM\x18\x9e\x0e \x01(\r\x12\x1b\n\x13Unk2700_DNLEGADDHKM\x18\x0b \x01(\x08\x12\x1b\n\x13Unk2700_BFMNMPPNBHH\x18\r \x01(\r\x12\x11\n\tmax_score\x18\x0e \x01(\r\x12\x1c\n\x13Unk2700_KAMOCHAKPGP\x18\xc0\x04 \x01(\r\x12\x1b\n\x13Unk2700_KLPHBLCIOEC\x18\x07 \x01(\r\x12\x1b\n\x13Unk2700_CEPGMKAHHCD\x18\x04 \x01(\x04\x12\x1b\n\x13Unk2700_PMCPLPMJCEC\x18\x06 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(MusicBriefInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _MUSICBRIEFINFO._serialized_start=46
-  _MUSICBRIEFINFO._serialized_end=537
+  _MUSICBRIEFINFO._serialized_end=625
 # @@protoc_insertion_point(module_scope)

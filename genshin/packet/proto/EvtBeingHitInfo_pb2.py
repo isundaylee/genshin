@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import AttackResult_pb2 as genshin_dot_packet_dot_proto_dot_AttackResult__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/EvtBeingHitInfo.proto\x1a\'genshin/packet/proto/AttackResult.proto\"[\n\x0f\x45vtBeingHitInfo\x12\x0f\n\x07peer_id\x18\x06 \x01(\r\x12$\n\rattack_result\x18\x07 \x01(\x0b\x32\r.AttackResult\x12\x11\n\tframe_num\x18\x04 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/EvtBeingHitInfo.proto\x1a\'genshin/packet/proto/AttackResult.proto\"[\n\x0f\x45vtBeingHitInfo\x12\x0f\n\x07peer_id\x18\x06 \x01(\r\x12$\n\rattack_result\x18\x07 \x01(\x0b\x32\r.AttackResult\x12\x11\n\tframe_num\x18\x04 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(EvtBeingHitInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _EVTBEINGHITINFO._serialized_start=87
   _EVTBEINGHITINFO._serialized_end=178
 # @@protoc_insertion_point(module_scope)

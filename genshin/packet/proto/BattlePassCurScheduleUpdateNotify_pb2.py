@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import BattlePassSchedule_pb2 as genshin_dot_packet_dot_proto_dot_BattlePassSchedule__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n<genshin/packet/proto/BattlePassCurScheduleUpdateNotify.proto\x1a-genshin/packet/proto/BattlePassSchedule.proto\"i\n!BattlePassCurScheduleUpdateNotify\x12\x19\n\x11have_cur_schedule\x18\x0b \x01(\x08\x12)\n\x0c\x63ur_schedule\x18\x01 \x01(\x0b\x32\x13.BattlePassScheduleB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n<genshin/packet/proto/BattlePassCurScheduleUpdateNotify.proto\x1a-genshin/packet/proto/BattlePassSchedule.proto\"i\n!BattlePassCurScheduleUpdateNotify\x12\x19\n\x11have_cur_schedule\x18\x0b \x01(\x08\x12)\n\x0c\x63ur_schedule\x18\x01 \x01(\x0b\x32\x13.BattlePassScheduleB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(BattlePassCurScheduleUpdateNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _BATTLEPASSCURSCHEDULEUPDATENOTIFY._serialized_start=111
   _BATTLEPASSCURSCHEDULEUPDATENOTIFY._serialized_end=216
 # @@protoc_insertion_point(module_scope)

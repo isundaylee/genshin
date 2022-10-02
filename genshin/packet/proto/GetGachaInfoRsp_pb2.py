@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import GachaInfo_pb2 as genshin_dot_packet_dot_proto_dot_GachaInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/GetGachaInfoRsp.proto\x1a$genshin/packet/proto/GachaInfo.proto\"\x97\x01\n\x0fGetGachaInfoRsp\x12\x1b\n\x13Unk2700_LEEPELHDING\x18\x02 \x01(\x08\x12\x0f\n\x07retcode\x18\n \x01(\x05\x12\x14\n\x0cgacha_random\x18\t \x01(\r\x12\x1b\n\x13Unk2700_OJKKHDLEDCI\x18\x05 \x01(\r\x12#\n\x0fgacha_info_list\x18\r \x03(\x0b\x32\n.GachaInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/GetGachaInfoRsp.proto\x1a$genshin/packet/proto/GachaInfo.proto\"\xb4\x01\n\x0fGetGachaInfoRsp\x12\x1b\n\x13Unk3100_IDBLFJDHHPI\x18\x06 \x01(\x08\x12\x14\n\x0cgacha_random\x18\t \x01(\r\x12\x0f\n\x07retcode\x18\n \x01(\x05\x12\x1b\n\x13Unk2700_LEEPELHDING\x18\x02 \x01(\x08\x12\x1b\n\x13Unk2700_OJKKHDLEDCI\x18\x05 \x01(\r\x12#\n\x0fgacha_info_list\x18\r \x03(\x0b\x32\n.GachaInfoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(GetGachaInfoRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _GETGACHAINFORSP._serialized_start=85
-  _GETGACHAINFORSP._serialized_end=236
+  _GETGACHAINFORSP._serialized_end=265
 # @@protoc_insertion_point(module_scope)

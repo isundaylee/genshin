@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/AvatarExpeditionState.proto*\xe2\x01\n\x15\x41vatarExpeditionState\x12 \n\x1c\x41VATAR_EXPEDITION_STATE_NONE\x10\x00\x12!\n\x1d\x41VATAR_EXPEDITION_STATE_DOING\x10\x01\x12.\n*AVATAR_EXPEDITION_STATE_FINISH_WAIT_REWARD\x10\x02\x12\x30\n,AVATAR_EXPEDITION_STATE_CALLBACK_WAIT_REWARD\x10\x03\x12\"\n\x1e\x41VATAR_EXPEDITION_STATE_LOCKED\x10\x04\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/AvatarExpeditionState.proto*\xe2\x01\n\x15\x41vatarExpeditionState\x12 \n\x1c\x41VATAR_EXPEDITION_STATE_NONE\x10\x00\x12!\n\x1d\x41VATAR_EXPEDITION_STATE_DOING\x10\x01\x12.\n*AVATAR_EXPEDITION_STATE_FINISH_WAIT_REWARD\x10\x02\x12\x30\n,AVATAR_EXPEDITION_STATE_CALLBACK_WAIT_REWARD\x10\x03\x12\"\n\x1e\x41VATAR_EXPEDITION_STATE_LOCKED\x10\x04\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 _AVATAREXPEDITIONSTATE = DESCRIPTOR.enum_types_by_name['AvatarExpeditionState']
 AvatarExpeditionState = enum_type_wrapper.EnumTypeWrapper(_AVATAREXPEDITIONSTATE)
@@ -29,7 +29,7 @@ AVATAR_EXPEDITION_STATE_LOCKED = 4
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _AVATAREXPEDITIONSTATE._serialized_start=53
   _AVATAREXPEDITIONSTATE._serialized_end=279
 # @@protoc_insertion_point(module_scope)

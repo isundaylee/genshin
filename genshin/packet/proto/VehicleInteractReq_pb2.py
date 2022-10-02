@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import VehicleInteractType_pb2 as genshin_dot_packet_dot_proto_dot_VehicleInteractType__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/VehicleInteractReq.proto\x1a.genshin/packet/proto/VehicleInteractType.proto\"a\n\x12VehicleInteractReq\x12+\n\rinteract_type\x18\x08 \x01(\x0e\x32\x14.VehicleInteractType\x12\x0b\n\x03pos\x18\x0c \x01(\r\x12\x11\n\tentity_id\x18\x0f \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/VehicleInteractReq.proto\x1a.genshin/packet/proto/VehicleInteractType.proto\"a\n\x12VehicleInteractReq\x12+\n\rinteract_type\x18\x08 \x01(\x0e\x32\x14.VehicleInteractType\x12\x0b\n\x03pos\x18\x0c \x01(\r\x12\x11\n\tentity_id\x18\x0f \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(VehicleInteractReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _VEHICLEINTERACTREQ._serialized_start=97
   _VEHICLEINTERACTREQ._serialized_end=194
 # @@protoc_insertion_point(module_scope)

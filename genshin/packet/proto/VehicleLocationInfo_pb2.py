@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/VehicleLocationInfo.proto\x1a!genshin/packet/proto/Vector.proto\"\xac\x01\n\x13VehicleLocationInfo\x12\x14\n\x03rot\x18\x0e \x01(\x0b\x32\x07.Vector\x12\x11\n\tentity_id\x18\x0f \x01(\r\x12\x0e\n\x06\x63ur_hp\x18\x0b \x01(\x02\x12\x11\n\towner_uid\x18\x05 \x01(\r\x12\x14\n\x03pos\x18\x01 \x01(\x0b\x32\x07.Vector\x12\x10\n\x08uid_list\x18\x03 \x03(\r\x12\x11\n\tgadget_id\x18\r \x01(\r\x12\x0e\n\x06max_hp\x18\x06 \x01(\x02\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/VehicleLocationInfo.proto\x1a!genshin/packet/proto/Vector.proto\"\xac\x01\n\x13VehicleLocationInfo\x12\x14\n\x03rot\x18\x0e \x01(\x0b\x32\x07.Vector\x12\x11\n\tentity_id\x18\x0f \x01(\r\x12\x0e\n\x06\x63ur_hp\x18\x0b \x01(\x02\x12\x11\n\towner_uid\x18\x05 \x01(\r\x12\x14\n\x03pos\x18\x01 \x01(\x0b\x32\x07.Vector\x12\x10\n\x08uid_list\x18\x03 \x03(\r\x12\x11\n\tgadget_id\x18\r \x01(\r\x12\x0e\n\x06max_hp\x18\x06 \x01(\x02\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(VehicleLocationInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _VEHICLELOCATIONINFO._serialized_start=86
   _VEHICLELOCATIONINFO._serialized_end=258
 # @@protoc_insertion_point(module_scope)

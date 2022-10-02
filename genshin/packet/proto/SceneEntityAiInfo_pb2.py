@@ -16,7 +16,7 @@ from genshin.packet.proto import ServantInfo_pb2 as genshin_dot_packet_dot_proto
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/SceneEntityAiInfo.proto\x1a&genshin/packet/proto/ServantInfo.proto\x1a!genshin/packet/proto/Vector.proto\"\xd4\x03\n\x11SceneEntityAiInfo\x12\x12\n\nis_ai_open\x18\x01 \x01(\x08\x12\x19\n\x08\x62orn_pos\x18\x02 \x01(\x0b\x32\x07.Vector\x12\x38\n\x0cskill_cd_map\x18\x03 \x03(\x0b\x32\".SceneEntityAiInfo.SkillCdMapEntry\x12\"\n\x0cservant_info\x18\x04 \x01(\x0b\x32\x0c.ServantInfo\x12:\n\rai_threat_map\x18\x05 \x03(\x0b\x32#.SceneEntityAiInfo.AiThreatMapEntry\x12\x43\n\x12skill_group_cd_map\x18\x06 \x03(\x0b\x32\'.SceneEntityAiInfo.SkillGroupCdMapEntry\x12\x12\n\ncur_tactic\x18\x07 \x01(\r\x1a\x31\n\x0fSkillCdMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x1a\x32\n\x10\x41iThreatMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x1a\x36\n\x14SkillGroupCdMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/SceneEntityAiInfo.proto\x1a&genshin/packet/proto/ServantInfo.proto\x1a!genshin/packet/proto/Vector.proto\"\xd4\x03\n\x11SceneEntityAiInfo\x12\x12\n\nis_ai_open\x18\x01 \x01(\x08\x12\x19\n\x08\x62orn_pos\x18\x02 \x01(\x0b\x32\x07.Vector\x12\x38\n\x0cskill_cd_map\x18\x03 \x03(\x0b\x32\".SceneEntityAiInfo.SkillCdMapEntry\x12\"\n\x0cservant_info\x18\x04 \x01(\x0b\x32\x0c.ServantInfo\x12:\n\rai_threat_map\x18\x05 \x03(\x0b\x32#.SceneEntityAiInfo.AiThreatMapEntry\x12\x43\n\x12skill_group_cd_map\x18\x06 \x03(\x0b\x32\'.SceneEntityAiInfo.SkillGroupCdMapEntry\x12\x12\n\ncur_tactic\x18\x07 \x01(\r\x1a\x31\n\x0fSkillCdMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x1a\x32\n\x10\x41iThreatMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x1a\x36\n\x14SkillGroupCdMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -58,7 +58,7 @@ _sym_db.RegisterMessage(SceneEntityAiInfo.SkillGroupCdMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SCENEENTITYAIINFO_SKILLCDMAPENTRY._options = None
   _SCENEENTITYAIINFO_SKILLCDMAPENTRY._serialized_options = b'8\001'
   _SCENEENTITYAIINFO_AITHREATMAPENTRY._options = None

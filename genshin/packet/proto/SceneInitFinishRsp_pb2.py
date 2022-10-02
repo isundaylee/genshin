@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/SceneInitFinishRsp.proto\"@\n\x12SceneInitFinishRsp\x12\x0f\n\x07retcode\x18\r \x01(\x05\x12\x19\n\x11\x65nter_scene_token\x18\x08 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/SceneInitFinishRsp.proto\"@\n\x12SceneInitFinishRsp\x12\x0f\n\x07retcode\x18\r \x01(\x05\x12\x19\n\x11\x65nter_scene_token\x18\x08 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(SceneInitFinishRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SCENEINITFINISHRSP._serialized_start=49
   _SCENEINITFINISHRSP._serialized_end=113
 # @@protoc_insertion_point(module_scope)

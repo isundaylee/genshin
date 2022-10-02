@@ -16,7 +16,7 @@ from genshin.packet.proto import ActivityInfo_pb2 as genshin_dot_packet_dot_prot
 from genshin.packet.proto import Uint32Pair_pb2 as genshin_dot_packet_dot_proto_dot_Uint32Pair__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/GetActivityInfoRsp.proto\x1a\'genshin/packet/proto/ActivityInfo.proto\x1a%genshin/packet/proto/Uint32Pair.proto\"\xae\x01\n\x12GetActivityInfoRsp\x12\x0f\n\x07retcode\x18\r \x01(\x05\x12)\n\x12\x61\x63tivity_info_list\x18\x05 \x03(\x0b\x32\r.ActivityInfo\x12\x1e\n\x16\x61\x63tivated_sale_id_list\x18\x0b \x03(\r\x12<\n\'disable_transfer_point_interaction_list\x18\n \x03(\x0b\x32\x0b.Uint32PairB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/GetActivityInfoRsp.proto\x1a\'genshin/packet/proto/ActivityInfo.proto\x1a%genshin/packet/proto/Uint32Pair.proto\"\xae\x01\n\x12GetActivityInfoRsp\x12\x0f\n\x07retcode\x18\r \x01(\x05\x12)\n\x12\x61\x63tivity_info_list\x18\x05 \x03(\x0b\x32\r.ActivityInfo\x12\x1e\n\x16\x61\x63tivated_sale_id_list\x18\x0b \x03(\r\x12<\n\'disable_transfer_point_interaction_list\x18\n \x03(\x0b\x32\x0b.Uint32PairB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(GetActivityInfoRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _GETACTIVITYINFORSP._serialized_start=130
   _GETACTIVITYINFORSP._serialized_end=304
 # @@protoc_insertion_point(module_scope)

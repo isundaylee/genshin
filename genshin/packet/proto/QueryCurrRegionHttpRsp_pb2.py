@@ -17,7 +17,7 @@ from genshin.packet.proto import RegionInfo_pb2 as genshin_dot_packet_dot_proto_
 from genshin.packet.proto import StopServerInfo_pb2 as genshin_dot_packet_dot_proto_dot_StopServerInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/QueryCurrRegionHttpRsp.proto\x1a*genshin/packet/proto/ForceUpdateInfo.proto\x1a%genshin/packet/proto/RegionInfo.proto\x1a)genshin/packet/proto/StopServerInfo.proto\"\xa6\x02\n\x16QueryCurrRegionHttpRsp\x12\x0f\n\x07retcode\x18\x01 \x01(\x05\x12\x0b\n\x03msg\x18\x02 \x01(\t\x12 \n\x0bregion_info\x18\x03 \x01(\x0b\x32\x0b.RegionInfo\x12\x19\n\x11\x63lient_secret_key\x18\x0b \x01(\x0c\x12&\n\x1eregion_custom_config_encrypted\x18\x0c \x01(\x0c\x12-\n%client_region_custom_config_encrypted\x18\r \x01(\x0c\x12(\n\x0c\x66orce_udpate\x18\x04 \x01(\x0b\x32\x10.ForceUpdateInfoH\x00\x12&\n\x0bstop_server\x18\x05 \x01(\x0b\x32\x0f.StopServerInfoH\x00\x42\x08\n\x06\x64\x65tailB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/QueryCurrRegionHttpRsp.proto\x1a*genshin/packet/proto/ForceUpdateInfo.proto\x1a%genshin/packet/proto/RegionInfo.proto\x1a)genshin/packet/proto/StopServerInfo.proto\"\xa6\x02\n\x16QueryCurrRegionHttpRsp\x12\x0f\n\x07retcode\x18\x01 \x01(\x05\x12\x0b\n\x03msg\x18\x02 \x01(\t\x12 \n\x0bregion_info\x18\x03 \x01(\x0b\x32\x0b.RegionInfo\x12\x19\n\x11\x63lient_secret_key\x18\x0b \x01(\x0c\x12&\n\x1eregion_custom_config_encrypted\x18\x0c \x01(\x0c\x12-\n%client_region_custom_config_encrypted\x18\r \x01(\x0c\x12(\n\x0c\x66orce_udpate\x18\x04 \x01(\x0b\x32\x10.ForceUpdateInfoH\x00\x12&\n\x0bstop_server\x18\x05 \x01(\x0b\x32\x0f.StopServerInfoH\x00\x42\x08\n\x06\x64\x65tailB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -32,7 +32,7 @@ _sym_db.RegisterMessage(QueryCurrRegionHttpRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _QUERYCURRREGIONHTTPRSP._serialized_start=180
   _QUERYCURRREGIONHTTPRSP._serialized_end=474
 # @@protoc_insertion_point(module_scope)

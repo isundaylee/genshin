@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import CoopChapter_pb2 as genshin_dot_packet_dot_proto_dot_CoopChapter__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/CoopDataNotify.proto\x1a&genshin/packet/proto/CoopChapter.proto\"\x83\x01\n\x0e\x43oopDataNotify\x12\"\n\x0c\x63hapter_list\x18\x0f \x03(\x0b\x32\x0c.CoopChapter\x12\x1b\n\x13viewed_chapter_list\x18\x07 \x03(\r\x12\x18\n\x10is_have_progress\x18\n \x01(\x08\x12\x16\n\x0e\x63ur_coop_point\x18\x05 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/CoopDataNotify.proto\x1a&genshin/packet/proto/CoopChapter.proto\"\x83\x01\n\x0e\x43oopDataNotify\x12\"\n\x0c\x63hapter_list\x18\x0f \x03(\x0b\x32\x0c.CoopChapter\x12\x1b\n\x13viewed_chapter_list\x18\x07 \x03(\r\x12\x18\n\x10is_have_progress\x18\n \x01(\x08\x12\x16\n\x0e\x63ur_coop_point\x18\x05 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(CoopDataNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _COOPDATANOTIFY._serialized_start=86
   _COOPDATANOTIFY._serialized_end=217
 # @@protoc_insertion_point(module_scope)

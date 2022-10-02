@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n$genshin/packet/proto/StoreType.proto*K\n\tStoreType\x12\x13\n\x0fSTORE_TYPE_NONE\x10\x00\x12\x13\n\x0fSTORE_TYPE_PACK\x10\x01\x12\x14\n\x10STORE_TYPE_DEPOT\x10\x02\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n$genshin/packet/proto/StoreType.proto*K\n\tStoreType\x12\x13\n\x0fSTORE_TYPE_NONE\x10\x00\x12\x13\n\x0fSTORE_TYPE_PACK\x10\x01\x12\x14\n\x10STORE_TYPE_DEPOT\x10\x02\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 _STORETYPE = DESCRIPTOR.enum_types_by_name['StoreType']
 StoreType = enum_type_wrapper.EnumTypeWrapper(_STORETYPE)
@@ -27,7 +27,7 @@ STORE_TYPE_DEPOT = 2
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _STORETYPE._serialized_start=40
   _STORETYPE._serialized_end=115
 # @@protoc_insertion_point(module_scope)

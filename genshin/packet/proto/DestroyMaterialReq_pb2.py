@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import MaterialInfo_pb2 as genshin_dot_packet_dot_proto_dot_MaterialInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/DestroyMaterialReq.proto\x1a\'genshin/packet/proto/MaterialInfo.proto\":\n\x12\x44\x65stroyMaterialReq\x12$\n\rmaterial_list\x18\x05 \x03(\x0b\x32\r.MaterialInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n-genshin/packet/proto/DestroyMaterialReq.proto\x1a\'genshin/packet/proto/MaterialInfo.proto\":\n\x12\x44\x65stroyMaterialReq\x12$\n\rmaterial_list\x18\x05 \x03(\x0b\x32\r.MaterialInfoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(DestroyMaterialReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _DESTROYMATERIALREQ._serialized_start=90
   _DESTROYMATERIALREQ._serialized_end=148
 # @@protoc_insertion_point(module_scope)

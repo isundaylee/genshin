@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import Unk2800_FDLKPKFOIIK_pb2 as genshin_dot_packet_dot_proto_dot_Unk2800__FDLKPKFOIIK__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/Unk2800_PHPHMILPOLC.proto\x1a.genshin/packet/proto/Unk2800_FDLKPKFOIIK.proto\"W\n\x13Unk2800_PHPHMILPOLC\x12#\n\x05state\x18\n \x01(\x0e\x32\x14.Unk2800_FDLKPKFOIIK\x12\x1b\n\x13Unk2800_CLOCMPFBGMD\x18\x04 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/Unk2800_PHPHMILPOLC.proto\x1a.genshin/packet/proto/Unk2800_FDLKPKFOIIK.proto\"W\n\x13Unk2800_PHPHMILPOLC\x12#\n\x05state\x18\n \x01(\x0e\x32\x14.Unk2800_FDLKPKFOIIK\x12\x1b\n\x13Unk2800_CLOCMPFBGMD\x18\x04 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(Unk2800_PHPHMILPOLC)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _UNK2800_PHPHMILPOLC._serialized_start=98
   _UNK2800_PHPHMILPOLC._serialized_end=185
 # @@protoc_insertion_point(module_scope)

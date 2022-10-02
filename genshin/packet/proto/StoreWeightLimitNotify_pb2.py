@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import StoreType_pb2 as genshin_dot_packet_dot_proto_dot_StoreType__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/StoreWeightLimitNotify.proto\x1a$genshin/packet/proto/StoreType.proto\"\xc6\x01\n\x16StoreWeightLimitNotify\x12\x1a\n\x12weapon_count_limit\x18\x02 \x01(\r\x12\x1e\n\nstore_type\x18\x07 \x01(\x0e\x32\n.StoreType\x12\x1c\n\x14material_count_limit\x18\x04 \x01(\r\x12\x1d\n\x15reliquary_count_limit\x18\x06 \x01(\r\x12\x1d\n\x15\x66urniture_count_limit\x18\t \x01(\r\x12\x14\n\x0cweight_limit\x18\x0f \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n1genshin/packet/proto/StoreWeightLimitNotify.proto\x1a$genshin/packet/proto/StoreType.proto\"\xc6\x01\n\x16StoreWeightLimitNotify\x12\x1a\n\x12weapon_count_limit\x18\x02 \x01(\r\x12\x1e\n\nstore_type\x18\x07 \x01(\x0e\x32\n.StoreType\x12\x1c\n\x14material_count_limit\x18\x04 \x01(\r\x12\x1d\n\x15reliquary_count_limit\x18\x06 \x01(\r\x12\x1d\n\x15\x66urniture_count_limit\x18\t \x01(\r\x12\x14\n\x0cweight_limit\x18\x0f \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(StoreWeightLimitNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _STOREWEIGHTLIMITNOTIFY._serialized_start=92
   _STOREWEIGHTLIMITNOTIFY._serialized_end=290
 # @@protoc_insertion_point(module_scope)

@@ -16,7 +16,7 @@ from genshin.packet.proto import BattlePassMission_pb2 as genshin_dot_packet_dot
 from genshin.packet.proto import BattlePassSchedule_pb2 as genshin_dot_packet_dot_proto_dot_BattlePassSchedule__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/BattlePassAllDataNotify.proto\x1a,genshin/packet/proto/BattlePassMission.proto\x1a-genshin/packet/proto/BattlePassSchedule.proto\"\x89\x01\n\x17\x42\x61ttlePassAllDataNotify\x12\x19\n\x11have_cur_schedule\x18\x02 \x01(\x08\x12)\n\x0c\x63ur_schedule\x18\x01 \x01(\x0b\x32\x13.BattlePassSchedule\x12(\n\x0cmission_list\x18\x04 \x03(\x0b\x32\x12.BattlePassMissionB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/BattlePassAllDataNotify.proto\x1a,genshin/packet/proto/BattlePassMission.proto\x1a-genshin/packet/proto/BattlePassSchedule.proto\"\x89\x01\n\x17\x42\x61ttlePassAllDataNotify\x12\x19\n\x11have_cur_schedule\x18\x02 \x01(\x08\x12(\n\x0cmission_list\x18\x04 \x03(\x0b\x32\x12.BattlePassMission\x12)\n\x0c\x63ur_schedule\x18\x01 \x01(\x0b\x32\x13.BattlePassScheduleB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(BattlePassAllDataNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _BATTLEPASSALLDATANOTIFY._serialized_start=148
   _BATTLEPASSALLDATANOTIFY._serialized_end=285
 # @@protoc_insertion_point(module_scope)

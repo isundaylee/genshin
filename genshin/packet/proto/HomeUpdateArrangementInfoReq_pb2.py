@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import HomeSceneArrangementInfo_pb2 as genshin_dot_packet_dot_proto_dot_HomeSceneArrangementInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n7genshin/packet/proto/HomeUpdateArrangementInfoReq.proto\x1a\x33genshin/packet/proto/HomeSceneArrangementInfo.proto\"Y\n\x1cHomeUpdateArrangementInfoReq\x12\x39\n\x16scene_arrangement_info\x18\x06 \x01(\x0b\x32\x19.HomeSceneArrangementInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n7genshin/packet/proto/HomeUpdateArrangementInfoReq.proto\x1a\x33genshin/packet/proto/HomeSceneArrangementInfo.proto\"Y\n\x1cHomeUpdateArrangementInfoReq\x12\x39\n\x16scene_arrangement_info\x18\x06 \x01(\x0b\x32\x19.HomeSceneArrangementInfoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(HomeUpdateArrangementInfoReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _HOMEUPDATEARRANGEMENTINFOREQ._serialized_start=112
   _HOMEUPDATEARRANGEMENTINFOREQ._serialized_end=201
 # @@protoc_insertion_point(module_scope)

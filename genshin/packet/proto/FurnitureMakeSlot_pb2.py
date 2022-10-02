@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import FurnitureMakeData_pb2 as genshin_dot_packet_dot_proto_dot_FurnitureMakeData__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/FurnitureMakeSlot.proto\x1a,genshin/packet/proto/FurnitureMakeData.proto\"I\n\x11\x46urnitureMakeSlot\x12\x34\n\x18\x66urniture_make_data_list\x18\x0e \x03(\x0b\x32\x12.FurnitureMakeDataB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/FurnitureMakeSlot.proto\x1a,genshin/packet/proto/FurnitureMakeData.proto\"I\n\x11\x46urnitureMakeSlot\x12\x34\n\x18\x66urniture_make_data_list\x18\x0e \x03(\x0b\x32\x12.FurnitureMakeDataB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(FurnitureMakeSlot)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _FURNITUREMAKESLOT._serialized_start=94
   _FURNITUREMAKESLOT._serialized_end=167
 # @@protoc_insertion_point(module_scope)

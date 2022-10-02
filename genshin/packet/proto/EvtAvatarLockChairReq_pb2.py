@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/EvtAvatarLockChairReq.proto\x1a!genshin/packet/proto/Vector.proto\"D\n\x15\x45vtAvatarLockChairReq\x12\x10\n\x08\x63hair_id\x18\x05 \x01(\x04\x12\x19\n\x08position\x18\x08 \x01(\x0b\x32\x07.VectorB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/EvtAvatarLockChairReq.proto\x1a!genshin/packet/proto/Vector.proto\"D\n\x15\x45vtAvatarLockChairReq\x12\x10\n\x08\x63hair_id\x18\x05 \x01(\x04\x12\x19\n\x08position\x18\x08 \x01(\x0b\x32\x07.VectorB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(EvtAvatarLockChairReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _EVTAVATARLOCKCHAIRREQ._serialized_start=87
   _EVTAVATARLOCKCHAIRREQ._serialized_end=155
 # @@protoc_insertion_point(module_scope)

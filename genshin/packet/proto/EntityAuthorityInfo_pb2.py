@@ -20,7 +20,7 @@ from genshin.packet.proto import Unk2700_HFMDKDHCJCM_pb2 as genshin_dot_packet_d
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/EntityAuthorityInfo.proto\x1a/genshin/packet/proto/AbilitySyncStateInfo.proto\x1a\x39genshin/packet/proto/AnimatorParameterValueInfoPair.proto\x1a\x34genshin/packet/proto/EntityRendererChangedInfo.proto\x1a,genshin/packet/proto/SceneEntityAiInfo.proto\x1a.genshin/packet/proto/Unk2700_HFMDKDHCJCM.proto\x1a!genshin/packet/proto/Vector.proto\"\xa9\x02\n\x13\x45ntityAuthorityInfo\x12+\n\x0c\x61\x62ility_info\x18\x01 \x01(\x0b\x32\x15.AbilitySyncStateInfo\x12\x39\n\x15renderer_changed_info\x18\x02 \x01(\x0b\x32\x1a.EntityRendererChangedInfo\x12#\n\x07\x61i_info\x18\x03 \x01(\x0b\x32\x12.SceneEntityAiInfo\x12\x19\n\x08\x62orn_pos\x18\x04 \x01(\x0b\x32\x07.Vector\x12\x37\n\x0epose_para_list\x18\x05 \x03(\x0b\x32\x1f.AnimatorParameterValueInfoPair\x12\x31\n\x13Unk2700_KDGMOPELHNE\x18\x06 \x01(\x0b\x32\x14.Unk2700_HFMDKDHCJCMB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/EntityAuthorityInfo.proto\x1a/genshin/packet/proto/AbilitySyncStateInfo.proto\x1a\x39genshin/packet/proto/AnimatorParameterValueInfoPair.proto\x1a\x34genshin/packet/proto/EntityRendererChangedInfo.proto\x1a,genshin/packet/proto/SceneEntityAiInfo.proto\x1a.genshin/packet/proto/Unk2700_HFMDKDHCJCM.proto\x1a!genshin/packet/proto/Vector.proto\"\xa9\x02\n\x13\x45ntityAuthorityInfo\x12+\n\x0c\x61\x62ility_info\x18\x01 \x01(\x0b\x32\x15.AbilitySyncStateInfo\x12\x39\n\x15renderer_changed_info\x18\x02 \x01(\x0b\x32\x1a.EntityRendererChangedInfo\x12#\n\x07\x61i_info\x18\x03 \x01(\x0b\x32\x12.SceneEntityAiInfo\x12\x19\n\x08\x62orn_pos\x18\x04 \x01(\x0b\x32\x07.Vector\x12\x37\n\x0epose_para_list\x18\x05 \x03(\x0b\x32\x1f.AnimatorParameterValueInfoPair\x12\x31\n\x13Unk2700_KDGMOPELHNE\x18\x06 \x01(\x0b\x32\x14.Unk2700_HFMDKDHCJCMB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -35,7 +35,7 @@ _sym_db.RegisterMessage(EntityAuthorityInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ENTITYAUTHORITYINFO._serialized_start=342
   _ENTITYAUTHORITYINFO._serialized_end=639
 # @@protoc_insertion_point(module_scope)

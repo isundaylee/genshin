@@ -13,10 +13,9 @@ _sym_db = _symbol_database.Default()
 
 
 from genshin.packet.proto import MapMarkPoint_pb2 as genshin_dot_packet_dot_proto_dot_MapMarkPoint__pb2
-from genshin.packet.proto import Operation_pb2 as genshin_dot_packet_dot_proto_dot_Operation__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/MarkMapReq.proto\x1a\'genshin/packet/proto/MapMarkPoint.proto\x1a$genshin/packet/proto/Operation.proto\"\xc1\x01\n\nMarkMapReq\x12\x1b\n\x04mark\x18\x08 \x01(\x0b\x32\r.MapMarkPoint\x12\x1a\n\x03old\x18\x06 \x01(\x0b\x32\r.MapMarkPoint\x12!\n\x02op\x18\t \x01(\x0e\x32\x15.MarkMapReq.Operation\"W\n\tOperation\x12\x11\n\rOPERATION_ADD\x10\x00\x12\x11\n\rOPERATION_MOD\x10\x01\x12\x11\n\rOPERATION_DEL\x10\x02\x12\x11\n\rOPERATION_GET\x10\x03\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/MarkMapReq.proto\x1a\'genshin/packet/proto/MapMarkPoint.proto\"\xc1\x01\n\nMarkMapReq\x12\x1b\n\x04mark\x18\x08 \x01(\x0b\x32\r.MapMarkPoint\x12\x1a\n\x03old\x18\x06 \x01(\x0b\x32\r.MapMarkPoint\x12!\n\x02op\x18\t \x01(\x0e\x32\x15.MarkMapReq.Operation\"W\n\tOperation\x12\x11\n\rOPERATION_ADD\x10\x00\x12\x11\n\rOPERATION_MOD\x10\x01\x12\x11\n\rOPERATION_DEL\x10\x02\x12\x11\n\rOPERATION_GET\x10\x03\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -32,9 +31,9 @@ _sym_db.RegisterMessage(MarkMapReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
-  _MARKMAPREQ._serialized_start=121
-  _MARKMAPREQ._serialized_end=314
-  _MARKMAPREQ_OPERATION._serialized_start=227
-  _MARKMAPREQ_OPERATION._serialized_end=314
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
+  _MARKMAPREQ._serialized_start=83
+  _MARKMAPREQ._serialized_end=276
+  _MARKMAPREQ_OPERATION._serialized_start=189
+  _MARKMAPREQ_OPERATION._serialized_end=276
 # @@protoc_insertion_point(module_scope)

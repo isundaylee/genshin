@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import ItemParam_pb2 as genshin_dot_packet_dot_proto_dot_ItemParam__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/GachaTransferItem.proto\x1a$genshin/packet/proto/ItemParam.proto\"K\n\x11GachaTransferItem\x12\x18\n\x04item\x18\x03 \x01(\x0b\x32\n.ItemParam\x12\x1c\n\x14is_transfer_item_new\x18\x01 \x01(\x08\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/GachaTransferItem.proto\x1a$genshin/packet/proto/ItemParam.proto\"K\n\x11GachaTransferItem\x12\x18\n\x04item\x18\x03 \x01(\x0b\x32\n.ItemParam\x12\x1c\n\x14is_transfer_item_new\x18\x01 \x01(\x08\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(GachaTransferItem)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _GACHATRANSFERITEM._serialized_start=86
   _GACHATRANSFERITEM._serialized_end=161
 # @@protoc_insertion_point(module_scope)

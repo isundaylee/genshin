@@ -16,7 +16,7 @@ from genshin.packet.proto import PlayerLocationInfo_pb2 as genshin_dot_packet_do
 from genshin.packet.proto import PlayerWorldLocationInfo_pb2 as genshin_dot_packet_dot_proto_dot_PlayerWorldLocationInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/WorldPlayerLocationNotify.proto\x1a-genshin/packet/proto/PlayerLocationInfo.proto\x1a\x32genshin/packet/proto/PlayerWorldLocationInfo.proto\"\x82\x01\n\x19WorldPlayerLocationNotify\x12\x37\n\x15player_world_loc_list\x18\x08 \x03(\x0b\x32\x18.PlayerWorldLocationInfo\x12,\n\x0fplayer_loc_list\x18\x0f \x03(\x0b\x32\x13.PlayerLocationInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/WorldPlayerLocationNotify.proto\x1a-genshin/packet/proto/PlayerLocationInfo.proto\x1a\x32genshin/packet/proto/PlayerWorldLocationInfo.proto\"\x82\x01\n\x19WorldPlayerLocationNotify\x12\x37\n\x15player_world_loc_list\x18\x08 \x03(\x0b\x32\x18.PlayerWorldLocationInfo\x12,\n\x0fplayer_loc_list\x18\x0f \x03(\x0b\x32\x13.PlayerLocationInfoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(WorldPlayerLocationNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _WORLDPLAYERLOCATIONNOTIFY._serialized_start=156
   _WORLDPLAYERLOCATIONNOTIFY._serialized_end=286
 # @@protoc_insertion_point(module_scope)

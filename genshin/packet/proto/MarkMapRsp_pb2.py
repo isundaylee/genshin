@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import MapMarkPoint_pb2 as genshin_dot_packet_dot_proto_dot_MapMarkPoint__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/MarkMapRsp.proto\x1a\'genshin/packet/proto/MapMarkPoint.proto\"?\n\nMarkMapRsp\x12 \n\tmark_list\x18\x08 \x03(\x0b\x32\r.MapMarkPoint\x12\x0f\n\x07retcode\x18\x0b \x01(\x05\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/MarkMapRsp.proto\x1a\'genshin/packet/proto/MapMarkPoint.proto\"?\n\nMarkMapRsp\x12 \n\tmark_list\x18\x08 \x03(\x0b\x32\r.MapMarkPoint\x12\x0f\n\x07retcode\x18\x0b \x01(\x05\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(MarkMapRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _MARKMAPRSP._serialized_start=82
   _MARKMAPRSP._serialized_end=145
 # @@protoc_insertion_point(module_scope)

@@ -16,7 +16,7 @@ from genshin.packet.proto import CombatTypeArgument_pb2 as genshin_dot_packet_do
 from genshin.packet.proto import ForwardType_pb2 as genshin_dot_packet_dot_proto_dot_ForwardType__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/CombatInvokeEntry.proto\x1a-genshin/packet/proto/CombatTypeArgument.proto\x1a&genshin/packet/proto/ForwardType.proto\"x\n\x11\x43ombatInvokeEntry\x12\x13\n\x0b\x63ombat_data\x18\x0c \x01(\x0c\x12\"\n\x0c\x66orward_type\x18\n \x01(\x0e\x32\x0c.ForwardType\x12*\n\rargument_type\x18\x0b \x01(\x0e\x32\x13.CombatTypeArgumentB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/CombatInvokeEntry.proto\x1a-genshin/packet/proto/CombatTypeArgument.proto\x1a&genshin/packet/proto/ForwardType.proto\"x\n\x11\x43ombatInvokeEntry\x12\x13\n\x0b\x63ombat_data\x18\x0c \x01(\x0c\x12\"\n\x0c\x66orward_type\x18\n \x01(\x0e\x32\x0c.ForwardType\x12*\n\rargument_type\x18\x0b \x01(\x0e\x32\x13.CombatTypeArgumentB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(CombatInvokeEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _COMBATINVOKEENTRY._serialized_start=135
   _COMBATINVOKEENTRY._serialized_end=255
 # @@protoc_insertion_point(module_scope)

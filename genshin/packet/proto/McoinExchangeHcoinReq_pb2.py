@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/McoinExchangeHcoinReq.proto\":\n\x15McoinExchangeHcoinReq\x12\r\n\x05hcoin\x18\x05 \x01(\r\x12\x12\n\nmcoin_cost\x18\x01 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/McoinExchangeHcoinReq.proto\":\n\x15McoinExchangeHcoinReq\x12\r\n\x05hcoin\x18\x05 \x01(\r\x12\x12\n\nmcoin_cost\x18\x01 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(McoinExchangeHcoinReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _MCOINEXCHANGEHCOINREQ._serialized_start=52
   _MCOINEXCHANGEHCOINREQ._serialized_end=110
 # @@protoc_insertion_point(module_scope)

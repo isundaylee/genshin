@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import ParentQuest_pb2 as genshin_dot_packet_dot_proto_dot_ParentQuest__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/FinishedParentQuestNotify.proto\x1a&genshin/packet/proto/ParentQuest.proto\"D\n\x19\x46inishedParentQuestNotify\x12\'\n\x11parent_quest_list\x18\x02 \x03(\x0b\x32\x0c.ParentQuestB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/FinishedParentQuestNotify.proto\x1a&genshin/packet/proto/ParentQuest.proto\"D\n\x19\x46inishedParentQuestNotify\x12\'\n\x11parent_quest_list\x18\x02 \x03(\x0b\x32\x0c.ParentQuestB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(FinishedParentQuestNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _FINISHEDPARENTQUESTNOTIFY._serialized_start=96
   _FINISHEDPARENTQUESTNOTIFY._serialized_end=164
 # @@protoc_insertion_point(module_scope)

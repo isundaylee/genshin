@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import EquipParam_pb2 as genshin_dot_packet_dot_proto_dot_EquipParam__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/GetMailItemRsp.proto\x1a%genshin/packet/proto/EquipParam.proto\"W\n\x0eGetMailItemRsp\x12\x0f\n\x07retcode\x18\x07 \x01(\x05\x12\x14\n\x0cmail_id_list\x18\x03 \x03(\r\x12\x1e\n\titem_list\x18\x02 \x03(\x0b\x32\x0b.EquipParamB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/GetMailItemRsp.proto\x1a%genshin/packet/proto/EquipParam.proto\"W\n\x0eGetMailItemRsp\x12\x0f\n\x07retcode\x18\x07 \x01(\x05\x12\x14\n\x0cmail_id_list\x18\x03 \x03(\r\x12\x1e\n\titem_list\x18\x02 \x03(\x0b\x32\x0b.EquipParamB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(GetMailItemRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _GETMAILITEMRSP._serialized_start=84
   _GETMAILITEMRSP._serialized_end=171
 # @@protoc_insertion_point(module_scope)

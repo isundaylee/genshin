@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/NpcTalkRsp.proto\"\\\n\nNpcTalkRsp\x12\x13\n\x0b\x63ur_talk_id\x18\t \x01(\r\x12\x15\n\rnpc_entity_id\x18\x06 \x01(\r\x12\x0f\n\x07retcode\x18\x03 \x01(\x05\x12\x11\n\tentity_id\x18\r \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/NpcTalkRsp.proto\"\\\n\nNpcTalkRsp\x12\x13\n\x0b\x63ur_talk_id\x18\t \x01(\r\x12\x15\n\rnpc_entity_id\x18\x06 \x01(\r\x12\x0f\n\x07retcode\x18\x03 \x01(\x05\x12\x11\n\tentity_id\x18\r \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(NpcTalkRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _NPCTALKRSP._serialized_start=41
   _NPCTALKRSP._serialized_end=133
 # @@protoc_insertion_point(module_scope)

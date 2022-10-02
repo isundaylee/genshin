@@ -16,7 +16,7 @@ from genshin.packet.proto import InteractType_pb2 as genshin_dot_packet_dot_prot
 from genshin.packet.proto import InterOpType_pb2 as genshin_dot_packet_dot_proto_dot_InterOpType__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/GadgetInteractRsp.proto\x1a\'genshin/packet/proto/InteractType.proto\x1a&genshin/packet/proto/InterOpType.proto\"\x96\x01\n\x11GadgetInteractRsp\x12\x18\n\x10gadget_entity_id\x18\n \x01(\r\x12$\n\rinteract_type\x18\x02 \x01(\x0e\x32\r.InteractType\x12\x1d\n\x07op_type\x18\x03 \x01(\x0e\x32\x0c.InterOpType\x12\x0f\n\x07retcode\x18\x07 \x01(\x05\x12\x11\n\tgadget_id\x18\x0f \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/GadgetInteractRsp.proto\x1a\'genshin/packet/proto/InteractType.proto\x1a&genshin/packet/proto/InterOpType.proto\"\x96\x01\n\x11GadgetInteractRsp\x12\x18\n\x10gadget_entity_id\x18\n \x01(\r\x12$\n\rinteract_type\x18\x02 \x01(\x0e\x32\r.InteractType\x12\x1d\n\x07op_type\x18\x03 \x01(\x0e\x32\x0c.InterOpType\x12\x0f\n\x07retcode\x18\x07 \x01(\x05\x12\x11\n\tgadget_id\x18\x0f \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(GadgetInteractRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _GADGETINTERACTRSP._serialized_start=130
   _GADGETINTERACTRSP._serialized_end=280
 # @@protoc_insertion_point(module_scope)

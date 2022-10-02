@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n7genshin/packet/proto/ActivityTakeWatcherRewardRsp.proto\"X\n\x1c\x41\x63tivityTakeWatcherRewardRsp\x12\x0f\n\x07retcode\x18\t \x01(\x05\x12\x13\n\x0b\x61\x63tivity_id\x18\x0e \x01(\r\x12\x12\n\nwatcher_id\x18\x07 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n7genshin/packet/proto/ActivityTakeWatcherRewardRsp.proto\"X\n\x1c\x41\x63tivityTakeWatcherRewardRsp\x12\x13\n\x0b\x61\x63tivity_id\x18\x0e \x01(\r\x12\x12\n\nwatcher_id\x18\x07 \x01(\r\x12\x0f\n\x07retcode\x18\t \x01(\x05\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(ActivityTakeWatcherRewardRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ACTIVITYTAKEWATCHERREWARDRSP._serialized_start=59
   _ACTIVITYTAKEWATCHERREWARDRSP._serialized_end=147
 # @@protoc_insertion_point(module_scope)

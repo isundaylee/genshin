@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n8genshin/packet/proto/TakeBattlePassMissionPointReq.proto\"8\n\x1dTakeBattlePassMissionPointReq\x12\x17\n\x0fmission_id_list\x18\x05 \x03(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n8genshin/packet/proto/TakeBattlePassMissionPointReq.proto\"8\n\x1dTakeBattlePassMissionPointReq\x12\x17\n\x0fmission_id_list\x18\x05 \x03(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(TakeBattlePassMissionPointReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _TAKEBATTLEPASSMISSIONPOINTREQ._serialized_start=60
   _TAKEBATTLEPASSMISSIONPOINTREQ._serialized_end=116
 # @@protoc_insertion_point(module_scope)

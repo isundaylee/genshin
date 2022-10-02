@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/TowerMonthlyBrief.proto\"|\n\x11TowerMonthlyBrief\x12\x19\n\x11tower_schedule_id\x18\x0f \x01(\r\x12\x18\n\x10\x62\x65st_floor_index\x18\x06 \x01(\r\x12\x18\n\x10\x62\x65st_level_index\x18\x03 \x01(\r\x12\x18\n\x10total_star_count\x18\x0c \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/TowerMonthlyBrief.proto\"|\n\x11TowerMonthlyBrief\x12\x19\n\x11tower_schedule_id\x18\x0f \x01(\r\x12\x18\n\x10\x62\x65st_floor_index\x18\x06 \x01(\r\x12\x18\n\x10\x62\x65st_level_index\x18\x03 \x01(\r\x12\x18\n\x10total_star_count\x18\x0c \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(TowerMonthlyBrief)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _TOWERMONTHLYBRIEF._serialized_start=48
   _TOWERMONTHLYBRIEF._serialized_end=172
 # @@protoc_insertion_point(module_scope)

@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import MotionInfo_pb2 as genshin_dot_packet_dot_proto_dot_MotionInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/SceneEntityMoveNotify.proto\x1a%genshin/packet/proto/MotionInfo.proto\"v\n\x15SceneEntityMoveNotify\x12 \n\x0bmotion_info\x18\x06 \x01(\x0b\x32\x0b.MotionInfo\x12\x11\n\tentity_id\x18\x08 \x01(\r\x12\x12\n\nscene_time\x18\x0f \x01(\r\x12\x14\n\x0creliable_seq\x18\x02 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/SceneEntityMoveNotify.proto\x1a%genshin/packet/proto/MotionInfo.proto\"v\n\x15SceneEntityMoveNotify\x12 \n\x0bmotion_info\x18\x06 \x01(\x0b\x32\x0b.MotionInfo\x12\x11\n\tentity_id\x18\x08 \x01(\r\x12\x12\n\nscene_time\x18\x0f \x01(\r\x12\x14\n\x0creliable_seq\x18\x02 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(SceneEntityMoveNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _SCENEENTITYMOVENOTIFY._serialized_start=91
   _SCENEENTITYMOVENOTIFY._serialized_end=209
 # @@protoc_insertion_point(module_scope)

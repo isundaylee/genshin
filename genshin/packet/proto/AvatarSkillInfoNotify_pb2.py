@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import AvatarSkillInfo_pb2 as genshin_dot_packet_dot_proto_dot_AvatarSkillInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/AvatarSkillInfoNotify.proto\x1a*genshin/packet/proto/AvatarSkillInfo.proto\"\xa1\x01\n\x15\x41vatarSkillInfoNotify\x12\x37\n\tskill_map\x18\x0b \x03(\x0b\x32$.AvatarSkillInfoNotify.SkillMapEntry\x12\x0c\n\x04guid\x18\x04 \x01(\x04\x1a\x41\n\rSkillMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\x1f\n\x05value\x18\x02 \x01(\x0b\x32\x10.AvatarSkillInfo:\x02\x38\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/AvatarSkillInfoNotify.proto\x1a*genshin/packet/proto/AvatarSkillInfo.proto\"\xa1\x01\n\x15\x41vatarSkillInfoNotify\x12\x37\n\tskill_map\x18\x0b \x03(\x0b\x32$.AvatarSkillInfoNotify.SkillMapEntry\x12\x0c\n\x04guid\x18\x04 \x01(\x04\x1a\x41\n\rSkillMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\x1f\n\x05value\x18\x02 \x01(\x0b\x32\x10.AvatarSkillInfo:\x02\x38\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -39,7 +39,7 @@ _sym_db.RegisterMessage(AvatarSkillInfoNotify.SkillMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _AVATARSKILLINFONOTIFY_SKILLMAPENTRY._options = None
   _AVATARSKILLINFONOTIFY_SKILLMAPENTRY._serialized_options = b'8\001'
   _AVATARSKILLINFONOTIFY._serialized_start=97

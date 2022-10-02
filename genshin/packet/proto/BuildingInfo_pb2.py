@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/BuildingInfo.proto\"\xa7\x01\n\x0c\x42uildingInfo\x12\x13\n\x0b\x62uilding_id\x18\x01 \x01(\r\x12\x17\n\x0fpoint_config_id\x18\x02 \x01(\r\x12\x0c\n\x04\x63ost\x18\x03 \x01(\r\x12\x0e\n\x06refund\x18\x05 \x01(\r\x12\x11\n\towner_uid\x18\x06 \x01(\r\x12\x1b\n\x13Unk2700_MDJOPHOHFDB\x18\x07 \x01(\r\x12\x1b\n\x13Unk2700_COFBIGLBNGP\x18\x08 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\'genshin/packet/proto/BuildingInfo.proto\"\xa7\x01\n\x0c\x42uildingInfo\x12\x13\n\x0b\x62uilding_id\x18\x01 \x01(\r\x12\x17\n\x0fpoint_config_id\x18\x02 \x01(\r\x12\x0c\n\x04\x63ost\x18\x03 \x01(\r\x12\x0e\n\x06refund\x18\x05 \x01(\r\x12\x11\n\towner_uid\x18\x06 \x01(\r\x12\x1b\n\x13Unk2700_MDJOPHOHFDB\x18\x07 \x01(\r\x12\x1b\n\x13Unk2700_COFBIGLBNGP\x18\x08 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(BuildingInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _BUILDINGINFO._serialized_start=44
   _BUILDINGINFO._serialized_end=211
 # @@protoc_insertion_point(module_scope)

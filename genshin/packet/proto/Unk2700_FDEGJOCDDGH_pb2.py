@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/Unk2700_FDEGJOCDDGH.proto\"n\n\x13Unk2700_FDEGJOCDDGH\x12\x14\n\x0c\x63ur_progress\x18\t \x01(\r\x12\x17\n\x0f\x63hallenge_index\x18\n \x01(\r\x12\x12\n\nis_success\x18\x04 \x01(\x08\x12\x14\n\x0c\x63hallenge_id\x18\x08 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/Unk2700_FDEGJOCDDGH.proto\"n\n\x13Unk2700_FDEGJOCDDGH\x12\x14\n\x0c\x63ur_progress\x18\t \x01(\r\x12\x17\n\x0f\x63hallenge_index\x18\n \x01(\r\x12\x12\n\nis_success\x18\x04 \x01(\x08\x12\x14\n\x0c\x63hallenge_id\x18\x08 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(Unk2700_FDEGJOCDDGH)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _UNK2700_FDEGJOCDDGH._serialized_start=50
   _UNK2700_FDEGJOCDDGH._serialized_end=160
 # @@protoc_insertion_point(module_scope)

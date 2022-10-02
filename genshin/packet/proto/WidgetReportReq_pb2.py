@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/WidgetReportReq.proto\"u\n\x0fWidgetReportReq\x12\x1b\n\x13Unk2700_MFEHMLBNNAG\x18\x05 \x01(\x08\x12\x19\n\x11is_client_collect\x18\x0e \x01(\x08\x12\x15\n\ris_clear_hint\x18\r \x01(\x08\x12\x13\n\x0bmaterial_id\x18\x0f \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/WidgetReportReq.proto\"u\n\x0fWidgetReportReq\x12\x1b\n\x13Unk2700_MFEHMLBNNAG\x18\x05 \x01(\x08\x12\x19\n\x11is_client_collect\x18\x0e \x01(\x08\x12\x15\n\ris_clear_hint\x18\r \x01(\x08\x12\x13\n\x0bmaterial_id\x18\x0f \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(WidgetReportReq)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _WIDGETREPORTREQ._serialized_start=46
   _WIDGETREPORTREQ._serialized_end=163
 # @@protoc_insertion_point(module_scope)

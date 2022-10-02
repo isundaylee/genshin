@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import PlayerHomeCompInfo_pb2 as genshin_dot_packet_dot_proto_dot_PlayerHomeCompInfo__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n3genshin/packet/proto/PlayerHomeCompInfoNotify.proto\x1a-genshin/packet/proto/PlayerHomeCompInfo.proto\"B\n\x18PlayerHomeCompInfoNotify\x12&\n\tcomp_info\x18\x04 \x01(\x0b\x32\x13.PlayerHomeCompInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n3genshin/packet/proto/PlayerHomeCompInfoNotify.proto\x1a-genshin/packet/proto/PlayerHomeCompInfo.proto\"B\n\x18PlayerHomeCompInfoNotify\x12&\n\tcomp_info\x18\x04 \x01(\x0b\x32\x13.PlayerHomeCompInfoB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(PlayerHomeCompInfoNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _PLAYERHOMECOMPINFONOTIFY._serialized_start=102
   _PLAYERHOMECOMPINFONOTIFY._serialized_end=168
 # @@protoc_insertion_point(module_scope)

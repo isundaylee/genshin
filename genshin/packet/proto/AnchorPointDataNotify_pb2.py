@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import AnchorPointData_pb2 as genshin_dot_packet_dot_proto_dot_AnchorPointData__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/AnchorPointDataNotify.proto\x1a*genshin/packet/proto/AnchorPointData.proto\"^\n\x15\x41nchorPointDataNotify\x12+\n\x11\x61nchor_point_list\x18\n \x03(\x0b\x32\x10.AnchorPointData\x12\x18\n\x10next_usable_time\x18\x0e \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/AnchorPointDataNotify.proto\x1a*genshin/packet/proto/AnchorPointData.proto\"^\n\x15\x41nchorPointDataNotify\x12+\n\x11\x61nchor_point_list\x18\n \x03(\x0b\x32\x10.AnchorPointData\x12\x18\n\x10next_usable_time\x18\x0e \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(AnchorPointDataNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ANCHORPOINTDATANOTIFY._serialized_start=96
   _ANCHORPOINTDATANOTIFY._serialized_end=190
 # @@protoc_insertion_point(module_scope)

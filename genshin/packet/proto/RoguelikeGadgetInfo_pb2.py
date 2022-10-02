@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/RoguelikeGadgetInfo.proto\"e\n\x13RoguelikeGadgetInfo\x12\x16\n\x0e\x63\x65ll_config_id\x18\x01 \x01(\r\x12\x11\n\tcell_type\x18\x02 \x01(\r\x12\x12\n\ncell_state\x18\x03 \x01(\r\x12\x0f\n\x07\x63\x65ll_id\x18\x04 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/RoguelikeGadgetInfo.proto\"e\n\x13RoguelikeGadgetInfo\x12\x16\n\x0e\x63\x65ll_config_id\x18\x01 \x01(\r\x12\x11\n\tcell_type\x18\x02 \x01(\r\x12\x12\n\ncell_state\x18\x03 \x01(\r\x12\x0f\n\x07\x63\x65ll_id\x18\x04 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(RoguelikeGadgetInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ROGUELIKEGADGETINFO._serialized_start=50
   _ROGUELIKEGADGETINFO._serialized_end=151
 # @@protoc_insertion_point(module_scope)

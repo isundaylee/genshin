@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/WeaponAwakenReq.proto\"\xb4\x01\n\x0fWeaponAwakenReq\x12\x11\n\titem_guid\x18\n \x01(\x04\x12<\n\x0f\x61\x66\x66ix_level_map\x18\x07 \x03(\x0b\x32#.WeaponAwakenReq.AffixLevelMapEntry\x12\x1a\n\x12target_weapon_guid\x18\t \x01(\x04\x1a\x34\n\x12\x41\x66\x66ixLevelMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/WeaponAwakenReq.proto\"\xb4\x01\n\x0fWeaponAwakenReq\x12\x11\n\titem_guid\x18\n \x01(\x04\x12<\n\x0f\x61\x66\x66ix_level_map\x18\x07 \x03(\x0b\x32#.WeaponAwakenReq.AffixLevelMapEntry\x12\x1a\n\x12target_weapon_guid\x18\t \x01(\x04\x1a\x34\n\x12\x41\x66\x66ixLevelMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -38,7 +38,7 @@ _sym_db.RegisterMessage(WeaponAwakenReq.AffixLevelMapEntry)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _WEAPONAWAKENREQ_AFFIXLEVELMAPENTRY._options = None
   _WEAPONAWAKENREQ_AFFIXLEVELMAPENTRY._serialized_options = b'8\001'
   _WEAPONAWAKENREQ._serialized_start=47

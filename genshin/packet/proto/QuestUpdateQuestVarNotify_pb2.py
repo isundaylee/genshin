@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/QuestUpdateQuestVarNotify.proto\"e\n\x19QuestUpdateQuestVarNotify\x12\x11\n\tquest_var\x18\x01 \x03(\x05\x12\x17\n\x0fparent_quest_id\x18\x0c \x01(\r\x12\x1c\n\x14parent_quest_var_seq\x18\x08 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/QuestUpdateQuestVarNotify.proto\"e\n\x19QuestUpdateQuestVarNotify\x12\x11\n\tquest_var\x18\x01 \x03(\x05\x12\x17\n\x0fparent_quest_id\x18\x0c \x01(\r\x12\x1c\n\x14parent_quest_var_seq\x18\x08 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(QuestUpdateQuestVarNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _QUESTUPDATEQUESTVARNOTIFY._serialized_start=56
   _QUESTUPDATEQUESTVARNOTIFY._serialized_end=157
 # @@protoc_insertion_point(module_scope)

@@ -16,7 +16,7 @@ from genshin.packet.proto import Item_pb2 as genshin_dot_packet_dot_proto_dot_It
 from genshin.packet.proto import TrialAvatarGrantRecord_pb2 as genshin_dot_packet_dot_proto_dot_TrialAvatarGrantRecord__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/TrialAvatarInfo.proto\x1a\x1fgenshin/packet/proto/Item.proto\x1a\x31genshin/packet/proto/TrialAvatarGrantRecord.proto\"z\n\x0fTrialAvatarInfo\x12\x17\n\x0ftrial_avatar_id\x18\x01 \x01(\r\x12\x1f\n\x10trial_equip_list\x18\x02 \x03(\x0b\x32\x05.Item\x12-\n\x0cgrant_record\x18\x03 \x01(\x0b\x32\x17.TrialAvatarGrantRecordB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/TrialAvatarInfo.proto\x1a\x1fgenshin/packet/proto/Item.proto\x1a\x31genshin/packet/proto/TrialAvatarGrantRecord.proto\"z\n\x0fTrialAvatarInfo\x12\x17\n\x0ftrial_avatar_id\x18\x01 \x01(\r\x12\x1f\n\x10trial_equip_list\x18\x02 \x03(\x0b\x32\x05.Item\x12-\n\x0cgrant_record\x18\x03 \x01(\x0b\x32\x17.TrialAvatarGrantRecordB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -31,7 +31,7 @@ _sym_db.RegisterMessage(TrialAvatarInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _TRIALAVATARINFO._serialized_start=130
   _TRIALAVATARINFO._serialized_end=252
 # @@protoc_insertion_point(module_scope)

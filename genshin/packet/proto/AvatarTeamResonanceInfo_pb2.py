@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/AvatarTeamResonanceInfo.proto\"\x89\x01\n\x17\x41vatarTeamResonanceInfo\x12\"\n\x1a\x61\x64\x64_team_resonance_id_list\x18\x05 \x03(\r\x12\x11\n\tentity_id\x18\x0b \x01(\r\x12\x13\n\x0b\x61vatar_guid\x18\x03 \x01(\x04\x12\"\n\x1a\x64\x65l_team_resonance_id_list\x18\x0e \x03(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n2genshin/packet/proto/AvatarTeamResonanceInfo.proto\"\x89\x01\n\x17\x41vatarTeamResonanceInfo\x12\"\n\x1a\x61\x64\x64_team_resonance_id_list\x18\x05 \x03(\r\x12\x11\n\tentity_id\x18\x0b \x01(\r\x12\x13\n\x0b\x61vatar_guid\x18\x03 \x01(\x04\x12\"\n\x1a\x64\x65l_team_resonance_id_list\x18\x0e \x03(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(AvatarTeamResonanceInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _AVATARTEAMRESONANCEINFO._serialized_start=55
   _AVATARTEAMRESONANCEINFO._serialized_end=192
 # @@protoc_insertion_point(module_scope)

@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/ParentQuestRandomInfo.proto\"V\n\x15ParentQuestRandomInfo\x12\x13\n\x0b\x66\x61\x63tor_list\x18\x01 \x03(\r\x12\x13\n\x0btemplate_id\x18\x08 \x01(\r\x12\x13\n\x0b\x65ntrance_id\x18\x02 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/ParentQuestRandomInfo.proto\"V\n\x15ParentQuestRandomInfo\x12\x13\n\x0b\x66\x61\x63tor_list\x18\x01 \x03(\r\x12\x13\n\x0btemplate_id\x18\x08 \x01(\r\x12\x13\n\x0b\x65ntrance_id\x18\x02 \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(ParentQuestRandomInfo)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _PARENTQUESTRANDOMINFO._serialized_start=52
   _PARENTQUESTRANDOMINFO._serialized_end=138
 # @@protoc_insertion_point(module_scope)

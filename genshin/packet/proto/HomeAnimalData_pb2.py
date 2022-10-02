@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import Vector_pb2 as genshin_dot_packet_dot_proto_dot_Vector__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/HomeAnimalData.proto\x1a!genshin/packet/proto/Vector.proto\"^\n\x0eHomeAnimalData\x12\x1a\n\tspawn_rot\x18\n \x01(\x0b\x32\x07.Vector\x12\x14\n\x0c\x66urniture_id\x18\x05 \x01(\r\x12\x1a\n\tspawn_pos\x18\x06 \x01(\x0b\x32\x07.VectorB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n)genshin/packet/proto/HomeAnimalData.proto\x1a!genshin/packet/proto/Vector.proto\"^\n\x0eHomeAnimalData\x12\x1a\n\tspawn_rot\x18\n \x01(\x0b\x32\x07.Vector\x12\x14\n\x0c\x66urniture_id\x18\x05 \x01(\r\x12\x1a\n\tspawn_pos\x18\x06 \x01(\x0b\x32\x07.VectorB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(HomeAnimalData)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _HOMEANIMALDATA._serialized_start=80
   _HOMEANIMALDATA._serialized_end=174
 # @@protoc_insertion_point(module_scope)

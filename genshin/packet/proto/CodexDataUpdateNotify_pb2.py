@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import CodexType_pb2 as genshin_dot_packet_dot_proto_dot_CodexType__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/CodexDataUpdateNotify.proto\x1a$genshin/packet/proto/CodexType.proto\"_\n\x15\x43odexDataUpdateNotify\x12\n\n\x02id\x18\x08 \x01(\r\x12 \n\x18weapon_max_promote_level\x18\x0f \x01(\r\x12\x18\n\x04type\x18\x0b \x01(\x0e\x32\n.CodexTypeB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/CodexDataUpdateNotify.proto\x1a$genshin/packet/proto/CodexType.proto\"_\n\x15\x43odexDataUpdateNotify\x12\n\n\x02id\x18\x08 \x01(\r\x12 \n\x18weapon_max_promote_level\x18\x0f \x01(\r\x12\x18\n\x04type\x18\x0b \x01(\x0e\x32\n.CodexTypeB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(CodexDataUpdateNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _CODEXDATAUPDATENOTIFY._serialized_start=90
   _CODEXDATAUPDATENOTIFY._serialized_end=185
 # @@protoc_insertion_point(module_scope)

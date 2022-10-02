@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/CoopReward.proto\"v\n\nCoopReward\x12\n\n\x02id\x18\x05 \x01(\r\x12 \n\x05state\x18\x06 \x01(\x0e\x32\x11.CoopReward.State\":\n\x05State\x12\x10\n\x0cSTATE_UNLOCK\x10\x00\x12\x0e\n\nSTATE_LOCK\x10\x01\x12\x0f\n\x0bSTATE_TAKEN\x10\x02\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/CoopReward.proto\"v\n\nCoopReward\x12\n\n\x02id\x18\x05 \x01(\r\x12 \n\x05state\x18\x06 \x01(\x0e\x32\x11.CoopReward.State\":\n\x05State\x12\x10\n\x0cSTATE_UNLOCK\x10\x00\x12\x0e\n\nSTATE_LOCK\x10\x01\x12\x0f\n\x0bSTATE_TAKEN\x10\x02\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -30,7 +30,7 @@ _sym_db.RegisterMessage(CoopReward)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _COOPREWARD._serialized_start=41
   _COOPREWARD._serialized_end=159
   _COOPREWARD_STATE._serialized_start=101

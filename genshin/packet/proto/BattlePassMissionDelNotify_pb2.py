@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n5genshin/packet/proto/BattlePassMissionDelNotify.proto\"9\n\x1a\x42\x61ttlePassMissionDelNotify\x12\x1b\n\x13\x64\x65l_mission_id_list\x18\n \x03(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n5genshin/packet/proto/BattlePassMissionDelNotify.proto\"9\n\x1a\x42\x61ttlePassMissionDelNotify\x12\x1b\n\x13\x64\x65l_mission_id_list\x18\n \x03(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(BattlePassMissionDelNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _BATTLEPASSMISSIONDELNOTIFY._serialized_start=57
   _BATTLEPASSMISSIONDELNOTIFY._serialized_end=114
 # @@protoc_insertion_point(module_scope)

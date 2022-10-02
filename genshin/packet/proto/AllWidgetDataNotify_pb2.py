@@ -21,7 +21,7 @@ from genshin.packet.proto import WidgetCoolDownData_pb2 as genshin_dot_packet_do
 from genshin.packet.proto import WidgetSlotData_pb2 as genshin_dot_packet_dot_proto_dot_WidgetSlotData__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/AllWidgetDataNotify.proto\x1a*genshin/packet/proto/AnchorPointData.proto\x1a.genshin/packet/proto/ClientCollectorData.proto\x1a\'genshin/packet/proto/LunchBoxData.proto\x1a\x37genshin/packet/proto/OneofGatherPointDetectorData.proto\x1a.genshin/packet/proto/Unk2700_CCEOEOHLAPK.proto\x1a-genshin/packet/proto/WidgetCoolDownData.proto\x1a)genshin/packet/proto/WidgetSlotData.proto\"\xe0\x03\n\x13\x41llWidgetDataNotify\x12\x31\n\x13Unk2700_COIELIGEACL\x18\x0c \x01(\x0b\x32\x14.Unk2700_CCEOEOHLAPK\x12+\n\x11\x61nchor_point_list\x18\x03 \x03(\x0b\x32\x10.AnchorPointData\x12\x38\n\x1a\x63lient_collector_data_list\x18\x04 \x03(\x0b\x32\x14.ClientCollectorData\x12\x37\n\x1anormal_cool_down_data_list\x18\t \x03(\x0b\x32\x13.WidgetCoolDownData\x12%\n\x1dnext_anchor_point_usable_time\x18\n \x01(\r\x12L\n%oneof_gather_point_detector_data_list\x18\x0f \x03(\x0b\x32\x1d.OneofGatherPointDetectorData\x12%\n\x0elunch_box_data\x18\x01 \x01(\x0b\x32\r.LunchBoxData\x12\x36\n\x19\x63ool_down_group_data_list\x18\r \x03(\x0b\x32\x13.WidgetCoolDownData\x12\"\n\tslot_list\x18\x06 \x03(\x0b\x32\x0f.WidgetSlotDataB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.genshin/packet/proto/AllWidgetDataNotify.proto\x1a*genshin/packet/proto/AnchorPointData.proto\x1a.genshin/packet/proto/ClientCollectorData.proto\x1a\'genshin/packet/proto/LunchBoxData.proto\x1a\x37genshin/packet/proto/OneofGatherPointDetectorData.proto\x1a.genshin/packet/proto/Unk2700_CCEOEOHLAPK.proto\x1a-genshin/packet/proto/WidgetCoolDownData.proto\x1a)genshin/packet/proto/WidgetSlotData.proto\"\xfd\x03\n\x13\x41llWidgetDataNotify\x12\x1b\n\x13Unk3000_CNNFGFBBBFP\x18\x0b \x03(\r\x12%\n\x0elunch_box_data\x18\x01 \x01(\x0b\x32\r.LunchBoxData\x12\x36\n\x19\x63ool_down_group_data_list\x18\r \x03(\x0b\x32\x13.WidgetCoolDownData\x12+\n\x11\x61nchor_point_list\x18\x03 \x03(\x0b\x32\x10.AnchorPointData\x12\"\n\tslot_list\x18\x06 \x03(\x0b\x32\x0f.WidgetSlotData\x12%\n\x1dnext_anchor_point_usable_time\x18\n \x01(\r\x12\x38\n\x1a\x63lient_collector_data_list\x18\x04 \x03(\x0b\x32\x14.ClientCollectorData\x12L\n%oneof_gather_point_detector_data_list\x18\x0f \x03(\x0b\x32\x1d.OneofGatherPointDetectorData\x12\x37\n\x1anormal_cool_down_data_list\x18\t \x03(\x0b\x32\x13.WidgetCoolDownData\x12\x31\n\x13Unk2700_COIELIGEACL\x18\x0c \x01(\x0b\x32\x14.Unk2700_CCEOEOHLAPKB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -36,7 +36,7 @@ _sym_db.RegisterMessage(AllWidgetDataNotify)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _ALLWIDGETDATANOTIFY._serialized_start=379
-  _ALLWIDGETDATANOTIFY._serialized_end=859
+  _ALLWIDGETDATANOTIFY._serialized_end=888
 # @@protoc_insertion_point(module_scope)

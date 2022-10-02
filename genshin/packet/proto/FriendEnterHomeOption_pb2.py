@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/FriendEnterHomeOption.proto*\x8c\x01\n\x15\x46riendEnterHomeOption\x12)\n%FRIEND_ENTER_HOME_OPTION_NEED_CONFIRM\x10\x00\x12#\n\x1f\x46RIEND_ENTER_HOME_OPTION_REFUSE\x10\x01\x12#\n\x1f\x46RIEND_ENTER_HOME_OPTION_DIRECT\x10\x02\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/FriendEnterHomeOption.proto*\x8c\x01\n\x15\x46riendEnterHomeOption\x12)\n%FRIEND_ENTER_HOME_OPTION_NEED_CONFIRM\x10\x00\x12#\n\x1f\x46RIEND_ENTER_HOME_OPTION_REFUSE\x10\x01\x12#\n\x1f\x46RIEND_ENTER_HOME_OPTION_DIRECT\x10\x02\x42\x16\n\x14org.sorapointa.protob\x06proto3')
 
 _FRIENDENTERHOMEOPTION = DESCRIPTOR.enum_types_by_name['FriendEnterHomeOption']
 FriendEnterHomeOption = enum_type_wrapper.EnumTypeWrapper(_FRIENDENTERHOMEOPTION)
@@ -27,7 +27,7 @@ FRIEND_ENTER_HOME_OPTION_DIRECT = 2
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _FRIENDENTERHOMEOPTION._serialized_start=53
   _FRIENDENTERHOMEOPTION._serialized_end=193
 # @@protoc_insertion_point(module_scope)

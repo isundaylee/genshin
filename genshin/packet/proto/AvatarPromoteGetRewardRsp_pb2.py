@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/AvatarPromoteGetRewardRsp.proto\"k\n\x19\x41vatarPromoteGetRewardRsp\x12\x0f\n\x07retcode\x18\n \x01(\x05\x12\x11\n\treward_id\x18\x0f \x01(\r\x12\x13\n\x0b\x61vatar_guid\x18\x0b \x01(\x04\x12\x15\n\rpromote_level\x18\x0c \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n4genshin/packet/proto/AvatarPromoteGetRewardRsp.proto\"k\n\x19\x41vatarPromoteGetRewardRsp\x12\x0f\n\x07retcode\x18\n \x01(\x05\x12\x11\n\treward_id\x18\x0f \x01(\r\x12\x13\n\x0b\x61vatar_guid\x18\x0b \x01(\x04\x12\x15\n\rpromote_level\x18\x0c \x01(\rB\x16\n\x14org.sorapointa.protob\x06proto3')
 
 
 
@@ -29,7 +29,7 @@ _sym_db.RegisterMessage(AvatarPromoteGetRewardRsp)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  DESCRIPTOR._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._serialized_options = b'\n\024org.sorapointa.proto'
   _AVATARPROMOTEGETREWARDRSP._serialized_start=56
   _AVATARPROMOTEGETREWARDRSP._serialized_end=163
 # @@protoc_insertion_point(module_scope)
