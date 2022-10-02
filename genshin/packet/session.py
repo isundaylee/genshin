@@ -266,9 +266,13 @@ class Session:
                 ),
                 "rb",
             ) as f:
-                plaintext_content = f.read()[:-2]
+                # The key I received for 3.1 starts 8 bytes later than the
+                # previous one. Pad it here.
+                plaintext_content = (b" " * 8) + f.read()[:-2]
 
-            full_xor_key = _xor_bytes(raw_data_content, plaintext_content)
+            logger.info("raw_data_content has length %d", len(raw_data_content))
+
+            full_xor_key = _xor_bytes(raw_data_content[:8192], plaintext_content[:8192])
             xor_key = full_xor_key[
                 4096 - content_start_offset : 4096 + 4096 - content_start_offset
             ]
