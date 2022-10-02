@@ -7,6 +7,15 @@ import attr
 
 
 class ArtifactSet(enum.Enum):
+    B = "berserker"
+    I = "instructor"
+    TE = "theExile"
+    A = "adventurer"
+    LD = "luckyDog"
+    S = "scholar"
+
+    PI = "prayersForIllumination"
+
     AP = "archaicPetra"
     HD = "heartOfDepth"
     BS = "blizzardStrayer"
@@ -26,6 +35,12 @@ class ArtifactSet(enum.Enum):
     TM = "tenacityOfTheMillelith"
     ESF = "emblemOfSeveredFate"
     SR = "shimenawaReminiscence"
+    HOD = "huskOfOpulentDreams"
+    OHC = "oceanHuedClam"
+    VH = "vermillionHereafter"
+    EO = "echoesOfAnOffering"
+    DM = "deepwoodMemories"
+    GD = "gildedDreams"
 
 
 class ArtifactSlot(enum.IntEnum):
