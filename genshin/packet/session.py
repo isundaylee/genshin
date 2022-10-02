@@ -80,7 +80,7 @@ class KCPSession:
         else:
             assert False, f"Unexpected cmd {cmd}"
 
-        self.logger.info(
+        self.logger.debug(
             "%s %4s %6s wnd %5d ts %d sn %5d una %5d length %4d | pending %3d rcvq %3d | %s",
             timestamp.strftime("%Y%m%d-%H:%M:%S.%f"),
             {
@@ -107,7 +107,7 @@ class KCPSession:
             self._last_delivered_sn = sn - 1
 
         if sn <= self._last_delivered_sn:
-            self.logger.warning(
+            self.logger.debug(
                 "Received delivered dup with sn %d of size %d bytes", sn, len(data)
             )
             return
@@ -172,7 +172,7 @@ class Session:
                 is_kcp_packet = len(udp.data) > 20
 
                 if socket.inet_ntoa(ip.src) == my_ip:
-                    self.udp_logger.info("send %s", format_bytes(udp.data))
+                    self.udp_logger.debug("send %s", format_bytes(udp.data))
 
                     if is_kcp_packet:
                         self.send_kcp.add_data(timestamp, udp.data)
@@ -182,7 +182,7 @@ class Session:
                         if kcp_out_packet is None:
                             break
 
-                        self.kcp_out_logger.info(
+                        self.kcp_out_logger.debug(
                             "send kcp packet len %5d", len(kcp_out_packet)
                         )
 
@@ -194,7 +194,7 @@ class Session:
                             )
                         )
                 elif socket.inet_ntoa(ip.dst) == my_ip:
-                    self.udp_logger.info("recv %s", format_bytes(udp.data))
+                    self.udp_logger.debug("recv %s", format_bytes(udp.data))
 
                     if is_kcp_packet:
                         self.receive_kcp.add_data(timestamp, udp.data)
@@ -204,7 +204,7 @@ class Session:
                         if kcp_out_packet is None:
                             break
 
-                        self.kcp_out_logger.info(
+                        self.kcp_out_logger.debug(
                             "recv kcp packet len %5d", len(kcp_out_packet)
                         )
 
