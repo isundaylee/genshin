@@ -3,11 +3,11 @@ import collections
 import json
 import logging
 import os
-from typing import Any, DefaultDict, List, Optional
+from typing import Any, DefaultDict
+
 import click
 
-from genshin.packet import session, packet, opcodes
-
+from genshin.packet import session, opcodes
 
 from genshin.packet.proto.PlayerStoreNotify_pb2 import PlayerStoreNotify
 from genshin.packet.proto.StoreType_pb2 import StoreType
@@ -26,8 +26,12 @@ class ArtifactTranslater:
     # Look at images here
     # https://feixiaoqiu.com/static/images/reliquary/
     _SET_NAME_MAPPING = {
+        10001: "RS",
+        10003: "DW",
+        10004: "TM",
         10005: "B",
         10007: "I",
+        10008: "G",
         10009: "TE",
         10010: "A",
         10011: "LD",
@@ -44,6 +48,7 @@ class ArtifactTranslater:
         15007: "NO",
         15008: "BC",
         15009: "PI",
+        15013: "PS",
         15014: "AP",
         15015: "RB",
         15016: "HD",

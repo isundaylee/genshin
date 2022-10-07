@@ -7,14 +7,19 @@ import attr
 
 
 class ArtifactSet(enum.Enum):
+    RS = "resolutionOfSojourner"
+    DW = "defendersWill"
+    TM = "tinyMiracle"
     B = "berserker"
     I = "instructor"
+    G = "gambler"
     TE = "theExile"
     A = "adventurer"
     LD = "luckyDog"
     S = "scholar"
 
     PI = "prayersForIllumination"
+    PS = "prayersToSpringtime"
 
     AP = "archaicPetra"
     HD = "heartOfDepth"
