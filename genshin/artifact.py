@@ -8,12 +8,12 @@ import attr
 
 class ArtifactSet(enum.Enum):
     RS = "resolutionOfSojourner"
-    DW = "defendersWill"
-    TM = "tinyMiracle"
+    DW = "defenderWill"
+    TMI = "tinyMiracle"
     B = "berserker"
     I = "instructor"
     G = "gambler"
-    TE = "theExile"
+    TE = "exile"
     A = "adventurer"
     LD = "luckyDog"
     S = "scholar"
@@ -42,10 +42,10 @@ class ArtifactSet(enum.Enum):
     SR = "shimenawaReminiscence"
     HOD = "huskOfOpulentDreams"
     OHC = "oceanHuedClam"
-    VH = "vermillionHereafter"
-    EO = "echoesOfAnOffering"
-    DM = "deepwoodMemories"
-    GD = "gildedDreams"
+    VH = "VermillionHereafter"
+    EO = "EchoesOfAnOffering"
+    DM = "DeepwoodMemories"
+    GD = "GildedDreams"
 
 
 class ArtifactSlot(enum.IntEnum):
@@ -74,6 +74,7 @@ class ArtifactStatType(enum.Enum):
     EDC_PCT = "iceBonus"
     EDA_PCT = "windBonus"
     EDG_PCT = "rockBonus"
+    EDD_PCT = "dendroBonus"
     PD_PCT = "physicalBonus"
 
 

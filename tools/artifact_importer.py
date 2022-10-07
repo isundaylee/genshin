@@ -28,7 +28,7 @@ class ArtifactTranslater:
     _SET_NAME_MAPPING = {
         10001: "RS",
         10003: "DW",
-        10004: "TM",
+        10004: "TMI",
         10005: "B",
         10007: "I",
         10008: "G",
