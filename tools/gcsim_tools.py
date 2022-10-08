@@ -161,7 +161,6 @@ def do_run_sim(
         conf_path = output_dir / "config.txt"
         stdout_path = output_dir / "stdout.txt"
         result_path = output_dir / "result.json"
-        gz_result_path = result_path.parent / (result_path.name + ".gz")
 
         with open(conf_path, "w") as f:
             f.write(
@@ -171,7 +170,7 @@ def do_run_sim(
             )
 
         output = subprocess.check_output(
-            [GCSIM_PATH, "-c", conf_path, "-out", result_path, "-gz", "-debugMinMax"]
+            [GCSIM_PATH, "-c", conf_path, "-out", result_path, "-debugMinMax"]
         )
 
         with open(stdout_path, "wb") as f:
@@ -179,7 +178,7 @@ def do_run_sim(
 
         if details:
             print(f"Stdout at: {stdout_path}")
-            print(f"Result at: {gz_result_path}")
+            print(f"Result at: {result_path}")
 
         return gcsim.GcsimSummary.from_gcsim_output(output.decode())
 

@@ -3,55 +3,48 @@
 options swap_delay=12 mode=apl duration=70.0;
 energy every interval=480,720 amount=1;
 
-# General macros
-xingqiu_eq: xingqiu skill[orbital=1], burst[orbital=1];
-xingqiu_qe: xingqiu burst[orbital=1], skill[orbital=1];
-xingqiu_e: xingqiu skill[orbital=1];
-bennett_e: bennett skill;
-bennett_ea: bennett skill, attack;
+while 1 {
+    # Zhongli: EQ if ready; hold-E otherwise
+    if .zhongli.burst.ready {
+        zhongli skill, burst;
+    } else {
+        zhongli skill[hold_nostele=1];
+    }
 
-wait_p_xingqiu: wait_for particles value=xingqiu max=200;
-wait_p_bennett: wait_for particles value=bennett max=200;
-yanfei_swap: yanfei swap;
-xingqiu_swap: xingqiu swap;
+    # Xingqiu: EQE or EQ; depending on sac sword's mood
+    xingqiu skill;
+    xingqiu burst;
+    if .xingqiu.skill.cd == 0 {
+        xingqiu skill;
+    }
 
-# Yanfei rotation
-yanfei_wait_bt: wait_for mods value=.yanfei.bennett-field==1 max=100;
-yanfei_q_rotation: yanfei 
-    attack, skill,
-    attack, burst,
-    attack, charge,
-    attack:2, charge,
-    attack, charge,
-    attack:2, charge,
-    attack, skill, charge,
-    attack:3, charge;
-yanfei_noq_rotation: yanfei
-    attack, skill,
-    attack, charge,
-    attack:3, charge,
-    attack, charge,
-    attack:3, charge,
-    attack, skill, charge,
-    attack:3, charge;
-chain yanfei_swap, yanfei_wait_bt, yanfei_q_rotation +if=.status.btburst>0&&.status.xqburst>300&&.tags.zhongli.shielded==1;
-chain yanfei_swap, yanfei_wait_bt, yanfei_noq_rotation +if=.status.btburst>0&&.status.xqburst>300&&.tags.zhongli.shielded==1;
+    # Bennett: EQ
+    bennett skill;
+    bennett burst;
 
-# Xingqiu sac sword woes
-chain xingqiu_qe +if=.tags.zhongli.shielded==1;
-chain xingqiu_e, wait_p_xingqiu +if=.status.xqburst>720&&.tags.zhongli.shielded==1;
+    # Yanfei: two rotations based on whether energy is high
+    yanfei swap;
+    
+    while .yanfei.mods.bennett-field == 0 {
+        wait(10);
+    }
 
-# Bennett
-bennett skill, attack, burst, attack +if=.status.xqburst>300&&.tags.zhongli.shielded==1;
-
-# Zhongli
-zhongli skill, burst +swap_to=xingqiu;
-zhongli skill[hold_nostele=1] +swap_to=xingqiu;
-
-# Fav Bennett funnel
-chain bennett_e, wait_p_bennett +if=.energy.bennett<40;
-chain bennett_e, xingqiu_swap, wait_p_bennett +if=.energy.xingqiu<80;
-
-# Gap fill
-bennett skill;
-bennett attack +is_onfield;
+    if .yanfei.burst.ready {
+        yanfei attack, skill;
+        yanfei attack, burst;
+        yanfei attack, charge;
+        yanfei attack:2, charge;
+        yanfei attack, charge;
+        yanfei attack:2, charge;
+        yanfei attack, skill, charge;
+        yanfei attack:3, charge;
+    } else {
+        yanfei attack, skill;
+        yanfei attack, charge;
+        yanfei attack:3, charge;
+        yanfei attack, charge;
+        yanfei attack:3, charge;
+        yanfei attack, skill, charge;
+        yanfei attack:3, charge;
+    }
+}

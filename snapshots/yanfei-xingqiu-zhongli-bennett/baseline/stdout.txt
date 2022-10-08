@@ -1,0 +1,90 @@
+------------------------------------------
+xingqiu contributed the following dps:
+	Guhua Sword: Fatal Rainscreen (5.14% of total, 11.73 average damage procs): avg 2250.24 [min: 717.34 | max: 2797.56] 
+	Guhua Sword: Raincutter (11.70% of total, 107.14 average damage procs): avg 5126.08 [min: 2957.34 | max: 5707.41] 
+	Guhua Sword: Raincutter [amp: 2.0] (0.13% of total, 0.59 average damage procs): avg 55.22 [min: 54.82 | max: 727.89] 
+	Xingqiu Orbital (0.00% of total, 0.00 average damage procs): avg 0.00 [min: 0.00 | max: 0.00] 
+	Xingqiu Orbital [amp: 2.0] (0.00% of total, 0.00 average damage procs): avg 0.00 [min: 0.00 | max: 0.00] 
+xingqiu total avg dps: 7431.54; total percentage: 17%
+yanfei contributed the following dps:
+	Blazing Eye (A4) (0.70% of total, 2.64 average damage procs): avg 307.03 [min: 54.49 | max: 836.82] 
+	Blazing Eye (A4) [amp: 1.5] (8.06% of total, 13.24 average damage procs): avg 3529.68 [min: 1405.01 | max: 4216.85] 
+	Charge Attack (0.32% of total, 0.35 average damage procs): avg 142.25 [min: 131.99 | max: 1656.06] 
+	Charge Attack [amp: 1.5] (34.47% of total, 16.61 average damage procs): avg 15101.35 [min: 7295.34 | max: 17196.01] 
+	Done Deal [amp: 1.5] (4.33% of total, 1.97 average damage procs): avg 1895.05 [min: 463.85 | max: 2292.35] 
+	Normal 0 (3.13% of total, 12.06 average damage procs): avg 1370.40 [min: 670.76 | max: 1794.08] 
+	Normal 0 [amp: 1.5] (6.41% of total, 10.46 average damage procs): avg 2810.41 [min: 1142.91 | max: 3546.28] 
+	Normal 1 (1.54% of total, 6.73 average damage procs): avg 672.99 [min: 268.30 | max: 930.66] 
+	Normal 1 [amp: 1.5] (1.05% of total, 1.95 average damage procs): avg 462.19 [min: 123.24 | max: 1117.97] 
+	Normal 2 (1.49% of total, 4.72 average damage procs): avg 651.49 [min: 361.11 | max: 1022.30] 
+	Signed Edict (0.02% of total, 0.02 average damage procs): avg 7.13 [min: 170.55 | max: 502.46] 
+	Signed Edict [amp: 1.5] (12.67% of total, 5.86 average damage procs): avg 5551.00 [min: 2750.77 | max: 6797.15] 
+	Skyward Atlas Proc (2.10% of total, 11.93 average damage procs): avg 918.07 [min: 543.43 | max: 1123.41] 
+yanfei total avg dps: 33419.05; total percentage: 76%
+zhongli contributed the following dps:
+	Planet Befall (1.99% of total, 2.41 average damage procs): avg 870.56 [min: 428.15 | max: 1387.19] 
+	Stone Stele (Hold) (0.07% of total, 0.79 average damage procs): avg 28.74 [min: 20.47 | max: 95.80] 
+	Stone Stele (Initial) (0.09% of total, 2.73 average damage procs): avg 38.72 [min: 16.70 | max: 72.14] 
+	Stone Stele (Tick) (1.63% of total, 32.19 average damage procs): avg 714.48 [min: 356.04 | max: 1040.27] 
+zhongli total avg dps: 1652.50; total percentage: 4%
+bennett contributed the following dps:
+	Fantastic Voyage [amp: 1.5] (2.27% of total, 3.00 average damage procs): avg 996.01 [min: 615.25 | max: 1247.72] 
+	Normal 0 (0.25% of total, 6.47 average damage procs): avg 107.68 [min: 42.34 | max: 144.22] 
+	Passion Overload (Press) (0.06% of total, 0.75 average damage procs): avg 25.03 [min: 20.78 | max: 168.58] 
+	Passion Overload (Press) [amp: 1.5] (0.42% of total, 3.03 average damage procs): avg 182.81 [min: 75.19 | max: 304.95] 
+bennett total avg dps: 1311.53; total percentage: 3%
+------------------------------------------
+Character ability usage:
+xingqiu used the following abilities:
+	burst: avg 3.00 [min: 2 | max: 3]
+	skill: avg 5.87 [min: 2 | max: 6]
+	swap: avg 4.28 [min: 3 | max: 14]
+yanfei used the following abilities:
+	attack: avg 36.01 [min: 25 | max: 38]
+	burst: avg 1.99 [min: 1 | max: 2]
+	charge: avg 17.45 [min: 12 | max: 18]
+	skill: avg 5.93 [min: 4 | max: 6]
+	swap: avg 6.00 [min: 4 | max: 6]
+zhongli used the following abilities:
+	burst: avg 2.41 [min: 2 | max: 4]
+	skill: avg 3.57 [min: 3 | max: 4]
+	swap: avg 3.57 [min: 3 | max: 4]
+bennett used the following abilities:
+	attack: avg 6.47 [min: 4 | max: 7]
+	burst: avg 3.00 [min: 2 | max: 3]
+	skill: avg 3.78 [min: 3 | max: 7]
+	swap: avg 3.78 [min: 3 | max: 7]
+------------------------------------------
+Character field time:
+xingqiu on average active for 15% [min: 12% | max: 28%]
+yanfei on average active for 60% [min: 41% | max: 62%]
+zhongli on average active for 13% [min: 12% | max: 16%]
+bennett on average active for 11% [min: 10% | max: 18%]
+------------------------------------------
+Particle count:
+	bennett: avg 8.51 [min: 6 max: 17]
+	drop: avg 6.48 [min: 5 max: 7]
+	favonius-zhongli: avg 8.76 [min: 3 max: 12]
+	xingqiu: avg 29.33 [min: 10 max: 30]
+	yanfei: avg 17.26 [min: 12 max: 18]
+	zhongli: avg 14.63 [min: 5 max: 26]
+------------------------------------------
+Reactions:
+	crystallize-hydro: avg 10.02 [min: 5 max: 15]
+	vaporize: avg 59.10 [min: 34 max: 62]
+	crystallize-pyro: avg 1.15 [min: 1 max: 6]
+------------------------------------------
+Element up time:
+	Target #1
+		pyro: avg 61.34% [min: 41.86% max: 62.79%]
+		none: avg 38.66% [min: 37.21% max: 58.14%]
+	Target #2
+		pyro: avg 5.07% [min: 0.29% max: 46.33%]
+		hydro: avg 66.80% [min: 36.76% max: 70.88%]
+		none: avg 28.13% [min: 16.90% max: 34.33%]
+------------------------------------------
+Damage by Target Omitted (Only 1 Target)
+------------------------------------------
+Average 3067023.46 damage over 70.00 seconds, resulting in 43815 dps (min: 26087.00 max: 49352.09 std: 3561.56) 
+Simulation completed 1000 iterations in 948.588223ms
+
