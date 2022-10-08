@@ -12,10 +12,9 @@ while 1 {
     }
 
     # Xingqiu: EQE or EQ; depending on sac sword's mood
-    xingqiu skill;
-    xingqiu burst;
-    if .xingqiu.skill.cd == 0 {
-        xingqiu skill;
+    xingqiu skill, dash, burst, attack;
+    if .xingqiu.mods.sacrificial-cd {
+        xingqiu skill, dash, attack:2;
     }
 
     # Bennett: EQ

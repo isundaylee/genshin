@@ -38,7 +38,8 @@ def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
             e["logs"]["amp"],
             e["logs"]["damage"],
         )
-    elif event_type == "energy":
+    elif event_type == "energy" and (not e["msg"].startswith("energy queued")):
+        print(e)
         return "{:15s} | {:5} -> {:5.1f} from {}".format(
             raw_data["char_names"][e["char_index"]],
             "{:5.1f}".format(e["logs"]["pre_recovery"])
@@ -54,7 +55,7 @@ def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
             return e["msg"]
 
         assert e["msg"] == "application", e
-        assert e["logs"]["target"] == 1
+        assert e["logs"]["target"] == 0, e["logs"]["target"]
 
         def format_auras(value: Optional[Dict[str, float]]) -> str:
             if value is None:
