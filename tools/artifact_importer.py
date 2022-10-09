@@ -20,26 +20,10 @@ def main(path: str, my_ip: str) -> None:
     )
 
     s = session.Session(path, my_ip)
-    translater = official.ArtifactTranslater()
+    account_data = official.AccountData(s)
 
-    for p in s.get_decrypted_packets():
-        if p.opcode != opcodes.Opcode.PlayerStoreNotify:
-            continue
-
-        psn = PlayerStoreNotify()
-        psn.ParseFromString(p.data)
-
-        assert psn.store_type == StoreType.STORE_TYPE_PACK
-
-        for item in psn.item_list:
-            if item.WhichOneof("detail") != "equip":
-                continue
-
-            equip = item.equip
-            if equip.WhichOneof("detail") != "reliquary":
-                continue
-
-            print(translater.translate_artifact(item.item_id, equip.reliquary))
+    for a in account_data.artifacts.values():
+        print(a.to_string())
 
 
 if __name__ == "__main__":

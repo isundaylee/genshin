@@ -107,6 +107,21 @@ class Artifact:
     main_stat: ArtifactStat
     sub_stats: List[ArtifactStat]
 
+    def to_string(self) -> str:
+        def _format_attr(stat: ArtifactStat) -> str:
+            if stat.stat_type.name.endswith("_PCT"):
+                return f"{stat.stat_type.name[:-len('_PCP')]+'%'}={100.0*stat.stat_value:.1f}"
+            else:
+                return f"{stat.stat_type.name}={stat.stat_value:.0f}"
+
+        return "{}@{}@{} {} {}".format(
+            self.artifact_set.name,
+            self.artifact_slot.value,
+            self.level,
+            _format_attr(self.main_stat),
+            " ".join(_format_attr(s) for s in self.sub_stats),
+        )
+
 
 def parse_artifact(desc: str) -> Artifact:
     type_slot, main, sub1, sub2, sub3, sub4 = desc.split()

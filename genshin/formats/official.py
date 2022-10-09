@@ -1,12 +1,49 @@
 import os
 import json
 import collections
-from typing import Any, DefaultDict
+from typing import Any, DefaultDict, Dict
+
+from genshin import artifact
+from genshin.packet import session, opcodes
 
 from genshin.packet.proto.Reliquary_pb2 import Reliquary
+from genshin.packet.proto.PlayerStoreNotify_pb2 import PlayerStoreNotify
+from genshin.packet.proto.StoreType_pb2 import StoreType
 
 
-class ArtifactTranslater:
+class AccountData:
+    def __init__(self, s: session.Session) -> None:
+        self.artifacts: Dict[int, artifact.Artifact] = {}
+
+        self._parse(s)
+
+    def _parse(self, s: session.Session) -> None:
+        artifact_parser = ArtifactParser()
+
+        for p in s.get_decrypted_packets():
+            if p.opcode != opcodes.Opcode.PlayerStoreNotify:
+                continue
+
+            psn = PlayerStoreNotify()
+            psn.ParseFromString(p.data)
+
+            assert psn.store_type == StoreType.STORE_TYPE_PACK
+
+            for item in psn.item_list:
+                if item.WhichOneof("detail") != "equip":
+                    continue
+
+                equip = item.equip
+                if equip.WhichOneof("detail") != "reliquary":
+                    continue
+
+                assert item.guid not in self.artifacts
+                self.artifacts[item.guid] = artifact_parser.translate_artifact(
+                    item.item_id, equip.reliquary
+                )
+
+
+class ArtifactParser:
     _NUMERIC_SLOT_MAPPING = {
         "EQUIP_BRACER": 1,
         "EQUIP_NECKLACE": 2,
@@ -57,25 +94,25 @@ class ArtifactTranslater:
     }
 
     _MAIN_STAT_MAPPING = {
-        "FIGHT_PROP_CRITICAL": "CR%",
-        "FIGHT_PROP_CRITICAL_HURT": "CD%",
+        "FIGHT_PROP_CRITICAL": "CR_PCT",
+        "FIGHT_PROP_CRITICAL_HURT": "CD_PCT",
         "FIGHT_PROP_ATTACK": "ATK",
-        "FIGHT_PROP_ATTACK_PERCENT": "ATK%",
+        "FIGHT_PROP_ATTACK_PERCENT": "ATK_PCT",
         "FIGHT_PROP_ELEMENT_MASTERY": "EM",
-        "FIGHT_PROP_CHARGE_EFFICIENCY": "ER%",
+        "FIGHT_PROP_CHARGE_EFFICIENCY": "ER_PCT",
         "FIGHT_PROP_HP": "HP",
-        "FIGHT_PROP_HP_PERCENT": "HP%",
+        "FIGHT_PROP_HP_PERCENT": "HP_PCT",
         "FIGHT_PROP_DEFENSE": "DEF",
-        "FIGHT_PROP_DEFENSE_PERCENT": "DEF%",
-        "FIGHT_PROP_PHYSICAL_ADD_HURT": "PD%",
-        "FIGHT_PROP_HEAL_ADD": "HB%",
-        "FIGHT_PROP_ROCK_ADD_HURT": "EDG%",
-        "FIGHT_PROP_WIND_ADD_HURT": "EDA%",
-        "FIGHT_PROP_ICE_ADD_HURT": "EDC%",
-        "FIGHT_PROP_WATER_ADD_HURT": "EDH%",
-        "FIGHT_PROP_FIRE_ADD_HURT": "EDP%",
-        "FIGHT_PROP_ELEC_ADD_HURT": "EDE%",
-        "FIGHT_PROP_GRASS_ADD_HURT": "EDD%",
+        "FIGHT_PROP_DEFENSE_PERCENT": "DEF_PCT",
+        "FIGHT_PROP_PHYSICAL_ADD_HURT": "PD_PCT",
+        "FIGHT_PROP_HEAL_ADD": "HB_PCT",
+        "FIGHT_PROP_ROCK_ADD_HURT": "EDG_PCT",
+        "FIGHT_PROP_WIND_ADD_HURT": "EDA_PCT",
+        "FIGHT_PROP_ICE_ADD_HURT": "EDC_PCT",
+        "FIGHT_PROP_WATER_ADD_HURT": "EDH_PCT",
+        "FIGHT_PROP_FIRE_ADD_HURT": "EDP_PCT",
+        "FIGHT_PROP_ELEC_ADD_HURT": "EDE_PCT",
+        "FIGHT_PROP_GRASS_ADD_HURT": "EDD_PCT",
     }
 
     def __init__(self):
@@ -100,17 +137,12 @@ class ArtifactTranslater:
 
     @staticmethod
     def _read_raw(name: str) -> Any:
-        with open(os.path.join(os.path.dirname(__file__), "../../resources", name)) as f:
+        with open(
+            os.path.join(os.path.dirname(__file__), "../../resources", name)
+        ) as f:
             return json.load(f)
 
-    @staticmethod
-    def _format_attr(name: str, v: float) -> str:
-        if name.endswith("%"):
-            return f"{name}={100.0*v:.1f}"
-        else:
-            return f"{name}={v:.0f}"
-
-    def translate_artifact(self, item_id: int, r: Reliquary) -> str:
+    def translate_artifact(self, item_id: int, r: Reliquary) -> artifact.Artifact:
         item_info = self._item_info_map[item_id]
 
         numeric_slot = self._NUMERIC_SLOT_MAPPING[item_info["equipType"]]
@@ -124,18 +156,23 @@ class ArtifactTranslater:
                 self._sub_stat_info_map[ss_id]["propType"]
             ] += self._sub_stat_info_map[ss_id]["propValue"]
 
-        return "{}@{}@{} {} {}".format(
-            set_name,
-            numeric_slot,
-            r.level - 1,
-            self._format_attr(
-                self._MAIN_STAT_MAPPING[main_prop_type],
-                self._main_stat_attr_map[(item_info["rankLevel"], r.level)][
+        return artifact.Artifact(
+            level=r.level - 1,
+            artifact_set=artifact.ArtifactSet[set_name],
+            artifact_slot=artifact.ArtifactSlot(numeric_slot),
+            main_stat=artifact.ArtifactStat(
+                stat_type=artifact.ArtifactStatType[
+                    self._MAIN_STAT_MAPPING[main_prop_type]
+                ],
+                stat_value=self._main_stat_attr_map[(item_info["rankLevel"], r.level)][
                     main_prop_type
                 ],
             ),
-            " ".join(
-                self._format_attr(self._MAIN_STAT_MAPPING[k], v)
+            sub_stats=[
+                artifact.ArtifactStat(
+                    stat_type=artifact.ArtifactStatType[self._MAIN_STAT_MAPPING[k]],
+                    stat_value=v,
+                )
                 for k, v in sub_stats.items()
-            ),
+            ],
         )
