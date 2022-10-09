@@ -2,6 +2,7 @@ the_widsith=TheWidsith/6/90/5
 skyward_atlas=SkywardAtlas/6/90/1
 iron_sting=IronSting/5/80/1
 favonius_sword=FavoniusSword/6/90/5
+favonius_sword_2=FavoniusSword/5/80/3
 favonius_lance=FavoniusLance/6/90/5
 favonius_lance_2=FavoniusLance/5/80/3
 aquila_favonia=AquilaFavonia/6/90/1
@@ -10,6 +11,7 @@ jade_spear=PrimordialJadeWingedSpear/6/90/1
 the_catch=TheCatch/6/90/5
 thrilling_tales=ThrillingTalesOfDragonSlayers/6/90/5
 viridescent_hunt=TheViridescentHunt/6/90/1
+amenoma=AmenomaKageuchi/6/90/5
 
 # Wishlist below
 lost_prayer=LostPrayerToTheSacredWinds/6/90/1
@@ -18,3 +20,5 @@ kagura=KagurasVerity/6/90/1
 kagurar5=KagurasVerity/6/90/5
 freedom_sworn=FreedomSworn/6/90/1
 stringless=TheStringless/6/90/1
+mist_splitter=MistSplitter/6/90/1
+mist_splitter5=MistSplitter/6/90/5

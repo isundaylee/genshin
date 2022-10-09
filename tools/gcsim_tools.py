@@ -31,7 +31,7 @@ def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
     event_type = e["event"]
 
     if event_type == "damage":
-        return "{:15s} | {:35s} | {:5s} {:10s} | {:10.0f}".format(
+        return "{:15s} | {:50s} | {:5s} {:10s} | {:10.0f}".format(
             raw_data["char_names"][e["char_index"]],
             e["msg"],
             "crit" if e["logs"]["crit"] else "",

@@ -21,6 +21,8 @@ def artifact_set_to_str(artifact_set: artifact.ArtifactSet) -> str:
         artifact.ArtifactSet.GF: "gladiatorsfinale",
         artifact.ArtifactSet.TF: "thunderingfury",
         artifact.ArtifactSet.SR: "shimenawasreminiscence",
+        artifact.ArtifactSet.BS: "blizzardstrayer",
+        artifact.ArtifactSet.OHC: "oceanhuedclam",
     }[artifact_set]
 
 
@@ -28,6 +30,7 @@ def artifact_stat_type_to_str(stat_type: artifact.ArtifactStatType) -> str:
     return {
         artifact.ArtifactStatType.HP: "hp",
         artifact.ArtifactStatType.HP_PCT: "hp%",
+        artifact.ArtifactStatType.HB_PCT: "heal",
         artifact.ArtifactStatType.EM: "em",
         artifact.ArtifactStatType.CR_PCT: "cr",
         artifact.ArtifactStatType.CD_PCT: "cd",
@@ -39,6 +42,7 @@ def artifact_stat_type_to_str(stat_type: artifact.ArtifactStatType) -> str:
         artifact.ArtifactStatType.EDP_PCT: "pyro%",
         artifact.ArtifactStatType.EDH_PCT: "hydro%",
         artifact.ArtifactStatType.EDE_PCT: "electro%",
+        artifact.ArtifactStatType.EDC_PCT: "cryo%",
     }[stat_type]
 
 
@@ -53,6 +57,9 @@ def character_name_to_str(name: character.CharacterName) -> str:
         character.CharacterName.Raiden: "raiden",
         character.CharacterName.Mona: "mona",
         character.CharacterName.Fischl: "fischl",
+        character.CharacterName.Ayaka: "ayaka",
+        character.CharacterName.Kokomi: "kokomi",
+        character.CharacterName.Rosaria: "rosaria",
     }[name]
 
 
@@ -74,6 +81,8 @@ def weapon_name_to_str(name: weapon.WeaponName) -> str:
         weapon.WeaponName.FreedomSworn: "freedomsworn",
         weapon.WeaponName.TheViridescentHunt: "theviridescenthunt",
         weapon.WeaponName.TheStringless: "thestringless",
+        weapon.WeaponName.AmenomaKageuchi: "amenoma",
+        weapon.WeaponName.MistSplitter: "mistsplitter",
     }[name]
 
 
