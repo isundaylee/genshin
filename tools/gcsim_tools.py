@@ -43,11 +43,10 @@ def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
         )
     elif event_type == "energy" and (not e["msg"].startswith("energy queued")):
         print(e)
-        return "{:15s} | {:5} -> {:5.1f} from {}".format(
+        return "{:15s} | +{:5.1f} - {:5.1f} -> {:5.1f} from {}".format(
             raw_data["char_names"][e["char_index"]],
-            "{:5.1f}".format(e["logs"]["pre_recovery"])
-            if "pre_recovery" in e["logs"]
-            else "???",
+            e["logs"]["post_recovery"] - e["logs"]["pre_recovery"],
+            e["logs"]["pre_recovery"],
             e["logs"]["post_recovery"],
             e["logs"]["source"],
         )
