@@ -9,24 +9,92 @@ _LEVEL_CAPS: List[int] = [20, 40, 50, 60, 70, 80, 90]
 
 
 class WeaponName(enum.IntEnum):
-    SkywardAtlas = 0
-    IronSting = 1
-    FavoniusSword = 2
-    FavoniusLance = 3
-    SacrificialSword = 4
-    TheWidsith = 5
-    AquilaFavonia = 6
-    LostPrayerToTheSacredWinds = 7
-    MemoryOfDust = 8
-    PrimordialJadeWingedSpear = 9
-    TheCatch = 10
-    KagurasVerity = 11
-    ThrillingTalesOfDragonSlayers = 12
-    FreedomSworn = 13
-    TheViridescentHunt = 14
-    TheStringless = 15
-    AmenomaKageuchi = 16
-    MistSplitter = 17
+    DullBlade = enum.auto()  # ID 11101
+    SilverSword = enum.auto()  # ID 11201
+    CoolSteel = enum.auto()  # ID 11301
+    HarbingerOfDawn = enum.auto()  # ID 11302
+    TravelersHandySword = enum.auto()  # ID 11303
+    FilletBlade = enum.auto()  # ID 11305
+    SkyriderSword = enum.auto()  # ID 11306
+    FavoniusSword = enum.auto()  # ID 11401
+    TheFlute = enum.auto()  # ID 11402
+    SacrificialSword = enum.auto()  # ID 11403
+    LionsRoar = enum.auto()  # ID 11405
+    PrototypeRancour = enum.auto()  # ID 11406
+    IronSting = enum.auto()  # ID 11407
+    TheBlackSword = enum.auto()  # ID 11409
+    AmenomaKageuchi = enum.auto()  # ID 11414
+    CinnabarSpindle = enum.auto()  # ID 11415
+    KagotsurubeIsshin = enum.auto()  # ID 11416
+    SapwoodBlade = enum.auto()  # ID 11417
+    AquilaFavonia = enum.auto()  # ID 11501
+    FreedomSworn = enum.auto()  # ID 11503
+    MistsplitterReforged = enum.auto()  # ID 11509
+    WasterGreatsword = enum.auto()  # ID 12101
+    OldMercsPal = enum.auto()  # ID 12201
+    FerrousShadow = enum.auto()  # ID 12301
+    BloodtaintedGreatsword = enum.auto()  # ID 12302
+    WhiteIronGreatsword = enum.auto()  # ID 12303
+    DebateClub = enum.auto()  # ID 12305
+    SkyriderGreatsword = enum.auto()  # ID 12306
+    FavoniusGreatsword = enum.auto()  # ID 12401
+    TheBell = enum.auto()  # ID 12402
+    SacrificialGreatsword = enum.auto()  # ID 12403
+    Rainslasher = enum.auto()  # ID 12405
+    PrototypeArchaic = enum.auto()  # ID 12406
+    Whiteblind = enum.auto()  # ID 12407
+    SerpentSpine = enum.auto()  # ID 12409
+    LuxuriousSealord = enum.auto()  # ID 12412
+    KatsuragikiriNagamasa = enum.auto()  # ID 12414
+    BeginnersProtector = enum.auto()  # ID 13101
+    IronPoint = enum.auto()  # ID 13201
+    WhiteTassel = enum.auto()  # ID 13301
+    Halberd = enum.auto()  # ID 13302
+    BlackTassel = enum.auto()  # ID 13303
+    DragonsBane = enum.auto()  # ID 13401
+    PrototypeStarglitter = enum.auto()  # ID 13402
+    CrescentPike = enum.auto()  # ID 13403
+    Deathmatch = enum.auto()  # ID 13405
+    FavoniusLance = enum.auto()  # ID 13407
+    DragonspineSpear = enum.auto()  # ID 13409
+    TheCatch = enum.auto()  # ID 13415
+    WavebreakersFin = enum.auto()  # ID 13416
+    MissiveWindspear = enum.auto()  # ID 13419
+    StaffOfHoma = enum.auto()  # ID 13501
+    PrimordialJadeWingedSpear = enum.auto()  # ID 13505
+    ApprenticesNotes = enum.auto()  # ID 14101
+    PocketGrimoire = enum.auto()  # ID 14201
+    MagicGuide = enum.auto()  # ID 14301
+    ThrillingTalesOfDragonSlayers = enum.auto()  # ID 14302
+    OtherworldlyStory = enum.auto()  # ID 14303
+    EmeraldOrb = enum.auto()  # ID 14304
+    TwinNephrite = enum.auto()  # ID 14305
+    FavoniusCodex = enum.auto()  # ID 14401
+    TheWidsith = enum.auto()  # ID 14402
+    SacrificialFragments = enum.auto()  # ID 14403
+    EyeOfPerception = enum.auto()  # ID 14409
+    DodocoTales = enum.auto()  # ID 14413
+    OathswornEye = enum.auto()  # ID 14415
+    SkywardAtlas = enum.auto()  # ID 14501
+    LostPrayerToTheSacredWinds = enum.auto()  # ID 14502
+    MemoryOfDust = enum.auto()  # ID 14504
+    KagurasVerity = enum.auto()  # ID 14509
+    HuntersBow = enum.auto()  # ID 15101
+    SeasonedHuntersBow = enum.auto()  # ID 15201
+    RavenBow = enum.auto()  # ID 15301
+    SharpshootersOath = enum.auto()  # ID 15302
+    RecurveBow = enum.auto()  # ID 15303
+    Slingshot = enum.auto()  # ID 15304
+    Messenger = enum.auto()  # ID 15305
+    FavoniusWarbow = enum.auto()  # ID 15401
+    TheStringless = enum.auto()  # ID 15402
+    SacrificialBow = enum.auto()  # ID 15403
+    Rust = enum.auto()  # ID 15405
+    TheViridescentHunt = enum.auto()  # ID 15409
+    FadingTwilight = enum.auto()  # ID 15411
+    Hamayumi = enum.auto()  # ID 15414
+    MouunsMoon = enum.auto()  # ID 15416
+    ElegyForTheEnd = enum.auto()  # ID 15503
 
 
 _BASE_STATS: Dict[Tuple[WeaponName, int, int], Tuple[int]] = {
@@ -45,7 +113,7 @@ class Weapon:
         assert 0 <= self.ascension <= 6
 
         level_lower_bound = (
-            0 if self.ascension == 9 else _LEVEL_CAPS[self.ascension - 1]
+            0 if self.ascension == 0 else _LEVEL_CAPS[self.ascension - 1]
         )
         level_upper_bound = _LEVEL_CAPS[self.ascension]
         assert level_lower_bound <= self.level <= level_upper_bound
@@ -59,3 +127,8 @@ class Weapon:
     @property
     def base_atk(self) -> int:
         return _BASE_STATS[(self.name, self.ascension, self.level)][0]
+
+    def to_string(self) -> str:
+        return "{}/{}/{}/{}".format(
+            self.name.name, self.ascension, self.level, self.refinements
+        )

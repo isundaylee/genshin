@@ -18,6 +18,7 @@ class Account:
     @staticmethod
     def load(path: pathlib.Path) -> Account:
         weapons = load_weapon_list(path / "weapons.txt")
+        weapons.update(load_weapon_list(path / "weapons_wishlist.txt"))
         characters = load_character_list(path / "characters.txt", weapons=weapons)
         artifacts = list(load_artifacts(path / "artifacts.txt"))
         artifact_sets: Dict[str, List[artifact.Artifact]] = {}

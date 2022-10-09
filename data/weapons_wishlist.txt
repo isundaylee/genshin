@@ -1,0 +1,9 @@
+# Wishlist below
+lost_prayer=LostPrayerToTheSacredWinds/6/90/1
+memory_of_dust=MemoryOfDust/6/90/1
+kagura=KagurasVerity/6/90/1
+kagurar5=KagurasVerity/6/90/5
+freedom_sworn=FreedomSworn/6/90/1
+stringless=TheStringless/6/90/1
+mistsplitter=MistsplitterReforged/6/90/1
+mistsplitter5=MistsplitterReforged/6/90/5

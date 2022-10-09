@@ -82,7 +82,7 @@ def weapon_name_to_str(name: weapon.WeaponName) -> str:
         weapon.WeaponName.TheViridescentHunt: "theviridescenthunt",
         weapon.WeaponName.TheStringless: "thestringless",
         weapon.WeaponName.AmenomaKageuchi: "amenoma",
-        weapon.WeaponName.MistSplitter: "mistsplitter",
+        weapon.WeaponName.MistsplitterReforged: "mistsplitter",
     }[name]
 
 
