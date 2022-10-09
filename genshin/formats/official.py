@@ -1,7 +1,8 @@
+import logging
 import os
 import json
 import collections
-from typing import Any, DefaultDict, Dict, List
+from typing import Any, DefaultDict, Dict, List, Optional, Tuple
 
 from genshin import artifact, character, weapon
 from genshin.packet import session, opcodes
@@ -11,6 +12,10 @@ from genshin.packet.proto.Weapon_pb2 import Weapon
 from genshin.packet.proto.PlayerStoreNotify_pb2 import PlayerStoreNotify
 from genshin.packet.proto.AvatarDataNotify_pb2 import AvatarDataNotify
 from genshin.packet.proto.StoreType_pb2 import StoreType
+from genshin.packet.proto.AvatarInfo_pb2 import AvatarInfo
+
+
+logger = logging.getLogger(__name__)
 
 
 class AccountData:
@@ -57,7 +62,17 @@ class AccountData:
                 )
 
     def _parse_characters(self, adn: AvatarDataNotify) -> None:
-        pass
+        character_parser = CharacterParser(self.artifacts, self.weapons)
+
+        for avatar in adn.avatar_list:
+            character = character_parser.parse_character(avatar)
+            if character is not None:
+                self.characters.append(character)
+
+
+def _read_raw_excel_data(name: str) -> Any:
+    with open(os.path.join(os.path.dirname(__file__), "../../resources", name)) as f:
+        return json.load(f)
 
 
 class ArtifactParser:
@@ -134,30 +149,26 @@ class ArtifactParser:
 
     def __init__(self):
         self._item_info_map = {
-            e["id"]: e for e in self._read_raw("ReliquaryExcelConfigData.json")
+            e["id"]: e for e in _read_raw_excel_data("ReliquaryExcelConfigData.json")
         }
         self._set_info_map = {
-            e["setId"]: e for e in self._read_raw("ReliquarySetExcelConfigData.json")
+            e["setId"]: e
+            for e in _read_raw_excel_data("ReliquarySetExcelConfigData.json")
         }
         self._main_stat_info_map = {
-            e["id"]: e for e in self._read_raw("ReliquaryMainPropExcelConfigData.json")
+            e["id"]: e
+            for e in _read_raw_excel_data("ReliquaryMainPropExcelConfigData.json")
         }
         self._main_stat_attr_map = {
             (e.get("rank"), e["level"]): {
                 ape["propType"]: ape["value"] for ape in e["addProps"]
             }
-            for e in self._read_raw("ReliquaryLevelExcelConfigData.json")
+            for e in _read_raw_excel_data("ReliquaryLevelExcelConfigData.json")
         }
         self._sub_stat_info_map = {
-            e["id"]: e for e in self._read_raw("ReliquaryAffixExcelConfigData.json")
+            e["id"]: e
+            for e in _read_raw_excel_data("ReliquaryAffixExcelConfigData.json")
         }
-
-    @staticmethod
-    def _read_raw(name: str) -> Any:
-        with open(
-            os.path.join(os.path.dirname(__file__), "../../resources", name)
-        ) as f:
-            return json.load(f)
 
     def parse_artifact(self, item_id: int, r: Reliquary) -> artifact.Artifact:
         item_info = self._item_info_map[item_id]
@@ -300,5 +311,114 @@ class WeaponParser:
 
 
 class CharacterParser:
-    def __init__(self, artifacts: Dict[int, artifact.Artifact]) -> None:
+    _CHARACTER_NAME_MAPPING = {
+        10000002: character.CharacterName.KamisatoAyaka,
+        10000003: character.CharacterName.Jean,
+        10000005: character.CharacterName.Traveler,
+        10000006: character.CharacterName.Lisa,
+        10000007: character.CharacterName.Traveler,
+        10000014: character.CharacterName.Barbara,
+        10000015: character.CharacterName.Kaeya,
+        10000016: character.CharacterName.Diluc,
+        10000020: character.CharacterName.Razor,
+        10000021: character.CharacterName.Amber,
+        10000022: character.CharacterName.Venti,
+        10000023: character.CharacterName.Xiangling,
+        10000024: character.CharacterName.Beidou,
+        10000025: character.CharacterName.Xingqiu,
+        10000026: character.CharacterName.Xiao,
+        10000027: character.CharacterName.Ningguang,
+        10000029: character.CharacterName.Klee,
+        10000030: character.CharacterName.Zhongli,
+        10000031: character.CharacterName.Fischl,
+        10000032: character.CharacterName.Bennett,
+        10000033: character.CharacterName.Tartaglia,
+        10000034: character.CharacterName.Noelle,
+        10000035: character.CharacterName.Qiqi,
+        10000036: character.CharacterName.Chongyun,
+        10000037: character.CharacterName.Ganyu,
+        10000038: character.CharacterName.Albedo,
+        10000039: character.CharacterName.Diona,
+        10000041: character.CharacterName.Mona,
+        10000042: character.CharacterName.Keqing,
+        10000043: character.CharacterName.Sucrose,
+        10000044: character.CharacterName.Xinyan,
+        10000045: character.CharacterName.Rosaria,
+        10000046: character.CharacterName.HuTao,
+        10000047: character.CharacterName.KaedeharaKazuha,
+        10000048: character.CharacterName.Yanfei,
+        10000049: character.CharacterName.Yoimiya,
+        10000050: character.CharacterName.Thoma,
+        10000051: character.CharacterName.Eula,
+        10000052: character.CharacterName.RaidenShogun,
+        10000053: character.CharacterName.Sayu,
+        10000054: character.CharacterName.SangonomiyaKokomi,
+        10000055: character.CharacterName.Gorou,
+        10000056: character.CharacterName.KujouSara,
+        10000057: character.CharacterName.AratakiItto,
+        10000058: character.CharacterName.YaeMiko,
+        10000059: character.CharacterName.ShikanoinHeizo,
+        10000060: character.CharacterName.Yelan,
+        10000062: character.CharacterName.Aloy,
+        10000063: character.CharacterName.Shenhe,
+        10000064: character.CharacterName.YunJin,
+        10000065: character.CharacterName.KukiShinobu,
+        10000066: character.CharacterName.KamisatoAyato,
+        10000067: character.CharacterName.Collei,
+        10000072: character.CharacterName.Candace,
+    }
+
+    def __init__(
+        self, artifacts: Dict[int, artifact.Artifact], weapons: Dict[int, weapon.Weapon]
+    ) -> None:
         self._artifacts = artifacts
+        self._weapons = weapons
+
+        self._skill_depot_info_map = {
+            e["id"]: e
+            for e in _read_raw_excel_data("AvatarSkillDepotExcelConfigData.json")
+        }
+
+    def parse_character(self, a: AvatarInfo) -> Optional[character.Character]:
+        skill_depot_info = self._skill_depot_info_map[a.skill_depot_id]
+
+        talent_level_a = a.skill_level_map[skill_depot_info["skills"][0]]
+        talent_level_e = a.skill_level_map[skill_depot_info["skills"][1]]
+        talent_level_q = a.skill_level_map[skill_depot_info["energySkill"]]
+
+        equipped_weapon: Optional[weapon.Weapon] = None
+        equipped_artifacts: List[Optional[artifact.Artifact]] = [
+            None,
+            None,
+            None,
+            None,
+            None,
+        ]
+
+        for equipment_guid in a.equip_guid_list:
+            if equipment_guid in self._weapons:
+                assert equipped_weapon is None
+                equipped_weapon = self._weapons[equipment_guid]
+            else:
+                af = self._artifacts[equipment_guid]
+                assert equipped_artifacts[af.artifact_slot.value - 1] is None
+                equipped_artifacts[af.artifact_slot.value - 1] = af
+
+        if any(eaf is None for eaf in equipped_artifacts) or (equipped_weapon is None):
+            logger.warning(
+                "Skipping %s due to missing weapon/artifact",
+                self._CHARACTER_NAME_MAPPING[a.avatar_id].name,
+            )
+            return None
+
+        return character.Character(
+            name=self._CHARACTER_NAME_MAPPING[a.avatar_id],
+            ascension=a.prop_map[1002].val,
+            level=a.prop_map[4001].val,
+            constellations=len(a.talent_id_list),
+            talent_level_a=talent_level_a,
+            talent_level_e=talent_level_e,
+            talent_level_q=talent_level_q,
+            weapon=equipped_weapon,
+            artifacts=tuple(equipped_artifacts),
+        )

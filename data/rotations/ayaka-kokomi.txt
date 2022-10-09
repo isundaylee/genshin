@@ -1,4 +1,4 @@
-# team=Ayaka,Kazuha,Kokomi,Rosaria
+# team=KamisatoAyaka,KaedeharaKazuha,SangonomiyaKokomi,Rosaria
 
 options swap_delay=12 mode=apl duration=60.0;
 energy every interval=480,720 amount=1;

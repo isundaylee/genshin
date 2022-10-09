@@ -1,9 +1,12 @@
+from __future__ import annotations
+
 import collections
 import enum
-from genshin import character
 from typing import DefaultDict, Dict, List
 
 import attr
+
+from genshin import character
 
 
 class ArtifactSet(enum.Enum):
@@ -124,7 +127,15 @@ class Artifact:
 
 
 def parse_artifact(desc: str) -> Artifact:
-    type_slot, main, sub1, sub2, sub3, sub4 = desc.split()
+    desc_parts = desc.split(maxsplit=2)
+
+    subs: List[str]
+    if len(desc_parts) == 2:
+        type_slot, main = desc_parts
+        subs = []
+    else:
+        type_slot, main, subs_str = desc_parts
+        subs = subs_str.split()
     art_type, art_slot, art_level = type_slot.split("@")
 
     def parse_stat(stat_desc: str) -> ArtifactStat:
@@ -142,12 +153,7 @@ def parse_artifact(desc: str) -> Artifact:
         artifact_set=ArtifactSet[art_type],
         artifact_slot=ArtifactSlot(int(art_slot)),
         main_stat=parse_stat(main),
-        sub_stats=[
-            parse_stat(sub1),
-            parse_stat(sub2),
-            parse_stat(sub3),
-            parse_stat(sub4),
-        ],
+        sub_stats=[parse_stat(s) for s in subs],
     )
 
 

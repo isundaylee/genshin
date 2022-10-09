@@ -49,16 +49,16 @@ def artifact_stat_type_to_str(stat_type: artifact.ArtifactStatType) -> str:
 def character_name_to_str(name: character.CharacterName) -> str:
     return {
         character.CharacterName.Yanfei: "yanfei",
-        character.CharacterName.Kazuha: "kazuha",
+        character.CharacterName.KaedeharaKazuha: "kazuha",
         character.CharacterName.Bennett: "bennett",
         character.CharacterName.Xingqiu: "xingqiu",
         character.CharacterName.Zhongli: "zhongli",
         character.CharacterName.Xiangling: "xiangling",
-        character.CharacterName.Raiden: "raiden",
+        character.CharacterName.RaidenShogun: "raiden",
         character.CharacterName.Mona: "mona",
         character.CharacterName.Fischl: "fischl",
-        character.CharacterName.Ayaka: "ayaka",
-        character.CharacterName.Kokomi: "kokomi",
+        character.CharacterName.KamisatoAyaka: "ayaka",
+        character.CharacterName.SangonomiyaKokomi: "kokomi",
         character.CharacterName.Rosaria: "rosaria",
     }[name]
 
@@ -83,6 +83,7 @@ def weapon_name_to_str(name: weapon.WeaponName) -> str:
         weapon.WeaponName.TheStringless: "thestringless",
         weapon.WeaponName.AmenomaKageuchi: "amenoma",
         weapon.WeaponName.MistsplitterReforged: "mistsplitter",
+        weapon.WeaponName.BeginnersProtector: "beginnersprotector",
     }[name]
 
 

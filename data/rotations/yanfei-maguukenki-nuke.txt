@@ -1,4 +1,4 @@
-# team=Bennett,Kazuha,Mona,Yanfei
+# team=Bennett,KaedeharaKazuha,Mona,Yanfei
 options swap_delay=12 mode=sl duration=50.0;
 energy every interval=480,720 amount=100;
 

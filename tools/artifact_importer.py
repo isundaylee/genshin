@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 import collections
 import re
-from genshin import weapon
+from genshin import character, weapon
 import logging
-from typing import DefaultDict, List
+from typing import DefaultDict, Dict, List
 
 import click
 
@@ -34,6 +34,7 @@ def main(path: str, my_ip: str) -> None:
     weapons_by_name: DefaultDict[str, List[weapon.Weapon]] = collections.defaultdict(
         list
     )
+    weapon_map: Dict[str, weapon.Weapon] = {}
     splitter = re.compile(r"([A-Z][a-z]*)")
     for w in account_data.weapons.values():
         name = "_".join(s.lower() for s in splitter.split(w.name.name)[1::2])
@@ -46,12 +47,18 @@ def main(path: str, my_ip: str) -> None:
         )
 
         lines.append(f"{name}={ws[0].to_string()}")
+        weapon_map[name] = ws[0]
 
         for i in range(1, len(ws)):
             lines.append(f"{name}_{i+1}={ws[i].to_string()}")
+            weapon_map[f"{name}_{i+1}"] = ws[i]
     with open("data/weapons.txt", "w") as f:
         for l in sorted(lines):
             f.write(l + "\n")
+
+    with open("data/characters.txt", "w") as f:
+        for c in account_data.characters:
+            f.write(c.to_string(weapon_map) + "\n" + "\n")
 
 
 if __name__ == "__main__":

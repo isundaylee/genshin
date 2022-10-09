@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from genshin import artifact
+from genshin import account, artifact
 from typing import Dict, List, Tuple
 import enum
 import collections
@@ -11,18 +11,59 @@ _LEVEL_CAPS: List[int] = [20, 40, 50, 60, 70, 80, 90]
 
 
 class CharacterName(enum.IntEnum):
-    Yanfei = 0
-    Kazuha = 1
-    Bennett = 2
-    Xingqiu = 3
-    Zhongli = 4
-    Xiangling = 5
-    Raiden = 6
-    Mona = 7
-    Fischl = 8
-    Ayaka = 9
-    Kokomi = 10
-    Rosaria = 11
+    KamisatoAyaka = enum.auto()
+    Jean = enum.auto()
+    Traveler = enum.auto()
+    Lisa = enum.auto()
+    Barbara = enum.auto()
+    Kaeya = enum.auto()
+    Diluc = enum.auto()
+    Razor = enum.auto()
+    Amber = enum.auto()
+    Venti = enum.auto()
+    Xiangling = enum.auto()
+    Beidou = enum.auto()
+    Xingqiu = enum.auto()
+    Xiao = enum.auto()
+    Ningguang = enum.auto()
+    Klee = enum.auto()
+    Zhongli = enum.auto()
+    Fischl = enum.auto()
+    Bennett = enum.auto()
+    Tartaglia = enum.auto()
+    Noelle = enum.auto()
+    Qiqi = enum.auto()
+    Chongyun = enum.auto()
+    Ganyu = enum.auto()
+    Albedo = enum.auto()
+    Diona = enum.auto()
+    Mona = enum.auto()
+    Keqing = enum.auto()
+    Sucrose = enum.auto()
+    Xinyan = enum.auto()
+    Rosaria = enum.auto()
+    HuTao = enum.auto()
+    KaedeharaKazuha = enum.auto()
+    Yanfei = enum.auto()
+    Yoimiya = enum.auto()
+    Thoma = enum.auto()
+    Eula = enum.auto()
+    RaidenShogun = enum.auto()
+    Sayu = enum.auto()
+    SangonomiyaKokomi = enum.auto()
+    Gorou = enum.auto()
+    KujouSara = enum.auto()
+    AratakiItto = enum.auto()
+    YaeMiko = enum.auto()
+    ShikanoinHeizo = enum.auto()
+    Yelan = enum.auto()
+    Aloy = enum.auto()
+    Shenhe = enum.auto()
+    YunJin = enum.auto()
+    KukiShinobu = enum.auto()
+    KamisatoAyato = enum.auto()
+    Collei = enum.auto()
+    Candace = enum.auto()
 
 
 _BASE_STATS: Dict[Tuple[CharacterName, int, int], Tuple[int, int, int]] = {
@@ -99,3 +140,28 @@ class Character:
             for s in [a.main_stat] + a.sub_stats:
                 stats[s.stat_type] += s.stat_value
         return stats
+
+    def to_string(self, weapon_map: Dict[str, weapon.Weapon]) -> str:
+        weapon_name = None
+        for name, weapon in weapon_map.items():
+            if weapon == self.weapon:
+                weapon_name = name
+                break
+
+        assert weapon_name is not None, self
+
+        return "\n".join(
+            [
+                "@{}/{}/{}/{}/{}/{}/{}/{}".format(
+                    self.name.name,
+                    self.ascension,
+                    self.level,
+                    self.constellations,
+                    self.talent_level_a,
+                    self.talent_level_e,
+                    self.talent_level_q,
+                    weapon_name,
+                ),
+                *(af.to_string() for af in self.artifacts),
+            ]
+        )
