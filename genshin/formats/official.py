@@ -1,46 +1,55 @@
 import os
 import json
 import collections
-from typing import Any, DefaultDict, Dict
+from typing import Any, DefaultDict, Dict, List
 
-from genshin import artifact
+from genshin import artifact, character
 from genshin.packet import session, opcodes
 
 from genshin.packet.proto.Reliquary_pb2 import Reliquary
 from genshin.packet.proto.PlayerStoreNotify_pb2 import PlayerStoreNotify
+from genshin.packet.proto.AvatarDataNotify_pb2 import AvatarDataNotify
 from genshin.packet.proto.StoreType_pb2 import StoreType
 
 
 class AccountData:
     def __init__(self, s: session.Session) -> None:
         self.artifacts: Dict[int, artifact.Artifact] = {}
+        self.characters: List[character.Character] = []
 
         self._parse(s)
 
     def _parse(self, s: session.Session) -> None:
-        artifact_parser = ArtifactParser()
-
         for p in s.get_decrypted_packets():
-            if p.opcode != opcodes.Opcode.PlayerStoreNotify:
+            if p.opcode == opcodes.Opcode.PlayerStoreNotify:
+                psn = PlayerStoreNotify()
+                psn.ParseFromString(p.data)
+                self._parse_artifacts(psn)
+
+            if p.opcode == opcodes.Opcode.AvatarDataNotify:
+                adn = AvatarDataNotify()
+                adn.ParseFromString(p.data)
+                self._parse_characters(adn)
+
+    def _parse_artifacts(self, psn: PlayerStoreNotify) -> None:
+        assert psn.store_type == StoreType.STORE_TYPE_PACK
+
+        artifact_parser = ArtifactParser()
+        for item in psn.item_list:
+            if item.WhichOneof("detail") != "equip":
                 continue
 
-            psn = PlayerStoreNotify()
-            psn.ParseFromString(p.data)
+            equip = item.equip
+            if equip.WhichOneof("detail") != "reliquary":
+                continue
 
-            assert psn.store_type == StoreType.STORE_TYPE_PACK
+            assert item.guid not in self.artifacts
+            self.artifacts[item.guid] = artifact_parser.translate_artifact(
+                item.item_id, equip.reliquary
+            )
 
-            for item in psn.item_list:
-                if item.WhichOneof("detail") != "equip":
-                    continue
-
-                equip = item.equip
-                if equip.WhichOneof("detail") != "reliquary":
-                    continue
-
-                assert item.guid not in self.artifacts
-                self.artifacts[item.guid] = artifact_parser.translate_artifact(
-                    item.item_id, equip.reliquary
-                )
+    def _parse_characters(self, adn: AvatarDataNotify) -> None:
+        pass
 
 
 class ArtifactParser:
@@ -176,3 +185,8 @@ class ArtifactParser:
                 for k, v in sub_stats.items()
             ],
         )
+
+
+class CharacterParser:
+    def __init__(self, artifacts: Dict[int, artifact.Artifact]) -> None:
+        self._artifacts = artifacts
