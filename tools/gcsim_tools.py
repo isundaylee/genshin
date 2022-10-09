@@ -2,13 +2,16 @@
 
 from sys import stdout
 import tempfile
-from genshin import account, gcsim, weapon, character
 import gzip
 import json
 from typing import Any, Dict, List, Optional
+
 import click
 import pathlib
 import subprocess
+
+from genshin import account, character
+from genshin.formats import gcsim
 
 GCSIM_PATH = pathlib.Path("/Users/jiahaoli/Programming/Git/gcsim/cmd/gcsim/gcsim")
 
