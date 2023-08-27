@@ -13,7 +13,7 @@ import subprocess
 from genshin import account, character
 from genshin.formats import gcsim
 
-# Built from commit 8c8e990b
+# Built from commit d0c10f1d3efc97defaafc9f6f05fcba7a82431be in my fork
 GCSIM_PATH = pathlib.Path("bin/gcsim")
 
 
@@ -161,6 +161,8 @@ def do_run_sim(
         stdout_path = output_dir / "stdout.txt"
         result_path = output_dir / "result.json"
         sample_path = output_dir / "sample.json"
+        sample_min_dps_path = output_dir / "sample.min_dps.json"
+        sample_max_dps_path = output_dir / "sample.max_dps.json"
 
         with open(conf_path, "w") as f:
             f.write(
@@ -170,7 +172,19 @@ def do_run_sim(
             )
 
         output = subprocess.check_output(
-            [GCSIM_PATH, "-c", conf_path, "-out", result_path, "--sample", sample_path]
+            [
+                GCSIM_PATH,
+                "-c",
+                conf_path,
+                "-out",
+                result_path,
+                "--sample",
+                sample_path,
+                "--sampleMinDps",
+                sample_min_dps_path,
+                "--sampleMaxDps",
+                sample_max_dps_path,
+            ]
         )
 
         with open(stdout_path, "wb") as f:
