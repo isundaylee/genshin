@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 import collections
+import json
+import pathlib
 import re
 
 import attr
 from genshin import artifact, character, weapon
-from typing import DefaultDict, List
+from typing import Any, DefaultDict, List, NewType
 
 
 def artifact_set_to_str(artifact_set: artifact.ArtifactSet) -> str:
@@ -183,4 +185,22 @@ class GcsimSummary:
             dps_min=float(dps_min),
             dps_max=float(dps_max),
             dps_std=float(dps_std),
+        )
+
+
+GcsimSampleLog = NewType("GcsimSampleLog", dict[str, Any])
+
+
+@attr.define
+class GcsimSample:
+    logs: list[GcsimSampleLog]
+    character_names: list[str]
+
+    @classmethod
+    def load(cls, sample_path: pathlib.Path) -> GcsimSample:
+        data = json.loads(sample_path.read_text())
+
+        return GcsimSample(
+            logs=[GcsimSampleLog(l) for l in data["logs"]],
+            character_names=[cd["name"] for cd in data["character_details"]],
         )

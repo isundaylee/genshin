@@ -13,7 +13,8 @@ import subprocess
 from genshin import account, character
 from genshin.formats import gcsim
 
-GCSIM_PATH = pathlib.Path("/Users/jiahaoli/Programming/Git/gcsim/cmd/gcsim/gcsim")
+# Built from commit 8c8e990b
+GCSIM_PATH = pathlib.Path("bin/gcsim")
 
 
 @click.group()
@@ -30,21 +31,20 @@ def load_result(result_file: pathlib.Path) -> Dict[str, Any]:
             return json.load(f)
 
 
-def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
+def format_event(e: gcsim.GcsimSampleLog, *, sample: gcsim.GcsimSample) -> str:
     event_type = e["event"]
 
     if event_type == "damage":
         return "{:15s} | {:50s} | {:5s} {:10s} | {:10.0f}".format(
-            raw_data["char_names"][e["char_index"]],
+            sample.character_names[e["char_index"]],
             e["msg"],
             "crit" if e["logs"]["crit"] else "",
             e["logs"]["amp"],
             e["logs"]["damage"],
         )
     elif event_type == "energy" and (not e["msg"].startswith("energy queued")):
-        print(e)
         return "{:15s} | +{:5.1f} - {:5.1f} -> {:5.1f} from {}".format(
-            raw_data["char_names"][e["char_index"]],
+            sample.character_names[e["char_index"]],
             e["logs"]["post_recovery"] - e["logs"]["pre_recovery"],
             e["logs"]["pre_recovery"],
             e["logs"]["post_recovery"],
@@ -57,7 +57,7 @@ def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
             return e["msg"]
 
         assert e["msg"] == "application", e
-        assert e["logs"]["target"] == 0, e["logs"]["target"]
+        assert e["logs"]["target"] == 1, e["logs"]["target"]
 
         def format_auras(value: Optional[Dict[str, float]]) -> str:
             if value is None:
@@ -65,14 +65,14 @@ def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
             return ", ".join(v.replace(": ", "=") for v in sorted(value))
 
         return "{:15s} | {:20s} -> {:20} | {}".format(
-            raw_data["char_names"][e["char_index"]],
+            sample.character_names[e["char_index"]],
             format_auras(e["logs"]["existing"]),
             format_auras(e["logs"]["after"]),
             e["logs"]["abil"],
         )
     elif event_type == "action":
         return "{:15s} | {}".format(
-            raw_data["char_names"][e["char_index"]],
+            sample.character_names[e["char_index"]],
             e["msg"],
         )
     else:
@@ -80,34 +80,30 @@ def format_event(e: Dict[str, Any], *, raw_data: Dict[str, Any]) -> str:
 
 
 @main.command("show-damages")
-@click.argument("result-file", type=pathlib.Path)
-@click.option("--debug-log-flavor", default="debug")
-def do_show_damages(result_file: pathlib.Path, debug_log_flavor: str) -> None:
-    raw_data = load_result(result_file)
-    data = json.loads(raw_data[debug_log_flavor])
+@click.argument("sample-file", type=pathlib.Path)
+def do_show_damages(sample_file: pathlib.Path) -> None:
+    sample = gcsim.GcsimSample.load(sample_file)
 
-    for e in data:
-        if e["event"] != "damage":
+    for l in sample.logs:
+        if l["event"] != "damage":
             continue
 
         print(
-            "T={:5.2f} | {}".format(
-                e["frame"] / 60.0, format_event(e, raw_data=raw_data)
-            )
+            "T={:5.2f} | {}".format(l["frame"] / 60.0, format_event(l, sample=sample))
         )
 
 
 @main.command("show-events")
-@click.argument("result-file", type=pathlib.Path)
-@click.option("--debug-log-flavor", default="debug")
-def do_show_events(result_file: pathlib.Path, debug_log_flavor: str) -> None:
-    raw_data = load_result(result_file)
-    data = json.loads(raw_data[debug_log_flavor])
+@click.argument("sample-file", type=pathlib.Path)
+def do_show_events(sample_file: pathlib.Path) -> None:
+    sample = gcsim.GcsimSample.load(sample_file)
 
-    for e in data:
+    for l in sample.logs:
         print(
             "T={:5.2f} | {:10s} | {}".format(
-                e["frame"] / 60.0, e["event"], format_event(e, raw_data=raw_data)
+                l["frame"] / 60.0,
+                l["event"],
+                format_event(l, sample=sample),
             )
         )
 
@@ -164,6 +160,7 @@ def do_run_sim(
         conf_path = output_dir / "config.txt"
         stdout_path = output_dir / "stdout.txt"
         result_path = output_dir / "result.json"
+        sample_path = output_dir / "sample.json"
 
         with open(conf_path, "w") as f:
             f.write(
@@ -173,7 +170,7 @@ def do_run_sim(
             )
 
         output = subprocess.check_output(
-            [GCSIM_PATH, "-c", conf_path, "-out", result_path, "-debugMinMax"]
+            [GCSIM_PATH, "-c", conf_path, "-out", result_path, "--sample", sample_path]
         )
 
         with open(stdout_path, "wb") as f:
