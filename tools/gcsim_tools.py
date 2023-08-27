@@ -13,7 +13,7 @@ import subprocess
 from genshin import account, character
 from genshin.formats import gcsim
 
-# Built from commit d0c10f1d3efc97defaafc9f6f05fcba7a82431be in my fork
+# Built from commit 177af0ecc1867c79c1b144456437c33d24a9ea16
 GCSIM_PATH = pathlib.Path("bin/gcsim")
 
 
