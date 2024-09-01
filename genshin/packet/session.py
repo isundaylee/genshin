@@ -41,10 +41,10 @@ def _xor_bytes_repeat(a: bytes, key: bytes) -> bytes:
 
 
 class KCPSession:
-    CMD_PUSH = 81
-    CMD_ACK = 82
-    CMD_WASK = 83
-    CMD_WINS = 84
+    CMD_PUSH = 0x51
+    CMD_ACK = 0x52
+    CMD_WASK = 0x53
+    CMD_WINS = 0x54
 
     def __init__(self, name: str):
         self.conv: Optional[int] = None
@@ -57,7 +57,10 @@ class KCPSession:
 
     def add_data(self, timestamp: datetime.datetime, data: bytes) -> Optional[bytes]:
         while data:
-            consumed_length = 4 + self._add_packet(timestamp, data[4:])
+            # 4 bytes: 2b ee 00 00
+            # n bytes: _add_packt
+            # 4 bytes: unknown footer
+            consumed_length = 4 + self._add_packet(timestamp, data[4:]) + 4
             data = data[consumed_length:]
 
     def _add_packet(self, timestamp: datetime.datetime, data: bytes) -> int:
@@ -76,6 +79,9 @@ class KCPSession:
             assert length == 0
         elif cmd == KCPSession.CMD_PUSH:
             self._handle_push(sn, frg, data[24 : 24 + length])
+        elif cmd == KCPSession.CMD_WASK:
+            pass
+        elif cmd == KCPSession.CMD_WINS:
             pass
         else:
             assert False, f"Unexpected cmd {cmd}"

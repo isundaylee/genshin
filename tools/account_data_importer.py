@@ -17,10 +17,11 @@ from genshin.packet.proto.StoreType_pb2 import StoreType
 @click.command()
 @click.argument("path")
 @click.argument("my_ip")
-def main(path: str, my_ip: str) -> None:
+@click.option("--verbose", is_flag=True)
+def main(path: str, my_ip: str, *, verbose: bool) -> None:
     logging.basicConfig(
         format="%(asctime)s %(levelname)-10s %(name)-60s %(message)s",
-        level=logging.INFO,
+        level=logging.DEBUG if verbose else logging.INFO,
     )
 
     s = session.Session(path, my_ip)
