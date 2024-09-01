@@ -8,3 +8,7 @@ attrs==23.2.0
     # via -r requirements.in
 click==8.1.7
     # via -r requirements.in
+dpkt==1.9.8
+    # via -r requirements.in
+protobuf==5.28.0
+    # via -r requirements.in

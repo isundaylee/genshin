@@ -1,2 +1,4 @@
 click
 attrs
+dpkt
+protobuf
