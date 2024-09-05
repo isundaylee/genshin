@@ -9,7 +9,10 @@ from genshin.packet import session
 
 @click.group()
 def main() -> None:
-    pass
+    logging.basicConfig(
+        format="%(asctime)s %(levelname)-10s %(name)-60s %(message)s",
+        level=logging.INFO,
+    )
 
 
 @main.command()
@@ -17,14 +20,7 @@ def main() -> None:
 @click.argument("my_ip")
 @click.argument("output", type=pathlib.Path)
 def dump_decrypted(path: str, my_ip: str, output: pathlib.Path) -> None:
-    logging.basicConfig(
-        format="%(asctime)s %(levelname)-10s %(name)-60s %(message)s",
-        level=logging.INFO,
-    )
-
-    s = session.Session(path, my_ip)
-
-    for i, p in enumerate(s.get_decrypted_packets()):
+    for i, p in enumerate(session.Session(path, my_ip).get_decrypted_packets()):
         try:
             name = p.opcode.name
         except ValueError:
@@ -32,6 +28,20 @@ def dump_decrypted(path: str, my_ip: str, output: pathlib.Path) -> None:
 
         fn = f"{i:05d}-{name}.packet"
         (output / fn).write_bytes(p.content)
+
+
+@main.command()
+@click.argument("path")
+@click.argument("my_ip")
+def print_decrypted(path: str, my_ip: str) -> None:
+    for p in session.Session(path, my_ip).get_decrypted_packets():
+        print(
+            "{:10s} | len {:5d} | {}".format(
+                p.direction.name,
+                len(p.content),
+                session.format_bytes(p.content, start=len(p.content)),
+            )
+        )
 
 
 if __name__ == "__main__":
