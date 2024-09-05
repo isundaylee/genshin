@@ -28,11 +28,13 @@ def main(path: str, my_ip: str, output: pathlib.Path) -> None:
     s = session.Session(path, my_ip)
 
     for i, p in enumerate(s.get_decrypted_packets()):
-        fn = f"{i:05d}-{p.opcode.name}.packet"
-        (output / fn).write_bytes(p.content)
+        try:
+            name = p.opcode.name
+        except ValueError:
+            name = f"opcode{p.raw_opcode}"
 
-    # for i, p in enumerate(s.packets):
-    #     print(i, len(p.content))
+        fn = f"{i:05d}-{name}.packet"
+        (output / fn).write_bytes(p.content)
 
 
 if __name__ == "__main__":

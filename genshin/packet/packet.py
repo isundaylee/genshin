@@ -75,9 +75,13 @@ class DecryptedPacket(BaseDecryptedPacket):
         # xx xx | xx xx | xx xx | xx xx xx xx | ... header ... | ... data ... | xx xx
 
     @property
-    def opcode(self) -> opcodes.Opcode:
+    def raw_opcode(self) -> int:
         (op,) = struct.unpack(">H", self.content[2:4])
-        return opcodes.Opcode(op)
+        return op
+
+    @property
+    def opcode(self) -> opcodes.Opcode:
+        return opcodes.Opcode(self.raw_opcode)
 
     @property
     def is_compound_packet(self) -> bool:
