@@ -5,6 +5,9 @@
 #include <optional>
 #include <vector>
 
+#include <nanobind/nanobind.h>
+#include <nanobind/stl/optional.h>
+
 ////////////////////////////////////////////////////////////////////////////////
 /// Utils
 
@@ -210,24 +213,15 @@ std::optional<uint64_t> find_seed(uint64_t key0, uint64_t key1) {
   return std::nullopt;
 }
 
-int main() {
-  for (uint64_t rtt_byte = 0; rtt_byte < 256; rtt_byte++) {
-    uint64_t key0 = 0x3be606134da1915dULL;
-    uint64_t key1 = 0xfdd8f6a0f200af9eULL + (rtt_byte << 16ULL);
+////////////////////////////////////////////////////////////////////////////////
+/// Nanobind
 
-    if (auto seed = find_seed(key0, key1); seed) {
-      print_uint64("seed", *seed);
+namespace nb = nanobind;
 
-      MT64 mt64(*seed);
-      mt64.generate();
-      print_uint64("key[0]", mt64.generate());
-      print_uint64("key[1]", mt64.generate());
-      print_uint64("key[2]", mt64.generate());
-      return 0;
-    }
-  }
+NB_MODULE(genshin_xor_key, m) {
+  m.def("find_seed", &find_seed);
 
-  printf("No seed found\n");
-
-  return 1;
+  nb::class_<MT64>(m, "MT64")
+      .def(nb::init<uint64_t>())
+      .def("generate", &MT64::generate);
 }
