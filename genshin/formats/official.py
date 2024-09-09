@@ -100,8 +100,8 @@ class ArtifactParser:
         "EQUIP_DRESS": 5,
     }
 
-    # Look at images here
     # ui/packages/ui/src/Data/artifact_data.generated.json from gcsim code
+    # or https://gi17.hakush.in/artifact/15037
     _SET_NAME_MAPPING = {
         10001: "RS",
         10003: "DW",
@@ -149,6 +149,8 @@ class ArtifactParser:
         15034: "NWEW",
         15035: "FHW",
         15036: "UR",
+        15037: "SHCC",
+        15038: "OC",
     }
 
     assert len(_SET_NAME_MAPPING) == len(set(_SET_NAME_MAPPING.values()))
@@ -508,13 +510,17 @@ class CharacterParser:
                 try:
                     equipped_weapon = self._weapons[equipment_guid]
                 except KeyError:
-                    logger.warning("Character %s has unknown weapon, skipping", name)
+                    logger.warning(
+                        "Character %s has unknown weapon, skipping", name.name
+                    )
                     continue
             else:
                 try:
                     af = self._artifacts[equipment_guid]
                 except KeyError:
-                    logger.warning("Character %s has unknown artifact, skipping", name)
+                    logger.warning(
+                        "Character %s has unknown artifact, skipping", name.name
+                    )
                     continue
 
                 assert equipped_artifacts[af.artifact_slot.value - 1] is None

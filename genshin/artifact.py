@@ -60,6 +60,11 @@ class ArtifactSet(enum.Enum):
     FHW = "fragmentofharmonicwhimsy"
     UR = "unfinishedreverie"
 
+    # These new ones use the naming convention at
+    # https://frzyc.github.io/genshin-optimizer/#/doc/ArtifactSetKey
+    SHCC = "ScrollOfTheHeroOfCinderCity"
+    OC = "ObsidianCodex"
+
 
 class ArtifactSlot(enum.IntEnum):
     Flower = 1
