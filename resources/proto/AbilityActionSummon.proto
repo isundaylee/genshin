@@ -1,5 +1,5 @@
-// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
-// Copyright (C) 2022  Sorapointa Team
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as
@@ -15,12 +15,9 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 syntax = "proto3";
-
-import "genshin/packet/proto/Vector.proto";
-
-option java_package = "org.sorapointa.proto";
-
+option java_package = "emu.grasscutter.net.proto";
+import "Vector.proto";
 message AbilityActionSummon {
-  Vector pos = 10;
-  Vector rot = 1;
+	Vector pos = 4;
+	Vector rot = 13;
 }

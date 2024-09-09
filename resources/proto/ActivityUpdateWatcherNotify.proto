@@ -1,14 +1,10 @@
 syntax = "proto3";
-
 option java_package = "emu.grasscutter.net.proto";
-
 import "ActivityWatcherInfo.proto";
-
-// CmdId: 2172
-// EnetChannelId: 0
-// EnetIsReliable: true
-// IsAllowClient: true
+// 4.7.0
+// CmdId: 9907 or 29904(?)
+// Obf: FFPBEIJNKNK
 message ActivityUpdateWatcherNotify {
-	uint32 activity_id = 1;
-	ActivityWatcherInfo watcher_info = 2;
+	ActivityWatcherInfo watcher_info = 14;
+	uint32 activity_id = 4;
 }

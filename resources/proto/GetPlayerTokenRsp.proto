@@ -1,56 +1,48 @@
-// Grasscutter - A server software reimplementation for a certain anime game.
-// Copyright (C) 2022  Grasscutter Team
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Affero General Public License as published
-// by the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Affero General Public License for more details.
-//
-// You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 syntax = "proto3";
 
 option java_package = "emu.grasscutter.net.proto";
+// Version: 5.0
+// CmdId: 24174
 
-// CmdId: 198
-// EnetChannelId: 0
-// EnetIsReliable: true
+import "StopServerInfo.proto";
+
 message GetPlayerTokenRsp {
-    string birthday = 937;
-    int32 retcode = 2;
-    bytes security_cmd_buffer = 6;
-    uint64 secret_key_seed = 13;
-    string country_code = 2013;
-    bytes extra_bin_data = 3;
-    string secret_key = 15;
-    uint32 Unk2700_NOJPEHIBDJH = 1561;
-    uint32 black_uid_end_time = 14;
-    uint32 tag = 1635;
-    string token = 11;
+    int32 retcode = 1;
+    uint64 secret_key_seed = 2;
+    bool is_guest = 3;
+    bytes security_cmd_buffer = 4;
+    bool is_proficient_player = 5;
+    string account_uid = 6;
+    uint32 black_uid_end_time = 7;
+    uint32 uid = 8;
+    bytes extra_bin_data = 9;
     uint32 gm_uid = 10;
-    uint32 channel_id = 896;
-    string psn_id = 1811;
-    string client_ip_str = 860;
-    string msg = 7;
-    uint32 account_type = 5;
-    uint32 sub_channel_id = 1802;
-    bool Unk2700_FLBKPCPGPDH = 2028;
-    string encrypted_seed = 1493;
-    bool is_proficient_player = 9;
-    uint32 Unk2800_BPJOBLNCBEI = 1172;
-    uint32 uid = 1;
-    string account_uid = 12;
-    bool is_guest = 4;
-    string client_version_random_key = 1529;
-    repeated uint32 Unk2800_NNBFCEAOEPB = 1640;
-    uint32 platform_type = 8;
-    uint32 reg_platform = 1112;
-    bool is_login_white_list = 573;
-    string seed_signature = 1140;
-}
+    string secret_key = 11;
+    uint32 account_type = 12;
+    uint32 platform_type = 13;
+    string msg = 14;
+    string token = 15;
+    string server_rand_key = 68;
+    bool AKODFAIGJCE = 206;
+    uint32 MPGMOFLCEOF = 267;
+    uint32 channel_id = 290;
+    uint32 key_id = 398;
+    bool GCDGEKAONGD = 440;
+    string KNCFLPGOMNI = 496;
+    string OLODGDMMPNF = 528;
+    StopServerInfo stop_server = 563;
+    bool HNBGEKMPFIB = 575;
+    uint32 JDHCKKAGBNL = 576;
+    uint32 KEKHAKAPMIN = 630;
+    uint32 CIJPMGMCJBA = 847;
+    uint32 tag = 853;
+    uint32 PLNNJPFPPAM = 1118;
+    string country_code = 1269;
+    string game_biz = 1670;
+    repeated uint32 finish_collection_id_list = 1684;
+    string birthday = 1735;
+    string CEMENPADOPP = 1871;
+    string sign = 1885;
+    string psn_id = 1954;
+    string JLCDDOJGKKG = 2042;
+}

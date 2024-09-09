@@ -1,39 +1,21 @@
-// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
-// Copyright (C) 2022  Sorapointa Team
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Affero General Public License as
-// published by the Free Software Foundation, either version 3 of the
-// License, or (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Affero General Public License for more details.
-//
-// You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 syntax = "proto3";
 
-import "genshin/packet/proto/ForwardType.proto";
-import "genshin/packet/proto/HitColliderType.proto";
-import "genshin/packet/proto/Vector.proto";
+option java_package = "emu.grasscutter.net.proto";
+// Version: 5.0
+// CmdId: 2465
 
-option java_package = "org.sorapointa.proto";
+import "HitColliderType.proto";
+import "ForwardType.proto";
+import "Vector.proto";
 
-// CmdId: 348
-// EnetChannelId: 0
-// EnetIsReliable: true
-// IsAllowClient: true
 message EvtBulletHitNotify {
-  uint32 Unk2700_FEALLBIBHOL = 8;
-  Vector hit_point = 15;
-  Vector hit_normal = 11;
-  int32 hit_box_index = 9;
-  uint32 hit_entity_id = 3;
-  uint32 entity_id = 5;
-  uint32 forward_peer = 7;
-  ForwardType forward_type = 2;
-  HitColliderType hit_collider_type = 6;
-}
+    uint32 single_bullet_id = 4;
+    uint32 forward_peer = 5;
+    int32 hit_box_index = 7;
+    HitColliderType hit_collider_type = 9;
+    uint32 entity_id = 10;
+    ForwardType forward_type = 11;
+    Vector hit_point = 13;
+    uint32 hit_entity_id = 14;
+    Vector hit_pointhit_normal = 15;
+}

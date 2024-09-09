@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+// Version: 5.0
+
+import "DetailAbilityInfo.proto";
+
+message DetailInfo {
+    oneof CLBBKMNHFIO {
+        DetailAbilityInfo detail_ability_info = 1;
+    }
+}

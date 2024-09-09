@@ -2,10 +2,9 @@ syntax = "proto3";
 
 option java_package = "emu.grasscutter.net.proto";
 
-// CmdId: 2647
-// EnetChannelId: 0
-// EnetIsReliable: true
-// IsAllowClient: true
+// CmdId: 20941
+// Version: 4.6.0
+// Obfs: CCADIDOMPPK
 message BuyBattlePassLevelReq {
-	uint32 buy_level = 8;
+	uint32 buy_level = 1;
 }

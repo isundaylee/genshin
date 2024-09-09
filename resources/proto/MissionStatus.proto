@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+// Version: 5.0
+
+enum MissionStatus {
+    MISSION_INVALID = 0;
+    MISSION_UNFINISHED = 1;
+    MISSION_FINISHED = 2;
+    MISSION_POINT_TAKEN = 3;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+// CmdId: 6397,
+// Version: 4.7.0
+// Obfs: ?
+message HomeSaveArrangementNoChangeRsp {
+	uint32 scene_id = 11;
+	int32 retcode = 12;
+}

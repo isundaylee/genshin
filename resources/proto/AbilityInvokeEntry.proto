@@ -1,34 +1,20 @@
-// Grasscutter - A server software reimplementation for a certain anime game.
-// Copyright (C) 2022  Grasscutter Team
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Affero General Public License as published
-// by the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Affero General Public License for more details.
-//
-// You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 syntax = "proto3";
 
-import "AbilityInvokeArgument.proto";
-import "AbilityInvokeEntryHead.proto";
-import "ForwardType.proto";
-
 option java_package = "emu.grasscutter.net.proto";
+// Version: 5.0
+
+import "AbilityInvokeArgument.proto";
+import "ForwardType.proto";
+import "AbilityInvokeEntryHead.proto";
 
 message AbilityInvokeEntry {
-	AbilityInvokeArgument argument_type = 1;
-	AbilityInvokeEntryHead head = 2;
-	uint32 forward_peer = 4;
-	uint32 event_id = 12;
-	ForwardType forward_type = 3;
-	bytes ability_data = 15;
-	double total_tick_time = 14;
-	uint32 entity_id = 9;
-}
+    uint32 event_id = 2;
+    AbilityInvokeArgument argument_type = 3;
+    uint32 forward_peer = 4;
+    ForwardType forward_type = 7;
+    AbilityInvokeEntryHead head = 8;
+    bool is_ignore_auth = 9;
+    uint32 entity_id = 11;
+    double total_tick_time = 12;
+    bytes ability_data = 14;
+}

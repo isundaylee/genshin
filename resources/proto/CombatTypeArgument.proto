@@ -1,25 +1,10 @@
-// Grasscutter - A server software reimplementation for a certain anime game.
-// Copyright (C) 2022  Grasscutter Team
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Affero General Public License as published
-// by the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Affero General Public License for more details.
-//
-// You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 syntax = "proto3";
 
 option java_package = "emu.grasscutter.net.proto";
+// Version: 5.0
 
 enum CombatTypeArgument {
-	COMBAT_TYPE_ARGUMENT_NONE = 0;
+    COMBAT_TYPE_ARGUMENT_NONE = 0;
 	COMBAT_TYPE_ARGUMENT_EVT_BEING_HIT = 1;
 	COMBAT_TYPE_ARGUMENT_ANIMATOR_STATE_CHANGED = 2;
 	COMBAT_TYPE_ARGUMENT_FACE_TO_DIR = 3;
@@ -35,6 +20,11 @@ enum CombatTypeArgument {
 	COMBAT_TYPE_ARGUMENT_FIXED_RUSH_MOVE = 13;
 	COMBAT_TYPE_ARGUMENT_SYNC_TRANSFORM = 14;
 	COMBAT_TYPE_ARGUMENT_LIGHT_CORE_MOVE = 15;
-	COMBAT_TYPE_ARGUMENT_Unk2700_KPDNFKCMKPG = 16;
-	COMBAT_TYPE_ARGUMENT_Unk2700_KPLOMOIALGF = 17;
+	COMBAT_TYPE_ARGUMENT_BEING_HEALED_NTF = 16;
+	COMBAT_TYPE_ARGUMENT_SKILL_ANCHOR_POSITION_NTF = 17;
+	COMBAT_TYPE_ARGUMENT_GRAPPLING_HOOK_MOVE = 18;
+	COMBAT_TYPE_ARGUMENT_SPECIAL_MOTION_INFO = 19;
+	COMBAT_TYPE_ARGUMENT_FIXED_AVATAR_FLASH_MOVE = 20;
+	COMBAT_TYPE_ARGUMENT_MULTI_OVERRIDE_ANIM = 21;
+	COMBAT_TYPE_ARGUMENT_DEBUG_SYNC_MOTION = 22;
 }

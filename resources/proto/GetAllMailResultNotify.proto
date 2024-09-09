@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+// Version: 5.0
+// CmdId: 20649
+
+import "MailData.proto";
+
+message GetAllMailResultNotify {
+    uint32 total_page_count = 4;
+    uint32 page_index = 6;
+    string transaction = 8;
+    bool is_collected = 10;
+    int32 retcode = 11;
+    repeated MailData mail_list = 13;
+}

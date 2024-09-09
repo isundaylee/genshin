@@ -1,5 +1,5 @@
-// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
-// Copyright (C) 2022  Sorapointa Team
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as
@@ -15,22 +15,19 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 syntax = "proto3";
-
-import "genshin/packet/proto/Vector.proto";
-
-option java_package = "org.sorapointa.proto";
-
-// CmdId: 233
-// EnetChannelId: 0
-// EnetIsReliable: true
+option java_package = "emu.grasscutter.net.proto";
+import "Vector.proto";
+// CmdId: 20293
+// Obf: JBEGDKFLHPL
 message ScenePlayerSoundNotify {
-  string sound_name = 4;
-  PlaySoundType play_type = 8;
-  Vector play_pos = 3;
-
-  enum PlaySoundType {
-    PLAY_SOUND_TYPE_NONE = 0;
-    PLAY_SOUND_TYPE_START = 1;
-    PLAY_SOUND_TYPE_STOP = 2;
-  }
+	// Obf: NDMKCNLGDFN
+	enum PlaySoundType {
+		PLAY_SOUND_NONE = 0;
+		PLAY_SOUND_START = 1;
+		PLAY_SOUND_STOP = 2;
+	}
+	
+	Vector play_pos = 15;
+	string sound_name = 1;
+	PlaySoundType play_type = 11;
 }

@@ -1,10 +1,8 @@
 syntax = "proto3";
-
 option java_package = "emu.grasscutter.net.proto";
-
-// CmdId: 3344
-// EnetChannelId: 0
-// EnetIsReliable: true
+// 4.7.0 ?
+// CmdId: 23831 or 25365 (?)
+// Obf: PJEMNKAGMMH
 message GroupUnloadNotify {
-	repeated uint32 group_list = 10;
+	repeated uint32 group_list = 3;
 }

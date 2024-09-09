@@ -1,5 +1,5 @@
-// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
-// Copyright (C) 2022  Sorapointa Team
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as
@@ -15,11 +15,8 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 syntax = "proto3";
-
-option java_package = "org.sorapointa.proto";
-
-// CmdId: 1722
-// EnetChannelId: 0
-// EnetIsReliable: true
-// IsAllowClient: true
-message AvatarExpeditionAllDataReq {}
+option java_package = "emu.grasscutter.net.proto";
+// CmdId: 24160
+// Obf: IKHOKBJEAGP
+message AvatarExpeditionAllDataReq {
+}

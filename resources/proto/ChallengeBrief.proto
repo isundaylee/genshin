@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+// Version: 5.0
+
+message ChallengeBrief {
+    uint32 challenge_index = 1;
+    bool is_success = 8;
+    uint32 challenge_id = 9;
+    uint32 cur_progress = 12;
+}

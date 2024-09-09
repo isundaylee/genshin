@@ -1,45 +1,33 @@
-// Grasscutter - A server software reimplementation for a certain anime game.
-// Copyright (C) 2022  Grasscutter Team
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Affero General Public License as published
-// by the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Affero General Public License for more details.
-//
-// You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 syntax = "proto3";
 
 option java_package = "emu.grasscutter.net.proto";
+// Version: 5.0
+// CmdId: 6013
 
-// CmdId: 172
-// EnetChannelId: 0
-// EnetIsReliable: true
-// IsAllowClient: true
 message GetPlayerTokenReq {
-    string account_token = 10;
-    string account_uid = 11;
-    string psn_region = 4;
-    string online_id = 7;
+    string HCJGLLHFCMA = 1304;
+    string online_id = 13;
+    string BPFIMEKJANE = 9;
+    string country_code = 1;
+    string account_token = 4;
+    string psn_id = 10;
+    string JLCDDOJGKKG = 1528;
+    string account_uid = 3;
+    string client_rand_key = 94;
+    string BDGFMEIEHOD = 5;
+    string CEMENPADOPP = 7;
+    string birthday = 594;
+    string gate_ticket = 1804;
+    uint32 platform_type = 2;
+    uint32 IKKKLHICPMF = 12;
+    uint32 account_type = 8;
     uint32 channel_id = 15;
-    string account_ext = 9;
-    string country_code = 5;
-    string client_seed = 760;
-    bool is_guest = 6;
-    string birthday = 1718;
-    uint32 sub_channel_id = 8;
-    uint32 platform_type = 12;
-    string client_ip_str = 3;
-    string psn_id = 13;
-    uint32 account_type = 1;
-    uint32 Unk2700_NOJPEHIBDJH = 995;
-    uint32 cloud_client_ip = 14;
-    uint32 key_id = 1787;
-    uint32 uid = 2;
-}
+    uint32 CIJPMGMCJBA = 1776;
+    uint32 uid = 6;
+    uint32 MPGMOFLCEOF = 1730;
+    bool is_guest = 14;
+    uint32 KODKEFGJHAP = 168;
+    uint32 key_id = 1485;
+    uint32 KEKHAKAPMIN = 11;
+    uint32 JDHCKKAGBNL = 1686;
+}

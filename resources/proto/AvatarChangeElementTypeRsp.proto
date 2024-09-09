@@ -1,10 +1,10 @@
-// Grasscutter - A server software reimplementation for a certain anime game.
-// Copyright (C) 2022  Grasscutter Team
+// https://github.com/SlushinPS/beach-simulator
+// Copyright (C) 2023 Slushy Team
 //
 // This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Affero General Public License as published
-// by the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
 //
 // This program is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -15,12 +15,9 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 syntax = "proto3";
-
 option java_package = "emu.grasscutter.net.proto";
-
-// CmdId: 1651
-// EnetChannelId: 0
-// EnetIsReliable: true
+// CmdId: 26227
+// Obf: CLNCAJHKIFD
 message AvatarChangeElementTypeRsp {
-	int32 retcode = 13;
+	int32 retcode = 6;
 }

@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+import "Vector.proto";
+// 4.7.0
+// Obf: PIDEINKCANN
+message WidgetSorushInfo {
+	uint32 slot = 5;	
+	Vector rot = 1;	
+	Vector pos = 6;
+	bool MHMHPPJKAHM = 11;
+	bool JMOJHHHKHEL = 14;
+	bool EOFNCKAMIKB = 15;
+}

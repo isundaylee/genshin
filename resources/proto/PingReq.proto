@@ -1,31 +1,16 @@
-// Grasscutter - A server software reimplementation for a certain anime game.
-// Copyright (C) 2022  Grasscutter Team
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Affero General Public License as published
-// by the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Affero General Public License for more details.
-//
-// You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 syntax = "proto3";
 
 option java_package = "emu.grasscutter.net.proto";
+// Version: 5.0
+// CmdId: 5983
 
-// CmdId: 7
-// EnetChannelId: 0
-// EnetIsReliable: true
-// IsAllowClient: true
 message PingReq {
-	uint32 client_time = 12;
-	float ue_time = 14;
-	double total_tick_time = 6;
-	bytes sc_data = 10;
-	uint32 seq = 3;
-}
+    bytes PDHFGJIBCLA = 13;
+    bytes sc_data = 2;
+    uint64 NHLLKPHMFGP = 3;
+    double total_tick_time = 7;
+    uint32 client_time = 4;
+    float ue_time = 8;
+    uint32 DFALBBBCFMO = 10;
+    uint32 seq = 15;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+// Version: 5.0
+// CmdId: 7646
+
+message GetAllMailNotify {
+    bool is_collected = 8;
+}

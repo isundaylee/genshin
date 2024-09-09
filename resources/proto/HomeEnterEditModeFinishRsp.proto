@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+// Version: 5.0
+// CmdId: 28448
+
+message HomeEnterEditModeFinishRsp {
+    int32 retcode = 12;
+}

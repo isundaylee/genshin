@@ -1,28 +1,24 @@
 syntax = "proto3";
-
 option java_package = "emu.grasscutter.net.proto";
 
-import "QueryFilter.proto";
 import "Vector.proto";
 import "Vector3Int.proto";
+import "QueryFilter.proto";
 
-// CmdId: 2309
-// EnetChannelId: 0
-// EnetIsReliable: true
-// IsAllowClient: true
+// 4.7.0
 message QueryPathReq {
-    OptionType query_type = 13;
-    int32 query_id = 15;
-    uint32 scene_id = 11;
-    Vector source_pos = 2;
-    repeated Vector destination_pos = 10;
-    QueryFilter filter = 12;
-    Vector3Int destination_extend = 4;
-    Vector3Int source_extend = 6;
+  enum OptionType {
+		OPTION_NONE = 0;
+		OPTION_NORMAL = 1;
+		OPTION_FIRST_CAN_GO = 2;
+	}
 
-    enum OptionType {
-        OPTION_TYPE_NONE = 0;
-        OPTION_TYPE_NORMAL = 1;
-        OPTION_TYPE_FIRST_CAN_GO = 2;
-    }
+  repeated Vector destination_pos = 2;
+  OptionType query_type = 3;
+  uint32 scene_id = 4;
+  Vector source_pos = 5;
+  Vector3Int ANCGPGGGOAJ = 8;
+  Vector3Int IFMLKJBFKDK = 9;
+  int32 query_id = 14;
+  QueryFilter filter = 15;
 }
