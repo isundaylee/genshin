@@ -28,12 +28,12 @@ class AccountData:
 
     def _parse(self, s: session.Session) -> None:
         for p in s.get_decrypted_packets():
-            if p.opcode == opcodes.Opcode.PlayerStoreNotify:
+            if p.raw_opcode == opcodes.Opcode.PlayerStoreNotify.value:
                 psn = PlayerStoreNotify()
                 psn.ParseFromString(p.data)
                 self._parse_artifacts_and_weapons(psn)
 
-            if p.opcode == opcodes.Opcode.AvatarDataNotify:
+            if p.raw_opcode == opcodes.Opcode.AvatarDataNotify.value:
                 adn = AvatarDataNotify()
                 adn.ParseFromString(p.data)
                 self._parse_characters(adn)
