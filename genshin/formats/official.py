@@ -53,12 +53,15 @@ class AccountData:
             if equip.WhichOneof("detail") == "reliquary":
                 assert item.guid not in self.artifacts
 
-                try:
-                    self.artifacts[item.guid] = artifact_parser.parse_artifact(
+                if (
+                    artifact := artifact_parser.parse_artifact(
                         item.item_id, equip.reliquary
                     )
-                except KeyError:
+                ) is None:
                     logger.warning("Skipping unknown artifact with ID %d", item.item_id)
+                    continue
+
+                self.artifacts[item.guid] = artifact
             elif equip.WhichOneof("detail") == "weapon":
                 assert item.guid not in self.weapons
 
@@ -68,6 +71,7 @@ class AccountData:
                     )
                 except KeyError:
                     logger.warning("Skipping unknown weapon with ID %d", item.item_id)
+                    continue
 
     def _parse_characters(self, adn: AvatarDataNotify) -> None:
         character_parser = CharacterParser(self.artifacts, self.weapons)
@@ -97,7 +101,7 @@ class ArtifactParser:
     }
 
     # Look at images here
-    # https://feixiaoqiu.com/static/images/reliquary/
+    # ui/packages/ui/src/Data/artifact_data.generated.json from gcsim code
     _SET_NAME_MAPPING = {
         10001: "RS",
         10003: "DW",
@@ -135,7 +139,19 @@ class ArtifactParser:
         15024: "EO",
         15025: "DM",
         15026: "GD",
+        15027: "DPC",
+        15028: "FPL",
+        15029: "ND",
+        15030: "VG",
+        15031: "MH",
+        15032: "GT",
+        15033: "SDP",
+        15034: "NWEW",
+        15035: "FHW",
+        15036: "UR",
     }
+
+    assert len(_SET_NAME_MAPPING) == len(set(_SET_NAME_MAPPING.values()))
 
     _MAIN_STAT_MAPPING = {
         "FIGHT_PROP_CRITICAL": "CR_PCT",
@@ -182,11 +198,17 @@ class ArtifactParser:
             for e in _read_raw_excel_data("ReliquaryAffixExcelConfigData.json")
         }
 
-    def parse_artifact(self, item_id: int, r: Reliquary) -> artifact.Artifact:
+    def parse_artifact(self, item_id: int, r: Reliquary) -> artifact.Artifact | None:
         item_info = self._item_info_map[item_id]
 
         numeric_slot = self._NUMERIC_SLOT_MAPPING[item_info["equipType"]]
-        set_name = self._SET_NAME_MAPPING[item_info["setId"]]
+
+        try:
+            set_name = self._SET_NAME_MAPPING[item_info["setId"]]
+        except KeyError:
+            logger.warning("Unknown artifact set ID %d", item_info["setId"])
+            return None
+
         main_prop_type = self._main_stat_info_map[r.main_prop_id]["propType"]
 
         sub_stats: DefaultDict[str, float] = collections.defaultdict(float)

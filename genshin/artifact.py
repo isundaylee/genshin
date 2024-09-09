@@ -49,6 +49,16 @@ class ArtifactSet(enum.Enum):
     EO = "EchoesOfAnOffering"
     DM = "DeepwoodMemories"
     GD = "GildedDreams"
+    DPC = "desertpavilionchronicle"
+    FPL = "flowerofparadiselost"
+    ND = "nymphsdream"
+    VG = "vourukashasglow"
+    MH = "marechausseehunter"
+    GT = "goldentroupe"
+    SDP = "songofdayspast"
+    NWEW = "nighttimewhispersintheechoingwoods"
+    FHW = "fragmentofharmonicwhimsy"
+    UR = "unfinishedreverie"
 
 
 class ArtifactSlot(enum.IntEnum):
