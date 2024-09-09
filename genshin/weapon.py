@@ -9,6 +9,12 @@ _LEVEL_CAPS: List[int] = [20, 40, 50, 60, 70, 80, 90]
 
 
 class WeaponName(enum.IntEnum):
+    """Name of the weapon .
+
+    New entries should follow the naming in the GOOD standard format at
+    https://frzyc.github.io/genshin-optimizer/#/doc/WeaponKey.
+    """
+
     DullBlade = enum.auto()  # ID 11101
     SilverSword = enum.auto()  # ID 11201
     CoolSteel = enum.auto()  # ID 11301
@@ -25,11 +31,17 @@ class WeaponName(enum.IntEnum):
     TheBlackSword = enum.auto()  # ID 11409
     AmenomaKageuchi = enum.auto()  # ID 11414
     CinnabarSpindle = enum.auto()  # ID 11415
-    KagotsurubeIsshin = enum.auto()  # ID 11416
     SapwoodBlade = enum.auto()  # ID 11417
+    XiphosMoonlight = enum.auto()
+    ToukabouShigure = enum.auto()
+    WolfFang = enum.auto()
+    TheDockhandsAssistant = enum.auto()
+    KagotsurubeIsshin = enum.auto()
     AquilaFavonia = enum.auto()  # ID 11501
     FreedomSworn = enum.auto()  # ID 11503
     MistsplitterReforged = enum.auto()  # ID 11509
+    KeyOfKhajNisut = enum.auto()
+    SplendorOfTranquilWaters = enum.auto()
     WasterGreatsword = enum.auto()  # ID 12101
     OldMercsPal = enum.auto()  # ID 12201
     FerrousShadow = enum.auto()  # ID 12301
@@ -43,9 +55,13 @@ class WeaponName(enum.IntEnum):
     Rainslasher = enum.auto()  # ID 12405
     PrototypeArchaic = enum.auto()  # ID 12406
     Whiteblind = enum.auto()  # ID 12407
-    SerpentSpine = enum.auto()  # ID 12409
+    LithicBlade = enum.auto()
+    SnowTombedStarsilver = enum.auto()
     LuxuriousSealord = enum.auto()  # ID 12412
     KatsuragikiriNagamasa = enum.auto()  # ID 12414
+    MailedFlower = enum.auto()
+    UltimateOverlordsMegaMagicSword = enum.auto()
+    EarthShaker = enum.auto()
     BeginnersProtector = enum.auto()  # ID 13101
     IronPoint = enum.auto()  # ID 13201
     WhiteTassel = enum.auto()  # ID 13301
@@ -60,7 +76,10 @@ class WeaponName(enum.IntEnum):
     TheCatch = enum.auto()  # ID 13415
     WavebreakersFin = enum.auto()  # ID 13416
     MissiveWindspear = enum.auto()  # ID 13419
+    DialoguesOfTheDesertSages = enum.auto()
+    FootprintOfTheRainbow = enum.auto()
     StaffOfHoma = enum.auto()  # ID 13501
+    SerpentSpine = enum.auto()
     PrimordialJadeWingedSpear = enum.auto()  # ID 13505
     ApprenticesNotes = enum.auto()  # ID 14101
     PocketGrimoire = enum.auto()  # ID 14201
@@ -72,10 +91,17 @@ class WeaponName(enum.IntEnum):
     FavoniusCodex = enum.auto()  # ID 14401
     TheWidsith = enum.auto()  # ID 14402
     SacrificialFragments = enum.auto()  # ID 14403
+    SolarPearl = enum.auto()
     EyeOfPerception = enum.auto()  # ID 14409
+    WineAndSong = enum.auto()
     DodocoTales = enum.auto()  # ID 14413
     OathswornEye = enum.auto()  # ID 14415
+    WanderingEvenstar = enum.auto()
+    SacrificialJade = enum.auto()
+    BalladOfTheBoundlessBlue = enum.auto()
+    RingOfYaxche = enum.auto()
     SkywardAtlas = enum.auto()  # ID 14501
+    TomeOfTheEternalFlow = enum.auto()
     LostPrayerToTheSacredWinds = enum.auto()  # ID 14502
     MemoryOfDust = enum.auto()  # ID 14504
     KagurasVerity = enum.auto()  # ID 14509
@@ -92,9 +118,16 @@ class WeaponName(enum.IntEnum):
     Rust = enum.auto()  # ID 15405
     TheViridescentHunt = enum.auto()  # ID 15409
     FadingTwilight = enum.auto()  # ID 15411
+    MitternachtsWaltz = enum.auto()
     Hamayumi = enum.auto()  # ID 15414
     MouunsMoon = enum.auto()  # ID 15416
+    IbisPiercer = enum.auto()
+    Cloudforged = enum.auto()
+    SkywardHarp = enum.auto()
     ElegyForTheEnd = enum.auto()  # ID 15503
+    PolarStar = enum.auto()
+    ThunderingPulse = enum.auto()
+    SilvershowerHeartstrings = enum.auto()
 
 
 _BASE_STATS: Dict[Tuple[WeaponName, int, int], Tuple[int]] = {
