@@ -1,6 +1,6 @@
 click
 attrs
 dpkt
-protobuf
+protobuf==5.27.3
 nanobind
 pytest
