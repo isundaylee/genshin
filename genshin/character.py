@@ -11,6 +11,11 @@ _LEVEL_CAPS: List[int] = [20, 40, 50, 60, 70, 80, 90]
 
 
 class CharacterName(enum.IntEnum):
+    """Character name following the GOOD format.
+
+    See https://frzyc.github.io/genshin-optimizer/#/doc/CharacterKey
+    """
+
     KamisatoAyaka = enum.auto()
     Jean = enum.auto()
     Traveler = enum.auto()
@@ -57,13 +62,43 @@ class CharacterName(enum.IntEnum):
     YaeMiko = enum.auto()
     ShikanoinHeizo = enum.auto()
     Yelan = enum.auto()
+    Kirara = enum.auto()
     Aloy = enum.auto()
     Shenhe = enum.auto()
     YunJin = enum.auto()
     KukiShinobu = enum.auto()
     KamisatoAyato = enum.auto()
     Collei = enum.auto()
+    Dori = enum.auto()
+    Tighnari = enum.auto()
+    Nilou = enum.auto()
+    Cyno = enum.auto()
     Candace = enum.auto()
+    Nahida = enum.auto()
+    Layla = enum.auto()
+    Wanderer = enum.auto()
+    Faruzan = enum.auto()
+    Yaoyao = enum.auto()
+    Alhaitham = enum.auto()
+    Dehya = enum.auto()
+    Mika = enum.auto()
+    Kaveh = enum.auto()
+    Baizhu = enum.auto()
+    Lynette = enum.auto()
+    Lyney = enum.auto()
+    Freminet = enum.auto()
+    Wriothesley = enum.auto()
+    Neuvillette = enum.auto()
+    Charlotte = enum.auto()
+    Furina = enum.auto()
+    Chevreuse = enum.auto()
+    Navia = enum.auto()
+    Gaming = enum.auto()
+    Xianyun = enum.auto()
+    Chiori = enum.auto()
+    Arlecchino = enum.auto()
+    Clorinde = enum.auto()
+    Emilie = enum.auto()
 
 
 _BASE_STATS: Dict[Tuple[CharacterName, int, int], Tuple[int, int, int]] = {
