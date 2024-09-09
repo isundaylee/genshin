@@ -488,6 +488,12 @@ class CharacterParser:
             logger.warning("Unknown character with ID %d", a.avatar_id)
             return None
 
+        if a.trial_avatar_info.trial_equip_list:
+            logger.warning(
+                "Skipping character %s with non-empty trial_equip_list", name.name
+            )
+            return None
+
         skill_depot_info = self._skill_depot_info_map[a.skill_depot_id]
 
         talent_level_a = a.skill_level_map[skill_depot_info["skills"][0]]
@@ -506,25 +512,18 @@ class CharacterParser:
         for equipment_guid in a.equip_guid_list:
             if equipment_guid in self._weapons:
                 assert equipped_weapon is None
-
-                try:
-                    equipped_weapon = self._weapons[equipment_guid]
-                except KeyError:
-                    logger.warning(
-                        "Character %s has unknown weapon, skipping", name.name
-                    )
-                    continue
-            else:
-                try:
-                    af = self._artifacts[equipment_guid]
-                except KeyError:
-                    logger.warning(
-                        "Character %s has unknown artifact, skipping", name.name
-                    )
-                    continue
-
+                equipped_weapon = self._weapons[equipment_guid]
+            elif equipment_guid in self._artifacts:
+                af = self._artifacts[equipment_guid]
                 assert equipped_artifacts[af.artifact_slot.value - 1] is None
                 equipped_artifacts[af.artifact_slot.value - 1] = af
+            else:
+                logger.warning(
+                    "Character %s has unknown artifact/weapon %d, skipping",
+                    name.name,
+                    equipment_guid,
+                )
+                continue
 
         if any(eaf is None for eaf in equipped_artifacts) or (equipped_weapon is None):
             logger.warning(
