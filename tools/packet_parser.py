@@ -35,7 +35,7 @@ def main(path: str, my_ip: str, initial_pcap: Optional[str]) -> None:
                 p.timestamp.strftime("%Y%m%d %H:%M:%S.%f"),
                 "-->" if p.direction == packet.Direction.SENT else "<--",
                 len(p.content),
-                p.opcode.name,
+                p.opcode_name_allow_missing,
                 session.format_bytes(p.content),
                 p.string_summary(),
             )
@@ -49,7 +49,7 @@ def main(path: str, my_ip: str, initial_pcap: Optional[str]) -> None:
                 "{} |     {:5d} | {:50s} | {:75s} | {}".format(
                     sp.timestamp.strftime("%Y%m%d %H:%M:%S.%f"),
                     len(sp.data),
-                    sp.opcode.name,
+                    sp.opcode_name_allow_missing,
                     session.format_bytes(sp.data),
                     sp.string_summary(),
                 )

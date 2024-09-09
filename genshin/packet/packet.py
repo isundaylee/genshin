@@ -29,17 +29,28 @@ class Packet:
 
 class BaseDecryptedPacket(metaclass=abc.ABCMeta):
     @property
-    @abc.abstractproperty
-    def opcode(self) -> opcodes.Opcode:
+    @abc.abstractmethod
+    def raw_opcode(self) -> int:
         pass
 
     @property
-    @abc.abstractproperty
+    def opcode(self) -> opcodes.Opcode:
+        return opcodes.Opcode(self.raw_opcode)
+
+    @property
+    def opcode_name_allow_missing(self) -> str:
+        try:
+            return opcodes.Opcode(self.raw_opcode).name
+        except ValueError:
+            return str(self.raw_opcode)
+
+    @property
+    @abc.abstractmethod
     def data(self) -> bytes:
         pass
 
     def string_summary(self) -> str:
-        if self.opcode == opcodes.Opcode.SceneEntityDisappearNotify:
+        if self.raw_opcode == opcodes.Opcode.SceneEntityDisappearNotify.value:
             from genshin.packet.proto.SceneEntityDisappearNotify_pb2 import (
                 SceneEntityDisappearNotify,
             )
@@ -47,7 +58,7 @@ class BaseDecryptedPacket(metaclass=abc.ABCMeta):
             pb = SceneEntityDisappearNotify()
             pb.ParseFromString(self.data)
             return f"disappear_type {pb.disappear_type} param {pb.param}"
-        elif self.opcode == opcodes.Opcode.SceneEntityAppearNotify:
+        elif self.raw_opcode == opcodes.Opcode.SceneEntityAppearNotify.value:
             from genshin.packet.proto.SceneEntityAppearNotify_pb2 import (
                 SceneEntityAppearNotify,
             )
@@ -80,12 +91,8 @@ class DecryptedPacket(BaseDecryptedPacket):
         return op
 
     @property
-    def opcode(self) -> opcodes.Opcode:
-        return opcodes.Opcode(self.raw_opcode)
-
-    @property
     def is_compound_packet(self) -> bool:
-        return self.opcode in {opcodes.Opcode.UnionCmdNotify}
+        return self.raw_opcode in {opcodes.Opcode.UnionCmdNotify.value}
 
     @property
     def hdr_len(self) -> bytes:
@@ -107,7 +114,7 @@ class DecryptedPacket(BaseDecryptedPacket):
     def get_sub_packets(self) -> Iterator[DecryptedPacket]:
         assert self.is_compound_packet
 
-        if self.opcode == opcodes.Opcode.UnionCmdNotify:
+        if self.raw_opcode == opcodes.Opcode.UnionCmdNotify.value:
             from genshin.packet.proto.UnionCmdNotify_pb2 import UnionCmdNotify
 
             pb = UnionCmdNotify()
@@ -117,7 +124,7 @@ class DecryptedPacket(BaseDecryptedPacket):
                 yield DecryptedSubPacket(
                     timestamp=self.timestamp,
                     direction=self.direction,
-                    opcode=opcodes.Opcode(cmd.message_id),
+                    raw_opcode=cmd.message_id,
                     data=cmd.body,
                 )
         else:
@@ -129,17 +136,17 @@ class DecryptedSubPacket(BaseDecryptedPacket):
         self,
         timestamp: datetime.datetime,
         direction: Direction,
-        opcode: opcodes.Opcode,
+        raw_opcode: int,
         data: bytes,
     ) -> None:
         self.timestamp = timestamp
         self.direction = direction
-        self._opcode = opcode
+        self._raw_opcode = raw_opcode
         self._data = data
 
     @property
-    def opcode(self) -> opcodes.Opcode:
-        return self._opcode
+    def raw_opcode(self) -> int:
+        return self._raw_opcode
 
     @property
     def data(self) -> bytes:
