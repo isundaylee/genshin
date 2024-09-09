@@ -52,14 +52,22 @@ class AccountData:
 
             if equip.WhichOneof("detail") == "reliquary":
                 assert item.guid not in self.artifacts
-                self.artifacts[item.guid] = artifact_parser.parse_artifact(
-                    item.item_id, equip.reliquary
-                )
+
+                try:
+                    self.artifacts[item.guid] = artifact_parser.parse_artifact(
+                        item.item_id, equip.reliquary
+                    )
+                except KeyError:
+                    logger.warning("Skipping unknown artifact with ID %d", item.item_id)
             elif equip.WhichOneof("detail") == "weapon":
                 assert item.guid not in self.weapons
-                self.weapons[item.guid] = weapon_parser.parse_weapon(
-                    item.item_id, equip.weapon
-                )
+
+                try:
+                    self.weapons[item.guid] = weapon_parser.parse_weapon(
+                        item.item_id, equip.weapon
+                    )
+                except KeyError:
+                    logger.warning("Skipping unknown weapon with ID %d", item.item_id)
 
     def _parse_characters(self, adn: AvatarDataNotify) -> None:
         character_parser = CharacterParser(self.artifacts, self.weapons)
@@ -71,7 +79,11 @@ class AccountData:
 
 
 def _read_raw_excel_data(name: str) -> Any:
-    with open(os.path.join(os.path.dirname(__file__), "../../resources", name)) as f:
+    with open(
+        os.path.join(
+            os.path.dirname(__file__), "../../resources/excel_bin_output", name
+        )
+    ) as f:
         return json.load(f)
 
 
@@ -380,6 +392,12 @@ class CharacterParser:
         }
 
     def parse_character(self, a: AvatarInfo) -> Optional[character.Character]:
+        try:
+            name = self._CHARACTER_NAME_MAPPING[a.avatar_id]
+        except KeyError:
+            logger.warning("Unknown character with ID %d", a.avatar_id)
+            return None
+
         skill_depot_info = self._skill_depot_info_map[a.skill_depot_id]
 
         talent_level_a = a.skill_level_map[skill_depot_info["skills"][0]]
@@ -398,9 +416,19 @@ class CharacterParser:
         for equipment_guid in a.equip_guid_list:
             if equipment_guid in self._weapons:
                 assert equipped_weapon is None
-                equipped_weapon = self._weapons[equipment_guid]
+
+                try:
+                    equipped_weapon = self._weapons[equipment_guid]
+                except KeyError:
+                    logger.warning("Character %s has unknown weapon, skipping", name)
+                    continue
             else:
-                af = self._artifacts[equipment_guid]
+                try:
+                    af = self._artifacts[equipment_guid]
+                except KeyError:
+                    logger.warning("Character %s has unknown artifact, skipping", name)
+                    continue
+
                 assert equipped_artifacts[af.artifact_slot.value - 1] is None
                 equipped_artifacts[af.artifact_slot.value - 1] = af
 
@@ -412,7 +440,7 @@ class CharacterParser:
             return None
 
         return character.Character(
-            name=self._CHARACTER_NAME_MAPPING[a.avatar_id],
+            name=name,
             ascension=a.prop_map[1002].val,
             level=a.prop_map[4001].val,
             constellations=len(a.talent_id_list),
