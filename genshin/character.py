@@ -107,7 +107,9 @@ class CharacterName(enum.IntEnum):
 
 _BASE_STATS: Dict[Tuple[CharacterName, int, int], Tuple[int, int, int]] = {
     (CharacterName.Yanfei, 6, 90): (9352, 240, 587),
+    (CharacterName.Furina, 6, 90): (15307, 244, 696),
 }
+"""Maps (character_name, ascension, level) to (base_hp, base_atk, base_def)."""
 
 
 @attr.define

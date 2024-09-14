@@ -21,7 +21,7 @@ def do_print_json() -> None:
     print(json.dumps(artifact.to_dict(artifacts)))
 
 
-USEFUL_SUBSTATS: Dict[
+_USEFUL_SUBSTATS: Dict[
     character.CharacterName, Dict[artifact.ArtifactStatType, float]
 ] = {
     character.CharacterName.Yanfei: {
@@ -29,7 +29,12 @@ USEFUL_SUBSTATS: Dict[
         artifact.ArtifactStatType.CD_PCT: 1.0,
         artifact.ArtifactStatType.EM: 1.0,
         artifact.ArtifactStatType.ATK_PCT: 1.0,
-    }
+    },
+    character.CharacterName.Furina: {
+        artifact.ArtifactStatType.CR_PCT: 1.0,
+        artifact.ArtifactStatType.CD_PCT: 1.0,
+        artifact.ArtifactStatType.HP_PCT: 1.0,
+    },
 }
 
 
@@ -57,7 +62,7 @@ def do_show_scores() -> None:
     for c in ac.characters.values():
         row: List[str] = []
 
-        if c.name != character.CharacterName.Yanfei:
+        if c.name not in _USEFUL_SUBSTATS:
             continue
 
         scores: Dict[artifact.ArtifactStatType, float] = artifact.get_artifact_scores(
@@ -67,13 +72,13 @@ def do_show_scores() -> None:
         )
 
         score = 0.0
-        for t, r in USEFUL_SUBSTATS[c.name].items():
+        for t, r in _USEFUL_SUBSTATS[c.name].items():
             if t in scores:
                 score += r * scores[t]
 
         row.append(c.name.name)
         for s in stat_order:
-            if (s in scores) and (s in USEFUL_SUBSTATS[c.name]):
+            if (s in scores) and (s in _USEFUL_SUBSTATS[c.name]):
                 row.append(f"{scores[s]:.2f}")
             else:
                 row.append("")

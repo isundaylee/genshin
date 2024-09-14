@@ -133,7 +133,10 @@ class WeaponName(enum.IntEnum):
 
 _BASE_STATS: Dict[Tuple[WeaponName, int, int], Tuple[int]] = {
     (WeaponName.SkywardAtlas, 6, 90): (674,),
+    (WeaponName.TomeOfTheEternalFlow, 6, 90): (542,),
+    (WeaponName.SplendorOfTranquilWaters, 6, 90): (542,),
 }
+"""Maps (weapon_name, ascension, level) to (base_atk,)."""
 
 
 @attr.define
