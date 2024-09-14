@@ -488,9 +488,11 @@ class CharacterParser:
             logger.warning("Unknown character with ID %d", a.avatar_id)
             return None
 
-        if a.trial_avatar_info.trial_equip_list:
+        if a.avatar_type != 1:
             logger.warning(
-                "Skipping character %s with non-empty trial_equip_list", name.name
+                "Skipping character %s with ignored avatar_type %d",
+                name.name,
+                a.avatar_type,
             )
             return None
 
