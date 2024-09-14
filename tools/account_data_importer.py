@@ -16,15 +16,14 @@ from genshin.packet.proto.StoreType_pb2 import StoreType
 
 @click.command()
 @click.argument("path")
-@click.argument("my_ip")
 @click.option("--verbose", is_flag=True)
-def main(path: str, my_ip: str, *, verbose: bool) -> None:
+def main(path: str, *, verbose: bool) -> None:
     logging.basicConfig(
         format="%(asctime)s %(levelname)-10s %(name)-60s %(message)s",
         level=logging.DEBUG if verbose else logging.INFO,
     )
 
-    s = session.Session(path, my_ip)
+    s = session.Session(path)
     account_data = official.AccountData(s)
 
     lines = [a.to_string() for a in account_data.artifacts.values() if a.level == 20]

@@ -17,10 +17,9 @@ def main() -> None:
 
 @main.command()
 @click.argument("path")
-@click.argument("my_ip")
 @click.argument("output", type=pathlib.Path)
-def dump_decrypted(path: str, my_ip: str, output: pathlib.Path) -> None:
-    for i, p in enumerate(session.Session(path, my_ip).get_decrypted_packets()):
+def dump_decrypted(path: str, output: pathlib.Path) -> None:
+    for i, p in enumerate(session.Session(path).get_decrypted_packets()):
         try:
             name = p.opcode.name
         except ValueError:
@@ -32,9 +31,8 @@ def dump_decrypted(path: str, my_ip: str, output: pathlib.Path) -> None:
 
 @main.command()
 @click.argument("path")
-@click.argument("my_ip")
-def print_decrypted(path: str, my_ip: str) -> None:
-    for p in session.Session(path, my_ip).get_decrypted_packets():
+def print_decrypted(path: str) -> None:
+    for p in session.Session(path).get_decrypted_packets():
         print(
             "{:10s} | len {:5d} | {}".format(
                 p.direction.name,

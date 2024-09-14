@@ -6,7 +6,7 @@ import os
 import socket
 import struct
 import logging
-from typing import Deque, Dict, Iterator, List, Optional, Tuple
+from typing import ClassVar, Deque, Dict, Iterator, List, Optional, Tuple
 
 import dpkt
 
@@ -156,9 +156,9 @@ class KCPSession:
 
 
 class Session:
-    def __init__(
-        self, path: str, my_ip: str, *, copy_key_from: Optional[Session] = None
-    ) -> None:
+    _UDP_PORT: ClassVar[int] = 22101
+
+    def __init__(self, path: str, *, copy_key_from: Optional[Session] = None) -> None:
         self.packets: List[packet.Packet] = []
         self.udp_logger = logging.getLogger("udp-session")
         self.kcp_out_logger = logging.getLogger("kcp-out")
@@ -168,22 +168,24 @@ class Session:
 
         with open(path, "rb") as f:
             for ts, pkt in dpkt.pcap.Reader(f):
-                eth = dpkt.ethernet.Ethernet(pkt)
-                assert eth.type == dpkt.ethernet.ETH_TYPE_IP
-                ip = eth.data
-                assert ip.p == dpkt.ip.IP_PROTO_UDP
-                udp = ip.data
+                packet_eth = dpkt.ethernet.Ethernet(pkt)
+                if packet_eth.type != dpkt.ethernet.ETH_TYPE_IP:
+                    continue
 
+                packet_ip = packet_eth.data
+                if packet_ip.p != dpkt.ip.IP_PROTO_UDP:
+                    continue
+
+                packet_udp = packet_ip.data
                 timestamp = datetime.datetime.fromtimestamp(ts)
-
                 # TODO this is not robust
-                is_kcp_packet = len(udp.data) > 20
+                is_kcp_packet = len(packet_udp.data) > 20
 
-                if socket.inet_ntoa(ip.src) == my_ip:
-                    self.udp_logger.debug("send %s", format_bytes(udp.data))
+                if packet_udp.dport == self._UDP_PORT:
+                    self.udp_logger.debug("send %s", format_bytes(packet_udp.data))
 
                     if is_kcp_packet:
-                        self.send_kcp.add_data(timestamp, udp.data)
+                        self.send_kcp.add_data(timestamp, packet_udp.data)
 
                     while True:
                         kcp_out_packet = self.send_kcp.receive()
@@ -201,11 +203,11 @@ class Session:
                                 kcp_out_packet,
                             )
                         )
-                elif socket.inet_ntoa(ip.dst) == my_ip:
-                    self.udp_logger.debug("recv %s", format_bytes(udp.data))
+                elif packet_udp.sport == self._UDP_PORT:
+                    self.udp_logger.debug("recv %s", format_bytes(packet_udp.data))
 
                     if is_kcp_packet:
-                        self.receive_kcp.add_data(timestamp, udp.data)
+                        self.receive_kcp.add_data(timestamp, packet_udp.data)
 
                     while True:
                         kcp_out_packet = self.receive_kcp.receive()
@@ -223,6 +225,8 @@ class Session:
                                 kcp_out_packet,
                             )
                         )
+                    else:
+                        continue
 
         if copy_key_from is None:
             self.raw_dispatch_head, self.xor_key = self._infer_xor_key()
