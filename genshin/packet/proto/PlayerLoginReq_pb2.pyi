@@ -1,0 +1,103 @@
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from typing import ClassVar as _ClassVar, Optional as _Optional
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class PlayerLoginReq(_message.Message):
+    __slots__ = ("platform", "FBKHEDNNFIF", "JIPHKNNHBIE", "CBIEHLMFBHI", "IMACIIGIOGC", "JJIOHIJNGFP", "token", "extra_bin_data", "LPFPAJBHJMH", "OFMIHDNGFNM", "online_id", "KEODMFOKNGH", "MEEGOICDEFG", "MDIKIHJHHJJ", "HCJGLLHFCMA", "LLIMBPCEABN", "country_code", "PFDFHPKIHMO", "IMCMLAGLODL", "NNBGJPGDGCP", "CDDBBPKKOPM", "psn_id", "birthday", "PECPGFPBJEB", "account_uid", "account_type", "FNPPPMBIBEM", "PLNNJPFPPAM", "target_home_owner_uid", "is_guest", "is_editor", "JAGELBDJFJH", "login_rand", "channel_id", "tag", "KPCGBPCHBMJ", "client_data_version", "NCNKMDBAFEH", "EPAGBFLKJBN", "gm_uid", "BFPJPDCLFNM", "IKKKLHICPMF", "MCKEONLBAOA", "platform_type", "KEKHAKAPMIN", "target_uid", "DKGAONKKOHA")
+    PLATFORM_FIELD_NUMBER: _ClassVar[int]
+    FBKHEDNNFIF_FIELD_NUMBER: _ClassVar[int]
+    JIPHKNNHBIE_FIELD_NUMBER: _ClassVar[int]
+    CBIEHLMFBHI_FIELD_NUMBER: _ClassVar[int]
+    IMACIIGIOGC_FIELD_NUMBER: _ClassVar[int]
+    JJIOHIJNGFP_FIELD_NUMBER: _ClassVar[int]
+    TOKEN_FIELD_NUMBER: _ClassVar[int]
+    EXTRA_BIN_DATA_FIELD_NUMBER: _ClassVar[int]
+    LPFPAJBHJMH_FIELD_NUMBER: _ClassVar[int]
+    OFMIHDNGFNM_FIELD_NUMBER: _ClassVar[int]
+    ONLINE_ID_FIELD_NUMBER: _ClassVar[int]
+    KEODMFOKNGH_FIELD_NUMBER: _ClassVar[int]
+    MEEGOICDEFG_FIELD_NUMBER: _ClassVar[int]
+    MDIKIHJHHJJ_FIELD_NUMBER: _ClassVar[int]
+    HCJGLLHFCMA_FIELD_NUMBER: _ClassVar[int]
+    LLIMBPCEABN_FIELD_NUMBER: _ClassVar[int]
+    COUNTRY_CODE_FIELD_NUMBER: _ClassVar[int]
+    PFDFHPKIHMO_FIELD_NUMBER: _ClassVar[int]
+    IMCMLAGLODL_FIELD_NUMBER: _ClassVar[int]
+    NNBGJPGDGCP_FIELD_NUMBER: _ClassVar[int]
+    CDDBBPKKOPM_FIELD_NUMBER: _ClassVar[int]
+    PSN_ID_FIELD_NUMBER: _ClassVar[int]
+    BIRTHDAY_FIELD_NUMBER: _ClassVar[int]
+    PECPGFPBJEB_FIELD_NUMBER: _ClassVar[int]
+    ACCOUNT_UID_FIELD_NUMBER: _ClassVar[int]
+    ACCOUNT_TYPE_FIELD_NUMBER: _ClassVar[int]
+    FNPPPMBIBEM_FIELD_NUMBER: _ClassVar[int]
+    PLNNJPFPPAM_FIELD_NUMBER: _ClassVar[int]
+    TARGET_HOME_OWNER_UID_FIELD_NUMBER: _ClassVar[int]
+    IS_GUEST_FIELD_NUMBER: _ClassVar[int]
+    IS_EDITOR_FIELD_NUMBER: _ClassVar[int]
+    JAGELBDJFJH_FIELD_NUMBER: _ClassVar[int]
+    LOGIN_RAND_FIELD_NUMBER: _ClassVar[int]
+    CHANNEL_ID_FIELD_NUMBER: _ClassVar[int]
+    TAG_FIELD_NUMBER: _ClassVar[int]
+    KPCGBPCHBMJ_FIELD_NUMBER: _ClassVar[int]
+    CLIENT_DATA_VERSION_FIELD_NUMBER: _ClassVar[int]
+    NCNKMDBAFEH_FIELD_NUMBER: _ClassVar[int]
+    EPAGBFLKJBN_FIELD_NUMBER: _ClassVar[int]
+    GM_UID_FIELD_NUMBER: _ClassVar[int]
+    BFPJPDCLFNM_FIELD_NUMBER: _ClassVar[int]
+    IKKKLHICPMF_FIELD_NUMBER: _ClassVar[int]
+    MCKEONLBAOA_FIELD_NUMBER: _ClassVar[int]
+    PLATFORM_TYPE_FIELD_NUMBER: _ClassVar[int]
+    KEKHAKAPMIN_FIELD_NUMBER: _ClassVar[int]
+    TARGET_UID_FIELD_NUMBER: _ClassVar[int]
+    DKGAONKKOHA_FIELD_NUMBER: _ClassVar[int]
+    platform: str
+    FBKHEDNNFIF: str
+    JIPHKNNHBIE: str
+    CBIEHLMFBHI: str
+    IMACIIGIOGC: str
+    JJIOHIJNGFP: str
+    token: str
+    extra_bin_data: bytes
+    LPFPAJBHJMH: str
+    OFMIHDNGFNM: bytes
+    online_id: str
+    KEODMFOKNGH: str
+    MEEGOICDEFG: str
+    MDIKIHJHHJJ: str
+    HCJGLLHFCMA: str
+    LLIMBPCEABN: str
+    country_code: str
+    PFDFHPKIHMO: bytes
+    IMCMLAGLODL: str
+    NNBGJPGDGCP: str
+    CDDBBPKKOPM: str
+    psn_id: str
+    birthday: str
+    PECPGFPBJEB: str
+    account_uid: str
+    account_type: int
+    FNPPPMBIBEM: int
+    PLNNJPFPPAM: int
+    target_home_owner_uid: int
+    is_guest: bool
+    is_editor: bool
+    JAGELBDJFJH: bool
+    login_rand: int
+    channel_id: int
+    tag: int
+    KPCGBPCHBMJ: int
+    client_data_version: int
+    NCNKMDBAFEH: int
+    EPAGBFLKJBN: int
+    gm_uid: int
+    BFPJPDCLFNM: int
+    IKKKLHICPMF: int
+    MCKEONLBAOA: int
+    platform_type: int
+    KEKHAKAPMIN: int
+    target_uid: int
+    DKGAONKKOHA: int
+    def __init__(self, platform: _Optional[str] = ..., FBKHEDNNFIF: _Optional[str] = ..., JIPHKNNHBIE: _Optional[str] = ..., CBIEHLMFBHI: _Optional[str] = ..., IMACIIGIOGC: _Optional[str] = ..., JJIOHIJNGFP: _Optional[str] = ..., token: _Optional[str] = ..., extra_bin_data: _Optional[bytes] = ..., LPFPAJBHJMH: _Optional[str] = ..., OFMIHDNGFNM: _Optional[bytes] = ..., online_id: _Optional[str] = ..., KEODMFOKNGH: _Optional[str] = ..., MEEGOICDEFG: _Optional[str] = ..., MDIKIHJHHJJ: _Optional[str] = ..., HCJGLLHFCMA: _Optional[str] = ..., LLIMBPCEABN: _Optional[str] = ..., country_code: _Optional[str] = ..., PFDFHPKIHMO: _Optional[bytes] = ..., IMCMLAGLODL: _Optional[str] = ..., NNBGJPGDGCP: _Optional[str] = ..., CDDBBPKKOPM: _Optional[str] = ..., psn_id: _Optional[str] = ..., birthday: _Optional[str] = ..., PECPGFPBJEB: _Optional[str] = ..., account_uid: _Optional[str] = ..., account_type: _Optional[int] = ..., FNPPPMBIBEM: _Optional[int] = ..., PLNNJPFPPAM: _Optional[int] = ..., target_home_owner_uid: _Optional[int] = ..., is_guest: bool = ..., is_editor: bool = ..., JAGELBDJFJH: bool = ..., login_rand: _Optional[int] = ..., channel_id: _Optional[int] = ..., tag: _Optional[int] = ..., KPCGBPCHBMJ: _Optional[int] = ..., client_data_version: _Optional[int] = ..., NCNKMDBAFEH: _Optional[int] = ..., EPAGBFLKJBN: _Optional[int] = ..., gm_uid: _Optional[int] = ..., BFPJPDCLFNM: _Optional[int] = ..., IKKKLHICPMF: _Optional[int] = ..., MCKEONLBAOA: _Optional[int] = ..., platform_type: _Optional[int] = ..., KEKHAKAPMIN: _Optional[int] = ..., target_uid: _Optional[int] = ..., DKGAONKKOHA: _Optional[int] = ...) -> None: ...
