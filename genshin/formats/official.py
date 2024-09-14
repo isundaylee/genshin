@@ -333,7 +333,7 @@ class WeaponParser:
         14431: weapon.WeaponName.RingOfYaxche,
         14501: weapon.WeaponName.SkywardAtlas,
         14514: weapon.WeaponName.TomeOfTheEternalFlow,
-        # 14516: weapon.WeaponName.UNKNOWN,
+        14516: weapon.WeaponName.SurfsUp,
         15101: weapon.WeaponName.HuntersBow,
         15201: weapon.WeaponName.SeasonedHuntersBow,
         15301: weapon.WeaponName.RavenBow,
@@ -379,6 +379,7 @@ class WeaponParser:
 
 
 class CharacterParser:
+    # Use https://gi17.hakush.in/character/10000102 for reference
     _CHARACTER_NAME_MAPPING = {
         10000002: character.CharacterName.KamisatoAyaka,
         10000003: character.CharacterName.Jean,
@@ -461,13 +462,13 @@ class CharacterParser:
         10000092: character.CharacterName.Gaming,
         10000093: character.CharacterName.Xianyun,
         10000094: character.CharacterName.Chiori,
-        # 10000095: character.CharacterName.SkywardHarp,
+        10000095: character.CharacterName.Sigewinne,
         10000096: character.CharacterName.Arlecchino,
-        # 10000097: character.CharacterName.UNKNOWN,
+        10000097: character.CharacterName.Sethos,
         10000098: character.CharacterName.Clorinde,
         10000099: character.CharacterName.Emilie,
-        # 10000100: character.CharacterName.UNKNOWN,
-        # 10000102: character.CharacterName.UNKNOWN,
+        10000100: character.CharacterName.Kachina,
+        10000102: character.CharacterName.Mualani,
     }
 
     def __init__(
@@ -527,11 +528,12 @@ class CharacterParser:
                 )
                 continue
 
-        if any(eaf is None for eaf in equipped_artifacts) or (equipped_weapon is None):
-            logger.warning(
-                "Skipping %s due to missing weapon/artifact",
-                self._CHARACTER_NAME_MAPPING[a.avatar_id].name,
-            )
+        if equipped_weapon is None:
+            logger.warning("Skipping %s due to missing weapon", name.name)
+            return None
+
+        if any(eaf is None for eaf in equipped_artifacts):
+            logger.warning("Skipping %s due to missing artifacts", name.name)
             return None
 
         return character.Character(

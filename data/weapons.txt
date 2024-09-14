@@ -303,6 +303,7 @@ solar_pearl=SolarPearl/0/1/1
 splendor_of_tranquil_waters=SplendorOfTranquilWaters/6/90/3
 staff_of_homa=StaffOfHoma/6/90/1
 staff_of_homa_2=StaffOfHoma/6/90/1
+surfs_up=SurfsUp/6/90/1
 the_bell=TheBell/0/1/5
 the_bell_10=TheBell/0/1/1
 the_bell_11=TheBell/0/1/1

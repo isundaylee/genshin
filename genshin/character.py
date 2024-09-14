@@ -96,9 +96,13 @@ class CharacterName(enum.IntEnum):
     Gaming = enum.auto()
     Xianyun = enum.auto()
     Chiori = enum.auto()
+    Sigewinne = enum.auto()
     Arlecchino = enum.auto()
+    Sethos = enum.auto()
     Clorinde = enum.auto()
     Emilie = enum.auto()
+    Kachina = enum.auto()
+    Mualani = enum.auto()
 
 
 _BASE_STATS: Dict[Tuple[CharacterName, int, int], Tuple[int, int, int]] = {

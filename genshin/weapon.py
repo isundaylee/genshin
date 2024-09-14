@@ -128,6 +128,7 @@ class WeaponName(enum.IntEnum):
     PolarStar = enum.auto()
     ThunderingPulse = enum.auto()
     SilvershowerHeartstrings = enum.auto()
+    SurfsUp = enum.auto()
 
 
 _BASE_STATS: Dict[Tuple[WeaponName, int, int], Tuple[int]] = {
