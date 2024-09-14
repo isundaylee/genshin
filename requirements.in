@@ -5,3 +5,5 @@ protobuf==5.27.3
 nanobind
 pytest
 mypy
+tabulate
+types-tabulate
