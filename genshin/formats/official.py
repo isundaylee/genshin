@@ -4,7 +4,7 @@ import json
 import collections
 from typing import Any, DefaultDict, Dict, List, Optional, Tuple
 
-from genshin import artifact, character, weapon
+from genshin import artifact, character, utils, weapon
 from genshin.packet import session, opcodes
 
 from genshin.packet.proto.Reliquary_pb2 import Reliquary
@@ -503,8 +503,8 @@ class CharacterParser:
         talent_level_e = a.skill_level_map[skill_depot_info["skills"][1]]
         talent_level_q = a.skill_level_map[skill_depot_info["energySkill"]]
 
-        equipped_weapon: Optional[weapon.Weapon] = None
-        equipped_artifacts: List[Optional[artifact.Artifact]] = [
+        equipped_weapon: weapon.Weapon | None = None
+        equipped_artifacts: list[artifact.Artifact | None] = [
             None,
             None,
             None,
@@ -536,6 +536,8 @@ class CharacterParser:
             logger.warning("Skipping %s due to missing artifacts", name.name)
             return None
 
+        ea1, ea2, ea3, ea4, ea5 = equipped_artifacts
+
         return character.Character(
             name=name,
             ascension=a.prop_map[1002].val,
@@ -545,5 +547,11 @@ class CharacterParser:
             talent_level_e=talent_level_e,
             talent_level_q=talent_level_q,
             weapon=equipped_weapon,
-            artifacts=tuple(equipped_artifacts),
+            artifacts=(
+                utils.assert_not_none(ea1),
+                utils.assert_not_none(ea2),
+                utils.assert_not_none(ea3),
+                utils.assert_not_none(ea4),
+                utils.assert_not_none(ea5),
+            ),
         )

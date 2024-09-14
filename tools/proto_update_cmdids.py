@@ -14,10 +14,10 @@ def main() -> None:
 
     mapping = dict[str, int]()
 
-    for f in pathlib.Path("resources/proto").iterdir():
-        name = f.with_suffix("").name
+    for child in pathlib.Path("resources/proto").iterdir():
+        name = child.with_suffix("").name
 
-        for l in f.read_text().splitlines():
+        for l in child.read_text().splitlines():
             if "CmdId: " not in l:
                 continue
 

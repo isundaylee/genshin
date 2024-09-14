@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import collections
 import enum
-from typing import DefaultDict, Dict, List
+from typing import DefaultDict, Dict, List, TypeAlias
 
 import attr
 
@@ -141,6 +141,9 @@ class Artifact:
         )
 
 
+ArtifactBuild: TypeAlias = tuple[Artifact, Artifact, Artifact, Artifact, Artifact]
+
+
 def parse_artifact(desc: str) -> Artifact:
     desc_parts = desc.split(maxsplit=2)
 
@@ -154,13 +157,13 @@ def parse_artifact(desc: str) -> Artifact:
     art_type, art_slot, art_level = type_slot.split("@")
 
     def parse_stat(stat_desc: str) -> ArtifactStat:
-        stat_type, stat_value = stat_desc.split("=")
-        stat_value = float(stat_value)
-        if stat_type.endswith("%"):
-            stat_type = f"{stat_type[:-1]}_PCT"
+        stat_type_str, stat_value_str = stat_desc.split("=")
+        stat_value = float(stat_value_str)
+        if stat_type_str.endswith("%"):
+            stat_type_str = f"{stat_type_str[:-1]}_PCT"
             stat_value *= 0.01
         return ArtifactStat(
-            stat_type=ArtifactStatType[stat_type], stat_value=stat_value
+            stat_type=ArtifactStatType[stat_type_str], stat_value=stat_value
         )
 
     return Artifact(
@@ -210,10 +213,10 @@ def to_dict(artifacts: List[Artifact]):
 
 
 def get_artifact_scores(
-    artifacts: List[Artifact], ch: character.Character, *, convert_nopct_stats: bool
+    artifact_build: ArtifactBuild, ch: character.Character, *, convert_nopct_stats: bool
 ) -> Dict[ArtifactStatType, float]:
     results: DefaultDict[ArtifactStatType, float] = collections.defaultdict(lambda: 0.0)
-    for a in artifacts:
+    for a in artifact_build:
         for s in a.sub_stats:
             t, v = s.stat_type, s.stat_value
 

@@ -28,6 +28,8 @@ class Packet:
 
 
 class BaseDecryptedPacket(metaclass=abc.ABCMeta):
+    timestamp: datetime.datetime
+
     @property
     @abc.abstractmethod
     def raw_opcode(self) -> int:
@@ -95,12 +97,12 @@ class DecryptedPacket(BaseDecryptedPacket):
         return self.raw_opcode in {opcodes.Opcode.UnionCmdNotify.value}
 
     @property
-    def hdr_len(self) -> bytes:
+    def hdr_len(self) -> int:
         (hlen,) = struct.unpack(">H", self.content[4:6])
         return hlen
 
     @property
-    def data_len(self) -> bytes:
+    def data_len(self) -> int:
         (dlen,) = struct.unpack(">L", self.content[6:10])
         return dlen
 
@@ -111,7 +113,7 @@ class DecryptedPacket(BaseDecryptedPacket):
         assert len(self.content) == 2 + 2 + 2 + 4 + hlen + dlen + 2
         return self.content[2 + 2 + 2 + 4 + hlen : 2 + 2 + 2 + 4 + hlen + dlen]
 
-    def get_sub_packets(self) -> Iterator[DecryptedPacket]:
+    def get_sub_packets(self) -> Iterator[BaseDecryptedPacket]:
         assert self.is_compound_packet
 
         if self.raw_opcode == opcodes.Opcode.UnionCmdNotify.value:

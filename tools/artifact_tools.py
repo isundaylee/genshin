@@ -16,7 +16,7 @@ def main():
 
 
 @main.command("print-json")
-def do_print_json():
+def do_print_json() -> None:
     artifacts = account.Account.load(pathlib.Path("data")).artifacts
     print(json.dumps(artifact.to_dict(artifacts)))
 
@@ -34,7 +34,7 @@ USEFUL_SUBSTATS: Dict[
 
 
 @main.command("show-scores")
-def do_show_scores():
+def do_show_scores() -> None:
     ac = account.Account.load(pathlib.Path("data"))
     stat_order: List[artifact.ArtifactStatType] = [
         artifact.ArtifactStatType.CR_PCT,

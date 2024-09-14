@@ -204,19 +204,21 @@ def do_run_sim(
         else:
             variants[k] = baseline_overrides + "," + v
 
-    baseline_summary: Optional[gcsim.GcsimSummary] = None
+    baseline_summary: gcsim.GcsimSummary | None = None
 
-    for k, v in variants.items():
-        variant_working_dir = working_dir / k
+    for vk, vv in variants.items():
+        variant_working_dir = working_dir / vk
         variant_working_dir.mkdir(parents=True, exist_ok=True)
-        summary = run_variant(variant_working_dir, v)
+        summary = run_variant(variant_working_dir, vv)
 
-        if k == "baseline":
+        if vk == "baseline":
             baseline_summary = summary
+
+        assert baseline_summary is not None
 
         print(
             "{:15s} | duration {:5.1f}s | avg {:10.0f} ({:5.1f}%) | span {:10.0f} - {:10.0f} std {:10.0f}".format(
-                k,
+                vk,
                 summary.duration,
                 summary.dps_avg,
                 100.0 * (summary.dps_avg / baseline_summary.dps_avg - 1.0),

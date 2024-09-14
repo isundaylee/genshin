@@ -13,7 +13,7 @@ class Account:
     characters: Dict[character.CharacterName, character.Character]
     weapons: Dict[str, weapon.Weapon]
     artifacts: List[artifact.Artifact]
-    artifact_sets: Dict[str, List[artifact.Artifact]]
+    artifact_builds: Dict[str, artifact.ArtifactBuild]
 
     @staticmethod
     def load(path: pathlib.Path) -> Account:
@@ -21,17 +21,19 @@ class Account:
         weapons.update(load_weapon_list(path / "weapons_wishlist.txt"))
         characters = load_character_list(path / "characters.txt", weapons=weapons)
         artifacts = list(load_artifacts(path / "artifacts.txt"))
-        artifact_sets: Dict[str, List[artifact.Artifact]] = {}
+        artifact_builds: Dict[str, artifact.ArtifactBuild] = {}
 
-        for f in os.listdir(path / "artifact_sets"):
-            fn = path / "artifact_sets" / f
-            artifact_sets[f.split(".")[0]] = list(load_artifacts(fn))
+        for f in os.listdir(path / "artifact_builds"):
+            fn = path / "artifact_builds" / f
+            artfiact_list = list(load_artifacts(fn))
+            [a1, a2, a3, a4, a5] = artfiact_list
+            artifact_builds[f.split(".")[0]] = (a1, a2, a3, a4, a5)
 
         return Account(
             characters=characters,
             weapons=weapons,
             artifacts=artifacts,
-            artifact_sets=artifact_sets,
+            artifact_builds=artifact_builds,
         )
 
     def apply_overrides(self, overrides: str) -> None:
@@ -56,7 +58,7 @@ class Account:
             elif key == "cons":
                 ch.constellations = int(v)
             elif key == "artifacts":
-                ch.artifacts = self.artifact_sets[v]
+                ch.artifacts = self.artifact_builds[v]
             else:
                 raise ValueError(f"Invalid key {key}")
 
@@ -100,7 +102,7 @@ def load_character_list(
     pending_profile_line: Optional[str] = None
     pending_artifacts: List[artifact.Artifact] = []
 
-    def build_character() -> None:
+    def build_character() -> character.Character:
         nonlocal pending_profile_line, pending_artifacts
 
         assert pending_profile_line is not None

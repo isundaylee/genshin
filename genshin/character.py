@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from genshin import account, artifact
+from genshin import artifact, weapon as weapon_m
 from typing import Dict, List, Tuple
 import enum
 import collections
@@ -123,7 +123,7 @@ class Character:
     talent_level_e: int
     talent_level_q: int
 
-    weapon: weapon.Weapon
+    weapon: weapon_m.Weapon
     artifacts: Tuple[
         artifact.Artifact,
         artifact.Artifact,
@@ -173,14 +173,14 @@ class Character:
         return _BASE_STATS[(self.name, self.ascension, self.level)][2]
 
     @property
-    def combined_artifact_stats(self) -> Dict[artifact.ArtifactStatType, float]:
-        stats = collections.defaultdict(lambda: 0.0)
+    def combined_artifact_stats(self) -> dict[artifact.ArtifactStatType, float]:
+        stats = collections.defaultdict[artifact.ArtifactStatType, float](lambda: 0.0)
         for a in self.artifacts:
             for s in [a.main_stat] + a.sub_stats:
                 stats[s.stat_type] += s.stat_value
         return stats
 
-    def to_string(self, weapon_map: Dict[str, weapon.Weapon]) -> str:
+    def to_string(self, weapon_map: dict[str, weapon_m.Weapon]) -> str:
         weapon_name = None
         for name, weapon in weapon_map.items():
             if weapon == self.weapon:

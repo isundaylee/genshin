@@ -2,13 +2,11 @@ from __future__ import annotations
 
 import collections
 import datetime
-import os
-import socket
 import struct
 import logging
 from typing import ClassVar, Deque, Dict, Iterator, List, Optional, Tuple
 
-import dpkt
+import dpkt  # type: ignore
 
 from genshin.packet import packet
 from genshin.extensions import genshin_xor_key
@@ -56,7 +54,7 @@ class KCPSession:
         self._pending_packets: Dict[int, Tuple[int, bytes]] = {}
         self._recv_queue: Deque[Tuple[int, bytes]] = collections.deque()
 
-    def add_data(self, timestamp: datetime.datetime, data: bytes) -> Optional[bytes]:
+    def add_data(self, timestamp: datetime.datetime, data: bytes) -> None:
         while data:
             # 4 bytes: 2b ee 00 00
             # n bytes: _add_packet
@@ -234,7 +232,7 @@ class Session:
             self.raw_dispatch_head = copy_key_from.raw_dispatch_head
             self.xor_key = copy_key_from.xor_key
 
-    def _infer_xor_key(self) -> None:
+    def _infer_xor_key(self) -> tuple[bytes, bytes]:
         assert self.packets
 
         # raw_ means what we received
