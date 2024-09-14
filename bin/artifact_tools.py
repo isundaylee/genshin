@@ -56,6 +56,7 @@ def do_show_scores() -> None:
     for s in stat_order:
         header.append(s.name)
     header.append("Score")
+    header.append("CV")
 
     rows: List[List[str]] = [header]
 
@@ -64,6 +65,8 @@ def do_show_scores() -> None:
 
         if c.name not in _USEFUL_SUBSTATS:
             continue
+
+        # Compute artifact score
 
         scores: Dict[artifact.ArtifactStatType, float] = artifact.get_artifact_scores(
             c.artifacts,
@@ -76,6 +79,20 @@ def do_show_scores() -> None:
             if t in scores:
                 score += r * scores[t]
 
+        # Compute CV (crit-value)
+
+        cv = sum(
+            ss.stat_value
+            * {
+                artifact.ArtifactStatType.CR_PCT: 200.0,
+                artifact.ArtifactStatType.CD_PCT: 100.0,
+            }.get(ss.stat_type, 0.0)
+            for a in c.artifacts
+            for ss in [a.main_stat, *a.sub_stats]
+        )
+
+        # Display table
+
         row.append(c.name.name)
         for s in stat_order:
             if (s in scores) and (s in _USEFUL_SUBSTATS[c.name]):
@@ -83,6 +100,7 @@ def do_show_scores() -> None:
             else:
                 row.append("")
         row.append(f"{score:.2f}")
+        row.append(f"{cv:.2f}")
 
         rows.append(row)
 
