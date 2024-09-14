@@ -14,7 +14,7 @@ from genshin import account, character
 from genshin.formats import gcsim
 
 # Built from commit 177af0ecc1867c79c1b144456437c33d24a9ea16
-GCSIM_PATH = pathlib.Path("bin/gcsim")
+GCSIM_PATH = pathlib.Path("resources/vendored/gcsim")
 
 
 @click.group()
