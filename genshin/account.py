@@ -107,6 +107,9 @@ def load_character_list(
 
         assert pending_profile_line is not None
         name, asc, lv, cons, tla, tle, tlq, wp = pending_profile_line.split("/")
+
+        (a1, a2, a3, a4, a5) = pending_artifacts
+
         return character.Character(
             name=character.CharacterName[name],
             ascension=int(asc),
@@ -116,7 +119,7 @@ def load_character_list(
             talent_level_e=int(tle),
             talent_level_q=int(tlq),
             weapon=weapons[wp],
-            artifacts=pending_artifacts,
+            artifacts=(a1, a2, a3, a4, a5),
         )
 
     with open(path) as f:
