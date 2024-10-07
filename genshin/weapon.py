@@ -99,6 +99,7 @@ class WeaponName(enum.IntEnum):
     WanderingEvenstar = enum.auto()
     SacrificialJade = enum.auto()
     BalladOfTheBoundlessBlue = enum.auto()
+    AshGravenDrinkingHorn = enum.auto()
     RingOfYaxche = enum.auto()
     SkywardAtlas = enum.auto()  # ID 14501
     TomeOfTheEternalFlow = enum.auto()

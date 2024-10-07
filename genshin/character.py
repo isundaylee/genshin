@@ -103,6 +103,7 @@ class CharacterName(enum.IntEnum):
     Emilie = enum.auto()
     Kachina = enum.auto()
     Mualani = enum.auto()
+    Kinich = enum.auto()
 
 
 _BASE_STATS: Dict[Tuple[CharacterName, int, int], Tuple[int, int, int]] = {

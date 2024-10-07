@@ -330,6 +330,7 @@ class WeaponParser:
         14416: weapon.WeaponName.WanderingEvenstar,
         14424: weapon.WeaponName.SacrificialJade,
         14426: weapon.WeaponName.BalladOfTheBoundlessBlue,
+        14427: weapon.WeaponName.AshGravenDrinkingHorn,
         14431: weapon.WeaponName.RingOfYaxche,
         14501: weapon.WeaponName.SkywardAtlas,
         14514: weapon.WeaponName.TomeOfTheEternalFlow,
@@ -468,6 +469,7 @@ class CharacterParser:
         10000098: character.CharacterName.Clorinde,
         10000099: character.CharacterName.Emilie,
         10000100: character.CharacterName.Kachina,
+        10000101: character.CharacterName.Kinich,
         10000102: character.CharacterName.Mualani,
     }
 
