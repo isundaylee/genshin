@@ -8,7 +8,7 @@ from typing import ClassVar, Deque, Dict, Iterator, List, Optional, Tuple
 
 import dpkt  # type: ignore
 
-from genshin.packet import packet
+from genshin.packet import opcodes, packet
 from genshin.extensions import genshin_xor_key
 
 logger = logging.getLogger(__name__)
@@ -246,17 +246,23 @@ class Session:
 
         for p in self.packets:
             if p.content[:2] != raw_dispatch_head and (len(potential_key) == 0):
-                # This is the PlayerLoginReq
-                potential_key += _xor_bytes(b"\x45\x67\x09\x76", p.content[:4])
+                potential_key += _xor_bytes(
+                    b"\x45\x67"
+                    + struct.pack(">H", opcodes.Opcode.PlayerLoginReq.value),
+                    p.content[:4],
+                )
                 continue
 
             if len(potential_key) == 4 and (
-                p.content[:4] == _xor_bytes(b"\x45\x67\x56\xda", potential_key)
+                p.content[:4]
+                == _xor_bytes(
+                    b"\x45\x67"
+                    + struct.pack(">H", opcodes.Opcode.WorldPlayerRTTNotify.value),
+                    potential_key,
+                )
             ):
                 assert len(p.content) == 22
 
-                # This is the WorldPlayerRTTNotify
-                #
                 # NOTE that byte 13 is (part of) the variable RTT - we will try
                 # all 256 values below.
                 potential_key += _xor_bytes(
