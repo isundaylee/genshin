@@ -13,7 +13,7 @@ import subprocess
 from genshin import account, character
 from genshin.formats import gcsim
 
-# Built from commit 177af0ecc1867c79c1b144456437c33d24a9ea16
+# Built from commit 458e2692e57de5d6139802f869e26f878a6dbbef
 GCSIM_PATH = pathlib.Path("resources/vendored/gcsim")
 
 

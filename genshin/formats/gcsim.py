@@ -86,6 +86,8 @@ def weapon_name_to_str(name: weapon.WeaponName) -> str:
         weapon.WeaponName.AmenomaKageuchi: "amenoma",
         weapon.WeaponName.MistsplitterReforged: "mistsplitter",
         weapon.WeaponName.BeginnersProtector: "beginnersprotector",
+        weapon.WeaponName.TomeOfTheEternalFlow: "tomeoftheeternalflow",
+        weapon.WeaponName.XiphosMoonlight: "xiphosmoonlight",
     }[name]
 
 
