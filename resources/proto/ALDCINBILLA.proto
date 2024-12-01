@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "PropValue.proto";
+
+message ALDCINBILLA {
+	map<uint32,PropValue> prop_map = 12;
+	string MPMEJIBKJEO = 11;
+	uint64 KAEAGNPBPJI = 5;
+	uint32 HHOGHBECPNP = 10;
+	bool NCCEBBMHOFF = 3;
+}

@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+message FHMGALGBBPI {
+	uint32 costume_id = 12;
+}

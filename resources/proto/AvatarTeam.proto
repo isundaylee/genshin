@@ -1,9 +1,6 @@
 syntax = "proto3";
 
-option java_package = "emu.grasscutter.net.proto";
-// Version: 5.0
-
 message AvatarTeam {
-    string team_name = 5;
-    repeated uint64 avatar_guid_list = 10;
-}
+	string AMGIHOFOBNF = 2;
+	repeated uint64 OMKGPFGKFNB = 3;
+}

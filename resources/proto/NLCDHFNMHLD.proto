@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+message NLCDHFNMHLD {
+	bool GKEOCOBFIFI = 15;
+	uint64 guid = 3;
+	uint32 OFIPBEGGHCD = 9;
+	uint32 item_id = 6;
+}

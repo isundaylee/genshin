@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+import "AvatarInfo.proto";
+
+message MPNAEDEKKJO {
+	repeated AvatarInfo avatar_list = 12;
+}

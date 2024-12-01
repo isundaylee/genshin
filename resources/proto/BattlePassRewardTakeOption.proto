@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-import "BattlePassRewardTag.proto";
-// Version: 4.7.0
-// Obfs: FIMEPLBAJMH
-message BattlePassRewardTakeOption {
-	uint32 option_idx = 4;
-	BattlePassRewardTag tag = 11;
-}

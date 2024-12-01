@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+import "AvatarFetterInfo.proto";
+
+message CFGMNKIEGMA {
+	map<uint64,AvatarFetterInfo> LJJFHEAJDHA = 6;
+}

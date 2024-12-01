@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0
-// CmdId: 22050
-// Obf: PIIPFBPEENH
-message CombineFormulaDataNotify {
-	uint32 combine_id = 10;
-	bool is_locked = 9;
-}

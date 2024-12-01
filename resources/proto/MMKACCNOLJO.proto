@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message MMKACCNOLJO {
+	repeated uint64 equip_guid_list = 5;
+	uint64 MEJLFKPFPGK = 8;
+}

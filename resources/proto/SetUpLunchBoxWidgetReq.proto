@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-import "LunchBoxData.proto";
-// 4.7.0
-// CmdId: 24935
-// Obf: BPGHJNABMDN
-message SetUpLunchBoxWidgetReq {
-	LunchBoxData lunch_box_data = 10;
-}

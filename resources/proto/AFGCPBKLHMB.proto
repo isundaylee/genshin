@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "PropValue.proto";
+import "KBGFFPMOLNP.proto";
+
+message AFGCPBKLHMB {
+	map<uint32,PropValue> prop_map = 12;
+	KBGFFPMOLNP EFBHADIMHNF = 14;
+}

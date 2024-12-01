@@ -1,7 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// CmdId: 2830 ?
-// Obf: LHBKHEOECHK
-message PlayerLevelRewardUpdateNotify {
-	repeated uint32 level_list = 5;
-}

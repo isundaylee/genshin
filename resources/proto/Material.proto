@@ -1,11 +1,8 @@
 syntax = "proto3";
 
-option java_package = "emu.grasscutter.net.proto";
-// Version: 5.0
-
-import "MaterialDeleteInfo.proto";
+import "JDNCHHPCNMD.proto";
 
 message Material {
-    uint32 count = 1;
-    MaterialDeleteInfo delete_info = 2;
-}
+	JDNCHHPCNMD KPNDJLKLKFO = 2;
+	uint32 OFIPBEGGHCD = 1;
+}

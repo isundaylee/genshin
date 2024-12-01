@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message DPFDNAEFABC {
+	bool is_locked = 11;
+	uint32 NDCDMPINDOI = 5;
+}

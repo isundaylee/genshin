@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0
-// CmdId: 29798
-// FMJKPBJPKLP
-message TakeAchievementRewardReq {
-	repeated uint32 id_list = 5;
-}

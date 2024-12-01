@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message JIHHHAPKBEH {
+	uint32 costume_id = 11;
+	uint32 avatar_id = 5;
+	uint64 guid = 12;
+}

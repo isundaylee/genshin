@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0
-// CmdId: 26305
-// Obf: MOANBPAGANO
-message ChangeMpTeamAvatarReq {
-	uint64 cur_avatar_guid = 2; // OK
-	repeated uint64 avatar_guid_list = 11;
-}

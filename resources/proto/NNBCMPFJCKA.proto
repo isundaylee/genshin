@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "KHBDLLKPLFG.proto";
+
+message NNBCMPFJCKA {
+	KHBDLLKPLFG avatar_type = 4;
+	uint32 BBPGIJFJHEN = 2;
+	uint32 avatar_id = 5;
+	uint32 costume_id = 3;
+}

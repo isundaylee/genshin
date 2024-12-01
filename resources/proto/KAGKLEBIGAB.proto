@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+message KAGKLEBIGAB {
+	uint64 guid = 6;
+}

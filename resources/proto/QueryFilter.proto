@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-// 4.7.0
-message QueryFilter {
-  int32 CBICALMIEBG = 4;
-  int32 PGOOOMDPHAG = 7;
-}

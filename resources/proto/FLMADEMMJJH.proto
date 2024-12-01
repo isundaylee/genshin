@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "Weapon.proto";
+import "Reliquary.proto";
+
+message FLMADEMMJJH {
+	uint32 item_id = 1;
+	Weapon weapon = 3;
+	Reliquary reliquary = 2;
+}

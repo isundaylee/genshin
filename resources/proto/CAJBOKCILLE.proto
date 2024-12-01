@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+import "AvatarRenameInfo.proto";
+
+message CAJBOKCILLE {
+	repeated AvatarRenameInfo avatar_rename_list = 9;
+}

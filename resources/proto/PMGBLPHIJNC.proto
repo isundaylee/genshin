@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "KDEHCGJAGFJ.proto";
+import "StoreType.proto";
+
+message PMGBLPHIJNC {
+	KDEHCGJAGFJ GJEBAJAJPII = 6;
+	uint64 guid = 3;
+	StoreType store_type = 2;
+	uint32 OFIPBEGGHCD = 10;
+}

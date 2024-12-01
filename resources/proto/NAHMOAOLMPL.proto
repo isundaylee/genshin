@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message NAHMOAOLMPL {
+	uint64 avatar_id = 9;
+	bool GDFOEBGCLHC = 13;
+}

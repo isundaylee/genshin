@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0
-// CmdId: 20204
-message GetAuthkeyReq {
-  string auth_appid = 1;
-  uint32 authkey_ver = 6;
-  uint32 sign_type = 7;
-}

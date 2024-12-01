@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "AvatarTeam.proto";
+
+message MNLDLLJPOKG {
+	map<uint32,AvatarTeam> avatar_team_map = 6;
+	repeated uint64 temp_avatar_guid_list = 4;
+	repeated uint32 PBIOIIFOAPA = 14;
+	uint32 cur_avatar_team_id = 12;
+}

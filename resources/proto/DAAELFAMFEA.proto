@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message DAAELFAMFEA {
+	uint32 avatar_id = 15;
+	bool PGPKMOKBFAM = 2;
+}

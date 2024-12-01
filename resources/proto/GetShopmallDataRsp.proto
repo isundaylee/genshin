@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// CmdId: 6919(1lock),28359(2),27873(4),25495(1),24983(4),27354(1),505(1),27308(2),24348(5),1343(7),23548(1),23633(3),28511(3),29372(5),25915(1),8699(7),6693(1),3442(2),1130(3),467(3),24437(1)
-// Version: 4.7.0
-// Obfs: CABMIAPOIPE
-message GetShopmallDataRsp {
-	repeated uint32 shop_type_list = 3;
-	int32 retcode = 4;
-}

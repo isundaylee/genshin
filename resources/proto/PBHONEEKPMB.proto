@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message PBHONEEKPMB {
+	string OMKNBNMEBIK = 8;
+	uint32 costume_id = 9;
+	uint32 avatar_id = 12;
+	bool HDNILDCEFMG = 4;
+	uint32 NCCPPHNNPBF = 5;
+}

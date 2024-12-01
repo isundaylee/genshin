@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message PJJLOIPPLND {
+	uint32 avatar_id = 5;
+	bool PGPKMOKBFAM = 9;
+}

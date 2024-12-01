@@ -1,7 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26120,24013,25241,29109,20663,20514,3607,27447,9316
-// Obf: ?
-message DeleteFriendNotify {
-	uint32 target_uid = 15;
-}

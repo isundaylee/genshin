@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4006
-// Version: 4.7.0
-// Obfs: ?
-message SetBattlePassViewedReq {
-	uint32 schedule_id = 3;
-}

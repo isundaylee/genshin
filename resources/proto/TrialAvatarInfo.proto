@@ -1,13 +1,10 @@
 syntax = "proto3";
 
-option java_package = "emu.grasscutter.net.proto";
-// Version: 5.0
-
+import "BLIFJLGHEEM.proto";
 import "Item.proto";
-import "TrialAvatarGrantRecord.proto";
 
 message TrialAvatarInfo {
-    uint32 trial_avatar_id = 1;
-    repeated Item trial_equip_list = 2;
-    TrialAvatarGrantRecord grant_record = 3;
-}
+	BLIFJLGHEEM LMAIEOEHELF = 3;
+	repeated Item ENFBAMCLFHC = 2;
+	uint32 JFFDOKFMLKJ = 1;
+}

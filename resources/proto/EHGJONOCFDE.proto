@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+import "PropValue.proto";
+
+message EHGJONOCFDE {
+	PropValue DCJIMBILOGP = 2;
+	uint32 IADFGKJCIDE = 1;
+}

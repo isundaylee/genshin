@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.grasscutter.net.proto";
-
-// CmdId: 20724 ?
-// Version: 4.7.0
-// Obfs: KFGIJGBNIGG
-message GetShopmallDataReq {
-}

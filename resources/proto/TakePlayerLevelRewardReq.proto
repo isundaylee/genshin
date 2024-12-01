@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-// 4.7.0
-// cmdid: 20108x or 23531(OK) or 8505
-// HELMFFAEDBN
-message TakePlayerLevelRewardReq {
-  uint32 level = 10;
-}

@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.grasscutter.net.proto";
-// Version: 5.0
-// CmdId: 5317
-
-message HomeSceneJumpReq {
-    bool is_enter_room_scene = 15;
-}

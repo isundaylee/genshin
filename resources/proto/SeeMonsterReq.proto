@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0
-// CmdId: 25646
-// Obf: CAEIBHNMIJG
-message SeeMonsterReq {
-	uint32 monster_id = 13;
-}

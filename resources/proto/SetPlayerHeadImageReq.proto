@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.grasscutter.net.proto";
-// Version: 5.0
-// CmdId: 21526
-
-message SetPlayerHeadImageReq {
-    uint32 head_image_id = 9;
-}

@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0
-// CmdId: 28416 ?
-// Obf: GGGLNIBKMGC
-message DungeonPlayerDieRsp {
-	int32 retcode = 13;
-}

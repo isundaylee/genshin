@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message EKAKAKFBPDN {
+	uint32 HNOGKEHFLHE = 15;
+	uint32 avatar_id = 4;
+}

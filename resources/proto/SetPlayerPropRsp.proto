@@ -1,7 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// CmdId: 4436 or 20930
-// Obf: MMKEOHEEEHC
-message SetPlayerPropRsp {
-	int32 retcode = 8;
-}

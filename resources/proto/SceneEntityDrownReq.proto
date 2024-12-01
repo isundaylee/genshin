@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// CmdId: 23233
-// Version: 4.7.0
-// Obfs: ?
-message SceneEntityDrownReq {
-	uint32 entity_id = 2;
-}

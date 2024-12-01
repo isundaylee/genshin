@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-import "FireworksReformParamType.proto";
-// 4.7.0
-// Obf: HEGNJFOAJKM
-message FireworksReformParam {
-	FireworksReformParamType type = 14;
-	int32 value = 4;
-}

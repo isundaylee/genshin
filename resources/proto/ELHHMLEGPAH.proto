@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "Item.proto";
+import "StoreType.proto";
+
+message ELHHMLEGPAH {
+	repeated Item item_list = 12;
+	StoreType store_type = 10;
+}

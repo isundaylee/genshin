@@ -1,7 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// CmdId: 27570 ?
-// Obf: FMDBCKKMDIM
-message TowerTeamSelectRsp {
-	int32 retcode = 11;
-}

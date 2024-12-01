@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message PAJKNPDPNMO {
+	uint32 avatar_id = 1;
+	uint32 guid = 4;
+	uint32 OKDGOOAKCPA = 15;
+	uint32 HNOGKEHFLHE = 5;
+	uint32 EEFEELICBNF = 10;
+}

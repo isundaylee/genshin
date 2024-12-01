@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0
-// CmdId: 20273
-// Obf: GIMKMOAJCLA
-message DelBackupAvatarTeamReq {
-	uint32 backup_avatar_team_id = 9;
-}

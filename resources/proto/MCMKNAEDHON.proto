@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message MCMKNAEDHON {
+	uint32 costume_id = 13;
+	uint32 avatar_id = 7;
+}

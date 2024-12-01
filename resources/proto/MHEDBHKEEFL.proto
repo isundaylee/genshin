@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "StoreType.proto";
+
+message MHEDBHKEEFL {
+	uint32 weight_limit = 3;
+	uint32 PCMELFFPEGC = 11;
+	uint32 GGIGOODBBKI = 14;
+	uint32 MLMPLAOMLNK = 1;
+	StoreType store_type = 8;
+	uint32 LFEDHEOGICP = 13;
+}

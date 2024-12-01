@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message EADBACLAEFG {
+	uint32 guid = 3;
+	uint32 avatar_id = 1;
+	uint32 HBDHCECOKGP = 7;
+}

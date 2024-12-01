@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0
-// Obf: DDNBBJPLJCJ
-message ClientCollectorData {
-	//uint32 KMCFLNNCFBL = 15;
-	uint32 material_id = 7;
-	//uint32 DNOGKGIHECO = 3;
-}

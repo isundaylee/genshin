@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "StoreType.proto";
+
+message GALIAJDJLKD {
+	StoreType store_type = 14;
+	int32 EJNINFFFKJP = 13;
+	uint64 guid = 1;
+}

@@ -1,7 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// CmdId: 26120
-// Obf: BPDICGMOACG
-message DeleteFriendReq {
-	uint32 target_uid = 4;
-}

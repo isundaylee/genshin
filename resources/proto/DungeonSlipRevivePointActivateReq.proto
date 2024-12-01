@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0
-// CmdId: 28862
-// Obf: OILPFJDPOLB
-message DungeonSlipRevivePointActivateReq {
-	uint32 slip_revive_point_id = 6;
-}

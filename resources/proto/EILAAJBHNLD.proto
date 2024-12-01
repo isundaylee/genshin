@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message EILAAJBHNLD {
+	map<uint32,int64> prop_map = 10;
+	uint64 MEJLFKPFPGK = 9;
+}

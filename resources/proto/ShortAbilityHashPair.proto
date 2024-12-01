@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.grasscutter.net.proto";
-// Version: 5.0
-
-message ShortAbilityHashPair {
-    sfixed32 OMPEBEMNKLG = 13;
-    sfixed32 ability_name_hash = 15;
-}

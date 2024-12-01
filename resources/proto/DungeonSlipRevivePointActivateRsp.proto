@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0
-// CmdId: 24625
-// Obf: CGPKIMAAFKD
-message DungeonSlipRevivePointActivateRsp {
-	uint32 slip_revive_point_id = 15;
-	int32 retcode = 4;
-}

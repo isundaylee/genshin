@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0
-// CmdId: 7831
-// Obf: APONHDKOLKA
-message MonsterSummonTagNotify {
-	map<uint32, uint32> summon_tag_map = 1;
-	uint32 monster_entity_id = 7;
-}

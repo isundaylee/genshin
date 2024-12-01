@@ -1,7 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0
-// Obf: OGFGBMPOGDD
-message WidgetCameraInfo {
-	uint32 target_entity_id = 11;
-}

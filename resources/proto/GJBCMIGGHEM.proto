@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "AvatarInfo.proto";
+
+message GJBCMIGGHEM {
+	repeated AvatarInfo EFCDELGMMKG = 14;
+	uint32 PMFOIANCCED = 2;
+	int32 EJNINFFFKJP = 13;
+}

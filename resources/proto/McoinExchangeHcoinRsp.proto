@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-// 4.7.0
-message McoinExchangeHcoinRsp {
-  uint32 hcoin = 11;
-  int32 retcode = 12;
-  uint32 mcoin_cost = 15;
-}

@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.grasscutter.net.proto";
-// Version: 5.0
-
-message WeatherInfo {
-    uint32 weather_area_id = 1;
-}

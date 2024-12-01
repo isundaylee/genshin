@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0
-// CmdId: 1797 or 27620 (m) or 8371 (m) or 2465 (m) or 28625 or 26778 (m/l) or 4753 or 6552 (m) or 4742
-// Obf: IGFEPBECEIG
-message GroupSuiteNotify {
-	map<uint32, uint32> group_map = 1;
-}

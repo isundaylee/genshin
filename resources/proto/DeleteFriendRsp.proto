@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// CmdId: 9192,23108,5432,4789,29028,23875,22728?
-// Obf: ?
-message DeleteFriendRsp {
-	uint32 target_uid = 13;
-	int32 retcode = 12;
-}

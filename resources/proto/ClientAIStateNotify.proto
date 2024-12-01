@@ -1,9 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0
-// CmdId: 22734
-// Obf: NLIDKBFBKEB
-message ClientAIStateNotify {
-	uint32 cur_tactic = 6;
-	uint32 entity_id = 15;
-}

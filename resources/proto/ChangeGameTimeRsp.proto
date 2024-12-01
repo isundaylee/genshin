@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-
-message ChangeGameTimeRsp {
-	uint32 cur_game_time = 12;
-	uint32 extra_days = 4;
-	int32 retcode = 5;
-}

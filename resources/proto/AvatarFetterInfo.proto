@@ -1,15 +1,12 @@
 syntax = "proto3";
 
-option java_package = "emu.grasscutter.net.proto";
-// Version: 5.0
-
-import "FetterData.proto";
+import "AANALBNNPPL.proto";
 
 message AvatarFetterInfo {
-    uint32 exp_number = 1;
-    uint32 exp_level = 2;
-    repeated uint32 open_id_list = 3;
-    repeated uint32 finish_id_list = 4;
-    repeated uint32 rewarded_fetter_level_list = 5;
-    repeated FetterData fetter_list = 6;
-}
+	repeated AANALBNNPPL PLOKNPKGHPB = 6;
+	repeated uint32 IJBEEBFDOOP = 3;
+	repeated uint32 CCLLABBCIPD = 4;
+	repeated uint32 DPBNMFDMBNF = 5;
+	uint32 FDCFKLMINJH = 1;
+	uint32 DFLHPOBNIPG = 2;
+}

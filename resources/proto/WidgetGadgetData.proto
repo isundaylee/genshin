@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.grasscutter.net.proto";
-// Version: 5.0
-
-message WidgetGadgetData {
-    uint32 gadget_id = 9;
-    repeated uint32 gadget_entity_id_list = 15;
-}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+message OCAABICBPNI {
+	uint32 costume_id = 7;
+	uint32 NCCPPHNNPBF = 9;
+	bool HDNILDCEFMG = 8;
+	uint32 avatar_id = 11;
+}

@@ -1,12 +1,9 @@
 syntax = "proto3";
 
-option java_package = "emu.grasscutter.net.proto";
-// Version: 5.0
-
 message AvatarExcelInfo {
-    uint64 prefab_path_hash = 1;
-    uint64 prefab_path_remote_hash = 2;
-    uint64 controller_path_hash = 3;
-    uint64 controller_path_remote_hash = 4;
-    uint64 combat_config_hash = 5;
-}
+	uint64 NNFLPNBHNCA = 4;
+	uint64 JOJJBPAPKKO = 2;
+	uint64 MPKEADCLEKP = 5;
+	uint64 LNBICPDGLBB = 1;
+	uint64 CJCEJECPGHC = 3;
+}

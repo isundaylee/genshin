@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.grasscutter.net.proto";
-// Version: 5.0
-// CmdId: 25978
-
-message AvatarGainCostumeNotify {
-    uint32 costume_id = 2;
-}

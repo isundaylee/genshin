@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.grasscutter.net.proto";
-// Version: 5.0
-
-enum LockState {
-    LOCK_NONE = 0;
-    LOCK_QUEST = 1;
-}

@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0 ?
-// CmdId: 23831 or 25365 (?)
-// Obf: PJEMNKAGMMH
-message GroupUnloadNotify {
-	repeated uint32 group_list = 3;
-}

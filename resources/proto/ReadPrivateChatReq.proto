@@ -1,8 +1,0 @@
-syntax = "proto3";
-option java_package = "emu.grasscutter.net.proto";
-// 4.7.0 ?
-// CmdId: 24013
-// Obf: MEEPMDHNAND
-message ReadPrivateChatReq {
-	uint32 target_uid = 11;
-}

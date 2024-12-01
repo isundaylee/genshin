@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "AvatarInfo.proto";
+
+message JEOODHEBJJP {
+	AvatarInfo NOLBCHIACJI = 14;
+	AvatarInfo LHFDNDCNAIO = 11;
+	int32 EJNINFFFKJP = 15;
+}

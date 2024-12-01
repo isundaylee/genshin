@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "KDEHCGJAGFJ.proto";
+
+message FODHEIFHDJB {
+	KDEHCGJAGFJ DHKJKGIGJDG = 10;
+	KDEHCGJAGFJ BNHEAFCGIJM = 6;
+	uint32 costume_id = 11;
+	uint32 avatar_id = 15;
+}

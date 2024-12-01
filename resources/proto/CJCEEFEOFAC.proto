@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+import "PropValue.proto";
+
+message CJCEEFEOFAC {
+	map<uint32,PropValue> prop_map = 8;
+	uint32 AGIDBEEINDE = 1;
+}
