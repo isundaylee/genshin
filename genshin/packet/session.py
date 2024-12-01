@@ -154,7 +154,7 @@ class KCPSession:
 
 
 class Session:
-    _UDP_PORT: ClassVar[int] = 22101
+    _UDP_PORTS: ClassVar[frozenset[int]] = frozenset({22101, 22102})
 
     def __init__(self, path: str, *, copy_key_from: Optional[Session] = None) -> None:
         self.packets: List[packet.Packet] = []
@@ -179,7 +179,7 @@ class Session:
                 # TODO this is not robust
                 is_kcp_packet = len(packet_udp.data) > 20
 
-                if packet_udp.dport == self._UDP_PORT:
+                if packet_udp.dport in self._UDP_PORTS:
                     self.udp_logger.debug("send %s", format_bytes(packet_udp.data))
 
                     if is_kcp_packet:
@@ -201,7 +201,7 @@ class Session:
                                 kcp_out_packet,
                             )
                         )
-                elif packet_udp.sport == self._UDP_PORT:
+                elif packet_udp.sport in self._UDP_PORTS:
                     self.udp_logger.debug("recv %s", format_bytes(packet_udp.data))
 
                     if is_kcp_packet:
@@ -226,11 +226,7 @@ class Session:
                     else:
                         continue
 
-        if copy_key_from is None:
-            self.raw_dispatch_head, self.xor_key = self._infer_xor_key()
-        else:
-            self.raw_dispatch_head = copy_key_from.raw_dispatch_head
-            self.xor_key = copy_key_from.xor_key
+        self.copy_key_from = copy_key_from
 
     def _infer_xor_key(self) -> tuple[bytes, bytes]:
         assert self.packets
@@ -253,6 +249,15 @@ class Session:
                 )
                 continue
 
+            if len(potential_key) == 4:
+                decrypted_4b = _xor_bytes(p.content[:4], potential_key[:4])
+                assert decrypted_4b[:2] == b"\x45\x67"
+                logger.debug(
+                    "Packet len %d with cmdid %d",
+                    len(p.content),
+                    struct.unpack(">H", decrypted_4b[2:])[0],
+                )
+
             if len(potential_key) == 4 and (
                 p.content[:4]
                 == _xor_bytes(
@@ -263,22 +268,40 @@ class Session:
             ):
                 assert len(p.content) == 22
 
+                # Case 1 - rtt before uid
+
                 # NOTE that byte 13 is (part of) the variable RTT - we will try
                 # all 256 values below.
+                # potential_key += _xor_bytes(
+                #     #                                 ------------------------ WorldPlayerRTTNotify
+                #     #                                         ---------------- PlayerRTTInfo
+                #     #                                         ------------     rtt
+                #     b"\x00\x00" b"\x00\x00\x00\x0a" b"\x12\x08\x10\x00\x01\x58",
+                #     p.content[4:16],
+                # )
+                # unknown_byte_idx = 13
+
+                # Case 2 - uid before rtt
+                # NOTE that we enumerate all 256 possibilities for byte 12 (uid
+                # field index) below.
                 potential_key += _xor_bytes(
-                    b"\x00\x00" b"\x00\x00\x00\x0a" b"\x12\x08\x10\x00\x01\x58",
+                    #                                 ------------------------ WorldPlayerRTTNotify
+                    #                                         ---------------- PlayerRTTInfo
+                    #                                         ---------------- uid
+                    b"\x00\x00" b"\x00\x00\x00\x0a" b"\x22\x08\x00\xb7\xca\xd6",
                     p.content[4:16],
                 )
+                unknown_byte_idx = 12
                 break
 
         assert len(potential_key) == 16
         logger.debug("XOR key inferred so far: %s", format_bytes(potential_key))
 
         # Next, find the MT64 rng seed. NOTE that we need to try all 256 values
-        # for byte 13 of the XOR key.
+        # for byte 12/13 of the XOR key.
         for rtt_byte in range(256):
             potential_key_arr = bytearray(potential_key)
-            potential_key_arr[13] = rtt_byte
+            potential_key_arr[unknown_byte_idx] = rtt_byte
 
             [key0, key1] = struct.unpack(">QQ", potential_key_arr)
             if (seed := genshin_xor_key.find_seed(key0, key1)) is not None:
@@ -296,12 +319,18 @@ class Session:
         return raw_dispatch_head, xor_key
 
     def get_decrypted_packets(self) -> Iterator[packet.DecryptedPacket]:
+        if self.copy_key_from is None:
+            raw_dispatch_head, xor_key = self._infer_xor_key()
+        else:
+            raw_dispatch_head = self.copy_key_from.raw_dispatch_head
+            xor_key = self.copy_key_from.xor_key
+
         for p in self.packets:
-            if p.content[:2] == self.raw_dispatch_head:
+            if p.content[:2] == raw_dispatch_head:
                 continue
 
             yield packet.DecryptedPacket(
                 timestamp=p.timestamp,
                 direction=p.direction,
-                content=_xor_bytes_repeat(p.content, self.xor_key),
+                content=_xor_bytes_repeat(p.content, xor_key),
             )

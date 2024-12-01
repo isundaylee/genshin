@@ -9,10 +9,11 @@ from genshin.packet import session, packet
 @click.command()
 @click.argument("path")
 @click.option("--initial-pcap")
-def main(path: str, initial_pcap: Optional[str]) -> None:
+@click.option("--verbose", is_flag=True)
+def main(path: str, initial_pcap: Optional[str], verbose: bool) -> None:
     logging.basicConfig(
         format="%(asctime)s %(levelname)-10s %(name)-60s %(message)s",
-        level=logging.INFO,
+        level=logging.DEBUG if verbose else logging.INFO,
     )
 
     if initial_pcap is not None:
