@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BBKLMLCJKIF.proto";
+import "genshin/packet/proto/BBKLMLCJKIF.proto";
 
 message GMHHLBBCNOP {
 	BBKLMLCJKIF AMLIJKENIIN = 9;

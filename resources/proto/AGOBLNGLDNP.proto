@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IGNBAHODBEE.proto";
+import "genshin/packet/proto/IGNBAHODBEE.proto";
 
 message AGOBLNGLDNP {
 	repeated int32 CBDKNDMEJJB = 11;

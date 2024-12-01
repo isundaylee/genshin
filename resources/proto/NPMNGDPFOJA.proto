@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "NGOFPEOLOPF.proto";
-import "MLOBECPAOCA.proto";
+import "genshin/packet/proto/NGOFPEOLOPF.proto";
+import "genshin/packet/proto/MLOBECPAOCA.proto";
 
 message NPMNGDPFOJA {
 	repeated NGOFPEOLOPF DJMCHFPIFLM = 1;

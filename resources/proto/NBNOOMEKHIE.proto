@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "APDDLGFJONM.proto";
-import "ALCMFILLBKD.proto";
-import "JEHLCIMIJGN.proto";
-import "NFPLLBBAPIM.proto";
+import "genshin/packet/proto/APDDLGFJONM.proto";
+import "genshin/packet/proto/ALCMFILLBKD.proto";
+import "genshin/packet/proto/JEHLCIMIJGN.proto";
+import "genshin/packet/proto/NFPLLBBAPIM.proto";
 
 message NBNOOMEKHIE {
 	APDDLGFJONM BFMEOMIAEEK = 8;

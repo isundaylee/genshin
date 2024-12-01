@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "BNACFAENGGE.proto";
-import "NBNNIIGACNC.proto";
-import "CNACLMKNNLB.proto";
+import "genshin/packet/proto/BNACFAENGGE.proto";
+import "genshin/packet/proto/NBNNIIGACNC.proto";
+import "genshin/packet/proto/CNACLMKNNLB.proto";
 
 message PFPOMOPLLNM {
 	repeated BNACFAENGGE DLHAKOKJINO = 3;

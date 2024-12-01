@@ -11,7 +11,7 @@ from typing import ClassVar as _ClassVar, Iterable as _Iterable, Mapping as _Map
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class IMLHDJCJHBD(_message.Message):
-    __slots__ = ("FALBFFNPGDJ", "GJEBAJAJPII", "FBJLEFEPOGN", "GDJKCKNOGBD", "KGOJIPMFHBM", "GCAGIBMOGKF", "CIENOKDHFOD", "PFGMJFGPODI", "DFGNLKJBCIF", "IADFGKJCIDE", "JJDJDFCEFCK", "MJFIBKOLDHC", "OEDOJBLAMDM", "CGFHLLHIOJK", "CIMHOFKDOCM", "OEIHGDPIEOG", "OEENIKOABOD", "OAJOOBGHAGM", "OIDOONLJGEI", "OFAHCGINJIE", "CEBLGCPAOJL", "MMCHEGOOMLI", "HDBFKNJHBOO", "IGBDOEBPPHO")
+    __slots__ = ("FALBFFNPGDJ", "GJEBAJAJPII", "FBJLEFEPOGN", "GDJKCKNOGBD", "KGOJIPMFHBM", "GCAGIBMOGKF", "CIENOKDHFOD", "PFGMJFGPODI", "DFGNLKJBCIF", "type", "JJDJDFCEFCK", "MJFIBKOLDHC", "OEDOJBLAMDM", "CGFHLLHIOJK", "CIMHOFKDOCM", "OEIHGDPIEOG", "OEENIKOABOD", "OAJOOBGHAGM", "OIDOONLJGEI", "OFAHCGINJIE", "CEBLGCPAOJL", "MMCHEGOOMLI", "HDBFKNJHBOO", "IGBDOEBPPHO")
     FALBFFNPGDJ_FIELD_NUMBER: _ClassVar[int]
     GJEBAJAJPII_FIELD_NUMBER: _ClassVar[int]
     FBJLEFEPOGN_FIELD_NUMBER: _ClassVar[int]
@@ -21,7 +21,7 @@ class IMLHDJCJHBD(_message.Message):
     CIENOKDHFOD_FIELD_NUMBER: _ClassVar[int]
     PFGMJFGPODI_FIELD_NUMBER: _ClassVar[int]
     DFGNLKJBCIF_FIELD_NUMBER: _ClassVar[int]
-    IADFGKJCIDE_FIELD_NUMBER: _ClassVar[int]
+    TYPE_FIELD_NUMBER: _ClassVar[int]
     JJDJDFCEFCK_FIELD_NUMBER: _ClassVar[int]
     MJFIBKOLDHC_FIELD_NUMBER: _ClassVar[int]
     OEDOJBLAMDM_FIELD_NUMBER: _ClassVar[int]
@@ -45,7 +45,7 @@ class IMLHDJCJHBD(_message.Message):
     CIENOKDHFOD: _DKIFDGNKPLD_pb2.DKIFDGNKPLD
     PFGMJFGPODI: _OKNBFFIFIGJ_pb2.OKNBFFIFIGJ
     DFGNLKJBCIF: int
-    IADFGKJCIDE: _FMFNEJNKFCJ_pb2.FMFNEJNKFCJ
+    type: _FMFNEJNKFCJ_pb2.FMFNEJNKFCJ
     JJDJDFCEFCK: int
     MJFIBKOLDHC: int
     OEDOJBLAMDM: int
@@ -60,4 +60,4 @@ class IMLHDJCJHBD(_message.Message):
     MMCHEGOOMLI: int
     HDBFKNJHBOO: int
     IGBDOEBPPHO: int
-    def __init__(self, FALBFFNPGDJ: _Optional[_Union[_KDEHCGJAGFJ_pb2.KDEHCGJAGFJ, _Mapping]] = ..., GJEBAJAJPII: _Optional[_Union[_KDEHCGJAGFJ_pb2.KDEHCGJAGFJ, _Mapping]] = ..., FBJLEFEPOGN: _Optional[str] = ..., GDJKCKNOGBD: _Optional[_Union[_APMHHCOHPLD_pb2.APMHHCOHPLD, _Mapping]] = ..., KGOJIPMFHBM: _Optional[_Iterable[int]] = ..., GCAGIBMOGKF: _Optional[_Union[_KDEHCGJAGFJ_pb2.KDEHCGJAGFJ, _Mapping]] = ..., CIENOKDHFOD: _Optional[_Union[_DKIFDGNKPLD_pb2.DKIFDGNKPLD, _Mapping]] = ..., PFGMJFGPODI: _Optional[_Union[_OKNBFFIFIGJ_pb2.OKNBFFIFIGJ, _Mapping]] = ..., DFGNLKJBCIF: _Optional[int] = ..., IADFGKJCIDE: _Optional[_Union[_FMFNEJNKFCJ_pb2.FMFNEJNKFCJ, str]] = ..., JJDJDFCEFCK: _Optional[int] = ..., MJFIBKOLDHC: _Optional[int] = ..., OEDOJBLAMDM: _Optional[int] = ..., CGFHLLHIOJK: bool = ..., CIMHOFKDOCM: bool = ..., OEIHGDPIEOG: _Optional[int] = ..., OEENIKOABOD: _Optional[int] = ..., OAJOOBGHAGM: _Optional[int] = ..., OIDOONLJGEI: _Optional[int] = ..., OFAHCGINJIE: _Optional[int] = ..., CEBLGCPAOJL: _Optional[int] = ..., MMCHEGOOMLI: _Optional[int] = ..., HDBFKNJHBOO: _Optional[int] = ..., IGBDOEBPPHO: _Optional[int] = ...) -> None: ...
+    def __init__(self, FALBFFNPGDJ: _Optional[_Union[_KDEHCGJAGFJ_pb2.KDEHCGJAGFJ, _Mapping]] = ..., GJEBAJAJPII: _Optional[_Union[_KDEHCGJAGFJ_pb2.KDEHCGJAGFJ, _Mapping]] = ..., FBJLEFEPOGN: _Optional[str] = ..., GDJKCKNOGBD: _Optional[_Union[_APMHHCOHPLD_pb2.APMHHCOHPLD, _Mapping]] = ..., KGOJIPMFHBM: _Optional[_Iterable[int]] = ..., GCAGIBMOGKF: _Optional[_Union[_KDEHCGJAGFJ_pb2.KDEHCGJAGFJ, _Mapping]] = ..., CIENOKDHFOD: _Optional[_Union[_DKIFDGNKPLD_pb2.DKIFDGNKPLD, _Mapping]] = ..., PFGMJFGPODI: _Optional[_Union[_OKNBFFIFIGJ_pb2.OKNBFFIFIGJ, _Mapping]] = ..., DFGNLKJBCIF: _Optional[int] = ..., type: _Optional[_Union[_FMFNEJNKFCJ_pb2.FMFNEJNKFCJ, str]] = ..., JJDJDFCEFCK: _Optional[int] = ..., MJFIBKOLDHC: _Optional[int] = ..., OEDOJBLAMDM: _Optional[int] = ..., CGFHLLHIOJK: bool = ..., CIMHOFKDOCM: bool = ..., OEIHGDPIEOG: _Optional[int] = ..., OEENIKOABOD: _Optional[int] = ..., OAJOOBGHAGM: _Optional[int] = ..., OIDOONLJGEI: _Optional[int] = ..., OFAHCGINJIE: _Optional[int] = ..., CEBLGCPAOJL: _Optional[int] = ..., MMCHEGOOMLI: _Optional[int] = ..., HDBFKNJHBOO: _Optional[int] = ..., IGBDOEBPPHO: _Optional[int] = ...) -> None: ...

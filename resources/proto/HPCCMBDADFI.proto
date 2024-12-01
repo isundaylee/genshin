@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "AMEKOAPGABA.proto";
+import "genshin/packet/proto/AMEKOAPGABA.proto";
 
 message HPCCMBDADFI {
 	repeated AMEKOAPGABA PNDPNMBDOKF = 15;

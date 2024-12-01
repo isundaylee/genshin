@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "LAADOJLABDH.proto";
-import "PAGIAOELFBI.proto";
-import "ELENLLNEHNE.proto";
+import "genshin/packet/proto/LAADOJLABDH.proto";
+import "genshin/packet/proto/PAGIAOELFBI.proto";
+import "genshin/packet/proto/ELENLLNEHNE.proto";
 
 message BONLFJGNBIB {
 	LAADOJLABDH NGANCEICGHC = 2;

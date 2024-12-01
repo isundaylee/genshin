@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "FLDALOPDBCG.proto";
+import "genshin/packet/proto/FLDALOPDBCG.proto";
 
 message CHOMFEMEHNL {
 	repeated FLDALOPDBCG LIEPBJGJPGN = 4;

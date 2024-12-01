@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "KLGPDDIJGJM.proto";
-import "JKOBEFDEMME.proto";
+import "genshin/packet/proto/KLGPDDIJGJM.proto";
+import "genshin/packet/proto/JKOBEFDEMME.proto";
 
 message DJMCHPNHKIJ {
 	uint32 DCCCHKBIGHP = 11;

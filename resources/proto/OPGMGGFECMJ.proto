@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NAJEPFPOEDA.proto";
+import "genshin/packet/proto/NAJEPFPOEDA.proto";
 
 message OPGMGGFECMJ {
 	NAJEPFPOEDA EMFKNKECAEF = 6;

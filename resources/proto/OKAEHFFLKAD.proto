@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-import "AFAILBMMKKA.proto";
-import "AJCPMKDEBKJ.proto";
-import "NDAIEHPFOLJ.proto";
-import "FGJPIPDNEHD.proto";
-import "FEGOJCJLOLN.proto";
-import "ODOAHMKGPEL.proto";
-import "MBGHHPNOILD.proto";
+import "genshin/packet/proto/AFAILBMMKKA.proto";
+import "genshin/packet/proto/AJCPMKDEBKJ.proto";
+import "genshin/packet/proto/NDAIEHPFOLJ.proto";
+import "genshin/packet/proto/FGJPIPDNEHD.proto";
+import "genshin/packet/proto/FEGOJCJLOLN.proto";
+import "genshin/packet/proto/ODOAHMKGPEL.proto";
+import "genshin/packet/proto/MBGHHPNOILD.proto";
 
 message OKAEHFFLKAD {
 	map<uint32,AFAILBMMKKA> FAGAEEGLEPE = 15;

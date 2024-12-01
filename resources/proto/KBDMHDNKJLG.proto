@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "PKJMPCPEGGO.proto";
-import "JICKPPDLOHC.proto";
+import "genshin/packet/proto/PKJMPCPEGGO.proto";
+import "genshin/packet/proto/JICKPPDLOHC.proto";
 
 message KBDMHDNKJLG {
 	string OMKNBNMEBIK = 3;

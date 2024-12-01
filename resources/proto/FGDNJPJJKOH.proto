@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BOMACPDEPID.proto";
+import "genshin/packet/proto/BOMACPDEPID.proto";
 
 message FGDNJPJJKOH {
 	repeated BOMACPDEPID item_list = 15;

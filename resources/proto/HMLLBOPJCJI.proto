@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "OLHEKLKENDN.proto";
-import "CKLEEGMPDGN.proto";
+import "genshin/packet/proto/OLHEKLKENDN.proto";
+import "genshin/packet/proto/CKLEEGMPDGN.proto";
 
 message HMLLBOPJCJI {
 	OLHEKLKENDN NNPMLGAPAAN = 1;

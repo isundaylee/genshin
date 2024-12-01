@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IHKLGMIFGMN.proto";
+import "genshin/packet/proto/IHKLGMIFGMN.proto";
 
 message POFKPPEILFC {
 	repeated uint32 DMBODNCJOKF = 11;

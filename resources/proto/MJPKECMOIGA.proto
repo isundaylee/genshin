@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HGNOGAMJLAF.proto";
+import "genshin/packet/proto/HGNOGAMJLAF.proto";
 
 message MJPKECMOIGA {
 	map<uint32,uint32> MNIMPFAJKLB = 9;

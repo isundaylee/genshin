@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-import "GMJKGJHNCBL.proto";
-import "MILLGCOHBJI.proto";
-import "MMNOCKPJAOB.proto";
-import "PJPLLJJMEED.proto";
-import "FODHEIFHDJB.proto";
-import "BKJKCHOKLKG.proto";
-import "LEJDFPGEIKO.proto";
-import "GILGDMKHMAJ.proto";
-import "OHAPEBODAPG.proto";
+import "genshin/packet/proto/GMJKGJHNCBL.proto";
+import "genshin/packet/proto/MILLGCOHBJI.proto";
+import "genshin/packet/proto/MMNOCKPJAOB.proto";
+import "genshin/packet/proto/PJPLLJJMEED.proto";
+import "genshin/packet/proto/FODHEIFHDJB.proto";
+import "genshin/packet/proto/BKJKCHOKLKG.proto";
+import "genshin/packet/proto/LEJDFPGEIKO.proto";
+import "genshin/packet/proto/GILGDMKHMAJ.proto";
+import "genshin/packet/proto/OHAPEBODAPG.proto";
 
 message BIDJMBKEIIB {
 	repeated GMJKGJHNCBL CNLOCGCMNNM = 2;

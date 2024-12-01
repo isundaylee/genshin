@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JNAJJANDBMO.proto";
+import "genshin/packet/proto/JNAJJANDBMO.proto";
 
 message JMGEIJPCFAN {
 	JNAJJANDBMO FFLMNBGAOGN = 11;

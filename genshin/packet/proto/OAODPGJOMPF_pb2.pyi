@@ -6,9 +6,9 @@ from typing import ClassVar as _ClassVar, Optional as _Optional, Union as _Union
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class OAODPGJOMPF(_message.Message):
-    __slots__ = ("IADFGKJCIDE", "MDMMNLEEMDF")
-    IADFGKJCIDE_FIELD_NUMBER: _ClassVar[int]
+    __slots__ = ("type", "MDMMNLEEMDF")
+    TYPE_FIELD_NUMBER: _ClassVar[int]
     MDMMNLEEMDF_FIELD_NUMBER: _ClassVar[int]
-    IADFGKJCIDE: _FMBEGBMCCBC_pb2.FMBEGBMCCBC
+    type: _FMBEGBMCCBC_pb2.FMBEGBMCCBC
     MDMMNLEEMDF: int
-    def __init__(self, IADFGKJCIDE: _Optional[_Union[_FMBEGBMCCBC_pb2.FMBEGBMCCBC, str]] = ..., MDMMNLEEMDF: _Optional[int] = ...) -> None: ...
+    def __init__(self, type: _Optional[_Union[_FMBEGBMCCBC_pb2.FMBEGBMCCBC, str]] = ..., MDMMNLEEMDF: _Optional[int] = ...) -> None: ...

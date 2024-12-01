@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NILMHFAANPL.proto";
+import "genshin/packet/proto/NILMHFAANPL.proto";
 
 message NMFCAGFGEIB {
 	repeated NILMHFAANPL FHCFDLFLKNO = 13;

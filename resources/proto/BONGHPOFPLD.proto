@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "EHLKDKHKIFL.proto";
-import "CMGOOOMLAIA.proto";
+import "genshin/packet/proto/EHLKDKHKIFL.proto";
+import "genshin/packet/proto/CMGOOOMLAIA.proto";
 
 message BONGHPOFPLD {
 	repeated EHLKDKHKIFL HEPDPIOILGD = 10;

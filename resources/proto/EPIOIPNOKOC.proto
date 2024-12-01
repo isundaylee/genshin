@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "BPOBBMNGMDL.proto";
+import "genshin/packet/proto/BPOBBMNGMDL.proto";
 
 message EPIOIPNOKOC {
-	BPOBBMNGMDL IADFGKJCIDE = 14;
+	BPOBBMNGMDL type = 14;
 }

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CKLEEGMPDGN.proto";
+import "genshin/packet/proto/CKLEEGMPDGN.proto";
 
 message HDPGGGOPPCN {
 	CKLEEGMPDGN AGMHMDHEFKD = 9;

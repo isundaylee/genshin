@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CKPIJBMMBGJ.proto";
+import "genshin/packet/proto/CKPIJBMMBGJ.proto";
 
 message NGDKIEINDNN {
 	CKPIJBMMBGJ JOEGECHCBPI = 12;

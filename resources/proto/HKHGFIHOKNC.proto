@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "DFOKMEDFPLL.proto";
-import "BPGCAHBJNCD.proto";
-import "EHCLPIIPLOH.proto";
+import "genshin/packet/proto/DFOKMEDFPLL.proto";
+import "genshin/packet/proto/BPGCAHBJNCD.proto";
+import "genshin/packet/proto/EHCLPIIPLOH.proto";
 
 message HKHGFIHOKNC {
 	repeated string MKOFAGFGOIA = 14;

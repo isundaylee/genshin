@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KHBDLLKPLFG.proto";
+import "genshin/packet/proto/KHBDLLKPLFG.proto";
 
 message NNBCMPFJCKA {
 	KHBDLLKPLFG avatar_type = 4;

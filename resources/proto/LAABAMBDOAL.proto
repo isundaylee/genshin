@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OMBEIFNNEDF.proto";
+import "genshin/packet/proto/OMBEIFNNEDF.proto";
 
 message LAABAMBDOAL {
 	repeated OMBEIFNNEDF FIDJDHJOEBN = 7;

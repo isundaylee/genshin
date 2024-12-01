@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-import "NAPNKPIHEBF.proto";
-import "KNMPNCPBMMP.proto";
-import "FJCOKOHBJIN.proto";
-import "CGACLDGEJJA.proto";
-import "EJLNBCBFOGL.proto";
-import "AvatarInfo.proto";
+import "genshin/packet/proto/NAPNKPIHEBF.proto";
+import "genshin/packet/proto/KNMPNCPBMMP.proto";
+import "genshin/packet/proto/FJCOKOHBJIN.proto";
+import "genshin/packet/proto/CGACLDGEJJA.proto";
+import "genshin/packet/proto/EJLNBCBFOGL.proto";
+import "genshin/packet/proto/AvatarInfo.proto";
 
 message OMAKEENDNNC {
 	NAPNKPIHEBF BFGAFOGLNGH = 12;

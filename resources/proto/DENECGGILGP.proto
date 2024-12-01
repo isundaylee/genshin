@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "GOBLIPFHICG.proto";
-import "CNDNKCNEDHP.proto";
+import "genshin/packet/proto/GOBLIPFHICG.proto";
+import "genshin/packet/proto/CNDNKCNEDHP.proto";
 
 message DENECGGILGP {
 	GOBLIPFHICG DHHLMPIEEEP = 8;

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "KMJBMEFJIGO.proto";
-import "IKEMEBCAIIC.proto";
+import "genshin/packet/proto/KMJBMEFJIGO.proto";
+import "genshin/packet/proto/IKEMEBCAIIC.proto";
 
 message NJJJHOJAJBB {
 	map<uint32,KMJBMEFJIGO> JENACEPCGOF = 14;

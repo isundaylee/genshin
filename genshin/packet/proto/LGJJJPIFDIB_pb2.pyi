@@ -5,7 +5,7 @@ from typing import ClassVar as _ClassVar, Optional as _Optional
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class LGJJJPIFDIB(_message.Message):
-    __slots__ = ("MJJBPEICNFG", "LKOFKODPMGO", "ELPMLJJNFJE", "EAEKNFBGKPA", "MBBKAENBCKD", "level", "BPLPPDJCLFA", "FHCNHPKKONG", "AGHNEJINBFJ", "AADKOBECBIM", "JBBNJEHICAF", "IADFGKJCIDE", "MHGLDBMEGEG", "GNPDMBMPADF", "HKAJOKNAHIF", "KKPEPKJACEF")
+    __slots__ = ("MJJBPEICNFG", "LKOFKODPMGO", "ELPMLJJNFJE", "EAEKNFBGKPA", "MBBKAENBCKD", "level", "BPLPPDJCLFA", "FHCNHPKKONG", "AGHNEJINBFJ", "AADKOBECBIM", "JBBNJEHICAF", "type", "MHGLDBMEGEG", "GNPDMBMPADF", "HKAJOKNAHIF", "KKPEPKJACEF")
     MJJBPEICNFG_FIELD_NUMBER: _ClassVar[int]
     LKOFKODPMGO_FIELD_NUMBER: _ClassVar[int]
     ELPMLJJNFJE_FIELD_NUMBER: _ClassVar[int]
@@ -17,7 +17,7 @@ class LGJJJPIFDIB(_message.Message):
     AGHNEJINBFJ_FIELD_NUMBER: _ClassVar[int]
     AADKOBECBIM_FIELD_NUMBER: _ClassVar[int]
     JBBNJEHICAF_FIELD_NUMBER: _ClassVar[int]
-    IADFGKJCIDE_FIELD_NUMBER: _ClassVar[int]
+    TYPE_FIELD_NUMBER: _ClassVar[int]
     MHGLDBMEGEG_FIELD_NUMBER: _ClassVar[int]
     GNPDMBMPADF_FIELD_NUMBER: _ClassVar[int]
     HKAJOKNAHIF_FIELD_NUMBER: _ClassVar[int]
@@ -33,9 +33,9 @@ class LGJJJPIFDIB(_message.Message):
     AGHNEJINBFJ: int
     AADKOBECBIM: bool
     JBBNJEHICAF: int
-    IADFGKJCIDE: int
+    type: int
     MHGLDBMEGEG: int
     GNPDMBMPADF: int
     HKAJOKNAHIF: int
     KKPEPKJACEF: int
-    def __init__(self, MJJBPEICNFG: _Optional[int] = ..., LKOFKODPMGO: _Optional[int] = ..., ELPMLJJNFJE: _Optional[int] = ..., EAEKNFBGKPA: _Optional[int] = ..., MBBKAENBCKD: _Optional[int] = ..., level: _Optional[int] = ..., BPLPPDJCLFA: _Optional[int] = ..., FHCNHPKKONG: _Optional[int] = ..., AGHNEJINBFJ: _Optional[int] = ..., AADKOBECBIM: bool = ..., JBBNJEHICAF: _Optional[int] = ..., IADFGKJCIDE: _Optional[int] = ..., MHGLDBMEGEG: _Optional[int] = ..., GNPDMBMPADF: _Optional[int] = ..., HKAJOKNAHIF: _Optional[int] = ..., KKPEPKJACEF: _Optional[int] = ...) -> None: ...
+    def __init__(self, MJJBPEICNFG: _Optional[int] = ..., LKOFKODPMGO: _Optional[int] = ..., ELPMLJJNFJE: _Optional[int] = ..., EAEKNFBGKPA: _Optional[int] = ..., MBBKAENBCKD: _Optional[int] = ..., level: _Optional[int] = ..., BPLPPDJCLFA: _Optional[int] = ..., FHCNHPKKONG: _Optional[int] = ..., AGHNEJINBFJ: _Optional[int] = ..., AADKOBECBIM: bool = ..., JBBNJEHICAF: _Optional[int] = ..., type: _Optional[int] = ..., MHGLDBMEGEG: _Optional[int] = ..., GNPDMBMPADF: _Optional[int] = ..., HKAJOKNAHIF: _Optional[int] = ..., KKPEPKJACEF: _Optional[int] = ...) -> None: ...

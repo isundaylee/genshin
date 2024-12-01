@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HGDJMICKHAK.proto";
+import "genshin/packet/proto/HGDJMICKHAK.proto";
 
 message NGPCEMFKPFG {
 	HGDJMICKHAK PKCBBBHCKKI = 4;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "PAHOICKNMEP.proto";
+import "genshin/packet/proto/PAHOICKNMEP.proto";
 
 message JMHOGADNPCE {
 	repeated PAHOICKNMEP OENAHHEEFLG = 1;

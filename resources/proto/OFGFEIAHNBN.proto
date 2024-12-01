@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "AKKLOINFCPM.proto";
+import "genshin/packet/proto/AKKLOINFCPM.proto";
 
 message OFGFEIAHNBN {
 	repeated AKKLOINFCPM EFCDELGMMKG = 1;

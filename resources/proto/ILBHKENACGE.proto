@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "MACLKMPJDCG.proto";
+import "genshin/packet/proto/MACLKMPJDCG.proto";
 
 message ILBHKENACGE {
 	MACLKMPJDCG MLOPMGGDDMN = 3;

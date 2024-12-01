@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LIKOGPGGHFJ.proto";
+import "genshin/packet/proto/LIKOGPGGHFJ.proto";
 
 message LJNOCMBAPPD {
 	repeated LIKOGPGGHFJ NLHEGBIONIN = 4;

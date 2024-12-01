@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JICKPPDLOHC.proto";
+import "genshin/packet/proto/JICKPPDLOHC.proto";
 
 message GFNNBABOMDH {
 	repeated uint32 LPFCMMJCIBP = 11;

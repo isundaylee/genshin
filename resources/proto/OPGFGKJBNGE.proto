@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IPGDGIHPBEF.proto";
+import "genshin/packet/proto/IPGDGIHPBEF.proto";
 
 message OPGFGKJBNGE {
 	repeated IPGDGIHPBEF LDMGHBOAEPN = 5;

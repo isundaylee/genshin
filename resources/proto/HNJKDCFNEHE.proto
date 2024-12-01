@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NJPKDAPLJFB.proto";
+import "genshin/packet/proto/NJPKDAPLJFB.proto";
 
 message HNJKDCFNEHE {
 	NJPKDAPLJFB FHGGCCMDDLM = 15;

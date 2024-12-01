@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GCAAPKLDDNE.proto";
+import "genshin/packet/proto/GCAAPKLDDNE.proto";
 
 message JNNMDOJAKNJ {
 	map<uint32,GCAAPKLDDNE> HHPLJCPFNKF = 5;

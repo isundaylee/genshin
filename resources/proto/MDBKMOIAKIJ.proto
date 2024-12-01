@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IBDNAOGMOFO.proto";
+import "genshin/packet/proto/IBDNAOGMOFO.proto";
 
 message MDBKMOIAKIJ {
 	IBDNAOGMOFO NFFHJLHEMMB = 1;

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "LKDGPHDKHLL.proto";
-import "OMBEIFNNEDF.proto";
+import "genshin/packet/proto/LKDGPHDKHLL.proto";
+import "genshin/packet/proto/OMBEIFNNEDF.proto";
 
 message GOEIBBPJPDE {
 	repeated uint32 CBMEECGEBAK = 5;

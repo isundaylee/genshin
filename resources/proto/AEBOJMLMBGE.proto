@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KBAIOMIOCCP.proto";
+import "genshin/packet/proto/KBAIOMIOCCP.proto";
 
 message AEBOJMLMBGE {
 	KBAIOMIOCCP JMLABOBCLDE = 4;

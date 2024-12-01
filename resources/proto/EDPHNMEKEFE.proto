@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "FCHDBLFDCPD.proto";
+import "genshin/packet/proto/FCHDBLFDCPD.proto";
 
 message EDPHNMEKEFE {
 	FCHDBLFDCPD HFCIAJGDNPL = 1;

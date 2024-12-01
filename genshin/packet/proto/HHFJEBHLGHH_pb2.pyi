@@ -5,11 +5,11 @@ from typing import ClassVar as _ClassVar, Optional as _Optional
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class HHFJEBHLGHH(_message.Message):
-    __slots__ = ("avatar_id", "IADFGKJCIDE", "EJNINFFFKJP")
+    __slots__ = ("avatar_id", "type", "EJNINFFFKJP")
     AVATAR_ID_FIELD_NUMBER: _ClassVar[int]
-    IADFGKJCIDE_FIELD_NUMBER: _ClassVar[int]
+    TYPE_FIELD_NUMBER: _ClassVar[int]
     EJNINFFFKJP_FIELD_NUMBER: _ClassVar[int]
     avatar_id: int
-    IADFGKJCIDE: int
+    type: int
     EJNINFFFKJP: int
-    def __init__(self, avatar_id: _Optional[int] = ..., IADFGKJCIDE: _Optional[int] = ..., EJNINFFFKJP: _Optional[int] = ...) -> None: ...
+    def __init__(self, avatar_id: _Optional[int] = ..., type: _Optional[int] = ..., EJNINFFFKJP: _Optional[int] = ...) -> None: ...

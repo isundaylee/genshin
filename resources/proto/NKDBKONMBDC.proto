@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "MFGKDAPGLBG.proto";
+import "genshin/packet/proto/MFGKDAPGLBG.proto";
 
 message NKDBKONMBDC {
 	repeated uint32 AIAJGGDJAKB = 4;

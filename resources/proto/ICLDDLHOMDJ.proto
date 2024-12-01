@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BJIKPODAMDA.proto";
+import "genshin/packet/proto/BJIKPODAMDA.proto";
 
 message ICLDDLHOMDJ {
 	BJIKPODAMDA CABGIFFBCNC = 4;

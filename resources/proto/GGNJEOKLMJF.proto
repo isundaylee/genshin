@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GMBAAILCDEC.proto";
+import "genshin/packet/proto/GMBAAILCDEC.proto";
 
 message GGNJEOKLMJF {
 	repeated GMBAAILCDEC CMLPCKCHAHC = 4;

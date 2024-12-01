@@ -7,13 +7,13 @@ from typing import ClassVar as _ClassVar, Mapping as _Mapping, Optional as _Opti
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class LKIAMJCJLAK(_message.Message):
-    __slots__ = ("GJEBAJAJPII", "BJLLGBAPJKP", "EFKNDDJEPLJ", "IADFGKJCIDE")
+    __slots__ = ("GJEBAJAJPII", "BJLLGBAPJKP", "EFKNDDJEPLJ", "type")
     GJEBAJAJPII_FIELD_NUMBER: _ClassVar[int]
     BJLLGBAPJKP_FIELD_NUMBER: _ClassVar[int]
     EFKNDDJEPLJ_FIELD_NUMBER: _ClassVar[int]
-    IADFGKJCIDE_FIELD_NUMBER: _ClassVar[int]
+    TYPE_FIELD_NUMBER: _ClassVar[int]
     GJEBAJAJPII: _KDEHCGJAGFJ_pb2.KDEHCGJAGFJ
     BJLLGBAPJKP: int
     EFKNDDJEPLJ: int
-    IADFGKJCIDE: _DAFPGOBFFLB_pb2.DAFPGOBFFLB
-    def __init__(self, GJEBAJAJPII: _Optional[_Union[_KDEHCGJAGFJ_pb2.KDEHCGJAGFJ, _Mapping]] = ..., BJLLGBAPJKP: _Optional[int] = ..., EFKNDDJEPLJ: _Optional[int] = ..., IADFGKJCIDE: _Optional[_Union[_DAFPGOBFFLB_pb2.DAFPGOBFFLB, str]] = ...) -> None: ...
+    type: _DAFPGOBFFLB_pb2.DAFPGOBFFLB
+    def __init__(self, GJEBAJAJPII: _Optional[_Union[_KDEHCGJAGFJ_pb2.KDEHCGJAGFJ, _Mapping]] = ..., BJLLGBAPJKP: _Optional[int] = ..., EFKNDDJEPLJ: _Optional[int] = ..., type: _Optional[_Union[_DAFPGOBFFLB_pb2.DAFPGOBFFLB, str]] = ...) -> None: ...

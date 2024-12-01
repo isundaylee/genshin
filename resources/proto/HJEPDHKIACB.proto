@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LCFCOCGNPOM.proto";
+import "genshin/packet/proto/LCFCOCGNPOM.proto";
 
 message HJEPDHKIACB {
 	repeated LCFCOCGNPOM MIEAFINBNDK = 2;

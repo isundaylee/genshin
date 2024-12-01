@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "KLKICBNNANF.proto";
-import "JKHPMJDMPJC.proto";
-import "OIGOIMJIDLA.proto";
+import "genshin/packet/proto/KLKICBNNANF.proto";
+import "genshin/packet/proto/JKHPMJDMPJC.proto";
+import "genshin/packet/proto/OIGOIMJIDLA.proto";
 
 message JDNCHHPCNMD {
 	bool ALBHAJPGLOE = 1;

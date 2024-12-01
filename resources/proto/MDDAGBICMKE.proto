@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NMKNDNHOPPM.proto";
+import "genshin/packet/proto/NMKNDNHOPPM.proto";
 
 message MDDAGBICMKE {
 	map<uint32,NMKNDNHOPPM> HAJOLEIPGNP = 2;

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "GAIOBFEADPD.proto";
-import "DCDCNNPIFFK.proto";
+import "genshin/packet/proto/GAIOBFEADPD.proto";
+import "genshin/packet/proto/DCDCNNPIFFK.proto";
 
 message AHPOELHGGPM {
 	repeated GAIOBFEADPD EFCDELGMMKG = 14;

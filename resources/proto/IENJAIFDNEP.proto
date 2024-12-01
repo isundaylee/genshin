@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "PPBIOPOLEIB.proto";
+import "genshin/packet/proto/PPBIOPOLEIB.proto";
 
 message IENJAIFDNEP {
 	repeated PPBIOPOLEIB OFMLNCIMAGH = 11;

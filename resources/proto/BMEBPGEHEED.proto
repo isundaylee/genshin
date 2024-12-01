@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HJOPPFKLDNK.proto";
+import "genshin/packet/proto/HJOPPFKLDNK.proto";
 
 message BMEBPGEHEED {
 	repeated HJOPPFKLDNK PHNLNOIEELC = 7;

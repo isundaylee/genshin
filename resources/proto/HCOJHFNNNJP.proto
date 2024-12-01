@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GFFIOKDNCLP.proto";
+import "genshin/packet/proto/GFFIOKDNCLP.proto";
 
 message HCOJHFNNNJP {
 	repeated GFFIOKDNCLP FHCFDLFLKNO = 4;

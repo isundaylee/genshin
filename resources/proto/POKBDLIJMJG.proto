@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "KCICAHCPBGB.proto";
-import "PMNPLDNDDIP.proto";
-import "PLNEFHEEEKB.proto";
-import "OLIFCHHIJAG.proto";
+import "genshin/packet/proto/KCICAHCPBGB.proto";
+import "genshin/packet/proto/PMNPLDNDDIP.proto";
+import "genshin/packet/proto/PLNEFHEEEKB.proto";
+import "genshin/packet/proto/OLIFCHHIJAG.proto";
 
 message POKBDLIJMJG {
 	repeated KCICAHCPBGB AHKCIIMCBOJ = 8;

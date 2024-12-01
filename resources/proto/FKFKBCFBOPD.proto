@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GLJGNDBODKI.proto";
+import "genshin/packet/proto/GLJGNDBODKI.proto";
 
 message FKFKBCFBOPD {
 	repeated GLJGNDBODKI PBPPCKBBKLI = 11;

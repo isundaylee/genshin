@@ -63,3 +63,5 @@ EHFPPNBAGAD life_state
 MCKDBJLDCNF skill_depot_id
 HFLMEKNAJIE avatar_type
 DEHADAMGGJP avatar_id
+IADFGKJCIDE type
+MKIJCLHFJLN val

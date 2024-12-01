@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KOGANDHHOCG.proto";
+import "genshin/packet/proto/KOGANDHHOCG.proto";
 
 message FEMBHMJOEGM {
 	repeated KOGANDHHOCG KABODNMEGEK = 1;

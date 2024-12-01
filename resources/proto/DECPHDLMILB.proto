@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KNMPNCPBMMP.proto";
+import "genshin/packet/proto/KNMPNCPBMMP.proto";
 
 message DECPHDLMILB {
 	KNMPNCPBMMP HMLFALPADMC = 6;

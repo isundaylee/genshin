@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JKPCBHIPPNC.proto";
+import "genshin/packet/proto/JKPCBHIPPNC.proto";
 
 message OLALHNMDEEN {
 	repeated JKPCBHIPPNC CCIKNJDKNDI = 12;

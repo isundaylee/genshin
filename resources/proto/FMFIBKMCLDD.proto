@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OACINIFEKJN.proto";
+import "genshin/packet/proto/OACINIFEKJN.proto";
 
 message FMFIBKMCLDD {
 	uint32 GKNIKFALMCC = 1;

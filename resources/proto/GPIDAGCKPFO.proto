@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "EOCGCFPPLOE.proto";
-import "DENECGGILGP.proto";
-import "GKEDDLGEFML.proto";
-import "FKJOHKKAOPO.proto";
-import "EDBBIPJFFGK.proto";
+import "genshin/packet/proto/EOCGCFPPLOE.proto";
+import "genshin/packet/proto/DENECGGILGP.proto";
+import "genshin/packet/proto/GKEDDLGEFML.proto";
+import "genshin/packet/proto/FKJOHKKAOPO.proto";
+import "genshin/packet/proto/EDBBIPJFFGK.proto";
 
 message GPIDAGCKPFO {
 	repeated EOCGCFPPLOE GFPMLBFEMOA = 4;

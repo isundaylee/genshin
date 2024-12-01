@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "CHOMFEMEHNL.proto";
-import "CBMCENPMIHI.proto";
-import "CDFINADPJAP.proto";
-import "IGCDEHPIIFM.proto";
+import "genshin/packet/proto/CHOMFEMEHNL.proto";
+import "genshin/packet/proto/CBMCENPMIHI.proto";
+import "genshin/packet/proto/CDFINADPJAP.proto";
+import "genshin/packet/proto/IGCDEHPIIFM.proto";
 
 message DDOFEKCBIIC {
 	map<uint32,uint32> MJDAOHHPPPC = 15;

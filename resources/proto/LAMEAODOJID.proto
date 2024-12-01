@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GOOOCKGEEFH.proto";
+import "genshin/packet/proto/GOOOCKGEEFH.proto";
 
 message LAMEAODOJID {
 	repeated GOOOCKGEEFH avatar_list = 14;

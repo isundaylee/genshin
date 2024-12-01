@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "AvatarInfo.proto";
+import "genshin/packet/proto/AvatarInfo.proto";
 
 message MPNAEDEKKJO {
 	repeated AvatarInfo avatar_list = 12;

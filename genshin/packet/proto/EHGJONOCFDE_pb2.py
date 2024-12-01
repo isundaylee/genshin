@@ -25,7 +25,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import PropValue_pb2 as genshin_dot_packet_dot_proto_dot_PropValue__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/EHGJONOCFDE.proto\x1a$genshin/packet/proto/PropValue.proto\"C\n\x0b\x45HGJONOCFDE\x12\x1f\n\x0b\x44\x43JIMBILOGP\x18\x02 \x01(\x0b\x32\n.PropValue\x12\x13\n\x0bIADFGKJCIDE\x18\x01 \x01(\rb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/EHGJONOCFDE.proto\x1a$genshin/packet/proto/PropValue.proto\"<\n\x0b\x45HGJONOCFDE\x12\x1f\n\x0b\x44\x43JIMBILOGP\x18\x02 \x01(\x0b\x32\n.PropValue\x12\x0c\n\x04type\x18\x01 \x01(\rb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -33,5 +33,5 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.EHGJON
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
   _globals['_EHGJONOCFDE']._serialized_start=80
-  _globals['_EHGJONOCFDE']._serialized_end=147
+  _globals['_EHGJONOCFDE']._serialized_end=140
 # @@protoc_insertion_point(module_scope)

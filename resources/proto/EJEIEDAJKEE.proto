@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "PLIAJBGKCMD.proto";
-import "HFHJKHOPLMN.proto";
+import "genshin/packet/proto/PLIAJBGKCMD.proto";
+import "genshin/packet/proto/HFHJKHOPLMN.proto";
 
 message EJEIEDAJKEE {
 	repeated PLIAJBGKCMD FAGJDJIGLON = 15;

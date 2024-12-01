@@ -26,7 +26,7 @@ from genshin.packet.proto import KDEHCGJAGFJ_pb2 as genshin_dot_packet_dot_proto
 from genshin.packet.proto import DAFPGOBFFLB_pb2 as genshin_dot_packet_dot_proto_dot_DAFPGOBFFLB__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/LKIAMJCJLAK.proto\x1a&genshin/packet/proto/KDEHCGJAGFJ.proto\x1a&genshin/packet/proto/DAFPGOBFFLB.proto\"}\n\x0bLKIAMJCJLAK\x12!\n\x0bGJEBAJAJPII\x18\x06 \x01(\x0b\x32\x0c.KDEHCGJAGFJ\x12\x13\n\x0b\x42JLLGBAPJKP\x18\x08 \x01(\r\x12\x13\n\x0b\x45\x46KNDDJEPLJ\x18\x02 \x01(\r\x12!\n\x0bIADFGKJCIDE\x18\x05 \x01(\x0e\x32\x0c.DAFPGOBFFLBb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/LKIAMJCJLAK.proto\x1a&genshin/packet/proto/KDEHCGJAGFJ.proto\x1a&genshin/packet/proto/DAFPGOBFFLB.proto\"v\n\x0bLKIAMJCJLAK\x12!\n\x0bGJEBAJAJPII\x18\x06 \x01(\x0b\x32\x0c.KDEHCGJAGFJ\x12\x13\n\x0b\x42JLLGBAPJKP\x18\x08 \x01(\r\x12\x13\n\x0b\x45\x46KNDDJEPLJ\x18\x02 \x01(\r\x12\x1a\n\x04type\x18\x05 \x01(\x0e\x32\x0c.DAFPGOBFFLBb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -34,5 +34,5 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.LKIAMJ
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
   _globals['_LKIAMJCJLAK']._serialized_start=122
-  _globals['_LKIAMJCJLAK']._serialized_end=247
+  _globals['_LKIAMJCJLAK']._serialized_end=240
 # @@protoc_insertion_point(module_scope)

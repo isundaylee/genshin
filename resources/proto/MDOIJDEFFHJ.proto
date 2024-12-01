@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "EDAPKOEFNDA.proto";
+import "genshin/packet/proto/EDAPKOEFNDA.proto";
 
 message MDOIJDEFFHJ {
 	repeated uint64 equip_guid_list = 9;

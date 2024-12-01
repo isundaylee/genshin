@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GCNCGDNFABI.proto";
+import "genshin/packet/proto/GCNCGDNFABI.proto";
 
 message CFCDAMFFHHH {
 	repeated GCNCGDNFABI MLGJMALPGOC = 1;

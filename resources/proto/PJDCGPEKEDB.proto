@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "EHJPLMEENAP.proto";
+import "genshin/packet/proto/EHJPLMEENAP.proto";
 
 message PJDCGPEKEDB {
 	repeated EHJPLMEENAP AOCDKAGOAIK = 6;

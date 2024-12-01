@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "GJDJPCPPHIC.proto";
-import "EFEGIIMAOMI.proto";
+import "genshin/packet/proto/GJDJPCPPHIC.proto";
+import "genshin/packet/proto/EFEGIIMAOMI.proto";
 
 message LPOHNNDNOLL {
 	GJDJPCPPHIC EPNDBDPKLEP = 6;

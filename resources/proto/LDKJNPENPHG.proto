@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "EPLPHILHOHE.proto";
-import "MBIMHNFDGHN.proto";
-import "FJKNAAMGEMM.proto";
+import "genshin/packet/proto/EPLPHILHOHE.proto";
+import "genshin/packet/proto/MBIMHNFDGHN.proto";
+import "genshin/packet/proto/FJKNAAMGEMM.proto";
 
 message LDKJNPENPHG {
 	bytes FABFBKDGMJK = 15;

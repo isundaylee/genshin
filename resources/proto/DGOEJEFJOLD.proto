@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BMHBNOAHGAG.proto";
+import "genshin/packet/proto/BMHBNOAHGAG.proto";
 
 message DGOEJEFJOLD {
 	BMHBNOAHGAG ABOGPIADFAC = 7;

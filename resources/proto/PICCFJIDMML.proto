@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LMPINLNNPBD.proto";
+import "genshin/packet/proto/LMPINLNNPBD.proto";
 
 message PICCFJIDMML {
 	repeated uint32 KKPKGGPFPIM = 10;

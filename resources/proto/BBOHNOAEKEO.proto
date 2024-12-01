@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-import "ALKBANNMCBH.proto";
-import "PAGIAOELFBI.proto";
+import "genshin/packet/proto/ALKBANNMCBH.proto";
+import "genshin/packet/proto/PAGIAOELFBI.proto";
 
 message BBOHNOAEKEO {
 	repeated ALKBANNMCBH KIINDLKBNPD = 13;
 	PAGIAOELFBI EIMCFAMHHBJ = 5;
 	uint32 FCPANCMAOIE = 3;
-	uint32 IADFGKJCIDE = 11;
+	uint32 type = 11;
 }

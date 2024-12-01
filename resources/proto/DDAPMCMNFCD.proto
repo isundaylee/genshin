@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JNAJJANDBMO.proto";
+import "genshin/packet/proto/JNAJJANDBMO.proto";
 
 message DDAPMCMNFCD {
 	repeated JNAJJANDBMO GFGMLCFFLKH = 11;

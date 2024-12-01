@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "AJPKFJDOKFH.proto";
+import "genshin/packet/proto/AJPKFJDOKFH.proto";
 
 message OMLHFLOECMD {
 	repeated AJPKFJDOKFH OIKKLPFPKFD = 4;

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "CMGOOOMLAIA.proto";
-import "KBAIOMIOCCP.proto";
+import "genshin/packet/proto/CMGOOOMLAIA.proto";
+import "genshin/packet/proto/KBAIOMIOCCP.proto";
 
 message PKKLADNALIB {
 	repeated uint32 ACCDKGEOICN = 12;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LLMLNHCIKCD.proto";
+import "genshin/packet/proto/LLMLNHCIKCD.proto";
 
 message CKNBAOMALOP {
 	repeated LLMLNHCIKCD MLNOHNIGCDN = 2;

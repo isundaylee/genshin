@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CAIMBAMKDAL.proto";
+import "genshin/packet/proto/CAIMBAMKDAL.proto";
 
 message CBEANJOBNAL {
 	repeated CAIMBAMKDAL AOOEDBJIBIL = 11;

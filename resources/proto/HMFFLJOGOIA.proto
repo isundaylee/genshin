@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IJPADIGMNPH.proto";
+import "genshin/packet/proto/IJPADIGMNPH.proto";
 
 message HMFFLJOGOIA {
 	repeated IJPADIGMNPH HJOBNJHNPNL = 12;

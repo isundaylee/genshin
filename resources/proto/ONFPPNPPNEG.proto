@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CONLNJPJIDN.proto";
+import "genshin/packet/proto/CONLNJPJIDN.proto";
 
 message ONFPPNPPNEG {
 	repeated CONLNJPJIDN PNDPNMBDOKF = 14;

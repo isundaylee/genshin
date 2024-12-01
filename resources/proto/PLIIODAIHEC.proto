@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JAIFGFIJCNO.proto";
+import "genshin/packet/proto/JAIFGFIJCNO.proto";
 
 message PLIIODAIHEC {
 	repeated JAIFGFIJCNO MEFPPNGAOPH = 3;

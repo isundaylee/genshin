@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NNHFMCJOGPO.proto";
+import "genshin/packet/proto/NNHFMCJOGPO.proto";
 
 message OLADCLHPEHK {
 	repeated uint64 KJGCEABMONA = 7;

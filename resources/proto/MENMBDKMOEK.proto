@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LMLBFOELDFF.proto";
+import "genshin/packet/proto/LMLBFOELDFF.proto";
 
 message MENMBDKMOEK {
 	repeated LMLBFOELDFF FPKEIGKADAB = 1;

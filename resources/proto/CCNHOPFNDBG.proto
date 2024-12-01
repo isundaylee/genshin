@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BAENJDFENNH.proto";
+import "genshin/packet/proto/BAENJDFENNH.proto";
 
 message CCNHOPFNDBG {
 	repeated BAENJDFENNH AMEHOKPOGLK = 11;

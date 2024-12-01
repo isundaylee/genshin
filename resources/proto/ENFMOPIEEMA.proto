@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HLAIBKPEPLK.proto";
+import "genshin/packet/proto/HLAIBKPEPLK.proto";
 
 message ENFMOPIEEMA {
 	map<uint32,HLAIBKPEPLK> GPHHKGMAAEE = 7;

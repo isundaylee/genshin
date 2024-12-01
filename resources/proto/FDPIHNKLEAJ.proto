@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "NNFDIHPAGHC.proto";
-import "MHOJPFGMMHL.proto";
-import "DBOLCJJILGP.proto";
-import "CKBFJJMAKCD.proto";
-import "HOFLBHDIPII.proto";
+import "genshin/packet/proto/NNFDIHPAGHC.proto";
+import "genshin/packet/proto/MHOJPFGMMHL.proto";
+import "genshin/packet/proto/DBOLCJJILGP.proto";
+import "genshin/packet/proto/CKBFJJMAKCD.proto";
+import "genshin/packet/proto/HOFLBHDIPII.proto";
 
 message FDPIHNKLEAJ {
 	map<uint32,NNFDIHPAGHC> GCJJEHICMHA = 14;

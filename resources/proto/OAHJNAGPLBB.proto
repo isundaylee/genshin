@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "BEJMLLCJCFA.proto";
-import "CKLEEGMPDGN.proto";
+import "genshin/packet/proto/BEJMLLCJCFA.proto";
+import "genshin/packet/proto/CKLEEGMPDGN.proto";
 
 message OAHJNAGPLBB {
 	repeated BEJMLLCJCFA DEDNAOKPLHM = 1377;

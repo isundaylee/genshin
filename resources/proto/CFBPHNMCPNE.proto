@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JEKGEGJBGLF.proto";
+import "genshin/packet/proto/JEKGEGJBGLF.proto";
 
 message CFBPHNMCPNE {
 	uint32 EAIPGEMKNPO = 15;

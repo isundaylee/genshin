@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "KIBLANEDMOA.proto";
-import "NCGPMHOIHHL.proto";
+import "genshin/packet/proto/KIBLANEDMOA.proto";
+import "genshin/packet/proto/NCGPMHOIHHL.proto";
 
 message NFGBKNPJAIN {
 	repeated KIBLANEDMOA KABODNMEGEK = 5;

@@ -5,5 +5,5 @@ message IMCLKILFINE {
 	repeated uint32 FHCNHPKKONG = 1;
 	repeated string KKPEPKJACEF = 6;
 	uint32 NMAHOMOGPHC = 2;
-	int32 IADFGKJCIDE = 12;
+	int32 type = 12;
 }

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "AvatarInfo.proto";
+import "genshin/packet/proto/AvatarInfo.proto";
 
 message JEOODHEBJJP {
 	AvatarInfo NOLBCHIACJI = 14;

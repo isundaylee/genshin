@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LGIDOEBEPCL.proto";
+import "genshin/packet/proto/LGIDOEBEPCL.proto";
 
 message MPFCDLIPEDO {
 	LGIDOEBEPCL GEHNHFNKDNJ = 1;

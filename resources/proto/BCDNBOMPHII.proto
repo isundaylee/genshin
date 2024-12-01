@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OACPABJKLFG.proto";
+import "genshin/packet/proto/OACPABJKLFG.proto";
 
 message BCDNBOMPHII {
 	repeated OACPABJKLFG PNDPNMBDOKF = 11;

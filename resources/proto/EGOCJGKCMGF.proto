@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "PDEPCEHJHJJ.proto";
-import "FIHNKIBGLHA.proto";
-import "PENDPGJGCKD.proto";
-import "KCCFEHJJDGL.proto";
+import "genshin/packet/proto/PDEPCEHJHJJ.proto";
+import "genshin/packet/proto/FIHNKIBGLHA.proto";
+import "genshin/packet/proto/PENDPGJGCKD.proto";
+import "genshin/packet/proto/KCCFEHJJDGL.proto";
 
 message EGOCJGKCMGF {
 	repeated uint32 CGGMEDEICFL = 2;

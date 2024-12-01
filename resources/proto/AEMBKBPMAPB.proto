@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "DJCGMLCFKLC.proto";
-import "DGBLPHDFCBI.proto";
-import "JKLPNOGHIOI.proto";
+import "genshin/packet/proto/DJCGMLCFKLC.proto";
+import "genshin/packet/proto/DGBLPHDFCBI.proto";
+import "genshin/packet/proto/JKLPNOGHIOI.proto";
 
 message AEMBKBPMAPB {
 	repeated DJCGMLCFKLC DCLKHFDNIFN = 9;

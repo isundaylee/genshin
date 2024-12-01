@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BHJBDLJAKMG.proto";
+import "genshin/packet/proto/BHJBDLJAKMG.proto";
 
 message BBICGHBHCBA {
 	BHJBDLJAKMG avatar_type = 10;

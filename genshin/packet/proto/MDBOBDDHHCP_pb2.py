@@ -24,7 +24,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/MDBOBDDHHCP.proto\"a\n\x0bMDBOBDDHHCP\x12\x13\n\x0bLPAGGIOGCJK\x18\x03 \x03(\x02\x12\x13\n\x0b\x44\x43\x42\x44HNJFBDA\x18\x02 \x03(\r\x12\x13\n\x0bIOELHOCJEHO\x18\x04 \x01(\r\x12\x13\n\x0bIADFGKJCIDE\x18\x01 \x01(\x05\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/MDBOBDDHHCP.proto\"Z\n\x0bMDBOBDDHHCP\x12\x13\n\x0bLPAGGIOGCJK\x18\x03 \x03(\x02\x12\x13\n\x0b\x44\x43\x42\x44HNJFBDA\x18\x02 \x03(\r\x12\x13\n\x0bIOELHOCJEHO\x18\x04 \x01(\r\x12\x0c\n\x04type\x18\x01 \x01(\x05\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -32,5 +32,5 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.MDBOBD
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
   _globals['_MDBOBDDHHCP']._serialized_start=42
-  _globals['_MDBOBDDHHCP']._serialized_end=139
+  _globals['_MDBOBDDHHCP']._serialized_end=132
 # @@protoc_insertion_point(module_scope)

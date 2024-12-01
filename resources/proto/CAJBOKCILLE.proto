@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "AvatarRenameInfo.proto";
+import "genshin/packet/proto/AvatarRenameInfo.proto";
 
 message CAJBOKCILLE {
 	repeated AvatarRenameInfo avatar_rename_list = 9;

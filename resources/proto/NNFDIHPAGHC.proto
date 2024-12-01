@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "AAENLNIBFOP.proto";
+import "genshin/packet/proto/AAENLNIBFOP.proto";
 
 message NNFDIHPAGHC {
 	map<uint32,AAENLNIBFOP> HBJHPFFJNNB = 4;

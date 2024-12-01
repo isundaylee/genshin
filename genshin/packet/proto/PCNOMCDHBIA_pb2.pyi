@@ -10,7 +10,7 @@ from typing import ClassVar as _ClassVar, Iterable as _Iterable, Mapping as _Map
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class PCNOMCDHBIA(_message.Message):
-    __slots__ = ("BFMMHKFPCJB", "HNLJPNMJPIC", "GLCIAEKDPGL", "countdown", "timer", "normal", "NKNKFMJMFND", "IADFGKJCIDE")
+    __slots__ = ("BFMMHKFPCJB", "HNLJPNMJPIC", "GLCIAEKDPGL", "countdown", "timer", "normal", "NKNKFMJMFND", "type")
     BFMMHKFPCJB_FIELD_NUMBER: _ClassVar[int]
     HNLJPNMJPIC_FIELD_NUMBER: _ClassVar[int]
     GLCIAEKDPGL_FIELD_NUMBER: _ClassVar[int]
@@ -18,7 +18,7 @@ class PCNOMCDHBIA(_message.Message):
     TIMER_FIELD_NUMBER: _ClassVar[int]
     NORMAL_FIELD_NUMBER: _ClassVar[int]
     NKNKFMJMFND_FIELD_NUMBER: _ClassVar[int]
-    IADFGKJCIDE_FIELD_NUMBER: _ClassVar[int]
+    TYPE_FIELD_NUMBER: _ClassVar[int]
     BFMMHKFPCJB: str
     HNLJPNMJPIC: _containers.RepeatedScalarFieldContainer[int]
     GLCIAEKDPGL: int
@@ -26,5 +26,5 @@ class PCNOMCDHBIA(_message.Message):
     timer: _GJJCHDFDJPL_pb2.GJJCHDFDJPL
     normal: _KICDEFNONLA_pb2.KICDEFNONLA
     NKNKFMJMFND: int
-    IADFGKJCIDE: _PHGGEOPNMBP_pb2.PHGGEOPNMBP
-    def __init__(self, BFMMHKFPCJB: _Optional[str] = ..., HNLJPNMJPIC: _Optional[_Iterable[int]] = ..., GLCIAEKDPGL: _Optional[int] = ..., countdown: _Optional[_Union[_MKJGCFHIIHN_pb2.MKJGCFHIIHN, _Mapping]] = ..., timer: _Optional[_Union[_GJJCHDFDJPL_pb2.GJJCHDFDJPL, _Mapping]] = ..., normal: _Optional[_Union[_KICDEFNONLA_pb2.KICDEFNONLA, _Mapping]] = ..., NKNKFMJMFND: _Optional[int] = ..., IADFGKJCIDE: _Optional[_Union[_PHGGEOPNMBP_pb2.PHGGEOPNMBP, str]] = ...) -> None: ...
+    type: _PHGGEOPNMBP_pb2.PHGGEOPNMBP
+    def __init__(self, BFMMHKFPCJB: _Optional[str] = ..., HNLJPNMJPIC: _Optional[_Iterable[int]] = ..., GLCIAEKDPGL: _Optional[int] = ..., countdown: _Optional[_Union[_MKJGCFHIIHN_pb2.MKJGCFHIIHN, _Mapping]] = ..., timer: _Optional[_Union[_GJJCHDFDJPL_pb2.GJJCHDFDJPL, _Mapping]] = ..., normal: _Optional[_Union[_KICDEFNONLA_pb2.KICDEFNONLA, _Mapping]] = ..., NKNKFMJMFND: _Optional[int] = ..., type: _Optional[_Union[_PHGGEOPNMBP_pb2.PHGGEOPNMBP, str]] = ...) -> None: ...

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "MGAGOLBFEGF.proto";
-import "MBIMHNFDGHN.proto";
+import "genshin/packet/proto/MGAGOLBFEGF.proto";
+import "genshin/packet/proto/MBIMHNFDGHN.proto";
 
 message CDKCJCHEGFL {
 	MGAGOLBFEGF PILLGBGFFPK = 13;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "MBIMHNFDGHN.proto";
+import "genshin/packet/proto/MBIMHNFDGHN.proto";
 
 message KGKBLCLMMFD {
 	uint32 AGIDBEEINDE = 8;

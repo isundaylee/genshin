@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-import "DHBCEJOBGFG.proto";
-import "JLKJGAPHBKJ.proto";
-import "BEOBFJDMCCJ.proto";
-import "LPCBHDPPGPE.proto";
-import "NMAEBOPPGBN.proto";
-import "GONNEBEHPCE.proto";
+import "genshin/packet/proto/DHBCEJOBGFG.proto";
+import "genshin/packet/proto/JLKJGAPHBKJ.proto";
+import "genshin/packet/proto/BEOBFJDMCCJ.proto";
+import "genshin/packet/proto/LPCBHDPPGPE.proto";
+import "genshin/packet/proto/NMAEBOPPGBN.proto";
+import "genshin/packet/proto/GONNEBEHPCE.proto";
 
 message DPOOEONLPLP {
 	repeated uint32 JKEPONHCPCA = 759;

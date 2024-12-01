@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CJONIADFAOC.proto";
+import "genshin/packet/proto/CJONIADFAOC.proto";
 
 message DCNJGOKKPPC {
 	CJONIADFAOC AJCGKKPCCGD = 2;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OIPNCINGENE.proto";
+import "genshin/packet/proto/OIPNCINGENE.proto";
 
 message EFNCNMFNMAL {
 	repeated OIPNCINGENE AJCPNHFKAOO = 2;

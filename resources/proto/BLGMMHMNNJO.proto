@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ILLMMCDPFAM.proto";
+import "genshin/packet/proto/ILLMMCDPFAM.proto";
 
 message BLGMMHMNNJO {
 	ILLMMCDPFAM NCKECKMMKDK = 10;

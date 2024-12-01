@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "FBONNIGMEIP.proto";
-import "AJLCOMMPDIC.proto";
+import "genshin/packet/proto/FBONNIGMEIP.proto";
+import "genshin/packet/proto/AJLCOMMPDIC.proto";
 
 message AONPGPIPNCE {
 	string LKFGEAGBPGA = 7;

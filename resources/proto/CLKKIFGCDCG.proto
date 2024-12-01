@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "OAODPGJOMPF.proto";
-import "KPFOBLALBLC.proto";
+import "genshin/packet/proto/OAODPGJOMPF.proto";
+import "genshin/packet/proto/KPFOBLALBLC.proto";
 
 message CLKKIFGCDCG {
 	repeated OAODPGJOMPF CIDMBDPHCHJ = 1;

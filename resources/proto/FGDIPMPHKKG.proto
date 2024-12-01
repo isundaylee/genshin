@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "FDPMMPGALAD.proto";
+import "genshin/packet/proto/FDPMMPGALAD.proto";
 
 message FGDIPMPHKKG {
 	repeated FDPMMPGALAD BAGJBBKNADL = 7;

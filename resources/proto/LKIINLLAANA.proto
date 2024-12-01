@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KABBEPLLGOJ.proto";
+import "genshin/packet/proto/KABBEPLLGOJ.proto";
 
 message LKIINLLAANA {
 	KABBEPLLGOJ MEEEBNNMFIC = 7;

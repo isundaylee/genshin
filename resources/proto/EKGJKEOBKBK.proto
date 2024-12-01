@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "JOECDAOLNFD.proto";
-import "IDLAEJGILNL.proto";
-import "HFILDBLLMOP.proto";
+import "genshin/packet/proto/JOECDAOLNFD.proto";
+import "genshin/packet/proto/IDLAEJGILNL.proto";
+import "genshin/packet/proto/HFILDBLLMOP.proto";
 
 message EKGJKEOBKBK {
 	JOECDAOLNFD KFIIICLOLKG = 4;

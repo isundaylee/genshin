@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "PCNOMCDHBIA.proto";
-import "KIAPPNBMOBO.proto";
+import "genshin/packet/proto/PCNOMCDHBIA.proto";
+import "genshin/packet/proto/KIAPPNBMOBO.proto";
 
 message FDLJMDJJNKD {
 	repeated PCNOMCDHBIA AEBMEKGCEFP = 12;

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "PHDAEEHJBBA.proto";
-import "GFINLGDCIIN.proto";
+import "genshin/packet/proto/PHDAEEHJBBA.proto";
+import "genshin/packet/proto/GFINLGDCIIN.proto";
 
 message LCPCGANMINF {
 	int32 BJDAMEMIGCC = 3;

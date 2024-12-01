@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JDBKONEMPDD.proto";
+import "genshin/packet/proto/JDBKONEMPDD.proto";
 
 message EFLCLAIMPLD {
 	repeated JDBKONEMPDD AAEHPGKINOP = 1;

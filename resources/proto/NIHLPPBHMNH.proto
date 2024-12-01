@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "EJPDLPLCAJH.proto";
-import "EKFGGHCLOMJ.proto";
+import "genshin/packet/proto/EJPDLPLCAJH.proto";
+import "genshin/packet/proto/EKFGGHCLOMJ.proto";
 
 message NIHLPPBHMNH {
 	EJPDLPLCAJH DHEGCBCHMMJ = 6;

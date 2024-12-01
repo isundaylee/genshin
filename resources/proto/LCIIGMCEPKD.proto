@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CHOMFEMEHNL.proto";
+import "genshin/packet/proto/CHOMFEMEHNL.proto";
 
 message LCIIGMCEPKD {
 	repeated CHOMFEMEHNL PCIBMJMPABH = 11;

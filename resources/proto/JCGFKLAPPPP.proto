@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KBCOIMHABOI.proto";
+import "genshin/packet/proto/KBCOIMHABOI.proto";
 
 message JCGFKLAPPPP {
 	repeated KBCOIMHABOI KMKLFECOOIA = 13;

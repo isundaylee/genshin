@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "MLOBECPAOCA.proto";
+import "genshin/packet/proto/MLOBECPAOCA.proto";
 
 message PFEGFNAFLCO {
 	repeated MLOBECPAOCA NDDOBGMDGLA = 9;

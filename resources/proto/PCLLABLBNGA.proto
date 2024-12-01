@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HDNFFPFFNDN.proto";
+import "genshin/packet/proto/HDNFFPFFNDN.proto";
 
 message PCLLABLBNGA {
 	HDNFFPFFNDN NMLMHPPDLIB = 2;

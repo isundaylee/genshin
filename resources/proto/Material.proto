@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JDNCHHPCNMD.proto";
+import "genshin/packet/proto/JDNCHHPCNMD.proto";
 
 message Material {
 	JDNCHHPCNMD KPNDJLKLKFO = 2;

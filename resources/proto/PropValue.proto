@@ -1,8 +1,8 @@
 syntax = "proto3";
 
 message PropValue {
-	uint32 IADFGKJCIDE = 1;
+	uint32 type = 1;
 	float fval = 3;
 	int64 ival = 2;
-	int64 MKIJCLHFJLN = 4;
+	int64 val = 4;
 }

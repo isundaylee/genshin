@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "GIIBEFAJGBK.proto";
-import "ELNAJEHAMJL.proto";
-import "BJKFJPJDMIC.proto";
-import "ENLAFOLMIOG.proto";
+import "genshin/packet/proto/GIIBEFAJGBK.proto";
+import "genshin/packet/proto/ELNAJEHAMJL.proto";
+import "genshin/packet/proto/BJKFJPJDMIC.proto";
+import "genshin/packet/proto/ENLAFOLMIOG.proto";
 
 message HEKGHBFOMII {
 	repeated uint32 DKIMEEMCDIO = 12;

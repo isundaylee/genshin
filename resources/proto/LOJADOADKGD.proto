@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "AFAPLAEFBIL.proto";
+import "genshin/packet/proto/AFAPLAEFBIL.proto";
 
 message LOJADOADKGD {
 	uint32 APLPJPOKLAG = 7;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CFKOFLPOMOK.proto";
+import "genshin/packet/proto/CFKOFLPOMOK.proto";
 
 message CKBMKLICBBO {
 	repeated CFKOFLPOMOK OCFELHFNHKA = 10;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IKMNCNBEMLA.proto";
+import "genshin/packet/proto/IKMNCNBEMLA.proto";
 
 message CIPKALFKAOI {
 	repeated IKMNCNBEMLA KIKEOBNGPPO = 15;

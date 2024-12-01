@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GDFFBGABIND.proto";
+import "genshin/packet/proto/GDFFBGABIND.proto";
 
 message PCBJOAGJIOL {
 	repeated GDFFBGABIND NEHPGMLDKMF = 12;

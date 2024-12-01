@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KEKPBPFECOG.proto";
+import "genshin/packet/proto/KEKPBPFECOG.proto";
 
 message HKPGNGDDOCL {
 	KEKPBPFECOG discover = 2;

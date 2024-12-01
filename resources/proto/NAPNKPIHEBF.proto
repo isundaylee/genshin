@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "EJOBMPBBBIA.proto";
-import "FJCOKOHBJIN.proto";
-import "AvatarExcelInfo.proto";
-import "JNMHJONHLAG.proto";
-import "OGAAEKDALAL.proto";
+import "genshin/packet/proto/EJOBMPBBBIA.proto";
+import "genshin/packet/proto/FJCOKOHBJIN.proto";
+import "genshin/packet/proto/AvatarExcelInfo.proto";
+import "genshin/packet/proto/JNMHJONHLAG.proto";
+import "genshin/packet/proto/OGAAEKDALAL.proto";
 
 message NAPNKPIHEBF {
 	repeated EJOBMPBBBIA PBGDCGODOKP = 9;

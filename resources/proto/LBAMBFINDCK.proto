@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-import "EJOOLLBLONF.proto";
-import "OJAFGHALCGN.proto";
-import "AJMOOMNAMDF.proto";
-import "ABHOCFILGJL.proto";
-import "AGDIEPOHJCH.proto";
-import "CNJPPHNDJNC.proto";
-import "KCBMFCPADFO.proto";
-import "LODGAOKFCGN.proto";
-import "NKDBKONMBDC.proto";
+import "genshin/packet/proto/EJOOLLBLONF.proto";
+import "genshin/packet/proto/OJAFGHALCGN.proto";
+import "genshin/packet/proto/AJMOOMNAMDF.proto";
+import "genshin/packet/proto/ABHOCFILGJL.proto";
+import "genshin/packet/proto/AGDIEPOHJCH.proto";
+import "genshin/packet/proto/CNJPPHNDJNC.proto";
+import "genshin/packet/proto/KCBMFCPADFO.proto";
+import "genshin/packet/proto/LODGAOKFCGN.proto";
+import "genshin/packet/proto/NKDBKONMBDC.proto";
 
 message LBAMBFINDCK {
 	EJOOLLBLONF OJFJAGENCJF = 10;

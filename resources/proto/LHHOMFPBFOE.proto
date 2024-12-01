@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KAAPGMMGPOF.proto";
+import "genshin/packet/proto/KAAPGMMGPOF.proto";
 
 message LHHOMFPBFOE {
 	uint32 FJAMCDJDJOA = 10;

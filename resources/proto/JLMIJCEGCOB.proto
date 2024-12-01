@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BGDCPBEGANK.proto";
+import "genshin/packet/proto/BGDCPBEGANK.proto";
 
 message JLMIJCEGCOB {
 	repeated BGDCPBEGANK NEFMGJIDAAK = 5;

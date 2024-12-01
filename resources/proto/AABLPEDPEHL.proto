@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IBFDCGEOEIE.proto";
+import "genshin/packet/proto/IBFDCGEOEIE.proto";
 
 message AABLPEDPEHL {
 	IBFDCGEOEIE CPMHMDJDEDB = 10;

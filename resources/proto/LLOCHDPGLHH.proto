@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "MBLGAMKOLNH.proto";
-import "PDCHBPPHCIO.proto";
-import "KEPEDPMNKMH.proto";
+import "genshin/packet/proto/MBLGAMKOLNH.proto";
+import "genshin/packet/proto/PDCHBPPHCIO.proto";
+import "genshin/packet/proto/KEPEDPMNKMH.proto";
 
 message LLOCHDPGLHH {
 	MBLGAMKOLNH LEPOCHAIDCI = 11;

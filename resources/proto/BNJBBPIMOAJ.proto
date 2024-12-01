@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "ENEBCPJJPHN.proto";
-import "OLHEKLKENDN.proto";
+import "genshin/packet/proto/ENEBCPJJPHN.proto";
+import "genshin/packet/proto/OLHEKLKENDN.proto";
 
 message BNJBBPIMOAJ {
 	repeated uint32 PDHEKMEMBLG = 4;

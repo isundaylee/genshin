@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CJEIMOKENAM.proto";
+import "genshin/packet/proto/CJEIMOKENAM.proto";
 
 message NLKFLIMENBK {
 	CJEIMOKENAM PJMIHEEDBDB = 15;

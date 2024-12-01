@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LIOFFOGFCGC.proto";
+import "genshin/packet/proto/LIOFFOGFCGC.proto";
 
 message KBGFFPMOLNP {
 	repeated LIOFFOGFCGC ENAPLOPDDOM = 1;

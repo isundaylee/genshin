@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "EGBJCPOIMLJ.proto";
+import "genshin/packet/proto/EGBJCPOIMLJ.proto";
 
 message LNIMMMBFPGA {
 	repeated EGBJCPOIMLJ EFCDELGMMKG = 14;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CKBMKLICBBO.proto";
+import "genshin/packet/proto/CKBMKLICBBO.proto";
 
 message GLIEDEHAIMN {
 	repeated CKBMKLICBBO IFLIBBIFJCC = 3;

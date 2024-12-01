@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ILJBEKEGPIF.proto";
+import "genshin/packet/proto/ILJBEKEGPIF.proto";
 
 message JDMGFCIPNIN {
 	repeated ILJBEKEGPIF MHLENCLFCKN = 7;

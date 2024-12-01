@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "PBKKCEOCHEB.proto";
-import "GPCMGDAKOEM.proto";
+import "genshin/packet/proto/PBKKCEOCHEB.proto";
+import "genshin/packet/proto/GPCMGDAKOEM.proto";
 
 message HPFIHMBBAEK {
 	repeated PBKKCEOCHEB PEOILIHAHJK = 12;

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "KNMPNCPBMMP.proto";
-import "CGACLDGEJJA.proto";
+import "genshin/packet/proto/KNMPNCPBMMP.proto";
+import "genshin/packet/proto/CGACLDGEJJA.proto";
 
 message NFAGPIAIKGN {
 	KNMPNCPBMMP PBDCLALKDAB = 8;

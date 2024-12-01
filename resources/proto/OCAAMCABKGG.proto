@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HIPGPMNCMBP.proto";
+import "genshin/packet/proto/HIPGPMNCMBP.proto";
 
 message OCAAMCABKGG {
 	repeated uint32 EEKFELFANGN = 13;

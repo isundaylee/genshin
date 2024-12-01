@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "PKGOCLIMOIG.proto";
+import "genshin/packet/proto/PKGOCLIMOIG.proto";
 
 message IPONCCDLKGH {
 	repeated PKGOCLIMOIG MAOIJFFGIDE = 3;

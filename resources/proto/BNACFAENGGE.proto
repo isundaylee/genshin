@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "MLECMFLLOGC.proto";
-import "PKJMPCPEGGO.proto";
+import "genshin/packet/proto/MLECMFLLOGC.proto";
+import "genshin/packet/proto/PKJMPCPEGGO.proto";
 
 message BNACFAENGGE {
 	string MPMEJIBKJEO = 13;

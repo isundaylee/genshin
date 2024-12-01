@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JDAPCOMIMKO.proto";
+import "genshin/packet/proto/JDAPCOMIMKO.proto";
 
 message JDGEDOJPJOE {
 	JDAPCOMIMKO JMGKJPACKGI = 4;

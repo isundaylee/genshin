@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ELLDEPILOFC.proto";
+import "genshin/packet/proto/ELLDEPILOFC.proto";
 
 message MDDPBGGFGAG {
 	ELLDEPILOFC MBOGPBBOIEH = 2;

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "BLIFJLGHEEM.proto";
-import "Item.proto";
+import "genshin/packet/proto/BLIFJLGHEEM.proto";
+import "genshin/packet/proto/Item.proto";
 
 message TrialAvatarInfo {
 	BLIFJLGHEEM LMAIEOEHELF = 3;

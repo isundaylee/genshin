@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NEOALIIGKHO.proto";
+import "genshin/packet/proto/NEOALIIGKHO.proto";
 
 message FCHLLHGCMDC {
 	repeated NEOALIIGKHO BENGMPAKAMD = 1;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ACEKDEBFIMC.proto";
+import "genshin/packet/proto/ACEKDEBFIMC.proto";
 
 message CHNDGMMBKDI {
 	repeated ACEKDEBFIMC NFMBFOGNCNL = 15;

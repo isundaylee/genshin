@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KHPFEKNJDOF.proto";
+import "genshin/packet/proto/KHPFEKNJDOF.proto";
 
 message BHCABMOPBFF {
 	KHPFEKNJDOF OCLDGOHIIML = 2;

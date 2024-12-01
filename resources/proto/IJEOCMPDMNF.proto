@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "GKIDJMLNNHH.proto";
-import "NIPGCFOGIHP.proto";
-import "NIHODIJKPKE.proto";
+import "genshin/packet/proto/GKIDJMLNNHH.proto";
+import "genshin/packet/proto/NIPGCFOGIHP.proto";
+import "genshin/packet/proto/NIHODIJKPKE.proto";
 
 message IJEOCMPDMNF {
 	GKIDJMLNNHH MIHAKFPLLKC = 12;

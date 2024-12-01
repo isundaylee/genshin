@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "BDCDECGDJGF.proto";
-import "CGPHGGDKIHF.proto";
-import "KPFOBLALBLC.proto";
+import "genshin/packet/proto/BDCDECGDJGF.proto";
+import "genshin/packet/proto/CGPHGGDKIHF.proto";
+import "genshin/packet/proto/KPFOBLALBLC.proto";
 
 message HCGEKEDNIAE {
 	BDCDECGDJGF OCMLKEOONKO = 12;

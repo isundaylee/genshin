@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "GBMACCKLNJE.proto";
-import "JCFMHOHIDOD.proto";
-import "OFBHCGGGGGN.proto";
+import "genshin/packet/proto/GBMACCKLNJE.proto";
+import "genshin/packet/proto/JCFMHOHIDOD.proto";
+import "genshin/packet/proto/OFBHCGGGGGN.proto";
 
 message ILECOAJKAKN {
 	repeated uint32 GOGOFPNOKBK = 11;

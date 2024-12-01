@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KOPDCBOLIKB.proto";
+import "genshin/packet/proto/KOPDCBOLIKB.proto";
 
 message IFBALGIDBIO {
 	KOPDCBOLIKB BILMBAOJDPK = 4;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "AODEBPFBIML.proto";
+import "genshin/packet/proto/AODEBPFBIML.proto";
 
 message FOPFPNMJNFM {
 	repeated AODEBPFBIML IALAGDBIKKD = 8;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "MAJEEOHEBAB.proto";
+import "genshin/packet/proto/MAJEEOHEBAB.proto";
 
 message BOKBPPDLKEN {
 	repeated MAJEEOHEBAB DLHAKOKJINO = 15;

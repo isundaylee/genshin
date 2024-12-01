@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "ALGFOHHNNOD.proto";
-import "MIFIKPOHMNG.proto";
-import "OPLPJLCPJDO.proto";
-import "DDAPMCMNFCD.proto";
+import "genshin/packet/proto/ALGFOHHNNOD.proto";
+import "genshin/packet/proto/MIFIKPOHMNG.proto";
+import "genshin/packet/proto/OPLPJLCPJDO.proto";
+import "genshin/packet/proto/DDAPMCMNFCD.proto";
 
 message DCFHFECEECM {
 	ALGFOHHNNOD KPLGKJKFJDN = 4;

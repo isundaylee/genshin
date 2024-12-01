@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "MINGHCPOBNG.proto";
+import "genshin/packet/proto/MINGHCPOBNG.proto";
 
 message OIEPLEJOGJC {
 	MINGHCPOBNG NGANCEICGHC = 6;

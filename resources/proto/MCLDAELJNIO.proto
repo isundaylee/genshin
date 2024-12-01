@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "MALKBOBPBGG.proto";
+import "genshin/packet/proto/MALKBOBPBGG.proto";
 
 message MCLDAELJNIO {
 	repeated MALKBOBPBGG IFLIBBIFJCC = 11;

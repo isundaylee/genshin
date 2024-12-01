@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NIJKANKIBLA.proto";
+import "genshin/packet/proto/NIJKANKIBLA.proto";
 
 message NMAEBOPPGBN {
 	NIJKANKIBLA AKGOOIIBCOM = 8;

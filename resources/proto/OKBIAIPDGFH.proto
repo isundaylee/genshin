@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "NDBDLEKNHMF.proto";
+import "genshin/packet/proto/NDBDLEKNHMF.proto";
 
 message OKBIAIPDGFH {
-	NDBDLEKNHMF IADFGKJCIDE = 14;
+	NDBDLEKNHMF type = 14;
 	uint32 FNNNBGBMGDK = 7;
 	uint32 MBBKAENBCKD = 8;
 }

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HOFCOAIFPLB.proto";
+import "genshin/packet/proto/HOFCOAIFPLB.proto";
 
 message IPDFPEJJFJL {
 	map<uint32,HOFCOAIFPLB> CPIEAINBKDH = 5;

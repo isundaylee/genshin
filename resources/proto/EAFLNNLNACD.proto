@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CAPGOAIBEKK.proto";
+import "genshin/packet/proto/CAPGOAIBEKK.proto";
 
 message EAFLNNLNACD {
 	CAPGOAIBEKK OMJBFBPBOLH = 4;

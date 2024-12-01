@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HPDPKLFDMCE.proto";
+import "genshin/packet/proto/HPDPKLFDMCE.proto";
 
 message EBMAEDKIJFO {
 	HPDPKLFDMCE EDJLNGFGLCP = 7;

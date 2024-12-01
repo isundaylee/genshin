@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "GLIEDEHAIMN.proto";
-import "KIDIOMKHFMO.proto";
-import "KEEHOCBAHKG.proto";
-import "MCLDAELJNIO.proto";
-import "MMPHDJFAPGK.proto";
+import "genshin/packet/proto/GLIEDEHAIMN.proto";
+import "genshin/packet/proto/KIDIOMKHFMO.proto";
+import "genshin/packet/proto/KEEHOCBAHKG.proto";
+import "genshin/packet/proto/MCLDAELJNIO.proto";
+import "genshin/packet/proto/MMPHDJFAPGK.proto";
 
 message IHADDLGIHGB {
 	uint32 EHAEACFBOOL = 15;

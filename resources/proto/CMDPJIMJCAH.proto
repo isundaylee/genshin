@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ELEHHOOEDFN.proto";
+import "genshin/packet/proto/ELEHHOOEDFN.proto";
 
 message CMDPJIMJCAH {
 	uint64 MCPPEKNBHFK = 2;

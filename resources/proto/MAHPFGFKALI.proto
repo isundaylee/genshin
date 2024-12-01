@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "Item.proto";
+import "genshin/packet/proto/Item.proto";
 
 message MAHPFGFKALI {
 	repeated Item item_list = 2;

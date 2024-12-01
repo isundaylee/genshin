@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "FABGOAPPDAO.proto";
+import "genshin/packet/proto/FABGOAPPDAO.proto";
 
 message GMEAKPMBHMG {
 	map<uint32,uint32> JLIJIJMOHHH = 2;

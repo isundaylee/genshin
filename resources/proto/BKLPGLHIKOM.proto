@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CKLEEGMPDGN.proto";
+import "genshin/packet/proto/CKLEEGMPDGN.proto";
 
 message BKLPGLHIKOM {
 	bool JFJNDAKFJEK = 6;

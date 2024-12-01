@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "FKNCPOHEPDN.proto";
-import "KDEHCGJAGFJ.proto";
+import "genshin/packet/proto/FKNCPOHEPDN.proto";
+import "genshin/packet/proto/KDEHCGJAGFJ.proto";
 
 message EJPDLPLCAJH {
 	repeated uint32 EPBMKILNPJI = 14;

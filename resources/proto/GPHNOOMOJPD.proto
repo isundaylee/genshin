@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OCBNHNOPDND.proto";
+import "genshin/packet/proto/OCBNHNOPDND.proto";
 
 message GPHNOOMOJPD {
 	repeated uint32 DNODMEKLBGH = 9;

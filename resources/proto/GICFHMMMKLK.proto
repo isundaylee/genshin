@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "MKOFGOKEKIL.proto";
-import "ABPIHFANHOB.proto";
-import "OFOFFIDHIAN.proto";
-import "CFBPHNMCPNE.proto";
+import "genshin/packet/proto/MKOFGOKEKIL.proto";
+import "genshin/packet/proto/ABPIHFANHOB.proto";
+import "genshin/packet/proto/OFOFFIDHIAN.proto";
+import "genshin/packet/proto/CFBPHNMCPNE.proto";
 
 message GICFHMMMKLK {
 	MKOFGOKEKIL HKBOJJFFMAE = 3;

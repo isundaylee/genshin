@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BGNINGGDPAA.proto";
+import "genshin/packet/proto/BGNINGGDPAA.proto";
 
 message IJAJHJECJFK {
 	repeated BGNINGGDPAA FAGJDJIGLON = 2;

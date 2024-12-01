@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "AANALBNNPPL.proto";
+import "genshin/packet/proto/AANALBNNPPL.proto";
 
 message AvatarFetterInfo {
 	repeated AANALBNNPPL PLOKNPKGHPB = 6;

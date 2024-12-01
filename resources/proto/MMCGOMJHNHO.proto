@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OBOLBJCGMGA.proto";
+import "genshin/packet/proto/OBOLBJCGMGA.proto";
 
 message MMCGOMJHNHO {
 	OBOLBJCGMGA ODPNMGFHEOM = 11;

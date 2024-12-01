@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ILLBOJCLABL.proto";
+import "genshin/packet/proto/ILLBOJCLABL.proto";
 
 message PCMMBLEAOAJ {
 	ILLBOJCLABL BODIEJCLGMB = 6;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HEGOJOHEFIB.proto";
+import "genshin/packet/proto/HEGOJOHEFIB.proto";
 
 message JNFBJNEDPID {
 	repeated HEGOJOHEFIB GEIAGFPMLOF = 12;

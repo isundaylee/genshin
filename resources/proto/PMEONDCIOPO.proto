@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "NNDLCNDEKFH.proto";
-import "NAKLNGMFLHF.proto";
-import "OFELNADBNKC.proto";
-import "KMHNIKBIOEE.proto";
+import "genshin/packet/proto/NNDLCNDEKFH.proto";
+import "genshin/packet/proto/NAKLNGMFLHF.proto";
+import "genshin/packet/proto/OFELNADBNKC.proto";
+import "genshin/packet/proto/KMHNIKBIOEE.proto";
 
 message PMEONDCIOPO {
 	repeated NNDLCNDEKFH MDKPLBDANEF = 12;

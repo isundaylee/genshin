@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IBCBPJIEAAF.proto";
+import "genshin/packet/proto/IBCBPJIEAAF.proto";
 
 message GGMACIFDEBM {
 	repeated IBCBPJIEAAF HGKBEDPKPNA = 12;

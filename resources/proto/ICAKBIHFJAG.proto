@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ALDEPKNJHGB.proto";
+import "genshin/packet/proto/ALDEPKNJHGB.proto";
 
 message ICAKBIHFJAG {
 	string CKIECFILLBC = 4;

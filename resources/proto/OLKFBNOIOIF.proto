@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-import "DHDEBBIPIIF.proto";
-import "PODKLCCMDID.proto";
-import "NPPKGKLHLOD.proto";
-import "NLCHENONCBI.proto";
-import "OAAFLEBINLN.proto";
-import "LLPEEGBJOFA.proto";
-import "GDMJGBFBFHP.proto";
-import "GKNMALEJKHN.proto";
+import "genshin/packet/proto/DHDEBBIPIIF.proto";
+import "genshin/packet/proto/PODKLCCMDID.proto";
+import "genshin/packet/proto/NPPKGKLHLOD.proto";
+import "genshin/packet/proto/NLCHENONCBI.proto";
+import "genshin/packet/proto/OAAFLEBINLN.proto";
+import "genshin/packet/proto/LLPEEGBJOFA.proto";
+import "genshin/packet/proto/GDMJGBFBFHP.proto";
+import "genshin/packet/proto/GKNMALEJKHN.proto";
 
 message OLKFBNOIOIF {
 	DHDEBBIPIIF CKEHABLGHNN = 15;

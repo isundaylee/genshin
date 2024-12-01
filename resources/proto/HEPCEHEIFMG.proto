@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "FBDEKCPNBPF.proto";
-import "MBIMHNFDGHN.proto";
+import "genshin/packet/proto/FBDEKCPNBPF.proto";
+import "genshin/packet/proto/MBIMHNFDGHN.proto";
 
 message HEPCEHEIFMG {
 	repeated FBDEKCPNBPF JPFLLBNMGGP = 11;

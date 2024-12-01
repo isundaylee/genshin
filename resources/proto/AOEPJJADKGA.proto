@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-import "DAIIGOPBCDD.proto";
-import "EKHMDFIDDOD.proto";
-import "NPPCMGNNKBG.proto";
-import "BCDNFNMFIJC.proto";
-import "BODJBNIMHEN.proto";
-import "NNMGCCBCFHA.proto";
+import "genshin/packet/proto/DAIIGOPBCDD.proto";
+import "genshin/packet/proto/EKHMDFIDDOD.proto";
+import "genshin/packet/proto/NPPCMGNNKBG.proto";
+import "genshin/packet/proto/BCDNFNMFIJC.proto";
+import "genshin/packet/proto/BODJBNIMHEN.proto";
+import "genshin/packet/proto/NNMGCCBCFHA.proto";
 
 message AOEPJJADKGA {
 	repeated DAIIGOPBCDD MDKPLBDANEF = 11;

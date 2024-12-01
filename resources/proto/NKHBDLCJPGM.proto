@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "EALKFDEADIC.proto";
+import "genshin/packet/proto/EALKFDEADIC.proto";
 
 message NKHBDLCJPGM {
 	repeated EALKFDEADIC EFCDELGMMKG = 7;

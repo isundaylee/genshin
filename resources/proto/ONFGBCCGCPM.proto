@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OFNIGDFJLCD.proto";
+import "genshin/packet/proto/OFNIGDFJLCD.proto";
 
 message ONFGBCCGCPM {
 	OFNIGDFJLCD FGAEINCCKDK = 10;

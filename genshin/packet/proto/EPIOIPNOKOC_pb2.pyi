@@ -6,7 +6,7 @@ from typing import ClassVar as _ClassVar, Optional as _Optional, Union as _Union
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class EPIOIPNOKOC(_message.Message):
-    __slots__ = ("IADFGKJCIDE",)
-    IADFGKJCIDE_FIELD_NUMBER: _ClassVar[int]
-    IADFGKJCIDE: _BPOBBMNGMDL_pb2.BPOBBMNGMDL
-    def __init__(self, IADFGKJCIDE: _Optional[_Union[_BPOBBMNGMDL_pb2.BPOBBMNGMDL, str]] = ...) -> None: ...
+    __slots__ = ("type",)
+    TYPE_FIELD_NUMBER: _ClassVar[int]
+    type: _BPOBBMNGMDL_pb2.BPOBBMNGMDL
+    def __init__(self, type: _Optional[_Union[_BPOBBMNGMDL_pb2.BPOBBMNGMDL, str]] = ...) -> None: ...

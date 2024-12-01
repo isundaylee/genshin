@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "BCDOMHBDHAJ.proto";
-import "MNHBEHENECP.proto";
+import "genshin/packet/proto/BCDOMHBDHAJ.proto";
+import "genshin/packet/proto/MNHBEHENECP.proto";
 
 message BFMAJBBMIOH {
 	bool BNACCMFLPKO = 11;

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "FGNHPFIDPCB.proto";
-import "KJIHGCIALOJ.proto";
-import "JAFNAFFNFLD.proto";
-import "DEIHIELEFEN.proto";
+import "genshin/packet/proto/FGNHPFIDPCB.proto";
+import "genshin/packet/proto/KJIHGCIALOJ.proto";
+import "genshin/packet/proto/JAFNAFFNFLD.proto";
+import "genshin/packet/proto/DEIHIELEFEN.proto";
 
 message PBIIGBANBHC {
 	FGNHPFIDPCB LEDMFIOGIFL = 11;

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "NNIHKEKCJOC.proto";
-import "JBDJMJJKOOO.proto";
-import "KDEHCGJAGFJ.proto";
-import "HKNAPEMKPMK.proto";
+import "genshin/packet/proto/NNIHKEKCJOC.proto";
+import "genshin/packet/proto/JBDJMJJKOOO.proto";
+import "genshin/packet/proto/KDEHCGJAGFJ.proto";
+import "genshin/packet/proto/HKNAPEMKPMK.proto";
 
 message CMOPDDPMIAO {
 	string BANEDGCECOD = 13;

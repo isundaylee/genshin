@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KIFAKNNKDPC.proto";
+import "genshin/packet/proto/KIFAKNNKDPC.proto";
 
 message NPPKACNELMC {
 	KIFAKNNKDPC MIOOOAFMOAE = 1;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "DALEKDKMMBF.proto";
+import "genshin/packet/proto/DALEKDKMMBF.proto";
 
 message CDLJLAHCHPB {
 	DALEKDKMMBF GIFEDGEMMMA = 3;

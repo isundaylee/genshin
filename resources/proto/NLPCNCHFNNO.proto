@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IJGINKJGDPD.proto";
+import "genshin/packet/proto/IJGINKJGDPD.proto";
 
 message NLPCNCHFNNO {
 	repeated IJGINKJGDPD IKMDADCOPEG = 11;

@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "KBDGJPCLCHJ.proto";
-import "ICIEAHBEMCJ.proto";
-import "NPAGLLEIBJM.proto";
+import "genshin/packet/proto/KBDGJPCLCHJ.proto";
+import "genshin/packet/proto/ICIEAHBEMCJ.proto";
+import "genshin/packet/proto/NPAGLLEIBJM.proto";
 
 message ELDJEDMBNBG {
 	KBDGJPCLCHJ GHIHAIDBACF = 12;

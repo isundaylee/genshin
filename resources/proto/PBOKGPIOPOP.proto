@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LLGCDCDHDPD.proto";
+import "genshin/packet/proto/LLGCDCDHDPD.proto";
 
 message PBOKGPIOPOP {
 	LLGCDCDHDPD BDALEDOAHFA = 6;

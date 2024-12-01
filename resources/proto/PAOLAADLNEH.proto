@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "PICCFJIDMML.proto";
+import "genshin/packet/proto/PICCFJIDMML.proto";
 
 message PAOLAADLNEH {
 	PICCFJIDMML JKNHPFOBGJB = 3;

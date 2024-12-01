@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NLPNKEJGIBF.proto";
+import "genshin/packet/proto/NLPNKEJGIBF.proto";
 
 message APFCEEFMOLO {
 	repeated NLPNKEJGIBF JGHODDIPILM = 6;

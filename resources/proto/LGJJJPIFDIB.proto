@@ -12,7 +12,7 @@ message LGJJJPIFDIB {
 	int32 AGHNEJINBFJ = 4;
 	bool AADKOBECBIM = 9;
 	uint32 JBBNJEHICAF = 13;
-	uint32 IADFGKJCIDE = 1;
+	uint32 type = 1;
 	uint32 MHGLDBMEGEG = 12;
 	int32 GNPDMBMPADF = 8;
 	int32 HKAJOKNAHIF = 7;

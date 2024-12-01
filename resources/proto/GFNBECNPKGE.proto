@@ -1,25 +1,25 @@
 syntax = "proto3";
 
-import "DIBNPKDBJIF.proto";
-import "FIGGLDDICMK.proto";
-import "EPIPOCJFLFD.proto";
-import "IGGNCAELHII.proto";
-import "PMEONDCIOPO.proto";
-import "NFBMJKMEFLM.proto";
-import "NJJJHOJAJBB.proto";
-import "JBCFNMIAMOE.proto";
-import "INAEBPBPIKM.proto";
-import "ANNJKELGKML.proto";
-import "NCDAHFBIEPN.proto";
-import "PNIKPLEDJKH.proto";
-import "EGBGHOPMDOB.proto";
-import "GBGPEDLAHIL.proto";
-import "MLMKBICHNOG.proto";
-import "LFHBFKHJIBO.proto";
-import "BKHEIFHDKFO.proto";
-import "LPCOHHOKFJO.proto";
-import "JDENEDDIMAO.proto";
-import "KMKIAAKGNPH.proto";
+import "genshin/packet/proto/DIBNPKDBJIF.proto";
+import "genshin/packet/proto/FIGGLDDICMK.proto";
+import "genshin/packet/proto/EPIPOCJFLFD.proto";
+import "genshin/packet/proto/IGGNCAELHII.proto";
+import "genshin/packet/proto/PMEONDCIOPO.proto";
+import "genshin/packet/proto/NFBMJKMEFLM.proto";
+import "genshin/packet/proto/NJJJHOJAJBB.proto";
+import "genshin/packet/proto/JBCFNMIAMOE.proto";
+import "genshin/packet/proto/INAEBPBPIKM.proto";
+import "genshin/packet/proto/ANNJKELGKML.proto";
+import "genshin/packet/proto/NCDAHFBIEPN.proto";
+import "genshin/packet/proto/PNIKPLEDJKH.proto";
+import "genshin/packet/proto/EGBGHOPMDOB.proto";
+import "genshin/packet/proto/GBGPEDLAHIL.proto";
+import "genshin/packet/proto/MLMKBICHNOG.proto";
+import "genshin/packet/proto/LFHBFKHJIBO.proto";
+import "genshin/packet/proto/BKHEIFHDKFO.proto";
+import "genshin/packet/proto/LPCOHHOKFJO.proto";
+import "genshin/packet/proto/JDENEDDIMAO.proto";
+import "genshin/packet/proto/KMKIAAKGNPH.proto";
 
 message GFNBECNPKGE {
 	uint32 EAEKNFBGKPA = 1;

@@ -24,7 +24,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/HHFJEBHLGHH.proto\"J\n\x0bHHFJEBHLGHH\x12\x11\n\tavatar_id\x18\x0e \x01(\r\x12\x13\n\x0bIADFGKJCIDE\x18\x04 \x01(\r\x12\x13\n\x0b\x45JNINFFFKJP\x18\x0f \x01(\x05\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/HHFJEBHLGHH.proto\"C\n\x0bHHFJEBHLGHH\x12\x11\n\tavatar_id\x18\x0e \x01(\r\x12\x0c\n\x04type\x18\x04 \x01(\r\x12\x13\n\x0b\x45JNINFFFKJP\x18\x0f \x01(\x05\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -32,5 +32,5 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.HHFJEB
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
   _globals['_HHFJEBHLGHH']._serialized_start=42
-  _globals['_HHFJEBHLGHH']._serialized_end=116
+  _globals['_HHFJEBHLGHH']._serialized_end=109
 # @@protoc_insertion_point(module_scope)

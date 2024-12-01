@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "KDEHCGJAGFJ.proto";
-import "AHDCNHCIBNM.proto";
-import "LJLCAFOPOBK.proto";
-import "MAKGDPBEJIN.proto";
+import "genshin/packet/proto/KDEHCGJAGFJ.proto";
+import "genshin/packet/proto/AHDCNHCIBNM.proto";
+import "genshin/packet/proto/LJLCAFOPOBK.proto";
+import "genshin/packet/proto/MAKGDPBEJIN.proto";
 
 message INOGIAJEMDE {
 	KDEHCGJAGFJ DNAFLMMFFJN = 3;

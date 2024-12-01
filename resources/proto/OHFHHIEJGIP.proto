@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "DFOALMCBPMG.proto";
-import "DBPNILFGBEM.proto";
-import "OEBGKDDFDFF.proto";
-import "FPHKAOPDEHN.proto";
-import "LINCBKJPOLL.proto";
+import "genshin/packet/proto/DFOALMCBPMG.proto";
+import "genshin/packet/proto/DBPNILFGBEM.proto";
+import "genshin/packet/proto/OEBGKDDFDFF.proto";
+import "genshin/packet/proto/FPHKAOPDEHN.proto";
+import "genshin/packet/proto/LINCBKJPOLL.proto";
 
 message OHFHHIEJGIP {
 	repeated DFOALMCBPMG OGLBBJDNAHG = 1;

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "HGMNLAGDFDC.proto";
-import "HFHJKHOPLMN.proto";
-import "PKJMPCPEGGO.proto";
-import "DMAJHDNKEDI.proto";
+import "genshin/packet/proto/HGMNLAGDFDC.proto";
+import "genshin/packet/proto/HFHJKHOPLMN.proto";
+import "genshin/packet/proto/PKJMPCPEGGO.proto";
+import "genshin/packet/proto/DMAJHDNKEDI.proto";
 
 message FDAMHALDDLI {
 	string EFAJIHMNOBK = 15;

@@ -4,5 +4,5 @@ message MDBOBDDHHCP {
 	repeated float LPAGGIOGCJK = 3;
 	repeated uint32 DCBDHNJFBDA = 2;
 	uint32 IOELHOCJEHO = 4;
-	int32 IADFGKJCIDE = 1;
+	int32 type = 1;
 }

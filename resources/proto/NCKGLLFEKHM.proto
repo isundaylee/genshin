@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "MGOAEAIGBOK.proto";
-import "CMBDNHPIFCH.proto";
+import "genshin/packet/proto/MGOAEAIGBOK.proto";
+import "genshin/packet/proto/CMBDNHPIFCH.proto";
 
 message NCKGLLFEKHM {
 	repeated uint32 LHEBDOBKEMJ = 13;

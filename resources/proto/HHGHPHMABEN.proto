@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "NLCDHFNMHLD.proto";
-import "MGOBEIPGIJA.proto";
+import "genshin/packet/proto/NLCDHFNMHLD.proto";
+import "genshin/packet/proto/MGOBEIPGIJA.proto";
 
 message HHGHPHMABEN {
 	repeated NLCDHFNMHLD GFCKAOEOLBL = 7;

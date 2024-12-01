@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LIPHHIENHHK.proto";
+import "genshin/packet/proto/LIPHHIENHHK.proto";
 
 message KCCBMELPAIK {
 	LIPHHIENHHK GFMEKOGIHJN = 1;

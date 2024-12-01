@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KHBDLLKPLFG.proto";
+import "genshin/packet/proto/KHBDLLKPLFG.proto";
 
 message BOEFBFNPOKO {
 	uint32 costume_id = 7;

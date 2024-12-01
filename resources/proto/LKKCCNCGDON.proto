@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OBJFDBHEAKJ.proto";
+import "genshin/packet/proto/OBJFDBHEAKJ.proto";
 
 message LKKCCNCGDON {
 	map<uint32,OBJFDBHEAKJ> DDPFMKJFPAK = 15;

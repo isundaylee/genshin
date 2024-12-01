@@ -24,7 +24,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/OJPKAGFJMMM.proto\"a\n\x0bOJPKAGFJMMM\x12\x13\n\x0bMDMMNLEEMDF\x18\n \x01(\x02\x12\x13\n\x0bPMBODAGBOHN\x18\x03 \x01(\x02\x12\x13\n\x0bIADFGKJCIDE\x18\x06 \x01(\r\x12\x13\n\x0bHFDEIFEJMGI\x18\r \x01(\x02\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/OJPKAGFJMMM.proto\"Z\n\x0bOJPKAGFJMMM\x12\x13\n\x0bMDMMNLEEMDF\x18\n \x01(\x02\x12\x13\n\x0bPMBODAGBOHN\x18\x03 \x01(\x02\x12\x0c\n\x04type\x18\x06 \x01(\r\x12\x13\n\x0bHFDEIFEJMGI\x18\r \x01(\x02\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -32,5 +32,5 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.OJPKAG
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
   _globals['_OJPKAGFJMMM']._serialized_start=42
-  _globals['_OJPKAGFJMMM']._serialized_end=139
+  _globals['_OJPKAGFJMMM']._serialized_end=132
 # @@protoc_insertion_point(module_scope)

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HOPFEEIPGJP.proto";
+import "genshin/packet/proto/HOPFEEIPGJP.proto";
 
 message BODJBNIMHEN {
 	HOPFEEIPGJP AKGOOIIBCOM = 14;

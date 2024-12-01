@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OLHEKLKENDN.proto";
+import "genshin/packet/proto/OLHEKLKENDN.proto";
 
 message MKPOEFOILGB {
 	OLHEKLKENDN FGAEINCCKDK = 11;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HDCFBPPBPLF.proto";
+import "genshin/packet/proto/HDCFBPPBPLF.proto";
 
 message ODBBHKMEONI {
 	repeated HDCFBPPBPLF PMJGJNILMBP = 2;

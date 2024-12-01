@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "JICKPPDLOHC.proto";
-import "AGADFDCMGLK.proto";
+import "genshin/packet/proto/JICKPPDLOHC.proto";
+import "genshin/packet/proto/AGADFDCMGLK.proto";
 
 message PCOCCEHFFDC {
 	repeated JICKPPDLOHC item_list = 3;

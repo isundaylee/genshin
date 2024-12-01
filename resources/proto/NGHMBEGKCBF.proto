@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "CKBMKLICBBO.proto";
-import "LFJLGOJMKEH.proto";
+import "genshin/packet/proto/CKBMKLICBBO.proto";
+import "genshin/packet/proto/LFJLGOJMKEH.proto";
 
 message NGHMBEGKCBF {
 	CKBMKLICBBO GEKBOLFIBNK = 14;

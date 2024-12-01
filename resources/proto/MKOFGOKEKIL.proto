@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LJIEMNNKPJO.proto";
+import "genshin/packet/proto/LJIEMNNKPJO.proto";
 
 message MKOFGOKEKIL {
 	repeated LJIEMNNKPJO IBPCFNMMBIB = 5;

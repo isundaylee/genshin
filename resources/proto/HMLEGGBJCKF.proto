@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IPKAAINFGNB.proto";
+import "genshin/packet/proto/IPKAAINFGNB.proto";
 
 message HMLEGGBJCKF {
 	repeated IPKAAINFGNB EGAHDMMDKEH = 3;

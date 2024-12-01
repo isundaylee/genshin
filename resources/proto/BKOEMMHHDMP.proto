@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "DBGLAMEJMJM.proto";
+import "genshin/packet/proto/DBGLAMEJMJM.proto";
 
 message BKOEMMHHDMP {
 	repeated DBGLAMEJMJM KKGFNMEGCED = 5;

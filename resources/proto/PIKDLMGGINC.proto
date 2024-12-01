@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "EINAPLINOFB.proto";
+import "genshin/packet/proto/EINAPLINOFB.proto";
 
 message PIKDLMGGINC {
 	repeated EINAPLINOFB CLKEHKJIINL = 2;

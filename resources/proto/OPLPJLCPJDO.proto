@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IDAEALGLHHH.proto";
+import "genshin/packet/proto/IDAEALGLHHH.proto";
 
 message OPLPJLCPJDO {
 	repeated IDAEALGLHHH GEIAGFPMLOF = 2;

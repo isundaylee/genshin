@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "EJOBMPBBBIA.proto";
-import "JNMHJONHLAG.proto";
+import "genshin/packet/proto/EJOBMPBBBIA.proto";
+import "genshin/packet/proto/JNMHJONHLAG.proto";
 
 message OBJFJALGAOK {
 	EJOBMPBBBIA HHAAPMKKHOE = 2;

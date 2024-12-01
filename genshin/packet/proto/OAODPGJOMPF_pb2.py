@@ -25,7 +25,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import FMBEGBMCCBC_pb2 as genshin_dot_packet_dot_proto_dot_FMBEGBMCCBC__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/OAODPGJOMPF.proto\x1a&genshin/packet/proto/FMBEGBMCCBC.proto\"E\n\x0bOAODPGJOMPF\x12!\n\x0bIADFGKJCIDE\x18\x07 \x01(\x0e\x32\x0c.FMBEGBMCCBC\x12\x13\n\x0bMDMMNLEEMDF\x18\t \x01(\rb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/OAODPGJOMPF.proto\x1a&genshin/packet/proto/FMBEGBMCCBC.proto\">\n\x0bOAODPGJOMPF\x12\x1a\n\x04type\x18\x07 \x01(\x0e\x32\x0c.FMBEGBMCCBC\x12\x13\n\x0bMDMMNLEEMDF\x18\t \x01(\rb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -33,5 +33,5 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.OAODPG
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
   _globals['_OAODPGJOMPF']._serialized_start=82
-  _globals['_OAODPGJOMPF']._serialized_end=151
+  _globals['_OAODPGJOMPF']._serialized_end=144
 # @@protoc_insertion_point(module_scope)

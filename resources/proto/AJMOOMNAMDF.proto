@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "EMEAJKNIEFA.proto";
-import "MPHAJNOFPHP.proto";
+import "genshin/packet/proto/EMEAJKNIEFA.proto";
+import "genshin/packet/proto/MPHAJNOFPHP.proto";
 
 message AJMOOMNAMDF {
 	EMEAJKNIEFA NOBMGICJGBB = 5;

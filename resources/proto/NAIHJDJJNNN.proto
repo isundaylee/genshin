@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JPPCDGDPDBM.proto";
+import "genshin/packet/proto/JPPCDGDPDBM.proto";
 
 message NAIHJDJJNNN {
 	uint32 NCCPPHNNPBF = 10;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ECNCMBDMAGD.proto";
+import "genshin/packet/proto/ECNCMBDMAGD.proto";
 
 message MIJLIJEKDKH {
 	uint32 FGBJNGHBGIA = 12;

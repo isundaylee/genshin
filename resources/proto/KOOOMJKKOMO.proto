@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "LNJHDKEPBFO.proto";
-import "FLMMAAODDGD.proto";
-import "GDEJPLCEOKO.proto";
+import "genshin/packet/proto/LNJHDKEPBFO.proto";
+import "genshin/packet/proto/FLMMAAODDGD.proto";
+import "genshin/packet/proto/GDEJPLCEOKO.proto";
 
 message KOOOMJKKOMO {
 	uint32 EAIPGEMKNPO = 7;

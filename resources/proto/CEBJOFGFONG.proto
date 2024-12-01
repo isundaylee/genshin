@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LKDGPHDKHLL.proto";
+import "genshin/packet/proto/LKDGPHDKHLL.proto";
 
 message CEBJOFGFONG {
 	LKDGPHDKHLL BCKNOEPPDBM = 8;

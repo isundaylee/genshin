@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "APHHKPJPMPL.proto";
-import "OAJDEIOKLFK.proto";
-import "EPHJFOFEBDA.proto";
+import "genshin/packet/proto/APHHKPJPMPL.proto";
+import "genshin/packet/proto/OAJDEIOKLFK.proto";
+import "genshin/packet/proto/EPHJFOFEBDA.proto";
 
 message BANPAIDEPLM {
 	repeated APHHKPJPMPL LILDONIELDM = 13;

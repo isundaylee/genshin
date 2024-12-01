@@ -1,5 +1,5 @@
 syntax = "proto3";
 
 message AHFCCKGEIJD {
-	uint32 IADFGKJCIDE = 5;
+	uint32 type = 5;
 }

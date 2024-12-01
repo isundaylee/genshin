@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "AvatarInfo.proto";
-import "GAIOBFEADPD.proto";
+import "genshin/packet/proto/AvatarInfo.proto";
+import "genshin/packet/proto/GAIOBFEADPD.proto";
 
 message PLCGIEAONLG {
 	AvatarInfo NOLBCHIACJI = 9;

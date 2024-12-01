@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "AvatarFetterInfo.proto";
+import "genshin/packet/proto/AvatarFetterInfo.proto";
 
 message CFGMNKIEGMA {
 	map<uint64,AvatarFetterInfo> LJJFHEAJDHA = 6;

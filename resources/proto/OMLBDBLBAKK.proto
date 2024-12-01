@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "MKNEAMDHFFN.proto";
+import "genshin/packet/proto/MKNEAMDHFFN.proto";
 
 message OMLBDBLBAKK {
 	repeated uint32 OCAFMMJENEC = 12;

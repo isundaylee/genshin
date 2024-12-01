@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "AHDCNHCIBNM.proto";
-import "KDEHCGJAGFJ.proto";
-import "LJLCAFOPOBK.proto";
+import "genshin/packet/proto/AHDCNHCIBNM.proto";
+import "genshin/packet/proto/KDEHCGJAGFJ.proto";
+import "genshin/packet/proto/LJLCAFOPOBK.proto";
 
 message LBPDJCJCMID {
 	AHDCNHCIBNM EDJNMLOINPA = 7;

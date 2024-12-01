@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IGKLNNDNCMG.proto";
+import "genshin/packet/proto/IGKLNNDNCMG.proto";
 
 message KDCDDGBKMEN {
 	map<uint64,IGKLNNDNCMG> CJENICJPFGE = 7;

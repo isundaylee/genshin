@@ -6,7 +6,7 @@ message OBOLBJCGMGA {
 	uint32 ECHKNFIIOMF = 3;
 	uint32 AOEGKKAJEAN = 11;
 	uint32 AEHJBEELKOO = 15;
-	uint32 IADFGKJCIDE = 2;
+	uint32 type = 2;
 	uint32 CDBFPFOJBIJ = 7;
 	uint32 PGNDBMGCPAF = 5;
 	uint32 EAEKNFBGKPA = 10;

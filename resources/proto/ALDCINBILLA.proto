@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "PropValue.proto";
+import "genshin/packet/proto/PropValue.proto";
 
 message ALDCINBILLA {
 	map<uint32,PropValue> prop_map = 12;

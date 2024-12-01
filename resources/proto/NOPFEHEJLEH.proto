@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "KBBAJAALEEJ.proto";
-import "JICKPPDLOHC.proto";
-import "NLOBHEMPBEM.proto";
-import "KABBEPLLGOJ.proto";
+import "genshin/packet/proto/KBBAJAALEEJ.proto";
+import "genshin/packet/proto/JICKPPDLOHC.proto";
+import "genshin/packet/proto/NLOBHEMPBEM.proto";
+import "genshin/packet/proto/KABBEPLLGOJ.proto";
 
 message NOPFEHEJLEH {
 	repeated uint32 PLMDDOEIFPL = 14;

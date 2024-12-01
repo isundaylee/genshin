@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "PDNKJPOCBEI.proto";
-import "EDBKKJHJBMG.proto";
-import "GCFHDMBFKMN.proto";
-import "JDNLHBMJFIA.proto";
+import "genshin/packet/proto/PDNKJPOCBEI.proto";
+import "genshin/packet/proto/EDBKKJHJBMG.proto";
+import "genshin/packet/proto/GCFHDMBFKMN.proto";
+import "genshin/packet/proto/JDNLHBMJFIA.proto";
 
 message MPNLLBGOCMC {
 	PDNKJPOCBEI CBBLGBKGMPD = 15;

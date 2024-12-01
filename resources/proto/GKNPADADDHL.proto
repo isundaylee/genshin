@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ABLNMOIECLB.proto";
+import "genshin/packet/proto/ABLNMOIECLB.proto";
 
 message GKNPADADDHL {
 	ABLNMOIECLB INHBOHMOBJD = 8;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NEIFCKNFNAK.proto";
+import "genshin/packet/proto/NEIFCKNFNAK.proto";
 
 message AEFIOPFGDJI {
 	repeated uint32 DDDBBIPMMJA = 15;

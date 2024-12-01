@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OJIAIHBOABH.proto";
+import "genshin/packet/proto/OJIAIHBOABH.proto";
 
 message GDMLPOEDPJO {
 	OJIAIHBOABH JNIOKOCNMLL = 1215;

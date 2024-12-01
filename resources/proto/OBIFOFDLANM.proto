@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NBPLEOLOLNC.proto";
+import "genshin/packet/proto/NBPLEOLOLNC.proto";
 
 message OBIFOFDLANM {
 	NBPLEOLOLNC NJHHGIKDKCA = 13;

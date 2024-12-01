@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "AHECBKCPDAG.proto";
-import "MIGELBLONGC.proto";
+import "genshin/packet/proto/AHECBKCPDAG.proto";
+import "genshin/packet/proto/MIGELBLONGC.proto";
 
 message PlayerLoginReq {
 	bytes BDEDNFFOHPD = 1048;

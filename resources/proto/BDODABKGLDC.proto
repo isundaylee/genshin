@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "APMHHCOHPLD.proto";
-import "DKIFDGNKPLD.proto";
+import "genshin/packet/proto/APMHHCOHPLD.proto";
+import "genshin/packet/proto/DKIFDGNKPLD.proto";
 
 message BDODABKGLDC {
 	repeated string DAIJGKPMKHJ = 14;

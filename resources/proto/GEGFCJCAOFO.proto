@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "BDNAACFEDFG.proto";
-import "HKDCDFDMPMO.proto";
+import "genshin/packet/proto/BDNAACFEDFG.proto";
+import "genshin/packet/proto/HKDCDFDMPMO.proto";
 
 message GEGFCJCAOFO {
 	repeated BDNAACFEDFG HMCKPCENIDK = 15;

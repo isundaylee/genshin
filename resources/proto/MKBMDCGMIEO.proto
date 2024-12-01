@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "BIFEDDINLOD.proto";
-import "GMCJNDHELFG.proto";
+import "genshin/packet/proto/BIFEDDINLOD.proto";
+import "genshin/packet/proto/GMCJNDHELFG.proto";
 
 message MKBMDCGMIEO {
 	repeated BIFEDDINLOD OBHPOELIAPM = 3;

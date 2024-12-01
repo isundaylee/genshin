@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "IACMANPJHJI.proto";
-import "IEBMAHKGIPD.proto";
+import "genshin/packet/proto/IACMANPJHJI.proto";
+import "genshin/packet/proto/IEBMAHKGIPD.proto";
 
 message KIKLGFAPPMG {
 	bool CKLJMDGLIHF = 4;

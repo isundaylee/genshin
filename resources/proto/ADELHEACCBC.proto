@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "BBIKBHKDNPI.proto";
-import "DDGPFNOPLFF.proto";
-import "HEBABGNPNLK.proto";
-import "EHHKCFAFJFD.proto";
+import "genshin/packet/proto/BBIKBHKDNPI.proto";
+import "genshin/packet/proto/DDGPFNOPLFF.proto";
+import "genshin/packet/proto/HEBABGNPNLK.proto";
+import "genshin/packet/proto/EHHKCFAFJFD.proto";
 
 message ADELHEACCBC {
 	BBIKBHKDNPI OAMEBDNHEDB = 5;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "MPCBGINJKKD.proto";
+import "genshin/packet/proto/MPCBGINJKKD.proto";
 
 message BFFALDPOKFE {
 	repeated uint32 NKICBOBIDAF = 3;

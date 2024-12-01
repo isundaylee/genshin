@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "EEJAGBCFPNA.proto";
-import "NIAJPBBJMJB.proto";
+import "genshin/packet/proto/EEJAGBCFPNA.proto";
+import "genshin/packet/proto/NIAJPBBJMJB.proto";
 
 message EJCCPJJDIEN {
 	repeated EEJAGBCFPNA PNDPNMBDOKF = 13;

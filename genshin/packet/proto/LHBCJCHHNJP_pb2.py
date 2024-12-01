@@ -25,7 +25,7 @@ _sym_db = _symbol_database.Default()
 from genshin.packet.proto import BPOBBMNGMDL_pb2 as genshin_dot_packet_dot_proto_dot_BPOBBMNGMDL__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/LHBCJCHHNJP.proto\x1a&genshin/packet/proto/BPOBBMNGMDL.proto\"\x80\x02\n\x0bLHBCJCHHNJP\x12\x32\n\x0b\x42MNFBPGHFJB\x18\x06 \x03(\x0b\x32\x1d.LHBCJCHHNJP.BMNFBPGHFJBEntry\x12\x32\n\x0bPHJJLGFFMOM\x18\x03 \x03(\x0b\x32\x1d.LHBCJCHHNJP.PHJJLGFFMOMEntry\x12!\n\x0bIADFGKJCIDE\x18\r \x01(\x0e\x32\x0c.BPOBBMNGMDL\x1a\x32\n\x10\x42MNFBPGHFJBEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x1a\x32\n\x10PHJJLGFFMOMEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/LHBCJCHHNJP.proto\x1a&genshin/packet/proto/BPOBBMNGMDL.proto\"\xf9\x01\n\x0bLHBCJCHHNJP\x12\x32\n\x0b\x42MNFBPGHFJB\x18\x06 \x03(\x0b\x32\x1d.LHBCJCHHNJP.BMNFBPGHFJBEntry\x12\x32\n\x0bPHJJLGFFMOM\x18\x03 \x03(\x0b\x32\x1d.LHBCJCHHNJP.PHJJLGFFMOMEntry\x12\x1a\n\x04type\x18\r \x01(\x0e\x32\x0c.BPOBBMNGMDL\x1a\x32\n\x10\x42MNFBPGHFJBEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x1a\x32\n\x10PHJJLGFFMOMEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -37,9 +37,9 @@ if not _descriptor._USE_C_DESCRIPTORS:
   _globals['_LHBCJCHHNJP_PHJJLGFFMOMENTRY']._loaded_options = None
   _globals['_LHBCJCHHNJP_PHJJLGFFMOMENTRY']._serialized_options = b'8\001'
   _globals['_LHBCJCHHNJP']._serialized_start=83
-  _globals['_LHBCJCHHNJP']._serialized_end=339
-  _globals['_LHBCJCHHNJP_BMNFBPGHFJBENTRY']._serialized_start=237
-  _globals['_LHBCJCHHNJP_BMNFBPGHFJBENTRY']._serialized_end=287
-  _globals['_LHBCJCHHNJP_PHJJLGFFMOMENTRY']._serialized_start=289
-  _globals['_LHBCJCHHNJP_PHJJLGFFMOMENTRY']._serialized_end=339
+  _globals['_LHBCJCHHNJP']._serialized_end=332
+  _globals['_LHBCJCHHNJP_BMNFBPGHFJBENTRY']._serialized_start=230
+  _globals['_LHBCJCHHNJP_BMNFBPGHFJBENTRY']._serialized_end=280
+  _globals['_LHBCJCHHNJP_PHJJLGFFMOMENTRY']._serialized_start=282
+  _globals['_LHBCJCHHNJP_PHJJLGFFMOMENTRY']._serialized_end=332
 # @@protoc_insertion_point(module_scope)

@@ -7,13 +7,13 @@ from typing import ClassVar as _ClassVar, Iterable as _Iterable, Mapping as _Map
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class DDAAKFEFAIB(_message.Message):
-    __slots__ = ("DOIJACGKGIJ", "JALEAGGJOKF", "IADFGKJCIDE", "MDMMNLEEMDF")
+    __slots__ = ("DOIJACGKGIJ", "JALEAGGJOKF", "type", "MDMMNLEEMDF")
     DOIJACGKGIJ_FIELD_NUMBER: _ClassVar[int]
     JALEAGGJOKF_FIELD_NUMBER: _ClassVar[int]
-    IADFGKJCIDE_FIELD_NUMBER: _ClassVar[int]
+    TYPE_FIELD_NUMBER: _ClassVar[int]
     MDMMNLEEMDF_FIELD_NUMBER: _ClassVar[int]
     DOIJACGKGIJ: _containers.RepeatedCompositeFieldContainer[_IOHOEDHLMDD_pb2.IOHOEDHLMDD]
     JALEAGGJOKF: int
-    IADFGKJCIDE: int
+    type: int
     MDMMNLEEMDF: int
-    def __init__(self, DOIJACGKGIJ: _Optional[_Iterable[_Union[_IOHOEDHLMDD_pb2.IOHOEDHLMDD, _Mapping]]] = ..., JALEAGGJOKF: _Optional[int] = ..., IADFGKJCIDE: _Optional[int] = ..., MDMMNLEEMDF: _Optional[int] = ...) -> None: ...
+    def __init__(self, DOIJACGKGIJ: _Optional[_Iterable[_Union[_IOHOEDHLMDD_pb2.IOHOEDHLMDD, _Mapping]]] = ..., JALEAGGJOKF: _Optional[int] = ..., type: _Optional[int] = ..., MDMMNLEEMDF: _Optional[int] = ...) -> None: ...

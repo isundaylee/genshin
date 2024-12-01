@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "HGMNLAGDFDC.proto";
-import "KBDGJPCLCHJ.proto";
+import "genshin/packet/proto/HGMNLAGDFDC.proto";
+import "genshin/packet/proto/KBDGJPCLCHJ.proto";
 
 message MLMKBICHNOG {
 	repeated HGMNLAGDFDC KABODNMEGEK = 6;

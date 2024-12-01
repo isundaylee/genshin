@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "GDMLPOEDPJO.proto";
-import "HOFCOAIFPLB.proto";
+import "genshin/packet/proto/GDMLPOEDPJO.proto";
+import "genshin/packet/proto/HOFCOAIFPLB.proto";
 
 message AMEJLDMINEE {
 	repeated GDMLPOEDPJO PJEEOONMMDK = 14;

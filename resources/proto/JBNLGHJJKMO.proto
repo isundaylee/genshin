@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NMCEGCNOBKI.proto";
+import "genshin/packet/proto/NMCEGCNOBKI.proto";
 
 message JBNLGHJJKMO {
 	uint32 FINAHGLFHAG = 5;

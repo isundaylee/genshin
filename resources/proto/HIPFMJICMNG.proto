@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "PropValue.proto";
+import "genshin/packet/proto/PropValue.proto";
 
 message HIPFMJICMNG {
 	map<uint32,PropValue> ILMGJBLMJEE = 13;

@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "ICANCIPFHNK.proto";
-import "JICKPPDLOHC.proto";
-import "NBHHIAKNANM.proto";
+import "genshin/packet/proto/ICANCIPFHNK.proto";
+import "genshin/packet/proto/JICKPPDLOHC.proto";
+import "genshin/packet/proto/NBHHIAKNANM.proto";
 
 message JEIDECDIDLE {
 	ICANCIPFHNK KCBLAFECKCH = 1;

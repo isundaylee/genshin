@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IPNPJFNCFJE.proto";
+import "genshin/packet/proto/IPNPJFNCFJE.proto";
 
 message KMLAIHINCLK {
 	repeated IPNPJFNCFJE PNDPNMBDOKF = 2;

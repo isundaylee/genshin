@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "LKIAMJCJLAK.proto";
-import "BINOOCJMLCB.proto";
+import "genshin/packet/proto/LKIAMJCJLAK.proto";
+import "genshin/packet/proto/BINOOCJMLCB.proto";
 
 message KMNIKGPGMLL {
 	repeated LKIAMJCJLAK BIGKKEOICGL = 7;

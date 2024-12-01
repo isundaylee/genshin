@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "DCIHCIPIODA.proto";
-import "LMJBPCIGOBK.proto";
+import "genshin/packet/proto/DCIHCIPIODA.proto";
+import "genshin/packet/proto/LMJBPCIGOBK.proto";
 
 message NKKHONKPPLE {
 	DCIHCIPIODA NCMGBIGFFLG = 2;

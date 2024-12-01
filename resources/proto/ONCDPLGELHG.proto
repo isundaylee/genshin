@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "FMJEDPAOJDN.proto";
-import "MMGMJPJHJLL.proto";
-import "NGDFAGGMLHB.proto";
-import "EBHCMMIHDJL.proto";
+import "genshin/packet/proto/FMJEDPAOJDN.proto";
+import "genshin/packet/proto/MMGMJPJHJLL.proto";
+import "genshin/packet/proto/NGDFAGGMLHB.proto";
+import "genshin/packet/proto/EBHCMMIHDJL.proto";
 
 message ONCDPLGELHG {
 	FMJEDPAOJDN KCBLAFECKCH = 7;

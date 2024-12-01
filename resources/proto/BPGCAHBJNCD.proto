@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "JDNCHHPCNMD.proto";
-import "BOMACPDEPID.proto";
+import "genshin/packet/proto/JDNCHHPCNMD.proto";
+import "genshin/packet/proto/BOMACPDEPID.proto";
 
 message BPGCAHBJNCD {
 	JDNCHHPCNMD KPNDJLKLKFO = 2;

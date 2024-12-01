@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GMFOJOGGOBG.proto";
+import "genshin/packet/proto/GMFOJOGGOBG.proto";
 
 message FOLGDOLFDCF {
 	GMFOJOGGOBG ICDNIEABKKI = 6;

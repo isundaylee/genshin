@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JNKFGJMMHMA.proto";
+import "genshin/packet/proto/JNKFGJMMHMA.proto";
 
 message FNDLKLBAAPG {
 	bool ONGMJBPBHCL = 2;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KNPKGPHANDB.proto";
+import "genshin/packet/proto/KNPKGPHANDB.proto";
 
 message NOHOKLHHNKD {
 	repeated KNPKGPHANDB DOPJDKEDCBN = 11;

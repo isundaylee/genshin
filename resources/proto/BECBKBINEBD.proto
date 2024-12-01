@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "IKDFPLIKJCP.proto";
-import "BLCAPEBDFDM.proto";
+import "genshin/packet/proto/IKDFPLIKJCP.proto";
+import "genshin/packet/proto/BLCAPEBDFDM.proto";
 
 message BECBKBINEBD {
 	repeated IKDFPLIKJCP GIKJPJGMPAM = 12;

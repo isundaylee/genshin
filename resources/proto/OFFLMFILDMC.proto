@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "CKLEEGMPDGN.proto";
-import "HDMDABCDAHK.proto";
+import "genshin/packet/proto/CKLEEGMPDGN.proto";
+import "genshin/packet/proto/HDMDABCDAHK.proto";
 
 message OFFLMFILDMC {
 	CKLEEGMPDGN AGMHMDHEFKD = 2;

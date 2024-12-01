@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "CMGOOOMLAIA.proto";
-import "KBAIOMIOCCP.proto";
+import "genshin/packet/proto/CMGOOOMLAIA.proto";
+import "genshin/packet/proto/KBAIOMIOCCP.proto";
 
 message CDGHIAOFOEF {
 	repeated uint32 CDGIKFOLBGH = 5;

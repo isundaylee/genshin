@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GJDJPCPPHIC.proto";
+import "genshin/packet/proto/GJDJPCPPHIC.proto";
 
 message MOBEFLDEOGA {
 	repeated uint32 APOCDMCGEBC = 13;

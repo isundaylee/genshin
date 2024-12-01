@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HBMMLDAACOA.proto";
+import "genshin/packet/proto/HBMMLDAACOA.proto";
 
 message IDAEALGLHHH {
 	HBMMLDAACOA CKCGBHBBDJE = 12;

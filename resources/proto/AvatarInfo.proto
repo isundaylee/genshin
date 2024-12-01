@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-import "IJJPJMEEPFI.proto";
-import "PropValue.proto";
-import "TrialAvatarInfo.proto";
-import "AvatarExcelInfo.proto";
-import "AvatarEquipAffixInfo.proto";
-import "AvatarSkillInfo.proto";
-import "AvatarFetterInfo.proto";
-import "AvatarExpeditionState.proto";
+import "genshin/packet/proto/IJJPJMEEPFI.proto";
+import "genshin/packet/proto/PropValue.proto";
+import "genshin/packet/proto/TrialAvatarInfo.proto";
+import "genshin/packet/proto/AvatarExcelInfo.proto";
+import "genshin/packet/proto/AvatarEquipAffixInfo.proto";
+import "genshin/packet/proto/AvatarSkillInfo.proto";
+import "genshin/packet/proto/AvatarFetterInfo.proto";
+import "genshin/packet/proto/AvatarExpeditionState.proto";
 
 message AvatarInfo {
 	repeated uint32 team_resonance_list = 20;

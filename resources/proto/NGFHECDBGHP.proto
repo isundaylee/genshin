@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "MPFODNPCFDI.proto";
-import "BMIDAFBCOMP.proto";
+import "genshin/packet/proto/MPFODNPCFDI.proto";
+import "genshin/packet/proto/BMIDAFBCOMP.proto";
 
 message NGFHECDBGHP {
 	repeated MPFODNPCFDI LCPMKKBNBFB = 12;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LJCIAEFKOOA.proto";
+import "genshin/packet/proto/LJCIAEFKOOA.proto";
 
 message BCCDGMADDOB {
 	repeated LJCIAEFKOOA BOLPFLHNIPI = 1;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HIJDFNGDBNG.proto";
+import "genshin/packet/proto/HIJDFNGDBNG.proto";
 
 message PCBPKGLMOAP {
 	repeated HIJDFNGDBNG BAGJBBKNADL = 12;

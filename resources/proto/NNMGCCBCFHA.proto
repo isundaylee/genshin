@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "HOPFEEIPGJP.proto";
-import "EFHIGEKEJJO.proto";
-import "BOGMLIEEDGC.proto";
+import "genshin/packet/proto/HOPFEEIPGJP.proto";
+import "genshin/packet/proto/EFHIGEKEJJO.proto";
+import "genshin/packet/proto/BOGMLIEEDGC.proto";
 
 message NNMGCCBCFHA {
 	HOPFEEIPGJP AKGOOIIBCOM = 3;

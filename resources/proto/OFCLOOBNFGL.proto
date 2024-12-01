@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "LGPPBGENJBN.proto";
-import "MGAIJNJIOJK.proto";
-import "LHIOAJDDIPL.proto";
-import "DFIPJEPBGPI.proto";
+import "genshin/packet/proto/LGPPBGENJBN.proto";
+import "genshin/packet/proto/MGAIJNJIOJK.proto";
+import "genshin/packet/proto/LHIOAJDDIPL.proto";
+import "genshin/packet/proto/DFIPJEPBGPI.proto";
 
 message OFCLOOBNFGL {
 	repeated uint32 HLOHGJIBKJI = 13;

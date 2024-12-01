@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "OBBKCBAKKGH.proto";
+import "genshin/packet/proto/OBBKCBAKKGH.proto";
 
 message OAOJHDNMEHH {
-	OBBKCBAKKGH IADFGKJCIDE = 11;
+	OBBKCBAKKGH type = 11;
 	int32 MDMMNLEEMDF = 5;
 }

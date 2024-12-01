@@ -1,18 +1,18 @@
 syntax = "proto3";
 
-import "LIPHHIENHHK.proto";
-import "IPENCEJBEEB.proto";
-import "PCLLABLBNGA.proto";
-import "EHGJONOCFDE.proto";
-import "FJCOKOHBJIN.proto";
-import "CAJFFFBLLKB.proto";
-import "LOAACAFCPIF.proto";
-import "KLEEBOCFJPI.proto";
-import "AJPMIIOMCDO.proto";
-import "KFPAKMBEGPE.proto";
-import "EIMACLGMLLC.proto";
-import "PJIFOJFADLG.proto";
-import "NAPNKPIHEBF.proto";
+import "genshin/packet/proto/LIPHHIENHHK.proto";
+import "genshin/packet/proto/IPENCEJBEEB.proto";
+import "genshin/packet/proto/PCLLABLBNGA.proto";
+import "genshin/packet/proto/EHGJONOCFDE.proto";
+import "genshin/packet/proto/FJCOKOHBJIN.proto";
+import "genshin/packet/proto/CAJFFFBLLKB.proto";
+import "genshin/packet/proto/LOAACAFCPIF.proto";
+import "genshin/packet/proto/KLEEBOCFJPI.proto";
+import "genshin/packet/proto/AJPMIIOMCDO.proto";
+import "genshin/packet/proto/KFPAKMBEGPE.proto";
+import "genshin/packet/proto/EIMACLGMLLC.proto";
+import "genshin/packet/proto/PJIFOJFADLG.proto";
+import "genshin/packet/proto/NAPNKPIHEBF.proto";
 
 message EJLNBCBFOGL {
 	LIPHHIENHHK GFMEKOGIHJN = 19;

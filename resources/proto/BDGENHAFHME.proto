@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "MKBMDCGMIEO.proto";
+import "genshin/packet/proto/MKBMDCGMIEO.proto";
 
 message BDGENHAFHME {
 	MKBMDCGMIEO LOALBBLHDII = 5;

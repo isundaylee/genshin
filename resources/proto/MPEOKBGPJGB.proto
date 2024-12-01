@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NPNJINMABLF.proto";
+import "genshin/packet/proto/NPNJINMABLF.proto";
 
 message MPEOKBGPJGB {
 	repeated NPNJINMABLF NNGFNBCAAPI = 9;

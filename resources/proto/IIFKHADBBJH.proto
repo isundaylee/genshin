@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "AvatarTeam.proto";
+import "genshin/packet/proto/AvatarTeam.proto";
 
 message IIFKHADBBJH {
 	repeated uint64 temp_avatar_guid_list = 1;

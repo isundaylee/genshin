@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "PBHONEEKPMB.proto";
+import "genshin/packet/proto/PBHONEEKPMB.proto";
 
 message EGBGHOPMDOB {
 	repeated PBHONEEKPMB KABODNMEGEK = 5;

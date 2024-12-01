@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GFFIOKDNCLP.proto";
+import "genshin/packet/proto/GFFIOKDNCLP.proto";
 
 message GFAGPBKLLMF {
 	repeated int32 DLCDFKIOBCL = 4;

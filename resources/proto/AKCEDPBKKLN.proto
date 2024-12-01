@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "AvatarEquipAffixInfo.proto";
+import "genshin/packet/proto/AvatarEquipAffixInfo.proto";
 
 message AKCEDPBKKLN {
 	AvatarEquipAffixInfo JGCFECCDGAJ = 4;

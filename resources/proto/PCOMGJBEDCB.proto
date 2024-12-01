@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "KDEHCGJAGFJ.proto";
-import "DMDININEFDG.proto";
-import "EIEMABMNOLO.proto";
+import "genshin/packet/proto/KDEHCGJAGFJ.proto";
+import "genshin/packet/proto/DMDININEFDG.proto";
+import "genshin/packet/proto/EIEMABMNOLO.proto";
 
 message PCOMGJBEDCB {
 	string BFMMHKFPCJB = 2;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ODCEHFPDNEK.proto";
+import "genshin/packet/proto/ODCEHFPDNEK.proto";
 
 message HDPFODICAAN {
 	repeated ODCEHFPDNEK BAGJBBKNADL = 4;

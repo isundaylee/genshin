@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "DEBENKFIGJP.proto";
+import "genshin/packet/proto/DEBENKFIGJP.proto";
 
 message CDALBJCNNNN {
 	repeated DEBENKFIGJP FOOKDBCNGAL = 4;

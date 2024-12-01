@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-import "PMNJNCLEONJ.proto";
-import "KGPHJFJGGDJ.proto";
-import "OOJGOKPCGNJ.proto";
-import "NJFHDJNKJKK.proto";
-import "LLCGHKFBADC.proto";
-import "PFNKKMIOAEE.proto";
+import "genshin/packet/proto/PMNJNCLEONJ.proto";
+import "genshin/packet/proto/KGPHJFJGGDJ.proto";
+import "genshin/packet/proto/OOJGOKPCGNJ.proto";
+import "genshin/packet/proto/NJFHDJNKJKK.proto";
+import "genshin/packet/proto/LLCGHKFBADC.proto";
+import "genshin/packet/proto/PFNKKMIOAEE.proto";
 
 message KJGMHFIGABD {
 	int32 EJNINFFFKJP = 8;

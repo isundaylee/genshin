@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "DKIFDGNKPLD.proto";
-import "APMHHCOHPLD.proto";
+import "genshin/packet/proto/DKIFDGNKPLD.proto";
+import "genshin/packet/proto/APMHHCOHPLD.proto";
 
 message CGGELDLHDAJ {
 	DKIFDGNKPLD CIENOKDHFOD = 9;

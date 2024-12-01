@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "DPDMGOJJJLE.proto";
+import "genshin/packet/proto/DPDMGOJJJLE.proto";
 
 message DNDFBKBCPKE {
 	repeated uint32 JHIOHAJFMGE = 8;

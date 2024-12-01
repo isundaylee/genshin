@@ -5,7 +5,7 @@ from typing import ClassVar as _ClassVar, Optional as _Optional
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class AHFCCKGEIJD(_message.Message):
-    __slots__ = ("IADFGKJCIDE",)
-    IADFGKJCIDE_FIELD_NUMBER: _ClassVar[int]
-    IADFGKJCIDE: int
-    def __init__(self, IADFGKJCIDE: _Optional[int] = ...) -> None: ...
+    __slots__ = ("type",)
+    TYPE_FIELD_NUMBER: _ClassVar[int]
+    type: int
+    def __init__(self, type: _Optional[int] = ...) -> None: ...

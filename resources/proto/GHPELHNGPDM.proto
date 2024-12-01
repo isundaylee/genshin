@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "NEOALIIGKHO.proto";
-import "KDEHCGJAGFJ.proto";
-import "JJHOBJBAPEI.proto";
-import "KFBHHDDEAGB.proto";
+import "genshin/packet/proto/NEOALIIGKHO.proto";
+import "genshin/packet/proto/KDEHCGJAGFJ.proto";
+import "genshin/packet/proto/JJHOBJBAPEI.proto";
+import "genshin/packet/proto/KFBHHDDEAGB.proto";
 
 message GHPELHNGPDM {
 	NEOALIIGKHO MDPFKPPIKNH = 12;

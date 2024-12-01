@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "BAADCBGPEFO.proto";
-import "CMGOOOMLAIA.proto";
-import "KBAIOMIOCCP.proto";
+import "genshin/packet/proto/BAADCBGPEFO.proto";
+import "genshin/packet/proto/CMGOOOMLAIA.proto";
+import "genshin/packet/proto/KBAIOMIOCCP.proto";
 
 message PBIOIJNMCJO {
 	repeated BAADCBGPEFO LGFPFKPANPI = 2;

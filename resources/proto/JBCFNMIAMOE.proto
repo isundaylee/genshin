@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "FKHEIDFJKDO.proto";
+import "genshin/packet/proto/FKHEIDFJKDO.proto";
 
 message JBCFNMIAMOE {
 	map<uint32,FKHEIDFJKDO> JENACEPCGOF = 1;

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "MEENBHFDNGJ.proto";
-import "DDIAKFFCPDH.proto";
+import "genshin/packet/proto/MEENBHFDNGJ.proto";
+import "genshin/packet/proto/DDIAKFFCPDH.proto";
 
 message JMOIIBGCHPO {
 	repeated uint32 CKNAFCGJELM = 1;

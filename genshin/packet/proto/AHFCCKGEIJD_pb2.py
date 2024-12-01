@@ -24,7 +24,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/AHFCCKGEIJD.proto\"\"\n\x0b\x41HFCCKGEIJD\x12\x13\n\x0bIADFGKJCIDE\x18\x05 \x01(\rb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/AHFCCKGEIJD.proto\"\x1b\n\x0b\x41HFCCKGEIJD\x12\x0c\n\x04type\x18\x05 \x01(\rb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -32,5 +32,5 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.AHFCCK
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
   _globals['_AHFCCKGEIJD']._serialized_start=42
-  _globals['_AHFCCKGEIJD']._serialized_end=76
+  _globals['_AHFCCKGEIJD']._serialized_end=69
 # @@protoc_insertion_point(module_scope)

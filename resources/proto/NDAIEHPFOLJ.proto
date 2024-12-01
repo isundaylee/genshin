@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NFDGAFNBIGP.proto";
+import "genshin/packet/proto/NFDGAFNBIGP.proto";
 
 message NDAIEHPFOLJ {
 	repeated uint32 IIMNKBOIDBK = 14;

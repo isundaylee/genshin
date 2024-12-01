@@ -7,9 +7,9 @@ from typing import ClassVar as _ClassVar, Iterable as _Iterable, Optional as _Op
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class OFNINJFGCMG(_message.Message):
-    __slots__ = ("MMMCBGKHDDM", "IADFGKJCIDE")
+    __slots__ = ("MMMCBGKHDDM", "type")
     MMMCBGKHDDM_FIELD_NUMBER: _ClassVar[int]
-    IADFGKJCIDE_FIELD_NUMBER: _ClassVar[int]
+    TYPE_FIELD_NUMBER: _ClassVar[int]
     MMMCBGKHDDM: _containers.RepeatedScalarFieldContainer[int]
-    IADFGKJCIDE: _DELIIFBAPEL_pb2.DELIIFBAPEL
-    def __init__(self, MMMCBGKHDDM: _Optional[_Iterable[int]] = ..., IADFGKJCIDE: _Optional[_Union[_DELIIFBAPEL_pb2.DELIIFBAPEL, str]] = ...) -> None: ...
+    type: _DELIIFBAPEL_pb2.DELIIFBAPEL
+    def __init__(self, MMMCBGKHDDM: _Optional[_Iterable[int]] = ..., type: _Optional[_Union[_DELIIFBAPEL_pb2.DELIIFBAPEL, str]] = ...) -> None: ...

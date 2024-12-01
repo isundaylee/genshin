@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "KCJMDCFPOBF.proto";
-import "BLGLPAIGIFD.proto";
+import "genshin/packet/proto/KCJMDCFPOBF.proto";
+import "genshin/packet/proto/BLGLPAIGIFD.proto";
 
 message PCPPNCIBCIN {
 	repeated KCJMDCFPOBF AHKLJDPLAEK = 13;

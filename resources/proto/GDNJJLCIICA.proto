@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BCANLFFGNIC.proto";
+import "genshin/packet/proto/BCANLFFGNIC.proto";
 
 message GDNJJLCIICA {
 	repeated BCANLFFGNIC GEIAGFPMLOF = 5;

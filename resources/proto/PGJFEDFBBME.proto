@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "DDGGNMCAGLO.proto";
+import "genshin/packet/proto/DDGGNMCAGLO.proto";
 
 message PGJFEDFBBME {
 	repeated uint32 GBNMNACLDBE = 8;

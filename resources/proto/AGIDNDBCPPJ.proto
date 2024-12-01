@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NFIGJIKIAPK.proto";
+import "genshin/packet/proto/NFIGJIKIAPK.proto";
 
 message AGIDNDBCPPJ {
 	repeated NFIGJIKIAPK HJDGGBFIPFM = 2;

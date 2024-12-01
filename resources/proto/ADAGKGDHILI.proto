@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "PFNOPCLDNIL.proto";
+import "genshin/packet/proto/PFNOPCLDNIL.proto";
 
 message ADAGKGDHILI {
 	repeated PFNOPCLDNIL ONINEKGCKCG = 14;

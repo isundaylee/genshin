@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JCFCDCONMKB.proto";
+import "genshin/packet/proto/JCFCDCONMKB.proto";
 
 message MOKBEACHIEB {
 	repeated JCFCDCONMKB PMJGJNILMBP = 10;

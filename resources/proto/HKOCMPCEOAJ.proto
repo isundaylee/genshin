@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BNGCIFIKLLO.proto";
+import "genshin/packet/proto/BNGCIFIKLLO.proto";
 
 message HKOCMPCEOAJ {
 	BNGCIFIKLLO NDFEMAKIBBN = 15;

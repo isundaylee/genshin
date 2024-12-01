@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "ENFMOPIEEMA.proto";
-import "JBJFCEKCLGE.proto";
-import "JAEPBKGEDDL.proto";
+import "genshin/packet/proto/ENFMOPIEEMA.proto";
+import "genshin/packet/proto/JBJFCEKCLGE.proto";
+import "genshin/packet/proto/JAEPBKGEDDL.proto";
 
 message GEEMAADBNJI {
 	uint32 GODOGIJJJIA = 8;

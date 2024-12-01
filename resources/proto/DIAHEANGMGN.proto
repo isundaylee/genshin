@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LJAFOAOODOB.proto";
+import "genshin/packet/proto/LJAFOAOODOB.proto";
 
 message DIAHEANGMGN {
 	LJAFOAOODOB ACHEPMKCKLH = 1;

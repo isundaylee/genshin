@@ -1,16 +1,16 @@
 syntax = "proto3";
 
-import "AINOMEBMCND.proto";
-import "JOECMEMNPFA.proto";
-import "JIIEFLHJODE.proto";
-import "AABBEIIFPED.proto";
-import "DDLCCIFIIMC.proto";
-import "KHFHHGCMAKK.proto";
-import "FGFCBNJMMIA.proto";
-import "BEOBMOMNCMK.proto";
-import "JICMPNOJHLI.proto";
-import "FOGEJOFFJPP.proto";
-import "AFMDLHNNBEL.proto";
+import "genshin/packet/proto/AINOMEBMCND.proto";
+import "genshin/packet/proto/JOECMEMNPFA.proto";
+import "genshin/packet/proto/JIIEFLHJODE.proto";
+import "genshin/packet/proto/AABBEIIFPED.proto";
+import "genshin/packet/proto/DDLCCIFIIMC.proto";
+import "genshin/packet/proto/KHFHHGCMAKK.proto";
+import "genshin/packet/proto/FGFCBNJMMIA.proto";
+import "genshin/packet/proto/BEOBMOMNCMK.proto";
+import "genshin/packet/proto/JICMPNOJHLI.proto";
+import "genshin/packet/proto/FOGEJOFFJPP.proto";
+import "genshin/packet/proto/AFMDLHNNBEL.proto";
 
 message JNEBBAFFGPJ {
 	AINOMEBMCND op_attack = 5;

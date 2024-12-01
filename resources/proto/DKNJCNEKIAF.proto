@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NKKKBOHMANL.proto";
+import "genshin/packet/proto/NKKKBOHMANL.proto";
 
 message DKNJCNEKIAF {
 	uint32 KEGOCIPPFIN = 3;

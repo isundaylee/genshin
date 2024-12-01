@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "FOFKLBNOKDH.proto";
+import "genshin/packet/proto/FOFKLBNOKDH.proto";
 
 message ONLFEFMIBLA {
 	uint32 CKPHCAGONKG = 12;

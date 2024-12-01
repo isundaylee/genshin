@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OLHEKLKENDN.proto";
+import "genshin/packet/proto/OLHEKLKENDN.proto";
 
 message DEJMIBOBPOE {
 	OLHEKLKENDN EHILKNJIMPB = 6;

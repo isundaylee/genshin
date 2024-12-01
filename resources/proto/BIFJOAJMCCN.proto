@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "KDEHCGJAGFJ.proto";
-import "GLGCIDHMKKA.proto";
-import "MBIMHNFDGHN.proto";
+import "genshin/packet/proto/KDEHCGJAGFJ.proto";
+import "genshin/packet/proto/GLGCIDHMKKA.proto";
+import "genshin/packet/proto/MBIMHNFDGHN.proto";
 
 message BIFJOAJMCCN {
 	KDEHCGJAGFJ GJHMJAFNLOJ = 14;

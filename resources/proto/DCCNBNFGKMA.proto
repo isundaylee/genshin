@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IGODKMGOCFI.proto";
+import "genshin/packet/proto/IGODKMGOCFI.proto";
 
 message DCCNBNFGKMA {
 	repeated IGODKMGOCFI BAGJBBKNADL = 1;

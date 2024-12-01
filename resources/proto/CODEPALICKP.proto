@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "PCPKMBJDJAK.proto";
-import "IACMANPJHJI.proto";
+import "genshin/packet/proto/PCPKMBJDJAK.proto";
+import "genshin/packet/proto/IACMANPJHJI.proto";
 
 message CODEPALICKP {
 	int32 EJNINFFFKJP = 4;

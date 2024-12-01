@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ICLCEFKFEAG.proto";
+import "genshin/packet/proto/ICLCEFKFEAG.proto";
 
 message CAKPMLDOGBM {
 	ICLCEFKFEAG KEIBGPLBKGK = 2;

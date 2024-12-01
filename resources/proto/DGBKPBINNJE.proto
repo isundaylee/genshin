@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "EOABCGEOJHI.proto";
+import "genshin/packet/proto/EOABCGEOJHI.proto";
 
 message DGBKPBINNJE {
 	repeated EOABCGEOJHI BAGJBBKNADL = 1;

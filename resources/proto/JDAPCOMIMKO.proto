@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LAMEAODOJID.proto";
+import "genshin/packet/proto/LAMEAODOJID.proto";
 
 message JDAPCOMIMKO {
 	repeated LAMEAODOJID BBOPFHAODOP = 2;

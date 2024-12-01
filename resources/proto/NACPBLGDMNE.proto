@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GGMACIFDEBM.proto";
+import "genshin/packet/proto/GGMACIFDEBM.proto";
 
 message NACPBLGDMNE {
 	repeated GGMACIFDEBM BAGJBBKNADL = 7;

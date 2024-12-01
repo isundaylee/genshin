@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "LHDNOHDMIMO.proto";
-import "DOKKNIDHJOB.proto";
+import "genshin/packet/proto/LHDNOHDMIMO.proto";
+import "genshin/packet/proto/DOKKNIDHJOB.proto";
 
 message MFNCADPFMJJ {
 	repeated LHDNOHDMIMO NEHPGMLDKMF = 5;

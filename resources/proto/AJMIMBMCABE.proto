@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NAHMOAOLMPL.proto";
+import "genshin/packet/proto/NAHMOAOLMPL.proto";
 
 message AJMIMBMCABE {
 	repeated NAHMOAOLMPL EFCDELGMMKG = 10;

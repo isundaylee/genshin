@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "NIHLPPBHMNH.proto";
-import "CJCEKNNABGI.proto";
-import "HDCGFLBNLLP.proto";
-import "FJCNEMLGMMH.proto";
+import "genshin/packet/proto/NIHLPPBHMNH.proto";
+import "genshin/packet/proto/CJCEKNNABGI.proto";
+import "genshin/packet/proto/HDCGFLBNLLP.proto";
+import "genshin/packet/proto/FJCNEMLGMMH.proto";
 
 message EFEGIIMAOMI {
 	repeated NIHLPPBHMNH IFEACHJAOFC = 10;

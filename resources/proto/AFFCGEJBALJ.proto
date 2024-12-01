@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "JKBBEKKCCEE.proto";
-import "ACIAFKOACAO.proto";
+import "genshin/packet/proto/JKBBEKKCCEE.proto";
+import "genshin/packet/proto/ACIAFKOACAO.proto";
 
 message AFFCGEJBALJ {
 	uint32 KLMDAPCLGAP = 2;

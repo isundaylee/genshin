@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "PropValue.proto";
+import "genshin/packet/proto/PropValue.proto";
 
 message EHGJONOCFDE {
 	PropValue DCJIMBILOGP = 2;
-	uint32 IADFGKJCIDE = 1;
+	uint32 type = 1;
 }

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "PAJKNPDPNMO.proto";
+import "genshin/packet/proto/PAJKNPDPNMO.proto";
 
 message NKCNFFCFEGG {
 	repeated PAJKNPDPNMO HKNMHPPCOKO = 4;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "StoreType.proto";
+import "genshin/packet/proto/StoreType.proto";
 
 message GALIAJDJLKD {
 	StoreType store_type = 14;

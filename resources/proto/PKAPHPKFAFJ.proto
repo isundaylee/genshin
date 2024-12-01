@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-import "OMBEIFNNEDF.proto";
-import "JLMIJCEGCOB.proto";
-import "GNEAJFOLMBM.proto";
-import "PMLBOKPCDMG.proto";
-import "BOEFBFNPOKO.proto";
-import "HELLFLLBJMI.proto";
-import "CPFPABOOLGK.proto";
+import "genshin/packet/proto/OMBEIFNNEDF.proto";
+import "genshin/packet/proto/JLMIJCEGCOB.proto";
+import "genshin/packet/proto/GNEAJFOLMBM.proto";
+import "genshin/packet/proto/PMLBOKPCDMG.proto";
+import "genshin/packet/proto/BOEFBFNPOKO.proto";
+import "genshin/packet/proto/HELLFLLBJMI.proto";
+import "genshin/packet/proto/CPFPABOOLGK.proto";
 
 message PKAPHPKFAFJ {
 	repeated OMBEIFNNEDF GNOPGJKIGPC = 8;

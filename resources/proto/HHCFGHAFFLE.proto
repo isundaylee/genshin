@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "GDMLPOEDPJO.proto";
-import "KPFOBLALBLC.proto";
-import "OOKJDBINGHA.proto";
+import "genshin/packet/proto/GDMLPOEDPJO.proto";
+import "genshin/packet/proto/KPFOBLALBLC.proto";
+import "genshin/packet/proto/OOKJDBINGHA.proto";
 
 message HHCFGHAFFLE {
 	GDMLPOEDPJO music_brief_info = 760;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OLODDMHDDGC.proto";
+import "genshin/packet/proto/OLODDMHDDGC.proto";
 
 message AEFFGHNMPOH {
 	uint32 NKGEKOMLLNG = 2;

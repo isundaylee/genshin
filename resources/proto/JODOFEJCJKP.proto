@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "FEEMCGMMDCI.proto";
+import "genshin/packet/proto/FEEMCGMMDCI.proto";
 
 message JODOFEJCJKP {
 	FEEMCGMMDCI PFELDFFPKLP = 9;

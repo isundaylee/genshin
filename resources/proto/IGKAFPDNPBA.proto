@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "KDEHCGJAGFJ.proto";
-import "PACJKIOLAOH.proto";
+import "genshin/packet/proto/KDEHCGJAGFJ.proto";
+import "genshin/packet/proto/PACJKIOLAOH.proto";
 
 message IGKAFPDNPBA {
 	KDEHCGJAGFJ HPOECKEKAFA = 10;

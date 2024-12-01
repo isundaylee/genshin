@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "BFFDLDJLHOI.proto";
-import "NHNLJIBHPMJ.proto";
-import "KOEDPMFBBNH.proto";
-import "HKJEAJEBBKK.proto";
+import "genshin/packet/proto/BFFDLDJLHOI.proto";
+import "genshin/packet/proto/NHNLJIBHPMJ.proto";
+import "genshin/packet/proto/KOEDPMFBBNH.proto";
+import "genshin/packet/proto/HKJEAJEBBKK.proto";
 
 message HMGBJNNDKEM {
 	repeated uint32 BIPADACDOFI = 13;

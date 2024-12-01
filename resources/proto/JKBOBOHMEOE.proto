@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HMBFCHKMEGD.proto";
+import "genshin/packet/proto/HMBFCHKMEGD.proto";
 
 message JKBOBOHMEOE {
 	string KPIOGBMLMEM = 12;

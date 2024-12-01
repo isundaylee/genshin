@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "Weapon.proto";
-import "Reliquary.proto";
+import "genshin/packet/proto/Weapon.proto";
+import "genshin/packet/proto/Reliquary.proto";
 
 message Equip {
 	bool is_locked = 3;

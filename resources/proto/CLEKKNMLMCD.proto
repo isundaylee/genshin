@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "BFFDLDJLHOI.proto";
-import "KOEDPMFBBNH.proto";
-import "NHNLJIBHPMJ.proto";
-import "LHCGIHKBBLC.proto";
+import "genshin/packet/proto/BFFDLDJLHOI.proto";
+import "genshin/packet/proto/KOEDPMFBBNH.proto";
+import "genshin/packet/proto/NHNLJIBHPMJ.proto";
+import "genshin/packet/proto/LHCGIHKBBLC.proto";
 
 message CLEKKNMLMCD {
 	repeated uint32 BIPADACDOFI = 7;

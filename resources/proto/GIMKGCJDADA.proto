@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LHIOAJDDIPL.proto";
+import "genshin/packet/proto/LHIOAJDDIPL.proto";
 
 message GIMKGCJDADA {
 	LHIOAJDDIPL PHBFOKPBFIL = 6;

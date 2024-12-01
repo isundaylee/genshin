@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LFOBKBCNFIC.proto";
+import "genshin/packet/proto/LFOBKBCNFIC.proto";
 
 message CGAAGIEDIEC {
 	LFOBKBCNFIC MCDOGIALDKP = 12;

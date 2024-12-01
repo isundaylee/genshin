@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KKIADDODLOI.proto";
+import "genshin/packet/proto/KKIADDODLOI.proto";
 
 message KEBBEMFCCCA {
 	repeated KKIADDODLOI BMPMEHFCDKC = 7;

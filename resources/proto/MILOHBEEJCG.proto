@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "FGIBLIMHHIK.proto";
+import "genshin/packet/proto/FGIBLIMHHIK.proto";
 
 message MILOHBEEJCG {
 	FGIBLIMHHIK KGCONLDGJPG = 10;

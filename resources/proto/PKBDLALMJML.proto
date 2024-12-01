@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "EPHALEJPIKM.proto";
+import "genshin/packet/proto/EPHALEJPIKM.proto";
 
 message PKBDLALMJML {
 	repeated uint32 KBGFIGBANGK = 13;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OKAEHFFLKAD.proto";
+import "genshin/packet/proto/OKAEHFFLKAD.proto";
 
 message NBECPCOEJPD {
 	OKAEHFFLKAD LFHHIODMFDP = 7;

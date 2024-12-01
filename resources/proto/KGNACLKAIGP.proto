@@ -1,16 +1,16 @@
 syntax = "proto3";
 
-import "ILJBEKEGPIF.proto";
-import "OEHGBGEALHN.proto";
-import "FNDLKLBAAPG.proto";
-import "NFKLNNCFJLJ.proto";
-import "IJJKJDGCBEM.proto";
-import "MLCLBOEKHNE.proto";
-import "HGBHCJGLLKB.proto";
-import "OMBEIFNNEDF.proto";
-import "LCPDOPFDNDG.proto";
-import "MOBCEMCKPJD.proto";
-import "HMBPNBBJPOO.proto";
+import "genshin/packet/proto/ILJBEKEGPIF.proto";
+import "genshin/packet/proto/OEHGBGEALHN.proto";
+import "genshin/packet/proto/FNDLKLBAAPG.proto";
+import "genshin/packet/proto/NFKLNNCFJLJ.proto";
+import "genshin/packet/proto/IJJKJDGCBEM.proto";
+import "genshin/packet/proto/MLCLBOEKHNE.proto";
+import "genshin/packet/proto/HGBHCJGLLKB.proto";
+import "genshin/packet/proto/OMBEIFNNEDF.proto";
+import "genshin/packet/proto/LCPDOPFDNDG.proto";
+import "genshin/packet/proto/MOBCEMCKPJD.proto";
+import "genshin/packet/proto/HMBPNBBJPOO.proto";
 
 message KGNACLKAIGP {
 	repeated ILJBEKEGPIF PJOPJGFCBLJ = 3;

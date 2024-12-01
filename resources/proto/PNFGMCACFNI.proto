@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "PINOGOECNFA.proto";
+import "genshin/packet/proto/PINOGOECNFA.proto";
 
 message PNFGMCACFNI {
 	repeated PINOGOECNFA IBAOLDBFOMP = 12;

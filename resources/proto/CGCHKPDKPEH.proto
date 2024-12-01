@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "JICKPPDLOHC.proto";
-import "LPNOKFFDBNE.proto";
+import "genshin/packet/proto/JICKPPDLOHC.proto";
+import "genshin/packet/proto/LPNOKFFDBNE.proto";
 
 message CGCHKPDKPEH {
 	repeated JICKPPDLOHC INPFJMANEHI = 10;

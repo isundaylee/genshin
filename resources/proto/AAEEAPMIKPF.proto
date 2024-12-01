@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "PLGMIDNFDFN.proto";
-import "HFHJKHOPLMN.proto";
+import "genshin/packet/proto/PLGMIDNFDFN.proto";
+import "genshin/packet/proto/HFHJKHOPLMN.proto";
 
 message AAEEAPMIKPF {
 	repeated uint32 CLJIKPEPLEC = 14;

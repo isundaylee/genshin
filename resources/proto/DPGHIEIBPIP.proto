@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "EFEGIIMAOMI.proto";
-import "DCDCNNPIFFK.proto";
+import "genshin/packet/proto/EFEGIIMAOMI.proto";
+import "genshin/packet/proto/DCDCNNPIFFK.proto";
 
 message DPGHIEIBPIP {
 	EFEGIIMAOMI KPCPNEHCMEJ = 9;

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "PKBDLALMJML.proto";
-import "IELANAFKGKO.proto";
+import "genshin/packet/proto/PKBDLALMJML.proto";
+import "genshin/packet/proto/IELANAFKGKO.proto";
 
 message LODGAOKFCGN {
 	repeated uint32 DDKBFLGFCOI = 14;

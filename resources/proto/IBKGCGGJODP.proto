@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "ONFPPNPPNEG.proto";
-import "GKEGLHBKJPL.proto";
-import "EJCCPJJDIEN.proto";
-import "MHCEOAICLJF.proto";
+import "genshin/packet/proto/ONFPPNPPNEG.proto";
+import "genshin/packet/proto/GKEGLHBKJPL.proto";
+import "genshin/packet/proto/EJCCPJJDIEN.proto";
+import "genshin/packet/proto/MHCEOAICLJF.proto";
 
 message IBKGCGGJODP {
 	ONFPPNPPNEG GAFMCJBMFAE = 11;

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "KDEHCGJAGFJ.proto";
-import "PNKBKDLOEIJ.proto";
-import "MBLMIOIMCFG.proto";
-import "DDOIPMKAOHC.proto";
+import "genshin/packet/proto/KDEHCGJAGFJ.proto";
+import "genshin/packet/proto/PNKBKDLOEIJ.proto";
+import "genshin/packet/proto/MBLMIOIMCFG.proto";
+import "genshin/packet/proto/DDOIPMKAOHC.proto";
 
 message DBLKCDDFCNF {
 	repeated KDEHCGJAGFJ MIBDMKIPNFP = 9;

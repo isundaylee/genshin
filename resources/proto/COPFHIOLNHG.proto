@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "EKPKCPDKCDO.proto";
+import "genshin/packet/proto/EKPKCPDKCDO.proto";
 
 message COPFHIOLNHG {
 	repeated uint32 MECGJHBEJMK = 3;

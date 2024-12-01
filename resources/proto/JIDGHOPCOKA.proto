@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OFOFFIDHIAN.proto";
+import "genshin/packet/proto/OFOFFIDHIAN.proto";
 
 message JIDGHOPCOKA {
 	OFOFFIDHIAN DBDNMHCJFOC = 11;

@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "EPANGOOIECN.proto";
-import "BHDOHIGEJAN.proto";
-import "CLNAGPOKMIH.proto";
+import "genshin/packet/proto/EPANGOOIECN.proto";
+import "genshin/packet/proto/BHDOHIGEJAN.proto";
+import "genshin/packet/proto/CLNAGPOKMIH.proto";
 
 message KEDKBDDJGGF {
 	EPANGOOIECN NKKCADBJEDL = 9;

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "BODFNFIDFOD.proto";
-import "BGPAHBMKBAG.proto";
+import "genshin/packet/proto/BODFNFIDFOD.proto";
+import "genshin/packet/proto/BGPAHBMKBAG.proto";
 
 message FMPAGIFCMLJ {
 	BODFNFIDFOD NPMIAGMNMAN = 10;

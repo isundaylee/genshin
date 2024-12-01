@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "DHDEBBIPIIF.proto";
+import "genshin/packet/proto/DHDEBBIPIIF.proto";
 
 message BEMJPLAOLLE {
 	DHDEBBIPIIF CKEHABLGHNN = 13;

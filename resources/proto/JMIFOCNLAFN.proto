@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "JMBLHDBAOOD.proto";
-import "LFJNDJLGPHF.proto";
-import "JGBHHLONIJJ.proto";
-import "AEJDJAEPHAM.proto";
+import "genshin/packet/proto/JMBLHDBAOOD.proto";
+import "genshin/packet/proto/LFJNDJLGPHF.proto";
+import "genshin/packet/proto/JGBHHLONIJJ.proto";
+import "genshin/packet/proto/AEJDJAEPHAM.proto";
 
 message JMIFOCNLAFN {
 	JMBLHDBAOOD OPDEHNCONID = 7;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "DGIDDPPFFDJ.proto";
+import "genshin/packet/proto/DGIDDPPFFDJ.proto";
 
 message DHNBIHGAEJB {
 	map<uint32,DGIDDPPFFDJ> EEPDGHEJGPM = 5;

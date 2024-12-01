@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JICKPPDLOHC.proto";
+import "genshin/packet/proto/JICKPPDLOHC.proto";
 
 message JHDENDCPNJL {
 	repeated uint32 KDFDIOOGGAL = 2;

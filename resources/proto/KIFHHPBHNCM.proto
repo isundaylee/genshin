@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GJDJPCPPHIC.proto";
+import "genshin/packet/proto/GJDJPCPPHIC.proto";
 
 message KIFHHPBHNCM {
 	GJDJPCPPHIC EPNDBDPKLEP = 9;

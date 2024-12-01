@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "GNDPPDJEIHI.proto";
-import "IPDFPEJJFJL.proto";
-import "OAMHDLMDFKP.proto";
+import "genshin/packet/proto/GNDPPDJEIHI.proto";
+import "genshin/packet/proto/IPDFPEJJFJL.proto";
+import "genshin/packet/proto/OAMHDLMDFKP.proto";
 
 message CDMOBOLHBJL {
 	GNDPPDJEIHI BCLBHOBHBIM = 7;

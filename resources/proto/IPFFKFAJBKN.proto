@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "ENOFBCMAAJL.proto";
-import "KGBKIFDBEPC.proto";
+import "genshin/packet/proto/ENOFBCMAAJL.proto";
+import "genshin/packet/proto/KGBKIFDBEPC.proto";
 
 message IPFFKFAJBKN {
 	repeated ENOFBCMAAJL PMJBOEGCPMH = 6;

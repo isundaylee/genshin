@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "EICIMOKGOOK.proto";
+import "genshin/packet/proto/EICIMOKGOOK.proto";
 
 message EJIDDMIFDNL {
 	repeated uint32 OABGPLHCBFO = 10;

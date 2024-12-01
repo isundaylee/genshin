@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ABPKOLENHAP.proto";
+import "genshin/packet/proto/ABPKOLENHAP.proto";
 
 message MCOBEJNLKPE {
 	ABPKOLENHAP DHICFGHANOG = 13;

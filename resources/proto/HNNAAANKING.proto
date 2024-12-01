@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "KJIHGCIALOJ.proto";
-import "FGNHPFIDPCB.proto";
-import "DCIELFGOAMA.proto";
+import "genshin/packet/proto/KJIHGCIALOJ.proto";
+import "genshin/packet/proto/FGNHPFIDPCB.proto";
+import "genshin/packet/proto/DCIELFGOAMA.proto";
 
 message HNNAAANKING {
 	KJIHGCIALOJ HODDLOCGNOB = 8;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "DECPHDLMILB.proto";
+import "genshin/packet/proto/DECPHDLMILB.proto";
 
 message JIICLALONNO {
 	repeated DECPHDLMILB ELEOLJDIADF = 3;

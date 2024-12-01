@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "JAACHOEFMPD.proto";
-import "MBIMHNFDGHN.proto";
+import "genshin/packet/proto/JAACHOEFMPD.proto";
+import "genshin/packet/proto/MBIMHNFDGHN.proto";
 
 message HAEIEAMIEPD {
 	JAACHOEFMPD LPJHFOGDAIL = 9;

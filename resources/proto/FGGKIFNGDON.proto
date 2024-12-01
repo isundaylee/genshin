@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ENNOPJOFAJK.proto";
+import "genshin/packet/proto/ENNOPJOFAJK.proto";
 
 message FGGKIFNGDON {
 	repeated uint32 MJAONINHIIB = 15;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OBDLODPCEJI.proto";
+import "genshin/packet/proto/OBDLODPCEJI.proto";
 
 message GAIOBFEADPD {
 	OBDLODPCEJI avatar_type = 7;

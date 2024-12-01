@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "NDOEDPNDPBH.proto";
-import "OADJBKDJNPL.proto";
+import "genshin/packet/proto/NDOEDPNDPBH.proto";
+import "genshin/packet/proto/OADJBKDJNPL.proto";
 
 message GPPNDKHNOBM {
 	NDOEDPNDPBH LJIDOHLADHC = 11;

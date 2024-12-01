@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "PINOGOECNFA.proto";
-import "PNFGMCACFNI.proto";
+import "genshin/packet/proto/PINOGOECNFA.proto";
+import "genshin/packet/proto/PNFGMCACFNI.proto";
 
 message AEPFMAPEHGD {
 	repeated PINOGOECNFA IBAOLDBFOMP = 10;

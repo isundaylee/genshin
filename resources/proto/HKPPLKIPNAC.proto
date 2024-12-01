@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "FHPEAIOOGCI.proto";
+import "genshin/packet/proto/FHPEAIOOGCI.proto";
 
 message HKPPLKIPNAC {
 	map<uint32,FHPEAIOOGCI> LDCJEFLLJJK = 9;

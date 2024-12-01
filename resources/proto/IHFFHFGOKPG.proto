@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GKFGINKLNCH.proto";
+import "genshin/packet/proto/GKFGINKLNCH.proto";
 
 message IHFFHFGOKPG {
 	repeated GKFGINKLNCH INDFGANKPPO = 7;

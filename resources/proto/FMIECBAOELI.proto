@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "EAFHLMDCHKO.proto";
-import "MBIMHNFDGHN.proto";
+import "genshin/packet/proto/EAFHLMDCHKO.proto";
+import "genshin/packet/proto/MBIMHNFDGHN.proto";
 
 message FMIECBAOELI {
 	EAFHLMDCHKO NIAKDCHEDCE = 8;

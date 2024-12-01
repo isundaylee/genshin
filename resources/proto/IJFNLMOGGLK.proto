@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "FGNHPFIDPCB.proto";
-import "BHNJIKABAOK.proto";
+import "genshin/packet/proto/FGNHPFIDPCB.proto";
+import "genshin/packet/proto/BHNJIKABAOK.proto";
 
 message IJFNLMOGGLK {
 	FGNHPFIDPCB JMLCDHBKBNG = 2;

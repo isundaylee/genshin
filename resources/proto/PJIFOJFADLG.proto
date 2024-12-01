@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "JNMHJONHLAG.proto";
-import "JGCFLHEDIHI.proto";
-import "JNKEECKNOML.proto";
-import "CCACIDNDCCG.proto";
-import "JLEPAAJFICN.proto";
+import "genshin/packet/proto/JNMHJONHLAG.proto";
+import "genshin/packet/proto/JGCFLHEDIHI.proto";
+import "genshin/packet/proto/JNKEECKNOML.proto";
+import "genshin/packet/proto/CCACIDNDCCG.proto";
+import "genshin/packet/proto/JLEPAAJFICN.proto";
 
 message PJIFOJFADLG {
 	repeated JNMHJONHLAG GMCBENMCOKN = 4;

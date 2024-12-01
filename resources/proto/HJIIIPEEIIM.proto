@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "IBDNAOGMOFO.proto";
-import "OMBEIFNNEDF.proto";
+import "genshin/packet/proto/IBDNAOGMOFO.proto";
+import "genshin/packet/proto/OMBEIFNNEDF.proto";
 
 message HJIIIPEEIIM {
 	repeated uint32 CMIIEGLHFFL = 13;

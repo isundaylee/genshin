@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "MIBLPEIKDBP.proto";
-import "OMBEIFNNEDF.proto";
+import "genshin/packet/proto/MIBLPEIKDBP.proto";
+import "genshin/packet/proto/OMBEIFNNEDF.proto";
 
 message DPOGEFJBHLG {
 	repeated MIBLPEIKDBP BAGJBBKNADL = 3;

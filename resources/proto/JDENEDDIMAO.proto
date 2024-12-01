@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "NBJPCHJJCNJ.proto";
-import "PIMMBIDLDCL.proto";
+import "genshin/packet/proto/NBJPCHJJCNJ.proto";
+import "genshin/packet/proto/PIMMBIDLDCL.proto";
 
 message JDENEDDIMAO {
 	repeated NBJPCHJJCNJ ONCFEKCFKMO = 12;

@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "OFBHCGGGGGN.proto";
-import "FGNHPFIDPCB.proto";
-import "IMGPEMFGOPF.proto";
+import "genshin/packet/proto/OFBHCGGGGGN.proto";
+import "genshin/packet/proto/FGNHPFIDPCB.proto";
+import "genshin/packet/proto/IMGPEMFGOPF.proto";
 
 message FEELLLIEEFE {
 	map<uint32,OFBHCGGGGGN> FMIEBPKJJPJ = 2;

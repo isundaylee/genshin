@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "GMPKODPACGM.proto";
-import "GEEMAADBNJI.proto";
-import "DCBNAHFLEJC.proto";
+import "genshin/packet/proto/GMPKODPACGM.proto";
+import "genshin/packet/proto/GEEMAADBNJI.proto";
+import "genshin/packet/proto/DCBNAHFLEJC.proto";
 
 message PPDJHNJDEGM {
 	map<uint32,GMPKODPACGM> EANDOCEEMEJ = 2;

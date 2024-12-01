@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "KDEHCGJAGFJ.proto";
-import "FGNHPFIDPCB.proto";
-import "GKFGINKLNCH.proto";
-import "MBIMHNFDGHN.proto";
+import "genshin/packet/proto/KDEHCGJAGFJ.proto";
+import "genshin/packet/proto/FGNHPFIDPCB.proto";
+import "genshin/packet/proto/GKFGINKLNCH.proto";
+import "genshin/packet/proto/MBIMHNFDGHN.proto";
 
 message AIGEMKOIOMF {
 	repeated uint32 OJCMFCLKCGO = 1843;

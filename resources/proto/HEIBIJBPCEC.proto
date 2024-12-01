@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "KPFOBLALBLC.proto";
-import "BDCDECGDJGF.proto";
+import "genshin/packet/proto/KPFOBLALBLC.proto";
+import "genshin/packet/proto/BDCDECGDJGF.proto";
 
 message HEIBIJBPCEC {
 	uint64 IHGJLFCGFIN = 5;

@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "KDEHCGJAGFJ.proto";
-import "APMHHCOHPLD.proto";
-import "DKIFDGNKPLD.proto";
-import "OKNBFFIFIGJ.proto";
-import "FMFNEJNKFCJ.proto";
+import "genshin/packet/proto/KDEHCGJAGFJ.proto";
+import "genshin/packet/proto/APMHHCOHPLD.proto";
+import "genshin/packet/proto/DKIFDGNKPLD.proto";
+import "genshin/packet/proto/OKNBFFIFIGJ.proto";
+import "genshin/packet/proto/FMFNEJNKFCJ.proto";
 
 message IMLHDJCJHBD {
 	KDEHCGJAGFJ FALBFFNPGDJ = 1913;
@@ -16,7 +16,7 @@ message IMLHDJCJHBD {
 	DKIFDGNKPLD CIENOKDHFOD = 450;
 	OKNBFFIFIGJ PFGMJFGPODI = 26;
 	uint32 DFGNLKJBCIF = 70;
-	FMFNEJNKFCJ IADFGKJCIDE = 5;
+	FMFNEJNKFCJ type = 5;
 	uint32 JJDJDFCEFCK = 3;
 	uint32 MJFIBKOLDHC = 181;
 	uint32 OEDOJBLAMDM = 986;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CKNODNHICOL.proto";
+import "genshin/packet/proto/CKNODNHICOL.proto";
 
 message ICKFOBLBMFP {
 	repeated CKNODNHICOL BJJPECNJIJE = 3;

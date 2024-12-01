@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "PBKKCEOCHEB.proto";
+import "genshin/packet/proto/PBKKCEOCHEB.proto";
 
 message GPCMGDAKOEM {
 	PBKKCEOCHEB MCJCFHAIJAJ = 11;

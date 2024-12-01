@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HKIHLAEPCPL.proto";
+import "genshin/packet/proto/HKIHLAEPCPL.proto";
 
 message MHOJPFGMMHL {
 	map<uint32,HKIHLAEPCPL> PJNIMNLMIOP = 4;

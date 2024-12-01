@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "EKGHDLKKKPO.proto";
-import "HPBCMBFEKGO.proto";
-import "LJDOIFMJABA.proto";
+import "genshin/packet/proto/EKGHDLKKKPO.proto";
+import "genshin/packet/proto/HPBCMBFEKGO.proto";
+import "genshin/packet/proto/LJDOIFMJABA.proto";
 
 message GPBHBCBEHKI {
 	EKGHDLKKKPO EMDKFPHKAHC = 8;

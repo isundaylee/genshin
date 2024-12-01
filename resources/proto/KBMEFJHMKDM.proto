@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "DCDCNNPIFFK.proto";
+import "genshin/packet/proto/DCDCNNPIFFK.proto";
 
 message KBMEFJHMKDM {
 	DCDCNNPIFFK FBFDAKLPEFB = 1;

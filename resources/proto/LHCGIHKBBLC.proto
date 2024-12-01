@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-import "PKJMPCPEGGO.proto";
-import "CPPNHDPJMEC.proto";
-import "EPPEGDIEFJN.proto";
-import "GFLAAGCBNGM.proto";
-import "HKAMLCIMKJL.proto";
-import "GLNNDHIHPDF.proto";
-import "NFONHFAMDNE.proto";
+import "genshin/packet/proto/PKJMPCPEGGO.proto";
+import "genshin/packet/proto/CPPNHDPJMEC.proto";
+import "genshin/packet/proto/EPPEGDIEFJN.proto";
+import "genshin/packet/proto/GFLAAGCBNGM.proto";
+import "genshin/packet/proto/HKAMLCIMKJL.proto";
+import "genshin/packet/proto/GLNNDHIHPDF.proto";
+import "genshin/packet/proto/NFONHFAMDNE.proto";
 
 message LHCGIHKBBLC {
 	string LBKDGOEFEBC = 30;

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "KDEHCGJAGFJ.proto";
-import "HCJGIFNJPPJ.proto";
+import "genshin/packet/proto/KDEHCGJAGFJ.proto";
+import "genshin/packet/proto/HCJGIFNJPPJ.proto";
 
 message GNCEDGEEPPE {
 	KDEHCGJAGFJ NCOKIBKJKBB = 10;

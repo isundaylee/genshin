@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "FNMJNFHDLFA.proto";
-import "DPOGEFJBHLG.proto";
-import "MJOGIGOMGJO.proto";
+import "genshin/packet/proto/FNMJNFHDLFA.proto";
+import "genshin/packet/proto/DPOGEFJBHLG.proto";
+import "genshin/packet/proto/MJOGIGOMGJO.proto";
 
 message KPDDLJECBCJ {
 	FNMJNFHDLFA LCEJJHALMMJ = 8;

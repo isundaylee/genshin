@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KAPLJMBLBME.proto";
+import "genshin/packet/proto/KAPLJMBLBME.proto";
 
 message NFILMAGDNGJ {
 	repeated KAPLJMBLBME BAGJBBKNADL = 10;

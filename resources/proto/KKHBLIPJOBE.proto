@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CDOKJPIPBGI.proto";
+import "genshin/packet/proto/CDOKJPIPBGI.proto";
 
 message KKHBLIPJOBE {
 	uint64 MCPPEKNBHFK = 7;

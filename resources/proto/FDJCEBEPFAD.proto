@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-import "CNHOEJPPNNM.proto";
-import "PCBPKGLMOAP.proto";
-import "KMLAIHINCLK.proto";
-import "CBIAGEKFJBB.proto";
-import "FJLOAADFJOL.proto";
-import "HBNHJHAMKDP.proto";
+import "genshin/packet/proto/CNHOEJPPNNM.proto";
+import "genshin/packet/proto/PCBPKGLMOAP.proto";
+import "genshin/packet/proto/KMLAIHINCLK.proto";
+import "genshin/packet/proto/CBIAGEKFJBB.proto";
+import "genshin/packet/proto/FJLOAADFJOL.proto";
+import "genshin/packet/proto/HBNHJHAMKDP.proto";
 
 message FDJCEBEPFAD {
 	CNHOEJPPNNM GAKCLBINMHF = 11;

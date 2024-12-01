@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "FLMMANLPMNB.proto";
-import "APLFHDMBKHC.proto";
+import "genshin/packet/proto/FLMMANLPMNB.proto";
+import "genshin/packet/proto/APLFHDMBKHC.proto";
 
 message ICHLHCPPADJ {
 	string JOFCOMOMBDO = 9;

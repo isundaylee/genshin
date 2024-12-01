@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "EPPEGDIEFJN.proto";
-import "PKJMPCPEGGO.proto";
-import "HKAMLCIMKJL.proto";
-import "NFONHFAMDNE.proto";
-import "GLNNDHIHPDF.proto";
+import "genshin/packet/proto/EPPEGDIEFJN.proto";
+import "genshin/packet/proto/PKJMPCPEGGO.proto";
+import "genshin/packet/proto/HKAMLCIMKJL.proto";
+import "genshin/packet/proto/NFONHFAMDNE.proto";
+import "genshin/packet/proto/GLNNDHIHPDF.proto";
 
 message NBDHFHKMLFD {
 	string OMKNBNMEBIK = 2;

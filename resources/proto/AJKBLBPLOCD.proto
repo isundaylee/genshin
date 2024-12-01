@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ENNOPJOFAJK.proto";
+import "genshin/packet/proto/ENNOPJOFAJK.proto";
 
 message AJKBLBPLOCD {
 	repeated ENNOPJOFAJK GAPODPGIELN = 11;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "PPAICMKDNEI.proto";
+import "genshin/packet/proto/PPAICMKDNEI.proto";
 
 message OFELNADBNKC {
 	uint32 EPFCIDIKLKG = 4;

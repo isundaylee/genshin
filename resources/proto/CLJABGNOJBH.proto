@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "CNJODFLJDIE.proto";
-import "EGEKCOIJOLN.proto";
+import "genshin/packet/proto/CNJODFLJDIE.proto";
+import "genshin/packet/proto/EGEKCOIJOLN.proto";
 
 message CLJABGNOJBH {
 	repeated uint32 GIPEPNIONAK = 4;

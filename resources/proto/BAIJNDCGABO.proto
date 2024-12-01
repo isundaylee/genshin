@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JBIIOANAJDI.proto";
+import "genshin/packet/proto/JBIIOANAJDI.proto";
 
 message BAIJNDCGABO {
 	repeated JBIIOANAJDI EMIPFNGKDPK = 9;

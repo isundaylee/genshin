@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "EGMCILPCONK.proto";
+import "genshin/packet/proto/EGMCILPCONK.proto";
 
 message MJPNNOOKJPP {
 	uint32 DAFBMPHNLMA = 15;

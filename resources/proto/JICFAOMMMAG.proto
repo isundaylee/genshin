@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LLGCDCDHDPD.proto";
+import "genshin/packet/proto/LLGCDCDHDPD.proto";
 
 message JICFAOMMMAG {
 	repeated LLGCDCDHDPD DJMCHFPIFLM = 3;

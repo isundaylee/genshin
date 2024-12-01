@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "GPPOMEGKDFI.proto";
-import "MJHJLHDEJBE.proto";
-import "GBJHPICMGFI.proto";
-import "ILGHNMJJEFL.proto";
-import "JONIOBEALFP.proto";
+import "genshin/packet/proto/GPPOMEGKDFI.proto";
+import "genshin/packet/proto/MJHJLHDEJBE.proto";
+import "genshin/packet/proto/GBJHPICMGFI.proto";
+import "genshin/packet/proto/ILGHNMJJEFL.proto";
+import "genshin/packet/proto/JONIOBEALFP.proto";
 
 message BBOHKCCECCC {
 	GPPOMEGKDFI HDPHLDBGLEO = 7;

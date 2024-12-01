@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "MLECMFLLOGC.proto";
+import "genshin/packet/proto/MLECMFLLOGC.proto";
 
 message NFIGJIKIAPK {
 	repeated MLECMFLLOGC MDKPLBDANEF = 1;

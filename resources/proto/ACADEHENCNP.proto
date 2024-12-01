@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HIAOJLHGGDK.proto";
+import "genshin/packet/proto/HIAOJLHGGDK.proto";
 
 message ACADEHENCNP {
 	map<uint32,HIAOJLHGGDK> BELOKFABIJF = 3;

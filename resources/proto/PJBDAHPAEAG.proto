@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "MMHPCAJFFJG.proto";
-import "GDLFLFDGNGH.proto";
-import "NKFIFDHJBCC.proto";
-import "MEBCHBGNFFA.proto";
-import "DANPJHICHOM.proto";
+import "genshin/packet/proto/MMHPCAJFFJG.proto";
+import "genshin/packet/proto/GDLFLFDGNGH.proto";
+import "genshin/packet/proto/NKFIFDHJBCC.proto";
+import "genshin/packet/proto/MEBCHBGNFFA.proto";
+import "genshin/packet/proto/DANPJHICHOM.proto";
 
 message PJBDAHPAEAG {
 	string OHJNPJCKGEG = 1447;

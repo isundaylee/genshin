@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GMDPMAGBAOE.proto";
+import "genshin/packet/proto/GMDPMAGBAOE.proto";
 
 message EBLGAKAODKK {
 	uint32 PBBEAIKKNIB = 10;

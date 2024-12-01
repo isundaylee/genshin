@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "NHNLJIBHPMJ.proto";
-import "KHJMIKAAFHB.proto";
+import "genshin/packet/proto/NHNLJIBHPMJ.proto";
+import "genshin/packet/proto/KHJMIKAAFHB.proto";
 
 message CLFNCMGFGPC {
 	NHNLJIBHPMJ AMOLHEFINEK = 7;

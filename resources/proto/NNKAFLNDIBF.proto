@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JCJCMAIBCAO.proto";
+import "genshin/packet/proto/JCJCMAIBCAO.proto";
 
 message NNKAFLNDIBF {
 	repeated JCJCMAIBCAO LAGEEOHCMNG = 13;

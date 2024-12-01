@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "AvatarExpeditionState.proto";
+import "genshin/packet/proto/AvatarExpeditionState.proto";
 
 message IGKLNNDNCMG {
 	uint32 MIMEIGLBOPI = 2;

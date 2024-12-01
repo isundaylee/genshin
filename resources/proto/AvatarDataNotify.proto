@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "AvatarRenameInfo.proto";
-import "AvatarInfo.proto";
-import "AvatarTeam.proto";
+import "genshin/packet/proto/AvatarRenameInfo.proto";
+import "genshin/packet/proto/AvatarInfo.proto";
+import "genshin/packet/proto/AvatarTeam.proto";
 
 message AvatarDataNotify {
 	repeated uint32 CPEAJKCGPIO = 14;

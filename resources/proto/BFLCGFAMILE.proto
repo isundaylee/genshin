@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "KNMPNCPBMMP.proto";
-import "FJCOKOHBJIN.proto";
+import "genshin/packet/proto/KNMPNCPBMMP.proto";
+import "genshin/packet/proto/FJCOKOHBJIN.proto";
 
 message BFLCGFAMILE {
 	repeated uint32 MJAONINHIIB = 3;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BBICGHBHCBA.proto";
+import "genshin/packet/proto/BBICGHBHCBA.proto";
 
 message BNDGMFFHDIE {
 	map<uint32,uint32> JJKEJDKMJLG = 12;

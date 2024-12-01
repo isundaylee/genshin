@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "IOAHICPMIEB.proto";
+import "genshin/packet/proto/IOAHICPMIEB.proto";
 
 message OILDAMFJODC {
 	repeated uint32 DJPDELLJHJF = 3;

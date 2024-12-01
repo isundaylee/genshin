@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "MKOFGOKEKIL.proto";
+import "genshin/packet/proto/MKOFGOKEKIL.proto";
 
 message LHFGIJHMLFA {
 	MKOFGOKEKIL DBDNMHCJFOC = 4;

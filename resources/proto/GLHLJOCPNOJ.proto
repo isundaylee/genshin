@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "JICKPPDLOHC.proto";
-import "MBJEPLKJNIG.proto";
-import "MHJJGCMMGLO.proto";
+import "genshin/packet/proto/JICKPPDLOHC.proto";
+import "genshin/packet/proto/MBJEPLKJNIG.proto";
+import "genshin/packet/proto/MHJJGCMMGLO.proto";
 
 message GLHLJOCPNOJ {
 	repeated JICKPPDLOHC PCPCBEBALLB = 15;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NLCDHFNMHLD.proto";
+import "genshin/packet/proto/NLCDHFNMHLD.proto";
 
 message CBNCFKJIFNA {
 	repeated int32 AGKPEKAANCA = 11;

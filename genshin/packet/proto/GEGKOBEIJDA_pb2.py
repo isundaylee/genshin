@@ -31,7 +31,7 @@ from genshin.packet.proto import KMHHOEPHMJO_pb2 as genshin_dot_packet_dot_proto
 from genshin.packet.proto import PHPOHEGGIMP_pb2 as genshin_dot_packet_dot_proto_dot_PHPOHEGGIMP__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/GEGKOBEIJDA.proto\x1a&genshin/packet/proto/CBGHNFJJJOD.proto\x1a&genshin/packet/proto/GNIMGOIHNMC.proto\x1a&genshin/packet/proto/MINGGPMEDIA.proto\x1a&genshin/packet/proto/LKHDONHBJAG.proto\x1a&genshin/packet/proto/CLIIGMPCIDH.proto\x1a&genshin/packet/proto/KMHHOEPHMJO.proto\x1a&genshin/packet/proto/PHPOHEGGIMP.proto\"\xf1\x02\n\x0bGEGKOBEIJDA\x12\x13\n\x0bIADFGKJCIDE\x18\x06 \x01(\r\x12\x11\n\tavatar_id\x18\x0c \x01(\r\x12,\n\x15reliquary_set_request\x18\xde\x03 \x01(\x0b\x32\x0c.CBGHNFJJJOD\x12\x34\n\x1d\x65lement_reliquary_set_request\x18\xc8\x01 \x01(\x0b\x32\x0c.GNIMGOIHNMC\x12%\n\x0eweapon_request\x18\xc7\x08 \x01(\x0b\x32\x0c.MINGGPMEDIA\x12\x30\n\x19\x65lement_reliquary_request\x18\xd1\r \x01(\x0b\x32\x0c.LKHDONHBJAG\x12$\n\rskill_request\x18\xdb\x03 \x01(\x0b\x32\x0c.CLIIGMPCIDH\x12(\n\x11reliquary_request\x18\xd6\x04 \x01(\x0b\x32\x0c.KMHHOEPHMJO\x12-\n\x16\x65lement_weapon_request\x18\x9e\t \x01(\x0b\x32\x0c.PHPOHEGGIMPb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n&genshin/packet/proto/GEGKOBEIJDA.proto\x1a&genshin/packet/proto/CBGHNFJJJOD.proto\x1a&genshin/packet/proto/GNIMGOIHNMC.proto\x1a&genshin/packet/proto/MINGGPMEDIA.proto\x1a&genshin/packet/proto/LKHDONHBJAG.proto\x1a&genshin/packet/proto/CLIIGMPCIDH.proto\x1a&genshin/packet/proto/KMHHOEPHMJO.proto\x1a&genshin/packet/proto/PHPOHEGGIMP.proto\"\xea\x02\n\x0bGEGKOBEIJDA\x12\x0c\n\x04type\x18\x06 \x01(\r\x12\x11\n\tavatar_id\x18\x0c \x01(\r\x12,\n\x15reliquary_set_request\x18\xde\x03 \x01(\x0b\x32\x0c.CBGHNFJJJOD\x12\x34\n\x1d\x65lement_reliquary_set_request\x18\xc8\x01 \x01(\x0b\x32\x0c.GNIMGOIHNMC\x12%\n\x0eweapon_request\x18\xc7\x08 \x01(\x0b\x32\x0c.MINGGPMEDIA\x12\x30\n\x19\x65lement_reliquary_request\x18\xd1\r \x01(\x0b\x32\x0c.LKHDONHBJAG\x12$\n\rskill_request\x18\xdb\x03 \x01(\x0b\x32\x0c.CLIIGMPCIDH\x12(\n\x11reliquary_request\x18\xd6\x04 \x01(\x0b\x32\x0c.KMHHOEPHMJO\x12-\n\x16\x65lement_weapon_request\x18\x9e\t \x01(\x0b\x32\x0c.PHPOHEGGIMPb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -39,5 +39,5 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.GEGKOB
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
   _globals['_GEGKOBEIJDA']._serialized_start=323
-  _globals['_GEGKOBEIJDA']._serialized_end=692
+  _globals['_GEGKOBEIJDA']._serialized_end=685
 # @@protoc_insertion_point(module_scope)

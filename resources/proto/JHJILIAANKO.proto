@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "JGBLKFDNIHF.proto";
-import "HPPANKBCFGI.proto";
-import "EBPONABNLJE.proto";
-import "KDPBGPNNCLD.proto";
+import "genshin/packet/proto/JGBLKFDNIHF.proto";
+import "genshin/packet/proto/HPPANKBCFGI.proto";
+import "genshin/packet/proto/EBPONABNLJE.proto";
+import "genshin/packet/proto/KDPBGPNNCLD.proto";
 
 message JHJILIAANKO {
 	JGBLKFDNIHF avatar_available_count_result = 1797;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HDAAFCCGGFE.proto";
+import "genshin/packet/proto/HDAAFCCGGFE.proto";
 
 message ANADBIMJKAP {
 	repeated HDAAFCCGGFE EKKGNBLDPEG = 12;

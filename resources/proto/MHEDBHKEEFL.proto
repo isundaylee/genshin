@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "StoreType.proto";
+import "genshin/packet/proto/StoreType.proto";
 
 message MHEDBHKEEFL {
 	uint32 weight_limit = 3;

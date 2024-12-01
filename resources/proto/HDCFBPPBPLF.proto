@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "PEIJAJNGGOE.proto";
+import "genshin/packet/proto/PEIJAJNGGOE.proto";
 
 message HDCFBPPBPLF {
 	repeated PEIJAJNGGOE avatar_list = 9;

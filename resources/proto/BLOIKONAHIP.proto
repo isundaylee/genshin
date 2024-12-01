@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CMHLIIJINHM.proto";
+import "genshin/packet/proto/CMHLIIJINHM.proto";
 
 message BLOIKONAHIP {
 	CMHLIIJINHM MJKAMAFCBFK = 13;

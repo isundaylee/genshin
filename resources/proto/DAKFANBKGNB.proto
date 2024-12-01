@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "APGLCKHIGHA.proto";
+import "genshin/packet/proto/APGLCKHIGHA.proto";
 
 message DAKFANBKGNB {
 	APGLCKHIGHA ILMADKLJKJK = 10;

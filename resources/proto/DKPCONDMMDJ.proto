@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "MDKCMCIMNDG.proto";
+import "genshin/packet/proto/MDKCMCIMNDG.proto";
 
 message DKPCONDMMDJ {
 	repeated MDKCMCIMNDG PGIBHCHLPDN = 10;

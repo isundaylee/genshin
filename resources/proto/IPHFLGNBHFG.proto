@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "ELCBGECGEON.proto";
-import "BLPMIJEPGLF.proto";
+import "genshin/packet/proto/ELCBGECGEON.proto";
+import "genshin/packet/proto/BLPMIJEPGLF.proto";
 
 message IPHFLGNBHFG {
 	ELCBGECGEON HPODKDCCIKJ = 2;

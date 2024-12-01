@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GAODDBPPALA.proto";
+import "genshin/packet/proto/GAODDBPPALA.proto";
 
 message KHMODCLEFPE {
 	GAODDBPPALA GMJAGIBJEAC = 10;

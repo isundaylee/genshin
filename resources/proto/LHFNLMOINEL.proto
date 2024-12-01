@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "MCMKNAEDHON.proto";
+import "genshin/packet/proto/MCMKNAEDHON.proto";
 
 message LHFNLMOINEL {
 	string NBMAECPJEAI = 13;

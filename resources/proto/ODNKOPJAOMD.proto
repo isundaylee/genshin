@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GPHNOOMOJPD.proto";
+import "genshin/packet/proto/GPHNOOMOJPD.proto";
 
 message ODNKOPJAOMD {
 	repeated GPHNOOMOJPD NAEEDLOCMLJ = 13;

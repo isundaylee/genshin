@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CLEKKNMLMCD.proto";
+import "genshin/packet/proto/CLEKKNMLMCD.proto";
 
 message MKKAOACEEKC {
 	CLEKKNMLMCD HOHOKJCAOKB = 5;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KPFOBLALBLC.proto";
+import "genshin/packet/proto/KPFOBLALBLC.proto";
 
 message INHLIJHODOP {
 	KPFOBLALBLC DAAKPCOABEP = 15;

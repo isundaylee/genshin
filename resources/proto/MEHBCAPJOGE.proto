@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JCJCMAIBCAO.proto";
+import "genshin/packet/proto/JCJCMAIBCAO.proto";
 
 message MEHBCAPJOGE {
 	JCJCMAIBCAO IIKBLHJBCIO = 14;

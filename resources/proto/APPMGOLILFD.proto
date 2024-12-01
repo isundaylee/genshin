@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KLMHEGDBLPJ.proto";
+import "genshin/packet/proto/KLMHEGDBLPJ.proto";
 
 message APPMGOLILFD {
 	uint32 IPOBNGIHICN = 12;

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "PropValue.proto";
-import "AvatarExcelInfo.proto";
-import "AvatarFetterInfo.proto";
-import "FLMADEMMJJH.proto";
+import "genshin/packet/proto/PropValue.proto";
+import "genshin/packet/proto/AvatarExcelInfo.proto";
+import "genshin/packet/proto/AvatarFetterInfo.proto";
+import "genshin/packet/proto/FLMADEMMJJH.proto";
 
 message JIIOMJGCKLO {
 	map<uint32,PropValue> prop_map = 2;

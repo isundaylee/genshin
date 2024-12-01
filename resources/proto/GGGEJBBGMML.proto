@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HPIIMHEOGNI.proto";
+import "genshin/packet/proto/HPIIMHEOGNI.proto";
 
 message GGGEJBBGMML {
 	HPIIMHEOGNI IMIOGMDOKCB = 2;

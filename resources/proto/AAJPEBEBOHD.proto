@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "KNOPPNBPEBM.proto";
-import "IJLHHNEFLKK.proto";
-import "MKGJGOIAOAP.proto";
-import "CNHLJKCJAHB.proto";
-import "LJJFJILBNLL.proto";
+import "genshin/packet/proto/KNOPPNBPEBM.proto";
+import "genshin/packet/proto/IJLHHNEFLKK.proto";
+import "genshin/packet/proto/MKGJGOIAOAP.proto";
+import "genshin/packet/proto/CNHLJKCJAHB.proto";
+import "genshin/packet/proto/LJJFJILBNLL.proto";
 
 message AAJPEBEBOHD {
 	repeated KNOPPNBPEBM PKAICAIONPM = 9;

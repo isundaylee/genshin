@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "ACCDELDOKHA.proto";
+import "genshin/packet/proto/ACCDELDOKHA.proto";
 
 message LMLBFOELDFF {
 	repeated ACCDELDOKHA OENAHHEEFLG = 12;

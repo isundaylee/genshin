@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BHDNHBGEAEH.proto";
+import "genshin/packet/proto/BHDNHBGEAEH.proto";
 
 message PNPKJDMLBLP {
 	map<uint32,BHDNHBGEAEH> IDDOABLMBLP = 8;

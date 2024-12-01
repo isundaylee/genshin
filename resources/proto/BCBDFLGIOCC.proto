@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "GPIDAGCKPFO.proto";
-import "NAJEPFPOEDA.proto";
-import "JOKPHKNIFID.proto";
+import "genshin/packet/proto/GPIDAGCKPFO.proto";
+import "genshin/packet/proto/NAJEPFPOEDA.proto";
+import "genshin/packet/proto/JOKPHKNIFID.proto";
 
 message BCBDFLGIOCC {
 	repeated uint32 HBDGGIDECMD = 4;

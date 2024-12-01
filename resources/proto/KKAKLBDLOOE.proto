@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "EKIJBCDEBID.proto";
+import "genshin/packet/proto/EKIJBCDEBID.proto";
 
 message KKAKLBDLOOE {
 	repeated EKIJBCDEBID BAGJBBKNADL = 9;

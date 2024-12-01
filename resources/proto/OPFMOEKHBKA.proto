@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LCFIPCLANEK.proto";
+import "genshin/packet/proto/LCFIPCLANEK.proto";
 
 message OPFMOEKHBKA {
 	LCFIPCLANEK PHEEPOCGABD = 1;

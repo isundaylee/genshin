@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "PropValue.proto";
-import "KBGFFPMOLNP.proto";
+import "genshin/packet/proto/PropValue.proto";
+import "genshin/packet/proto/KBGFFPMOLNP.proto";
 
 message AFGCPBKLHMB {
 	map<uint32,PropValue> prop_map = 12;

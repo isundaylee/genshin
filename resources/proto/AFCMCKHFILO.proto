@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "CACGLIBJIIE.proto";
-import "GDMLPOEDPJO.proto";
-import "OAODPGJOMPF.proto";
+import "genshin/packet/proto/CACGLIBJIIE.proto";
+import "genshin/packet/proto/GDMLPOEDPJO.proto";
+import "genshin/packet/proto/OAODPGJOMPF.proto";
 
 message AFCMCKHFILO {
 	repeated CACGLIBJIIE CBAKCKLKJHJ = 15;

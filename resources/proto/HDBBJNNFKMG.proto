@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CMGOOOMLAIA.proto";
+import "genshin/packet/proto/CMGOOOMLAIA.proto";
 
 message HDBBJNNFKMG {
 	repeated uint32 FKPCOKDEJAM = 1;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "PKJMPCPEGGO.proto";
+import "genshin/packet/proto/PKJMPCPEGGO.proto";
 
 message LNCNFMEIOLI {
 	string EFAJIHMNOBK = 4;

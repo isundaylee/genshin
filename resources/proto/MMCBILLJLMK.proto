@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "HKPGNGDDOCL.proto";
-import "LJCNGNGDGPH.proto";
+import "genshin/packet/proto/HKPGNGDDOCL.proto";
+import "genshin/packet/proto/LJCNGNGDGPH.proto";
 
 message MMCBILLJLMK {
 	map<uint32,uint32> BIKKDDDLDHP = 10;

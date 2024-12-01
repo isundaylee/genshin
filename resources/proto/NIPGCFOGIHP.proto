@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OAIMBJCNJLI.proto";
+import "genshin/packet/proto/OAIMBJCNJLI.proto";
 
 message NIPGCFOGIHP {
 	repeated uint32 DFBMBDOMKIG = 9;

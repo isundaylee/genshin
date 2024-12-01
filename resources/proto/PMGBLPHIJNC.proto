@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "KDEHCGJAGFJ.proto";
-import "StoreType.proto";
+import "genshin/packet/proto/KDEHCGJAGFJ.proto";
+import "genshin/packet/proto/StoreType.proto";
 
 message PMGBLPHIJNC {
 	KDEHCGJAGFJ GJEBAJAJPII = 6;

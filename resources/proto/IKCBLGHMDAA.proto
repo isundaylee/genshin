@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BPHPDCCAEGC.proto";
+import "genshin/packet/proto/BPHPDCCAEGC.proto";
 
 message IKCBLGHMDAA {
 	map<uint32,BPHPDCCAEGC> NMOOCJNBEOH = 14;

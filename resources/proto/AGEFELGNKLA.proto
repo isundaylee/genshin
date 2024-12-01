@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NKDCCKJAIMD.proto";
+import "genshin/packet/proto/NKDCCKJAIMD.proto";
 
 message AGEFELGNKLA {
 	repeated NKDCCKJAIMD OMOLHGDOJCH = 7;

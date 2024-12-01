@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "EFPCNOOEDLC.proto";
-import "HJMPMBGECAE.proto";
-import "NCCNCMFILPA.proto";
-import "EKIAMHKEMOO.proto";
+import "genshin/packet/proto/EFPCNOOEDLC.proto";
+import "genshin/packet/proto/HJMPMBGECAE.proto";
+import "genshin/packet/proto/NCCNCMFILPA.proto";
+import "genshin/packet/proto/EKIAMHKEMOO.proto";
 
 message LDFOEHIKKML {
 	EFPCNOOEDLC monster_group_deactive = 7;

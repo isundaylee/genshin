@@ -7,7 +7,7 @@ from typing import ClassVar as _ClassVar, Mapping as _Mapping, Optional as _Opti
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class LHBCJCHHNJP(_message.Message):
-    __slots__ = ("BMNFBPGHFJB", "PHJJLGFFMOM", "IADFGKJCIDE")
+    __slots__ = ("BMNFBPGHFJB", "PHJJLGFFMOM", "type")
     class BMNFBPGHFJBEntry(_message.Message):
         __slots__ = ("key", "value")
         KEY_FIELD_NUMBER: _ClassVar[int]
@@ -24,8 +24,8 @@ class LHBCJCHHNJP(_message.Message):
         def __init__(self, key: _Optional[int] = ..., value: _Optional[int] = ...) -> None: ...
     BMNFBPGHFJB_FIELD_NUMBER: _ClassVar[int]
     PHJJLGFFMOM_FIELD_NUMBER: _ClassVar[int]
-    IADFGKJCIDE_FIELD_NUMBER: _ClassVar[int]
+    TYPE_FIELD_NUMBER: _ClassVar[int]
     BMNFBPGHFJB: _containers.ScalarMap[int, int]
     PHJJLGFFMOM: _containers.ScalarMap[int, int]
-    IADFGKJCIDE: _BPOBBMNGMDL_pb2.BPOBBMNGMDL
-    def __init__(self, BMNFBPGHFJB: _Optional[_Mapping[int, int]] = ..., PHJJLGFFMOM: _Optional[_Mapping[int, int]] = ..., IADFGKJCIDE: _Optional[_Union[_BPOBBMNGMDL_pb2.BPOBBMNGMDL, str]] = ...) -> None: ...
+    type: _BPOBBMNGMDL_pb2.BPOBBMNGMDL
+    def __init__(self, BMNFBPGHFJB: _Optional[_Mapping[int, int]] = ..., PHJJLGFFMOM: _Optional[_Mapping[int, int]] = ..., type: _Optional[_Union[_BPOBBMNGMDL_pb2.BPOBBMNGMDL, str]] = ...) -> None: ...

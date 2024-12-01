@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "OFELNADBNKC.proto";
+import "genshin/packet/proto/OFELNADBNKC.proto";
 
 message NILLHGEPEEO {
 	map<uint32,uint32> AHKLLFKIDCN = 15;

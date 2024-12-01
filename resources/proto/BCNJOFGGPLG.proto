@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "GANCJAOGHKJ.proto";
+import "genshin/packet/proto/GANCJAOGHKJ.proto";
 
 message BCNJOFGGPLG {
 	GANCJAOGHKJ NGANCEICGHC = 12;

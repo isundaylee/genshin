@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KBDONBEEIFA.proto";
+import "genshin/packet/proto/KBDONBEEIFA.proto";
 
 message AFIGAIFIEPL {
 	repeated uint32 LPAGGIOGCJK = 11;

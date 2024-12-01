@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "CIKNKBLABFF.proto";
+import "genshin/packet/proto/CIKNKBLABFF.proto";
 
 message PBLLEDDEBAI {
 	repeated CIKNKBLABFF EILAHBHKMED = 7;

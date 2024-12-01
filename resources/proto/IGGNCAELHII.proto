@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-import "MIFDFAIHDDA.proto";
-import "DHNBIHGAEJB.proto";
-import "GGJNMDCOEHI.proto";
+import "genshin/packet/proto/MIFDFAIHDDA.proto";
+import "genshin/packet/proto/DHNBIHGAEJB.proto";
+import "genshin/packet/proto/GGJNMDCOEHI.proto";
 
 message IGGNCAELHII {
 	repeated MIFDFAIHDDA MBDHJJOHCKO = 2;

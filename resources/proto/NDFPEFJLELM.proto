@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "IHFCIFDKMPA.proto";
-import "CIIMAOJPKCK.proto";
+import "genshin/packet/proto/IHFCIFDKMPA.proto";
+import "genshin/packet/proto/CIIMAOJPKCK.proto";
 
 message NDFPEFJLELM {
 	repeated IHFCIFDKMPA CPALNCBBDEC = 14;

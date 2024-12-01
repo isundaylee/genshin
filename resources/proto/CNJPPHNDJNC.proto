@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JJNLLNIBIMM.proto";
+import "genshin/packet/proto/JJNLLNIBIMM.proto";
 
 message CNJPPHNDJNC {
 	repeated uint32 MNOFIBCLODD = 9;

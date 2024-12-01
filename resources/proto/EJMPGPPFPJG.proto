@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BPFBCCNHLFN.proto";
+import "genshin/packet/proto/BPFBCCNHLFN.proto";
 
 message EJMPGPPFPJG {
 	repeated uint32 GAIBIDBIBLK = 3;

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "HPKNPBFCPPD.proto";
-import "HBLKLJKHKOO.proto";
+import "genshin/packet/proto/HPKNPBFCPPD.proto";
+import "genshin/packet/proto/HBLKLJKHKOO.proto";
 
 message JKBIKPKNBIE {
 	HPKNPBFCPPD GPGMGLNANIB = 13;

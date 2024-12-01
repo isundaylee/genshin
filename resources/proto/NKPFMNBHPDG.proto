@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BKEODGBCBKI.proto";
+import "genshin/packet/proto/BKEODGBCBKI.proto";
 
 message NKPFMNBHPDG {
 	uint32 BCJFNGONABB = 4;

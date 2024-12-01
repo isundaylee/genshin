@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "GPEIBBJNHDA.proto";
-import "PLCGIEAONLG.proto";
+import "genshin/packet/proto/GPEIBBJNHDA.proto";
+import "genshin/packet/proto/PLCGIEAONLG.proto";
 
 message IKCPOOKPIGL {
 	map<uint32,GPEIBBJNHDA> PJKJCBDHMFH = 7;

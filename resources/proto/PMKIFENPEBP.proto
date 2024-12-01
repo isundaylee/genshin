@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "NGOFPEOLOPF.proto";
+import "genshin/packet/proto/NGOFPEOLOPF.proto";
 
 message PMKIFENPEBP {
 	NGOFPEOLOPF BDALEDOAHFA = 3;

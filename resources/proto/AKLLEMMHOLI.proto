@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "PKJMCKIDJFL.proto";
-import "FJINCAKIFKG.proto";
+import "genshin/packet/proto/PKJMCKIDJFL.proto";
+import "genshin/packet/proto/FJINCAKIFKG.proto";
 
 message AKLLEMMHOLI {
 	repeated uint32 MBBDPMPHNGH = 5;

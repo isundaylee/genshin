@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "KNJLMGFKIMB.proto";
+import "genshin/packet/proto/KNJLMGFKIMB.proto";
 
 message KJJFLMFFICN {
 	KNJLMGFKIMB detail_ability_info = 9;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "HGMLODJCJNO.proto";
+import "genshin/packet/proto/HGMLODJCJNO.proto";
 
 message LFLJDEIHLDM {
 	map<uint32,int32> JNOFEOHIMOB = 2;

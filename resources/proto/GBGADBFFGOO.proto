@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "LIBNNJIADME.proto";
-import "ACJBAFCALIN.proto";
+import "genshin/packet/proto/LIBNNJIADME.proto";
+import "genshin/packet/proto/ACJBAFCALIN.proto";
 
 message GBGADBFFGOO {
 	LIBNNJIADME quest_param = 14;

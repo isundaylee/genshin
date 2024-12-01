@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "EMEKKIANDLE.proto";
-import "INOOIEHHKLI.proto";
+import "genshin/packet/proto/EMEKKIANDLE.proto";
+import "genshin/packet/proto/INOOIEHHKLI.proto";
 
 message FDNFFENOFKF {
 	EMEKKIANDLE ALDIPFFJEOI = 4;

@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "KJJFLMFFICN.proto";
-import "LMFOLODEJFA.proto";
-import "IOEOEIMKMJD.proto";
-import "GBNIDJGCPLJ.proto";
-import "BONKNCPAJMA.proto";
+import "genshin/packet/proto/KJJFLMFFICN.proto";
+import "genshin/packet/proto/LMFOLODEJFA.proto";
+import "genshin/packet/proto/IOEOEIMKMJD.proto";
+import "genshin/packet/proto/GBNIDJGCPLJ.proto";
+import "genshin/packet/proto/BONKNCPAJMA.proto";
 
 message GBOMAALMAIC {
 	repeated uint32 LPAGGIOGCJK = 11;

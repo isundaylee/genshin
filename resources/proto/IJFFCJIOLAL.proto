@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "BPGLMDCKBCP.proto";
+import "genshin/packet/proto/BPGLMDCKBCP.proto";
 
 message IJFFCJIOLAL {
 	repeated BPGLMDCKBCP CGIELIFMPLC = 7;

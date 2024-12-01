@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-import "DDAAKFEFAIB.proto";
-import "KHCOEJHBNLL.proto";
-import "CMMDIEGNGML.proto";
-import "MIJLIJEKDKH.proto";
+import "genshin/packet/proto/DDAAKFEFAIB.proto";
+import "genshin/packet/proto/KHCOEJHBNLL.proto";
+import "genshin/packet/proto/CMMDIEGNGML.proto";
+import "genshin/packet/proto/MIJLIJEKDKH.proto";
 
 message JEJPLCNAFBC {
 	repeated DDAAKFEFAIB MMOIDIFGGLP = 11;

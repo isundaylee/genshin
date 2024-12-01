@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-import "IBOEPABCDMC.proto";
-import "FDNFFENOFKF.proto";
-import "JGCGFHPEIJM.proto";
-import "MCLPEEKLGMC.proto";
-import "EMEKKIANDLE.proto";
+import "genshin/packet/proto/IBOEPABCDMC.proto";
+import "genshin/packet/proto/FDNFFENOFKF.proto";
+import "genshin/packet/proto/JGCGFHPEIJM.proto";
+import "genshin/packet/proto/MCLPEEKLGMC.proto";
+import "genshin/packet/proto/EMEKKIANDLE.proto";
 
 message LOCNACEBNNN {
 	IBOEPABCDMC sorush_info = 740;

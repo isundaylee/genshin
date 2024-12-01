@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "PCOMGJBEDCB.proto";
-import "CKKOOEPELAF.proto";
+import "genshin/packet/proto/PCOMGJBEDCB.proto";
+import "genshin/packet/proto/CKKOOEPELAF.proto";
 
 message AKDLAGILFLF {
 	PCOMGJBEDCB GEHNHFNKDNJ = 8;

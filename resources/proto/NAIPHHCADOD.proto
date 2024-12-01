@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "BKCINFMCJLJ.proto";
-import "ELENLLNEHNE.proto";
+import "genshin/packet/proto/BKCINFMCJLJ.proto";
+import "genshin/packet/proto/ELENLLNEHNE.proto";
 
 message NAIPHHCADOD {
 	BKCINFMCJLJ AFLHEFEDFBE = 2;

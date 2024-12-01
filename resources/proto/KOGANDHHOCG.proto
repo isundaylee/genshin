@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JPBMHLIJINP.proto";
+import "genshin/packet/proto/JPBMHLIJINP.proto";
 
 message KOGANDHHOCG {
 	uint32 NCCPPHNNPBF = 10;

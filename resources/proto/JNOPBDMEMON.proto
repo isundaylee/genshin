@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "JMHIPEJJPKG.proto";
+import "genshin/packet/proto/JMHIPEJJPKG.proto";
 
 message JNOPBDMEMON {
 	repeated uint32 ILKGEFDHPFI = 7;

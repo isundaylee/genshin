@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "CGHBPGPBEMP.proto";
-import "MBIMHNFDGHN.proto";
+import "genshin/packet/proto/CGHBPGPBEMP.proto";
+import "genshin/packet/proto/MBIMHNFDGHN.proto";
 
 message MGGBDBMFAOO {
 	bytes NFEMCDJECDB = 8;

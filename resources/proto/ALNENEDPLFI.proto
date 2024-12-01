@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LFJLGOJMKEH.proto";
+import "genshin/packet/proto/LFJLGOJMKEH.proto";
 
 message ALNENEDPLFI {
 	uint32 EBOBHMKPOHB = 1;

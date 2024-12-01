@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "LGNOEBMGBOB.proto";
+import "genshin/packet/proto/LGNOEBMGBOB.proto";
 
 message AHPPBJIAKAI {
 	map<uint32,LGNOEBMGBOB> JPJLOCPLIHL = 15;
