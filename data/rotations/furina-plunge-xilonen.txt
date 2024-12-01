@@ -1,0 +1,28 @@
+# team=Furina,Xianyun,Xiangling,Xilonen
+
+options swap_delay=12 mode=apl duration=152.0 ignore_burst_energy=true;
+energy every interval=480,720 amount=1;
+
+furina skill;
+xianyun skill, low_plunge;
+furina attack:6;
+
+while .furina.skill.cd >= 500 {
+    sleep(10);
+}
+
+while 1 {
+    furina burst;
+    xilonen skill, attack:2;
+    xianyun skill, low_plunge, burst;
+    xiangling skill, burst;
+    furina charge, skill;
+    for let h=0; h<6; h=h+1 {
+        furina dash, jump;
+        while !.element.t0.pyro {
+            wait(7);
+        }
+        furina low_plunge[collision=rand()>0.3333];
+    }
+    furina charge;
+}

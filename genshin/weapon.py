@@ -42,6 +42,7 @@ class WeaponName(enum.IntEnum):
     MistsplitterReforged = enum.auto()  # ID 11509
     KeyOfKhajNisut = enum.auto()
     SplendorOfTranquilWaters = enum.auto()
+
     WasterGreatsword = enum.auto()  # ID 12101
     OldMercsPal = enum.auto()  # ID 12201
     FerrousShadow = enum.auto()  # ID 12301
@@ -62,6 +63,8 @@ class WeaponName(enum.IntEnum):
     MailedFlower = enum.auto()
     UltimateOverlordsMegaMagicSword = enum.auto()
     EarthShaker = enum.auto()
+    PeakPatrolSong = enum.auto()
+
     BeginnersProtector = enum.auto()  # ID 13101
     IronPoint = enum.auto()  # ID 13201
     WhiteTassel = enum.auto()  # ID 13301
@@ -81,6 +84,7 @@ class WeaponName(enum.IntEnum):
     StaffOfHoma = enum.auto()  # ID 13501
     SerpentSpine = enum.auto()
     PrimordialJadeWingedSpear = enum.auto()  # ID 13505
+
     ApprenticesNotes = enum.auto()  # ID 14101
     PocketGrimoire = enum.auto()  # ID 14201
     MagicGuide = enum.auto()  # ID 14301
@@ -106,6 +110,8 @@ class WeaponName(enum.IntEnum):
     LostPrayerToTheSacredWinds = enum.auto()  # ID 14502
     MemoryOfDust = enum.auto()  # ID 14504
     KagurasVerity = enum.auto()  # ID 14509
+    CranesEchoingCall = enum.auto()
+
     HuntersBow = enum.auto()  # ID 15101
     SeasonedHuntersBow = enum.auto()  # ID 15201
     RavenBow = enum.auto()  # ID 15301

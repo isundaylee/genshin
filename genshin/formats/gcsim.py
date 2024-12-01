@@ -25,6 +25,8 @@ def artifact_set_to_str(artifact_set: artifact.ArtifactSet) -> str:
         artifact.ArtifactSet.SR: "shimenawasreminiscence",
         artifact.ArtifactSet.BS: "blizzardstrayer",
         artifact.ArtifactSet.OHC: "oceanhuedclam",
+        artifact.ArtifactSet.MH: "marechausseehunter",
+        artifact.ArtifactSet.SHCC: "scrolloftheheroofcindercity",
     }[artifact_set]
 
 
@@ -62,6 +64,9 @@ def character_name_to_str(name: character.CharacterName) -> str:
         character.CharacterName.KamisatoAyaka: "ayaka",
         character.CharacterName.SangonomiyaKokomi: "kokomi",
         character.CharacterName.Rosaria: "rosaria",
+        character.CharacterName.Furina: "furina",
+        character.CharacterName.Xianyun: "xianyun",
+        character.CharacterName.Xilonen: "xilonen",
     }[name]
 
 
@@ -88,6 +93,11 @@ def weapon_name_to_str(name: weapon.WeaponName) -> str:
         weapon.WeaponName.BeginnersProtector: "beginnersprotector",
         weapon.WeaponName.TomeOfTheEternalFlow: "tomeoftheeternalflow",
         weapon.WeaponName.XiphosMoonlight: "xiphosmoonlight",
+        weapon.WeaponName.KeyOfKhajNisut: "keyofkhajnisut",
+        weapon.WeaponName.OathswornEye: "oathsworneye",
+        weapon.WeaponName.CranesEchoingCall: "cranesechoingcall",
+        weapon.WeaponName.PeakPatrolSong: "peakpatrolsong",
+        weapon.WeaponName.SplendorOfTranquilWaters: "splendoroftranquilwaters",
     }[name]
 
 
