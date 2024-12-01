@@ -104,6 +104,9 @@ class CharacterName(enum.IntEnum):
     Kachina = enum.auto()
     Mualani = enum.auto()
     Kinich = enum.auto()
+    Xilonen = enum.auto()
+    Chasca = enum.auto()
+    Ororon = enum.auto()
 
 
 _BASE_STATS: Dict[Tuple[CharacterName, int, int], Tuple[int, int, int]] = {

@@ -33,5 +33,23 @@ def count_fields(proto_path: pathlib.Path) -> None:
         )
 
 
+@main.command
+@click.argument("proto_path", type=pathlib.Path)
+@click.argument("a")
+@click.argument("b")
+def rename(proto_path: pathlib.Path, a: str, b: str) -> None:
+    for f in proto_path.iterdir():
+        if a in f.name:
+            new_f = f.parent / f.name.replace(a, b)
+            f.rename(new_f)
+        else:
+            new_f = f
+
+        new_f.write_text(new_f.read_text().replace(a, b))
+
+    with (proto_path / "renames.txt").open("a") as f:
+        f.write(f"{a} {b}\n")
+
+
 if __name__ == "__main__":
     main()

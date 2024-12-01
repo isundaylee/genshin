@@ -39,18 +39,18 @@ class AccountData:
                 self._parse_characters(adn)
 
     def _parse_artifacts_and_weapons(self, psn: PlayerStoreNotify) -> None:
-        assert psn.store_type == StoreType.STORE_TYPE_PACK
+        assert psn.store_type == StoreType.StoreType_STORE_PACK
 
         artifact_parser = ArtifactParser()
         weapon_parser = WeaponParser()
 
         for item in psn.item_list:
-            if item.WhichOneof("detail") != "equip":
+            if not item.HasField("equip"):
                 continue
 
             equip = item.equip
 
-            if equip.WhichOneof("detail") == "reliquary":
+            if equip.HasField("reliquary"):
                 assert item.guid not in self.artifacts
 
                 if (
@@ -62,7 +62,7 @@ class AccountData:
                     continue
 
                 self.artifacts[item.guid] = artifact
-            elif equip.WhichOneof("detail") == "weapon":
+            elif equip.HasField("weapon"):
                 assert item.guid not in self.weapons
 
                 try:
@@ -471,6 +471,9 @@ class CharacterParser:
         10000100: character.CharacterName.Kachina,
         10000101: character.CharacterName.Kinich,
         10000102: character.CharacterName.Mualani,
+        10000103: character.CharacterName.Xilonen,
+        10000104: character.CharacterName.Chasca,
+        10000105: character.CharacterName.Ororon,
     }
 
     def __init__(
