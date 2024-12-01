@@ -6,9 +6,9 @@ from typing import ClassVar as _ClassVar, Iterable as _Iterable, Optional as _Op
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class AvatarTeam(_message.Message):
-    __slots__ = ("team_name", "avatar_guid_list")
-    TEAM_NAME_FIELD_NUMBER: _ClassVar[int]
-    AVATAR_GUID_LIST_FIELD_NUMBER: _ClassVar[int]
-    team_name: str
-    avatar_guid_list: _containers.RepeatedScalarFieldContainer[int]
-    def __init__(self, team_name: _Optional[str] = ..., avatar_guid_list: _Optional[_Iterable[int]] = ...) -> None: ...
+    __slots__ = ("AMGIHOFOBNF", "OMKGPFGKFNB")
+    AMGIHOFOBNF_FIELD_NUMBER: _ClassVar[int]
+    OMKGPFGKFNB_FIELD_NUMBER: _ClassVar[int]
+    AMGIHOFOBNF: str
+    OMKGPFGKFNB: _containers.RepeatedScalarFieldContainer[int]
+    def __init__(self, AMGIHOFOBNF: _Optional[str] = ..., OMKGPFGKFNB: _Optional[_Iterable[int]] = ...) -> None: ...

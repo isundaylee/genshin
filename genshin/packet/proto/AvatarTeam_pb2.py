@@ -24,14 +24,13 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/AvatarTeam.proto\"9\n\nAvatarTeam\x12\x11\n\tteam_name\x18\x05 \x01(\t\x12\x18\n\x10\x61vatar_guid_list\x18\n \x03(\x04\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%genshin/packet/proto/AvatarTeam.proto\"6\n\nAvatarTeam\x12\x13\n\x0b\x41MGIHOFOBNF\x18\x02 \x01(\t\x12\x13\n\x0bOMKGPFGKFNB\x18\x03 \x03(\x04\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.AvatarTeam_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
-  _globals['DESCRIPTOR']._loaded_options = None
-  _globals['DESCRIPTOR']._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._loaded_options = None
   _globals['_AVATARTEAM']._serialized_start=41
-  _globals['_AVATARTEAM']._serialized_end=98
+  _globals['_AVATARTEAM']._serialized_end=95
 # @@protoc_insertion_point(module_scope)

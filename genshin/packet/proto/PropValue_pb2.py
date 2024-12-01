@@ -24,14 +24,13 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n$genshin/packet/proto/PropValue.proto\"O\n\tPropValue\x12\x0c\n\x04type\x18\x01 \x01(\r\x12\x0b\n\x03val\x18\x04 \x01(\x03\x12\x0e\n\x04ival\x18\x02 \x01(\x03H\x00\x12\x0e\n\x04\x66val\x18\x03 \x01(\x02H\x00\x42\x07\n\x05valueB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n$genshin/packet/proto/PropValue.proto\"Q\n\tPropValue\x12\x13\n\x0bIADFGKJCIDE\x18\x01 \x01(\r\x12\x0c\n\x04\x66val\x18\x03 \x01(\x02\x12\x0c\n\x04ival\x18\x02 \x01(\x03\x12\x13\n\x0bMKIJCLHFJLN\x18\x04 \x01(\x03\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.PropValue_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
-  _globals['DESCRIPTOR']._loaded_options = None
-  _globals['DESCRIPTOR']._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._loaded_options = None
   _globals['_PROPVALUE']._serialized_start=40
-  _globals['_PROPVALUE']._serialized_end=119
+  _globals['_PROPVALUE']._serialized_end=121
 # @@protoc_insertion_point(module_scope)

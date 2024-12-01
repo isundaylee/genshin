@@ -24,14 +24,13 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/AvatarExpeditionState.proto*\xbc\x02\n\x15\x41vatarExpeditionState\x12\x32\n.AVATAR_EXPEDITION_STATE_AVATAR_EXPEDITION_NONE\x10\x00\x12\x33\n/AVATAR_EXPEDITION_STATE_AVATAR_EXPEDITION_DOING\x10\x01\x12@\n<AVATAR_EXPEDITION_STATE_AVATAR_EXPEDITION_FINISH_WAIT_REWARD\x10\x02\x12\x42\n>AVATAR_EXPEDITION_STATE_AVATAR_EXPEDITION_CALLBACK_WAIT_REWARD\x10\x03\x12\x34\n0AVATAR_EXPEDITION_STATE_AVATAR_EXPEDITION_LOCKED\x10\x04\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n0genshin/packet/proto/AvatarExpeditionState.proto*\xb2\x02\n\x15\x41vatarExpeditionState\x12\x30\n,AvatarExpeditionState_AVATAR_EXPEDITION_NONE\x10\x00\x12\x31\n-AvatarExpeditionState_AVATAR_EXPEDITION_DOING\x10\x01\x12>\n:AvatarExpeditionState_AVATAR_EXPEDITION_FINISH_WAIT_REWARD\x10\x02\x12@\n<AvatarExpeditionState_AVATAR_EXPEDITION_CALLBACK_WAIT_REWARD\x10\x03\x12\x32\n.AvatarExpeditionState_AVATAR_EXPEDITION_LOCKED\x10\x04\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.AvatarExpeditionState_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
-  _globals['DESCRIPTOR']._loaded_options = None
-  _globals['DESCRIPTOR']._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._loaded_options = None
   _globals['_AVATAREXPEDITIONSTATE']._serialized_start=53
-  _globals['_AVATAREXPEDITIONSTATE']._serialized_end=369
+  _globals['_AVATAREXPEDITIONSTATE']._serialized_end=359
 # @@protoc_insertion_point(module_scope)

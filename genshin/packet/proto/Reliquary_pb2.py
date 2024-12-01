@@ -24,14 +24,13 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n$genshin/packet/proto/Reliquary.proto\"q\n\tReliquary\x12\r\n\x05level\x18\x01 \x01(\r\x12\x0b\n\x03\x65xp\x18\x02 \x01(\r\x12\x15\n\rpromote_level\x18\x03 \x01(\r\x12\x14\n\x0cmain_prop_id\x18\x04 \x01(\r\x12\x1b\n\x13\x61ppend_prop_id_list\x18\x05 \x03(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n$genshin/packet/proto/Reliquary.proto\"\x86\x01\n\tReliquary\x12\x1b\n\x13\x61ppend_prop_id_list\x18\x05 \x03(\r\x12\x14\n\x0cmain_prop_id\x18\x04 \x01(\r\x12\r\n\x05level\x18\x01 \x01(\r\x12\x15\n\rpromote_level\x18\x03 \x01(\r\x12\x0b\n\x03\x65xp\x18\x02 \x01(\r\x12\x13\n\x0bLCEENMIFAPM\x18\x06 \x01(\x08\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.Reliquary_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
-  _globals['DESCRIPTOR']._loaded_options = None
-  _globals['DESCRIPTOR']._serialized_options = b'\n\031emu.grasscutter.net.proto'
-  _globals['_RELIQUARY']._serialized_start=40
-  _globals['_RELIQUARY']._serialized_end=153
+  DESCRIPTOR._loaded_options = None
+  _globals['_RELIQUARY']._serialized_start=41
+  _globals['_RELIQUARY']._serialized_end=175
 # @@protoc_insertion_point(module_scope)

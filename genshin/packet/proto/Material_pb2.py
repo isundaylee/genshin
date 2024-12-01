@@ -22,17 +22,16 @@ _runtime_version.ValidateProtobufRuntimeVersion(
 _sym_db = _symbol_database.Default()
 
 
-from genshin.packet.proto import MaterialDeleteInfo_pb2 as genshin_dot_packet_dot_proto_dot_MaterialDeleteInfo__pb2
+from genshin.packet.proto import JDNCHHPCNMD_pb2 as genshin_dot_packet_dot_proto_dot_JDNCHHPCNMD__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n#genshin/packet/proto/Material.proto\x1a-genshin/packet/proto/MaterialDeleteInfo.proto\"C\n\x08Material\x12\r\n\x05\x63ount\x18\x01 \x01(\r\x12(\n\x0b\x64\x65lete_info\x18\x02 \x01(\x0b\x32\x13.MaterialDeleteInfoB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n#genshin/packet/proto/Material.proto\x1a&genshin/packet/proto/JDNCHHPCNMD.proto\"B\n\x08Material\x12!\n\x0bKPNDJLKLKFO\x18\x02 \x01(\x0b\x32\x0c.JDNCHHPCNMD\x12\x13\n\x0bOFIPBEGGHCD\x18\x01 \x01(\rb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.Material_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
-  _globals['DESCRIPTOR']._loaded_options = None
-  _globals['DESCRIPTOR']._serialized_options = b'\n\031emu.grasscutter.net.proto'
-  _globals['_MATERIAL']._serialized_start=86
-  _globals['_MATERIAL']._serialized_end=153
+  DESCRIPTOR._loaded_options = None
+  _globals['_MATERIAL']._serialized_start=79
+  _globals['_MATERIAL']._serialized_end=145
 # @@protoc_insertion_point(module_scope)

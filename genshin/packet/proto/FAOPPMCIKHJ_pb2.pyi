@@ -1,0 +1,16 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class FAOPPMCIKHJ(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    FAOPPMCIKHJ_SANDWORM_LEVEL_NOT_OPEN: _ClassVar[FAOPPMCIKHJ]
+    FAOPPMCIKHJ_SANDWORM_LEVEL_PRE_QUEST: _ClassVar[FAOPPMCIKHJ]
+    FAOPPMCIKHJ_SANDWORM_LEVEL_START: _ClassVar[FAOPPMCIKHJ]
+    FAOPPMCIKHJ_SANDWORM_LEVEL_SEQUEL_QUEST: _ClassVar[FAOPPMCIKHJ]
+FAOPPMCIKHJ_SANDWORM_LEVEL_NOT_OPEN: FAOPPMCIKHJ
+FAOPPMCIKHJ_SANDWORM_LEVEL_PRE_QUEST: FAOPPMCIKHJ
+FAOPPMCIKHJ_SANDWORM_LEVEL_START: FAOPPMCIKHJ
+FAOPPMCIKHJ_SANDWORM_LEVEL_SEQUEL_QUEST: FAOPPMCIKHJ

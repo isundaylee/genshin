@@ -1,0 +1,16 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class FGALHNGKMKC(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    FGALHNGKMKC_WISP_CAGE_STATE_NOT_EXIST: _ClassVar[FGALHNGKMKC]
+    FGALHNGKMKC_WISP_CAGE_STATE_CREATED: _ClassVar[FGALHNGKMKC]
+    FGALHNGKMKC_WISP_CAGE_STATE_MATERIAL_DELIVERED: _ClassVar[FGALHNGKMKC]
+    FGALHNGKMKC_WISP_CAGE_STATE_NOT_TAKE_REWARD: _ClassVar[FGALHNGKMKC]
+FGALHNGKMKC_WISP_CAGE_STATE_NOT_EXIST: FGALHNGKMKC
+FGALHNGKMKC_WISP_CAGE_STATE_CREATED: FGALHNGKMKC
+FGALHNGKMKC_WISP_CAGE_STATE_MATERIAL_DELIVERED: FGALHNGKMKC
+FGALHNGKMKC_WISP_CAGE_STATE_NOT_TAKE_REWARD: FGALHNGKMKC

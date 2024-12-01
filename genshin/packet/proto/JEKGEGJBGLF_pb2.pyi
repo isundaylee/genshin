@@ -1,0 +1,16 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class JEKGEGJBGLF(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    JEKGEGJBGLF_ASTER_LITTLE_STAGE_NONE: _ClassVar[JEKGEGJBGLF]
+    JEKGEGJBGLF_ASTER_LITTLE_STAGE_UNSTARTED: _ClassVar[JEKGEGJBGLF]
+    JEKGEGJBGLF_ASTER_LITTLE_STAGE_STARTED: _ClassVar[JEKGEGJBGLF]
+    JEKGEGJBGLF_ASTER_LITTLE_STAGE_FINISHED: _ClassVar[JEKGEGJBGLF]
+JEKGEGJBGLF_ASTER_LITTLE_STAGE_NONE: JEKGEGJBGLF
+JEKGEGJBGLF_ASTER_LITTLE_STAGE_UNSTARTED: JEKGEGJBGLF
+JEKGEGJBGLF_ASTER_LITTLE_STAGE_STARTED: JEKGEGJBGLF
+JEKGEGJBGLF_ASTER_LITTLE_STAGE_FINISHED: JEKGEGJBGLF

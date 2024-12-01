@@ -1,0 +1,16 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class AINAHDONFEO(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    AINAHDONFEO_ENTER_CUSTOM_DUNGEON_NONE: _ClassVar[AINAHDONFEO]
+    AINAHDONFEO_ENTER_CUSTOM_DUNGEON_EDIT: _ClassVar[AINAHDONFEO]
+    AINAHDONFEO_ENTER_CUSTOM_DUNGEON_PLAY: _ClassVar[AINAHDONFEO]
+    AINAHDONFEO_ENTER_CUSTOM_DUNGEON_OFFICIAL: _ClassVar[AINAHDONFEO]
+AINAHDONFEO_ENTER_CUSTOM_DUNGEON_NONE: AINAHDONFEO
+AINAHDONFEO_ENTER_CUSTOM_DUNGEON_EDIT: AINAHDONFEO
+AINAHDONFEO_ENTER_CUSTOM_DUNGEON_PLAY: AINAHDONFEO
+AINAHDONFEO_ENTER_CUSTOM_DUNGEON_OFFICIAL: AINAHDONFEO

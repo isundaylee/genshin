@@ -6,9 +6,9 @@ DESCRIPTOR: _descriptor.FileDescriptor
 
 class StoreType(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     __slots__ = ()
-    STORE_TYPE_NONE: _ClassVar[StoreType]
-    STORE_TYPE_PACK: _ClassVar[StoreType]
-    STORE_TYPE_DEPOT: _ClassVar[StoreType]
-STORE_TYPE_NONE: StoreType
-STORE_TYPE_PACK: StoreType
-STORE_TYPE_DEPOT: StoreType
+    StoreType_STORE_NONE: _ClassVar[StoreType]
+    StoreType_STORE_PACK: _ClassVar[StoreType]
+    StoreType_STORE_DEPOT: _ClassVar[StoreType]
+StoreType_STORE_NONE: StoreType
+StoreType_STORE_PACK: StoreType
+StoreType_STORE_DEPOT: StoreType

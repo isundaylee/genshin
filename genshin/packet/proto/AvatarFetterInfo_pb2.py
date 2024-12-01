@@ -22,17 +22,16 @@ _runtime_version.ValidateProtobufRuntimeVersion(
 _sym_db = _symbol_database.Default()
 
 
-from genshin.packet.proto import FetterData_pb2 as genshin_dot_packet_dot_proto_dot_FetterData__pb2
+from genshin.packet.proto import AANALBNNPPL_pb2 as genshin_dot_packet_dot_proto_dot_AANALBNNPPL__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/AvatarFetterInfo.proto\x1a%genshin/packet/proto/FetterData.proto\"\xad\x01\n\x10\x41vatarFetterInfo\x12\x12\n\nexp_number\x18\x01 \x01(\r\x12\x11\n\texp_level\x18\x02 \x01(\r\x12\x14\n\x0copen_id_list\x18\x03 \x03(\r\x12\x16\n\x0e\x66inish_id_list\x18\x04 \x03(\r\x12\"\n\x1arewarded_fetter_level_list\x18\x05 \x03(\r\x12 \n\x0b\x66\x65tter_list\x18\x06 \x03(\x0b\x32\x0b.FetterDataB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+genshin/packet/proto/AvatarFetterInfo.proto\x1a&genshin/packet/proto/AANALBNNPPL.proto\"\x9e\x01\n\x10\x41vatarFetterInfo\x12!\n\x0bPLOKNPKGHPB\x18\x06 \x03(\x0b\x32\x0c.AANALBNNPPL\x12\x13\n\x0bIJBEEBFDOOP\x18\x03 \x03(\r\x12\x13\n\x0b\x43\x43LLABBCIPD\x18\x04 \x03(\r\x12\x13\n\x0b\x44PBNMFDMBNF\x18\x05 \x03(\r\x12\x13\n\x0b\x46\x44\x43\x46KLMINJH\x18\x01 \x01(\r\x12\x13\n\x0b\x44\x46LHPOBNIPG\x18\x02 \x01(\rb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.AvatarFetterInfo_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
-  _globals['DESCRIPTOR']._loaded_options = None
-  _globals['DESCRIPTOR']._serialized_options = b'\n\031emu.grasscutter.net.proto'
-  _globals['_AVATARFETTERINFO']._serialized_start=87
-  _globals['_AVATARFETTERINFO']._serialized_end=260
+  DESCRIPTOR._loaded_options = None
+  _globals['_AVATARFETTERINFO']._serialized_start=88
+  _globals['_AVATARFETTERINFO']._serialized_end=246
 # @@protoc_insertion_point(module_scope)

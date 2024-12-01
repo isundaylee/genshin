@@ -5,13 +5,13 @@ from typing import ClassVar as _ClassVar, Optional as _Optional
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class PropValue(_message.Message):
-    __slots__ = ("type", "val", "ival", "fval")
-    TYPE_FIELD_NUMBER: _ClassVar[int]
-    VAL_FIELD_NUMBER: _ClassVar[int]
-    IVAL_FIELD_NUMBER: _ClassVar[int]
+    __slots__ = ("IADFGKJCIDE", "fval", "ival", "MKIJCLHFJLN")
+    IADFGKJCIDE_FIELD_NUMBER: _ClassVar[int]
     FVAL_FIELD_NUMBER: _ClassVar[int]
-    type: int
-    val: int
-    ival: int
+    IVAL_FIELD_NUMBER: _ClassVar[int]
+    MKIJCLHFJLN_FIELD_NUMBER: _ClassVar[int]
+    IADFGKJCIDE: int
     fval: float
-    def __init__(self, type: _Optional[int] = ..., val: _Optional[int] = ..., ival: _Optional[int] = ..., fval: _Optional[float] = ...) -> None: ...
+    ival: int
+    MKIJCLHFJLN: int
+    def __init__(self, IADFGKJCIDE: _Optional[int] = ..., fval: _Optional[float] = ..., ival: _Optional[int] = ..., MKIJCLHFJLN: _Optional[int] = ...) -> None: ...

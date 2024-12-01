@@ -24,14 +24,13 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n/genshin/packet/proto/AvatarEquipAffixInfo.proto\"D\n\x14\x41vatarEquipAffixInfo\x12\x16\n\x0e\x65quip_affix_id\x18\x01 \x01(\r\x12\x14\n\x0cleft_cd_time\x18\x02 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n/genshin/packet/proto/AvatarEquipAffixInfo.proto\"@\n\x14\x41vatarEquipAffixInfo\x12\x13\n\x0bIEKJLGJGJFD\x18\x02 \x01(\r\x12\x13\n\x0b\x41JFPBCMPINA\x18\x01 \x01(\rb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.AvatarEquipAffixInfo_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
-  _globals['DESCRIPTOR']._loaded_options = None
-  _globals['DESCRIPTOR']._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._loaded_options = None
   _globals['_AVATAREQUIPAFFIXINFO']._serialized_start=51
-  _globals['_AVATAREQUIPAFFIXINFO']._serialized_end=119
+  _globals['_AVATAREQUIPAFFIXINFO']._serialized_end=115
 # @@protoc_insertion_point(module_scope)

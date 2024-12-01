@@ -24,14 +24,13 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n!genshin/packet/proto/Weapon.proto\"\xab\x01\n\x06Weapon\x12\r\n\x05level\x18\x01 \x01(\r\x12\x0b\n\x03\x65xp\x18\x02 \x01(\r\x12\x15\n\rpromote_level\x18\x03 \x01(\r\x12(\n\taffix_map\x18\x04 \x03(\x0b\x32\x15.Weapon.AffixMapEntry\x12\x13\n\x0bHHLNNPOILDL\x18\x05 \x01(\x08\x1a/\n\rAffixMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x42\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n!genshin/packet/proto/Weapon.proto\"\xab\x01\n\x06Weapon\x12(\n\taffix_map\x18\x04 \x03(\x0b\x32\x15.Weapon.AffixMapEntry\x12\r\n\x05level\x18\x01 \x01(\r\x12\x15\n\rpromote_level\x18\x03 \x01(\r\x12\x0b\n\x03\x65xp\x18\x02 \x01(\r\x12\x13\n\x0bJAFJMOBLENI\x18\x05 \x01(\x08\x1a/\n\rAffixMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r:\x02\x38\x01\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.Weapon_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
-  _globals['DESCRIPTOR']._loaded_options = None
-  _globals['DESCRIPTOR']._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._loaded_options = None
   _globals['_WEAPON_AFFIXMAPENTRY']._loaded_options = None
   _globals['_WEAPON_AFFIXMAPENTRY']._serialized_options = b'8\001'
   _globals['_WEAPON']._serialized_start=38

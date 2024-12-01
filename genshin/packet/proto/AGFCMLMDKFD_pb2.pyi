@@ -1,0 +1,16 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class AGFCMLMDKFD(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    AGFCMLMDKFD_SALESMAN_STATUS_NONE: _ClassVar[AGFCMLMDKFD]
+    AGFCMLMDKFD_SALESMAN_STATUS_UNSTARTED: _ClassVar[AGFCMLMDKFD]
+    AGFCMLMDKFD_SALESMAN_STATUS_STARTED: _ClassVar[AGFCMLMDKFD]
+    AGFCMLMDKFD_SALESMAN_STATUS_DELIVERED: _ClassVar[AGFCMLMDKFD]
+AGFCMLMDKFD_SALESMAN_STATUS_NONE: AGFCMLMDKFD
+AGFCMLMDKFD_SALESMAN_STATUS_UNSTARTED: AGFCMLMDKFD
+AGFCMLMDKFD_SALESMAN_STATUS_STARTED: AGFCMLMDKFD
+AGFCMLMDKFD_SALESMAN_STATUS_DELIVERED: AGFCMLMDKFD

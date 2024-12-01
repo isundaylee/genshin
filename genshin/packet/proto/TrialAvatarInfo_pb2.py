@@ -22,18 +22,17 @@ _runtime_version.ValidateProtobufRuntimeVersion(
 _sym_db = _symbol_database.Default()
 
 
+from genshin.packet.proto import BLIFJLGHEEM_pb2 as genshin_dot_packet_dot_proto_dot_BLIFJLGHEEM__pb2
 from genshin.packet.proto import Item_pb2 as genshin_dot_packet_dot_proto_dot_Item__pb2
-from genshin.packet.proto import TrialAvatarGrantRecord_pb2 as genshin_dot_packet_dot_proto_dot_TrialAvatarGrantRecord__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/TrialAvatarInfo.proto\x1a\x1fgenshin/packet/proto/Item.proto\x1a\x31genshin/packet/proto/TrialAvatarGrantRecord.proto\"z\n\x0fTrialAvatarInfo\x12\x17\n\x0ftrial_avatar_id\x18\x01 \x01(\r\x12\x1f\n\x10trial_equip_list\x18\x02 \x03(\x0b\x32\x05.Item\x12-\n\x0cgrant_record\x18\x03 \x01(\x0b\x32\x17.TrialAvatarGrantRecordB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n*genshin/packet/proto/TrialAvatarInfo.proto\x1a&genshin/packet/proto/BLIFJLGHEEM.proto\x1a\x1fgenshin/packet/proto/Item.proto\"e\n\x0fTrialAvatarInfo\x12!\n\x0bLMAIEOEHELF\x18\x03 \x01(\x0b\x32\x0c.BLIFJLGHEEM\x12\x1a\n\x0b\x45NFBAMCLFHC\x18\x02 \x03(\x0b\x32\x05.Item\x12\x13\n\x0bJFFDOKFMLKJ\x18\x01 \x01(\rb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.TrialAvatarInfo_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
-  _globals['DESCRIPTOR']._loaded_options = None
-  _globals['DESCRIPTOR']._serialized_options = b'\n\031emu.grasscutter.net.proto'
-  _globals['_TRIALAVATARINFO']._serialized_start=130
-  _globals['_TRIALAVATARINFO']._serialized_end=252
+  DESCRIPTOR._loaded_options = None
+  _globals['_TRIALAVATARINFO']._serialized_start=119
+  _globals['_TRIALAVATARINFO']._serialized_end=220
 # @@protoc_insertion_point(module_scope)

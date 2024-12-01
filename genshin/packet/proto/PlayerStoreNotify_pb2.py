@@ -26,14 +26,13 @@ from genshin.packet.proto import Item_pb2 as genshin_dot_packet_dot_proto_dot_It
 from genshin.packet.proto import StoreType_pb2 as genshin_dot_packet_dot_proto_dot_StoreType__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/PlayerStoreNotify.proto\x1a\x1fgenshin/packet/proto/Item.proto\x1a$genshin/packet/proto/StoreType.proto\"c\n\x11PlayerStoreNotify\x12\x18\n\titem_list\x18\x01 \x03(\x0b\x32\x05.Item\x12\x1e\n\nstore_type\x18\x05 \x01(\x0e\x32\n.StoreType\x12\x14\n\x0cweight_limit\x18\x08 \x01(\rB\x1b\n\x19\x65mu.grasscutter.net.protob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n,genshin/packet/proto/PlayerStoreNotify.proto\x1a\x1fgenshin/packet/proto/Item.proto\x1a$genshin/packet/proto/StoreType.proto\"c\n\x11PlayerStoreNotify\x12\x18\n\titem_list\x18\x03 \x03(\x0b\x32\x05.Item\x12\x14\n\x0cweight_limit\x18\x08 \x01(\r\x12\x1e\n\nstore_type\x18\n \x01(\x0e\x32\n.StoreTypeb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'genshin.packet.proto.PlayerStoreNotify_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
-  _globals['DESCRIPTOR']._loaded_options = None
-  _globals['DESCRIPTOR']._serialized_options = b'\n\031emu.grasscutter.net.proto'
+  DESCRIPTOR._loaded_options = None
   _globals['_PLAYERSTORENOTIFY']._serialized_start=119
   _globals['_PLAYERSTORENOTIFY']._serialized_end=218
 # @@protoc_insertion_point(module_scope)

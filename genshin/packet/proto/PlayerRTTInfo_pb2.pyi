@@ -5,9 +5,9 @@ from typing import ClassVar as _ClassVar, Optional as _Optional
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class PlayerRTTInfo(_message.Message):
-    __slots__ = ("rtt", "uid")
-    RTT_FIELD_NUMBER: _ClassVar[int]
-    UID_FIELD_NUMBER: _ClassVar[int]
-    rtt: int
-    uid: int
-    def __init__(self, rtt: _Optional[int] = ..., uid: _Optional[int] = ...) -> None: ...
+    __slots__ = ("NCCPPHNNPBF", "OAFKLBDFLJG")
+    NCCPPHNNPBF_FIELD_NUMBER: _ClassVar[int]
+    OAFKLBDFLJG_FIELD_NUMBER: _ClassVar[int]
+    NCCPPHNNPBF: int
+    OAFKLBDFLJG: int
+    def __init__(self, NCCPPHNNPBF: _Optional[int] = ..., OAFKLBDFLJG: _Optional[int] = ...) -> None: ...

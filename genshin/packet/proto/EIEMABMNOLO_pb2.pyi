@@ -1,0 +1,22 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class EIEMABMNOLO(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    EIEMABMNOLO_NPC: _ClassVar[EIEMABMNOLO]
+    EIEMABMNOLO_QUEST: _ClassVar[EIEMABMNOLO]
+    EIEMABMNOLO_SPECIAL: _ClassVar[EIEMABMNOLO]
+    EIEMABMNOLO_MINE: _ClassVar[EIEMABMNOLO]
+    EIEMABMNOLO_COLLECTION: _ClassVar[EIEMABMNOLO]
+    EIEMABMNOLO_MONSTER: _ClassVar[EIEMABMNOLO]
+    EIEMABMNOLO_FISH_POOL: _ClassVar[EIEMABMNOLO]
+EIEMABMNOLO_NPC: EIEMABMNOLO
+EIEMABMNOLO_QUEST: EIEMABMNOLO
+EIEMABMNOLO_SPECIAL: EIEMABMNOLO
+EIEMABMNOLO_MINE: EIEMABMNOLO
+EIEMABMNOLO_COLLECTION: EIEMABMNOLO
+EIEMABMNOLO_MONSTER: EIEMABMNOLO
+EIEMABMNOLO_FISH_POOL: EIEMABMNOLO

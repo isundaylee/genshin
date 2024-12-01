@@ -1,0 +1,16 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class EHCLPIIPLOH(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    EHCLPIIPLOH_MAIL_COLLECTIBLE_UNKONW: _ClassVar[EHCLPIIPLOH]
+    EHCLPIIPLOH_MAIL_NOT_COLLECTIBLE: _ClassVar[EHCLPIIPLOH]
+    EHCLPIIPLOH_MAIL_COLLECTIBLE_UNCOLLECTED: _ClassVar[EHCLPIIPLOH]
+    EHCLPIIPLOH_MAIL_COLLECTIBLE_COLLECTED: _ClassVar[EHCLPIIPLOH]
+EHCLPIIPLOH_MAIL_COLLECTIBLE_UNKONW: EHCLPIIPLOH
+EHCLPIIPLOH_MAIL_NOT_COLLECTIBLE: EHCLPIIPLOH
+EHCLPIIPLOH_MAIL_COLLECTIBLE_UNCOLLECTED: EHCLPIIPLOH
+EHCLPIIPLOH_MAIL_COLLECTIBLE_COLLECTED: EHCLPIIPLOH
