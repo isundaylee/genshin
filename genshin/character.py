@@ -7,7 +7,7 @@ import collections
 import attr
 
 
-_LEVEL_CAPS: List[int] = [20, 40, 50, 60, 70, 80, 90]
+_LEVEL_CAPS: List[int] = [20, 40, 50, 60, 70, 80, 100]
 
 
 class CharacterName(enum.IntEnum):
@@ -107,6 +107,34 @@ class CharacterName(enum.IntEnum):
     Xilonen = enum.auto()
     Chasca = enum.auto()
     Ororon = enum.auto()
+    Mavuika = enum.auto()
+    Citlali = enum.auto()
+    Lanyan = enum.auto()
+    Mizuki = enum.auto()
+    Iansan = enum.auto()
+    Varesa = enum.auto()
+    Escoffier = enum.auto()
+    Ifa = enum.auto()
+    Skirk = enum.auto()
+    Dahlia = enum.auto()
+    Ineffa = enum.auto()
+    MannequinBoy = enum.auto()
+    MannequinGirl = enum.auto()
+    Lauma = enum.auto()
+    Flins = enum.auto()
+    Aino = enum.auto()
+    Nefer = enum.auto()
+    Durin = enum.auto()
+    Jahoda = enum.auto()
+    Columbina = enum.auto()
+    Zibai = enum.auto()
+    Illuga = enum.auto()
+    Varka = enum.auto()
+    Lohen = enum.auto()
+    Linnea = enum.auto()
+    Nicole = enum.auto()
+    Prune = enum.auto()
+    MarionetteNew = enum.auto()
 
 
 _BASE_STATS: Dict[Tuple[CharacterName, int, int], Tuple[int, int, int]] = {

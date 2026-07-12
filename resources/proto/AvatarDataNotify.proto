@@ -5,14 +5,13 @@ import "genshin/packet/proto/AvatarInfo.proto";
 import "genshin/packet/proto/AvatarTeam.proto";
 
 message AvatarDataNotify {
-	repeated uint32 CPEAJKCGPIO = 14;
-	repeated uint32 PBIOIIFOAPA = 10;
-	repeated AvatarRenameInfo avatar_rename_list = 11;
-	repeated AvatarInfo avatar_list = 2;
-	repeated uint64 temp_avatar_guid_list = 12;
 	repeated uint32 OPHDOKOFIHO = 1;
 	repeated uint32 KPIGEEJAMHM = 3;
-	map<uint32,AvatarTeam> avatar_team_map = 15;
-	uint64 choose_avatar_guid = 13;
 	uint32 cur_avatar_team_id = 5;
+	repeated uint32 PBIOIIFOAPA = 10;
+	repeated AvatarRenameInfo avatar_rename_list = 11;
+	repeated uint64 temp_avatar_guid_list = 12;
+	uint64 choose_avatar_guid = 13;
+	repeated AvatarInfo avatar_list = 14;
+	map<uint32,AvatarTeam> avatar_team_map = 15;
 }

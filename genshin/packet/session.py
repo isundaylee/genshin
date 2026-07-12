@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import collections
 import datetime
+import itertools
 import struct
 import logging
 from typing import ClassVar, Deque, Dict, Iterator, List, Optional, Tuple
@@ -156,6 +157,27 @@ class KCPSession:
 class Session:
     _UDP_PORTS: ClassVar[frozenset[int]] = frozenset({22101, 22102})
 
+    @staticmethod
+    def _decode_ip_packet(pkt: bytes, datalink: int) -> Optional[dpkt.ip.IP]:
+        if datalink == dpkt.pcap.DLT_EN10MB:
+            link_packet = dpkt.ethernet.Ethernet(pkt)
+            if link_packet.type != dpkt.ethernet.ETH_TYPE_IP:
+                return None
+        elif datalink == dpkt.pcap.DLT_LINUX_SLL:
+            link_packet = dpkt.sll.SLL(pkt)
+            if link_packet.ethtype != dpkt.ethernet.ETH_TYPE_IP:
+                return None
+        elif datalink == dpkt.pcap.DLT_LINUX_SLL2:
+            link_packet = dpkt.sll2.SLL2(pkt)
+            if link_packet.ethtype != dpkt.ethernet.ETH_TYPE_IP:
+                return None
+        else:
+            raise ValueError(f"Unsupported pcap link type: {datalink}")
+
+        packet_ip = link_packet.data
+        assert isinstance(packet_ip, dpkt.ip.IP)
+        return packet_ip
+
     def __init__(self, path: str, *, copy_key_from: Optional[Session] = None) -> None:
         self.packets: List[packet.Packet] = []
         self.udp_logger = logging.getLogger("udp-session")
@@ -165,12 +187,13 @@ class Session:
         self.receive_kcp = KCPSession("received")
 
         with open(path, "rb") as f:
-            for ts, pkt in dpkt.pcap.Reader(f):
-                packet_eth = dpkt.ethernet.Ethernet(pkt)
-                if packet_eth.type != dpkt.ethernet.ETH_TYPE_IP:
+            reader = dpkt.pcap.Reader(f)
+            datalink = reader.datalink()
+            for ts, pkt in reader:
+                packet_ip = self._decode_ip_packet(pkt, datalink)
+                if packet_ip is None:
                     continue
 
-                packet_ip = packet_eth.data
                 if packet_ip.p != dpkt.ip.IP_PROTO_UDP:
                     continue
 
@@ -231,102 +254,198 @@ class Session:
     def _infer_xor_key(self) -> tuple[bytes, bytes]:
         assert self.packets
 
-        # raw_ means what we received
-        # dec_ means after XOR decryption
+        # Recover the first 16 bytes of the XOR key from known plaintext, then
+        # use find_seed to recover the MT64 seed and generate the full key.
+        #
+        # This approach is version-independent: it does not rely on any specific
+        # opcode values or protobuf field numbers. Known-plaintext sources:
+        #
+        #   1. Every dispatch packet starts with magic \x45\x67  -> key[0:2]
+        #   2. Every dispatch packet ends with magic \x89\xab    -> key[L-2:L]
+        #   3. Empty packets (len 12, no header/data)             -> key[4:10]
+        #   4. RTT packets (periodic, varying ping)               -> fills gaps
+        #
+        # key[2:4] (the opcode field) is always unknown and brute-forced via
+        # find_seed, which validates candidate keys against MT64 structure.
 
-        # First, infer the first 16 bytes of the XAR key based on packet format
-        # and WorldPlayerRTTNotify format.
+        # Step 1: Identify the dispatch head (encrypted \x45\x67), which is the
+        # most common 2-byte prefix among all reassembled KCP packets.
+        head_counts: collections.Counter = collections.Counter(
+            p.content[:2] for p in self.packets
+        )
+        raw_dispatch_head = head_counts.most_common(1)[0][0]
+        dispatch_packets = [
+            p for p in self.packets if p.content[:2] == raw_dispatch_head
+        ]
 
-        raw_dispatch_head = self.packets[0].content[:2]
-        potential_key = b""
+        logger.debug(
+            "Dispatch head %s: %d dispatch packets out of %d total",
+            format_bytes(raw_dispatch_head),
+            len(dispatch_packets),
+            len(self.packets),
+        )
 
-        for p in self.packets:
-            if p.content[:2] != raw_dispatch_head and (len(potential_key) == 0):
-                potential_key += _xor_bytes(
-                    b"\x45\x67"
-                    + struct.pack(">H", opcodes.Opcode.PlayerLoginReq.value),
-                    p.content[:4],
-                )
-                continue
+        # Step 2: Collect known key byte positions from known plaintext.
+        known: Dict[int, int] = {}
 
-            if len(potential_key) == 4:
-                decrypted_4b = _xor_bytes(p.content[:4], potential_key[:4])
-                assert decrypted_4b[:2] == b"\x45\x67"
-                logger.debug(
-                    "Packet len %d with cmdid %d",
-                    len(p.content),
-                    struct.unpack(">H", decrypted_4b[2:])[0],
-                )
+        # Every dispatch packet starts with \x45\x67
+        for i, b in enumerate(_xor_bytes(b"\x45\x67", raw_dispatch_head)):
+            known[i] = b
 
-            if len(potential_key) == 4 and (
-                p.content[:4]
-                == _xor_bytes(
-                    b"\x45\x67"
-                    + struct.pack(">H", opcodes.Opcode.WorldPlayerRTTNotify.value),
-                    potential_key,
-                )
-            ):
-                assert len(p.content) == 22
+        # Every dispatch packet ends with \x89\xab
+        for p in dispatch_packets:
+            L = len(p.content)
+            known[L - 2] = p.content[L - 2] ^ 0x89
+            known[L - 1] = p.content[L - 1] ^ 0xAB
 
-                # Case 1 - rtt before uid
+        # Empty packets (total len 12 = 2+2+2+4+0+0+2): the middle bytes
+        # plaintext[4:10] are all \x00 (hdr_len=0, data_len=0).
+        for p in dispatch_packets:
+            if len(p.content) == 12:
+                for i in range(4, 10):
+                    known[i] = p.content[i]
 
-                # NOTE that byte 13 is (part of) the variable RTT - we will try
-                # all 256 values below.
-                # potential_key += _xor_bytes(
-                #     #                                 ------------------------ WorldPlayerRTTNotify
-                #     #                                         ---------------- PlayerRTTInfo
-                #     #                                         ------------     rtt
-                #     b"\x00\x00" b"\x00\x00\x00\x0a" b"\x12\x08\x10\x00\x01\x58",
-                #     p.content[4:16],
-                # )
-                # unknown_byte_idx = 13
+        # Step 3: Use RTT (ping) packets to fill remaining gaps in key[10:16].
+        self._derive_rtt_key_bytes(dispatch_packets, known)
 
-                # Case 2 - uid before rtt
-                # NOTE that we enumerate all 256 possibilities for byte 12 (uid
-                # field index) below.
-                potential_key += _xor_bytes(
-                    #                                 ------------------------ WorldPlayerRTTNotify
-                    #                                         ---------------- PlayerRTTInfo
-                    #                                         ---------------- uid
-                    b"\x00\x00" b"\x00\x00\x00\x0a" b"\x22\x08\x00\xb7\xca\xd6",
-                    p.content[4:16],
-                )
-                unknown_byte_idx = 12
-                break
+        # Step 4: Brute-force unknown positions in key[0:16] via find_seed.
+        unknown = sorted(set(range(16)) - set(known))
+        logger.info(
+            "Key inference: %d/%d bytes known, %d unknown positions %s",
+            16 - len(unknown),
+            16,
+            len(unknown),
+            unknown,
+        )
 
-        assert len(potential_key) == 16
-        logger.debug("XOR key inferred so far: %s", format_bytes(potential_key))
+        if len(unknown) > 3:
+            raise RuntimeError(
+                f"Too many unknown key byte positions {unknown}; "
+                f"need more known-plaintext sources"
+            )
 
-        # Next, find the MT64 rng seed. NOTE that we need to try all 256 values
-        # for byte 12/13 of the XOR key.
-        for rtt_byte in range(256):
-            potential_key_arr = bytearray(potential_key)
-            potential_key_arr[unknown_byte_idx] = rtt_byte
+        key_template = bytearray(16)
+        for i in range(16):
+            if i in known:
+                key_template[i] = known[i]
 
-            [key0, key1] = struct.unpack(">QQ", potential_key_arr)
-            if (seed := genshin_xor_key.find_seed(key0, key1)) is not None:
+        seed: Optional[int] = None
+        for combo in itertools.product(range(256), repeat=len(unknown)):
+            key_arr = bytearray(key_template)
+            for pos, val in zip(unknown, combo):
+                key_arr[pos] = val
+            key0, key1 = struct.unpack(">QQ", key_arr)
+            if (candidate := genshin_xor_key.find_seed(key0, key1)) is not None:
+                seed = candidate
                 logger.info("Found MT64 seed: %016x", seed)
                 break
-        else:
+
+        if seed is None:
             raise RuntimeError("Failed to find MT64 seed")
 
-        # Now, generate the full XOR key.
+        # Generate the full 4096-byte XOR key from the seed.
         mt64 = genshin_xor_key.MT64(seed)
         mt64.generate()
-        xor_key = b"".join(struct.pack(">Q", mt64.generate()) for _ in range(4096 // 8))
-        logger.info("Generated XOR key: %s", format_bytes(xor_key))
+        xor_key = b"".join(
+            struct.pack(">Q", mt64.generate()) for _ in range(4096 // 8)
+        )
+        logger.debug("Generated XOR key: %s", format_bytes(xor_key))
 
+        self.raw_dispatch_head = raw_dispatch_head
+        self.xor_key = xor_key
         return raw_dispatch_head, xor_key
+
+    def _derive_rtt_key_bytes(
+        self,
+        dispatch_packets: List[packet.Packet],
+        known: Dict[int, int],
+    ) -> None:
+        """Derive key bytes from periodic RTT (ping) packets.
+
+        WorldPlayerRTTNotify is sent periodically by the server and contains
+        the player's current RTT. The RTT varies slightly (~150ms), creating
+        exactly one varying byte in the encrypted packet data. For RTT > 127
+        the varint is 2 bytes; the second (continuation) byte is constant 0x01,
+        which gives us a known-plaintext byte we can use to recover the key.
+        """
+        # Find candidate RTT packets: the signature of WorldPlayerRTTNotify is
+        # a stream of periodic received packets of the same small size with
+        # exactly ONE varying byte (the ping value). Scan all candidate sizes
+        # rather than just the most common.
+        received_sizes: collections.Counter = collections.Counter(
+            len(p.content) for p in dispatch_packets
+            if p.direction == packet.Direction.RECEIVED
+        )
+
+        rtt_packets: Optional[List[packet.Packet]] = None
+        varying_pos: Optional[int] = None
+        for sz, cnt in received_sizes.most_common():
+            if cnt < 5 or not (16 <= sz <= 40):
+                continue
+
+            candidates = [
+                p for p in dispatch_packets
+                if len(p.content) == sz
+                and p.direction == packet.Direction.RECEIVED
+            ]
+
+            # Determine data region (10 + hdr_len .. sz - 2)
+            if all(i in known for i in (4, 5)):
+                hlen = struct.unpack(
+                    ">H",
+                    bytes([
+                        candidates[0].content[4] ^ known[4],
+                        candidates[0].content[5] ^ known[5],
+                    ]),
+                )[0]
+                ds = 10 + hlen
+            else:
+                ds = 10
+            de = sz - 2
+
+            vp = [
+                i for i in range(ds, de)
+                if len(set(p.content[i] for p in candidates)) > 1
+            ]
+            if len(vp) == 1:
+                rtt_packets = candidates
+                varying_pos = vp[0]
+                data_start = ds
+                data_end = de
+                break
+
+        if rtt_packets is None or varying_pos is None:
+            logger.debug("No RTT packet candidates with exactly 1 varying byte")
+            return
+
+        logger.debug(
+            "Found %d RTT packets of size %d, varying byte at position %d",
+            len(rtt_packets),
+            len(rtt_packets[0].content),
+            varying_pos,
+        )
+
+        # The varying byte is the low byte of the RTT varint. For RTT > 127ms
+        # (2-byte varint), the following byte is the continuation byte and is
+        # constant 0x01 across all RTT packets.
+        next_pos = varying_pos + 1
+        if next_pos < data_end and next_pos not in known:
+            derived = rtt_packets[0].content[next_pos] ^ 0x01
+            known[next_pos] = derived
+            logger.debug("RTT analysis derived key[%d] = %02x", next_pos, derived)
 
     def get_decrypted_packets(self) -> Iterator[packet.DecryptedPacket]:
         if self.copy_key_from is None:
             raw_dispatch_head, xor_key = self._infer_xor_key()
         else:
+            # Ensure the source session has inferred its key.
+            if not hasattr(self.copy_key_from, "xor_key"):
+                self.copy_key_from._infer_xor_key()
             raw_dispatch_head = self.copy_key_from.raw_dispatch_head
             xor_key = self.copy_key_from.xor_key
 
         for p in self.packets:
-            if p.content[:2] == raw_dispatch_head:
+            if p.content[:2] != raw_dispatch_head:
                 continue
 
             yield packet.DecryptedPacket(

@@ -2,6 +2,7 @@ click
 attrs
 dpkt
 protobuf==5.27.3
+grpcio-tools
 nanobind
 pytest
 mypy

@@ -4,7 +4,7 @@ import "genshin/packet/proto/Item.proto";
 import "genshin/packet/proto/StoreType.proto";
 
 message PlayerStoreNotify {
-	repeated Item item_list = 3;
-	uint32 weight_limit = 8;
-	StoreType store_type = 10;
+	StoreType store_type = 1;
+	repeated Item item_list = 2;
+	uint32 weight_limit = 12;
 }
