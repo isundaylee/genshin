@@ -64,6 +64,15 @@ class ArtifactSet(enum.Enum):
     # https://frzyc.github.io/genshin-optimizer/#/doc/ArtifactSetKey
     SHCC = "ScrollOfTheHeroOfCinderCity"
     OC = "ObsidianCodex"
+    LNO = "longNightsOath"  # gcsim key: longnightsoath (setId 15039)
+    FODG = "finaleOfTheDeepGalleries"  # gcsim key: finaleofthedeepgalleries (setId 15040)
+    NOTSU = "nightOfTheSkyUnveiling"  # gcsim key: nightoftheskysunveiling (setId 15041)
+    SMS = "silkenMoonsSerenade"  # gcsim key: silkenmoonsserenade (setId 15042)
+    AUBADE = "aubadeOfMorningstarAndMoon"  # gcsim key: aubadeofmorningstarandmoon (setId 15043)
+    RISINGWINDS = "aDayCarvedFromRisingWinds"  # gcsim key: adaycarvedfromrisingwinds (setId 15044)
+    CG = "celestialGift"  # gcsim key: celestialgift (setId 15045)
+    DIS = "disenchantmentInDeepShadow"  # setId 15046 (no gcsim impl yet)
+    UNKNOWN15046 = DIS  # alias for backward compat
 
 
 class ArtifactSlot(enum.IntEnum):

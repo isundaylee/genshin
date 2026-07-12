@@ -38,10 +38,15 @@ class WeaponName(enum.IntEnum):
     TheDockhandsAssistant = enum.auto()
     KagotsurubeIsshin = enum.auto()
     AquilaFavonia = enum.auto()  # ID 11501
+    SkywardBlade = enum.auto()  # ID 11502 (gcsim: skywardblade)
     FreedomSworn = enum.auto()  # ID 11503
     MistsplitterReforged = enum.auto()  # ID 11509
     KeyOfKhajNisut = enum.auto()
     SplendorOfTranquilWaters = enum.auto()
+    SturdyBone = enum.auto()  # ID 11430 (gcsim: sturdybone)
+    CalamityOfEshu = enum.auto()  # ID 11432 (gcsim: calamityofeshu)
+    MoonweaversDawn = enum.auto()  # ID 11434 (gcsim: moonweaversdawn)
+    AzureLight = enum.auto()  # ID 11517 (gcsim: azurelight)
 
     WasterGreatsword = enum.auto()  # ID 12101
     OldMercsPal = enum.auto()  # ID 12201
@@ -64,6 +69,12 @@ class WeaponName(enum.IntEnum):
     UltimateOverlordsMegaMagicSword = enum.auto()
     EarthShaker = enum.auto()
     PeakPatrolSong = enum.auto()
+    MakhairaAquamarine = enum.auto()  # ID 12415 (gcsim: makhairaaquamarine)
+    TalkingStick = enum.auto()  # ID 12424 (gcsim: talkingstick)
+    FruitfulHook = enum.auto()  # ID 12430 (gcsim: fruitfulhook)
+    Polilith = enum.auto()  # ID 12432 (not in gcsim; icon Claymore_Polilith)
+    AThousandBlazingSuns = enum.auto()  # ID 12514 (gcsim: athousandblazingsuns)
+    CrystallineSword = enum.auto()  # ID 12516 (not in gcsim; icon Claymore_CrystallineSword)
 
     BeginnersProtector = enum.auto()  # ID 13101
     IronPoint = enum.auto()  # ID 13201
@@ -84,6 +95,12 @@ class WeaponName(enum.IntEnum):
     StaffOfHoma = enum.auto()  # ID 13501
     SerpentSpine = enum.auto()
     PrimordialJadeWingedSpear = enum.auto()  # ID 13505
+    BalladOfTheFjords = enum.auto()  # ID 13424 (gcsim: balladofthefjords)
+    MountainBracingBolt = enum.auto()  # ID 13430 (gcsim: mountainbracingbolt)
+    TamayurateiNoOhanashi = enum.auto()  # ID 13432 (gcsim: tamayurateinoohanashi)
+    CalamityQueller = enum.auto()  # ID 13507 (gcsim: calamityqueller)
+    SymphonistOfScents = enum.auto()  # ID 13514 (gcsim: symphonistofscents)
+    FracturedHalo = enum.auto()  # ID 13515 (gcsim: fracturedhalo)
 
     ApprenticesNotes = enum.auto()  # ID 14101
     PocketGrimoire = enum.auto()  # ID 14201
@@ -111,6 +128,10 @@ class WeaponName(enum.IntEnum):
     MemoryOfDust = enum.auto()  # ID 14504
     KagurasVerity = enum.auto()  # ID 14509
     CranesEchoingCall = enum.auto()
+    WaveridingWhirl = enum.auto()  # ID 14430 (gcsim: waveridingwhirl)
+    EtherlightSpindleLute = enum.auto()  # ID 14432 (gcsim: etherlightspindlelute)
+    NocturnesCurtainCall = enum.auto()  # ID 14522 (gcsim: nocturnescurtaincall)
+    AngelosHeptades = enum.auto()  # ID 14523 (gcsim: angelosheptades)
 
     HuntersBow = enum.auto()  # ID 15101
     SeasonedHuntersBow = enum.auto()  # ID 15201
@@ -136,6 +157,11 @@ class WeaponName(enum.IntEnum):
     ThunderingPulse = enum.auto()
     SilvershowerHeartstrings = enum.auto()
     SurfsUp = enum.auto()
+    ScionOfTheBlazingSun = enum.auto()  # ID 15424 (gcsim: scionoftheblazingsun)
+    FlowerWreathedFeathers = enum.auto()  # ID 15430 (gcsim: flowerwreathedfeathers)
+    SequenceOfSolitude = enum.auto()  # ID 15432 (gcsim: sequenceofsolitude)
+    RainbowSerpentBow = enum.auto()  # ID 15434 (gcsim: rainbowserpentbow)
+    Alkonost = enum.auto()  # ID 15516 (not in gcsim; icon Bow_Alkonost)
 
 
 _BASE_STATS: Dict[Tuple[WeaponName, int, int], Tuple[int]] = {

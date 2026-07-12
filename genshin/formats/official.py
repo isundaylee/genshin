@@ -52,26 +52,14 @@ class AccountData:
 
             if equip.HasField("reliquary"):
                 assert item.guid not in self.artifacts
-
-                if (
-                    artifact := artifact_parser.parse_artifact(
-                        item.item_id, equip.reliquary
-                    )
-                ) is None:
-                    logger.warning("Skipping unknown artifact with ID %d", item.item_id)
-                    continue
-
-                self.artifacts[item.guid] = artifact
+                self.artifacts[item.guid] = artifact_parser.parse_artifact(
+                    item.item_id, equip.reliquary
+                )
             elif equip.HasField("weapon"):
                 assert item.guid not in self.weapons
-
-                try:
-                    self.weapons[item.guid] = weapon_parser.parse_weapon(
-                        item.item_id, equip.weapon
-                    )
-                except KeyError:
-                    logger.warning("Skipping unknown weapon with ID %d", item.item_id)
-                    continue
+                self.weapons[item.guid] = weapon_parser.parse_weapon(
+                    item.item_id, equip.weapon
+                )
 
     def _parse_characters(self, adn: AvatarDataNotify) -> None:
         character_parser = CharacterParser(self.artifacts, self.weapons)
@@ -83,11 +71,14 @@ class AccountData:
 
 
 def _read_raw_excel_data(name: str) -> Any:
-    with open(
-        os.path.join(
-            os.path.dirname(__file__), "../../resources/excel_bin_output", name
+    agd_path = os.environ.get("AGD_PATH")
+    if agd_path is not None:
+        excel_dir = os.path.join(agd_path, "ExcelBinOutput")
+    else:
+        excel_dir = os.path.join(
+            os.path.dirname(__file__), "../../resources/excel_bin_output"
         )
-    ) as f:
+    with open(os.path.join(excel_dir, name)) as f:
         return json.load(f)
 
 
@@ -151,6 +142,14 @@ class ArtifactParser:
         15036: "UR",
         15037: "SHCC",
         15038: "OC",
+        15039: "LNO",
+        15040: "FODG",
+        15041: "NOTSU",
+        15042: "SMS",
+        15043: "AUBADE",
+        15044: "RISINGWINDS",
+        15045: "CG",
+        15046: "DIS",
     }
 
     assert len(_SET_NAME_MAPPING) == len(set(_SET_NAME_MAPPING.values()))
@@ -200,16 +199,12 @@ class ArtifactParser:
             for e in _read_raw_excel_data("ReliquaryAffixExcelConfigData.json")
         }
 
-    def parse_artifact(self, item_id: int, r: Reliquary) -> artifact.Artifact | None:
+    def parse_artifact(self, item_id: int, r: Reliquary) -> artifact.Artifact:
         item_info = self._item_info_map[item_id]
 
         numeric_slot = self._NUMERIC_SLOT_MAPPING[item_info["equipType"]]
 
-        try:
-            set_name = self._SET_NAME_MAPPING[item_info["setId"]]
-        except KeyError:
-            logger.warning("Unknown artifact set ID %d", item_info["setId"])
-            return None
+        set_name = self._SET_NAME_MAPPING[item_info["setId"]]
 
         main_prop_type = self._main_stat_info_map[r.main_prop_id]["propType"]
 
@@ -268,10 +263,15 @@ class WeaponParser:
         11424: weapon.WeaponName.WolfFang,
         11427: weapon.WeaponName.TheDockhandsAssistant,
         11428: weapon.WeaponName.KagotsurubeIsshin,
+        11430: weapon.WeaponName.SturdyBone,
+        11432: weapon.WeaponName.CalamityOfEshu,
+        11434: weapon.WeaponName.MoonweaversDawn,
         11501: weapon.WeaponName.AquilaFavonia,
+        11502: weapon.WeaponName.SkywardBlade,
         11509: weapon.WeaponName.MistsplitterReforged,
         11511: weapon.WeaponName.KeyOfKhajNisut,
         11513: weapon.WeaponName.SplendorOfTranquilWaters,
+        11517: weapon.WeaponName.AzureLight,
         12101: weapon.WeaponName.WasterGreatsword,
         12201: weapon.WeaponName.OldMercsPal,
         12301: weapon.WeaponName.FerrousShadow,
@@ -290,8 +290,14 @@ class WeaponParser:
         12411: weapon.WeaponName.SnowTombedStarsilver,
         12412: weapon.WeaponName.LuxuriousSealord,
         12414: weapon.WeaponName.KatsuragikiriNagamasa,
+        12415: weapon.WeaponName.MakhairaAquamarine,
         12418: weapon.WeaponName.MailedFlower,
         12426: weapon.WeaponName.UltimateOverlordsMegaMagicSword,
+        12424: weapon.WeaponName.TalkingStick,
+        12430: weapon.WeaponName.FruitfulHook,
+        12432: weapon.WeaponName.Polilith,
+        12514: weapon.WeaponName.AThousandBlazingSuns,
+        12516: weapon.WeaponName.CrystallineSword,
         12431: weapon.WeaponName.EarthShaker,
         13101: weapon.WeaponName.BeginnersProtector,
         13201: weapon.WeaponName.IronPoint,
@@ -307,11 +313,17 @@ class WeaponParser:
         13415: weapon.WeaponName.TheCatch,
         13416: weapon.WeaponName.WavebreakersFin,
         13419: weapon.WeaponName.MissiveWindspear,
+        13424: weapon.WeaponName.BalladOfTheFjords,
         13426: weapon.WeaponName.DialoguesOfTheDesertSages,
+        13430: weapon.WeaponName.MountainBracingBolt,
         13431: weapon.WeaponName.FootprintOfTheRainbow,
+        13432: weapon.WeaponName.TamayurateiNoOhanashi,
         13501: weapon.WeaponName.StaffOfHoma,
         13502: weapon.WeaponName.SerpentSpine,
         13505: weapon.WeaponName.PrimordialJadeWingedSpear,
+        13507: weapon.WeaponName.CalamityQueller,
+        13514: weapon.WeaponName.SymphonistOfScents,
+        13515: weapon.WeaponName.FracturedHalo,
         14101: weapon.WeaponName.ApprenticesNotes,
         14201: weapon.WeaponName.PocketGrimoire,
         14301: weapon.WeaponName.MagicGuide,
@@ -332,9 +344,15 @@ class WeaponParser:
         14426: weapon.WeaponName.BalladOfTheBoundlessBlue,
         14427: weapon.WeaponName.AshGravenDrinkingHorn,
         14431: weapon.WeaponName.RingOfYaxche,
+        14430: weapon.WeaponName.WaveridingWhirl,
+        14432: weapon.WeaponName.EtherlightSpindleLute,
         14501: weapon.WeaponName.SkywardAtlas,
+        14502: weapon.WeaponName.LostPrayerToTheSacredWinds,
         14514: weapon.WeaponName.TomeOfTheEternalFlow,
+        14515: weapon.WeaponName.CranesEchoingCall,
         14516: weapon.WeaponName.SurfsUp,
+        14522: weapon.WeaponName.NocturnesCurtainCall,
+        14523: weapon.WeaponName.AngelosHeptades,
         15101: weapon.WeaponName.HuntersBow,
         15201: weapon.WeaponName.SeasonedHuntersBow,
         15301: weapon.WeaponName.RavenBow,
@@ -353,6 +371,11 @@ class WeaponParser:
         15416: weapon.WeaponName.MouunsMoon,
         15419: weapon.WeaponName.IbisPiercer,
         15426: weapon.WeaponName.Cloudforged,
+        15424: weapon.WeaponName.ScionOfTheBlazingSun,
+        15430: weapon.WeaponName.FlowerWreathedFeathers,
+        15432: weapon.WeaponName.SequenceOfSolitude,
+        15434: weapon.WeaponName.RainbowSerpentBow,
+        15516: weapon.WeaponName.Alkonost,
         15501: weapon.WeaponName.SkywardHarp,
         15503: weapon.WeaponName.ElegyForTheEnd,
         15507: weapon.WeaponName.PolarStar,
@@ -474,6 +497,34 @@ class CharacterParser:
         10000103: character.CharacterName.Xilonen,
         10000104: character.CharacterName.Chasca,
         10000105: character.CharacterName.Ororon,
+        10000106: character.CharacterName.Mavuika,
+        10000107: character.CharacterName.Citlali,
+        10000108: character.CharacterName.Lanyan,
+        10000109: character.CharacterName.Mizuki,
+        10000110: character.CharacterName.Iansan,
+        10000111: character.CharacterName.Varesa,
+        10000112: character.CharacterName.Escoffier,
+        10000113: character.CharacterName.Ifa,
+        10000114: character.CharacterName.Skirk,
+        10000115: character.CharacterName.Dahlia,
+        10000116: character.CharacterName.Ineffa,
+        10000117: character.CharacterName.MannequinBoy,
+        10000118: character.CharacterName.MannequinGirl,
+        10000119: character.CharacterName.Lauma,
+        10000120: character.CharacterName.Flins,
+        10000121: character.CharacterName.Aino,
+        10000122: character.CharacterName.Nefer,
+        10000123: character.CharacterName.Durin,
+        10000124: character.CharacterName.Jahoda,
+        10000125: character.CharacterName.Columbina,
+        10000126: character.CharacterName.Zibai,
+        10000127: character.CharacterName.Illuga,
+        10000128: character.CharacterName.Varka,
+        10000129: character.CharacterName.Lohen,
+        10000130: character.CharacterName.Linnea,
+        10000131: character.CharacterName.Nicole,
+        10000132: character.CharacterName.Prune,
+        10000133: character.CharacterName.MarionetteNew,
     }
 
     def __init__(
@@ -488,11 +539,7 @@ class CharacterParser:
         }
 
     def parse_character(self, a: AvatarInfo) -> Optional[character.Character]:
-        try:
-            name = self._CHARACTER_NAME_MAPPING[a.avatar_id]
-        except KeyError:
-            logger.warning("Unknown character with ID %d", a.avatar_id)
-            return None
+        name = self._CHARACTER_NAME_MAPPING[a.avatar_id]
 
         if a.avatar_type != 1:
             logger.warning(
