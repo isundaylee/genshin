@@ -72,7 +72,6 @@ class ArtifactSet(enum.Enum):
     RISINGWINDS = "aDayCarvedFromRisingWinds"  # gcsim key: adaycarvedfromrisingwinds (setId 15044)
     CG = "celestialGift"  # gcsim key: celestialgift (setId 15045)
     DIS = "disenchantmentInDeepShadow"  # setId 15046 (no gcsim impl yet)
-    UNKNOWN15046 = DIS  # alias for backward compat
 
 
 class ArtifactSlot(enum.IntEnum):
